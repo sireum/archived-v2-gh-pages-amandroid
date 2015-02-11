@@ -1,0 +1,166 @@
+
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>com.fcbh.dbp.BibleSocietyOfPhilippines &mdash; Sireum Amandroid</title>
+    
+    <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/bootstrap-3.1.0/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/bootstrap-3.1.0/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/sireum.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="../../_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="../../_static/bootstrap-3.1.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../../_static/bootstrap-sphinx.js"></script>
+    <link rel="top" title="Sireum Amandroid" href="../../index.html" />
+  </head>
+  <body>
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../../index.html">
+          Amandroid</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            <li class="divider-vertical"></li>
+            
+                <li><a href="../../documentation.html">Documentation</a></li>
+                <li><a href="../../software.html">Software</a></li>
+                <li><a href="../../problems.html">Detected Problems</a></li>
+                <li><a href="../../service.html">Service</a></li>
+                <li><a href="../../team.html">Team</a></li>
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../../index.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"></ul>
+</li>
+              
+            
+            
+            
+            
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="../../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      
+  <div class="section" id="com-fcbh-dbp-biblesocietyofphilippines">
+<h1>com.fcbh.dbp.BibleSocietyOfPhilippines<a class="headerlink" href="#com-fcbh-dbp-biblesocietyofphilippines" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="intent-injection-details">
+<h2>Intent Injection Details<a class="headerlink" href="#intent-injection-details" title="Permalink to this headline">¶</a></h2>
+<p>App <strong>name</strong>: com.fcbh.dbp.BibleSocietyOfPhilippines.apk</p>
+<p>Public <strong>Component</strong>: com.subsplash.thechurchapp.TwitterLoginActivity</p>
+<p>Found 1 path in the data dependency graph (DDG).</p>
+<p>The path is:</p>
+<p>from <strong>Source</strong>: (com.subsplash.thechurchapp.TwitterLoginActivity:EntryNode, icc_source)</p>
+<p>to <strong>Sink</strong>: (L06551a, icc_sink)</p>
+<p>The nodes and edges on the path are (with calling context length k = 1):</p>
+<div class="highlight-python"><div class="highlight"><pre>Entry@(environment of TwitterLoginActivity) -&gt; Call@(launchTwitterTweetActivity, L0654fc)(onCreate, L065654)-&gt; Call@(launchTwitterTweetActivity, L065508)(onCreate, L065654)-&gt; Call@(launchTwitterTweetActivity, L065514)(onCreate, L065654)-&gt; Call@(launchTwitterTweetActivity, L06551a)(onCreate, L065654)
+</pre></div>
+</div>
+<p>More details:</p>
+<p>The TwitterLoginActivity is a public component. We observe that its <em>onCreate</em> method invokes <em>launchTwitterTweetActivity</em> method, which illustrates the above path. Inside this method at <strong>Line 06551a</strong> an Intent is sent out, which contains an <em>Url</em> that originated from the incoming Intent. The <em>Url</em> will be used in the destination Activity, it potentially implies that their is a injection vulnerability.</p>
+<p>The code of <em>launchTwitterTweetActivity</em> method is as follows:</p>
+<div class="highlight-python"><div class="highlight"><pre>procedure `void` `launchTwitterTweetActivity` (`TwitterLoginActivity` v5){
+        #L065490.   v0:= new `Intent`;
+        #L065494.   v3:= `@@TwitterTweetActivity.class`;
+        #L065498.   call temp:=  `Intent.&lt;init&gt;`(v0, v5, v3);
+        #L06549e.   call temp:=  `TwitterLoginActivity.getIntent`(v5);
+        #L0654a4.   v3:= temp  @type `object`; //v3 is the incoming Intent
+        #L0654a6.   v4:= &quot;status&quot; @type `object`;
+        #L0654aa.   call temp:=  `Intent.hasExtra`(v3, v4);
+        #L0654b0.   v3:= temp;
+        #L0654b2.   if v3 == 0 then goto L0654dc;
+        #L0654b6.   call temp:=  `TwitterLoginActivity.getIntent`(v5);
+        #L0654bc.   v3:= temp  @type `object`;
+        #L0654be.   call temp:=  `android.content.Intent.getExtras`(v3);
+        #L0654c4.   v3:= temp  @type `object`;
+        #L0654c6.   v4:= &quot;status&quot; @type `object`;
+        #L0654ca.   call temp:=  `android.os.Bundle.getString`(v3, v4);
+        #L0654d0.   v1:= temp  @type `object`;
+        #L0654d2.   v3:= &quot;status&quot; @type `object`;
+        #L0654d6.   call temp:=  `android.content.Intent.putExtra`(v0, v3, v1);
+        #L0654dc.   call temp:=  `TwitterLoginActivity.getIntent`(v5) ;
+        #L0654e2.   v3:= temp  @type `object`;
+        #L0654e4.   v4:= &quot;url&quot; @type `object`;
+        #L0654e8.   call temp:=  `Intent.hasExtra`(v3, v4);
+        #L0654ee.   v3:= temp;
+        #L0654f0.   if v3 == 0 then goto L06551a;
+        #L0654f4.   call temp:=  `TwitterLoginActivity.getIntent`(v5);
+        #L0654fa.   v3:= temp  @type `object`;
+        #L0654fc.   call temp:=  `Intent.getExtras`(v3);
+        #L065502.   v3:= temp  @type `object`;
+        #L065504.   v4:= &quot;url&quot; @type `object`;
+        #L065508.   call temp:=  `Bundle.getString`(v3, v4);
+        #L06550e.   v2:= temp  @type `object`; //v2 is the url coming from the incoming Intent
+        #L065510.   v3:= &quot;url&quot; @type `object`;
+        #L065514.   call temp:=  `Intent.putExtra`(v0, v3, v2);
+        #L06551a.   call temp:=  `TwitterLoginActivity.startActivity`(v5, v0); // The outgoing Intent contains the above url, which will be used in the destination Activity. Probably, it implies that their is a injection vulnerability.
+        #L065520.   call temp:=  `TwitterLoginActivity.close`(v5);
+        #L065526.   return @void ;
+        }
+</pre></div>
+</div>
+</div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+
+  </body>
+</html>

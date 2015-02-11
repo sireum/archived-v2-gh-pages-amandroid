@@ -1,0 +1,161 @@
+
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>com.kamagames.notepad &mdash; Sireum Amandroid</title>
+    
+    <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/bootstrap-3.1.0/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/bootstrap-3.1.0/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/sireum.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="../../_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="../../_static/bootstrap-3.1.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../../_static/bootstrap-sphinx.js"></script>
+    <link rel="top" title="Sireum Amandroid" href="../../index.html" />
+  </head>
+  <body>
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../../index.html">
+          Amandroid</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            <li class="divider-vertical"></li>
+            
+                <li><a href="../../documentation.html">Documentation</a></li>
+                <li><a href="../../software.html">Software</a></li>
+                <li><a href="../../problems.html">Detected Problems</a></li>
+                <li><a href="../../service.html">Service</a></li>
+                <li><a href="../../team.html">Team</a></li>
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../../index.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"></ul>
+</li>
+              
+            
+            
+            
+            
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="../../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      
+  <div class="section" id="com-kamagames-notepad">
+<h1>com.kamagames.notepad<a class="headerlink" href="#com-kamagames-notepad" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="intent-injection-details">
+<h2>Intent Injection Details<a class="headerlink" href="#intent-injection-details" title="Permalink to this headline">¶</a></h2>
+<p>App <strong>name</strong>: com.kamagames.notepad.apk</p>
+<p>Public <strong>Component</strong>: com.kamagames.notepad.NotesList</p>
+<p>Found 1 path in the data dependency graph (DDG).</p>
+<p>The path is:</p>
+<p>from <strong>Source</strong>: (com.kamagames.notepad.NotesList:EntryNode, icc_source)</p>
+<p>to <strong>Sink</strong>: (L002dde, icc_sink)</p>
+<p>The nodes and edges on the path are:</p>
+<div class="highlight-python"><div class="highlight"><pre>Entry@(environment method of NotesList) -&gt; Call@(onListItemClick,L002d74)-&gt; Call@(onListItemClick,L002d7c)-&gt; Call@(onListItemClick,L002dde)
+</pre></div>
+</div>
+<p>More details:</p>
+<p>The <em>NotesList</em> Activity is a public component, and it extends <em>ListActivity</em>. So, upon user’s  action, the following method (<em>onListItemClick</em>) in <em>NotesList</em> can be invoked. Inside this method, we observe that at <strong>Line 002dde</strong> an Intent is sent out, which contains an <em>Uri</em> that originated from the <strong>incoming Intent</strong>.</p>
+<p>The <em>onListItemClick</em> method of <em>NodeList</em> illustrates the above path:</p>
+<div class="highlight-python"><div class="highlight"><pre>procedure `void` `onListItemClick` (`NotesList` v3, `ListView` v4 , `View` v5, `int` v6, `long` v7) {
+ temp, v0, v1, v2, v8;
+ #L002d6c.   call temp:=  `com.kamagames.notepad.NotesList.getIntent`(v3);
+ #L002d72.   v0:= temp  @type `object`; // This is the incoming Intent
+ #L002d74.   call temp:=  `android.content.Intent.getData`(v0);
+ #L002d7a.   v0:= temp  @type `object`; // This is the Uri in the Incoming Intent
+ #L002d7c.   call temp:=  `android.content.ContentUris.withAppendedId`(v0, v7, v8);
+ #L002d82.   v0:= temp  @type `object`;
+ #L002d84.   call temp:=  `com.kamagames.notepad.NotesList.getIntent`(v3);
+ #L002d8a.   v1:= temp  @type `object`;
+ #L002d8c.   call temp:=  `android.content.Intent.getAction`(v1);
+ #L002d92.   v1:= temp  @type `object`;
+ #L002d94.   v2:= &quot;android.intent.action.PICK&quot; @type `object`;
+ #L002d98.   call temp:=  `java.lang.String.equals`(v2, v1);
+ #L002d9e.   v2:= temp;
+ #L002da0.   if v2 != 0 then goto L002db4;
+ #L002da4.   v2:= &quot;android.intent.action.GET_CONTENT&quot; @type `object`;
+ #L002da8.   call temp:=  `java.lang.String.equals`(v2, v1);
+ #L002dae.   v1:= temp;
+ #L002db0.   if v1 == 0 then goto L002dd0;
+ #L002db4.   v1:= -1I  @length `4`;
+ #L002db6.   v2:= new `android.content.Intent`;
+ #L002dba.   call temp:=  `android.content.Intent.&lt;init&gt;`(v2);
+ #L002dc0.   call temp:=  `android.content.Intent.setData`(v2, v0);
+ #L002dc6.   v0:= temp  @type `object`;
+ #L002dc8.   call temp:=  `com.kamagames.notepad.NotesList.setResult`(v3, v1, v0);
+ #L002dce.   return @void ;
+ #L002dd0.   v1:= new `android.content.Intent`;
+ #L002dd4.   v2:= &quot;android.intent.action.EDIT&quot; @type `object`;
+ #L002dd8.   call temp:=  `android.content.Intent.&lt;init&gt;`(v1, v2, v0); // v0 is the incoming Uri
+ #L002dde.   call temp:=  `com.kamagames.notepad.NotesList.startActivity`(v3, v1); // The destination activity will depend on Uri v0, which is an injection vulnerability.
+ #L002de4.   goto L002dce;
+}
+</pre></div>
+</div>
+</div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+
+  </body>
+</html>

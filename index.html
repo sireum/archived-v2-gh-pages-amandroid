@@ -1,0 +1,219 @@
+
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Amandroid &mdash; Sireum Amandroid</title>
+    
+    <link rel="stylesheet" href="_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.1.0/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.1.0/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="_static/sireum.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-3.1.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
+    <link rel="top" title="Sireum Amandroid" href="#" />
+    <link rel="next" title="Documentation" href="documentation.html" />
+  </head>
+  <body>
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">
+          Amandroid</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            <li class="divider-vertical"></li>
+            
+                <li><a href="documentation.html">Documentation</a></li>
+                <li><a href="software.html">Software</a></li>
+                <li><a href="problems.html">Detected Problems</a></li>
+                <li><a href="service.html">Service</a></li>
+                <li><a href="team.html">Team</a></li>
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"></ul>
+</li>
+              
+            
+            
+            
+            
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      
+  <div class="toctree-wrapper compound">
+</div>
+<div class="section" id="amandroid">
+<h1>Amandroid<a class="headerlink" href="#amandroid" title="Permalink to this headline">¶</a></h1>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-12">
+      <img src="_static/amandroid.png" />
+    </div>
+  </div>
+
+  <br/>
+
+  <script src="_static/jquery.vticker.min.js"></script>
+  <script src="_static/moment.min.js"></script>
+  <script src="_static/livestamp.min.js"></script>
+  <script>$(function() { $('#news').vTicker(); });</script>
+
+  <div class="row">
+    <div class="col-md-12">
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <table style="width:100%">
+            <tr>
+              <td width="50px"><img src="_static/news-icon.png"></img></td>
+              <td>
+                <div id="news"><ul>
+  <li>
+
+    Amandroid is open sourced under EPL.
+
+    &nbsp;&nbsp;<span data-livestamp="2014-10-07T15:00:00-0500"></span>
+
+  </li>
+
+  <li>
+
+    Added Amandroid documentation and API Doc.
+
+    &nbsp;&nbsp;<span data-livestamp="2014-10-01T15:00:00-0500"></span>
+
+  </li>
+
+  <li>
+
+    Amandroid website is under construction.
+
+    &nbsp;&nbsp;<span data-livestamp="2014-09-18T15:00:00-0500"></span>
+
+  </li>
+</ul>              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-8">
+    <div class="panel panel-default" style="height:100%">
+      <div class="panel-heading">
+        <h3 class="panel-title">About</h3>
+      </div>
+      <div class="panel-body"><p>Amandroid is a static analysis framework for Android apps.</p>
+<p>The Android platform is immensely popular. However, malicious or vulnerable applications have been reported to cause several security problems. Currently there is no effective method that a market operator can use to vet apps entering a market (e.g., Google Play).</p>
+<p>Prior works using static analysis to address Android app security problems more focus on specific problems and built specialized tools for them. We observe that a large portion of those security issues can be resolved by addressing one underlying core problem &#8211; capturing semantic behaviors of the app such as object points-to and control-/data-flow information. Thus, we designed a new approach to conducting static analysis for vetting Android apps, and built a generic framework, called Amandroid, which does flow- and context-sensitive data flow analysis in an inter-component way.</p>
+<p>Our approach shows that a comprehensive (tracking all objects) static analysis method on Android apps is totally feasible in terms of computation resources, and the Amandroid framework is flexible and easy to be extended for many types of specialized security analyses.</p>
+<p>Since Amandroid directly handles Inter-component control and data flows, it can be used to address security problems that result from interactions among multiple components from either the same or different apps. Amandroid analysis is sound in that it can provide assurance of the absence of the specified security problems in an app with well-specified and reasonable assumptions on the Android runtime and its library.</p>
+<p>On top of Amandroid we performed certain specific security analyses, for instance, a) user password flow tracking, b) intent injection detection, and c) crypto API misuse checking. We apply those analyses on hundreds of apps collected from Google Play&#8217;s popular apps and a third-party security company, and the results show that it is capable of finding real security issues and efficient enough in terms of analysis time.</p>
+      <br>
+      <br>
+    </div>
+  </div>
+</div>
+<div class="col-md-4">
+  <div class="panel panel-default" style="height:100%">
+    <div class="panel-heading">
+      <h3 class="panel-title">Contact</h3>
+    </div>
+    <div class="panel-body"><div class="line-block">
+<div class="line"><a class="reference external" href="http://arguslab.org">Argus Laboratory</a> and <a class="reference external" href="http://santoslab.org">SAnToS Laboratory</a></div>
+<div class="line"><a class="reference external" href="http://www.cis.ksu.edu">Computing and Information Sciences Department</a></div>
+<div class="line"><a class="reference external" href="http://www.ksu.edu">Kansas State University</a></div>
+<div class="line">234 <a class="reference external" href="http://www.k-state.edu/maps/buildings/N/">Nichols Hall</a></div>
+<div class="line"><a class="reference external" href="http://www.ci.manhattan.ks.us/">Manhattan</a>, <a class="reference external" href="http://www.kansas.gov/">KS</a>, 66506</div>
+<div class="line">Phone: (785) 532-6350</div>
+<div class="line">Fax: (785) 532-7353</div>
+<div class="line">Email: <a class="reference external" href="mailto:amandroid&#37;&#52;&#48;sireum&#46;org">amandroid<span>&#64;</span>sireum<span>&#46;</span>org</a></div>
+</div>
+    </div>
+  </div>
+</div>
+<div class="col-md-4">
+  <div class="panel panel-default" style="height:100%">
+    <div class="panel-heading">
+      <h3 class="panel-title">Acknowledgement</h3>
+    </div>
+    <div class="panel-body"><p>The development of Amandroid is supported in part by the US Air Force Office
+of Scientific Research (AFOSR) grant no. FA9550-09-0138 and
+by the U.S. National Science  Foundation (NSF)
+under grant no.
+<a class="reference external" href="http://www.nsf.gov/awardsearch/showAward?AWD_ID=0954138">0954138</a> and
+<a class="reference external" href="http://www.nsf.gov/awardsearch/showAward?AWD_ID=1018703">1018703</a>.
+It was also supported by the NSF CAREER
+award <a class="reference external" href="http://www.nsf.gov/awardsearch/showAward?AWD_ID=0644288">0644288</a>.
+Any opinions, findings, conclusions, or recommendations expressed in
+this material are those of the authors and do not necessarily reflect
+the views of the previously mentioned institutions.</p>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+
+  </body>
+</html>
