@@ -1,0 +1,313 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <title>parser - Sireum-Amandroid-Api-Doc - org.sireum.amandroid.parser</title>
+          <meta name="description" content="parser - Sireum - Amandroid - Api - Doc - org.sireum.amandroid.parser" />
+          <meta name="keywords" content="parser Sireum Amandroid Api Doc org.sireum.amandroid.parser" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../../../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../../../index.html';
+            var hash = 'org.sireum.amandroid.parser.package';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="value">
+      <div id="definition">
+        <img src="../../../../lib/package_big.png" />
+        <p id="owner"><a href="../../../package.html" class="extype" name="org">org</a>.<a href="../../package.html" class="extype" name="org.sireum">sireum</a>.<a href="../package.html" class="extype" name="org.sireum.amandroid">amandroid</a></p>
+        <h1>parser</h1> <span class="permalink">
+      <a href="../../../../index.html#org.sireum.amandroid.parser.package" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <span class="name">parser</span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        
+        
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="org.sireum.amandroid.parser.ARSCFileParser" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ARSCFileParserextendsAbstractAndroidXMLParser"></a>
+      <a id="ARSCFileParser:ARSCFileParser"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="ARSCFileParser.html"><span class="name">ARSCFileParser</span></a><span class="result"> extends <a href="AbstractAndroidXMLParser.html" class="extype" name="org.sireum.amandroid.parser.AbstractAndroidXMLParser">AbstractAndroidXMLParser</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#org.sireum.amandroid.parser.package@ARSCFileParserextendsAbstractAndroidXMLParser" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Parser for reading out the contents of Android's resource.arsc file.</p><div class="fullcomment"><div class="comment cmt"><p>Parser for reading out the contents of Android's resource.arsc file.
+Structure declarations and comments taken from the Android source
+code and ported from java to scala.</p><p>adapted from Steven Arzt
+</p></div></div>
+    </li><li name="org.sireum.amandroid.parser.AbstractAndroidXMLParser" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="AbstractAndroidXMLParserextendsAnyRef"></a>
+      <a id="AbstractAndroidXMLParser:AbstractAndroidXMLParser"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="AbstractAndroidXMLParser.html"><span class="name">AbstractAndroidXMLParser</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#org.sireum.amandroid.parser.package@AbstractAndroidXMLParserextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Common base class for all resource parser classes</p><div class="fullcomment"><div class="comment cmt"><p>Common base class for all resource parser classes</p><p>adapted from Steven Arzt
+</p></div></div>
+    </li><li name="org.sireum.amandroid.parser.AndroidXMLHandler" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="AndroidXMLHandlerextendsAnyRef"></a>
+      <a id="AndroidXMLHandler:AndroidXMLHandler"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="AndroidXMLHandler.html"><span class="name">AndroidXMLHandler</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#org.sireum.amandroid.parser.package@AndroidXMLHandlerextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Common interface for handlers working on Android xml files</p><div class="fullcomment"><div class="comment cmt"><p>Common interface for handlers working on Android xml files</p><p>adapted from Steven Arzt
+</p></div></div>
+    </li><li name="org.sireum.amandroid.parser.ComponentInfo" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ComponentInfoextendsProductwithSerializable"></a>
+      <a id="ComponentInfo:ComponentInfo"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="ComponentInfo.html"><span class="name">ComponentInfo</span></a><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="typ">typ: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="exported">exported: <span class="extype" name="scala.Boolean">Boolean</span></span>, <span name="permission">permission: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#org.sireum.amandroid.parser.package@ComponentInfoextendsProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt"></p>
+    </li><li name="org.sireum.amandroid.parser.Data" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="DataextendsAnyRef"></a>
+      <a id="Data:Data"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="Data.html"><span class="name">Data</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#org.sireum.amandroid.parser.package@DataextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.amandroid.parser.IntentFilter" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="IntentFilterextendsAnyRef"></a>
+      <a id="IntentFilter:IntentFilter"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="IntentFilter.html"><span class="name">IntentFilter</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#org.sireum.amandroid.parser.package@IntentFilterextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.amandroid.parser.IntentFilterDataBase" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="IntentFilterDataBaseextendsAnyRef"></a>
+      <a id="IntentFilterDataBase:IntentFilterDataBase"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="IntentFilterDataBase.html"><span class="name">IntentFilterDataBase</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#org.sireum.amandroid.parser.package@IntentFilterDataBaseextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt"></p>
+    </li><li name="org.sireum.amandroid.parser.LayoutControl" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="LayoutControlextendsProductwithSerializable"></a>
+      <a id="LayoutControl:LayoutControl"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="LayoutControl.html"><span class="name">LayoutControl</span></a><span class="params">(<span name="id">id: <span class="extype" name="scala.Int">Int</span></span>, <span name="viewClass">viewClass: <a href="../../jawa/JawaRecord.html" class="extype" name="org.sireum.jawa.JawaRecord">JawaRecord</a></span>, <span name="isSensitive">isSensitive: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">false</span></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#org.sireum.amandroid.parser.package@LayoutControlextendsProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Data class representing a layout control on the android screen</p><div class="fullcomment"><div class="comment cmt"><p>Data class representing a layout control on the android screen</p><p>adapted from Steven Arzt
+</p></div></div>
+    </li><li name="org.sireum.amandroid.parser.LayoutFileParser" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="LayoutFileParserextendsAbstractAndroidXMLParser"></a>
+      <a id="LayoutFileParser:LayoutFileParser"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="LayoutFileParser.html"><span class="name">LayoutFileParser</span></a><span class="result"> extends <a href="AbstractAndroidXMLParser.html" class="extype" name="org.sireum.amandroid.parser.AbstractAndroidXMLParser">AbstractAndroidXMLParser</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#org.sireum.amandroid.parser.package@LayoutFileParserextendsAbstractAndroidXMLParser" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Parser for analyzing the layout XML files inside an android application</p><div class="fullcomment"><div class="comment cmt"><p>Parser for analyzing the layout XML files inside an android application</p><p>adapted from Steven Arzt
+</p></div></div>
+    </li><li name="org.sireum.amandroid.parser.ManifestParser" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ManifestParserextendsAbstractAndroidXMLParser"></a>
+      <a id="ManifestParser:ManifestParser"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="ManifestParser.html"><span class="name">ManifestParser</span></a><span class="result"> extends <a href="AbstractAndroidXMLParser.html" class="extype" name="org.sireum.amandroid.parser.AbstractAndroidXMLParser">AbstractAndroidXMLParser</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#org.sireum.amandroid.parser.package@ManifestParserextendsAbstractAndroidXMLParser" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt"></p>
+    </li><li name="org.sireum.amandroid.parser.ResourceFileParser" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ResourceFileParserextendsAbstractAndroidXMLParser"></a>
+      <a id="ResourceFileParser:ResourceFileParser"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="ResourceFileParser.html"><span class="name">ResourceFileParser</span></a><span class="result"> extends <a href="AbstractAndroidXMLParser.html" class="extype" name="org.sireum.amandroid.parser.AbstractAndroidXMLParser">AbstractAndroidXMLParser</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#org.sireum.amandroid.parser.package@ResourceFileParserextendsAbstractAndroidXMLParser" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Parser for analyzing the resource XML files inside an android application
+</p>
+    </li><li name="org.sireum.amandroid.parser.UriData" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="UriDataextendsAnyRef"></a>
+      <a id="UriData:UriData"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="UriData.html"><span class="name">UriData</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#org.sireum.amandroid.parser.package@UriDataextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li></ol>
+            </div>
+
+        
+
+        
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+
+
+    </body>
+      </html>

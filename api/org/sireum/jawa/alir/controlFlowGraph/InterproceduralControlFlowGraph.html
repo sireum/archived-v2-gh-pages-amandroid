@@ -1,0 +1,1947 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <title>InterproceduralControlFlowGraph - Sireum-Amandroid-Api-Doc - org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph</title>
+          <meta name="description" content="InterproceduralControlFlowGraph - Sireum - Amandroid - Api - Doc - org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph" />
+          <meta name="keywords" content="InterproceduralControlFlowGraph Sireum Amandroid Api Doc org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../../../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../../../../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../../../../index.html';
+            var hash = 'org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="type">
+      <div id="definition">
+        <img src="../../../../../lib/class_big.png" />
+        <p id="owner"><a href="../../../../package.html" class="extype" name="org">org</a>.<a href="../../../package.html" class="extype" name="org.sireum">sireum</a>.<a href="../../package.html" class="extype" name="org.sireum.jawa">jawa</a>.<a href="../package.html" class="extype" name="org.sireum.jawa.alir">alir</a>.<a href="package.html" class="extype" name="org.sireum.jawa.alir.controlFlowGraph">controlFlowGraph</a></p>
+        <h1>InterproceduralControlFlowGraph</h1> <span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <span class="name">InterproceduralControlFlowGraph</span><span class="tparams">[<span name="Node">Node &lt;: <a href="CGNode.html" class="extype" name="org.sireum.jawa.alir.controlFlowGraph.CGNode">CGNode</a></span>]</span><span class="result"> extends <a href="../interProcedural/InterProceduralGraph.html" class="extype" name="org.sireum.jawa.alir.interProcedural.InterProceduralGraph">InterProceduralGraph</a>[<span class="extype" name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph.Node">Node</span>]</span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"></div><div class="toggleContainer block">
+          <span class="toggle">Linear Supertypes</span>
+          <div class="superTypes hiddenContent"><a href="../interProcedural/InterProceduralGraph.html" class="extype" name="org.sireum.jawa.alir.interProcedural.InterProceduralGraph">InterProceduralGraph</a>[<span class="extype" name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph.Node">Node</span>], <span class="extype" name="scala.Serializable">Serializable</span>, <span class="extype" name="java.io.Serializable">Serializable</span>, <span class="extype" name="org.sireum.alir.AlirSuccPredAccesses">AlirSuccPredAccesses</span>[<span class="extype" name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph.Node">Node</span>], <span class="extype" name="org.sireum.alir.AlirEdgeAccesses">AlirEdgeAccesses</span>[<span class="extype" name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph.Node">Node</span>], <span class="extype" name="org.sireum.alir.AlirGraph">AlirGraph</span>[<span class="extype" name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph.Node">Node</span>], <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+        </div></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        <div id="order">
+              <span class="filtertype">Ordering</span>
+              <ol>
+                
+                <li class="alpha in"><span>Alphabetic</span></li>
+                <li class="inherit out"><span>By inheritance</span></li>
+              </ol>
+            </div>
+        <div id="ancestors">
+                <span class="filtertype">Inherited<br />
+                </span>
+                <ol id="linearization">
+                  <li class="in" name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph"><span>InterproceduralControlFlowGraph</span></li><li class="in" name="org.sireum.jawa.alir.interProcedural.InterProceduralGraph"><span>InterProceduralGraph</span></li><li class="in" name="scala.Serializable"><span>Serializable</span></li><li class="in" name="java.io.Serializable"><span>Serializable</span></li><li class="in" name="org.sireum.alir.AlirSuccPredAccesses"><span>AlirSuccPredAccesses</span></li><li class="in" name="org.sireum.alir.AlirEdgeAccesses"><span>AlirEdgeAccesses</span></li><li class="in" name="org.sireum.alir.AlirGraph"><span>AlirGraph</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                </ol>
+              </div><div id="ancestors">
+            <span class="filtertype"></span>
+            <ol>
+              <li class="hideall out"><span>Hide All</span></li>
+              <li class="showall in"><span>Show all</span></li>
+            </ol>
+            <a href="http://docs.scala-lang.org/overviews/scaladoc/usage.html#members" target="_blank">Learn more about member selection</a>
+          </div>
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        <div id="constructors" class="members">
+              <h3>Instance Constructors</h3>
+              <ol><li name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph#&lt;init&gt;" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="&lt;init&gt;():org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph[Node]"></a>
+      <a id="&lt;init&gt;:InterproceduralControlFlowGraph[Node]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">new</span>
+      </span>
+      <span class="symbol">
+        <span class="name">InterproceduralControlFlowGraph</span><span class="params">()</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph@&lt;init&gt;():org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph[Node]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li></ol>
+            </div>
+
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="org.sireum.alir.AlirGraph.Edge" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="Edge=org.sireum.alir.AlirEdge[Node]"></a>
+      <a id="Edge:Edge"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">type</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Edge</span><span class="result"> = <span class="extype" name="org.sireum.alir.AlirEdge">AlirEdge</span>[<span class="extype" name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph.Node">Node</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph@Edge=org.sireum.alir.AlirEdge[Node]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AlirGraph</dd></dl></div>
+    </li></ol>
+            </div>
+
+        
+
+        <div id="values" class="values members">
+              <h3>Value Members</h3>
+              <ol><li name="scala.AnyRef#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="!=(x$1:Any):Boolean"></a>
+      <a id="!=(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph@!=(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef###" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="##():Int"></a>
+      <a id="##():Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph@##():Int" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="==(x$1:Any):Boolean"></a>
+      <a id="==(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph@==(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph#BRANCH_PROPERTY_KEY" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="BRANCH_PROPERTY_KEY:String"></a>
+      <a id="BRANCH_PROPERTY_KEY:String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">BRANCH_PROPERTY_KEY</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph@BRANCH_PROPERTY_KEY:String" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph#EDGE_TYPE" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="EDGE_TYPE:String(&quot;EdgeType&quot;)"></a>
+      <a id="EDGE_TYPE:String(&quot;EdgeType&quot;)"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">EDGE_TYPE</span><span class="result">: String(&quot;EdgeType&quot;)</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph@EDGE_TYPE:String(&quot;EdgeType&quot;)" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph#addCGCallNode" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="addCGCallNode(context:org.sireum.jawa.alir.Context):Node"></a>
+      <a id="addCGCallNode(Context):Node"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">addCGCallNode</span><span class="params">(<span name="context">context: <a href="../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>)</span><span class="result">: <span class="extype" name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph.Node">Node</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph@addCGCallNode(context:org.sireum.jawa.alir.Context):Node" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph#addCGCenterNode" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="addCGCenterNode(context:org.sireum.jawa.alir.Context):Node"></a>
+      <a id="addCGCenterNode(Context):Node"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">addCGCenterNode</span><span class="params">(<span name="context">context: <a href="../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>)</span><span class="result">: <span class="extype" name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph.Node">Node</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph@addCGCenterNode(context:org.sireum.jawa.alir.Context):Node" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph#addCGEntryNode" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="addCGEntryNode(context:org.sireum.jawa.alir.Context):Node"></a>
+      <a id="addCGEntryNode(Context):Node"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">addCGEntryNode</span><span class="params">(<span name="context">context: <a href="../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>)</span><span class="result">: <span class="extype" name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph.Node">Node</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph@addCGEntryNode(context:org.sireum.jawa.alir.Context):Node" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph#addCGExitNode" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="addCGExitNode(context:org.sireum.jawa.alir.Context):Node"></a>
+      <a id="addCGExitNode(Context):Node"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">addCGExitNode</span><span class="params">(<span name="context">context: <a href="../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>)</span><span class="result">: <span class="extype" name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph.Node">Node</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph@addCGExitNode(context:org.sireum.jawa.alir.Context):Node" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph#addCGNormalNode" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="addCGNormalNode(context:org.sireum.jawa.alir.Context):Node"></a>
+      <a id="addCGNormalNode(Context):Node"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">addCGNormalNode</span><span class="params">(<span name="context">context: <a href="../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>)</span><span class="result">: <span class="extype" name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph.Node">Node</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph@addCGNormalNode(context:org.sireum.jawa.alir.Context):Node" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph#addCGReturnNode" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="addCGReturnNode(context:org.sireum.jawa.alir.Context):Node"></a>
+      <a id="addCGReturnNode(Context):Node"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">addCGReturnNode</span><span class="params">(<span name="context">context: <a href="../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>)</span><span class="result">: <span class="extype" name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph.Node">Node</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph@addCGReturnNode(context:org.sireum.jawa.alir.Context):Node" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph#addEdge" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="addEdge(source:Node,target:Node,typ:String):InterproceduralControlFlowGraph.this.Edge"></a>
+      <a id="addEdge(Node,Node,String):Edge"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">addEdge</span><span class="params">(<span name="source">source: <span class="extype" name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph.Node">Node</span></span>, <span name="target">target: <span class="extype" name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph.Node">Node</span></span>, <span name="typ">typ: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="#Edge=org.sireum.alir.AlirEdge[Node]" class="extmbr" name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph.Edge">Edge</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph@addEdge(source:Node,target:Node,typ:String):InterproceduralControlFlowGraph.this.Edge" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.alir.AlirEdgeAccesses#addEdge" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="addEdge(e:AlirEdgeAccesses.this.Edge):Boolean"></a>
+      <a id="addEdge(Edge):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">addEdge</span><span class="params">(<span name="e">e: <a href="#Edge=org.sireum.alir.AlirEdge[Node]" class="extmbr" name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph.Edge">Edge</a></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph@addEdge(e:AlirEdgeAccesses.this.Edge):Boolean" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AlirEdgeAccesses</dd></dl></div>
+    </li><li name="org.sireum.alir.AlirEdgeAccesses#addEdge" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="addEdge(source:Node,target:Node):AlirEdgeAccesses.this.Edge"></a>
+      <a id="addEdge(Node,Node):Edge"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">addEdge</span><span class="params">(<span name="source">source: <span class="extype" name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph.Node">Node</span></span>, <span name="target">target: <span class="extype" name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph.Node">Node</span></span>)</span><span class="result">: <a href="#Edge=org.sireum.alir.AlirEdge[Node]" class="extmbr" name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph.Edge">Edge</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph@addEdge(source:Node,target:Node):AlirEdgeAccesses.this.Edge" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AlirEdgeAccesses</dd></dl></div>
+    </li><li name="org.sireum.jawa.alir.interProcedural.InterProceduralGraph#addNode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="addNode(node:Node):Node"></a>
+      <a id="addNode(Node):Node"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">addNode</span><span class="params">(<span name="node">node: <span class="extype" name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph.Node">Node</span></span>)</span><span class="result">: <span class="extype" name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph.Node">Node</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph@addNode(node:Node):Node" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../interProcedural/InterProceduralGraph.html" class="extype" name="org.sireum.jawa.alir.interProcedural.InterProceduralGraph">InterProceduralGraph</a> → AlirEdgeAccesses</dd></dl></div>
+    </li><li name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph#addProcessed" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="addProcessed(jp:String,c:org.sireum.jawa.alir.Context,nodes:org.sireum.util.ISet[Node]):org.sireum.util.MMap[(String,org.sireum.jawa.alir.Context),org.sireum.util.ISet[Node]]"></a>
+      <a id="addProcessed(String,Context,ISet[Node]):MMap[(String,Context),ISet[Node]]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">addProcessed</span><span class="params">(<span name="jp">jp: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="c">c: <a href="../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>, <span name="nodes">nodes: <span class="extype" name="org.sireum.util.ISet">ISet</span>[<span class="extype" name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph.Node">Node</span>]</span>)</span><span class="result">: <span class="extype" name="org.sireum.util.MMap">MMap</span>[(<span class="extype" name="scala.Predef.String">String</span>, <a href="../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a>), <span class="extype" name="org.sireum.util.ISet">ISet</span>[<span class="extype" name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph.Node">Node</span>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph@addProcessed(jp:String,c:org.sireum.jawa.alir.Context,nodes:org.sireum.util.ISet[Node]):org.sireum.util.MMap[(String,org.sireum.jawa.alir.Context),org.sireum.util.ISet[Node]]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="scala.Any#asInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="asInstanceOf[T0]:T0"></a>
+      <a id="asInstanceOf[T0]:T0"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Any.asInstanceOf.T0">T0</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph@asInstanceOf[T0]:T0" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph#buildAutomata" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="buildAutomata():dk.brics.automaton.Automaton"></a>
+      <a id="buildAutomata():Automaton"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">buildAutomata</span><span class="params">()</span><span class="result">: <span class="extype" name="dk.brics.automaton.Automaton">Automaton</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph@buildAutomata():dk.brics.automaton.Automaton" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph#centerContext" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="centerContext:org.sireum.jawa.alir.Context"></a>
+      <a id="centerContext:Context"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">centerContext</span><span class="result">: <a href="../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph@centerContext:org.sireum.jawa.alir.Context" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph#centerN" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="centerN:org.sireum.jawa.alir.controlFlowGraph.CGNode"></a>
+      <a id="centerN:CGNode"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">var</span>
+      </span>
+      <span class="symbol">
+        <span class="name">centerN</span><span class="result">: <a href="CGNode.html" class="extype" name="org.sireum.jawa.alir.controlFlowGraph.CGNode">CGNode</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph@centerN:org.sireum.jawa.alir.controlFlowGraph.CGNode" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
+    </li><li name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph#centerNode" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="centerNode:Node"></a>
+      <a id="centerNode:Node"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">centerNode</span><span class="result">: <span class="extype" name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph.Node">Node</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph@centerNode:Node" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph#cgCGCenterNodeExists" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="cgCGCenterNodeExists(context:org.sireum.jawa.alir.Context):Boolean"></a>
+      <a id="cgCGCenterNodeExists(Context):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">cgCGCenterNodeExists</span><span class="params">(<span name="context">context: <a href="../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph@cgCGCenterNodeExists(context:org.sireum.jawa.alir.Context):Boolean" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph#cgCallNodeExists" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="cgCallNodeExists(context:org.sireum.jawa.alir.Context):Boolean"></a>
+      <a id="cgCallNodeExists(Context):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">cgCallNodeExists</span><span class="params">(<span name="context">context: <a href="../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph@cgCallNodeExists(context:org.sireum.jawa.alir.Context):Boolean" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph#cgEntryNodeExists" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="cgEntryNodeExists(context:org.sireum.jawa.alir.Context):Boolean"></a>
+      <a id="cgEntryNodeExists(Context):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">cgEntryNodeExists</span><span class="params">(<span name="context">context: <a href="../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph@cgEntryNodeExists(context:org.sireum.jawa.alir.Context):Boolean" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph#cgExitNodeExists" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="cgExitNodeExists(context:org.sireum.jawa.alir.Context):Boolean"></a>
+      <a id="cgExitNodeExists(Context):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">cgExitNodeExists</span><span class="params">(<span name="context">context: <a href="../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph@cgExitNodeExists(context:org.sireum.jawa.alir.Context):Boolean" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph#cgNormalNodeExists" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="cgNormalNodeExists(context:org.sireum.jawa.alir.Context):Boolean"></a>
+      <a id="cgNormalNodeExists(Context):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">cgNormalNodeExists</span><span class="params">(<span name="context">context: <a href="../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph@cgNormalNodeExists(context:org.sireum.jawa.alir.Context):Boolean" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph#cgReturnNodeExists" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="cgReturnNodeExists(context:org.sireum.jawa.alir.Context):Boolean"></a>
+      <a id="cgReturnNodeExists(Context):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">cgReturnNodeExists</span><span class="params">(<span name="context">context: <a href="../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph@cgReturnNodeExists(context:org.sireum.jawa.alir.Context):Boolean" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="scala.AnyRef#clone" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="clone():Object"></a>
+      <a id="clone():AnyRef"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">clone</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph@clone():Object" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.CloneNotSupportedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph#collectCfgToBaseGraph" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="collectCfgToBaseGraph[VirtualLabel](calleeProc:org.sireum.jawa.JawaProcedure,callerContext:org.sireum.jawa.alir.Context,isFirst:Boolean):org.sireum.util.ISet[Node]"></a>
+      <a id="collectCfgToBaseGraph[VirtualLabel](JawaProcedure,Context,Boolean):ISet[Node]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">collectCfgToBaseGraph</span><span class="tparams">[<span name="VirtualLabel">VirtualLabel</span>]</span><span class="params">(<span name="calleeProc">calleeProc: <a href="../../JawaProcedure.html" class="extype" name="org.sireum.jawa.JawaProcedure">JawaProcedure</a></span>, <span name="callerContext">callerContext: <a href="../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>, <span name="isFirst">isFirst: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">false</span></span>)</span><span class="result">: <span class="extype" name="org.sireum.util.ISet">ISet</span>[<span class="extype" name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph.Node">Node</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph@collectCfgToBaseGraph[VirtualLabel](calleeProc:org.sireum.jawa.JawaProcedure,callerContext:org.sireum.jawa.alir.Context,isFirst:Boolean):org.sireum.util.ISet[Node]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph#compressByDelNode" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="compressByDelNode(n:Node):Boolean"></a>
+      <a id="compressByDelNode(Node):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">compressByDelNode</span><span class="params">(<span name="n">n: <span class="extype" name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph.Node">Node</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph@compressByDelNode(n:Node):Boolean" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">(We ASSUME that predecessors ???? and successors of n are within the same procedure as of n)
+So, this algorithm is only for an internal node of a procedure NOT for a procedure's Entry node or Exit node
+The algorithm is obvious from the following code
+</p>
+    </li><li name="org.sireum.jawa.alir.interProcedural.InterProceduralGraph#deleteEdge" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="deleteEdge(e:InterProceduralGraph.this.Edge):Boolean"></a>
+      <a id="deleteEdge(Edge):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">deleteEdge</span><span class="params">(<span name="e">e: <a href="#Edge=org.sireum.alir.AlirEdge[Node]" class="extmbr" name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph.Edge">Edge</a></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph@deleteEdge(e:InterProceduralGraph.this.Edge):Boolean" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../interProcedural/InterProceduralGraph.html" class="extype" name="org.sireum.jawa.alir.interProcedural.InterProceduralGraph">InterProceduralGraph</a></dd></dl></div>
+    </li><li name="org.sireum.jawa.alir.interProcedural.InterProceduralGraph#deleteEdge" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="deleteEdge(source:Node,target:Node):InterProceduralGraph.this.Edge"></a>
+      <a id="deleteEdge(Node,Node):Edge"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">deleteEdge</span><span class="params">(<span name="source">source: <span class="extype" name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph.Node">Node</span></span>, <span name="target">target: <span class="extype" name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph.Node">Node</span></span>)</span><span class="result">: <a href="#Edge=org.sireum.alir.AlirEdge[Node]" class="extmbr" name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph.Edge">Edge</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph@deleteEdge(source:Node,target:Node):InterProceduralGraph.this.Edge" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../interProcedural/InterProceduralGraph.html" class="extype" name="org.sireum.jawa.alir.interProcedural.InterProceduralGraph">InterProceduralGraph</a></dd></dl></div>
+    </li><li name="org.sireum.jawa.alir.interProcedural.InterProceduralGraph#deleteNode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="deleteNode(node:Node):Boolean"></a>
+      <a id="deleteNode(Node):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">deleteNode</span><span class="params">(<span name="node">node: <span class="extype" name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph.Node">Node</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph@deleteNode(node:Node):Boolean" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../interProcedural/InterProceduralGraph.html" class="extype" name="org.sireum.jawa.alir.interProcedural.InterProceduralGraph">InterProceduralGraph</a></dd></dl></div>
+    </li><li name="org.sireum.alir.AlirSuccPredAccesses#edgeSource" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="edgeSource(edge:org.sireum.alir.AlirEdge[Node]):Node"></a>
+      <a id="edgeSource(AlirEdge[Node]):Node"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">edgeSource</span><span class="params">(<span name="edge">edge: <span class="extype" name="org.sireum.alir.AlirEdge">AlirEdge</span>[<span class="extype" name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph.Node">Node</span>]</span>)</span><span class="result">: <span class="extype" name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph.Node">Node</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph@edgeSource(edge:org.sireum.alir.AlirEdge[Node]):Node" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd>AlirSuccPredAccesses</dd></dl></div>
+    </li><li name="org.sireum.alir.AlirSuccPredAccesses#edgeTarget" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="edgeTarget(edge:org.sireum.alir.AlirEdge[Node]):Node"></a>
+      <a id="edgeTarget(AlirEdge[Node]):Node"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">edgeTarget</span><span class="params">(<span name="edge">edge: <span class="extype" name="org.sireum.alir.AlirEdge">AlirEdge</span>[<span class="extype" name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph.Node">Node</span>]</span>)</span><span class="result">: <span class="extype" name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph.Node">Node</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph@edgeTarget(edge:org.sireum.alir.AlirEdge[Node]):Node" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd>AlirSuccPredAccesses</dd></dl></div>
+    </li><li name="org.sireum.alir.AlirGraph#edges" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="edges:Iterable[AlirGraph.this.Edge]"></a>
+      <a id="edges:Iterable[Edge]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">edges</span><span class="result">: <span class="extype" name="scala.Iterable">Iterable</span>[<a href="#Edge=org.sireum.alir.AlirEdge[Node]" class="extmbr" name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph.Edge">Edge</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph@edges:Iterable[AlirGraph.this.Edge]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AlirGraph</dd></dl></div>
+    </li><li name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph#entryN" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="entryN:org.sireum.jawa.alir.controlFlowGraph.CGNode"></a>
+      <a id="entryN:CGNode"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">var</span>
+      </span>
+      <span class="symbol">
+        <span class="name">entryN</span><span class="result">: <a href="CGNode.html" class="extype" name="org.sireum.jawa.alir.controlFlowGraph.CGNode">CGNode</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph@entryN:org.sireum.jawa.alir.controlFlowGraph.CGNode" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
+    </li><li name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph#entryNode" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="entryNode(proc:String,callerContext:org.sireum.jawa.alir.Context):Node"></a>
+      <a id="entryNode(String,Context):Node"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">entryNode</span><span class="params">(<span name="proc">proc: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="callerContext">callerContext: <a href="../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>)</span><span class="result">: <span class="extype" name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph.Node">Node</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph@entryNode(proc:String,callerContext:org.sireum.jawa.alir.Context):Node" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph#entryNode" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="entryNode:Node"></a>
+      <a id="entryNode:Node"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">entryNode</span><span class="result">: <span class="extype" name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph.Node">Node</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph@entryNode:Node" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="eq(x$1:AnyRef):Boolean"></a>
+      <a id="eq(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph@eq(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#equals" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="equals(x$1:Any):Boolean"></a>
+      <a id="equals(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph@equals(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph#exitN" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="exitN:org.sireum.jawa.alir.controlFlowGraph.CGNode"></a>
+      <a id="exitN:CGNode"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">var</span>
+      </span>
+      <span class="symbol">
+        <span class="name">exitN</span><span class="result">: <a href="CGNode.html" class="extype" name="org.sireum.jawa.alir.controlFlowGraph.CGNode">CGNode</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph@exitN:org.sireum.jawa.alir.controlFlowGraph.CGNode" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
+    </li><li name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph#exitNode" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="exitNode:Node"></a>
+      <a id="exitNode:Node"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">exitNode</span><span class="result">: <span class="extype" name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph.Node">Node</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph@exitNode:Node" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph#extendGraph" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="extendGraph(calleeSig:String,callerContext:org.sireum.jawa.alir.Context):Node"></a>
+      <a id="extendGraph(String,Context):Node"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">extendGraph</span><span class="params">(<span name="calleeSig">calleeSig: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="callerContext">callerContext: <a href="../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>)</span><span class="result">: <span class="extype" name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph.Node">Node</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph@extendGraph(calleeSig:String,callerContext:org.sireum.jawa.alir.Context):Node" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph#extendGraphOneWay" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="extendGraphOneWay(calleeSig:String,callerContext:org.sireum.jawa.alir.Context,typ:String):Node"></a>
+      <a id="extendGraphOneWay(String,Context,String):Node"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">extendGraphOneWay</span><span class="params">(<span name="calleeSig">calleeSig: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="callerContext">callerContext: <a href="../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>, <span name="typ">typ: <span class="extype" name="scala.Predef.String">String</span> = <span class="symbol">null</span></span>)</span><span class="result">: <span class="extype" name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph.Node">Node</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph@extendGraphOneWay(calleeSig:String,callerContext:org.sireum.jawa.alir.Context,typ:String):Node" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="scala.AnyRef#finalize" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="finalize():Unit"></a>
+      <a id="finalize():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph@finalize():Unit" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="symbol">classOf[java.lang.Throwable]</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="org.sireum.jawa.alir.interProcedural.InterProceduralGraph#findPath" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="findPath(srcNode:Node,tarNode:Node):org.sireum.util.IList[InterProceduralGraph.this.Edge]"></a>
+      <a id="findPath(Node,Node):IList[Edge]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">findPath</span><span class="params">(<span name="srcNode">srcNode: <span class="extype" name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph.Node">Node</span></span>, <span name="tarNode">tarNode: <span class="extype" name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph.Node">Node</span></span>)</span><span class="result">: <span class="extype" name="org.sireum.util.IList">IList</span>[<a href="#Edge=org.sireum.alir.AlirEdge[Node]" class="extmbr" name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph.Edge">Edge</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph@findPath(srcNode:Node,tarNode:Node):org.sireum.util.IList[InterProceduralGraph.this.Edge]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../interProcedural/InterProceduralGraph.html" class="extype" name="org.sireum.jawa.alir.interProcedural.InterProceduralGraph">InterProceduralGraph</a></dd></dl></div>
+    </li><li name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph#getCGCallNode" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="getCGCallNode(context:org.sireum.jawa.alir.Context):Node"></a>
+      <a id="getCGCallNode(Context):Node"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getCGCallNode</span><span class="params">(<span name="context">context: <a href="../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>)</span><span class="result">: <span class="extype" name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph.Node">Node</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph@getCGCallNode(context:org.sireum.jawa.alir.Context):Node" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph#getCGCenterNode" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="getCGCenterNode(context:org.sireum.jawa.alir.Context):Node"></a>
+      <a id="getCGCenterNode(Context):Node"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getCGCenterNode</span><span class="params">(<span name="context">context: <a href="../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>)</span><span class="result">: <span class="extype" name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph.Node">Node</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph@getCGCenterNode(context:org.sireum.jawa.alir.Context):Node" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph#getCGEntryNode" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="getCGEntryNode(context:org.sireum.jawa.alir.Context):Node"></a>
+      <a id="getCGEntryNode(Context):Node"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getCGEntryNode</span><span class="params">(<span name="context">context: <a href="../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>)</span><span class="result">: <span class="extype" name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph.Node">Node</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph@getCGEntryNode(context:org.sireum.jawa.alir.Context):Node" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph#getCGExitNode" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="getCGExitNode(context:org.sireum.jawa.alir.Context):Node"></a>
+      <a id="getCGExitNode(Context):Node"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getCGExitNode</span><span class="params">(<span name="context">context: <a href="../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>)</span><span class="result">: <span class="extype" name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph.Node">Node</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph@getCGExitNode(context:org.sireum.jawa.alir.Context):Node" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph#getCGNormalNode" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="getCGNormalNode(context:org.sireum.jawa.alir.Context):Node"></a>
+      <a id="getCGNormalNode(Context):Node"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getCGNormalNode</span><span class="params">(<span name="context">context: <a href="../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>)</span><span class="result">: <span class="extype" name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph.Node">Node</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph@getCGNormalNode(context:org.sireum.jawa.alir.Context):Node" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph#getCGReturnNode" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="getCGReturnNode(context:org.sireum.jawa.alir.Context):Node"></a>
+      <a id="getCGReturnNode(Context):Node"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getCGReturnNode</span><span class="params">(<span name="context">context: <a href="../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>)</span><span class="result">: <span class="extype" name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph.Node">Node</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph@getCGReturnNode(context:org.sireum.jawa.alir.Context):Node" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph#getCallMap" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="getCallMap:org.sireum.util.IMap[String,org.sireum.util.ISet[String]]"></a>
+      <a id="getCallMap:IMap[String,ISet[String]]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getCallMap</span><span class="result">: <span class="extype" name="org.sireum.util.IMap">IMap</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="org.sireum.util.ISet">ISet</span>[<span class="extype" name="scala.Predef.String">String</span>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph@getCallMap:org.sireum.util.IMap[String,org.sireum.util.ISet[String]]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="scala.AnyRef#getClass" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getClass():Class[_]"></a>
+      <a id="getClass():Class[_]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getClass</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.Class">Class</span>[_]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph@getClass():Class[_]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="org.sireum.alir.AlirGraph#getEdges" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getEdges(n1:Node,n2:Node):org.sireum.util.CSet[AlirGraph.this.Edge]"></a>
+      <a id="getEdges(Node,Node):CSet[Edge]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getEdges</span><span class="params">(<span name="n1">n1: <span class="extype" name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph.Node">Node</span></span>, <span name="n2">n2: <span class="extype" name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph.Node">Node</span></span>)</span><span class="result">: <span class="extype" name="org.sireum.util.CSet">CSet</span>[<a href="#Edge=org.sireum.alir.AlirEdge[Node]" class="extmbr" name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph.Edge">Edge</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph@getEdges(n1:Node,n2:Node):org.sireum.util.CSet[AlirGraph.this.Edge]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AlirGraph</dd></dl></div>
+    </li><li name="org.sireum.jawa.alir.interProcedural.InterProceduralGraph#getNode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getNode(n:Node):Node"></a>
+      <a id="getNode(Node):Node"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getNode</span><span class="params">(<span name="n">n: <span class="extype" name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph.Node">Node</span></span>)</span><span class="result">: <span class="extype" name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph.Node">Node</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph@getNode(n:Node):Node" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../interProcedural/InterProceduralGraph.html" class="extype" name="org.sireum.jawa.alir.interProcedural.InterProceduralGraph">InterProceduralGraph</a> → AlirGraph</dd></dl></div>
+    </li><li name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph#getProcessed" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="getProcessed:org.sireum.util.MMap[(String,org.sireum.jawa.alir.Context),org.sireum.util.ISet[Node]]"></a>
+      <a id="getProcessed:MMap[(String,Context),ISet[Node]]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getProcessed</span><span class="result">: <span class="extype" name="org.sireum.util.MMap">MMap</span>[(<span class="extype" name="scala.Predef.String">String</span>, <a href="../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a>), <span class="extype" name="org.sireum.util.ISet">ISet</span>[<span class="extype" name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph.Node">Node</span>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph@getProcessed:org.sireum.util.MMap[(String,org.sireum.jawa.alir.Context),org.sireum.util.ISet[Node]]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph#getReachableProcedures" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="getReachableProcedures(procs:Set[String]):Set[String]"></a>
+      <a id="getReachableProcedures(Set[String]):Set[String]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getReachableProcedures</span><span class="params">(<span name="procs">procs: <span class="extype" name="scala.Predef.Set">Set</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>)</span><span class="result">: <span class="extype" name="scala.Predef.Set">Set</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph@getReachableProcedures(procs:Set[String]):Set[String]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.jawa.alir.interProcedural.InterProceduralGraph#graph" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="graph:org.jgrapht.graph.DirectedPseudograph[Node,InterProceduralGraph.this.Edge]"></a>
+      <a id="graph:DirectedPseudograph[Node,Edge]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">graph</span><span class="result">: <span class="extype" name="org.jgrapht.graph.DirectedPseudograph">DirectedPseudograph</span>[<span class="extype" name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph.Node">Node</span>, <a href="#Edge=org.sireum.alir.AlirEdge[Node]" class="extmbr" name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph.Edge">Edge</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph@graph:org.jgrapht.graph.DirectedPseudograph[Node,InterProceduralGraph.this.Edge]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="../interProcedural/InterProceduralGraph.html" class="extype" name="org.sireum.jawa.alir.interProcedural.InterProceduralGraph">InterProceduralGraph</a> → AlirGraph</dd></dl></div>
+    </li><li name="org.sireum.alir.AlirGraph#hasEdge" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="hasEdge(n1:Node,n2:Node):Boolean"></a>
+      <a id="hasEdge(Node,Node):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">hasEdge</span><span class="params">(<span name="n1">n1: <span class="extype" name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph.Node">Node</span></span>, <span name="n2">n2: <span class="extype" name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph.Node">Node</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph@hasEdge(n1:Node,n2:Node):Boolean" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AlirGraph</dd></dl></div>
+    </li><li name="org.sireum.alir.AlirGraph#hasNode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="hasNode(n:Node):Boolean"></a>
+      <a id="hasNode(Node):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">hasNode</span><span class="params">(<span name="n">n: <span class="extype" name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph.Node">Node</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph@hasNode(n:Node):Boolean" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AlirGraph</dd></dl></div>
+    </li><li name="scala.AnyRef#hashCode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="hashCode():Int"></a>
+      <a id="hashCode():Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph@hashCode():Int" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph#isCall" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="isCall(l:org.sireum.pilar.ast.LocationDecl):Boolean"></a>
+      <a id="isCall(LocationDecl):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isCall</span><span class="params">(<span name="l">l: <span class="extype" name="org.sireum.pilar.ast.LocationDecl">LocationDecl</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph@isCall(l:org.sireum.pilar.ast.LocationDecl):Boolean" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph#isEdgeType" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="isEdgeType(e:InterproceduralControlFlowGraph.this.Edge,typ:String):Boolean"></a>
+      <a id="isEdgeType(Edge,String):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isEdgeType</span><span class="params">(<span name="e">e: <a href="#Edge=org.sireum.alir.AlirEdge[Node]" class="extmbr" name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph.Edge">Edge</a></span>, <span name="typ">typ: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph@isEdgeType(e:InterproceduralControlFlowGraph.this.Edge,typ:String):Boolean" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="scala.Any#isInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph@isInstanceOf[T0]:Boolean" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph#isProcessed" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="isProcessed(proc:String,callerContext:org.sireum.jawa.alir.Context):Boolean"></a>
+      <a id="isProcessed(String,Context):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isProcessed</span><span class="params">(<span name="proc">proc: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="callerContext">callerContext: <a href="../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph@isProcessed(proc:String,callerContext:org.sireum.jawa.alir.Context):Boolean" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph#merge" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="merge(cg:org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph[Node]):scala.collection.mutable.Map[(Node,Option[org.sireum.pilar.ast.Branch]),Node]"></a>
+      <a id="merge(InterproceduralControlFlowGraph[Node]):Map[(Node,Option[Branch]),Node]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">merge</span><span class="params">(<span name="cg">cg: <a href="" class="extype" name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph">InterproceduralControlFlowGraph</a>[<span class="extype" name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph.Node">Node</span>]</span>)</span><span class="result">: <span class="extype" name="scala.collection.mutable.Map">Map</span>[(<span class="extype" name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph.Node">Node</span>, <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="org.sireum.pilar.ast.Branch">Branch</span>]), <span class="extype" name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph.Node">Node</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph@merge(cg:org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph[Node]):scala.collection.mutable.Map[(Node,Option[org.sireum.pilar.ast.Branch]),Node]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ne(x$1:AnyRef):Boolean"></a>
+      <a id="ne(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph@ne(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph#newCGCallNode" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="newCGCallNode(context:org.sireum.jawa.alir.Context):org.sireum.jawa.alir.controlFlowGraph.CGCallNode"></a>
+      <a id="newCGCallNode(Context):CGCallNode"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">newCGCallNode</span><span class="params">(<span name="context">context: <a href="../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>)</span><span class="result">: <a href="CGCallNode.html" class="extype" name="org.sireum.jawa.alir.controlFlowGraph.CGCallNode">CGCallNode</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph@newCGCallNode(context:org.sireum.jawa.alir.Context):org.sireum.jawa.alir.controlFlowGraph.CGCallNode" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
+    </li><li name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph#newCGCenterNode" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="newCGCenterNode(context:org.sireum.jawa.alir.Context):org.sireum.jawa.alir.controlFlowGraph.CGCenterNode"></a>
+      <a id="newCGCenterNode(Context):CGCenterNode"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">newCGCenterNode</span><span class="params">(<span name="context">context: <a href="../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>)</span><span class="result">: <a href="CGCenterNode.html" class="extype" name="org.sireum.jawa.alir.controlFlowGraph.CGCenterNode">CGCenterNode</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph@newCGCenterNode(context:org.sireum.jawa.alir.Context):org.sireum.jawa.alir.controlFlowGraph.CGCenterNode" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
+    </li><li name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph#newCGEntryNode" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="newCGEntryNode(context:org.sireum.jawa.alir.Context):org.sireum.jawa.alir.controlFlowGraph.CGEntryNode"></a>
+      <a id="newCGEntryNode(Context):CGEntryNode"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">newCGEntryNode</span><span class="params">(<span name="context">context: <a href="../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>)</span><span class="result">: <a href="CGEntryNode.html" class="extype" name="org.sireum.jawa.alir.controlFlowGraph.CGEntryNode">CGEntryNode</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph@newCGEntryNode(context:org.sireum.jawa.alir.Context):org.sireum.jawa.alir.controlFlowGraph.CGEntryNode" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
+    </li><li name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph#newCGExitNode" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="newCGExitNode(context:org.sireum.jawa.alir.Context):org.sireum.jawa.alir.controlFlowGraph.CGExitNode"></a>
+      <a id="newCGExitNode(Context):CGExitNode"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">newCGExitNode</span><span class="params">(<span name="context">context: <a href="../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>)</span><span class="result">: <a href="CGExitNode.html" class="extype" name="org.sireum.jawa.alir.controlFlowGraph.CGExitNode">CGExitNode</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph@newCGExitNode(context:org.sireum.jawa.alir.Context):org.sireum.jawa.alir.controlFlowGraph.CGExitNode" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
+    </li><li name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph#newCGNormalNode" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="newCGNormalNode(context:org.sireum.jawa.alir.Context):org.sireum.jawa.alir.controlFlowGraph.CGNormalNode"></a>
+      <a id="newCGNormalNode(Context):CGNormalNode"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">newCGNormalNode</span><span class="params">(<span name="context">context: <a href="../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>)</span><span class="result">: <a href="CGNormalNode.html" class="extype" name="org.sireum.jawa.alir.controlFlowGraph.CGNormalNode">CGNormalNode</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph@newCGNormalNode(context:org.sireum.jawa.alir.Context):org.sireum.jawa.alir.controlFlowGraph.CGNormalNode" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
+    </li><li name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph#newCGReturnNode" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="newCGReturnNode(context:org.sireum.jawa.alir.Context):org.sireum.jawa.alir.controlFlowGraph.CGReturnNode"></a>
+      <a id="newCGReturnNode(Context):CGReturnNode"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">newCGReturnNode</span><span class="params">(<span name="context">context: <a href="../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>)</span><span class="result">: <a href="CGReturnNode.html" class="extype" name="org.sireum.jawa.alir.controlFlowGraph.CGReturnNode">CGReturnNode</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph@newCGReturnNode(context:org.sireum.jawa.alir.Context):org.sireum.jawa.alir.controlFlowGraph.CGReturnNode" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
+    </li><li name="org.sireum.alir.AlirGraph#nodes" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="nodes:Iterable[Node]"></a>
+      <a id="nodes:Iterable[Node]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">nodes</span><span class="result">: <span class="extype" name="scala.Iterable">Iterable</span>[<span class="extype" name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph.Node">Node</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph@nodes:Iterable[Node]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AlirGraph</dd></dl></div>
+    </li><li name="scala.AnyRef#notify" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notify():Unit"></a>
+      <a id="notify():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notify</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph@notify():Unit" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#notifyAll" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notifyAll():Unit"></a>
+      <a id="notifyAll():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph@notifyAll():Unit" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="org.sireum.alir.AlirGraph#numOfEdges" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="numOfEdges:Int"></a>
+      <a id="numOfEdges:Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">numOfEdges</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph@numOfEdges:Int" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AlirGraph</dd></dl></div>
+    </li><li name="org.sireum.alir.AlirGraph#numOfNodes" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="numOfNodes:Int"></a>
+      <a id="numOfNodes:Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">numOfNodes</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph@numOfNodes:Int" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AlirGraph</dd></dl></div>
+    </li><li name="org.sireum.jawa.alir.interProcedural.InterProceduralGraph#pl" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="pl:org.sireum.util.MMap[org.sireum.jawa.alir.interProcedural.InterProceduralNode,Node]"></a>
+      <a id="pl:MMap[InterProceduralNode,Node]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">pl</span><span class="result">: <span class="extype" name="org.sireum.util.MMap">MMap</span>[<a href="../interProcedural/InterProceduralNode.html" class="extype" name="org.sireum.jawa.alir.interProcedural.InterProceduralNode">InterProceduralNode</a>, <span class="extype" name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph.Node">Node</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph@pl:org.sireum.util.MMap[org.sireum.jawa.alir.interProcedural.InterProceduralNode,Node]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="../interProcedural/InterProceduralGraph.html" class="extype" name="org.sireum.jawa.alir.interProcedural.InterProceduralGraph">InterProceduralGraph</a></dd></dl></div>
+    </li><li name="org.sireum.jawa.alir.interProcedural.InterProceduralGraph#pool" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="pool:org.sireum.util.MMap[org.sireum.jawa.alir.interProcedural.InterProceduralNode,Node]"></a>
+      <a id="pool:MMap[InterProceduralNode,Node]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">pool</span><span class="result">: <span class="extype" name="org.sireum.util.MMap">MMap</span>[<a href="../interProcedural/InterProceduralNode.html" class="extype" name="org.sireum.jawa.alir.interProcedural.InterProceduralNode">InterProceduralNode</a>, <span class="extype" name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph.Node">Node</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph@pool:org.sireum.util.MMap[org.sireum.jawa.alir.interProcedural.InterProceduralNode,Node]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../interProcedural/InterProceduralGraph.html" class="extype" name="org.sireum.jawa.alir.interProcedural.InterProceduralGraph">InterProceduralGraph</a></dd></dl></div>
+    </li><li name="org.sireum.alir.AlirGraph#prePostNodeOrder" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="prePostNodeOrder(n:Node):org.sireum.util.MMap[Node,(Int,Int)]"></a>
+      <a id="prePostNodeOrder(Node):MMap[Node,(Int,Int)]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">prePostNodeOrder</span><span class="params">(<span name="n">n: <span class="extype" name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph.Node">Node</span></span>)</span><span class="result">: <span class="extype" name="org.sireum.util.MMap">MMap</span>[<span class="extype" name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph.Node">Node</span>, (<span class="extype" name="scala.Int">Int</span>, <span class="extype" name="scala.Int">Int</span>)]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph@prePostNodeOrder(n:Node):org.sireum.util.MMap[Node,(Int,Int)]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AlirGraph</dd></dl></div>
+    </li><li name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph#predecessor" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="predecessor(node:Node,branch:Option[org.sireum.pilar.ast.Branch]):Node"></a>
+      <a id="predecessor(Node,Option[Branch]):Node"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">predecessor</span><span class="params">(<span name="node">node: <span class="extype" name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph.Node">Node</span></span>, <span name="branch">branch: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="org.sireum.pilar.ast.Branch">Branch</span>]</span>)</span><span class="result">: <span class="extype" name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph.Node">Node</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph@predecessor(node:Node,branch:Option[org.sireum.pilar.ast.Branch]):Node" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.alir.AlirSuccPredAccesses#predecessor" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="predecessor(edge:AlirSuccPredAccesses.this.Edge):Node"></a>
+      <a id="predecessor(Edge):Node"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">predecessor</span><span class="params">(<span name="edge">edge: <a href="#Edge=org.sireum.alir.AlirEdge[Node]" class="extmbr" name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph.Edge">Edge</a></span>)</span><span class="result">: <span class="extype" name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph.Node">Node</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph@predecessor(edge:AlirSuccPredAccesses.this.Edge):Node" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AlirSuccPredAccesses</dd></dl></div>
+    </li><li name="org.sireum.alir.AlirSuccPredAccesses#predecessorEdges" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="predecessorEdges(node:Node):org.sireum.util.CSet[AlirSuccPredAccesses.this.Edge]"></a>
+      <a id="predecessorEdges(Node):CSet[Edge]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">predecessorEdges</span><span class="params">(<span name="node">node: <span class="extype" name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph.Node">Node</span></span>)</span><span class="result">: <span class="extype" name="org.sireum.util.CSet">CSet</span>[<a href="#Edge=org.sireum.alir.AlirEdge[Node]" class="extmbr" name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph.Edge">Edge</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph@predecessorEdges(node:Node):org.sireum.util.CSet[AlirSuccPredAccesses.this.Edge]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AlirSuccPredAccesses</dd></dl></div>
+    </li><li name="org.sireum.alir.AlirSuccPredAccesses#predecessors" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="predecessors(node:Node):org.sireum.util.CSet[Node]"></a>
+      <a id="predecessors(Node):CSet[Node]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">predecessors</span><span class="params">(<span name="node">node: <span class="extype" name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph.Node">Node</span></span>)</span><span class="result">: <span class="extype" name="org.sireum.util.CSet">CSet</span>[<span class="extype" name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph.Node">Node</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph@predecessors(node:Node):org.sireum.util.CSet[Node]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AlirSuccPredAccesses</dd></dl></div>
+    </li><li name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph#reverse" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="reverse:org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph[Node]"></a>
+      <a id="reverse:InterproceduralControlFlowGraph[Node]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">reverse</span><span class="result">: <a href="" class="extype" name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph">InterproceduralControlFlowGraph</a>[<span class="extype" name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph.Node">Node</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph@reverse:org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph[Node]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph#setCallMap" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="setCallMap(from:String,to:String):Unit"></a>
+      <a id="setCallMap(String,String):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">setCallMap</span><span class="params">(<span name="from">from: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="to">to: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph@setCallMap(from:String,to:String):Unit" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.alir.AlirGraph#stronglyConnectedSets" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="stronglyConnectedSets:Iterable[org.sireum.util.CSet[Node]]"></a>
+      <a id="stronglyConnectedSets:Iterable[CSet[Node]]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">stronglyConnectedSets</span><span class="result">: <span class="extype" name="scala.Iterable">Iterable</span>[<span class="extype" name="org.sireum.util.CSet">CSet</span>[<span class="extype" name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph.Node">Node</span>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph@stronglyConnectedSets:Iterable[org.sireum.util.CSet[Node]]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AlirGraph</dd></dl></div>
+    </li><li name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph#successor" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="successor(node:Node,branch:Option[org.sireum.pilar.ast.Branch]):Node"></a>
+      <a id="successor(Node,Option[Branch]):Node"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">successor</span><span class="params">(<span name="node">node: <span class="extype" name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph.Node">Node</span></span>, <span name="branch">branch: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="org.sireum.pilar.ast.Branch">Branch</span>]</span>)</span><span class="result">: <span class="extype" name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph.Node">Node</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph@successor(node:Node,branch:Option[org.sireum.pilar.ast.Branch]):Node" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.alir.AlirSuccPredAccesses#successor" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="successor(edge:AlirSuccPredAccesses.this.Edge):Node"></a>
+      <a id="successor(Edge):Node"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">successor</span><span class="params">(<span name="edge">edge: <a href="#Edge=org.sireum.alir.AlirEdge[Node]" class="extmbr" name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph.Edge">Edge</a></span>)</span><span class="result">: <span class="extype" name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph.Node">Node</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph@successor(edge:AlirSuccPredAccesses.this.Edge):Node" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AlirSuccPredAccesses</dd></dl></div>
+    </li><li name="org.sireum.alir.AlirSuccPredAccesses#successorEdges" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="successorEdges(node:Node):org.sireum.util.CSet[AlirSuccPredAccesses.this.Edge]"></a>
+      <a id="successorEdges(Node):CSet[Edge]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">successorEdges</span><span class="params">(<span name="node">node: <span class="extype" name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph.Node">Node</span></span>)</span><span class="result">: <span class="extype" name="org.sireum.util.CSet">CSet</span>[<a href="#Edge=org.sireum.alir.AlirEdge[Node]" class="extmbr" name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph.Edge">Edge</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph@successorEdges(node:Node):org.sireum.util.CSet[AlirSuccPredAccesses.this.Edge]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AlirSuccPredAccesses</dd></dl></div>
+    </li><li name="org.sireum.alir.AlirSuccPredAccesses#successors" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="successors(node:Node):org.sireum.util.CSet[Node]"></a>
+      <a id="successors(Node):CSet[Node]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">successors</span><span class="params">(<span name="node">node: <span class="extype" name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph.Node">Node</span></span>)</span><span class="result">: <span class="extype" name="org.sireum.util.CSet">CSet</span>[<span class="extype" name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph.Node">Node</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph@successors(node:Node):org.sireum.util.CSet[Node]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AlirSuccPredAccesses</dd></dl></div>
+    </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
+      <a id="synchronized[T0](⇒T0):T0"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>)</span><span class="result">: <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph@synchronized[T0](x$1:=&gt;T0):T0" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="org.sireum.jawa.alir.interProcedural.InterProceduralGraph#toDot" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="toDot(w:java.io.Writer):Unit"></a>
+      <a id="toDot(Writer):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toDot</span><span class="params">(<span name="w">w: <span class="extype" name="java.io.Writer">Writer</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph@toDot(w:java.io.Writer):Unit" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../interProcedural/InterProceduralGraph.html" class="extype" name="org.sireum.jawa.alir.interProcedural.InterProceduralGraph">InterProceduralGraph</a></dd></dl></div>
+    </li><li name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph#toString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="toString():String"></a>
+      <a id="toString():String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph@toString():String" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph">InterproceduralControlFlowGraph</a> → AnyRef → Any</dd></dl></div>
+    </li><li name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph#useBranch" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="useBranch[T](pst:org.sireum.pilar.symbol.ProcedureSymbolTable)(f:=&gt;T):T"></a>
+      <a id="useBranch[T](ProcedureSymbolTable)(⇒T):T"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">useBranch</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="pst">pst: <span class="extype" name="org.sireum.pilar.symbol.ProcedureSymbolTable">ProcedureSymbolTable</span></span>)</span><span class="params">(<span name="f">f: ⇒ <span class="extype" name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph.useBranch.T">T</span></span>)</span><span class="result">: <span class="extype" name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph.useBranch.T">T</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph@useBranch[T](pst:org.sireum.pilar.symbol.ProcedureSymbolTable)(f:=&gt;T):T" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.jawa.alir.interProcedural.InterProceduralGraph#vlabelProvider" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="vlabelProvider:org.jgrapht.ext.VertexNameProvider[Node]{deffilterLabel(uri:String):String}"></a>
+      <a id="vlabelProvider:VertexNameProvider[Node]{deffilterLabel(uri:String):String}"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">vlabelProvider</span><span class="result">: <span class="extype" name="org.jgrapht.ext.VertexNameProvider">VertexNameProvider</span>[<span class="extype" name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph.Node">Node</span>] { def filterLabel(uri: String): String }</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph@vlabelProvider:org.jgrapht.ext.VertexNameProvider[Node]{deffilterLabel(uri:String):String}" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="../interProcedural/InterProceduralGraph.html" class="extype" name="org.sireum.jawa.alir.interProcedural.InterProceduralGraph">InterProceduralGraph</a></dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait():Unit"></a>
+      <a id="wait():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph@wait():Unit" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long,x$2:Int):Unit"></a>
+      <a id="wait(Long,Int):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph@wait(x$1:Long,x$2:Int):Unit" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long):Unit"></a>
+      <a id="wait(Long):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph@wait(x$1:Long):Unit" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li></ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        <div class="parent" name="org.sireum.jawa.alir.interProcedural.InterProceduralGraph">
+              <h3>Inherited from <a href="../interProcedural/InterProceduralGraph.html" class="extype" name="org.sireum.jawa.alir.interProcedural.InterProceduralGraph">InterProceduralGraph</a>[<span class="extype" name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph.Node">Node</span>]</h3>
+            </div><div class="parent" name="scala.Serializable">
+              <h3>Inherited from <span class="extype" name="scala.Serializable">Serializable</span></h3>
+            </div><div class="parent" name="java.io.Serializable">
+              <h3>Inherited from <span class="extype" name="java.io.Serializable">Serializable</span></h3>
+            </div><div class="parent" name="org.sireum.alir.AlirSuccPredAccesses">
+              <h3>Inherited from <span class="extype" name="org.sireum.alir.AlirSuccPredAccesses">AlirSuccPredAccesses</span>[<span class="extype" name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph.Node">Node</span>]</h3>
+            </div><div class="parent" name="org.sireum.alir.AlirEdgeAccesses">
+              <h3>Inherited from <span class="extype" name="org.sireum.alir.AlirEdgeAccesses">AlirEdgeAccesses</span>[<span class="extype" name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph.Node">Node</span>]</h3>
+            </div><div class="parent" name="org.sireum.alir.AlirGraph">
+              <h3>Inherited from <span class="extype" name="org.sireum.alir.AlirGraph">AlirGraph</span>[<span class="extype" name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph.Node">Node</span>]</h3>
+            </div><div class="parent" name="scala.AnyRef">
+              <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
+            </div><div class="parent" name="scala.Any">
+              <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>
+            </div>
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+
+
+    </body>
+      </html>

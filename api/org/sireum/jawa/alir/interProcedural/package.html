@@ -1,0 +1,309 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <title>interProcedural - Sireum-Amandroid-Api-Doc - org.sireum.jawa.alir.interProcedural</title>
+          <meta name="description" content="interProcedural - Sireum - Amandroid - Api - Doc - org.sireum.jawa.alir.interProcedural" />
+          <meta name="keywords" content="interProcedural Sireum Amandroid Api Doc org.sireum.jawa.alir.interProcedural" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../../../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../../../../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../../../../index.html';
+            var hash = 'org.sireum.jawa.alir.interProcedural.package';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="value">
+      <div id="definition">
+        <img src="../../../../../lib/package_big.png" />
+        <p id="owner"><a href="../../../../package.html" class="extype" name="org">org</a>.<a href="../../../package.html" class="extype" name="org.sireum">sireum</a>.<a href="../../package.html" class="extype" name="org.sireum.jawa">jawa</a>.<a href="../package.html" class="extype" name="org.sireum.jawa.alir">alir</a></p>
+        <h1>interProcedural</h1> <span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.interProcedural.package" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <span class="name">interProcedural</span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        
+        
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="org.sireum.jawa.alir.interProcedural.CallResolver" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="CallResolver[LatticeElement]extendsAnyRef"></a>
+      <a id="CallResolver[LatticeElement]:CallResolver[LatticeElement]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="CallResolver.html"><span class="name">CallResolver</span></a><span class="tparams">[<span name="LatticeElement">LatticeElement</span>]</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.interProcedural.package@CallResolver[LatticeElement]extendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt"></p>
+    </li><li name="org.sireum.jawa.alir.interProcedural.Callee" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="CalleeextendsAnyRef"></a>
+      <a id="Callee:Callee"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="Callee.html"><span class="name">Callee</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.interProcedural.package@CalleeextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt"></p>
+    </li><li name="org.sireum.jawa.alir.interProcedural.InstanceCallee" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="InstanceCalleeextendsCalleewithProductwithSerializable"></a>
+      <a id="InstanceCallee:InstanceCallee"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="InstanceCallee.html"><span class="name">InstanceCallee</span></a><span class="params">(<span name="callee">callee: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="ins">ins: <a href="../Instance.html" class="extype" name="org.sireum.jawa.alir.Instance">Instance</a></span>)</span><span class="result"> extends <a href="Callee.html" class="extype" name="org.sireum.jawa.alir.interProcedural.Callee">Callee</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.interProcedural.package@InstanceCalleeextendsCalleewithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt"></p>
+    </li><li name="org.sireum.jawa.alir.interProcedural.InterProceduralDataFlowAnalysisResult" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="InterProceduralDataFlowAnalysisResult[LatticeElement]extendsAnyRef"></a>
+      <a id="InterProceduralDataFlowAnalysisResult[LatticeElement]:InterProceduralDataFlowAnalysisResult[LatticeElement]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="InterProceduralDataFlowAnalysisResult.html"><span class="name">InterProceduralDataFlowAnalysisResult</span></a><span class="tparams">[<span name="LatticeElement">LatticeElement</span>]</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.interProcedural.package@InterProceduralDataFlowAnalysisResult[LatticeElement]extendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Provide an Interface to let the developer get data facts corresponding
+to each statement.</p>
+    </li><li name="org.sireum.jawa.alir.interProcedural.InterProceduralDataFlowGraph" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="InterProceduralDataFlowGraphextendsProductwithSerializable"></a>
+      <a id="InterProceduralDataFlowGraph:InterProceduralDataFlowGraph"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="InterProceduralDataFlowGraph.html"><span class="name">InterProceduralDataFlowGraph</span></a><span class="params">(<span name="icfg">icfg: <a href="../controlFlowGraph/InterproceduralControlFlowGraph.html" class="extype" name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph">InterproceduralControlFlowGraph</a>[<a href="../controlFlowGraph/CGNode.html" class="extype" name="org.sireum.jawa.alir.controlFlowGraph.CGNode">CGNode</a>]</span>, <span name="summary">summary: <a href="InterProceduralMonotoneDataFlowAnalysisResult.html" class="extype" name="org.sireum.jawa.alir.interProcedural.InterProceduralMonotoneDataFlowAnalysisResult">InterProceduralMonotoneDataFlowAnalysisResult</a>[<a href="../reachingFactsAnalysis/RFAFact.html" class="extype" name="org.sireum.jawa.alir.reachingFactsAnalysis.RFAFact">RFAFact</a>]</span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.interProcedural.package@InterProceduralDataFlowGraphextendsProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt"></p>
+    </li><li name="org.sireum.jawa.alir.interProcedural.InterProceduralGraph" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="InterProceduralGraph[Node&lt;:org.sireum.jawa.alir.interProcedural.InterProceduralNode]extendsAlirGraph[Node]withAlirEdgeAccesses[Node]withAlirSuccPredAccesses[Node]withSerializable"></a>
+      <a id="InterProceduralGraph[Node&lt;:InterProceduralNode]:InterProceduralGraph[Node]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="InterProceduralGraph.html"><span class="name">InterProceduralGraph</span></a><span class="tparams">[<span name="Node">Node &lt;: <a href="InterProceduralNode.html" class="extype" name="org.sireum.jawa.alir.interProcedural.InterProceduralNode">InterProceduralNode</a></span>]</span><span class="result"> extends <span class="extype" name="org.sireum.alir.AlirGraph">AlirGraph</span>[<span class="extype" name="org.sireum.jawa.alir.interProcedural.InterProceduralGraph.Node">Node</span>] with <span class="extype" name="org.sireum.alir.AlirEdgeAccesses">AlirEdgeAccesses</span>[<span class="extype" name="org.sireum.jawa.alir.interProcedural.InterProceduralGraph.Node">Node</span>] with <span class="extype" name="org.sireum.alir.AlirSuccPredAccesses">AlirSuccPredAccesses</span>[<span class="extype" name="org.sireum.jawa.alir.interProcedural.InterProceduralGraph.Node">Node</span>] with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.interProcedural.package@InterProceduralGraph[Node&lt;:org.sireum.jawa.alir.interProcedural.InterProceduralNode]extendsAlirGraph[Node]withAlirEdgeAccesses[Node]withAlirSuccPredAccesses[Node]withSerializable" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt"></p>
+    </li><li name="org.sireum.jawa.alir.interProcedural.InterProceduralMonotoneDataFlowAnalysisResult" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="InterProceduralMonotoneDataFlowAnalysisResult[LatticeElement]extendsInterProceduralDataFlowAnalysisResult[LatticeElement]"></a>
+      <a id="InterProceduralMonotoneDataFlowAnalysisResult[LatticeElement]:InterProceduralMonotoneDataFlowAnalysisResult[LatticeElement]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="InterProceduralMonotoneDataFlowAnalysisResult.html"><span class="name">InterProceduralMonotoneDataFlowAnalysisResult</span></a><span class="tparams">[<span name="LatticeElement">LatticeElement</span>]</span><span class="result"> extends <a href="InterProceduralDataFlowAnalysisResult.html" class="extype" name="org.sireum.jawa.alir.interProcedural.InterProceduralDataFlowAnalysisResult">InterProceduralDataFlowAnalysisResult</a>[<span class="extype" name="org.sireum.jawa.alir.interProcedural.InterProceduralMonotoneDataFlowAnalysisResult.LatticeElement">LatticeElement</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.interProcedural.package@InterProceduralMonotoneDataFlowAnalysisResult[LatticeElement]extendsInterProceduralDataFlowAnalysisResult[LatticeElement]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt"></p>
+    </li><li name="org.sireum.jawa.alir.interProcedural.InterProceduralMonotonicFunction" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="InterProceduralMonotonicFunction[LatticeElement]extendsAnyRef"></a>
+      <a id="InterProceduralMonotonicFunction[LatticeElement]:InterProceduralMonotonicFunction[LatticeElement]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="InterProceduralMonotonicFunction.html"><span class="name">InterProceduralMonotonicFunction</span></a><span class="tparams">[<span name="LatticeElement">LatticeElement</span>]</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.interProcedural.package@InterProceduralMonotonicFunction[LatticeElement]extendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt"></p>
+    </li><li name="org.sireum.jawa.alir.interProcedural.InterProceduralNode" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="InterProceduralNodeextendsPropertyProviderwithSerializable"></a>
+      <a id="InterProceduralNode:InterProceduralNode"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="InterProceduralNode.html"><span class="name">InterProceduralNode</span></a><span class="result"> extends <span class="extype" name="org.sireum.util.PropertyProvider">PropertyProvider</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.interProcedural.package@InterProceduralNodeextendsPropertyProviderwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt"></p>
+    </li><li name="org.sireum.jawa.alir.interProcedural.NodeListener" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="NodeListenerextendsAnyRef"></a>
+      <a id="NodeListener:NodeListener"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="NodeListener.html"><span class="name">NodeListener</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.interProcedural.package@NodeListenerextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt"></p>
+    </li><li name="org.sireum.jawa.alir.interProcedural.StaticCallee" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="StaticCalleeextendsCalleewithProductwithSerializable"></a>
+      <a id="StaticCallee:StaticCallee"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="StaticCallee.html"><span class="name">StaticCallee</span></a><span class="params">(<span name="callee">callee: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result"> extends <a href="Callee.html" class="extype" name="org.sireum.jawa.alir.interProcedural.Callee">Callee</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.interProcedural.package@StaticCalleeextendsCalleewithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt"></p>
+    </li></ol>
+            </div>
+
+        
+
+        <div id="values" class="values members">
+              <h3>Value Members</h3>
+              <ol><li name="org.sireum.jawa.alir.interProcedural.InterProceduralMonotoneDataFlowAnalysisFramework" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="InterProceduralMonotoneDataFlowAnalysisFramework"></a>
+      <a id="InterProceduralMonotoneDataFlowAnalysisFramework:InterProceduralMonotoneDataFlowAnalysisFramework"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="InterProceduralMonotoneDataFlowAnalysisFramework$.html"><span class="name">InterProceduralMonotoneDataFlowAnalysisFramework</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.interProcedural.package@InterProceduralMonotoneDataFlowAnalysisFramework" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt"></p>
+    </li></ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+
+
+    </body>
+      </html>

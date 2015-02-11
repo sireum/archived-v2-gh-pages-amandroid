@@ -1,0 +1,1825 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <title>InterProceduralDataDependenceGraph - Sireum-Amandroid-Api-Doc - org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph</title>
+          <meta name="description" content="InterProceduralDataDependenceGraph - Sireum - Amandroid - Api - Doc - org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph" />
+          <meta name="keywords" content="InterProceduralDataDependenceGraph Sireum Amandroid Api Doc org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../../../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../../../../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../../../../index.html';
+            var hash = 'org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="type">
+      <div id="definition">
+        <img src="../../../../../lib/class_big.png" />
+        <p id="owner"><a href="../../../../package.html" class="extype" name="org">org</a>.<a href="../../../package.html" class="extype" name="org.sireum">sireum</a>.<a href="../../package.html" class="extype" name="org.sireum.jawa">jawa</a>.<a href="../package.html" class="extype" name="org.sireum.jawa.alir">alir</a>.<a href="package.html" class="extype" name="org.sireum.jawa.alir.dataDependenceAnalysis">dataDependenceAnalysis</a></p>
+        <h1>InterProceduralDataDependenceGraph</h1> <span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <span class="name">InterProceduralDataDependenceGraph</span><span class="tparams">[<span name="Node">Node &lt;: <a href="IDDGNode.html" class="extype" name="org.sireum.jawa.alir.dataDependenceAnalysis.IDDGNode">IDDGNode</a></span>]</span><span class="result"> extends <a href="../interProcedural/InterProceduralGraph.html" class="extype" name="org.sireum.jawa.alir.interProcedural.InterProceduralGraph">InterProceduralGraph</a>[<span class="extype" name="org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph.Node">Node</span>]</span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"></div><div class="toggleContainer block">
+          <span class="toggle">Linear Supertypes</span>
+          <div class="superTypes hiddenContent"><a href="../interProcedural/InterProceduralGraph.html" class="extype" name="org.sireum.jawa.alir.interProcedural.InterProceduralGraph">InterProceduralGraph</a>[<span class="extype" name="org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph.Node">Node</span>], <span class="extype" name="scala.Serializable">Serializable</span>, <span class="extype" name="java.io.Serializable">Serializable</span>, <span class="extype" name="org.sireum.alir.AlirSuccPredAccesses">AlirSuccPredAccesses</span>[<span class="extype" name="org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph.Node">Node</span>], <span class="extype" name="org.sireum.alir.AlirEdgeAccesses">AlirEdgeAccesses</span>[<span class="extype" name="org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph.Node">Node</span>], <span class="extype" name="org.sireum.alir.AlirGraph">AlirGraph</span>[<span class="extype" name="org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph.Node">Node</span>], <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+        </div></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        <div id="order">
+              <span class="filtertype">Ordering</span>
+              <ol>
+                
+                <li class="alpha in"><span>Alphabetic</span></li>
+                <li class="inherit out"><span>By inheritance</span></li>
+              </ol>
+            </div>
+        <div id="ancestors">
+                <span class="filtertype">Inherited<br />
+                </span>
+                <ol id="linearization">
+                  <li class="in" name="org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph"><span>InterProceduralDataDependenceGraph</span></li><li class="in" name="org.sireum.jawa.alir.interProcedural.InterProceduralGraph"><span>InterProceduralGraph</span></li><li class="in" name="scala.Serializable"><span>Serializable</span></li><li class="in" name="java.io.Serializable"><span>Serializable</span></li><li class="in" name="org.sireum.alir.AlirSuccPredAccesses"><span>AlirSuccPredAccesses</span></li><li class="in" name="org.sireum.alir.AlirEdgeAccesses"><span>AlirEdgeAccesses</span></li><li class="in" name="org.sireum.alir.AlirGraph"><span>AlirGraph</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                </ol>
+              </div><div id="ancestors">
+            <span class="filtertype"></span>
+            <ol>
+              <li class="hideall out"><span>Hide All</span></li>
+              <li class="showall in"><span>Show all</span></li>
+            </ol>
+            <a href="http://docs.scala-lang.org/overviews/scaladoc/usage.html#members" target="_blank">Learn more about member selection</a>
+          </div>
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        <div id="constructors" class="members">
+              <h3>Instance Constructors</h3>
+              <ol><li name="org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph#&lt;init&gt;" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="&lt;init&gt;():org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph[Node]"></a>
+      <a id="&lt;init&gt;:InterProceduralDataDependenceGraph[Node]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">new</span>
+      </span>
+      <span class="symbol">
+        <span class="name">InterProceduralDataDependenceGraph</span><span class="params">()</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph@&lt;init&gt;():org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph[Node]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li></ol>
+            </div>
+
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="org.sireum.alir.AlirGraph.Edge" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="Edge=org.sireum.alir.AlirEdge[Node]"></a>
+      <a id="Edge:Edge"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">type</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Edge</span><span class="result"> = <span class="extype" name="org.sireum.alir.AlirEdge">AlirEdge</span>[<span class="extype" name="org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph.Node">Node</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph@Edge=org.sireum.alir.AlirEdge[Node]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AlirGraph</dd></dl></div>
+    </li></ol>
+            </div>
+
+        
+
+        <div id="values" class="values members">
+              <h3>Value Members</h3>
+              <ol><li name="scala.AnyRef#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="!=(x$1:Any):Boolean"></a>
+      <a id="!=(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph@!=(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef###" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="##():Int"></a>
+      <a id="##():Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph@##():Int" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="==(x$1:Any):Boolean"></a>
+      <a id="==(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph@==(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="org.sireum.alir.AlirEdgeAccesses#addEdge" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="addEdge(e:AlirEdgeAccesses.this.Edge):Boolean"></a>
+      <a id="addEdge(Edge):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">addEdge</span><span class="params">(<span name="e">e: <a href="#Edge=org.sireum.alir.AlirEdge[Node]" class="extmbr" name="org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph.Edge">Edge</a></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph@addEdge(e:AlirEdgeAccesses.this.Edge):Boolean" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AlirEdgeAccesses</dd></dl></div>
+    </li><li name="org.sireum.alir.AlirEdgeAccesses#addEdge" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="addEdge(source:Node,target:Node):AlirEdgeAccesses.this.Edge"></a>
+      <a id="addEdge(Node,Node):Edge"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">addEdge</span><span class="params">(<span name="source">source: <span class="extype" name="org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph.Node">Node</span></span>, <span name="target">target: <span class="extype" name="org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph.Node">Node</span></span>)</span><span class="result">: <a href="#Edge=org.sireum.alir.AlirEdge[Node]" class="extmbr" name="org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph.Edge">Edge</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph@addEdge(source:Node,target:Node):AlirEdgeAccesses.this.Edge" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AlirEdgeAccesses</dd></dl></div>
+    </li><li name="org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph#addIDDGCallArgNode" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="addIDDGCallArgNode(cgN:org.sireum.jawa.alir.controlFlowGraph.CGCallNode,position:Int):Node"></a>
+      <a id="addIDDGCallArgNode(CGCallNode,Int):Node"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">addIDDGCallArgNode</span><span class="params">(<span name="cgN">cgN: <a href="../controlFlowGraph/CGCallNode.html" class="extype" name="org.sireum.jawa.alir.controlFlowGraph.CGCallNode">CGCallNode</a></span>, <span name="position">position: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph.Node">Node</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph@addIDDGCallArgNode(cgN:org.sireum.jawa.alir.controlFlowGraph.CGCallNode,position:Int):Node" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph#addIDDGCenterNode" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="addIDDGCenterNode(cgN:org.sireum.jawa.alir.controlFlowGraph.CGCenterNode):Node"></a>
+      <a id="addIDDGCenterNode(CGCenterNode):Node"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">addIDDGCenterNode</span><span class="params">(<span name="cgN">cgN: <a href="../controlFlowGraph/CGCenterNode.html" class="extype" name="org.sireum.jawa.alir.controlFlowGraph.CGCenterNode">CGCenterNode</a></span>)</span><span class="result">: <span class="extype" name="org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph.Node">Node</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph@addIDDGCenterNode(cgN:org.sireum.jawa.alir.controlFlowGraph.CGCenterNode):Node" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph#addIDDGEntryNode" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="addIDDGEntryNode(cgN:org.sireum.jawa.alir.controlFlowGraph.CGEntryNode):Node"></a>
+      <a id="addIDDGEntryNode(CGEntryNode):Node"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">addIDDGEntryNode</span><span class="params">(<span name="cgN">cgN: <a href="../controlFlowGraph/CGEntryNode.html" class="extype" name="org.sireum.jawa.alir.controlFlowGraph.CGEntryNode">CGEntryNode</a></span>)</span><span class="result">: <span class="extype" name="org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph.Node">Node</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph@addIDDGEntryNode(cgN:org.sireum.jawa.alir.controlFlowGraph.CGEntryNode):Node" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph#addIDDGEntryParamNode" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="addIDDGEntryParamNode(cgN:org.sireum.jawa.alir.controlFlowGraph.CGEntryNode,position:Int):Node"></a>
+      <a id="addIDDGEntryParamNode(CGEntryNode,Int):Node"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">addIDDGEntryParamNode</span><span class="params">(<span name="cgN">cgN: <a href="../controlFlowGraph/CGEntryNode.html" class="extype" name="org.sireum.jawa.alir.controlFlowGraph.CGEntryNode">CGEntryNode</a></span>, <span name="position">position: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph.Node">Node</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph@addIDDGEntryParamNode(cgN:org.sireum.jawa.alir.controlFlowGraph.CGEntryNode,position:Int):Node" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph#addIDDGExitParamNode" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="addIDDGExitParamNode(cgN:org.sireum.jawa.alir.controlFlowGraph.CGExitNode,position:Int):Node"></a>
+      <a id="addIDDGExitParamNode(CGExitNode,Int):Node"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">addIDDGExitParamNode</span><span class="params">(<span name="cgN">cgN: <a href="../controlFlowGraph/CGExitNode.html" class="extype" name="org.sireum.jawa.alir.controlFlowGraph.CGExitNode">CGExitNode</a></span>, <span name="position">position: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph.Node">Node</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph@addIDDGExitParamNode(cgN:org.sireum.jawa.alir.controlFlowGraph.CGExitNode,position:Int):Node" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph#addIDDGNormalNode" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="addIDDGNormalNode(cgN:org.sireum.jawa.alir.controlFlowGraph.CGNormalNode):Node"></a>
+      <a id="addIDDGNormalNode(CGNormalNode):Node"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">addIDDGNormalNode</span><span class="params">(<span name="cgN">cgN: <a href="../controlFlowGraph/CGNormalNode.html" class="extype" name="org.sireum.jawa.alir.controlFlowGraph.CGNormalNode">CGNormalNode</a></span>)</span><span class="result">: <span class="extype" name="org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph.Node">Node</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph@addIDDGNormalNode(cgN:org.sireum.jawa.alir.controlFlowGraph.CGNormalNode):Node" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph#addIDDGReturnArgNode" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="addIDDGReturnArgNode(cgN:org.sireum.jawa.alir.controlFlowGraph.CGReturnNode,position:Int):Node"></a>
+      <a id="addIDDGReturnArgNode(CGReturnNode,Int):Node"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">addIDDGReturnArgNode</span><span class="params">(<span name="cgN">cgN: <a href="../controlFlowGraph/CGReturnNode.html" class="extype" name="org.sireum.jawa.alir.controlFlowGraph.CGReturnNode">CGReturnNode</a></span>, <span name="position">position: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph.Node">Node</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph@addIDDGReturnArgNode(cgN:org.sireum.jawa.alir.controlFlowGraph.CGReturnNode,position:Int):Node" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph#addIDDGReturnVarNode" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="addIDDGReturnVarNode(cgN:org.sireum.jawa.alir.controlFlowGraph.CGCallNode):Node"></a>
+      <a id="addIDDGReturnVarNode(CGCallNode):Node"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">addIDDGReturnVarNode</span><span class="params">(<span name="cgN">cgN: <a href="../controlFlowGraph/CGCallNode.html" class="extype" name="org.sireum.jawa.alir.controlFlowGraph.CGCallNode">CGCallNode</a></span>)</span><span class="result">: <span class="extype" name="org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph.Node">Node</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph@addIDDGReturnVarNode(cgN:org.sireum.jawa.alir.controlFlowGraph.CGCallNode):Node" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph#addIDDGVirtualBodyNode" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="addIDDGVirtualBodyNode(cgN:org.sireum.jawa.alir.controlFlowGraph.CGCallNode):Node"></a>
+      <a id="addIDDGVirtualBodyNode(CGCallNode):Node"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">addIDDGVirtualBodyNode</span><span class="params">(<span name="cgN">cgN: <a href="../controlFlowGraph/CGCallNode.html" class="extype" name="org.sireum.jawa.alir.controlFlowGraph.CGCallNode">CGCallNode</a></span>)</span><span class="result">: <span class="extype" name="org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph.Node">Node</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph@addIDDGVirtualBodyNode(cgN:org.sireum.jawa.alir.controlFlowGraph.CGCallNode):Node" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.jawa.alir.interProcedural.InterProceduralGraph#addNode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="addNode(node:Node):Node"></a>
+      <a id="addNode(Node):Node"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">addNode</span><span class="params">(<span name="node">node: <span class="extype" name="org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph.Node">Node</span></span>)</span><span class="result">: <span class="extype" name="org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph.Node">Node</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph@addNode(node:Node):Node" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../interProcedural/InterProceduralGraph.html" class="extype" name="org.sireum.jawa.alir.interProcedural.InterProceduralGraph">InterProceduralGraph</a> → AlirEdgeAccesses</dd></dl></div>
+    </li><li name="scala.Any#asInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="asInstanceOf[T0]:T0"></a>
+      <a id="asInstanceOf[T0]:T0"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Any.asInstanceOf.T0">T0</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph@asInstanceOf[T0]:T0" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph#centerN" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="centerN:org.sireum.jawa.alir.dataDependenceAnalysis.IDDGCenterNode"></a>
+      <a id="centerN:IDDGCenterNode"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">var</span>
+      </span>
+      <span class="symbol">
+        <span class="name">centerN</span><span class="result">: <a href="IDDGCenterNode.html" class="extype" name="org.sireum.jawa.alir.dataDependenceAnalysis.IDDGCenterNode">IDDGCenterNode</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph@centerN:org.sireum.jawa.alir.dataDependenceAnalysis.IDDGCenterNode" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
+    </li><li name="org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph#centerNode" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="centerNode:Node"></a>
+      <a id="centerNode:Node"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">centerNode</span><span class="result">: <span class="extype" name="org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph.Node">Node</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph@centerNode:Node" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph#cg" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="cg:org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph[org.sireum.jawa.alir.controlFlowGraph.CGNode]"></a>
+      <a id="cg:InterproceduralControlFlowGraph[CGNode]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">var</span>
+      </span>
+      <span class="symbol">
+        <span class="name">cg</span><span class="result">: <a href="../controlFlowGraph/InterproceduralControlFlowGraph.html" class="extype" name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph">InterproceduralControlFlowGraph</a>[<a href="../controlFlowGraph/CGNode.html" class="extype" name="org.sireum.jawa.alir.controlFlowGraph.CGNode">CGNode</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph@cg:org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph[org.sireum.jawa.alir.controlFlowGraph.CGNode]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
+    </li><li name="scala.AnyRef#clone" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="clone():Object"></a>
+      <a id="clone():AnyRef"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">clone</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph@clone():Object" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.CloneNotSupportedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="org.sireum.jawa.alir.interProcedural.InterProceduralGraph#deleteEdge" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="deleteEdge(e:InterProceduralGraph.this.Edge):Boolean"></a>
+      <a id="deleteEdge(Edge):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">deleteEdge</span><span class="params">(<span name="e">e: <a href="#Edge=org.sireum.alir.AlirEdge[Node]" class="extmbr" name="org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph.Edge">Edge</a></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph@deleteEdge(e:InterProceduralGraph.this.Edge):Boolean" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../interProcedural/InterProceduralGraph.html" class="extype" name="org.sireum.jawa.alir.interProcedural.InterProceduralGraph">InterProceduralGraph</a></dd></dl></div>
+    </li><li name="org.sireum.jawa.alir.interProcedural.InterProceduralGraph#deleteEdge" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="deleteEdge(source:Node,target:Node):InterProceduralGraph.this.Edge"></a>
+      <a id="deleteEdge(Node,Node):Edge"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">deleteEdge</span><span class="params">(<span name="source">source: <span class="extype" name="org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph.Node">Node</span></span>, <span name="target">target: <span class="extype" name="org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph.Node">Node</span></span>)</span><span class="result">: <a href="#Edge=org.sireum.alir.AlirEdge[Node]" class="extmbr" name="org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph.Edge">Edge</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph@deleteEdge(source:Node,target:Node):InterProceduralGraph.this.Edge" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../interProcedural/InterProceduralGraph.html" class="extype" name="org.sireum.jawa.alir.interProcedural.InterProceduralGraph">InterProceduralGraph</a></dd></dl></div>
+    </li><li name="org.sireum.jawa.alir.interProcedural.InterProceduralGraph#deleteNode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="deleteNode(node:Node):Boolean"></a>
+      <a id="deleteNode(Node):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">deleteNode</span><span class="params">(<span name="node">node: <span class="extype" name="org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph.Node">Node</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph@deleteNode(node:Node):Boolean" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../interProcedural/InterProceduralGraph.html" class="extype" name="org.sireum.jawa.alir.interProcedural.InterProceduralGraph">InterProceduralGraph</a></dd></dl></div>
+    </li><li name="org.sireum.alir.AlirSuccPredAccesses#edgeSource" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="edgeSource(edge:org.sireum.alir.AlirEdge[Node]):Node"></a>
+      <a id="edgeSource(AlirEdge[Node]):Node"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">edgeSource</span><span class="params">(<span name="edge">edge: <span class="extype" name="org.sireum.alir.AlirEdge">AlirEdge</span>[<span class="extype" name="org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph.Node">Node</span>]</span>)</span><span class="result">: <span class="extype" name="org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph.Node">Node</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph@edgeSource(edge:org.sireum.alir.AlirEdge[Node]):Node" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd>AlirSuccPredAccesses</dd></dl></div>
+    </li><li name="org.sireum.alir.AlirSuccPredAccesses#edgeTarget" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="edgeTarget(edge:org.sireum.alir.AlirEdge[Node]):Node"></a>
+      <a id="edgeTarget(AlirEdge[Node]):Node"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">edgeTarget</span><span class="params">(<span name="edge">edge: <span class="extype" name="org.sireum.alir.AlirEdge">AlirEdge</span>[<span class="extype" name="org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph.Node">Node</span>]</span>)</span><span class="result">: <span class="extype" name="org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph.Node">Node</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph@edgeTarget(edge:org.sireum.alir.AlirEdge[Node]):Node" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd>AlirSuccPredAccesses</dd></dl></div>
+    </li><li name="org.sireum.alir.AlirGraph#edges" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="edges:Iterable[AlirGraph.this.Edge]"></a>
+      <a id="edges:Iterable[Edge]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">edges</span><span class="result">: <span class="extype" name="scala.Iterable">Iterable</span>[<a href="#Edge=org.sireum.alir.AlirEdge[Node]" class="extmbr" name="org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph.Edge">Edge</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph@edges:Iterable[AlirGraph.this.Edge]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AlirGraph</dd></dl></div>
+    </li><li name="org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph#entryN" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="entryN:org.sireum.jawa.alir.dataDependenceAnalysis.IDDGEntryNode"></a>
+      <a id="entryN:IDDGEntryNode"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">var</span>
+      </span>
+      <span class="symbol">
+        <span class="name">entryN</span><span class="result">: <a href="IDDGEntryNode.html" class="extype" name="org.sireum.jawa.alir.dataDependenceAnalysis.IDDGEntryNode">IDDGEntryNode</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph@entryN:org.sireum.jawa.alir.dataDependenceAnalysis.IDDGEntryNode" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
+    </li><li name="org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph#entryNode" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="entryNode:Node"></a>
+      <a id="entryNode:Node"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">entryNode</span><span class="result">: <span class="extype" name="org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph.Node">Node</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph@entryNode:Node" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="eq(x$1:AnyRef):Boolean"></a>
+      <a id="eq(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph@eq(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#equals" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="equals(x$1:Any):Boolean"></a>
+      <a id="equals(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph@equals(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph#extendGraphForSinkApis" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="extendGraphForSinkApis(callArgNode:org.sireum.jawa.alir.dataDependenceAnalysis.IDDGCallArgNode,rfaFacts:org.sireum.util.ISet[org.sireum.jawa.alir.reachingFactsAnalysis.RFAFact]):Unit"></a>
+      <a id="extendGraphForSinkApis(IDDGCallArgNode,ISet[RFAFact]):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">extendGraphForSinkApis</span><span class="params">(<span name="callArgNode">callArgNode: <a href="IDDGCallArgNode.html" class="extype" name="org.sireum.jawa.alir.dataDependenceAnalysis.IDDGCallArgNode">IDDGCallArgNode</a></span>, <span name="rfaFacts">rfaFacts: <span class="extype" name="org.sireum.util.ISet">ISet</span>[<a href="../reachingFactsAnalysis/RFAFact.html" class="extype" name="org.sireum.jawa.alir.reachingFactsAnalysis.RFAFact">RFAFact</a>]</span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph@extendGraphForSinkApis(callArgNode:org.sireum.jawa.alir.dataDependenceAnalysis.IDDGCallArgNode,rfaFacts:org.sireum.util.ISet[org.sireum.jawa.alir.reachingFactsAnalysis.RFAFact]):Unit" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="scala.AnyRef#finalize" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="finalize():Unit"></a>
+      <a id="finalize():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph@finalize():Unit" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="symbol">classOf[java.lang.Throwable]</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph#findDefSite" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="findDefSite(defSite:org.sireum.jawa.alir.Context,position:Int):Node"></a>
+      <a id="findDefSite(Context,Int):Node"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">findDefSite</span><span class="params">(<span name="defSite">defSite: <a href="../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>, <span name="position">position: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph.Node">Node</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph@findDefSite(defSite:org.sireum.jawa.alir.Context,position:Int):Node" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph#findDefSite" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="findDefSite(defSite:org.sireum.jawa.alir.Context):Node"></a>
+      <a id="findDefSite(Context):Node"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">findDefSite</span><span class="params">(<span name="defSite">defSite: <a href="../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>)</span><span class="result">: <span class="extype" name="org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph.Node">Node</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph@findDefSite(defSite:org.sireum.jawa.alir.Context):Node" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.jawa.alir.interProcedural.InterProceduralGraph#findPath" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="findPath(srcNode:Node,tarNode:Node):org.sireum.util.IList[InterProceduralGraph.this.Edge]"></a>
+      <a id="findPath(Node,Node):IList[Edge]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">findPath</span><span class="params">(<span name="srcNode">srcNode: <span class="extype" name="org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph.Node">Node</span></span>, <span name="tarNode">tarNode: <span class="extype" name="org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph.Node">Node</span></span>)</span><span class="result">: <span class="extype" name="org.sireum.util.IList">IList</span>[<a href="#Edge=org.sireum.alir.AlirEdge[Node]" class="extmbr" name="org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph.Edge">Edge</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph@findPath(srcNode:Node,tarNode:Node):org.sireum.util.IList[InterProceduralGraph.this.Edge]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../interProcedural/InterProceduralGraph.html" class="extype" name="org.sireum.jawa.alir.interProcedural.InterProceduralGraph">InterProceduralGraph</a></dd></dl></div>
+    </li><li name="scala.AnyRef#getClass" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getClass():Class[_]"></a>
+      <a id="getClass():Class[_]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getClass</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.Class">Class</span>[_]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph@getClass():Class[_]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="org.sireum.alir.AlirGraph#getEdges" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getEdges(n1:Node,n2:Node):org.sireum.util.CSet[AlirGraph.this.Edge]"></a>
+      <a id="getEdges(Node,Node):CSet[Edge]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getEdges</span><span class="params">(<span name="n1">n1: <span class="extype" name="org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph.Node">Node</span></span>, <span name="n2">n2: <span class="extype" name="org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph.Node">Node</span></span>)</span><span class="result">: <span class="extype" name="org.sireum.util.CSet">CSet</span>[<a href="#Edge=org.sireum.alir.AlirEdge[Node]" class="extmbr" name="org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph.Edge">Edge</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph@getEdges(n1:Node,n2:Node):org.sireum.util.CSet[AlirGraph.this.Edge]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AlirGraph</dd></dl></div>
+    </li><li name="org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph#getIDDGCallArgNode" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="getIDDGCallArgNode(cgN:org.sireum.jawa.alir.controlFlowGraph.CGCallNode,position:Int):Node"></a>
+      <a id="getIDDGCallArgNode(CGCallNode,Int):Node"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getIDDGCallArgNode</span><span class="params">(<span name="cgN">cgN: <a href="../controlFlowGraph/CGCallNode.html" class="extype" name="org.sireum.jawa.alir.controlFlowGraph.CGCallNode">CGCallNode</a></span>, <span name="position">position: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph.Node">Node</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph@getIDDGCallArgNode(cgN:org.sireum.jawa.alir.controlFlowGraph.CGCallNode,position:Int):Node" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph#getIDDGCallArgNodes" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="getIDDGCallArgNodes(cgN:org.sireum.jawa.alir.controlFlowGraph.CGCallNode):Set[Node]"></a>
+      <a id="getIDDGCallArgNodes(CGCallNode):Set[Node]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getIDDGCallArgNodes</span><span class="params">(<span name="cgN">cgN: <a href="../controlFlowGraph/CGCallNode.html" class="extype" name="org.sireum.jawa.alir.controlFlowGraph.CGCallNode">CGCallNode</a></span>)</span><span class="result">: <span class="extype" name="scala.Predef.Set">Set</span>[<span class="extype" name="org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph.Node">Node</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph@getIDDGCallArgNodes(cgN:org.sireum.jawa.alir.controlFlowGraph.CGCallNode):Set[Node]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph#getIDDGCenterNode" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="getIDDGCenterNode(cgN:org.sireum.jawa.alir.controlFlowGraph.CGEntryNode):Node"></a>
+      <a id="getIDDGCenterNode(CGEntryNode):Node"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getIDDGCenterNode</span><span class="params">(<span name="cgN">cgN: <a href="../controlFlowGraph/CGEntryNode.html" class="extype" name="org.sireum.jawa.alir.controlFlowGraph.CGEntryNode">CGEntryNode</a></span>)</span><span class="result">: <span class="extype" name="org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph.Node">Node</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph@getIDDGCenterNode(cgN:org.sireum.jawa.alir.controlFlowGraph.CGEntryNode):Node" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph#getIDDGCenterNode" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="getIDDGCenterNode(cgN:org.sireum.jawa.alir.controlFlowGraph.CGCenterNode):Node"></a>
+      <a id="getIDDGCenterNode(CGCenterNode):Node"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getIDDGCenterNode</span><span class="params">(<span name="cgN">cgN: <a href="../controlFlowGraph/CGCenterNode.html" class="extype" name="org.sireum.jawa.alir.controlFlowGraph.CGCenterNode">CGCenterNode</a></span>)</span><span class="result">: <span class="extype" name="org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph.Node">Node</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph@getIDDGCenterNode(cgN:org.sireum.jawa.alir.controlFlowGraph.CGCenterNode):Node" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph#getIDDGEntryParamNode" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="getIDDGEntryParamNode(cgN:org.sireum.jawa.alir.controlFlowGraph.CGEntryNode,position:Int):Node"></a>
+      <a id="getIDDGEntryParamNode(CGEntryNode,Int):Node"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getIDDGEntryParamNode</span><span class="params">(<span name="cgN">cgN: <a href="../controlFlowGraph/CGEntryNode.html" class="extype" name="org.sireum.jawa.alir.controlFlowGraph.CGEntryNode">CGEntryNode</a></span>, <span name="position">position: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph.Node">Node</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph@getIDDGEntryParamNode(cgN:org.sireum.jawa.alir.controlFlowGraph.CGEntryNode,position:Int):Node" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph#getIDDGExitParamNode" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="getIDDGExitParamNode(cgN:org.sireum.jawa.alir.controlFlowGraph.CGExitNode,position:Int):Node"></a>
+      <a id="getIDDGExitParamNode(CGExitNode,Int):Node"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getIDDGExitParamNode</span><span class="params">(<span name="cgN">cgN: <a href="../controlFlowGraph/CGExitNode.html" class="extype" name="org.sireum.jawa.alir.controlFlowGraph.CGExitNode">CGExitNode</a></span>, <span name="position">position: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph.Node">Node</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph@getIDDGExitParamNode(cgN:org.sireum.jawa.alir.controlFlowGraph.CGExitNode,position:Int):Node" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph#getIDDGNormalNode" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="getIDDGNormalNode(cgN:org.sireum.jawa.alir.controlFlowGraph.CGNormalNode):Node"></a>
+      <a id="getIDDGNormalNode(CGNormalNode):Node"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getIDDGNormalNode</span><span class="params">(<span name="cgN">cgN: <a href="../controlFlowGraph/CGNormalNode.html" class="extype" name="org.sireum.jawa.alir.controlFlowGraph.CGNormalNode">CGNormalNode</a></span>)</span><span class="result">: <span class="extype" name="org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph.Node">Node</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph@getIDDGNormalNode(cgN:org.sireum.jawa.alir.controlFlowGraph.CGNormalNode):Node" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph#getIDDGReturnArgNode" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="getIDDGReturnArgNode(cgN:org.sireum.jawa.alir.controlFlowGraph.CGReturnNode,position:Int):Node"></a>
+      <a id="getIDDGReturnArgNode(CGReturnNode,Int):Node"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getIDDGReturnArgNode</span><span class="params">(<span name="cgN">cgN: <a href="../controlFlowGraph/CGReturnNode.html" class="extype" name="org.sireum.jawa.alir.controlFlowGraph.CGReturnNode">CGReturnNode</a></span>, <span name="position">position: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph.Node">Node</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph@getIDDGReturnArgNode(cgN:org.sireum.jawa.alir.controlFlowGraph.CGReturnNode,position:Int):Node" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph#getIDDGReturnVarNode" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="getIDDGReturnVarNode(cgN:org.sireum.jawa.alir.controlFlowGraph.CGCallNode):Node"></a>
+      <a id="getIDDGReturnVarNode(CGCallNode):Node"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getIDDGReturnVarNode</span><span class="params">(<span name="cgN">cgN: <a href="../controlFlowGraph/CGCallNode.html" class="extype" name="org.sireum.jawa.alir.controlFlowGraph.CGCallNode">CGCallNode</a></span>)</span><span class="result">: <span class="extype" name="org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph.Node">Node</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph@getIDDGReturnVarNode(cgN:org.sireum.jawa.alir.controlFlowGraph.CGCallNode):Node" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph#getIDDGVirtualBodyNode" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="getIDDGVirtualBodyNode(cgN:org.sireum.jawa.alir.controlFlowGraph.CGCallNode):Node"></a>
+      <a id="getIDDGVirtualBodyNode(CGCallNode):Node"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getIDDGVirtualBodyNode</span><span class="params">(<span name="cgN">cgN: <a href="../controlFlowGraph/CGCallNode.html" class="extype" name="org.sireum.jawa.alir.controlFlowGraph.CGCallNode">CGCallNode</a></span>)</span><span class="result">: <span class="extype" name="org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph.Node">Node</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph@getIDDGVirtualBodyNode(cgN:org.sireum.jawa.alir.controlFlowGraph.CGCallNode):Node" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.jawa.alir.interProcedural.InterProceduralGraph#getNode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getNode(n:Node):Node"></a>
+      <a id="getNode(Node):Node"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getNode</span><span class="params">(<span name="n">n: <span class="extype" name="org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph.Node">Node</span></span>)</span><span class="result">: <span class="extype" name="org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph.Node">Node</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph@getNode(n:Node):Node" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../interProcedural/InterProceduralGraph.html" class="extype" name="org.sireum.jawa.alir.interProcedural.InterProceduralGraph">InterProceduralGraph</a> → AlirGraph</dd></dl></div>
+    </li><li name="org.sireum.jawa.alir.interProcedural.InterProceduralGraph#graph" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="graph:org.jgrapht.graph.DirectedPseudograph[Node,InterProceduralGraph.this.Edge]"></a>
+      <a id="graph:DirectedPseudograph[Node,Edge]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">graph</span><span class="result">: <span class="extype" name="org.jgrapht.graph.DirectedPseudograph">DirectedPseudograph</span>[<span class="extype" name="org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph.Node">Node</span>, <a href="#Edge=org.sireum.alir.AlirEdge[Node]" class="extmbr" name="org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph.Edge">Edge</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph@graph:org.jgrapht.graph.DirectedPseudograph[Node,InterProceduralGraph.this.Edge]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="../interProcedural/InterProceduralGraph.html" class="extype" name="org.sireum.jawa.alir.interProcedural.InterProceduralGraph">InterProceduralGraph</a> → AlirGraph</dd></dl></div>
+    </li><li name="org.sireum.alir.AlirGraph#hasEdge" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="hasEdge(n1:Node,n2:Node):Boolean"></a>
+      <a id="hasEdge(Node,Node):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">hasEdge</span><span class="params">(<span name="n1">n1: <span class="extype" name="org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph.Node">Node</span></span>, <span name="n2">n2: <span class="extype" name="org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph.Node">Node</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph@hasEdge(n1:Node,n2:Node):Boolean" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AlirGraph</dd></dl></div>
+    </li><li name="org.sireum.alir.AlirGraph#hasNode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="hasNode(n:Node):Boolean"></a>
+      <a id="hasNode(Node):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">hasNode</span><span class="params">(<span name="n">n: <span class="extype" name="org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph.Node">Node</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph@hasNode(n:Node):Boolean" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AlirGraph</dd></dl></div>
+    </li><li name="scala.AnyRef#hashCode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="hashCode():Int"></a>
+      <a id="hashCode():Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph@hashCode():Int" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph#iddgCallArgNodeExists" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="iddgCallArgNodeExists(cgN:org.sireum.jawa.alir.controlFlowGraph.CGCallNode,position:Int):Boolean"></a>
+      <a id="iddgCallArgNodeExists(CGCallNode,Int):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">iddgCallArgNodeExists</span><span class="params">(<span name="cgN">cgN: <a href="../controlFlowGraph/CGCallNode.html" class="extype" name="org.sireum.jawa.alir.controlFlowGraph.CGCallNode">CGCallNode</a></span>, <span name="position">position: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph@iddgCallArgNodeExists(cgN:org.sireum.jawa.alir.controlFlowGraph.CGCallNode,position:Int):Boolean" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph#iddgCenterNodeExists" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="iddgCenterNodeExists(cgN:org.sireum.jawa.alir.controlFlowGraph.CGCenterNode):Boolean"></a>
+      <a id="iddgCenterNodeExists(CGCenterNode):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">iddgCenterNodeExists</span><span class="params">(<span name="cgN">cgN: <a href="../controlFlowGraph/CGCenterNode.html" class="extype" name="org.sireum.jawa.alir.controlFlowGraph.CGCenterNode">CGCenterNode</a></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph@iddgCenterNodeExists(cgN:org.sireum.jawa.alir.controlFlowGraph.CGCenterNode):Boolean" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph#iddgEntryNodeExists" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="iddgEntryNodeExists(cgN:org.sireum.jawa.alir.controlFlowGraph.CGEntryNode):Boolean"></a>
+      <a id="iddgEntryNodeExists(CGEntryNode):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">iddgEntryNodeExists</span><span class="params">(<span name="cgN">cgN: <a href="../controlFlowGraph/CGEntryNode.html" class="extype" name="org.sireum.jawa.alir.controlFlowGraph.CGEntryNode">CGEntryNode</a></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph@iddgEntryNodeExists(cgN:org.sireum.jawa.alir.controlFlowGraph.CGEntryNode):Boolean" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph#iddgEntryParamNodeExists" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="iddgEntryParamNodeExists(cgN:org.sireum.jawa.alir.controlFlowGraph.CGEntryNode,position:Int):Boolean"></a>
+      <a id="iddgEntryParamNodeExists(CGEntryNode,Int):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">iddgEntryParamNodeExists</span><span class="params">(<span name="cgN">cgN: <a href="../controlFlowGraph/CGEntryNode.html" class="extype" name="org.sireum.jawa.alir.controlFlowGraph.CGEntryNode">CGEntryNode</a></span>, <span name="position">position: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph@iddgEntryParamNodeExists(cgN:org.sireum.jawa.alir.controlFlowGraph.CGEntryNode,position:Int):Boolean" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph#iddgExitParamNodeExists" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="iddgExitParamNodeExists(cgN:org.sireum.jawa.alir.controlFlowGraph.CGExitNode,position:Int):Boolean"></a>
+      <a id="iddgExitParamNodeExists(CGExitNode,Int):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">iddgExitParamNodeExists</span><span class="params">(<span name="cgN">cgN: <a href="../controlFlowGraph/CGExitNode.html" class="extype" name="org.sireum.jawa.alir.controlFlowGraph.CGExitNode">CGExitNode</a></span>, <span name="position">position: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph@iddgExitParamNodeExists(cgN:org.sireum.jawa.alir.controlFlowGraph.CGExitNode,position:Int):Boolean" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph#iddgNormalNodeExists" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="iddgNormalNodeExists(cgN:org.sireum.jawa.alir.controlFlowGraph.CGNormalNode):Boolean"></a>
+      <a id="iddgNormalNodeExists(CGNormalNode):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">iddgNormalNodeExists</span><span class="params">(<span name="cgN">cgN: <a href="../controlFlowGraph/CGNormalNode.html" class="extype" name="org.sireum.jawa.alir.controlFlowGraph.CGNormalNode">CGNormalNode</a></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph@iddgNormalNodeExists(cgN:org.sireum.jawa.alir.controlFlowGraph.CGNormalNode):Boolean" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph#iddgReturnArgNodeExists" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="iddgReturnArgNodeExists(cgN:org.sireum.jawa.alir.controlFlowGraph.CGReturnNode,position:Int):Boolean"></a>
+      <a id="iddgReturnArgNodeExists(CGReturnNode,Int):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">iddgReturnArgNodeExists</span><span class="params">(<span name="cgN">cgN: <a href="../controlFlowGraph/CGReturnNode.html" class="extype" name="org.sireum.jawa.alir.controlFlowGraph.CGReturnNode">CGReturnNode</a></span>, <span name="position">position: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph@iddgReturnArgNodeExists(cgN:org.sireum.jawa.alir.controlFlowGraph.CGReturnNode,position:Int):Boolean" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph#iddgReturnVarNodeExists" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="iddgReturnVarNodeExists(cgN:org.sireum.jawa.alir.controlFlowGraph.CGCallNode):Boolean"></a>
+      <a id="iddgReturnVarNodeExists(CGCallNode):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">iddgReturnVarNodeExists</span><span class="params">(<span name="cgN">cgN: <a href="../controlFlowGraph/CGCallNode.html" class="extype" name="org.sireum.jawa.alir.controlFlowGraph.CGCallNode">CGCallNode</a></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph@iddgReturnVarNodeExists(cgN:org.sireum.jawa.alir.controlFlowGraph.CGCallNode):Boolean" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph#iddgVirtualBodyNodeExists" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="iddgVirtualBodyNodeExists(cgN:org.sireum.jawa.alir.controlFlowGraph.CGCallNode):Boolean"></a>
+      <a id="iddgVirtualBodyNodeExists(CGCallNode):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">iddgVirtualBodyNodeExists</span><span class="params">(<span name="cgN">cgN: <a href="../controlFlowGraph/CGCallNode.html" class="extype" name="org.sireum.jawa.alir.controlFlowGraph.CGCallNode">CGCallNode</a></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph@iddgVirtualBodyNodeExists(cgN:org.sireum.jawa.alir.controlFlowGraph.CGCallNode):Boolean" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph#initGraph" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="initGraph(cg:org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph[org.sireum.jawa.alir.controlFlowGraph.CGNode]):Unit"></a>
+      <a id="initGraph(InterproceduralControlFlowGraph[CGNode]):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">initGraph</span><span class="params">(<span name="cg">cg: <a href="../controlFlowGraph/InterproceduralControlFlowGraph.html" class="extype" name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph">InterproceduralControlFlowGraph</a>[<a href="../controlFlowGraph/CGNode.html" class="extype" name="org.sireum.jawa.alir.controlFlowGraph.CGNode">CGNode</a>]</span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph@initGraph(cg:org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph[org.sireum.jawa.alir.controlFlowGraph.CGNode]):Unit" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="scala.Any#isInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph@isInstanceOf[T0]:Boolean" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ne(x$1:AnyRef):Boolean"></a>
+      <a id="ne(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph@ne(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph#newIDDGCallArgNode" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="newIDDGCallArgNode(cgN:org.sireum.jawa.alir.controlFlowGraph.CGCallNode,position:Int):org.sireum.jawa.alir.dataDependenceAnalysis.IDDGCallArgNode"></a>
+      <a id="newIDDGCallArgNode(CGCallNode,Int):IDDGCallArgNode"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">newIDDGCallArgNode</span><span class="params">(<span name="cgN">cgN: <a href="../controlFlowGraph/CGCallNode.html" class="extype" name="org.sireum.jawa.alir.controlFlowGraph.CGCallNode">CGCallNode</a></span>, <span name="position">position: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <a href="IDDGCallArgNode.html" class="extype" name="org.sireum.jawa.alir.dataDependenceAnalysis.IDDGCallArgNode">IDDGCallArgNode</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph@newIDDGCallArgNode(cgN:org.sireum.jawa.alir.controlFlowGraph.CGCallNode,position:Int):org.sireum.jawa.alir.dataDependenceAnalysis.IDDGCallArgNode" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
+    </li><li name="org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph#newIDDGCenterNode" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="newIDDGCenterNode(cgN:org.sireum.jawa.alir.controlFlowGraph.CGCenterNode):org.sireum.jawa.alir.dataDependenceAnalysis.IDDGCenterNode"></a>
+      <a id="newIDDGCenterNode(CGCenterNode):IDDGCenterNode"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">newIDDGCenterNode</span><span class="params">(<span name="cgN">cgN: <a href="../controlFlowGraph/CGCenterNode.html" class="extype" name="org.sireum.jawa.alir.controlFlowGraph.CGCenterNode">CGCenterNode</a></span>)</span><span class="result">: <a href="IDDGCenterNode.html" class="extype" name="org.sireum.jawa.alir.dataDependenceAnalysis.IDDGCenterNode">IDDGCenterNode</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph@newIDDGCenterNode(cgN:org.sireum.jawa.alir.controlFlowGraph.CGCenterNode):org.sireum.jawa.alir.dataDependenceAnalysis.IDDGCenterNode" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
+    </li><li name="org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph#newIDDGEntryNode" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="newIDDGEntryNode(cgN:org.sireum.jawa.alir.controlFlowGraph.CGEntryNode):org.sireum.jawa.alir.dataDependenceAnalysis.IDDGEntryNode"></a>
+      <a id="newIDDGEntryNode(CGEntryNode):IDDGEntryNode"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">newIDDGEntryNode</span><span class="params">(<span name="cgN">cgN: <a href="../controlFlowGraph/CGEntryNode.html" class="extype" name="org.sireum.jawa.alir.controlFlowGraph.CGEntryNode">CGEntryNode</a></span>)</span><span class="result">: <a href="IDDGEntryNode.html" class="extype" name="org.sireum.jawa.alir.dataDependenceAnalysis.IDDGEntryNode">IDDGEntryNode</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph@newIDDGEntryNode(cgN:org.sireum.jawa.alir.controlFlowGraph.CGEntryNode):org.sireum.jawa.alir.dataDependenceAnalysis.IDDGEntryNode" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
+    </li><li name="org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph#newIDDGEntryParamNode" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="newIDDGEntryParamNode(cgN:org.sireum.jawa.alir.controlFlowGraph.CGEntryNode,position:Int):org.sireum.jawa.alir.dataDependenceAnalysis.IDDGEntryParamNode"></a>
+      <a id="newIDDGEntryParamNode(CGEntryNode,Int):IDDGEntryParamNode"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">newIDDGEntryParamNode</span><span class="params">(<span name="cgN">cgN: <a href="../controlFlowGraph/CGEntryNode.html" class="extype" name="org.sireum.jawa.alir.controlFlowGraph.CGEntryNode">CGEntryNode</a></span>, <span name="position">position: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <a href="IDDGEntryParamNode.html" class="extype" name="org.sireum.jawa.alir.dataDependenceAnalysis.IDDGEntryParamNode">IDDGEntryParamNode</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph@newIDDGEntryParamNode(cgN:org.sireum.jawa.alir.controlFlowGraph.CGEntryNode,position:Int):org.sireum.jawa.alir.dataDependenceAnalysis.IDDGEntryParamNode" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
+    </li><li name="org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph#newIDDGExitParamNode" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="newIDDGExitParamNode(cgN:org.sireum.jawa.alir.controlFlowGraph.CGExitNode,position:Int):org.sireum.jawa.alir.dataDependenceAnalysis.IDDGExitParamNode"></a>
+      <a id="newIDDGExitParamNode(CGExitNode,Int):IDDGExitParamNode"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">newIDDGExitParamNode</span><span class="params">(<span name="cgN">cgN: <a href="../controlFlowGraph/CGExitNode.html" class="extype" name="org.sireum.jawa.alir.controlFlowGraph.CGExitNode">CGExitNode</a></span>, <span name="position">position: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <a href="IDDGExitParamNode.html" class="extype" name="org.sireum.jawa.alir.dataDependenceAnalysis.IDDGExitParamNode">IDDGExitParamNode</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph@newIDDGExitParamNode(cgN:org.sireum.jawa.alir.controlFlowGraph.CGExitNode,position:Int):org.sireum.jawa.alir.dataDependenceAnalysis.IDDGExitParamNode" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
+    </li><li name="org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph#newIDDGNormalNode" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="newIDDGNormalNode(cgN:org.sireum.jawa.alir.controlFlowGraph.CGNormalNode):org.sireum.jawa.alir.dataDependenceAnalysis.IDDGNormalNode"></a>
+      <a id="newIDDGNormalNode(CGNormalNode):IDDGNormalNode"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">newIDDGNormalNode</span><span class="params">(<span name="cgN">cgN: <a href="../controlFlowGraph/CGNormalNode.html" class="extype" name="org.sireum.jawa.alir.controlFlowGraph.CGNormalNode">CGNormalNode</a></span>)</span><span class="result">: <a href="IDDGNormalNode.html" class="extype" name="org.sireum.jawa.alir.dataDependenceAnalysis.IDDGNormalNode">IDDGNormalNode</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph@newIDDGNormalNode(cgN:org.sireum.jawa.alir.controlFlowGraph.CGNormalNode):org.sireum.jawa.alir.dataDependenceAnalysis.IDDGNormalNode" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
+    </li><li name="org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph#newIDDGReturnArgNode" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="newIDDGReturnArgNode(cgN:org.sireum.jawa.alir.controlFlowGraph.CGReturnNode,position:Int):org.sireum.jawa.alir.dataDependenceAnalysis.IDDGReturnArgNode"></a>
+      <a id="newIDDGReturnArgNode(CGReturnNode,Int):IDDGReturnArgNode"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">newIDDGReturnArgNode</span><span class="params">(<span name="cgN">cgN: <a href="../controlFlowGraph/CGReturnNode.html" class="extype" name="org.sireum.jawa.alir.controlFlowGraph.CGReturnNode">CGReturnNode</a></span>, <span name="position">position: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <a href="IDDGReturnArgNode.html" class="extype" name="org.sireum.jawa.alir.dataDependenceAnalysis.IDDGReturnArgNode">IDDGReturnArgNode</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph@newIDDGReturnArgNode(cgN:org.sireum.jawa.alir.controlFlowGraph.CGReturnNode,position:Int):org.sireum.jawa.alir.dataDependenceAnalysis.IDDGReturnArgNode" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
+    </li><li name="org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph#newIDDGReturnVarNode" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="newIDDGReturnVarNode(cgN:org.sireum.jawa.alir.controlFlowGraph.CGCallNode):org.sireum.jawa.alir.dataDependenceAnalysis.IDDGReturnVarNode"></a>
+      <a id="newIDDGReturnVarNode(CGCallNode):IDDGReturnVarNode"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">newIDDGReturnVarNode</span><span class="params">(<span name="cgN">cgN: <a href="../controlFlowGraph/CGCallNode.html" class="extype" name="org.sireum.jawa.alir.controlFlowGraph.CGCallNode">CGCallNode</a></span>)</span><span class="result">: <a href="IDDGReturnVarNode.html" class="extype" name="org.sireum.jawa.alir.dataDependenceAnalysis.IDDGReturnVarNode">IDDGReturnVarNode</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph@newIDDGReturnVarNode(cgN:org.sireum.jawa.alir.controlFlowGraph.CGCallNode):org.sireum.jawa.alir.dataDependenceAnalysis.IDDGReturnVarNode" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
+    </li><li name="org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph#newIDDGVirtualBodyNode" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="newIDDGVirtualBodyNode(cgN:org.sireum.jawa.alir.controlFlowGraph.CGCallNode):org.sireum.jawa.alir.dataDependenceAnalysis.IDDGVirtualBodyNode"></a>
+      <a id="newIDDGVirtualBodyNode(CGCallNode):IDDGVirtualBodyNode"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">newIDDGVirtualBodyNode</span><span class="params">(<span name="cgN">cgN: <a href="../controlFlowGraph/CGCallNode.html" class="extype" name="org.sireum.jawa.alir.controlFlowGraph.CGCallNode">CGCallNode</a></span>)</span><span class="result">: <a href="IDDGVirtualBodyNode.html" class="extype" name="org.sireum.jawa.alir.dataDependenceAnalysis.IDDGVirtualBodyNode">IDDGVirtualBodyNode</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph@newIDDGVirtualBodyNode(cgN:org.sireum.jawa.alir.controlFlowGraph.CGCallNode):org.sireum.jawa.alir.dataDependenceAnalysis.IDDGVirtualBodyNode" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
+    </li><li name="org.sireum.alir.AlirGraph#nodes" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="nodes:Iterable[Node]"></a>
+      <a id="nodes:Iterable[Node]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">nodes</span><span class="result">: <span class="extype" name="scala.Iterable">Iterable</span>[<span class="extype" name="org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph.Node">Node</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph@nodes:Iterable[Node]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AlirGraph</dd></dl></div>
+    </li><li name="scala.AnyRef#notify" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notify():Unit"></a>
+      <a id="notify():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notify</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph@notify():Unit" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#notifyAll" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notifyAll():Unit"></a>
+      <a id="notifyAll():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph@notifyAll():Unit" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="org.sireum.alir.AlirGraph#numOfEdges" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="numOfEdges:Int"></a>
+      <a id="numOfEdges:Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">numOfEdges</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph@numOfEdges:Int" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AlirGraph</dd></dl></div>
+    </li><li name="org.sireum.alir.AlirGraph#numOfNodes" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="numOfNodes:Int"></a>
+      <a id="numOfNodes:Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">numOfNodes</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph@numOfNodes:Int" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AlirGraph</dd></dl></div>
+    </li><li name="org.sireum.jawa.alir.interProcedural.InterProceduralGraph#pl" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="pl:org.sireum.util.MMap[org.sireum.jawa.alir.interProcedural.InterProceduralNode,Node]"></a>
+      <a id="pl:MMap[InterProceduralNode,Node]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">pl</span><span class="result">: <span class="extype" name="org.sireum.util.MMap">MMap</span>[<a href="../interProcedural/InterProceduralNode.html" class="extype" name="org.sireum.jawa.alir.interProcedural.InterProceduralNode">InterProceduralNode</a>, <span class="extype" name="org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph.Node">Node</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph@pl:org.sireum.util.MMap[org.sireum.jawa.alir.interProcedural.InterProceduralNode,Node]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="../interProcedural/InterProceduralGraph.html" class="extype" name="org.sireum.jawa.alir.interProcedural.InterProceduralGraph">InterProceduralGraph</a></dd></dl></div>
+    </li><li name="org.sireum.jawa.alir.interProcedural.InterProceduralGraph#pool" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="pool:org.sireum.util.MMap[org.sireum.jawa.alir.interProcedural.InterProceduralNode,Node]"></a>
+      <a id="pool:MMap[InterProceduralNode,Node]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">pool</span><span class="result">: <span class="extype" name="org.sireum.util.MMap">MMap</span>[<a href="../interProcedural/InterProceduralNode.html" class="extype" name="org.sireum.jawa.alir.interProcedural.InterProceduralNode">InterProceduralNode</a>, <span class="extype" name="org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph.Node">Node</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph@pool:org.sireum.util.MMap[org.sireum.jawa.alir.interProcedural.InterProceduralNode,Node]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../interProcedural/InterProceduralGraph.html" class="extype" name="org.sireum.jawa.alir.interProcedural.InterProceduralGraph">InterProceduralGraph</a></dd></dl></div>
+    </li><li name="org.sireum.alir.AlirGraph#prePostNodeOrder" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="prePostNodeOrder(n:Node):org.sireum.util.MMap[Node,(Int,Int)]"></a>
+      <a id="prePostNodeOrder(Node):MMap[Node,(Int,Int)]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">prePostNodeOrder</span><span class="params">(<span name="n">n: <span class="extype" name="org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph.Node">Node</span></span>)</span><span class="result">: <span class="extype" name="org.sireum.util.MMap">MMap</span>[<span class="extype" name="org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph.Node">Node</span>, (<span class="extype" name="scala.Int">Int</span>, <span class="extype" name="scala.Int">Int</span>)]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph@prePostNodeOrder(n:Node):org.sireum.util.MMap[Node,(Int,Int)]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AlirGraph</dd></dl></div>
+    </li><li name="org.sireum.alir.AlirSuccPredAccesses#predecessor" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="predecessor(edge:AlirSuccPredAccesses.this.Edge):Node"></a>
+      <a id="predecessor(Edge):Node"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">predecessor</span><span class="params">(<span name="edge">edge: <a href="#Edge=org.sireum.alir.AlirEdge[Node]" class="extmbr" name="org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph.Edge">Edge</a></span>)</span><span class="result">: <span class="extype" name="org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph.Node">Node</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph@predecessor(edge:AlirSuccPredAccesses.this.Edge):Node" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AlirSuccPredAccesses</dd></dl></div>
+    </li><li name="org.sireum.alir.AlirSuccPredAccesses#predecessorEdges" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="predecessorEdges(node:Node):org.sireum.util.CSet[AlirSuccPredAccesses.this.Edge]"></a>
+      <a id="predecessorEdges(Node):CSet[Edge]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">predecessorEdges</span><span class="params">(<span name="node">node: <span class="extype" name="org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph.Node">Node</span></span>)</span><span class="result">: <span class="extype" name="org.sireum.util.CSet">CSet</span>[<a href="#Edge=org.sireum.alir.AlirEdge[Node]" class="extmbr" name="org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph.Edge">Edge</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph@predecessorEdges(node:Node):org.sireum.util.CSet[AlirSuccPredAccesses.this.Edge]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AlirSuccPredAccesses</dd></dl></div>
+    </li><li name="org.sireum.alir.AlirSuccPredAccesses#predecessors" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="predecessors(node:Node):org.sireum.util.CSet[Node]"></a>
+      <a id="predecessors(Node):CSet[Node]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">predecessors</span><span class="params">(<span name="node">node: <span class="extype" name="org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph.Node">Node</span></span>)</span><span class="result">: <span class="extype" name="org.sireum.util.CSet">CSet</span>[<span class="extype" name="org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph.Node">Node</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph@predecessors(node:Node):org.sireum.util.CSet[Node]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AlirSuccPredAccesses</dd></dl></div>
+    </li><li name="org.sireum.alir.AlirGraph#stronglyConnectedSets" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="stronglyConnectedSets:Iterable[org.sireum.util.CSet[Node]]"></a>
+      <a id="stronglyConnectedSets:Iterable[CSet[Node]]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">stronglyConnectedSets</span><span class="result">: <span class="extype" name="scala.Iterable">Iterable</span>[<span class="extype" name="org.sireum.util.CSet">CSet</span>[<span class="extype" name="org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph.Node">Node</span>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph@stronglyConnectedSets:Iterable[org.sireum.util.CSet[Node]]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AlirGraph</dd></dl></div>
+    </li><li name="org.sireum.alir.AlirSuccPredAccesses#successor" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="successor(edge:AlirSuccPredAccesses.this.Edge):Node"></a>
+      <a id="successor(Edge):Node"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">successor</span><span class="params">(<span name="edge">edge: <a href="#Edge=org.sireum.alir.AlirEdge[Node]" class="extmbr" name="org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph.Edge">Edge</a></span>)</span><span class="result">: <span class="extype" name="org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph.Node">Node</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph@successor(edge:AlirSuccPredAccesses.this.Edge):Node" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AlirSuccPredAccesses</dd></dl></div>
+    </li><li name="org.sireum.alir.AlirSuccPredAccesses#successorEdges" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="successorEdges(node:Node):org.sireum.util.CSet[AlirSuccPredAccesses.this.Edge]"></a>
+      <a id="successorEdges(Node):CSet[Edge]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">successorEdges</span><span class="params">(<span name="node">node: <span class="extype" name="org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph.Node">Node</span></span>)</span><span class="result">: <span class="extype" name="org.sireum.util.CSet">CSet</span>[<a href="#Edge=org.sireum.alir.AlirEdge[Node]" class="extmbr" name="org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph.Edge">Edge</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph@successorEdges(node:Node):org.sireum.util.CSet[AlirSuccPredAccesses.this.Edge]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AlirSuccPredAccesses</dd></dl></div>
+    </li><li name="org.sireum.alir.AlirSuccPredAccesses#successors" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="successors(node:Node):org.sireum.util.CSet[Node]"></a>
+      <a id="successors(Node):CSet[Node]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">successors</span><span class="params">(<span name="node">node: <span class="extype" name="org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph.Node">Node</span></span>)</span><span class="result">: <span class="extype" name="org.sireum.util.CSet">CSet</span>[<span class="extype" name="org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph.Node">Node</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph@successors(node:Node):org.sireum.util.CSet[Node]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AlirSuccPredAccesses</dd></dl></div>
+    </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
+      <a id="synchronized[T0](⇒T0):T0"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>)</span><span class="result">: <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph@synchronized[T0](x$1:=&gt;T0):T0" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="org.sireum.jawa.alir.interProcedural.InterProceduralGraph#toDot" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="toDot(w:java.io.Writer):Unit"></a>
+      <a id="toDot(Writer):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toDot</span><span class="params">(<span name="w">w: <span class="extype" name="java.io.Writer">Writer</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph@toDot(w:java.io.Writer):Unit" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../interProcedural/InterProceduralGraph.html" class="extype" name="org.sireum.jawa.alir.interProcedural.InterProceduralGraph">InterProceduralGraph</a></dd></dl></div>
+    </li><li name="scala.AnyRef#toString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="toString():String"></a>
+      <a id="toString():String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph@toString():String" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="org.sireum.jawa.alir.interProcedural.InterProceduralGraph#vlabelProvider" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="vlabelProvider:org.jgrapht.ext.VertexNameProvider[Node]{deffilterLabel(uri:String):String}"></a>
+      <a id="vlabelProvider:VertexNameProvider[Node]{deffilterLabel(uri:String):String}"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">vlabelProvider</span><span class="result">: <span class="extype" name="org.jgrapht.ext.VertexNameProvider">VertexNameProvider</span>[<span class="extype" name="org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph.Node">Node</span>] { def filterLabel(uri: String): String }</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph@vlabelProvider:org.jgrapht.ext.VertexNameProvider[Node]{deffilterLabel(uri:String):String}" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="../interProcedural/InterProceduralGraph.html" class="extype" name="org.sireum.jawa.alir.interProcedural.InterProceduralGraph">InterProceduralGraph</a></dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait():Unit"></a>
+      <a id="wait():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph@wait():Unit" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long,x$2:Int):Unit"></a>
+      <a id="wait(Long,Int):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph@wait(x$1:Long,x$2:Int):Unit" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long):Unit"></a>
+      <a id="wait(Long):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph@wait(x$1:Long):Unit" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li></ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        <div class="parent" name="org.sireum.jawa.alir.interProcedural.InterProceduralGraph">
+              <h3>Inherited from <a href="../interProcedural/InterProceduralGraph.html" class="extype" name="org.sireum.jawa.alir.interProcedural.InterProceduralGraph">InterProceduralGraph</a>[<span class="extype" name="org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph.Node">Node</span>]</h3>
+            </div><div class="parent" name="scala.Serializable">
+              <h3>Inherited from <span class="extype" name="scala.Serializable">Serializable</span></h3>
+            </div><div class="parent" name="java.io.Serializable">
+              <h3>Inherited from <span class="extype" name="java.io.Serializable">Serializable</span></h3>
+            </div><div class="parent" name="org.sireum.alir.AlirSuccPredAccesses">
+              <h3>Inherited from <span class="extype" name="org.sireum.alir.AlirSuccPredAccesses">AlirSuccPredAccesses</span>[<span class="extype" name="org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph.Node">Node</span>]</h3>
+            </div><div class="parent" name="org.sireum.alir.AlirEdgeAccesses">
+              <h3>Inherited from <span class="extype" name="org.sireum.alir.AlirEdgeAccesses">AlirEdgeAccesses</span>[<span class="extype" name="org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph.Node">Node</span>]</h3>
+            </div><div class="parent" name="org.sireum.alir.AlirGraph">
+              <h3>Inherited from <span class="extype" name="org.sireum.alir.AlirGraph">AlirGraph</span>[<span class="extype" name="org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph.Node">Node</span>]</h3>
+            </div><div class="parent" name="scala.AnyRef">
+              <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
+            </div><div class="parent" name="scala.Any">
+              <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>
+            </div>
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+
+
+    </body>
+      </html>
