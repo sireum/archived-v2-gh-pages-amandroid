@@ -43,7 +43,7 @@
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <span class="name">TaintFact</span><span class="params">(<span name="fact">fact: <a href="../reachingFactsAnalysis/RFAFact.html" class="extype" name="org.sireum.jawa.alir.reachingFactsAnalysis.RFAFact">RFAFact</a></span>, <span name="source">source: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+        <span class="name">TaintFact</span><span class="params">(<span name="s">s: <span class="extype" name="org.sireum.alir.Slot">Slot</span></span>, <span name="tag">tag: <a href="TaintTag.html" class="extype" name="org.sireum.jawa.alir.taintAnalysis.TaintTag">TaintTag</a></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4>
       
@@ -88,7 +88,7 @@
         <div id="constructors" class="members">
               <h3>Instance Constructors</h3>
               <ol><li name="org.sireum.jawa.alir.taintAnalysis.TaintFact#&lt;init&gt;" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="&lt;init&gt;(fact:org.sireum.jawa.alir.reachingFactsAnalysis.RFAFact,source:String):org.sireum.jawa.alir.taintAnalysis.TaintFact"></a>
+      <a id="&lt;init&gt;(s:org.sireum.alir.Slot,tag:org.sireum.jawa.alir.taintAnalysis.TaintTag):org.sireum.jawa.alir.taintAnalysis.TaintFact"></a>
       <a id="&lt;init&gt;:TaintFact"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -96,10 +96,10 @@
         <span class="kind">new</span>
       </span>
       <span class="symbol">
-        <span class="name">TaintFact</span><span class="params">(<span name="fact">fact: <a href="../reachingFactsAnalysis/RFAFact.html" class="extype" name="org.sireum.jawa.alir.reachingFactsAnalysis.RFAFact">RFAFact</a></span>, <span name="source">source: <span class="extype" name="scala.Predef.String">String</span></span>)</span>
+        <span class="name">TaintFact</span><span class="params">(<span name="s">s: <span class="extype" name="org.sireum.alir.Slot">Slot</span></span>, <span name="tag">tag: <a href="TaintTag.html" class="extype" name="org.sireum.jawa.alir.taintAnalysis.TaintTag">TaintTag</a></span>)</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#org.sireum.jawa.alir.taintAnalysis.TaintFact@&lt;init&gt;(fact:org.sireum.jawa.alir.reachingFactsAnalysis.RFAFact,source:String):org.sireum.jawa.alir.taintAnalysis.TaintFact" title="Permalink" target="_top">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.taintAnalysis.TaintFact@&lt;init&gt;(s:org.sireum.alir.Slot,tag:org.sireum.jawa.alir.taintAnalysis.TaintTag):org.sireum.jawa.alir.taintAnalysis.TaintFact" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" />
       </a>
     </span>
@@ -221,23 +221,6 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="org.sireum.jawa.alir.taintAnalysis.TaintFact#fact" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="fact:org.sireum.jawa.alir.reachingFactsAnalysis.RFAFact"></a>
-      <a id="fact:RFAFact"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">val</span>
-      </span>
-      <span class="symbol">
-        <span class="name">fact</span><span class="result">: <a href="../reachingFactsAnalysis/RFAFact.html" class="extype" name="org.sireum.jawa.alir.reachingFactsAnalysis.RFAFact">RFAFact</a></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../../index.html#org.sireum.jawa.alir.taintAnalysis.TaintFact@fact:org.sireum.jawa.alir.reachingFactsAnalysis.RFAFact" title="Permalink" target="_top">
-        <img src="../../../../../lib/permalink.png" />
-      </a>
-    </span>
-      
     </li><li name="scala.AnyRef#finalize" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="finalize():Unit"></a>
       <a id="finalize():Unit"></a>
@@ -346,19 +329,19 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="org.sireum.jawa.alir.taintAnalysis.TaintFact#source" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="source:String"></a>
-      <a id="source:String"></a>
+    </li><li name="org.sireum.jawa.alir.taintAnalysis.TaintFact#s" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="s:org.sireum.alir.Slot"></a>
+      <a id="s:Slot"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">val</span>
       </span>
       <span class="symbol">
-        <span class="name">source</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+        <span class="name">s</span><span class="result">: <span class="extype" name="org.sireum.alir.Slot">Slot</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#org.sireum.jawa.alir.taintAnalysis.TaintFact@source:String" title="Permalink" target="_top">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.taintAnalysis.TaintFact@s:org.sireum.alir.Slot" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" />
       </a>
     </span>
@@ -380,6 +363,23 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="org.sireum.jawa.alir.taintAnalysis.TaintFact#tag" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="tag:org.sireum.jawa.alir.taintAnalysis.TaintTag"></a>
+      <a id="tag:TaintTag"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">tag</span><span class="result">: <a href="TaintTag.html" class="extype" name="org.sireum.jawa.alir.taintAnalysis.TaintTag">TaintTag</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.taintAnalysis.TaintFact@tag:org.sireum.jawa.alir.taintAnalysis.TaintTag" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      
     </li><li name="org.sireum.jawa.alir.taintAnalysis.TaintFact#toString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="toString():String"></a>
       <a id="toString():String"></a>

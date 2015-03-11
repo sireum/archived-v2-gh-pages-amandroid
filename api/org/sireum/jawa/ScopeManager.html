@@ -52,7 +52,7 @@
           <div class="superTypes hiddenContent"><span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
         </div><div class="toggleContainer block">
             <span class="toggle">Known Subclasses</span>
-            <div class="subClasses hiddenContent"><a href="../amandroid/alir/reachingFactsAnalysis/AndroidRFAScopeManager$.html" class="extype" name="org.sireum.amandroid.alir.reachingFactsAnalysis.AndroidRFAScopeManager">AndroidRFAScopeManager</a></div>
+            <div class="subClasses hiddenContent"><a href="../amandroid/alir/pta/reachingFactsAnalysis/AndroidRFAScopeManager$.html" class="extype" name="org.sireum.amandroid.alir.pta.reachingFactsAnalysis.AndroidRFAScopeManager">AndroidRFAScopeManager</a>, <a href="alir/pta/PTAScopeManager$.html" class="extype" name="org.sireum.jawa.alir.pta.PTAScopeManager">PTAScopeManager</a></div>
           </div></div>
         
 
@@ -94,145 +94,7 @@
 
         <div id="values" class="values members">
               <h3>Abstract Value Members</h3>
-              <ol><li name="org.sireum.jawa.ScopeManager#addPackage" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="addPackage(packageName:String):Unit"></a>
-      <a id="addPackage(String):Unit"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">abstract </span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">addPackage</span><span class="params">(<span name="packageName">packageName: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#org.sireum.jawa.ScopeManager@addPackage(packageName:String):Unit" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
-      
-    </li><li name="org.sireum.jawa.ScopeManager#addPackages" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="addPackages(packageNames:org.sireum.util.ISet[String]):Unit"></a>
-      <a id="addPackages(ISet[String]):Unit"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">abstract </span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">addPackages</span><span class="params">(<span name="packageNames">packageNames: <span class="extype" name="org.sireum.util.ISet">ISet</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#org.sireum.jawa.ScopeManager@addPackages(packageNames:org.sireum.util.ISet[String]):Unit" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
-      
-    </li><li name="org.sireum.jawa.ScopeManager#clear" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="clear:Unit"></a>
-      <a id="clear:Unit"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">abstract </span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">clear</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#org.sireum.jawa.ScopeManager@clear:Unit" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
-      
-    </li><li name="org.sireum.jawa.ScopeManager#contains" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="contains(packageName:String):Boolean"></a>
-      <a id="contains(String):Boolean"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">abstract </span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">contains</span><span class="params">(<span name="packageName">packageName: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#org.sireum.jawa.ScopeManager@contains(packageName:String):Boolean" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
-      <p class="shortcomment cmt">return true if given package name contained in the scope manager
-</p>
-    </li><li name="org.sireum.jawa.ScopeManager#isIncludeMode" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="isIncludeMode:Boolean"></a>
-      <a id="isIncludeMode:Boolean"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">abstract </span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">isIncludeMode</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#org.sireum.jawa.ScopeManager@isIncludeMode:Boolean" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
-      <p class="shortcomment cmt">return true means use include mode, any package defined in ScopeManager will be keep
-during the analysis, and vice versa.</p>
-    </li><li name="org.sireum.jawa.ScopeManager#removePackage" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="removePackage(packageName:String):Unit"></a>
-      <a id="removePackage(String):Unit"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">abstract </span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">removePackage</span><span class="params">(<span name="packageName">packageName: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#org.sireum.jawa.ScopeManager@removePackage(packageName:String):Unit" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
-      
-    </li><li name="org.sireum.jawa.ScopeManager#removePackages" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="removePackages(packageNames:org.sireum.util.ISet[String]):Unit"></a>
-      <a id="removePackages(ISet[String]):Unit"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">abstract </span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">removePackages</span><span class="params">(<span name="packageNames">packageNames: <span class="extype" name="org.sireum.util.ISet">ISet</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#org.sireum.jawa.ScopeManager@removePackages(packageNames:org.sireum.util.ISet[String]):Unit" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
-      
-    </li><li name="org.sireum.jawa.ScopeManager#setMode" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="setMode(inScopeMode:Boolean):Unit"></a>
-      <a id="setMode(Boolean):Unit"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">abstract </span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">setMode</span><span class="params">(<span name="inScopeMode">inScopeMode: <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#org.sireum.jawa.ScopeManager@setMode(inScopeMode:Boolean):Unit" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
-      
-    </li><li name="org.sireum.jawa.ScopeManager#shouldBypass" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+              <ol><li name="org.sireum.jawa.ScopeManager#shouldBypass" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
       <a id="shouldBypass(rec:org.sireum.jawa.JawaRecord):Boolean"></a>
       <a id="shouldBypass(JawaRecord):Boolean"></a>
       <h4 class="signature">

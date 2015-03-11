@@ -1,11 +1,11 @@
 First Steps with Amandroid
-#########################
+##########################
 
 Amandroid uses development platform provided by `Sireum <http://www.sireum.org/>`__.
 So the first thing we need to do is to setup Sireum command-line interface (CLI).
 
 Setup Sireum CLI
-====================
+================
 
 .. sidebar:: Sireum
 
@@ -29,7 +29,7 @@ This will launch Eclipse IDE with all required pulgins. ``-j "-Xms512m,-Xmx4096m
 After above steps you will get a working development platform with all the necessary plugins setup. Then it is time to get code of Amandroid.
 
 Checking Out the Source of Amandroid
-====================
+====================================
 
 Amandroid is implemented on top of `Sireum <https://github.com/sireum>`__, so following Sireum repositories are needed to be able to run Amandroid:
 
@@ -69,24 +69,7 @@ right-click on each repository -> select ``Import Projects …`` -> check ``Impo
 
 5.Wait for the projects to be imported, and the indexing to finish.
 
-
-Optain Amandroid Stash
-======================
-
-1.Download `Amandroid Stash <http://people.cis.ksu.edu/~fgwei/resources/stash/AmandroidStash.zip>`__, and extract it in, e.g., ``/path``.
-This will create a Amandroid directory in ``/path/AmandroidStash``.
-
-2.Setup environment variable:
-
-``AMANDROID_HOME``: points to Amandroid Stash’s main directory. e.g.,
-	
-.. code-block:: bash
-
-	$ export AMANDROID_HOME=/path/AmandroidStash
-
-.. warning:: Do not change the directory structure with in Amandoid Stash.
-
 TroubleShooting
-==================
+===============
 
 1.Sometimes, after you import all the projects it will show error mark on some of the projects. Just make sure you are using correct Java compiler version, and then clean all projects.

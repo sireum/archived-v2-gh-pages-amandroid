@@ -43,7 +43,7 @@
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <span class="name">UnknownInstance</span><span class="params">(<span name="defSite">defSite: <a href="Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>)</span><span class="result"> extends <a href="Instance.html" class="extype" name="org.sireum.jawa.alir.Instance">Instance</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+        <span class="name">UnknownInstance</span><span class="params">(<span name="baseTyp">baseTyp: <a href="../Type.html" class="extype" name="org.sireum.jawa.Type">Type</a></span>, <span name="defSite">defSite: <a href="Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>)</span><span class="result"> extends <a href="Instance.html" class="extype" name="org.sireum.jawa.alir.Instance">Instance</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4>
       
@@ -88,7 +88,7 @@
         <div id="constructors" class="members">
               <h3>Instance Constructors</h3>
               <ol><li name="org.sireum.jawa.alir.UnknownInstance#&lt;init&gt;" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="&lt;init&gt;(defSite:org.sireum.jawa.alir.Context):org.sireum.jawa.alir.UnknownInstance"></a>
+      <a id="&lt;init&gt;(baseTyp:org.sireum.jawa.Type,defSite:org.sireum.jawa.alir.Context):org.sireum.jawa.alir.UnknownInstance"></a>
       <a id="&lt;init&gt;:UnknownInstance"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -96,10 +96,10 @@
         <span class="kind">new</span>
       </span>
       <span class="symbol">
-        <span class="name">UnknownInstance</span><span class="params">(<span name="defSite">defSite: <a href="Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>)</span>
+        <span class="name">UnknownInstance</span><span class="params">(<span name="baseTyp">baseTyp: <a href="../Type.html" class="extype" name="org.sireum.jawa.Type">Type</a></span>, <span name="defSite">defSite: <a href="Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>)</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#org.sireum.jawa.alir.UnknownInstance@&lt;init&gt;(defSite:org.sireum.jawa.alir.Context):org.sireum.jawa.alir.UnknownInstance" title="Permalink" target="_top">
+      <a href="../../../../index.html#org.sireum.jawa.alir.UnknownInstance@&lt;init&gt;(baseTyp:org.sireum.jawa.Type,defSite:org.sireum.jawa.alir.Context):org.sireum.jawa.alir.UnknownInstance" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" />
       </a>
     </span>
@@ -198,6 +198,23 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="org.sireum.jawa.alir.UnknownInstance#baseTyp" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="baseTyp:org.sireum.jawa.Type"></a>
+      <a id="baseTyp:Type"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">baseTyp</span><span class="result">: <a href="../Type.html" class="extype" name="org.sireum.jawa.Type">Type</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#org.sireum.jawa.alir.UnknownInstance@baseTyp:org.sireum.jawa.Type" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
+      
     </li><li name="org.sireum.jawa.alir.UnknownInstance#clone" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="clone(newDefSite:org.sireum.jawa.alir.Context):org.sireum.jawa.alir.Instance"></a>
       <a id="clone(Context):Instance"></a>

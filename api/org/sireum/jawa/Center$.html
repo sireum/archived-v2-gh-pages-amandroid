@@ -250,7 +250,8 @@
         <img src="../../../lib/permalink.png" />
       </a>
     </span>
-      
+      <p class="shortcomment cmt">We need Unknown record and procedure to account for Modeled calls and Native calls
+</p>
     </li><li name="org.sireum.jawa.Center.ResolveLevel" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="ResolveLevel"></a>
       <a id="ResolveLevel:ResolveLevel"></a>
@@ -268,41 +269,6 @@
       </a>
     </span>
       <p class="shortcomment cmt">enum of all the valid resolve level of record
-</p>
-    </li><li name="org.sireum.jawa.Center#UNKNOWN_PROCEDURE_SIG" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="UNKNOWN_PROCEDURE_SIG:String(&quot;LCenter/Unknown;.unknown:()LCenter/Unknown;&quot;)"></a>
-      <a id="UNKNOWN_PROCEDURE_SIG:String(&quot;LCenter/Unknown;.unknown:()LCenter/Unknown;&quot;)"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">final </span>
-        <span class="kind">val</span>
-      </span>
-      <span class="symbol">
-        <span class="name">UNKNOWN_PROCEDURE_SIG</span><span class="result">: String(&quot;LCenter/Unknown;.unknown:()LCenter/Unknown;&quot;)</span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#org.sireum.jawa.Center$@UNKNOWN_PROCEDURE_SIG:String(&quot;LCenter/Unknown;.unknown:()LCenter/Unknown;&quot;)" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
-      
-    </li><li name="org.sireum.jawa.Center#UNKNOWN_RECORD" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="UNKNOWN_RECORD:String(&quot;Center.Unknown&quot;)"></a>
-      <a id="UNKNOWN_RECORD:String(&quot;Center.Unknown&quot;)"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">final </span>
-        <span class="kind">val</span>
-      </span>
-      <span class="symbol">
-        <span class="name">UNKNOWN_RECORD</span><span class="result">: String(&quot;Center.Unknown&quot;)</span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#org.sireum.jawa.Center$@UNKNOWN_RECORD:String(&quot;Center.Unknown&quot;)" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
-      <p class="shortcomment cmt">We need Unknown record and procedure to account for Modeled calls and Native calls
 </p>
     </li><li name="org.sireum.jawa.Center#addApplicationRecord" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="addApplicationRecord(ar:org.sireum.jawa.JawaRecord):Unit"></a>
@@ -322,23 +288,23 @@
     </span>
       <p class="shortcomment cmt">add an application record
 </p>
-    </li><li name="org.sireum.jawa.Center#addLibraryRecord" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="addLibraryRecord(l:org.sireum.jawa.JawaRecord):Unit"></a>
-      <a id="addLibraryRecord(JawaRecord):Unit"></a>
+    </li><li name="org.sireum.jawa.Center#addFrameworkRecord" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="addFrameworkRecord(l:org.sireum.jawa.JawaRecord):Unit"></a>
+      <a id="addFrameworkRecord(JawaRecord):Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">addLibraryRecord</span><span class="params">(<span name="l">l: <a href="JawaRecord.html" class="extype" name="org.sireum.jawa.JawaRecord">JawaRecord</a></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">addFrameworkRecord</span><span class="params">(<span name="l">l: <a href="JawaRecord.html" class="extype" name="org.sireum.jawa.JawaRecord">JawaRecord</a></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#org.sireum.jawa.Center$@addLibraryRecord(l:org.sireum.jawa.JawaRecord):Unit" title="Permalink" target="_top">
+      <a href="../../../index.html#org.sireum.jawa.Center$@addFrameworkRecord(l:org.sireum.jawa.JawaRecord):Unit" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" />
       </a>
     </span>
-      <p class="shortcomment cmt">add a library record
+      <p class="shortcomment cmt">add a framework record
 </p>
     </li><li name="org.sireum.jawa.Center#addRecord" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="addRecord(ar:org.sireum.jawa.JawaRecord):Unit"></a>
@@ -357,6 +323,24 @@
       </a>
     </span>
       <p class="shortcomment cmt">add record into Center
+</p>
+    </li><li name="org.sireum.jawa.Center#addThirdPartyLibRecord" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="addThirdPartyLibRecord(l:org.sireum.jawa.JawaRecord):Unit"></a>
+      <a id="addThirdPartyLibRecord(JawaRecord):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">addThirdPartyLibRecord</span><span class="params">(<span name="l">l: <a href="JawaRecord.html" class="extype" name="org.sireum.jawa.JawaRecord">JawaRecord</a></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#org.sireum.jawa.Center$@addThirdPartyLibRecord(l:org.sireum.jawa.JawaRecord):Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">add a framework record
 </p>
     </li><li name="scala.Any#asInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="asInstanceOf[T0]:T0"></a>
@@ -796,6 +780,24 @@
     </span>
       <p class="shortcomment cmt">get field from Center.</p><div class="fullcomment"><div class="comment cmt"><p>get field from Center. Input example is java.lang.Throwable.stackState
 </p></div></div>
+    </li><li name="org.sireum.jawa.Center#getFrameworkRecords" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="getFrameworkRecords:Set[org.sireum.jawa.JawaRecord]"></a>
+      <a id="getFrameworkRecords:Set[JawaRecord]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getFrameworkRecords</span><span class="result">: <span class="extype" name="scala.Predef.Set">Set</span>[<a href="JawaRecord.html" class="extype" name="org.sireum.jawa.JawaRecord">JawaRecord</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#org.sireum.jawa.Center$@getFrameworkRecords:Set[org.sireum.jawa.JawaRecord]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">get all the framework records
+</p>
     </li><li name="org.sireum.jawa.Center#getGlobalVarUri" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="getGlobalVarUri(sig:String):Option[org.sireum.util.ResourceUri]"></a>
       <a id="getGlobalVarUri(String):Option[ResourceUri]"></a>
@@ -813,24 +815,6 @@
       </a>
     </span>
       
-    </li><li name="org.sireum.jawa.Center#getLibraryRecords" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="getLibraryRecords:Set[org.sireum.jawa.JawaRecord]"></a>
-      <a id="getLibraryRecords:Set[JawaRecord]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">getLibraryRecords</span><span class="result">: <span class="extype" name="scala.Predef.Set">Set</span>[<a href="JawaRecord.html" class="extype" name="org.sireum.jawa.JawaRecord">JawaRecord</a>]</span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#org.sireum.jawa.Center$@getLibraryRecords:Set[org.sireum.jawa.JawaRecord]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
-      <p class="shortcomment cmt">get all the library records
-</p>
     </li><li name="org.sireum.jawa.Center#getMainProcedure" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="getMainProcedure:org.sireum.jawa.JawaProcedure"></a>
       <a id="getMainProcedure:JawaProcedure"></a>
@@ -1028,6 +1012,24 @@
     </span>
       <p class="shortcomment cmt">get sub-signature from signature.</p><div class="fullcomment"><div class="comment cmt"><p>get sub-signature from signature. e.g. Ljava/lang/Object;.equals:(Ljava/lang/Object;)Z -&gt; equals:(Ljava/lang/Object;)Z
 </p></div></div>
+    </li><li name="org.sireum.jawa.Center#getThirdPartyLibRecords" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="getThirdPartyLibRecords:Set[org.sireum.jawa.JawaRecord]"></a>
+      <a id="getThirdPartyLibRecords:Set[JawaRecord]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getThirdPartyLibRecords</span><span class="result">: <span class="extype" name="scala.Predef.Set">Set</span>[<a href="JawaRecord.html" class="extype" name="org.sireum.jawa.JawaRecord">JawaRecord</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#org.sireum.jawa.Center$@getThirdPartyLibRecords:Set[org.sireum.jawa.JawaRecord]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">get all the third party lib records
+</p>
     </li><li name="org.sireum.jawa.Center#hasEntryPoints" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="hasEntryPoints:Boolean"></a>
       <a id="hasEntryPoints:Boolean"></a>
@@ -1363,6 +1365,24 @@
     </span>
       <p class="shortcomment cmt">remove application record
 </p>
+    </li><li name="org.sireum.jawa.Center#removeFrameworkRecords" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="removeFrameworkRecords(l:org.sireum.jawa.JawaRecord):Unit"></a>
+      <a id="removeFrameworkRecords(JawaRecord):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">removeFrameworkRecords</span><span class="params">(<span name="l">l: <a href="JawaRecord.html" class="extype" name="org.sireum.jawa.JawaRecord">JawaRecord</a></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#org.sireum.jawa.Center$@removeFrameworkRecords(l:org.sireum.jawa.JawaRecord):Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">remove framework record
+</p>
     </li><li name="org.sireum.jawa.Center#removeFromContainingSet" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="removeFromContainingSet(ar:org.sireum.jawa.JawaRecord):Unit"></a>
       <a id="removeFromContainingSet(JawaRecord):Unit"></a>
@@ -1381,24 +1401,6 @@
     </span>
       <p class="shortcomment cmt">remove given record from containing set
 </p>
-    </li><li name="org.sireum.jawa.Center#removeLibraryRecords" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="removeLibraryRecords(l:org.sireum.jawa.JawaRecord):Unit"></a>
-      <a id="removeLibraryRecords(JawaRecord):Unit"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">removeLibraryRecords</span><span class="params">(<span name="l">l: <a href="JawaRecord.html" class="extype" name="org.sireum.jawa.JawaRecord">JawaRecord</a></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#org.sireum.jawa.Center$@removeLibraryRecords(l:org.sireum.jawa.JawaRecord):Unit" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
-      <p class="shortcomment cmt">remove library record
-</p>
     </li><li name="org.sireum.jawa.Center#removeRecord" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="removeRecord(ar:org.sireum.jawa.JawaRecord):Unit"></a>
       <a id="removeRecord(JawaRecord):Unit"></a>
@@ -1416,6 +1418,24 @@
       </a>
     </span>
       <p class="shortcomment cmt">remove record from Center
+</p>
+    </li><li name="org.sireum.jawa.Center#removeThirdPartyLibRecords" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="removeThirdPartyLibRecords(l:org.sireum.jawa.JawaRecord):Unit"></a>
+      <a id="removeThirdPartyLibRecords(JawaRecord):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">removeThirdPartyLibRecords</span><span class="params">(<span name="l">l: <a href="JawaRecord.html" class="extype" name="org.sireum.jawa.JawaRecord">JawaRecord</a></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#org.sireum.jawa.Center$@removeThirdPartyLibRecords(l:org.sireum.jawa.JawaRecord):Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">remove third party lib record
 </p>
     </li><li name="org.sireum.jawa.Center#reset" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="reset:Unit"></a>
@@ -1576,6 +1596,26 @@
       </a>
     </span>
       <p class="shortcomment cmt">set normal record hierarchy
+</p>
+    </li><li name="org.sireum.jawa.Center#setupCenter" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="setupCenter:Unit"></a>
+      <a id="setupCenter:Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">setupCenter</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#org.sireum.jawa.Center$@setupCenter:Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">before starting the analysis, prepares the Center with some additional info
+a record named &quot;Unknown&quot; with a procedure called &quot;unknown()&quot; is added to the Center
+this special record is used to handle out-of-scope calls
 </p>
     </li><li name="org.sireum.jawa.Center#softlyResolveRecord" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="softlyResolveRecord(recordName:String,desiredLevel:org.sireum.jawa.Center.ResolveLevel.Value):Option[org.sireum.jawa.JawaRecord]"></a>

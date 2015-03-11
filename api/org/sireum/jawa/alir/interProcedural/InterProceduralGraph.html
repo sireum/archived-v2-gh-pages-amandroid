@@ -52,7 +52,7 @@
           <div class="superTypes hiddenContent"><span class="extype" name="scala.Serializable">Serializable</span>, <span class="extype" name="java.io.Serializable">Serializable</span>, <span class="extype" name="org.sireum.alir.AlirSuccPredAccesses">AlirSuccPredAccesses</span>[<span class="extype" name="org.sireum.jawa.alir.interProcedural.InterProceduralGraph.Node">Node</span>], <span class="extype" name="org.sireum.alir.AlirEdgeAccesses">AlirEdgeAccesses</span>[<span class="extype" name="org.sireum.jawa.alir.interProcedural.InterProceduralGraph.Node">Node</span>], <span class="extype" name="org.sireum.alir.AlirGraph">AlirGraph</span>[<span class="extype" name="org.sireum.jawa.alir.interProcedural.InterProceduralGraph.Node">Node</span>], <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
         </div><div class="toggleContainer block">
             <span class="toggle">Known Subclasses</span>
-            <div class="subClasses hiddenContent"><a href="../dataDependenceAnalysis/InterProceduralDataDependenceGraph.html" class="extype" name="org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph">InterProceduralDataDependenceGraph</a>, <a href="../controlFlowGraph/InterproceduralControlFlowGraph.html" class="extype" name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph">InterproceduralControlFlowGraph</a>, <a href="../pointsToAnalysis/PointerAssignmentGraph.html" class="extype" name="org.sireum.jawa.alir.pointsToAnalysis.PointerAssignmentGraph">PointerAssignmentGraph</a></div>
+            <div class="subClasses hiddenContent"><a href="../dataDependenceAnalysis/InterProceduralDataDependenceGraph.html" class="extype" name="org.sireum.jawa.alir.dataDependenceAnalysis.InterProceduralDataDependenceGraph">InterProceduralDataDependenceGraph</a>, <a href="../controlFlowGraph/InterproceduralControlFlowGraph.html" class="extype" name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph">InterproceduralControlFlowGraph</a>, <a href="../pta/suspark/PointerAssignmentGraph.html" class="extype" name="org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph">PointerAssignmentGraph</a></div>
           </div></div>
         
 
@@ -360,6 +360,23 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AlirGraph</dd></dl></div>
+    </li><li name="org.sireum.jawa.alir.interProcedural.InterProceduralGraph#elabelProvider" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="elabelProvider:org.jgrapht.ext.EdgeNameProvider[InterProceduralGraph.this.Edge]{deffilterLabel(uri:String):String}"></a>
+      <a id="elabelProvider:EdgeNameProvider[Edge]{deffilterLabel(uri:String):String}"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">elabelProvider</span><span class="result">: <span class="extype" name="org.jgrapht.ext.EdgeNameProvider">EdgeNameProvider</span>[<a href="#Edge=org.sireum.alir.AlirEdge[Node]" class="extmbr" name="org.sireum.jawa.alir.interProcedural.InterProceduralGraph.Edge">Edge</a>] { def filterLabel(uri: String): String }</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.interProcedural.InterProceduralGraph@elabelProvider:org.jgrapht.ext.EdgeNameProvider[InterProceduralGraph.this.Edge]{deffilterLabel(uri:String):String}" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
     </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="eq(x$1:AnyRef):Boolean"></a>
       <a id="eq(AnyRef):Boolean"></a>
@@ -872,6 +889,40 @@
       </span>
       </h4><span class="permalink">
       <a href="../../../../../index.html#org.sireum.jawa.alir.interProcedural.InterProceduralGraph@toDot(w:java.io.Writer):Unit" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.jawa.alir.interProcedural.InterProceduralGraph#toGML" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="toGML(w:java.io.Writer):Unit"></a>
+      <a id="toGML(Writer):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toGML</span><span class="params">(<span name="w">w: <span class="extype" name="java.io.Writer">Writer</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.interProcedural.InterProceduralGraph@toGML(w:java.io.Writer):Unit" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.jawa.alir.interProcedural.InterProceduralGraph#toGraphML" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="toGraphML(w:java.io.Writer):Unit"></a>
+      <a id="toGraphML(Writer):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toGraphML</span><span class="params">(<span name="w">w: <span class="extype" name="java.io.Writer">Writer</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.interProcedural.InterProceduralGraph@toGraphML(w:java.io.Writer):Unit" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" />
       </a>
     </span>

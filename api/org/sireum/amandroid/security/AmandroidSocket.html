@@ -181,6 +181,23 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="org.sireum.amandroid.security.AmandroidSocket#cleanEnv" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="cleanEnv:Unit"></a>
+      <a id="cleanEnv:Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">cleanEnv</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#org.sireum.amandroid.security.AmandroidSocket@cleanEnv:Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Always call this after analysis one application.</p>
     </li><li name="scala.AnyRef#clone" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="clone():Object"></a>
       <a id="clone():AnyRef"></a>
@@ -313,18 +330,18 @@
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
     </li><li name="org.sireum.amandroid.security.AmandroidSocket#loadApk" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="loadApk(source_apk:org.sireum.util.FileResourceUri,output_path:String,lib_sum:org.sireum.jawa.LibraryAPISummary,app_info:org.sireum.amandroid.appInfo.AppInfoCollector):Unit"></a>
-      <a id="loadApk(FileResourceUri,String,LibraryAPISummary,AppInfoCollector):Unit"></a>
+      <a id="loadApk(source_apk:org.sireum.util.FileResourceUri,output_path:String,lib_sum:org.sireum.jawa.LibraryAPISummary):org.sireum.util.FileResourceUri"></a>
+      <a id="loadApk(FileResourceUri,String,LibraryAPISummary):FileResourceUri"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">loadApk</span><span class="params">(<span name="source_apk">source_apk: <span class="extype" name="org.sireum.util.FileResourceUri">FileResourceUri</span></span>, <span name="output_path">output_path: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="lib_sum">lib_sum: <a href="../../jawa/LibraryAPISummary.html" class="extype" name="org.sireum.jawa.LibraryAPISummary">LibraryAPISummary</a></span>, <span name="app_info">app_info: <a href="../appInfo/AppInfoCollector.html" class="extype" name="org.sireum.amandroid.appInfo.AppInfoCollector">AppInfoCollector</a></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">loadApk</span><span class="params">(<span name="source_apk">source_apk: <span class="extype" name="org.sireum.util.FileResourceUri">FileResourceUri</span></span>, <span name="output_path">output_path: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="lib_sum">lib_sum: <a href="../../jawa/LibraryAPISummary.html" class="extype" name="org.sireum.jawa.LibraryAPISummary">LibraryAPISummary</a></span>)</span><span class="result">: <span class="extype" name="org.sireum.util.FileResourceUri">FileResourceUri</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#org.sireum.amandroid.security.AmandroidSocket@loadApk(source_apk:org.sireum.util.FileResourceUri,output_path:String,lib_sum:org.sireum.jawa.LibraryAPISummary,app_info:org.sireum.amandroid.appInfo.AppInfoCollector):Unit" title="Permalink" target="_top">
+      <a href="../../../../index.html#org.sireum.amandroid.security.AmandroidSocket@loadApk(source_apk:org.sireum.util.FileResourceUri,output_path:String,lib_sum:org.sireum.jawa.LibraryAPISummary):org.sireum.util.FileResourceUri" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" />
       </a>
     </span>
@@ -415,35 +432,35 @@
     </span>
       
     </li><li name="org.sireum.amandroid.security.AmandroidSocket#runWithDDA" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="runWithDDA(ssm:org.sireum.amandroid.alir.taintAnalysis.AndroidSourceAndSinkManager,public_only:Boolean,parallel:Boolean):Unit"></a>
-      <a id="runWithDDA(AndroidSourceAndSinkManager,Boolean,Boolean):Unit"></a>
+      <a id="runWithDDA(ssm:org.sireum.amandroid.alir.taintAnalysis.AndroidSourceAndSinkManager,public_only:Boolean,parallel:Boolean,timer:Option[org.sireum.jawa.util.MyTimer]):Unit"></a>
+      <a id="runWithDDA(AndroidSourceAndSinkManager,Boolean,Boolean,Option[MyTimer]):Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">runWithDDA</span><span class="params">(<span name="ssm">ssm: <a href="../alir/taintAnalysis/AndroidSourceAndSinkManager.html" class="extype" name="org.sireum.amandroid.alir.taintAnalysis.AndroidSourceAndSinkManager">AndroidSourceAndSinkManager</a></span>, <span name="public_only">public_only: <span class="extype" name="scala.Boolean">Boolean</span></span>, <span name="parallel">parallel: <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">runWithDDA</span><span class="params">(<span name="ssm">ssm: <a href="../alir/taintAnalysis/AndroidSourceAndSinkManager.html" class="extype" name="org.sireum.amandroid.alir.taintAnalysis.AndroidSourceAndSinkManager">AndroidSourceAndSinkManager</a></span>, <span name="public_only">public_only: <span class="extype" name="scala.Boolean">Boolean</span></span>, <span name="parallel">parallel: <span class="extype" name="scala.Boolean">Boolean</span></span>, <span name="timer">timer: <span class="extype" name="scala.Option">Option</span>[<a href="../../jawa/util/MyTimer.html" class="extype" name="org.sireum.jawa.util.MyTimer">MyTimer</a>]</span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#org.sireum.amandroid.security.AmandroidSocket@runWithDDA(ssm:org.sireum.amandroid.alir.taintAnalysis.AndroidSourceAndSinkManager,public_only:Boolean,parallel:Boolean):Unit" title="Permalink" target="_top">
+      <a href="../../../../index.html#org.sireum.amandroid.security.AmandroidSocket@runWithDDA(ssm:org.sireum.amandroid.alir.taintAnalysis.AndroidSourceAndSinkManager,public_only:Boolean,parallel:Boolean,timer:Option[org.sireum.jawa.util.MyTimer]):Unit" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" />
       </a>
     </span>
       
     </li><li name="org.sireum.amandroid.security.AmandroidSocket#runWithoutDDA" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="runWithoutDDA(public_only:Boolean,parallel:Boolean):Unit"></a>
-      <a id="runWithoutDDA(Boolean,Boolean):Unit"></a>
+      <a id="runWithoutDDA(public_only:Boolean,parallel:Boolean,timer:Option[org.sireum.jawa.util.MyTimer]):Unit"></a>
+      <a id="runWithoutDDA(Boolean,Boolean,Option[MyTimer]):Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">runWithoutDDA</span><span class="params">(<span name="public_only">public_only: <span class="extype" name="scala.Boolean">Boolean</span></span>, <span name="parallel">parallel: <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">runWithoutDDA</span><span class="params">(<span name="public_only">public_only: <span class="extype" name="scala.Boolean">Boolean</span></span>, <span name="parallel">parallel: <span class="extype" name="scala.Boolean">Boolean</span></span>, <span name="timer">timer: <span class="extype" name="scala.Option">Option</span>[<a href="../../jawa/util/MyTimer.html" class="extype" name="org.sireum.jawa.util.MyTimer">MyTimer</a>]</span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#org.sireum.amandroid.security.AmandroidSocket@runWithoutDDA(public_only:Boolean,parallel:Boolean):Unit" title="Permalink" target="_top">
+      <a href="../../../../index.html#org.sireum.amandroid.security.AmandroidSocket@runWithoutDDA(public_only:Boolean,parallel:Boolean,timer:Option[org.sireum.jawa.util.MyTimer]):Unit" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" />
       </a>
     </span>

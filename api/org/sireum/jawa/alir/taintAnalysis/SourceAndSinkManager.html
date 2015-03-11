@@ -43,7 +43,7 @@
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <span class="name">SourceAndSinkManager</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+        <span class="name">SourceAndSinkManager</span><span class="tparams">[<span name="Fact">Fact</span>]</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
       </h4>
       
@@ -52,7 +52,7 @@
           <div class="superTypes hiddenContent"><span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
         </div><div class="toggleContainer block">
             <span class="toggle">Known Subclasses</span>
-            <div class="subClasses hiddenContent"><a href="../../../amandroid/alir/taintAnalysis/AndroidSourceAndSinkManager.html" class="extype" name="org.sireum.amandroid.alir.taintAnalysis.AndroidSourceAndSinkManager">AndroidSourceAndSinkManager</a>, <a href="../../../amandroid/alir/taintAnalysis/DefaultAndroidSourceAndSinkManager.html" class="extype" name="org.sireum.amandroid.alir.taintAnalysis.DefaultAndroidSourceAndSinkManager">DefaultAndroidSourceAndSinkManager</a>, <a href="../../../amandroid/security/dataInjection/IntentInjectionSourceAndSinkManager.html" class="extype" name="org.sireum.amandroid.security.dataInjection.IntentInjectionSourceAndSinkManager">IntentInjectionSourceAndSinkManager</a>, <a href="../../../amandroid/security/oauth/OAuthSourceAndSinkManager.html" class="extype" name="org.sireum.amandroid.security.oauth.OAuthSourceAndSinkManager">OAuthSourceAndSinkManager</a>, <a href="../../../amandroid/security/password/PasswordSourceAndSinkManager.html" class="extype" name="org.sireum.amandroid.security.password.PasswordSourceAndSinkManager">PasswordSourceAndSinkManager</a>, <a href="../../../amandroid/security/taintStrongUpdate/SourceToStrongUpdateManager.html" class="extype" name="org.sireum.amandroid.security.taintStrongUpdate.SourceToStrongUpdateManager">SourceToStrongUpdateManager</a></div>
+            <div class="subClasses hiddenContent"><a href="../../../amandroid/alir/taintAnalysis/AndroidSourceAndSinkManager.html" class="extype" name="org.sireum.amandroid.alir.taintAnalysis.AndroidSourceAndSinkManager">AndroidSourceAndSinkManager</a>, <a href="../../../amandroid/alir/taintAnalysis/DataLeakageAndroidSourceAndSinkManager.html" class="extype" name="org.sireum.amandroid.alir.taintAnalysis.DataLeakageAndroidSourceAndSinkManager">DataLeakageAndroidSourceAndSinkManager</a>, <a href="../../../amandroid/alir/taintAnalysis/DefaultAndroidSourceAndSinkManager.html" class="extype" name="org.sireum.amandroid.alir.taintAnalysis.DefaultAndroidSourceAndSinkManager">DefaultAndroidSourceAndSinkManager</a>, <a href="../../../amandroid/security/dataInjection/IntentInjectionSourceAndSinkManager.html" class="extype" name="org.sireum.amandroid.security.dataInjection.IntentInjectionSourceAndSinkManager">IntentInjectionSourceAndSinkManager</a>, <a href="../../../amandroid/security/oauth/OAuthSourceAndSinkManager.html" class="extype" name="org.sireum.amandroid.security.oauth.OAuthSourceAndSinkManager">OAuthSourceAndSinkManager</a>, <a href="../../../amandroid/security/password/PasswordSourceAndSinkManager.html" class="extype" name="org.sireum.amandroid.security.password.PasswordSourceAndSinkManager">PasswordSourceAndSinkManager</a>, <a href="../../../amandroid/security/taintStrongUpdate/SourceToStrongUpdateManager.html" class="extype" name="org.sireum.amandroid.security.taintStrongUpdate.SourceToStrongUpdateManager">SourceToStrongUpdateManager</a></div>
           </div></div>
         
 
@@ -95,18 +95,18 @@
         <div id="values" class="values members">
               <h3>Abstract Value Members</h3>
               <ol><li name="org.sireum.jawa.alir.taintAnalysis.SourceAndSinkManager#isSink" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="isSink(loc:org.sireum.pilar.ast.LocationDecl,s:org.sireum.util.ISet[org.sireum.jawa.alir.reachingFactsAnalysis.RFAFact]):Boolean"></a>
-      <a id="isSink(LocationDecl,ISet[RFAFact]):Boolean"></a>
+      <a id="isSink(loc:org.sireum.pilar.ast.LocationDecl,s:org.sireum.util.ISet[Fact]):Boolean"></a>
+      <a id="isSink(LocationDecl,ISet[Fact]):Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">abstract </span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">isSink</span><span class="params">(<span name="loc">loc: <span class="extype" name="org.sireum.pilar.ast.LocationDecl">LocationDecl</span></span>, <span name="s">s: <span class="extype" name="org.sireum.util.ISet">ISet</span>[<a href="../reachingFactsAnalysis/RFAFact.html" class="extype" name="org.sireum.jawa.alir.reachingFactsAnalysis.RFAFact">RFAFact</a>]</span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">isSink</span><span class="params">(<span name="loc">loc: <span class="extype" name="org.sireum.pilar.ast.LocationDecl">LocationDecl</span></span>, <span name="s">s: <span class="extype" name="org.sireum.util.ISet">ISet</span>[<span class="extype" name="org.sireum.jawa.alir.taintAnalysis.SourceAndSinkManager.Fact">Fact</span>]</span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#org.sireum.jawa.alir.taintAnalysis.SourceAndSinkManager@isSink(loc:org.sireum.pilar.ast.LocationDecl,s:org.sireum.util.ISet[org.sireum.jawa.alir.reachingFactsAnalysis.RFAFact]):Boolean" title="Permalink" target="_top">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.taintAnalysis.SourceAndSinkManager@isSink(loc:org.sireum.pilar.ast.LocationDecl,s:org.sireum.util.ISet[Fact]):Boolean" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" />
       </a>
     </span>
@@ -146,18 +146,18 @@
     </span>
       
     </li><li name="org.sireum.jawa.alir.taintAnalysis.SourceAndSinkManager#isSource" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="isSource(loc:org.sireum.pilar.ast.LocationDecl,s:org.sireum.util.ISet[org.sireum.jawa.alir.reachingFactsAnalysis.RFAFact]):Boolean"></a>
-      <a id="isSource(LocationDecl,ISet[RFAFact]):Boolean"></a>
+      <a id="isSource(loc:org.sireum.pilar.ast.LocationDecl,s:org.sireum.util.ISet[Fact]):Boolean"></a>
+      <a id="isSource(LocationDecl,ISet[Fact]):Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">abstract </span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">isSource</span><span class="params">(<span name="loc">loc: <span class="extype" name="org.sireum.pilar.ast.LocationDecl">LocationDecl</span></span>, <span name="s">s: <span class="extype" name="org.sireum.util.ISet">ISet</span>[<a href="../reachingFactsAnalysis/RFAFact.html" class="extype" name="org.sireum.jawa.alir.reachingFactsAnalysis.RFAFact">RFAFact</a>]</span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">isSource</span><span class="params">(<span name="loc">loc: <span class="extype" name="org.sireum.pilar.ast.LocationDecl">LocationDecl</span></span>, <span name="s">s: <span class="extype" name="org.sireum.util.ISet">ISet</span>[<span class="extype" name="org.sireum.jawa.alir.taintAnalysis.SourceAndSinkManager.Fact">Fact</span>]</span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#org.sireum.jawa.alir.taintAnalysis.SourceAndSinkManager@isSource(loc:org.sireum.pilar.ast.LocationDecl,s:org.sireum.util.ISet[org.sireum.jawa.alir.reachingFactsAnalysis.RFAFact]):Boolean" title="Permalink" target="_top">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.taintAnalysis.SourceAndSinkManager@isSource(loc:org.sireum.pilar.ast.LocationDecl,s:org.sireum.util.ISet[Fact]):Boolean" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" />
       </a>
     </span>

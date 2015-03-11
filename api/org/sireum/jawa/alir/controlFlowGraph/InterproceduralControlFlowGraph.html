@@ -633,18 +633,18 @@
     </span>
       
     </li><li name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph#compressByDelNode" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="compressByDelNode(n:Node):Boolean"></a>
-      <a id="compressByDelNode(Node):Boolean"></a>
+      <a id="compressByDelNode(n:Node):Unit"></a>
+      <a id="compressByDelNode(Node):Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">compressByDelNode</span><span class="params">(<span name="n">n: <span class="extype" name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph.Node">Node</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">compressByDelNode</span><span class="params">(<span name="n">n: <span class="extype" name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph.Node">Node</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph@compressByDelNode(n:Node):Boolean" title="Permalink" target="_top">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph@compressByDelNode(n:Node):Unit" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" />
       </a>
     </span>
@@ -754,6 +754,23 @@ The algorithm is obvious from the following code
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AlirGraph</dd></dl></div>
+    </li><li name="org.sireum.jawa.alir.interProcedural.InterProceduralGraph#elabelProvider" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="elabelProvider:org.jgrapht.ext.EdgeNameProvider[InterProceduralGraph.this.Edge]{deffilterLabel(uri:String):String}"></a>
+      <a id="elabelProvider:EdgeNameProvider[Edge]{deffilterLabel(uri:String):String}"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">elabelProvider</span><span class="result">: <span class="extype" name="org.jgrapht.ext.EdgeNameProvider">EdgeNameProvider</span>[<a href="#Edge=org.sireum.alir.AlirEdge[Node]" class="extmbr" name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph.Edge">Edge</a>] { def filterLabel(uri: String): String }</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph@elabelProvider:org.jgrapht.ext.EdgeNameProvider[InterProceduralGraph.this.Edge]{deffilterLabel(uri:String):String}" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="../interProcedural/InterProceduralGraph.html" class="extype" name="org.sireum.jawa.alir.interProcedural.InterProceduralGraph">InterProceduralGraph</a></dd></dl></div>
     </li><li name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph#entryN" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="entryN:org.sireum.jawa.alir.controlFlowGraph.CGNode"></a>
       <a id="entryN:CGNode"></a>
@@ -1763,6 +1780,40 @@ The algorithm is obvious from the following code
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph#toApiGraph" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="toApiGraph:org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph[Node]"></a>
+      <a id="toApiGraph:InterproceduralControlFlowGraph[Node]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toApiGraph</span><span class="result">: <a href="" class="extype" name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph">InterproceduralControlFlowGraph</a>[<span class="extype" name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph.Node">Node</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph@toApiGraph:org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph[Node]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph#toCallGraph" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="toCallGraph:org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph[Node]"></a>
+      <a id="toCallGraph:InterproceduralControlFlowGraph[Node]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toCallGraph</span><span class="result">: <a href="" class="extype" name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph">InterproceduralControlFlowGraph</a>[<span class="extype" name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph.Node">Node</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph@toCallGraph:org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph[Node]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      
     </li><li name="org.sireum.jawa.alir.interProcedural.InterProceduralGraph#toDot" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="toDot(w:java.io.Writer):Unit"></a>
       <a id="toDot(Writer):Unit"></a>
@@ -1776,6 +1827,40 @@ The algorithm is obvious from the following code
       </span>
       </h4><span class="permalink">
       <a href="../../../../../index.html#org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph@toDot(w:java.io.Writer):Unit" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../interProcedural/InterProceduralGraph.html" class="extype" name="org.sireum.jawa.alir.interProcedural.InterProceduralGraph">InterProceduralGraph</a></dd></dl></div>
+    </li><li name="org.sireum.jawa.alir.interProcedural.InterProceduralGraph#toGML" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="toGML(w:java.io.Writer):Unit"></a>
+      <a id="toGML(Writer):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toGML</span><span class="params">(<span name="w">w: <span class="extype" name="java.io.Writer">Writer</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph@toGML(w:java.io.Writer):Unit" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../interProcedural/InterProceduralGraph.html" class="extype" name="org.sireum.jawa.alir.interProcedural.InterProceduralGraph">InterProceduralGraph</a></dd></dl></div>
+    </li><li name="org.sireum.jawa.alir.interProcedural.InterProceduralGraph#toGraphML" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="toGraphML(w:java.io.Writer):Unit"></a>
+      <a id="toGraphML(Writer):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toGraphML</span><span class="params">(<span name="w">w: <span class="extype" name="java.io.Writer">Writer</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph@toGraphML(w:java.io.Writer):Unit" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" />
       </a>
     </span>
@@ -1797,6 +1882,23 @@ The algorithm is obvious from the following code
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph">InterproceduralControlFlowGraph</a> → AnyRef → Any</dd></dl></div>
+    </li><li name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph#toTextGraph" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="toTextGraph(w:java.io.Writer):Unit"></a>
+      <a id="toTextGraph(Writer):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toTextGraph</span><span class="params">(<span name="w">w: <span class="extype" name="java.io.Writer">Writer</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph@toTextGraph(w:java.io.Writer):Unit" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      
     </li><li name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph#useBranch" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="useBranch[T](pst:org.sireum.pilar.symbol.ProcedureSymbolTable)(f:=&gt;T):T"></a>
       <a id="useBranch[T](ProcedureSymbolTable)(⇒T):T"></a>

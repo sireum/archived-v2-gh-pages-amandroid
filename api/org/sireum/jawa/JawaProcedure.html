@@ -1142,7 +1142,7 @@ LocUri should always looks like &quot;L?[0-9a-f]+&quot;
         <img src="../../../lib/permalink.png" />
       </a>
     </span>
-      <p class="shortcomment cmt">return true if this procedure is concrete which means it is not abstract nor native nor phantom
+      <p class="shortcomment cmt">return true if this procedure is concrete which means it is not abstract nor native nor unknown
 </p>
     </li><li name="org.sireum.jawa.JawaProcedure#isConstructor" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="isConstructor:Boolean"></a>
@@ -1304,24 +1304,6 @@ LocUri should always looks like &quot;L?[0-9a-f]+&quot;
     </span>
       <p class="shortcomment cmt">return true if this procedure is native
 </p>
-    </li><li name="org.sireum.jawa.JawaProcedure#isPhantom" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="isPhantom:Boolean"></a>
-      <a id="isPhantom:Boolean"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">isPhantom</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#org.sireum.jawa.JawaProcedure@isPhantom:Boolean" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
-      <p class="shortcomment cmt">return false if this procedure is a special one with empty body.</p><div class="fullcomment"><div class="comment cmt"><p>return false if this procedure is a special one with empty body. e.g. A.class
-</p></div></div>
     </li><li name="org.sireum.jawa.JawaProcedure#isPrivate" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="isPrivate:Boolean"></a>
       <a id="isPrivate:Boolean"></a>
@@ -1430,6 +1412,24 @@ LocUri should always looks like &quot;L?[0-9a-f]+&quot;
     </span>
       <p class="shortcomment cmt">return true if this procedure is synthetic
 </p>
+    </li><li name="org.sireum.jawa.JawaProcedure#isUnknown" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isUnknown:Boolean"></a>
+      <a id="isUnknown:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isUnknown</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#org.sireum.jawa.JawaProcedure@isUnknown:Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">return false if this procedure is a special one with empty body.</p><div class="fullcomment"><div class="comment cmt"><p>return false if this procedure is a special one with empty body. e.g. A.class
+</p></div></div>
     </li><li name="org.sireum.jawa.JawaProcedure#name" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="name:String"></a>
       <a id="name:String"></a>
@@ -1535,24 +1535,6 @@ LocUri should always looks like &quot;L?[0-9a-f]+&quot;
       </a>
     </span>
       <p class="shortcomment cmt">list of parameter types.</p><div class="fullcomment"><div class="comment cmt"><p>list of parameter types. e.g. List(java.lang.Object, java.lang.String)
-</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
-    </li><li name="org.sireum.jawa.JawaProcedure#phantom" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="phantom:Boolean"></a>
-      <a id="phantom:Boolean"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">var</span>
-      </span>
-      <span class="symbol">
-        <span class="name">phantom</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#org.sireum.jawa.JawaProcedure@phantom:Boolean" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
-      <p class="shortcomment cmt">represents if the procedure is a special one with empty body.</p><div class="fullcomment"><div class="comment cmt"><p>represents if the procedure is a special one with empty body.
 </p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
     </li><li name="org.sireum.jawa.JawaProcedure#printDetail" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="printDetail:Unit"></a>
@@ -1860,24 +1842,6 @@ LocUri should always looks like &quot;L?[0-9a-f]+&quot;
     </span>
       <p class="shortcomment cmt">set parameter types of this procedure
 </p>
-    </li><li name="org.sireum.jawa.JawaProcedure#setPhantom" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="setPhantom:Unit"></a>
-      <a id="setPhantom:Unit"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">setPhantom</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#org.sireum.jawa.JawaProcedure@setPhantom:Unit" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
-      <p class="shortcomment cmt">set the reality of the procedure.</p><div class="fullcomment"><div class="comment cmt"><p>set the reality of the procedure. e.g. for A.class we set the reality as false
-</p></div></div>
     </li><li name="org.sireum.jawa.JawaProcedure#setProcedureBody" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="setProcedureBody(pb:org.sireum.jawa.ProcedureBody):Unit"></a>
       <a id="setProcedureBody(ProcedureBody):Unit"></a>
@@ -1968,6 +1932,24 @@ LocUri should always looks like &quot;L?[0-9a-f]+&quot;
     </span>
       <p class="shortcomment cmt">set signature of this procedure
 </p>
+    </li><li name="org.sireum.jawa.JawaProcedure#setUnknown" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="setUnknown:Unit"></a>
+      <a id="setUnknown:Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">setUnknown</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#org.sireum.jawa.JawaProcedure@setUnknown:Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">set the reality of the procedure.</p><div class="fullcomment"><div class="comment cmt"><p>set the reality of the procedure. e.g. for A.class we set the reality as false
+</p></div></div>
     </li><li name="org.sireum.jawa.JawaProcedure#shortName" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="shortName:String"></a>
       <a id="shortName:String"></a>
@@ -2110,6 +2092,24 @@ LocUri should always looks like &quot;L?[0-9a-f]+&quot;
     </span>
       <p class="shortcomment cmt">resolve current procedure to body level
 </p>
+    </li><li name="org.sireum.jawa.JawaProcedure#unknown" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="unknown:Boolean"></a>
+      <a id="unknown:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">var</span>
+      </span>
+      <span class="symbol">
+        <span class="name">unknown</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#org.sireum.jawa.JawaProcedure@unknown:Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">represents if the procedure is unknown.</p><div class="fullcomment"><div class="comment cmt"><p>represents if the procedure is unknown.
+</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
     </li><li name="org.sireum.util.PropertyProvider#update" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="update[T](key:org.sireum.util.Property.Key,value:T):Unit"></a>
       <a id="update[T](Key,T):Unit"></a>

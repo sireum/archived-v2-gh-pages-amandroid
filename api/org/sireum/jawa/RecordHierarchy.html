@@ -975,19 +975,37 @@
     </span>
       <p class="shortcomment cmt">Given an abstract dispatch to an object of type r and a procedure p, gives a list of possible receiver's methods
 </p>
-    </li><li name="org.sireum.jawa.RecordHierarchy#resolveConcreteDispatch" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="resolveConcreteDispatch(concreteType:org.sireum.jawa.JawaRecord,pSubSig:String):Option[org.sireum.jawa.JawaProcedure]"></a>
-      <a id="resolveConcreteDispatch(JawaRecord,String):Option[JawaProcedure]"></a>
+    </li><li name="org.sireum.jawa.RecordHierarchy#resolveAbstractDispatch" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="resolveAbstractDispatch(r:org.sireum.jawa.JawaRecord,pSubSig:String):Set[org.sireum.jawa.JawaProcedure]"></a>
+      <a id="resolveAbstractDispatch(JawaRecord,String):Set[JawaProcedure]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">resolveConcreteDispatch</span><span class="params">(<span name="concreteType">concreteType: <a href="JawaRecord.html" class="extype" name="org.sireum.jawa.JawaRecord">JawaRecord</a></span>, <span name="pSubSig">pSubSig: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<a href="JawaProcedure.html" class="extype" name="org.sireum.jawa.JawaProcedure">JawaProcedure</a>]</span>
+        <span class="name">resolveAbstractDispatch</span><span class="params">(<span name="r">r: <a href="JawaRecord.html" class="extype" name="org.sireum.jawa.JawaRecord">JawaRecord</a></span>, <span name="pSubSig">pSubSig: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Predef.Set">Set</span>[<a href="JawaProcedure.html" class="extype" name="org.sireum.jawa.JawaProcedure">JawaProcedure</a>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#org.sireum.jawa.RecordHierarchy@resolveConcreteDispatch(concreteType:org.sireum.jawa.JawaRecord,pSubSig:String):Option[org.sireum.jawa.JawaProcedure]" title="Permalink" target="_top">
+      <a href="../../../index.html#org.sireum.jawa.RecordHierarchy@resolveAbstractDispatch(r:org.sireum.jawa.JawaRecord,pSubSig:String):Set[org.sireum.jawa.JawaProcedure]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Given an abstract dispatch to an object of type r and a procedure p, gives a list of possible receiver's methods
+</p>
+    </li><li name="org.sireum.jawa.RecordHierarchy#resolveConcreteDispatch" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="resolveConcreteDispatch(concreteType:org.sireum.jawa.JawaRecord,pSubSig:String):org.sireum.jawa.JawaProcedure"></a>
+      <a id="resolveConcreteDispatch(JawaRecord,String):JawaProcedure"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">resolveConcreteDispatch</span><span class="params">(<span name="concreteType">concreteType: <a href="JawaRecord.html" class="extype" name="org.sireum.jawa.JawaRecord">JawaRecord</a></span>, <span name="pSubSig">pSubSig: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="JawaProcedure.html" class="extype" name="org.sireum.jawa.JawaProcedure">JawaProcedure</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#org.sireum.jawa.RecordHierarchy@resolveConcreteDispatch(concreteType:org.sireum.jawa.JawaRecord,pSubSig:String):org.sireum.jawa.JawaProcedure" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" />
       </a>
     </span>
