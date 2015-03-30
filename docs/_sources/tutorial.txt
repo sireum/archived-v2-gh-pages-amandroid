@@ -17,7 +17,13 @@ Sireum CLI setup is pretty strait-forward, following steps need to be followed:
 
 1.Follow instructions in http://www.sireum.org/software.html to download and setup Sireum.
 
-2.Launch Eclipse:
+2.Install Sireum Amandroid Cli.
+
+.. code-block:: bash
+
+	$ sireum install "Sireum Amandroid Cli"
+
+3.Launch Eclipse:
 
 .. code-block:: bash
 
