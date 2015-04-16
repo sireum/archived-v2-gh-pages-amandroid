@@ -15,15 +15,15 @@ Setup Sireum CLI
 
 Sireum CLI setup is pretty strait-forward, following steps need to be followed: 
 
-1.Follow instructions in http://www.sireum.org/software.html to download and setup Sireum.
+1. Follow instructions in http://www.sireum.org/software.html to download and setup Sireum.
 
-2.Install Sireum Amandroid Cli.
+2. Install Sireum Amandroid Cli.
 
 .. code-block:: bash
 
 	$ sireum install "Sireum Amandroid Cli"
 
-3.Launch Eclipse:
+3. Launch Eclipse:
 
 .. code-block:: bash
 
@@ -63,19 +63,29 @@ Amandroid’s repository:
 
 Clone all the required repositories into your workspace using Eclipse:
 
-1.Switch to the Git Repository Exploring perspective in Eclipse.
+1. Switch to the Git Repository Exploring perspective in Eclipse.
 
-2.Click Clone a Git Repository and give the URL. Then, fill in necessary informations until finish.
+2. Click Clone a Git Repository and give the URL. Then, fill in necessary informations until finish.
 
-3.Wait for the repository to be cloned—this may take a couple of minutes.
+3. Wait for the repository to be cloned—this may take a couple of minutes.
 
-4.Import all the projects by:
+4. Import all the projects by:
 
 right-click on each repository -> select ``Import Projects …`` -> check ``Import existing projects`` and go ``Next`` -> Click ``Finish`` with all projects checked.
 
-5.Wait for the projects to be imported, and the indexing to finish.
+5. Wait for the projects to be imported, and the indexing to finish.
 
 TroubleShooting
 ===============
 
-1.Sometimes, after you import all the projects it will show error mark on some of the projects. Just make sure you are using correct Java compiler version, and then clean all projects.
+1. Sometimes, after you import all the projects it will show error mark on some of the projects. Just make sure you are using correct Java compiler version, and then clean all projects.
+
+2. If you get issue related to dex2pilar, please go and check `Issue 17 <https://github.com/sireum/amandroid/issues/17>`__.
+
+3. If the installation of ``Sirem Amandroid Cli`` failed, or you are facing some NullPointerException, please try following:
+
+	a. Download: `Amandroid Stash <http://people.cis.ksu.edu/~fgwei/resources/amandroid.zip>`__.
+
+	b. Unzip it in e.g., ``/path/amandroid``.
+
+	c. Set AMANDROID_HOME: ``export AMANDROID_HOME=/path/amandroid``

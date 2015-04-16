@@ -61,12 +61,16 @@ So the first thing we need to do is to setup Sireum command-line interface (CLI)
 <p class="last">To get more detailed information about how Sireum CLI works, please follow instructions at <a class="reference external" href="http://www.sireum.org/software.html">http://www.sireum.org/software.html</a>.</p>
 </div>
 <p>Sireum CLI setup is pretty strait-forward, following steps need to be followed:</p>
-<p>1.Follow instructions in <a class="reference external" href="http://www.sireum.org/software.html">http://www.sireum.org/software.html</a> to download and setup Sireum.</p>
-<p>2.Install Sireum Amandroid Cli.</p>
+<ol class="arabic simple">
+<li>Follow instructions in <a class="reference external" href="http://www.sireum.org/software.html">http://www.sireum.org/software.html</a> to download and setup Sireum.</li>
+<li>Install Sireum Amandroid Cli.</li>
+</ol>
 <div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>sireum install <span class="s2">&quot;Sireum Amandroid Cli&quot;</span>
 </pre></div>
 </div>
-<p>3.Launch Eclipse:</p>
+<ol class="arabic simple" start="3">
+<li>Launch Eclipse:</li>
+</ol>
 <div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>sireum launch sireumdev -j <span class="s2">&quot;-Xms128m,-Xmx1024m&quot;</span> --args -clean
 </pre></div>
 </div>
@@ -89,16 +93,34 @@ So the first thing we need to do is to setup Sireum command-line interface (CLI)
 <p>Amandroid’s repository:</p>
 <p><tt class="docutils literal"><span class="pre">Sireum</span> <span class="pre">Amandroid</span></tt>: <a class="reference external" href="https://github.com/sireum/amandroid">https://github.com/sireum/amandroid</a></p>
 <p>Clone all the required repositories into your workspace using Eclipse:</p>
-<p>1.Switch to the Git Repository Exploring perspective in Eclipse.</p>
-<p>2.Click Clone a Git Repository and give the URL. Then, fill in necessary informations until finish.</p>
-<p>3.Wait for the repository to be cloned—this may take a couple of minutes.</p>
-<p>4.Import all the projects by:</p>
+<ol class="arabic simple">
+<li>Switch to the Git Repository Exploring perspective in Eclipse.</li>
+<li>Click Clone a Git Repository and give the URL. Then, fill in necessary informations until finish.</li>
+<li>Wait for the repository to be cloned—this may take a couple of minutes.</li>
+<li>Import all the projects by:</li>
+</ol>
 <p>right-click on each repository -&gt; select <tt class="docutils literal"><span class="pre">Import</span> <span class="pre">Projects</span> <span class="pre">…</span></tt> -&gt; check <tt class="docutils literal"><span class="pre">Import</span> <span class="pre">existing</span> <span class="pre">projects</span></tt> and go <tt class="docutils literal"><span class="pre">Next</span></tt> -&gt; Click <tt class="docutils literal"><span class="pre">Finish</span></tt> with all projects checked.</p>
-<p>5.Wait for the projects to be imported, and the indexing to finish.</p>
+<ol class="arabic simple" start="5">
+<li>Wait for the projects to be imported, and the indexing to finish.</li>
+</ol>
 </div>
 <div class="section" id="troubleshooting">
 <h2>2.3. TroubleShooting<a class="headerlink" href="#troubleshooting" title="Permalink to this headline">¶</a></h2>
-<p>1.Sometimes, after you import all the projects it will show error mark on some of the projects. Just make sure you are using correct Java compiler version, and then clean all projects.</p>
+<ol class="arabic">
+<li><p class="first">Sometimes, after you import all the projects it will show error mark on some of the projects. Just make sure you are using correct Java compiler version, and then clean all projects.</p>
+</li>
+<li><p class="first">If you get issue related to dex2pilar, please go and check <a class="reference external" href="https://github.com/sireum/amandroid/issues/17">Issue 17</a>.</p>
+</li>
+<li><p class="first">If the installation of <tt class="docutils literal"><span class="pre">Sirem</span> <span class="pre">Amandroid</span> <span class="pre">Cli</span></tt> failed, or you are facing some NullPointerException, please try following:</p>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li>Download: <a class="reference external" href="http://people.cis.ksu.edu/~fgwei/resources/amandroid.zip">Amandroid Stash</a>.</li>
+<li>Unzip it in e.g., <tt class="docutils literal"><span class="pre">/path/amandroid</span></tt>.</li>
+<li>Set AMANDROID_HOME: <tt class="docutils literal"><span class="pre">export</span> <span class="pre">AMANDROID_HOME=/path/amandroid</span></tt></li>
+</ol>
+</div></blockquote>
+</li>
+</ol>
 </div>
 </div>
 
