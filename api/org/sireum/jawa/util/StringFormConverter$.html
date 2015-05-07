@@ -30,7 +30,9 @@
       <div id="definition">
         <img src="../../../../lib/object_big.png" />
         <p id="owner"><a href="../../../package.html" class="extype" name="org">org</a>.<a href="../../package.html" class="extype" name="org.sireum">sireum</a>.<a href="../package.html" class="extype" name="org.sireum.jawa">jawa</a>.<a href="package.html" class="extype" name="org.sireum.jawa.util">util</a></p>
-        <h1>StringFormConverter</h1> <span class="permalink">
+        <h1>StringFormConverter</h1><h3><span class="morelinks"><div>Related Doc:
+            <a href="package.html" class="extype" name="org.sireum.jawa.util">package util</a>
+          </div></span></h3><span class="permalink">
       <a href="../../../../index.html#org.sireum.jawa.util.StringFormConverter$" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" />
       </a>
@@ -241,23 +243,6 @@
     </span>)</span>
               
         </dd></dl></div>
-    </li><li name="org.sireum.jawa.util.StringFormConverter#formatClassNameToRecordName" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="formatClassNameToRecordName(cName:String):String"></a>
-      <a id="formatClassNameToRecordName(String):String"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">formatClassNameToRecordName</span><span class="params">(<span name="cName">cName: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../index.html#org.sireum.jawa.util.StringFormConverter$@formatClassNameToRecordName(cName:String):String" title="Permalink" target="_top">
-        <img src="../../../../lib/permalink.png" />
-      </a>
-    </span>
-      
     </li><li name="org.sireum.jawa.util.StringFormConverter#formatClassNameToType" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="formatClassNameToType(cName:String):org.sireum.jawa.Type"></a>
       <a id="formatClassNameToType(String):Type"></a>
@@ -277,28 +262,8 @@
       <p class="shortcomment cmt">format java class name to jawa type.</p><div class="fullcomment"><div class="comment cmt"><p>format java class name to jawa type.
 input: &quot;com.example.activity.XActivity&quot;
 output: &quot;(com:example.acitivity.XActivity, 0)&quot;
-input: &quot;<span class="extype" name="Lwfg.test.A;&quot;
-output:">&quot;(wfg.test.A, 2)&quot;
+input: &quot;<span class="extype" name="Lwfg.test.A;&quot;">output: &quot;(wfg.test.A, 2)&quot;
 </span></p></div></div>
-    </li><li name="org.sireum.jawa.util.StringFormConverter#formatRecordNameToClassName" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="formatRecordNameToClassName(name:String):String"></a>
-      <a id="formatRecordNameToClassName(String):String"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">formatRecordNameToClassName</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../index.html#org.sireum.jawa.util.StringFormConverter$@formatRecordNameToClassName(name:String):String" title="Permalink" target="_top">
-        <img src="../../../../lib/permalink.png" />
-      </a>
-    </span>
-      <p class="shortcomment cmt">convert jawa record name to java class name.</p><div class="fullcomment"><div class="comment cmt"><p>convert jawa record name to java class name.
- e.g. java.lang.String[] -&gt; [Ljava.lang.String;   java.lang.String -&gt; java.lang.String
-</p></div></div>
     </li><li name="org.sireum.jawa.util.StringFormConverter#formatSigToTypeForm" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="formatSigToTypeForm(sig:String):org.sireum.jawa.Type"></a>
       <a id="formatSigToTypeForm(String):Type"></a>
@@ -338,7 +303,7 @@ output looks like Ljava/lang/String;
 or 'B' | 'C' | 'D' | 'F' | 'I' | 'J' | 'S' | 'Z'
 </p>
     </li><li name="org.sireum.jawa.util.StringFormConverter#generateFieldSignature" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="generateFieldSignature(recordName:String,name:String,isStatic:Boolean):String"></a>
+      <a id="generateFieldSignature(className:String,name:String,isStatic:Boolean):String"></a>
       <a id="generateFieldSignature(String,String,Boolean):String"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -346,32 +311,32 @@ or 'B' | 'C' | 'D' | 'F' | 'I' | 'J' | 'S' | 'Z'
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">generateFieldSignature</span><span class="params">(<span name="recordName">recordName: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="isStatic">isStatic: <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+        <span class="name">generateFieldSignature</span><span class="params">(<span name="className">className: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="isStatic">isStatic: <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#org.sireum.jawa.util.StringFormConverter$@generateFieldSignature(recordName:String,name:String,isStatic:Boolean):String" title="Permalink" target="_top">
+      <a href="../../../../index.html#org.sireum.jawa.util.StringFormConverter$@generateFieldSignature(className:String,name:String,isStatic:Boolean):String" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" />
       </a>
     </span>
       <p class="shortcomment cmt">generate signature of this field.</p><div class="fullcomment"><div class="comment cmt"><p>generate signature of this field. input: (&quot;java.lang.Throwable&quot;, &quot;stackState&quot;) output: &quot;java.lang.Throwable.stackState&quot;
 </p></div></div>
-    </li><li name="org.sireum.jawa.util.StringFormConverter#generateProcName" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="generateProcName(recordName:String,name:String):String"></a>
-      <a id="generateProcName(String,String):String"></a>
+    </li><li name="org.sireum.jawa.util.StringFormConverter#generateMethodName" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="generateMethodName(className:String,name:String):String"></a>
+      <a id="generateMethodName(String,String):String"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">generateProcName</span><span class="params">(<span name="recordName">recordName: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+        <span class="name">generateMethodName</span><span class="params">(<span name="className">className: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#org.sireum.jawa.util.StringFormConverter$@generateProcName(recordName:String,name:String):String" title="Permalink" target="_top">
+      <a href="../../../../index.html#org.sireum.jawa.util.StringFormConverter$@generateMethodName(className:String,name:String):String" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" />
       </a>
     </span>
-      <p class="shortcomment cmt">generate a procedure full name from a record name and proc short name.</p><div class="fullcomment"><div class="comment cmt"><p>generate a procedure full name from a record name and proc short name. input: (&quot;java.lang.Throwable&quot;, &quot;foo&quot;) output: &quot;java.lang.Throwable.foo&quot;
+      <p class="shortcomment cmt">generate a method full name from a class name and proc short name.</p><div class="fullcomment"><div class="comment cmt"><p>generate a method full name from a class name and proc short name. input: (&quot;java.lang.Throwable&quot;, &quot;foo&quot;) output: &quot;java.lang.Throwable.foo&quot;
 </p></div></div>
     </li><li name="scala.AnyRef#getClass" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="getClass():Class[_]"></a>
@@ -409,6 +374,78 @@ or 'B' | 'C' | 'D' | 'F' | 'I' | 'J' | 'S' | 'Z'
       <p class="shortcomment cmt">input (&quot;java.lang.Class&quot;, 1) output &quot;[Ljava.lang.Class&quot;
 </p><div class="fullcomment"><div class="comment cmt"><p>input (&quot;java.lang.Class&quot;, 1) output &quot;[Ljava.lang.Class&quot;
 </p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
+    </li><li name="org.sireum.jawa.util.StringFormConverter#getClassNameFromFieldSignature" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getClassNameFromFieldSignature(sig:String):String"></a>
+      <a id="getClassNameFromFieldSignature(String):String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getClassNameFromFieldSignature</span><span class="params">(<span name="sig">sig: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#org.sireum.jawa.util.StringFormConverter$@getClassNameFromFieldSignature(sig:String):String" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">get class name from field signature.</p><div class="fullcomment"><div class="comment cmt"><p>get class name from field signature. e.g. java.lang.Throwable.stackState -&gt; java.lang.Throwable
+</p></div></div>
+    </li><li name="org.sireum.jawa.util.StringFormConverter#getClassNameFromMethodSignature" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getClassNameFromMethodSignature(sig:String):String"></a>
+      <a id="getClassNameFromMethodSignature(String):String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getClassNameFromMethodSignature</span><span class="params">(<span name="sig">sig: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#org.sireum.jawa.util.StringFormConverter$@getClassNameFromMethodSignature(sig:String):String" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">get class name from method signature.</p><div class="fullcomment"><div class="comment cmt"><p>get class name from method signature. e.g. Ljava/lang/Object;.equals:(Ljava/lang/Object;)Z -&gt; java.lang.Object
+</p></div></div>
+    </li><li name="org.sireum.jawa.util.StringFormConverter#getClassTypeFromFieldSignature" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getClassTypeFromFieldSignature(sig:String):org.sireum.jawa.Type"></a>
+      <a id="getClassTypeFromFieldSignature(String):Type"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getClassTypeFromFieldSignature</span><span class="params">(<span name="sig">sig: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="../Type.html" class="extype" name="org.sireum.jawa.Type">Type</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#org.sireum.jawa.util.StringFormConverter$@getClassTypeFromFieldSignature(sig:String):org.sireum.jawa.Type" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">get class Type from field signature.</p><div class="fullcomment"><div class="comment cmt"><p>get class Type from field signature. e.g. java.lang.Throwable.stackState -&gt; (java.lang.Throwable, 0)
+</p></div></div>
+    </li><li name="org.sireum.jawa.util.StringFormConverter#getClassTypeFromMethodSignature" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getClassTypeFromMethodSignature(sig:String):org.sireum.jawa.Type"></a>
+      <a id="getClassTypeFromMethodSignature(String):Type"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getClassTypeFromMethodSignature</span><span class="params">(<span name="sig">sig: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="../Type.html" class="extype" name="org.sireum.jawa.Type">Type</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#org.sireum.jawa.util.StringFormConverter$@getClassTypeFromMethodSignature(sig:String):org.sireum.jawa.Type" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">get class type from method signature.</p><div class="fullcomment"><div class="comment cmt"><p>get class type from method signature. e.g. Ljava/lang/Object;.equals:(Ljava/lang/Object;)Z -&gt; (java.lang.Object, 0)
+</p></div></div>
     </li><li name="org.sireum.jawa.util.StringFormConverter#getDimensionsAndRemoveArrayFromSig" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="getDimensionsAndRemoveArrayFromSig(sig:String):(String,Int)"></a>
       <a id="getDimensionsAndRemoveArrayFromSig(String):(String,Int)"></a>
@@ -464,6 +501,42 @@ input: &quot;<span class="extype" name="I&quot;">output: (&quot;int&quot;, 2)
     </span>
       <p class="shortcomment cmt">get field name from field signature.</p><div class="fullcomment"><div class="comment cmt"><p>get field name from field signature. e.g. java.lang.Throwable.stackState -&gt; stackState
 </p></div></div>
+    </li><li name="org.sireum.jawa.util.StringFormConverter#getMethodNameFromMethodSignature" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getMethodNameFromMethodSignature(sig:String):String"></a>
+      <a id="getMethodNameFromMethodSignature(String):String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getMethodNameFromMethodSignature</span><span class="params">(<span name="sig">sig: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#org.sireum.jawa.util.StringFormConverter$@getMethodNameFromMethodSignature(sig:String):String" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">get proc name from method signature.</p><div class="fullcomment"><div class="comment cmt"><p>get proc name from method signature. e.g. Ljava/lang/Object;.equals:(Ljava/lang/Object;)Z -&gt; java.lang.Object.equals
+</p></div></div>
+    </li><li name="org.sireum.jawa.util.StringFormConverter#getMethodShortNameFromMethodSignature" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getMethodShortNameFromMethodSignature(sig:String):String"></a>
+      <a id="getMethodShortNameFromMethodSignature(String):String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getMethodShortNameFromMethodSignature</span><span class="params">(<span name="sig">sig: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#org.sireum.jawa.util.StringFormConverter$@getMethodShortNameFromMethodSignature(sig:String):String" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">get proc short name from method signature.</p><div class="fullcomment"><div class="comment cmt"><p>get proc short name from method signature. e.g. Ljava/lang/Object;.equals:(Ljava/lang/Object;)Z -&gt; equals
+</p></div></div>
     </li><li name="org.sireum.jawa.util.StringFormConverter#getOuterNameFrom" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="getOuterNameFrom(innerName:String):String"></a>
       <a id="getOuterNameFrom(String):String"></a>
@@ -482,127 +555,37 @@ input: &quot;<span class="extype" name="I&quot;">output: (&quot;int&quot;, 2)
     </span>
       <p class="shortcomment cmt">get outer class name from inner class name.</p><div class="fullcomment"><div class="comment cmt"><p>get outer class name from inner class name. e.g. android.os.Handler$Callback -&gt; android.os.Handler
 </p></div></div>
-    </li><li name="org.sireum.jawa.util.StringFormConverter#getProcedureNameFromProcedureSignature" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="getProcedureNameFromProcedureSignature(sig:String):String"></a>
-      <a id="getProcedureNameFromProcedureSignature(String):String"></a>
+    </li><li name="org.sireum.jawa.util.StringFormConverter#getSigFromOwnerAndMethodSubSig" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getSigFromOwnerAndMethodSubSig(className:String,subSig:String):String"></a>
+      <a id="getSigFromOwnerAndMethodSubSig(String,String):String"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">getProcedureNameFromProcedureSignature</span><span class="params">(<span name="sig">sig: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+        <span class="name">getSigFromOwnerAndMethodSubSig</span><span class="params">(<span name="className">className: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="subSig">subSig: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#org.sireum.jawa.util.StringFormConverter$@getProcedureNameFromProcedureSignature(sig:String):String" title="Permalink" target="_top">
+      <a href="../../../../index.html#org.sireum.jawa.util.StringFormConverter$@getSigFromOwnerAndMethodSubSig(className:String,subSig:String):String" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" />
       </a>
     </span>
-      <p class="shortcomment cmt">get proc name from procedure signature.</p><div class="fullcomment"><div class="comment cmt"><p>get proc name from procedure signature. e.g. Ljava/lang/Object;.equals:(Ljava/lang/Object;)Z -&gt; java.lang.Object.equals
+      <p class="shortcomment cmt">get method signature from the owner class name and the method sub-signature.</p><div class="fullcomment"><div class="comment cmt"><p>get method signature from the owner class name and the method sub-signature. e.g. ( java.lang.Object, equals:(Ljava/lang/Object;)Z ) -&gt; Ljava/lang/Object;.equals:(Ljava/lang/Object;)Z
 </p></div></div>
-    </li><li name="org.sireum.jawa.util.StringFormConverter#getRecordNameFromFieldSignature" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="getRecordNameFromFieldSignature(sig:String):String"></a>
-      <a id="getRecordNameFromFieldSignature(String):String"></a>
+    </li><li name="org.sireum.jawa.util.StringFormConverter#getSubSigFromMethodSig" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getSubSigFromMethodSig(sig:String):String"></a>
+      <a id="getSubSigFromMethodSig(String):String"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">getRecordNameFromFieldSignature</span><span class="params">(<span name="sig">sig: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+        <span class="name">getSubSigFromMethodSig</span><span class="params">(<span name="sig">sig: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#org.sireum.jawa.util.StringFormConverter$@getRecordNameFromFieldSignature(sig:String):String" title="Permalink" target="_top">
-        <img src="../../../../lib/permalink.png" />
-      </a>
-    </span>
-      <p class="shortcomment cmt">get record name from field signature.</p><div class="fullcomment"><div class="comment cmt"><p>get record name from field signature. e.g. java.lang.Throwable.stackState -&gt; java.lang.Throwable
-</p></div></div>
-    </li><li name="org.sireum.jawa.util.StringFormConverter#getRecordNameFromProcedureSignature" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="getRecordNameFromProcedureSignature(sig:String):String"></a>
-      <a id="getRecordNameFromProcedureSignature(String):String"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">getRecordNameFromProcedureSignature</span><span class="params">(<span name="sig">sig: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../index.html#org.sireum.jawa.util.StringFormConverter$@getRecordNameFromProcedureSignature(sig:String):String" title="Permalink" target="_top">
-        <img src="../../../../lib/permalink.png" />
-      </a>
-    </span>
-      <p class="shortcomment cmt">get record name from procedure signature.</p><div class="fullcomment"><div class="comment cmt"><p>get record name from procedure signature. e.g. Ljava/lang/Object;.equals:(Ljava/lang/Object;)Z -&gt; java.lang.Object
-</p></div></div>
-    </li><li name="org.sireum.jawa.util.StringFormConverter#getRecordTypeFromFieldSignature" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="getRecordTypeFromFieldSignature(sig:String):org.sireum.jawa.Type"></a>
-      <a id="getRecordTypeFromFieldSignature(String):Type"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">getRecordTypeFromFieldSignature</span><span class="params">(<span name="sig">sig: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="../Type.html" class="extype" name="org.sireum.jawa.Type">Type</a></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../index.html#org.sireum.jawa.util.StringFormConverter$@getRecordTypeFromFieldSignature(sig:String):org.sireum.jawa.Type" title="Permalink" target="_top">
-        <img src="../../../../lib/permalink.png" />
-      </a>
-    </span>
-      <p class="shortcomment cmt">get record Type from field signature.</p><div class="fullcomment"><div class="comment cmt"><p>get record Type from field signature. e.g. java.lang.Throwable.stackState -&gt; (java.lang.Throwable, 0)
-</p></div></div>
-    </li><li name="org.sireum.jawa.util.StringFormConverter#getRecordTypeFromProcedureSignature" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="getRecordTypeFromProcedureSignature(sig:String):org.sireum.jawa.Type"></a>
-      <a id="getRecordTypeFromProcedureSignature(String):Type"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">getRecordTypeFromProcedureSignature</span><span class="params">(<span name="sig">sig: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="../Type.html" class="extype" name="org.sireum.jawa.Type">Type</a></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../index.html#org.sireum.jawa.util.StringFormConverter$@getRecordTypeFromProcedureSignature(sig:String):org.sireum.jawa.Type" title="Permalink" target="_top">
-        <img src="../../../../lib/permalink.png" />
-      </a>
-    </span>
-      <p class="shortcomment cmt">get record type from procedure signature.</p><div class="fullcomment"><div class="comment cmt"><p>get record type from procedure signature. e.g. Ljava/lang/Object;.equals:(Ljava/lang/Object;)Z -&gt; (java.lang.Object, 0)
-</p></div></div>
-    </li><li name="org.sireum.jawa.util.StringFormConverter#getSigFromOwnerAndProcSubSig" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="getSigFromOwnerAndProcSubSig(recordName:String,subSig:String):String"></a>
-      <a id="getSigFromOwnerAndProcSubSig(String,String):String"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">getSigFromOwnerAndProcSubSig</span><span class="params">(<span name="recordName">recordName: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="subSig">subSig: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../index.html#org.sireum.jawa.util.StringFormConverter$@getSigFromOwnerAndProcSubSig(recordName:String,subSig:String):String" title="Permalink" target="_top">
-        <img src="../../../../lib/permalink.png" />
-      </a>
-    </span>
-      <p class="shortcomment cmt">get procedure signature from the owner record name and the procedure sub-signature.</p><div class="fullcomment"><div class="comment cmt"><p>get procedure signature from the owner record name and the procedure sub-signature. e.g. ( java.lang.Object, equals:(Ljava/lang/Object;)Z ) -&gt; Ljava/lang/Object;.equals:(Ljava/lang/Object;)Z
-</p></div></div>
-    </li><li name="org.sireum.jawa.util.StringFormConverter#getSubSigFromProcSig" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="getSubSigFromProcSig(sig:String):String"></a>
-      <a id="getSubSigFromProcSig(String):String"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">getSubSigFromProcSig</span><span class="params">(<span name="sig">sig: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../index.html#org.sireum.jawa.util.StringFormConverter$@getSubSigFromProcSig(sig:String):String" title="Permalink" target="_top">
+      <a href="../../../../index.html#org.sireum.jawa.util.StringFormConverter$@getSubSigFromMethodSig(sig:String):String" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" />
       </a>
     </span>
@@ -716,19 +699,19 @@ input: &quot;<span class="extype" name="I&quot;">output: (&quot;int&quot;, 2)
     </span>
       <p class="shortcomment cmt">signature of the field.</p><div class="fullcomment"><div class="comment cmt"><p>signature of the field. e.g. java.lang.Throwable.stackState or @@java:lang:Enum.sharedConstantsCache
 </p></div></div>
-    </li><li name="org.sireum.jawa.util.StringFormConverter#isValidProcSig" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="isValidProcSig(sig:String):Boolean"></a>
-      <a id="isValidProcSig(String):Boolean"></a>
+    </li><li name="org.sireum.jawa.util.StringFormConverter#isValidMethodSig" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isValidMethodSig(sig:String):Boolean"></a>
+      <a id="isValidMethodSig(String):Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">isValidProcSig</span><span class="params">(<span name="sig">sig: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">isValidMethodSig</span><span class="params">(<span name="sig">sig: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#org.sireum.jawa.util.StringFormConverter$@isValidProcSig(sig:String):Boolean" title="Permalink" target="_top">
+      <a href="../../../../index.html#org.sireum.jawa.util.StringFormConverter$@isValidMethodSig(sig:String):Boolean" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" />
       </a>
     </span>

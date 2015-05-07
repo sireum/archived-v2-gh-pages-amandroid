@@ -30,7 +30,9 @@
       <div id="definition">
         <img src="../../../../../../lib/class_big.png" />
         <p id="owner"><a href="../../../../../package.html" class="extype" name="org">org</a>.<a href="../../../../package.html" class="extype" name="org.sireum">sireum</a>.<a href="../../../package.html" class="extype" name="org.sireum.jawa">jawa</a>.<a href="../../package.html" class="extype" name="org.sireum.jawa.alir">alir</a>.<a href="../package.html" class="extype" name="org.sireum.jawa.alir.pta">pta</a>.<a href="package.html" class="extype" name="org.sireum.jawa.alir.pta.suspark">suspark</a></p>
-        <h1>PtaNode</h1> <span class="permalink">
+        <h1>PtaNode</h1><h3><span class="morelinks"><div>Related Doc:
+            <a href="package.html" class="extype" name="org.sireum.jawa.alir.pta.suspark">package suspark</a>
+          </div></span></h3><span class="permalink">
       <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PtaNode" title="Permalink" target="_top">
         <img src="../../../../../../lib/permalink.png" />
       </a>
@@ -39,21 +41,18 @@
 
       <h4 id="signature" class="signature">
       <span class="modifier_kind">
-        <span class="modifier">sealed abstract </span>
-        <span class="kind">class</span>
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <span class="name">PtaNode</span><span class="result"> extends <a href="../../interProcedural/InterProceduralNode.html" class="extype" name="org.sireum.jawa.alir.interProcedural.InterProceduralNode">InterProceduralNode</a></span>
+        <span class="name">PtaNode</span><span class="params">(<span name="point">point: <a href="../../../Point.html" class="extype" name="org.sireum.jawa.Point">Point</a></span>, <span name="context">context: <a href="../../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>)</span><span class="result"> extends <a href="../../interProcedural/InterProceduralNode.html" class="extype" name="org.sireum.jawa.alir.interProcedural.InterProceduralNode">InterProceduralNode</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4>
       
           <div id="comment" class="fullcommenttop"><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
-          <div class="superTypes hiddenContent"><a href="../../interProcedural/InterProceduralNode.html" class="extype" name="org.sireum.jawa.alir.interProcedural.InterProceduralNode">InterProceduralNode</a>, <span class="extype" name="scala.Serializable">Serializable</span>, <span class="extype" name="java.io.Serializable">Serializable</span>, <span class="extype" name="org.sireum.util.PropertyProvider">PropertyProvider</span>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
-        </div><div class="toggleContainer block">
-            <span class="toggle">Known Subclasses</span>
-            <div class="subClasses hiddenContent"><a href="PtaArgCallNode.html" class="extype" name="org.sireum.jawa.alir.pta.suspark.PtaArgCallNode">PtaArgCallNode</a>, <a href="PtaArgReturnNode.html" class="extype" name="org.sireum.jawa.alir.pta.suspark.PtaArgReturnNode">PtaArgReturnNode</a>, <a href="PtaArrayNode.html" class="extype" name="org.sireum.jawa.alir.pta.suspark.PtaArrayNode">PtaArrayNode</a>, <a href="PtaArrayNodeL.html" class="extype" name="org.sireum.jawa.alir.pta.suspark.PtaArrayNodeL">PtaArrayNodeL</a>, <a href="PtaArrayNodeR.html" class="extype" name="org.sireum.jawa.alir.pta.suspark.PtaArrayNodeR">PtaArrayNodeR</a>, <a href="PtaFieldBaseNode.html" class="extype" name="org.sireum.jawa.alir.pta.suspark.PtaFieldBaseNode">PtaFieldBaseNode</a>, <a href="PtaFieldBaseNodeL.html" class="extype" name="org.sireum.jawa.alir.pta.suspark.PtaFieldBaseNodeL">PtaFieldBaseNodeL</a>, <a href="PtaFieldBaseNodeR.html" class="extype" name="org.sireum.jawa.alir.pta.suspark.PtaFieldBaseNodeR">PtaFieldBaseNodeR</a>, <a href="PtaFieldNode.html" class="extype" name="org.sireum.jawa.alir.pta.suspark.PtaFieldNode">PtaFieldNode</a>, <a href="PtaGlobalVarNode.html" class="extype" name="org.sireum.jawa.alir.pta.suspark.PtaGlobalVarNode">PtaGlobalVarNode</a>, <a href="PtaGlobalVarNodeL.html" class="extype" name="org.sireum.jawa.alir.pta.suspark.PtaGlobalVarNodeL">PtaGlobalVarNodeL</a>, <a href="PtaGlobalVarNodeR.html" class="extype" name="org.sireum.jawa.alir.pta.suspark.PtaGlobalVarNodeR">PtaGlobalVarNodeR</a>, <a href="PtaInvokeNode.html" class="extype" name="org.sireum.jawa.alir.pta.suspark.PtaInvokeNode">PtaInvokeNode</a>, <a href="PtaPointNode.html" class="extype" name="org.sireum.jawa.alir.pta.suspark.PtaPointNode">PtaPointNode</a>, <a href="PtaProcNode.html" class="extype" name="org.sireum.jawa.alir.pta.suspark.PtaProcNode">PtaProcNode</a>, <a href="PtaRecvCallNode.html" class="extype" name="org.sireum.jawa.alir.pta.suspark.PtaRecvCallNode">PtaRecvCallNode</a>, <a href="PtaRecvReturnNode.html" class="extype" name="org.sireum.jawa.alir.pta.suspark.PtaRecvReturnNode">PtaRecvReturnNode</a></div>
-          </div></div>
+          <div class="superTypes hiddenContent"><span class="extype" name="scala.Product">Product</span>, <span class="extype" name="scala.Equals">Equals</span>, <a href="../../interProcedural/InterProceduralNode.html" class="extype" name="org.sireum.jawa.alir.interProcedural.InterProceduralNode">InterProceduralNode</a>, <span class="extype" name="scala.Serializable">Serializable</span>, <span class="extype" name="java.io.Serializable">Serializable</span>, <span class="extype" name="org.sireum.util.PropertyProvider">PropertyProvider</span>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+        </div></div>
         
 
       <div id="mbrsel">
@@ -70,7 +69,7 @@
                 <span class="filtertype">Inherited<br />
                 </span>
                 <ol id="linearization">
-                  <li class="in" name="org.sireum.jawa.alir.pta.suspark.PtaNode"><span>PtaNode</span></li><li class="in" name="org.sireum.jawa.alir.interProcedural.InterProceduralNode"><span>InterProceduralNode</span></li><li class="in" name="scala.Serializable"><span>Serializable</span></li><li class="in" name="java.io.Serializable"><span>Serializable</span></li><li class="in" name="org.sireum.util.PropertyProvider"><span>PropertyProvider</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                  <li class="in" name="org.sireum.jawa.alir.pta.suspark.PtaNode"><span>PtaNode</span></li><li class="in" name="scala.Product"><span>Product</span></li><li class="in" name="scala.Equals"><span>Equals</span></li><li class="in" name="org.sireum.jawa.alir.interProcedural.InterProceduralNode"><span>InterProceduralNode</span></li><li class="in" name="scala.Serializable"><span>Serializable</span></li><li class="in" name="java.io.Serializable"><span>Serializable</span></li><li class="in" name="org.sireum.util.PropertyProvider"><span>PropertyProvider</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
                 </ol>
               </div><div id="ancestors">
             <span class="filtertype"></span>
@@ -91,7 +90,7 @@
         <div id="constructors" class="members">
               <h3>Instance Constructors</h3>
               <ol><li name="org.sireum.jawa.alir.pta.suspark.PtaNode#&lt;init&gt;" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="&lt;init&gt;(loc:org.sireum.util.ResourceUri,context:org.sireum.jawa.alir.Context):org.sireum.jawa.alir.pta.suspark.PtaNode"></a>
+      <a id="&lt;init&gt;(point:org.sireum.jawa.Point,context:org.sireum.jawa.alir.Context):org.sireum.jawa.alir.pta.suspark.PtaNode"></a>
       <a id="&lt;init&gt;:PtaNode"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -99,10 +98,10 @@
         <span class="kind">new</span>
       </span>
       <span class="symbol">
-        <span class="name">PtaNode</span><span class="params">(<span name="loc">loc: <span class="extype" name="org.sireum.util.ResourceUri">ResourceUri</span></span>, <span name="context">context: <a href="../../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>)</span>
+        <span class="name">PtaNode</span><span class="params">(<span name="point">point: <a href="../../../Point.html" class="extype" name="org.sireum.jawa.Point">Point</a></span>, <span name="context">context: <a href="../../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>)</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PtaNode@&lt;init&gt;(loc:org.sireum.util.ResourceUri,context:org.sireum.jawa.alir.Context):org.sireum.jawa.alir.pta.suspark.PtaNode" title="Permalink" target="_top">
+      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PtaNode@&lt;init&gt;(point:org.sireum.jawa.Point,context:org.sireum.jawa.alir.Context):org.sireum.jawa.alir.pta.suspark.PtaNode" title="Permalink" target="_top">
         <img src="../../../../../../lib/permalink.png" />
       </a>
     </span>
@@ -241,6 +240,23 @@
     </span>)</span>
               
         </dd></dl></div>
+    </li><li name="org.sireum.jawa.alir.pta.suspark.PtaNode#context" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="context:org.sireum.jawa.alir.Context"></a>
+      <a id="context:Context"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">context</span><span class="result">: <a href="../../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PtaNode@context:org.sireum.jawa.alir.Context" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      
     </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="eq(x$1:AnyRef):Boolean"></a>
       <a id="eq(AnyRef):Boolean"></a>
@@ -258,23 +274,6 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="scala.AnyRef#equals" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="equals(x$1:Any):Boolean"></a>
-      <a id="equals(Any):Boolean"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PtaNode@equals(x$1:Any):Boolean" title="Permalink" target="_top">
-        <img src="../../../../../../lib/permalink.png" />
-      </a>
-    </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.AnyRef#finalize" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="finalize():Unit"></a>
       <a id="finalize():Unit"></a>
@@ -367,7 +366,7 @@
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>PropertyProvider</dd></dl></div>
     </li><li name="org.sireum.util.PropertyProvider#getPropertyOrElseUpdate" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="getPropertyOrElseUpdate[T](key:org.sireum.util.Property.Key,initValue:=&gt;T):T"></a>
+      <a id="getPropertyOrElseUpdate[T&lt;:&lt;?&gt;](key:&lt;?&gt;,initValue:&lt;?&gt;):T"></a>
       <a id="getPropertyOrElseUpdate[T](Key,⇒T):T"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -383,23 +382,23 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>PropertyProvider</dd></dl></div>
-    </li><li name="scala.AnyRef#hashCode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="hashCode():Int"></a>
-      <a id="hashCode():Int"></a>
+    </li><li name="org.sireum.jawa.alir.pta.suspark.PtaNode#getSlots" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="getSlots(ptaresult:org.sireum.jawa.alir.pta.PTAResult):org.sireum.util.ISet[org.sireum.alir.Slot]"></a>
+      <a id="getSlots(PTAResult):ISet[Slot]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+        <span class="name">getSlots</span><span class="params">(<span name="ptaresult">ptaresult: <a href="../PTAResult.html" class="extype" name="org.sireum.jawa.alir.pta.PTAResult">PTAResult</a></span>)</span><span class="result">: <span class="extype" name="org.sireum.util.ISet">ISet</span>[<span class="extype" name="org.sireum.alir.Slot">Slot</span>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PtaNode@hashCode():Int" title="Permalink" target="_top">
+      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PtaNode@getSlots(ptaresult:org.sireum.jawa.alir.pta.PTAResult):org.sireum.util.ISet[org.sireum.alir.Slot]" title="Permalink" target="_top">
         <img src="../../../../../../lib/permalink.png" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+      
     </li><li name="scala.Any#isInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="isInstanceOf[T0]:Boolean"></a>
       <a id="isInstanceOf[T0]:Boolean"></a>
@@ -468,6 +467,23 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="org.sireum.jawa.alir.pta.suspark.PtaNode#point" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="point:org.sireum.jawa.Point"></a>
+      <a id="point:Point"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">point</span><span class="result">: <a href="../../../Point.html" class="extype" name="org.sireum.jawa.Point">Point</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PtaNode@point:org.sireum.jawa.Point" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      
     </li><li name="org.sireum.util.PropertyProvider#propertyEmpty" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="propertyEmpty:Boolean"></a>
       <a id="propertyEmpty:Boolean"></a>
@@ -503,7 +519,7 @@
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../interProcedural/InterProceduralNode.html" class="extype" name="org.sireum.jawa.alir.interProcedural.InterProceduralNode">InterProceduralNode</a> → PropertyProvider</dd></dl></div>
     </li><li name="org.sireum.util.PropertyProvider#removeProperty" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="removeProperty(key:org.sireum.util.Property.Key):Option[Any]"></a>
+      <a id="removeProperty(key:&lt;?&gt;):Option[Any]"></a>
       <a id="removeProperty(Key):Option[Any]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -553,23 +569,6 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="scala.AnyRef#toString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="toString():String"></a>
-      <a id="toString():String"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PtaNode@toString():String" title="Permalink" target="_top">
-        <img src="../../../../../../lib/permalink.png" />
-      </a>
-    </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="org.sireum.util.PropertyProvider#update" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="update[T](key:org.sireum.util.Property.Key,value:T):Unit"></a>
       <a id="update[T](Key,T):Unit"></a>
@@ -665,7 +664,11 @@
         </div>
 
         <div id="inheritedMembers">
-        <div class="parent" name="org.sireum.jawa.alir.interProcedural.InterProceduralNode">
+        <div class="parent" name="scala.Product">
+              <h3>Inherited from <span class="extype" name="scala.Product">Product</span></h3>
+            </div><div class="parent" name="scala.Equals">
+              <h3>Inherited from <span class="extype" name="scala.Equals">Equals</span></h3>
+            </div><div class="parent" name="org.sireum.jawa.alir.interProcedural.InterProceduralNode">
               <h3>Inherited from <a href="../../interProcedural/InterProceduralNode.html" class="extype" name="org.sireum.jawa.alir.interProcedural.InterProceduralNode">InterProceduralNode</a></h3>
             </div><div class="parent" name="scala.Serializable">
               <h3>Inherited from <span class="extype" name="scala.Serializable">Serializable</span></h3>

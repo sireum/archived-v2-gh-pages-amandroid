@@ -30,7 +30,9 @@
       <div id="definition">
         <img src="../../../../../lib/class_big.png" />
         <p id="owner"><a href="../../../../package.html" class="extype" name="org">org</a>.<a href="../../../package.html" class="extype" name="org.sireum">sireum</a>.<a href="../../package.html" class="extype" name="org.sireum.jawa">jawa</a>.<a href="../package.html" class="extype" name="org.sireum.jawa.alir">alir</a>.<a href="package.html" class="extype" name="org.sireum.jawa.alir.dataDependenceAnalysis">dataDependenceAnalysis</a></p>
-        <h1>IDDGLocNode</h1> <span class="permalink">
+        <h1>IDDGLocNode</h1><h3><span class="morelinks"><div>Related Doc:
+            <a href="package.html" class="extype" name="org.sireum.jawa.alir.dataDependenceAnalysis">package dataDependenceAnalysis</a>
+          </div></span></h3><span class="permalink">
       <a href="../../../../../index.html#org.sireum.jawa.alir.dataDependenceAnalysis.IDDGLocNode" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" />
       </a>
@@ -91,7 +93,7 @@
         <div id="constructors" class="members">
               <h3>Instance Constructors</h3>
               <ol><li name="org.sireum.jawa.alir.dataDependenceAnalysis.IDDGLocNode#&lt;init&gt;" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="&lt;init&gt;(cgN:org.sireum.jawa.alir.controlFlowGraph.CGLocNode):org.sireum.jawa.alir.dataDependenceAnalysis.IDDGLocNode"></a>
+      <a id="&lt;init&gt;(icfgN:org.sireum.jawa.alir.controlFlowGraph.ICFGLocNode):org.sireum.jawa.alir.dataDependenceAnalysis.IDDGLocNode"></a>
       <a id="&lt;init&gt;:IDDGLocNode"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -99,10 +101,10 @@
         <span class="kind">new</span>
       </span>
       <span class="symbol">
-        <span class="name">IDDGLocNode</span><span class="params">(<span name="cgN">cgN: <a href="../controlFlowGraph/CGLocNode.html" class="extype" name="org.sireum.jawa.alir.controlFlowGraph.CGLocNode">CGLocNode</a></span>)</span>
+        <span class="name">IDDGLocNode</span><span class="params">(<span name="icfgN">icfgN: <a href="../controlFlowGraph/ICFGLocNode.html" class="extype" name="org.sireum.jawa.alir.controlFlowGraph.ICFGLocNode">ICFGLocNode</a></span>)</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#org.sireum.jawa.alir.dataDependenceAnalysis.IDDGLocNode@&lt;init&gt;(cgN:org.sireum.jawa.alir.controlFlowGraph.CGLocNode):org.sireum.jawa.alir.dataDependenceAnalysis.IDDGLocNode" title="Permalink" target="_top">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.dataDependenceAnalysis.IDDGLocNode@&lt;init&gt;(icfgN:org.sireum.jawa.alir.controlFlowGraph.ICFGLocNode):org.sireum.jawa.alir.dataDependenceAnalysis.IDDGLocNode" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" />
       </a>
     </span>
@@ -298,23 +300,6 @@
     </span>)</span>
               
         </dd></dl></div>
-    </li><li name="org.sireum.jawa.alir.dataDependenceAnalysis.IDDGNode#getCGNode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="getCGNode:org.sireum.jawa.alir.controlFlowGraph.CGNode"></a>
-      <a id="getCGNode:CGNode"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">getCGNode</span><span class="result">: <a href="../controlFlowGraph/CGNode.html" class="extype" name="org.sireum.jawa.alir.controlFlowGraph.CGNode">CGNode</a></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../../index.html#org.sireum.jawa.alir.dataDependenceAnalysis.IDDGLocNode@getCGNode:org.sireum.jawa.alir.controlFlowGraph.CGNode" title="Permalink" target="_top">
-        <img src="../../../../../lib/permalink.png" />
-      </a>
-    </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="IDDGNode.html" class="extype" name="org.sireum.jawa.alir.dataDependenceAnalysis.IDDGNode">IDDGNode</a></dd></dl></div>
     </li><li name="scala.AnyRef#getClass" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="getClass():Class[_]"></a>
       <a id="getClass():Class[_]"></a>
@@ -366,6 +351,23 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="IDDGNode.html" class="extype" name="org.sireum.jawa.alir.dataDependenceAnalysis.IDDGNode">IDDGNode</a> → <a href="../interProcedural/InterProceduralNode.html" class="extype" name="org.sireum.jawa.alir.interProcedural.InterProceduralNode">InterProceduralNode</a></dd></dl></div>
+    </li><li name="org.sireum.jawa.alir.dataDependenceAnalysis.IDDGNode#getICFGNode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getICFGNode:org.sireum.jawa.alir.controlFlowGraph.ICFGNode"></a>
+      <a id="getICFGNode:ICFGNode"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getICFGNode</span><span class="result">: <a href="../controlFlowGraph/ICFGNode.html" class="extype" name="org.sireum.jawa.alir.controlFlowGraph.ICFGNode">ICFGNode</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.dataDependenceAnalysis.IDDGLocNode@getICFGNode:org.sireum.jawa.alir.controlFlowGraph.ICFGNode" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="IDDGNode.html" class="extype" name="org.sireum.jawa.alir.dataDependenceAnalysis.IDDGNode">IDDGNode</a></dd></dl></div>
     </li><li name="org.sireum.jawa.alir.dataDependenceAnalysis.IDDGLocNode#getLocIndex" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="getLocIndex:Int"></a>
       <a id="getLocIndex:Int"></a>

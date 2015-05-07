@@ -30,7 +30,9 @@
       <div id="definition">
         <img src="../../../../../lib/trait_big.png" />
         <p id="owner"><a href="../../../../package.html" class="extype" name="org">org</a>.<a href="../../../package.html" class="extype" name="org.sireum">sireum</a>.<a href="../../package.html" class="extype" name="org.sireum.jawa">jawa</a>.<a href="../package.html" class="extype" name="org.sireum.jawa.alir">alir</a>.<a href="package.html" class="extype" name="org.sireum.jawa.alir.taintAnalysis">taintAnalysis</a></p>
-        <h1>SourceAndSinkManager</h1> <span class="permalink">
+        <h1>SourceAndSinkManager</h1><h3><span class="morelinks"><div>Related Doc:
+            <a href="package.html" class="extype" name="org.sireum.jawa.alir.taintAnalysis">package taintAnalysis</a>
+          </div></span></h3><span class="permalink">
       <a href="../../../../../index.html#org.sireum.jawa.alir.taintAnalysis.SourceAndSinkManager" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" />
       </a>
@@ -43,7 +45,7 @@
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <span class="name">SourceAndSinkManager</span><span class="tparams">[<span name="Fact">Fact</span>]</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+        <span class="name">SourceAndSinkManager</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
       </h4>
       
@@ -52,7 +54,7 @@
           <div class="superTypes hiddenContent"><span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
         </div><div class="toggleContainer block">
             <span class="toggle">Known Subclasses</span>
-            <div class="subClasses hiddenContent"><a href="../../../amandroid/alir/taintAnalysis/AndroidSourceAndSinkManager.html" class="extype" name="org.sireum.amandroid.alir.taintAnalysis.AndroidSourceAndSinkManager">AndroidSourceAndSinkManager</a>, <a href="../../../amandroid/alir/taintAnalysis/DataLeakageAndroidSourceAndSinkManager.html" class="extype" name="org.sireum.amandroid.alir.taintAnalysis.DataLeakageAndroidSourceAndSinkManager">DataLeakageAndroidSourceAndSinkManager</a>, <a href="../../../amandroid/alir/taintAnalysis/DefaultAndroidSourceAndSinkManager.html" class="extype" name="org.sireum.amandroid.alir.taintAnalysis.DefaultAndroidSourceAndSinkManager">DefaultAndroidSourceAndSinkManager</a>, <a href="../../../amandroid/security/dataInjection/IntentInjectionSourceAndSinkManager.html" class="extype" name="org.sireum.amandroid.security.dataInjection.IntentInjectionSourceAndSinkManager">IntentInjectionSourceAndSinkManager</a>, <a href="../../../amandroid/security/oauth/OAuthSourceAndSinkManager.html" class="extype" name="org.sireum.amandroid.security.oauth.OAuthSourceAndSinkManager">OAuthSourceAndSinkManager</a>, <a href="../../../amandroid/security/password/PasswordSourceAndSinkManager.html" class="extype" name="org.sireum.amandroid.security.password.PasswordSourceAndSinkManager">PasswordSourceAndSinkManager</a>, <a href="../../../amandroid/security/taintStrongUpdate/SourceToStrongUpdateManager.html" class="extype" name="org.sireum.amandroid.security.taintStrongUpdate.SourceToStrongUpdateManager">SourceToStrongUpdateManager</a></div>
+            <div class="subClasses hiddenContent"><a href="../../../amandroid/alir/taintAnalysis/AndroidSourceAndSinkManager.html" class="extype" name="org.sireum.amandroid.alir.taintAnalysis.AndroidSourceAndSinkManager">AndroidSourceAndSinkManager</a>, <a href="../../../amandroid/alir/taintAnalysis/DataLeakageAndroidSourceAndSinkManager.html" class="extype" name="org.sireum.amandroid.alir.taintAnalysis.DataLeakageAndroidSourceAndSinkManager">DataLeakageAndroidSourceAndSinkManager</a>, <a href="../../../amandroid/alir/taintAnalysis/DefaultAndroidSourceAndSinkManager.html" class="extype" name="org.sireum.amandroid.alir.taintAnalysis.DefaultAndroidSourceAndSinkManager">DefaultAndroidSourceAndSinkManager</a>, <a href="../../../amandroid/security/dataInjection/IntentInjectionSourceAndSinkManager.html" class="extype" name="org.sireum.amandroid.security.dataInjection.IntentInjectionSourceAndSinkManager">IntentInjectionSourceAndSinkManager</a>, <a href="../../../amandroid/security/oauth/OAuthSourceAndSinkManager.html" class="extype" name="org.sireum.amandroid.security.oauth.OAuthSourceAndSinkManager">OAuthSourceAndSinkManager</a>, <a href="../../../amandroid/security/password/PasswordSourceAndSinkManager.html" class="extype" name="org.sireum.amandroid.security.password.PasswordSourceAndSinkManager">PasswordSourceAndSinkManager</a></div>
           </div></div>
         
 
@@ -95,86 +97,86 @@
         <div id="values" class="values members">
               <h3>Abstract Value Members</h3>
               <ol><li name="org.sireum.jawa.alir.taintAnalysis.SourceAndSinkManager#isSink" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="isSink(loc:org.sireum.pilar.ast.LocationDecl,s:org.sireum.util.ISet[Fact]):Boolean"></a>
-      <a id="isSink(LocationDecl,ISet[Fact]):Boolean"></a>
+      <a id="isSink(loc:org.sireum.pilar.ast.LocationDecl,ptaresult:org.sireum.jawa.alir.pta.PTAResult):Boolean"></a>
+      <a id="isSink(LocationDecl,PTAResult):Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">abstract </span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">isSink</span><span class="params">(<span name="loc">loc: <span class="extype" name="org.sireum.pilar.ast.LocationDecl">LocationDecl</span></span>, <span name="s">s: <span class="extype" name="org.sireum.util.ISet">ISet</span>[<span class="extype" name="org.sireum.jawa.alir.taintAnalysis.SourceAndSinkManager.Fact">Fact</span>]</span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">isSink</span><span class="params">(<span name="loc">loc: <span class="extype" name="org.sireum.pilar.ast.LocationDecl">LocationDecl</span></span>, <span name="ptaresult">ptaresult: <a href="../pta/PTAResult.html" class="extype" name="org.sireum.jawa.alir.pta.PTAResult">PTAResult</a></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#org.sireum.jawa.alir.taintAnalysis.SourceAndSinkManager@isSink(loc:org.sireum.pilar.ast.LocationDecl,s:org.sireum.util.ISet[Fact]):Boolean" title="Permalink" target="_top">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.taintAnalysis.SourceAndSinkManager@isSink(loc:org.sireum.pilar.ast.LocationDecl,ptaresult:org.sireum.jawa.alir.pta.PTAResult):Boolean" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" />
       </a>
     </span>
       
-    </li><li name="org.sireum.jawa.alir.taintAnalysis.SourceAndSinkManager#isSinkProcedure" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="isSinkProcedure(procedure:org.sireum.jawa.JawaProcedure):Boolean"></a>
-      <a id="isSinkProcedure(JawaProcedure):Boolean"></a>
+    </li><li name="org.sireum.jawa.alir.taintAnalysis.SourceAndSinkManager#isSinkMethod" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="isSinkMethod(procedure:org.sireum.jawa.JawaMethod):Boolean"></a>
+      <a id="isSinkMethod(JawaMethod):Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">abstract </span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">isSinkProcedure</span><span class="params">(<span name="procedure">procedure: <a href="../../JawaProcedure.html" class="extype" name="org.sireum.jawa.JawaProcedure">JawaProcedure</a></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">isSinkMethod</span><span class="params">(<span name="procedure">procedure: <a href="../../JawaMethod.html" class="extype" name="org.sireum.jawa.JawaMethod">JawaMethod</a></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#org.sireum.jawa.alir.taintAnalysis.SourceAndSinkManager@isSinkProcedure(procedure:org.sireum.jawa.JawaProcedure):Boolean" title="Permalink" target="_top">
-        <img src="../../../../../lib/permalink.png" />
-      </a>
-    </span>
-      
-    </li><li name="org.sireum.jawa.alir.taintAnalysis.SourceAndSinkManager#isSource" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="isSource(calleeProcedure:org.sireum.jawa.JawaProcedure,callerProcedure:org.sireum.jawa.JawaProcedure,callerLoc:org.sireum.pilar.ast.JumpLocation):Boolean"></a>
-      <a id="isSource(JawaProcedure,JawaProcedure,JumpLocation):Boolean"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">abstract </span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">isSource</span><span class="params">(<span name="calleeProcedure">calleeProcedure: <a href="../../JawaProcedure.html" class="extype" name="org.sireum.jawa.JawaProcedure">JawaProcedure</a></span>, <span name="callerProcedure">callerProcedure: <a href="../../JawaProcedure.html" class="extype" name="org.sireum.jawa.JawaProcedure">JawaProcedure</a></span>, <span name="callerLoc">callerLoc: <span class="extype" name="org.sireum.pilar.ast.JumpLocation">JumpLocation</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../../index.html#org.sireum.jawa.alir.taintAnalysis.SourceAndSinkManager@isSource(calleeProcedure:org.sireum.jawa.JawaProcedure,callerProcedure:org.sireum.jawa.JawaProcedure,callerLoc:org.sireum.pilar.ast.JumpLocation):Boolean" title="Permalink" target="_top">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.taintAnalysis.SourceAndSinkManager@isSinkMethod(procedure:org.sireum.jawa.JawaMethod):Boolean" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" />
       </a>
     </span>
       
     </li><li name="org.sireum.jawa.alir.taintAnalysis.SourceAndSinkManager#isSource" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="isSource(loc:org.sireum.pilar.ast.LocationDecl,s:org.sireum.util.ISet[Fact]):Boolean"></a>
-      <a id="isSource(LocationDecl,ISet[Fact]):Boolean"></a>
+      <a id="isSource(calleeMethod:org.sireum.jawa.JawaMethod,callerMethod:org.sireum.jawa.JawaMethod,callerLoc:org.sireum.pilar.ast.JumpLocation):Boolean"></a>
+      <a id="isSource(JawaMethod,JawaMethod,JumpLocation):Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">abstract </span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">isSource</span><span class="params">(<span name="loc">loc: <span class="extype" name="org.sireum.pilar.ast.LocationDecl">LocationDecl</span></span>, <span name="s">s: <span class="extype" name="org.sireum.util.ISet">ISet</span>[<span class="extype" name="org.sireum.jawa.alir.taintAnalysis.SourceAndSinkManager.Fact">Fact</span>]</span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">isSource</span><span class="params">(<span name="calleeMethod">calleeMethod: <a href="../../JawaMethod.html" class="extype" name="org.sireum.jawa.JawaMethod">JawaMethod</a></span>, <span name="callerMethod">callerMethod: <a href="../../JawaMethod.html" class="extype" name="org.sireum.jawa.JawaMethod">JawaMethod</a></span>, <span name="callerLoc">callerLoc: <span class="extype" name="org.sireum.pilar.ast.JumpLocation">JumpLocation</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#org.sireum.jawa.alir.taintAnalysis.SourceAndSinkManager@isSource(loc:org.sireum.pilar.ast.LocationDecl,s:org.sireum.util.ISet[Fact]):Boolean" title="Permalink" target="_top">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.taintAnalysis.SourceAndSinkManager@isSource(calleeMethod:org.sireum.jawa.JawaMethod,callerMethod:org.sireum.jawa.JawaMethod,callerLoc:org.sireum.pilar.ast.JumpLocation):Boolean" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" />
       </a>
     </span>
       
-    </li><li name="org.sireum.jawa.alir.taintAnalysis.SourceAndSinkManager#isSourceProcedure" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="isSourceProcedure(procedure:org.sireum.jawa.JawaProcedure):Boolean"></a>
-      <a id="isSourceProcedure(JawaProcedure):Boolean"></a>
+    </li><li name="org.sireum.jawa.alir.taintAnalysis.SourceAndSinkManager#isSource" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="isSource(loc:org.sireum.pilar.ast.LocationDecl,ptaresult:org.sireum.jawa.alir.pta.PTAResult):Boolean"></a>
+      <a id="isSource(LocationDecl,PTAResult):Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">abstract </span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">isSourceProcedure</span><span class="params">(<span name="procedure">procedure: <a href="../../JawaProcedure.html" class="extype" name="org.sireum.jawa.JawaProcedure">JawaProcedure</a></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">isSource</span><span class="params">(<span name="loc">loc: <span class="extype" name="org.sireum.pilar.ast.LocationDecl">LocationDecl</span></span>, <span name="ptaresult">ptaresult: <a href="../pta/PTAResult.html" class="extype" name="org.sireum.jawa.alir.pta.PTAResult">PTAResult</a></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#org.sireum.jawa.alir.taintAnalysis.SourceAndSinkManager@isSourceProcedure(procedure:org.sireum.jawa.JawaProcedure):Boolean" title="Permalink" target="_top">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.taintAnalysis.SourceAndSinkManager@isSource(loc:org.sireum.pilar.ast.LocationDecl,ptaresult:org.sireum.jawa.alir.pta.PTAResult):Boolean" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.jawa.alir.taintAnalysis.SourceAndSinkManager#isSourceMethod" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="isSourceMethod(procedure:org.sireum.jawa.JawaMethod):Boolean"></a>
+      <a id="isSourceMethod(JawaMethod):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isSourceMethod</span><span class="params">(<span name="procedure">procedure: <a href="../../JawaMethod.html" class="extype" name="org.sireum.jawa.JawaMethod">JawaMethod</a></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.taintAnalysis.SourceAndSinkManager@isSourceMethod(procedure:org.sireum.jawa.JawaMethod):Boolean" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" />
       </a>
     </span>

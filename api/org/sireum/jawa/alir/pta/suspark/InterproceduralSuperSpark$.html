@@ -30,7 +30,9 @@
       <div id="definition">
         <img src="../../../../../../lib/object_big.png" />
         <p id="owner"><a href="../../../../../package.html" class="extype" name="org">org</a>.<a href="../../../../package.html" class="extype" name="org.sireum">sireum</a>.<a href="../../../package.html" class="extype" name="org.sireum.jawa">jawa</a>.<a href="../../package.html" class="extype" name="org.sireum.jawa.alir">alir</a>.<a href="../package.html" class="extype" name="org.sireum.jawa.alir.pta">pta</a>.<a href="package.html" class="extype" name="org.sireum.jawa.alir.pta.suspark">suspark</a></p>
-        <h1>InterproceduralSuperSpark</h1> <span class="permalink">
+        <h1>InterproceduralSuperSpark</h1><h3><span class="morelinks"><div>Related Doc:
+            <a href="package.html" class="extype" name="org.sireum.jawa.alir.pta.suspark">package suspark</a>
+          </div></span></h3><span class="permalink">
       <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.InterproceduralSuperSpark$" title="Permalink" target="_top">
         <img src="../../../../../../lib/permalink.png" />
       </a>
@@ -90,7 +92,7 @@
         <div id="types" class="types members">
               <h3>Type Members</h3>
               <ol><li name="org.sireum.jawa.alir.pta.suspark.InterproceduralSuperSpark.N" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="N=org.sireum.jawa.alir.controlFlowGraph.CGNode"></a>
+      <a id="N=org.sireum.jawa.alir.controlFlowGraph.ICFGNode"></a>
       <a id="N:N"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -98,10 +100,10 @@
         <span class="kind">type</span>
       </span>
       <span class="symbol">
-        <span class="name">N</span><span class="result"> = <a href="../../controlFlowGraph/CGNode.html" class="extype" name="org.sireum.jawa.alir.controlFlowGraph.CGNode">CGNode</a></span>
+        <span class="name">N</span><span class="result"> = <a href="../../controlFlowGraph/ICFGNode.html" class="extype" name="org.sireum.jawa.alir.controlFlowGraph.ICFGNode">ICFGNode</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.InterproceduralSuperSpark$@N=org.sireum.jawa.alir.controlFlowGraph.CGNode" title="Permalink" target="_top">
+      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.InterproceduralSuperSpark$@N=org.sireum.jawa.alir.controlFlowGraph.ICFGNode" title="Permalink" target="_top">
         <img src="../../../../../../lib/permalink.png" />
       </a>
     </span>
@@ -165,18 +167,18 @@
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="org.sireum.jawa.alir.pta.suspark.InterproceduralSuperSpark#apply" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="apply(entryPoints:org.sireum.util.ISet[org.sireum.jawa.JawaProcedure],timer:Option[org.sireum.jawa.util.MyTimer]):org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph[org.sireum.jawa.alir.pta.suspark.InterproceduralSuperSpark.N]"></a>
-      <a id="apply(ISet[JawaProcedure],Option[MyTimer]):InterproceduralControlFlowGraph[N]"></a>
+      <a id="apply(entryPoints:org.sireum.util.ISet[org.sireum.jawa.JawaMethod],timer:Option[org.sireum.jawa.util.MyTimer]):org.sireum.jawa.alir.dataFlowAnalysis.InterProceduralDataFlowGraph"></a>
+      <a id="apply(ISet[JawaMethod],Option[MyTimer]):InterProceduralDataFlowGraph"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">apply</span><span class="params">(<span name="entryPoints">entryPoints: <span class="extype" name="org.sireum.util.ISet">ISet</span>[<a href="../../../JawaProcedure.html" class="extype" name="org.sireum.jawa.JawaProcedure">JawaProcedure</a>]</span>, <span name="timer">timer: <span class="extype" name="scala.Option">Option</span>[<a href="../../../util/MyTimer.html" class="extype" name="org.sireum.jawa.util.MyTimer">MyTimer</a>]</span>)</span><span class="result">: <a href="../../controlFlowGraph/InterproceduralControlFlowGraph.html" class="extype" name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph">InterproceduralControlFlowGraph</a>[<a href="#N=org.sireum.jawa.alir.controlFlowGraph.CGNode" class="extmbr" name="org.sireum.jawa.alir.pta.suspark.InterproceduralSuperSpark.N">N</a>]</span>
+        <span class="name">apply</span><span class="params">(<span name="entryPoints">entryPoints: <span class="extype" name="org.sireum.util.ISet">ISet</span>[<a href="../../../JawaMethod.html" class="extype" name="org.sireum.jawa.JawaMethod">JawaMethod</a>]</span>, <span name="timer">timer: <span class="extype" name="scala.Option">Option</span>[<a href="../../../util/MyTimer.html" class="extype" name="org.sireum.jawa.util.MyTimer">MyTimer</a>]</span>)</span><span class="result">: <a href="../../dataFlowAnalysis/InterProceduralDataFlowGraph.html" class="extype" name="org.sireum.jawa.alir.dataFlowAnalysis.InterProceduralDataFlowGraph">InterProceduralDataFlowGraph</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.InterproceduralSuperSpark$@apply(entryPoints:org.sireum.util.ISet[org.sireum.jawa.JawaProcedure],timer:Option[org.sireum.jawa.util.MyTimer]):org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph[org.sireum.jawa.alir.pta.suspark.InterproceduralSuperSpark.N]" title="Permalink" target="_top">
+      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.InterproceduralSuperSpark$@apply(entryPoints:org.sireum.util.ISet[org.sireum.jawa.JawaMethod],timer:Option[org.sireum.jawa.util.MyTimer]):org.sireum.jawa.alir.dataFlowAnalysis.InterProceduralDataFlowGraph" title="Permalink" target="_top">
         <img src="../../../../../../lib/permalink.png" />
       </a>
     </span>
@@ -199,35 +201,35 @@
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
     </li><li name="org.sireum.jawa.alir.pta.suspark.InterproceduralSuperSpark#build" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="build(entryPoints:org.sireum.util.ISet[org.sireum.jawa.JawaProcedure],timer:Option[org.sireum.jawa.util.MyTimer]):org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph[org.sireum.jawa.alir.pta.suspark.InterproceduralSuperSpark.N]"></a>
-      <a id="build(ISet[JawaProcedure],Option[MyTimer]):InterproceduralControlFlowGraph[N]"></a>
+      <a id="build(entryPoints:org.sireum.util.ISet[org.sireum.jawa.JawaMethod],timer:Option[org.sireum.jawa.util.MyTimer]):org.sireum.jawa.alir.dataFlowAnalysis.InterProceduralDataFlowGraph"></a>
+      <a id="build(ISet[JawaMethod],Option[MyTimer]):InterProceduralDataFlowGraph"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">build</span><span class="params">(<span name="entryPoints">entryPoints: <span class="extype" name="org.sireum.util.ISet">ISet</span>[<a href="../../../JawaProcedure.html" class="extype" name="org.sireum.jawa.JawaProcedure">JawaProcedure</a>]</span>, <span name="timer">timer: <span class="extype" name="scala.Option">Option</span>[<a href="../../../util/MyTimer.html" class="extype" name="org.sireum.jawa.util.MyTimer">MyTimer</a>]</span>)</span><span class="result">: <a href="../../controlFlowGraph/InterproceduralControlFlowGraph.html" class="extype" name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph">InterproceduralControlFlowGraph</a>[<a href="#N=org.sireum.jawa.alir.controlFlowGraph.CGNode" class="extmbr" name="org.sireum.jawa.alir.pta.suspark.InterproceduralSuperSpark.N">N</a>]</span>
+        <span class="name">build</span><span class="params">(<span name="entryPoints">entryPoints: <span class="extype" name="org.sireum.util.ISet">ISet</span>[<a href="../../../JawaMethod.html" class="extype" name="org.sireum.jawa.JawaMethod">JawaMethod</a>]</span>, <span name="timer">timer: <span class="extype" name="scala.Option">Option</span>[<a href="../../../util/MyTimer.html" class="extype" name="org.sireum.jawa.util.MyTimer">MyTimer</a>]</span>)</span><span class="result">: <a href="../../dataFlowAnalysis/InterProceduralDataFlowGraph.html" class="extype" name="org.sireum.jawa.alir.dataFlowAnalysis.InterProceduralDataFlowGraph">InterProceduralDataFlowGraph</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.InterproceduralSuperSpark$@build(entryPoints:org.sireum.util.ISet[org.sireum.jawa.JawaProcedure],timer:Option[org.sireum.jawa.util.MyTimer]):org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph[org.sireum.jawa.alir.pta.suspark.InterproceduralSuperSpark.N]" title="Permalink" target="_top">
+      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.InterproceduralSuperSpark$@build(entryPoints:org.sireum.util.ISet[org.sireum.jawa.JawaMethod],timer:Option[org.sireum.jawa.util.MyTimer]):org.sireum.jawa.alir.dataFlowAnalysis.InterProceduralDataFlowGraph" title="Permalink" target="_top">
         <img src="../../../../../../lib/permalink.png" />
       </a>
     </span>
       
     </li><li name="org.sireum.jawa.alir.pta.suspark.InterproceduralSuperSpark#checkAndDoCall" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="checkAndDoCall(node:org.sireum.jawa.alir.pta.suspark.PtaNode,d:org.sireum.util.MSet[org.sireum.jawa.alir.pta.PTAInstance],pag:org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph[org.sireum.jawa.alir.pta.suspark.PtaNode],cg:org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph[org.sireum.jawa.alir.pta.suspark.InterproceduralSuperSpark.N]):Unit"></a>
-      <a id="checkAndDoCall(PtaNode,MSet[PTAInstance],PointerAssignmentGraph[PtaNode],InterproceduralControlFlowGraph[N]):Unit"></a>
+      <a id="checkAndDoCall(node:org.sireum.jawa.alir.pta.suspark.PtaNode,d:org.sireum.util.ISet[org.sireum.jawa.alir.pta.Instance],pag:org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph[org.sireum.jawa.alir.pta.suspark.PtaNode],icfg:org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph[org.sireum.jawa.alir.pta.suspark.InterproceduralSuperSpark.N]):Unit"></a>
+      <a id="checkAndDoCall(PtaNode,ISet[Instance],PointerAssignmentGraph[PtaNode],InterproceduralControlFlowGraph[N]):Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">checkAndDoCall</span><span class="params">(<span name="node">node: <a href="PtaNode.html" class="extype" name="org.sireum.jawa.alir.pta.suspark.PtaNode">PtaNode</a></span>, <span name="d">d: <span class="extype" name="org.sireum.util.MSet">MSet</span>[<a href="../PTAInstance.html" class="extype" name="org.sireum.jawa.alir.pta.PTAInstance">PTAInstance</a>]</span>, <span name="pag">pag: <a href="PointerAssignmentGraph.html" class="extype" name="org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph">PointerAssignmentGraph</a>[<a href="PtaNode.html" class="extype" name="org.sireum.jawa.alir.pta.suspark.PtaNode">PtaNode</a>]</span>, <span name="cg">cg: <a href="../../controlFlowGraph/InterproceduralControlFlowGraph.html" class="extype" name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph">InterproceduralControlFlowGraph</a>[<a href="#N=org.sireum.jawa.alir.controlFlowGraph.CGNode" class="extmbr" name="org.sireum.jawa.alir.pta.suspark.InterproceduralSuperSpark.N">N</a>]</span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">checkAndDoCall</span><span class="params">(<span name="node">node: <a href="PtaNode.html" class="extype" name="org.sireum.jawa.alir.pta.suspark.PtaNode">PtaNode</a></span>, <span name="d">d: <span class="extype" name="org.sireum.util.ISet">ISet</span>[<a href="../Instance.html" class="extype" name="org.sireum.jawa.alir.pta.Instance">Instance</a>]</span>, <span name="pag">pag: <a href="PointerAssignmentGraph.html" class="extype" name="org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph">PointerAssignmentGraph</a>[<a href="PtaNode.html" class="extype" name="org.sireum.jawa.alir.pta.suspark.PtaNode">PtaNode</a>]</span>, <span name="icfg">icfg: <a href="../../controlFlowGraph/InterproceduralControlFlowGraph.html" class="extype" name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph">InterproceduralControlFlowGraph</a>[<a href="#N=org.sireum.jawa.alir.controlFlowGraph.ICFGNode" class="extmbr" name="org.sireum.jawa.alir.pta.suspark.InterproceduralSuperSpark.N">N</a>]</span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.InterproceduralSuperSpark$@checkAndDoCall(node:org.sireum.jawa.alir.pta.suspark.PtaNode,d:org.sireum.util.MSet[org.sireum.jawa.alir.pta.PTAInstance],pag:org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph[org.sireum.jawa.alir.pta.suspark.PtaNode],cg:org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph[org.sireum.jawa.alir.pta.suspark.InterproceduralSuperSpark.N]):Unit" title="Permalink" target="_top">
+      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.InterproceduralSuperSpark$@checkAndDoCall(node:org.sireum.jawa.alir.pta.suspark.PtaNode,d:org.sireum.util.ISet[org.sireum.jawa.alir.pta.Instance],pag:org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph[org.sireum.jawa.alir.pta.suspark.PtaNode],icfg:org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph[org.sireum.jawa.alir.pta.suspark.InterproceduralSuperSpark.N]):Unit" title="Permalink" target="_top">
         <img src="../../../../../../lib/permalink.png" />
       </a>
     </span>
@@ -256,18 +258,18 @@
               
         </dd></dl></div>
     </li><li name="org.sireum.jawa.alir.pta.suspark.InterproceduralSuperSpark#doPTA" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="doPTA(ep:org.sireum.jawa.JawaProcedure,pag:org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph[org.sireum.jawa.alir.pta.suspark.PtaNode],cg:org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph[org.sireum.jawa.alir.pta.suspark.InterproceduralSuperSpark.N],timer:Option[org.sireum.jawa.util.MyTimer]):Unit"></a>
-      <a id="doPTA(JawaProcedure,PointerAssignmentGraph[PtaNode],InterproceduralControlFlowGraph[N],Option[MyTimer]):Unit"></a>
+      <a id="doPTA(ep:org.sireum.jawa.JawaMethod,pag:org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph[org.sireum.jawa.alir.pta.suspark.PtaNode],icfg:org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph[org.sireum.jawa.alir.pta.suspark.InterproceduralSuperSpark.N],timer:Option[org.sireum.jawa.util.MyTimer]):Unit"></a>
+      <a id="doPTA(JawaMethod,PointerAssignmentGraph[PtaNode],InterproceduralControlFlowGraph[N],Option[MyTimer]):Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">doPTA</span><span class="params">(<span name="ep">ep: <a href="../../../JawaProcedure.html" class="extype" name="org.sireum.jawa.JawaProcedure">JawaProcedure</a></span>, <span name="pag">pag: <a href="PointerAssignmentGraph.html" class="extype" name="org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph">PointerAssignmentGraph</a>[<a href="PtaNode.html" class="extype" name="org.sireum.jawa.alir.pta.suspark.PtaNode">PtaNode</a>]</span>, <span name="cg">cg: <a href="../../controlFlowGraph/InterproceduralControlFlowGraph.html" class="extype" name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph">InterproceduralControlFlowGraph</a>[<a href="#N=org.sireum.jawa.alir.controlFlowGraph.CGNode" class="extmbr" name="org.sireum.jawa.alir.pta.suspark.InterproceduralSuperSpark.N">N</a>]</span>, <span name="timer">timer: <span class="extype" name="scala.Option">Option</span>[<a href="../../../util/MyTimer.html" class="extype" name="org.sireum.jawa.util.MyTimer">MyTimer</a>]</span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">doPTA</span><span class="params">(<span name="ep">ep: <a href="../../../JawaMethod.html" class="extype" name="org.sireum.jawa.JawaMethod">JawaMethod</a></span>, <span name="pag">pag: <a href="PointerAssignmentGraph.html" class="extype" name="org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph">PointerAssignmentGraph</a>[<a href="PtaNode.html" class="extype" name="org.sireum.jawa.alir.pta.suspark.PtaNode">PtaNode</a>]</span>, <span name="icfg">icfg: <a href="../../controlFlowGraph/InterproceduralControlFlowGraph.html" class="extype" name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph">InterproceduralControlFlowGraph</a>[<a href="#N=org.sireum.jawa.alir.controlFlowGraph.ICFGNode" class="extmbr" name="org.sireum.jawa.alir.pta.suspark.InterproceduralSuperSpark.N">N</a>]</span>, <span name="timer">timer: <span class="extype" name="scala.Option">Option</span>[<a href="../../../util/MyTimer.html" class="extype" name="org.sireum.jawa.util.MyTimer">MyTimer</a>]</span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.InterproceduralSuperSpark$@doPTA(ep:org.sireum.jawa.JawaProcedure,pag:org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph[org.sireum.jawa.alir.pta.suspark.PtaNode],cg:org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph[org.sireum.jawa.alir.pta.suspark.InterproceduralSuperSpark.N],timer:Option[org.sireum.jawa.util.MyTimer]):Unit" title="Permalink" target="_top">
+      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.InterproceduralSuperSpark$@doPTA(ep:org.sireum.jawa.JawaMethod,pag:org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph[org.sireum.jawa.alir.pta.suspark.PtaNode],icfg:org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph[org.sireum.jawa.alir.pta.suspark.InterproceduralSuperSpark.N],timer:Option[org.sireum.jawa.util.MyTimer]):Unit" title="Permalink" target="_top">
         <img src="../../../../../../lib/permalink.png" />
       </a>
     </span>
@@ -307,18 +309,18 @@
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="org.sireum.jawa.alir.pta.suspark.InterproceduralSuperSpark#extendGraphWithConstructGraph" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="extendGraphWithConstructGraph(calleeProc:org.sireum.jawa.JawaProcedure,pi:org.sireum.jawa.PointI,callerContext:org.sireum.jawa.alir.Context,pag:org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph[org.sireum.jawa.alir.pta.suspark.PtaNode],cg:org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph[org.sireum.jawa.alir.pta.suspark.InterproceduralSuperSpark.N]):org.sireum.jawa.alir.pta.suspark.InterproceduralSuperSpark.N"></a>
-      <a id="extendGraphWithConstructGraph(JawaProcedure,PointI,Context,PointerAssignmentGraph[PtaNode],InterproceduralControlFlowGraph[N]):N"></a>
+      <a id="extendGraphWithConstructGraph(calleeProc:org.sireum.jawa.JawaMethod,pi:org.sireum.jawa.Pointwithorg.sireum.jawa.Invoke,callerContext:org.sireum.jawa.alir.Context,pag:org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph[org.sireum.jawa.alir.pta.suspark.PtaNode],icfg:org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph[org.sireum.jawa.alir.pta.suspark.InterproceduralSuperSpark.N]):org.sireum.jawa.alir.pta.suspark.InterproceduralSuperSpark.N"></a>
+      <a id="extendGraphWithConstructGraph(JawaMethod,PointwithInvoke,Context,PointerAssignmentGraph[PtaNode],InterproceduralControlFlowGraph[N]):N"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">extendGraphWithConstructGraph</span><span class="params">(<span name="calleeProc">calleeProc: <a href="../../../JawaProcedure.html" class="extype" name="org.sireum.jawa.JawaProcedure">JawaProcedure</a></span>, <span name="pi">pi: <a href="../../../PointI.html" class="extype" name="org.sireum.jawa.PointI">PointI</a></span>, <span name="callerContext">callerContext: <a href="../../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>, <span name="pag">pag: <a href="PointerAssignmentGraph.html" class="extype" name="org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph">PointerAssignmentGraph</a>[<a href="PtaNode.html" class="extype" name="org.sireum.jawa.alir.pta.suspark.PtaNode">PtaNode</a>]</span>, <span name="cg">cg: <a href="../../controlFlowGraph/InterproceduralControlFlowGraph.html" class="extype" name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph">InterproceduralControlFlowGraph</a>[<a href="#N=org.sireum.jawa.alir.controlFlowGraph.CGNode" class="extmbr" name="org.sireum.jawa.alir.pta.suspark.InterproceduralSuperSpark.N">N</a>]</span>)</span><span class="result">: <a href="#N=org.sireum.jawa.alir.controlFlowGraph.CGNode" class="extmbr" name="org.sireum.jawa.alir.pta.suspark.InterproceduralSuperSpark.N">N</a></span>
+        <span class="name">extendGraphWithConstructGraph</span><span class="params">(<span name="calleeProc">calleeProc: <a href="../../../JawaMethod.html" class="extype" name="org.sireum.jawa.JawaMethod">JawaMethod</a></span>, <span name="pi">pi: <a href="../../../Point.html" class="extype" name="org.sireum.jawa.Point">Point</a> with <a href="../../../Invoke.html" class="extype" name="org.sireum.jawa.Invoke">Invoke</a></span>, <span name="callerContext">callerContext: <a href="../../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>, <span name="pag">pag: <a href="PointerAssignmentGraph.html" class="extype" name="org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph">PointerAssignmentGraph</a>[<a href="PtaNode.html" class="extype" name="org.sireum.jawa.alir.pta.suspark.PtaNode">PtaNode</a>]</span>, <span name="icfg">icfg: <a href="../../controlFlowGraph/InterproceduralControlFlowGraph.html" class="extype" name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph">InterproceduralControlFlowGraph</a>[<a href="#N=org.sireum.jawa.alir.controlFlowGraph.ICFGNode" class="extmbr" name="org.sireum.jawa.alir.pta.suspark.InterproceduralSuperSpark.N">N</a>]</span>)</span><span class="result">: <a href="#N=org.sireum.jawa.alir.controlFlowGraph.ICFGNode" class="extmbr" name="org.sireum.jawa.alir.pta.suspark.InterproceduralSuperSpark.N">N</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.InterproceduralSuperSpark$@extendGraphWithConstructGraph(calleeProc:org.sireum.jawa.JawaProcedure,pi:org.sireum.jawa.PointI,callerContext:org.sireum.jawa.alir.Context,pag:org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph[org.sireum.jawa.alir.pta.suspark.PtaNode],cg:org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph[org.sireum.jawa.alir.pta.suspark.InterproceduralSuperSpark.N]):org.sireum.jawa.alir.pta.suspark.InterproceduralSuperSpark.N" title="Permalink" target="_top">
+      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.InterproceduralSuperSpark$@extendGraphWithConstructGraph(calleeProc:org.sireum.jawa.JawaMethod,pi:org.sireum.jawa.Pointwithorg.sireum.jawa.Invoke,callerContext:org.sireum.jawa.alir.Context,pag:org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph[org.sireum.jawa.alir.pta.suspark.PtaNode],icfg:org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph[org.sireum.jawa.alir.pta.suspark.InterproceduralSuperSpark.N]):org.sireum.jawa.alir.pta.suspark.InterproceduralSuperSpark.N" title="Permalink" target="_top">
         <img src="../../../../../../lib/permalink.png" />
       </a>
     </span>
@@ -449,18 +451,18 @@
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="org.sireum.jawa.alir.pta.suspark.InterproceduralSuperSpark#pta" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="pta(pag:org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph[org.sireum.jawa.alir.pta.suspark.PtaNode],cg:org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph[org.sireum.jawa.alir.pta.suspark.InterproceduralSuperSpark.N],entryPoints:Set[org.sireum.jawa.JawaProcedure],timer:Option[org.sireum.jawa.util.MyTimer]):Unit"></a>
-      <a id="pta(PointerAssignmentGraph[PtaNode],InterproceduralControlFlowGraph[N],Set[JawaProcedure],Option[MyTimer]):Unit"></a>
+      <a id="pta(pag:org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph[org.sireum.jawa.alir.pta.suspark.PtaNode],icfg:org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph[org.sireum.jawa.alir.pta.suspark.InterproceduralSuperSpark.N],entryPoints:Set[org.sireum.jawa.JawaMethod],timer:Option[org.sireum.jawa.util.MyTimer]):Unit"></a>
+      <a id="pta(PointerAssignmentGraph[PtaNode],InterproceduralControlFlowGraph[N],Set[JawaMethod],Option[MyTimer]):Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">pta</span><span class="params">(<span name="pag">pag: <a href="PointerAssignmentGraph.html" class="extype" name="org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph">PointerAssignmentGraph</a>[<a href="PtaNode.html" class="extype" name="org.sireum.jawa.alir.pta.suspark.PtaNode">PtaNode</a>]</span>, <span name="cg">cg: <a href="../../controlFlowGraph/InterproceduralControlFlowGraph.html" class="extype" name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph">InterproceduralControlFlowGraph</a>[<a href="#N=org.sireum.jawa.alir.controlFlowGraph.CGNode" class="extmbr" name="org.sireum.jawa.alir.pta.suspark.InterproceduralSuperSpark.N">N</a>]</span>, <span name="entryPoints">entryPoints: <span class="extype" name="scala.Predef.Set">Set</span>[<a href="../../../JawaProcedure.html" class="extype" name="org.sireum.jawa.JawaProcedure">JawaProcedure</a>]</span>, <span name="timer">timer: <span class="extype" name="scala.Option">Option</span>[<a href="../../../util/MyTimer.html" class="extype" name="org.sireum.jawa.util.MyTimer">MyTimer</a>]</span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">pta</span><span class="params">(<span name="pag">pag: <a href="PointerAssignmentGraph.html" class="extype" name="org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph">PointerAssignmentGraph</a>[<a href="PtaNode.html" class="extype" name="org.sireum.jawa.alir.pta.suspark.PtaNode">PtaNode</a>]</span>, <span name="icfg">icfg: <a href="../../controlFlowGraph/InterproceduralControlFlowGraph.html" class="extype" name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph">InterproceduralControlFlowGraph</a>[<a href="#N=org.sireum.jawa.alir.controlFlowGraph.ICFGNode" class="extmbr" name="org.sireum.jawa.alir.pta.suspark.InterproceduralSuperSpark.N">N</a>]</span>, <span name="entryPoints">entryPoints: <span class="extype" name="scala.Predef.Set">Set</span>[<a href="../../../JawaMethod.html" class="extype" name="org.sireum.jawa.JawaMethod">JawaMethod</a>]</span>, <span name="timer">timer: <span class="extype" name="scala.Option">Option</span>[<a href="../../../util/MyTimer.html" class="extype" name="org.sireum.jawa.util.MyTimer">MyTimer</a>]</span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.InterproceduralSuperSpark$@pta(pag:org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph[org.sireum.jawa.alir.pta.suspark.PtaNode],cg:org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph[org.sireum.jawa.alir.pta.suspark.InterproceduralSuperSpark.N],entryPoints:Set[org.sireum.jawa.JawaProcedure],timer:Option[org.sireum.jawa.util.MyTimer]):Unit" title="Permalink" target="_top">
+      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.InterproceduralSuperSpark$@pta(pag:org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph[org.sireum.jawa.alir.pta.suspark.PtaNode],icfg:org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph[org.sireum.jawa.alir.pta.suspark.InterproceduralSuperSpark.N],entryPoints:Set[org.sireum.jawa.JawaMethod],timer:Option[org.sireum.jawa.util.MyTimer]):Unit" title="Permalink" target="_top">
         <img src="../../../../../../lib/permalink.png" />
       </a>
     </span>
@@ -569,7 +571,7 @@
               
         </dd></dl></div>
     </li><li name="org.sireum.jawa.alir.pta.suspark.InterproceduralSuperSpark#workListPropagation" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="workListPropagation(pag:org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph[org.sireum.jawa.alir.pta.suspark.PtaNode],cg:org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph[org.sireum.jawa.alir.pta.suspark.InterproceduralSuperSpark.N],timer:Option[org.sireum.jawa.util.MyTimer]):Unit"></a>
+      <a id="workListPropagation(pag:org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph[org.sireum.jawa.alir.pta.suspark.PtaNode],icfg:org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph[org.sireum.jawa.alir.pta.suspark.InterproceduralSuperSpark.N],timer:Option[org.sireum.jawa.util.MyTimer]):Unit"></a>
       <a id="workListPropagation(PointerAssignmentGraph[PtaNode],InterproceduralControlFlowGraph[N],Option[MyTimer]):Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -577,10 +579,10 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">workListPropagation</span><span class="params">(<span name="pag">pag: <a href="PointerAssignmentGraph.html" class="extype" name="org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph">PointerAssignmentGraph</a>[<a href="PtaNode.html" class="extype" name="org.sireum.jawa.alir.pta.suspark.PtaNode">PtaNode</a>]</span>, <span name="cg">cg: <a href="../../controlFlowGraph/InterproceduralControlFlowGraph.html" class="extype" name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph">InterproceduralControlFlowGraph</a>[<a href="#N=org.sireum.jawa.alir.controlFlowGraph.CGNode" class="extmbr" name="org.sireum.jawa.alir.pta.suspark.InterproceduralSuperSpark.N">N</a>]</span>, <span name="timer">timer: <span class="extype" name="scala.Option">Option</span>[<a href="../../../util/MyTimer.html" class="extype" name="org.sireum.jawa.util.MyTimer">MyTimer</a>]</span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">workListPropagation</span><span class="params">(<span name="pag">pag: <a href="PointerAssignmentGraph.html" class="extype" name="org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph">PointerAssignmentGraph</a>[<a href="PtaNode.html" class="extype" name="org.sireum.jawa.alir.pta.suspark.PtaNode">PtaNode</a>]</span>, <span name="icfg">icfg: <a href="../../controlFlowGraph/InterproceduralControlFlowGraph.html" class="extype" name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph">InterproceduralControlFlowGraph</a>[<a href="#N=org.sireum.jawa.alir.controlFlowGraph.ICFGNode" class="extmbr" name="org.sireum.jawa.alir.pta.suspark.InterproceduralSuperSpark.N">N</a>]</span>, <span name="timer">timer: <span class="extype" name="scala.Option">Option</span>[<a href="../../../util/MyTimer.html" class="extype" name="org.sireum.jawa.util.MyTimer">MyTimer</a>]</span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.InterproceduralSuperSpark$@workListPropagation(pag:org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph[org.sireum.jawa.alir.pta.suspark.PtaNode],cg:org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph[org.sireum.jawa.alir.pta.suspark.InterproceduralSuperSpark.N],timer:Option[org.sireum.jawa.util.MyTimer]):Unit" title="Permalink" target="_top">
+      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.InterproceduralSuperSpark$@workListPropagation(pag:org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph[org.sireum.jawa.alir.pta.suspark.PtaNode],icfg:org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph[org.sireum.jawa.alir.pta.suspark.InterproceduralSuperSpark.N],timer:Option[org.sireum.jawa.util.MyTimer]):Unit" title="Permalink" target="_top">
         <img src="../../../../../../lib/permalink.png" />
       </a>
     </span>

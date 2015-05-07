@@ -30,7 +30,9 @@
       <div id="definition">
         <img src="../../../../../../lib/class_big.png" />
         <p id="owner"><a href="../../../../../package.html" class="extype" name="org">org</a>.<a href="../../../../package.html" class="extype" name="org.sireum">sireum</a>.<a href="../../../package.html" class="extype" name="org.sireum.jawa">jawa</a>.<a href="../../package.html" class="extype" name="org.sireum.jawa.alir">alir</a>.<a href="../package.html" class="extype" name="org.sireum.jawa.alir.pta">pta</a>.<a href="package.html" class="extype" name="org.sireum.jawa.alir.pta.suspark">suspark</a></p>
-        <h1>PointsToMap</h1> <span class="permalink">
+        <h1>PointsToMap</h1><h3><span class="morelinks"><div>Related Doc:
+            <a href="package.html" class="extype" name="org.sireum.jawa.alir.pta.suspark">package suspark</a>
+          </div></span></h3><span class="permalink">
       <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PointsToMap" title="Permalink" target="_top">
         <img src="../../../../../../lib/permalink.png" />
       </a>
@@ -43,13 +45,13 @@
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <span class="name">PointsToMap</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+        <span class="name">PointsToMap</span><span class="result"> extends <a href="../PTAResult.html" class="extype" name="org.sireum.jawa.alir.pta.PTAResult">PTAResult</a></span>
       </span>
       </h4>
       
           <div id="comment" class="fullcommenttop"><div class="comment cmt"></div><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
-          <div class="superTypes hiddenContent"><span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+          <div class="superTypes hiddenContent"><a href="../PTAResult.html" class="extype" name="org.sireum.jawa.alir.pta.PTAResult">PTAResult</a>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
         </div></div>
         
 
@@ -67,7 +69,7 @@
                 <span class="filtertype">Inherited<br />
                 </span>
                 <ol id="linearization">
-                  <li class="in" name="org.sireum.jawa.alir.pta.suspark.PointsToMap"><span>PointsToMap</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                  <li class="in" name="org.sireum.jawa.alir.pta.suspark.PointsToMap"><span>PointsToMap</span></li><li class="in" name="org.sireum.jawa.alir.pta.PTAResult"><span>PTAResult</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
                 </ol>
               </div><div id="ancestors">
             <span class="filtertype"></span>
@@ -164,74 +166,57 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li name="org.sireum.jawa.alir.pta.suspark.PointsToMap#addInstance" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="addInstance(n:org.sireum.jawa.alir.pta.suspark.PtaNode,i:org.sireum.jawa.alir.pta.PTAInstance):Boolean"></a>
-      <a id="addInstance(PtaNode,PTAInstance):Boolean"></a>
+    </li><li name="org.sireum.jawa.alir.pta.suspark.PointsToMap#TITLE" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="TITLE:String(&quot;PointsToMap&quot;)"></a>
+      <a id="TITLE:String(&quot;PointsToMap&quot;)"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">TITLE</span><span class="result">: String(&quot;PointsToMap&quot;)</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PointsToMap@TITLE:String(&quot;PointsToMap&quot;)" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.jawa.alir.pta.PTAResult#addInstance" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="addInstance(s:org.sireum.alir.Slot,context:org.sireum.jawa.alir.Context,i:org.sireum.jawa.alir.pta.Instance):scala.collection.mutable.Set[org.sireum.jawa.alir.pta.Instance]"></a>
+      <a id="addInstance(Slot,Context,Instance):Set[Instance]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">addInstance</span><span class="params">(<span name="n">n: <a href="PtaNode.html" class="extype" name="org.sireum.jawa.alir.pta.suspark.PtaNode">PtaNode</a></span>, <span name="i">i: <a href="../PTAInstance.html" class="extype" name="org.sireum.jawa.alir.pta.PTAInstance">PTAInstance</a></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">addInstance</span><span class="params">(<span name="s">s: <span class="extype" name="org.sireum.alir.Slot">Slot</span></span>, <span name="context">context: <a href="../../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>, <span name="i">i: <a href="../Instance.html" class="extype" name="org.sireum.jawa.alir.pta.Instance">Instance</a></span>)</span><span class="result">: <span class="extype" name="scala.collection.mutable.Set">Set</span>[<a href="../Instance.html" class="extype" name="org.sireum.jawa.alir.pta.Instance">Instance</a>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PointsToMap@addInstance(n:org.sireum.jawa.alir.pta.suspark.PtaNode,i:org.sireum.jawa.alir.pta.PTAInstance):Boolean" title="Permalink" target="_top">
+      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PointsToMap@addInstance(s:org.sireum.alir.Slot,context:org.sireum.jawa.alir.Context,i:org.sireum.jawa.alir.pta.Instance):scala.collection.mutable.Set[org.sireum.jawa.alir.pta.Instance]" title="Permalink" target="_top">
         <img src="../../../../../../lib/permalink.png" />
       </a>
     </span>
-      
-    </li><li name="org.sireum.jawa.alir.pta.suspark.PointsToMap#addInstanceInternal" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="addInstanceInternal(key:String,i:org.sireum.jawa.alir.pta.PTAInstance):Boolean"></a>
-      <a id="addInstanceInternal(String,PTAInstance):Boolean"></a>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../PTAResult.html" class="extype" name="org.sireum.jawa.alir.pta.PTAResult">PTAResult</a></dd></dl></div>
+    </li><li name="org.sireum.jawa.alir.pta.PTAResult#addInstances" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="addInstances(s:org.sireum.alir.Slot,context:org.sireum.jawa.alir.Context,is:org.sireum.util.ISet[org.sireum.jawa.alir.pta.Instance]):scala.collection.mutable.Set[org.sireum.jawa.alir.pta.Instance]"></a>
+      <a id="addInstances(Slot,Context,ISet[Instance]):Set[Instance]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">addInstanceInternal</span><span class="params">(<span name="key">key: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="i">i: <a href="../PTAInstance.html" class="extype" name="org.sireum.jawa.alir.pta.PTAInstance">PTAInstance</a></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">addInstances</span><span class="params">(<span name="s">s: <span class="extype" name="org.sireum.alir.Slot">Slot</span></span>, <span name="context">context: <a href="../../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>, <span name="is">is: <span class="extype" name="org.sireum.util.ISet">ISet</span>[<a href="../Instance.html" class="extype" name="org.sireum.jawa.alir.pta.Instance">Instance</a>]</span>)</span><span class="result">: <span class="extype" name="scala.collection.mutable.Set">Set</span>[<a href="../Instance.html" class="extype" name="org.sireum.jawa.alir.pta.Instance">Instance</a>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PointsToMap@addInstanceInternal(key:String,i:org.sireum.jawa.alir.pta.PTAInstance):Boolean" title="Permalink" target="_top">
+      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PointsToMap@addInstances(s:org.sireum.alir.Slot,context:org.sireum.jawa.alir.Context,is:org.sireum.util.ISet[org.sireum.jawa.alir.pta.Instance]):scala.collection.mutable.Set[org.sireum.jawa.alir.pta.Instance]" title="Permalink" target="_top">
         <img src="../../../../../../lib/permalink.png" />
       </a>
     </span>
-      
-    </li><li name="org.sireum.jawa.alir.pta.suspark.PointsToMap#addInstances" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="addInstances(n:org.sireum.jawa.alir.pta.suspark.PtaNode,is:org.sireum.util.MSet[org.sireum.jawa.alir.pta.PTAInstance]):scala.collection.mutable.Set[org.sireum.jawa.alir.pta.PTAInstance]"></a>
-      <a id="addInstances(PtaNode,MSet[PTAInstance]):Set[PTAInstance]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">addInstances</span><span class="params">(<span name="n">n: <a href="PtaNode.html" class="extype" name="org.sireum.jawa.alir.pta.suspark.PtaNode">PtaNode</a></span>, <span name="is">is: <span class="extype" name="org.sireum.util.MSet">MSet</span>[<a href="../PTAInstance.html" class="extype" name="org.sireum.jawa.alir.pta.PTAInstance">PTAInstance</a>]</span>)</span><span class="result">: <span class="extype" name="scala.collection.mutable.Set">Set</span>[<a href="../PTAInstance.html" class="extype" name="org.sireum.jawa.alir.pta.PTAInstance">PTAInstance</a>]</span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PointsToMap@addInstances(n:org.sireum.jawa.alir.pta.suspark.PtaNode,is:org.sireum.util.MSet[org.sireum.jawa.alir.pta.PTAInstance]):scala.collection.mutable.Set[org.sireum.jawa.alir.pta.PTAInstance]" title="Permalink" target="_top">
-        <img src="../../../../../../lib/permalink.png" />
-      </a>
-    </span>
-      
-    </li><li name="org.sireum.jawa.alir.pta.suspark.PointsToMap#addInstancesInternal" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="addInstancesInternal(key:String,is:org.sireum.util.MSet[org.sireum.jawa.alir.pta.PTAInstance]):scala.collection.mutable.Set[org.sireum.jawa.alir.pta.PTAInstance]"></a>
-      <a id="addInstancesInternal(String,MSet[PTAInstance]):Set[PTAInstance]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">addInstancesInternal</span><span class="params">(<span name="key">key: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="is">is: <span class="extype" name="org.sireum.util.MSet">MSet</span>[<a href="../PTAInstance.html" class="extype" name="org.sireum.jawa.alir.pta.PTAInstance">PTAInstance</a>]</span>)</span><span class="result">: <span class="extype" name="scala.collection.mutable.Set">Set</span>[<a href="../PTAInstance.html" class="extype" name="org.sireum.jawa.alir.pta.PTAInstance">PTAInstance</a>]</span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PointsToMap@addInstancesInternal(key:String,is:org.sireum.util.MSet[org.sireum.jawa.alir.pta.PTAInstance]):scala.collection.mutable.Set[org.sireum.jawa.alir.pta.PTAInstance]" title="Permalink" target="_top">
-        <img src="../../../../../../lib/permalink.png" />
-      </a>
-    </span>
-      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../PTAResult.html" class="extype" name="org.sireum.jawa.alir.pta.PTAResult">PTAResult</a></dd></dl></div>
     </li><li name="scala.Any#asInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="asInstanceOf[T0]:T0"></a>
       <a id="asInstanceOf[T0]:T0"></a>
@@ -364,18 +349,86 @@
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="org.sireum.jawa.alir.pta.suspark.PointsToMap#getDiff" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="getDiff(n1:org.sireum.jawa.alir.pta.suspark.PtaNode,n2:org.sireum.jawa.alir.pta.suspark.PtaNode):scala.collection.mutable.Set[org.sireum.jawa.alir.pta.PTAInstance]"></a>
-      <a id="getDiff(PtaNode,PtaNode):Set[PTAInstance]"></a>
+      <a id="getDiff(n1:org.sireum.jawa.alir.pta.suspark.PtaNode,n2:org.sireum.jawa.alir.pta.suspark.PtaNode):org.sireum.util.ISet[org.sireum.jawa.alir.pta.Instance]"></a>
+      <a id="getDiff(PtaNode,PtaNode):ISet[Instance]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">getDiff</span><span class="params">(<span name="n1">n1: <a href="PtaNode.html" class="extype" name="org.sireum.jawa.alir.pta.suspark.PtaNode">PtaNode</a></span>, <span name="n2">n2: <a href="PtaNode.html" class="extype" name="org.sireum.jawa.alir.pta.suspark.PtaNode">PtaNode</a></span>)</span><span class="result">: <span class="extype" name="scala.collection.mutable.Set">Set</span>[<a href="../PTAInstance.html" class="extype" name="org.sireum.jawa.alir.pta.PTAInstance">PTAInstance</a>]</span>
+        <span class="name">getDiff</span><span class="params">(<span name="n1">n1: <a href="PtaNode.html" class="extype" name="org.sireum.jawa.alir.pta.suspark.PtaNode">PtaNode</a></span>, <span name="n2">n2: <a href="PtaNode.html" class="extype" name="org.sireum.jawa.alir.pta.suspark.PtaNode">PtaNode</a></span>)</span><span class="result">: <span class="extype" name="org.sireum.util.ISet">ISet</span>[<a href="../Instance.html" class="extype" name="org.sireum.jawa.alir.pta.Instance">Instance</a>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PointsToMap@getDiff(n1:org.sireum.jawa.alir.pta.suspark.PtaNode,n2:org.sireum.jawa.alir.pta.suspark.PtaNode):scala.collection.mutable.Set[org.sireum.jawa.alir.pta.PTAInstance]" title="Permalink" target="_top">
+      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PointsToMap@getDiff(n1:org.sireum.jawa.alir.pta.suspark.PtaNode,n2:org.sireum.jawa.alir.pta.suspark.PtaNode):org.sireum.util.ISet[org.sireum.jawa.alir.pta.Instance]" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.jawa.alir.pta.PTAResult#getPTSMap" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getPTSMap(context:org.sireum.jawa.alir.Context):org.sireum.util.IMap[org.sireum.alir.Slot,org.sireum.util.ISet[org.sireum.jawa.alir.pta.Instance]]"></a>
+      <a id="getPTSMap(Context):IMap[Slot,ISet[Instance]]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getPTSMap</span><span class="params">(<span name="context">context: <a href="../../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>)</span><span class="result">: <span class="extype" name="org.sireum.util.IMap">IMap</span>[<span class="extype" name="org.sireum.alir.Slot">Slot</span>, <span class="extype" name="org.sireum.util.ISet">ISet</span>[<a href="../Instance.html" class="extype" name="org.sireum.jawa.alir.pta.Instance">Instance</a>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PointsToMap@getPTSMap(context:org.sireum.jawa.alir.Context):org.sireum.util.IMap[org.sireum.alir.Slot,org.sireum.util.ISet[org.sireum.jawa.alir.pta.Instance]]" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../PTAResult.html" class="extype" name="org.sireum.jawa.alir.pta.PTAResult">PTAResult</a></dd></dl></div>
+    </li><li name="org.sireum.jawa.alir.pta.PTAResult#getRelatedHeapInstances" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getRelatedHeapInstances(insts:org.sireum.util.ISet[org.sireum.jawa.alir.pta.Instance],context:org.sireum.jawa.alir.Context):org.sireum.util.ISet[org.sireum.jawa.alir.pta.Instance]"></a>
+      <a id="getRelatedHeapInstances(ISet[Instance],Context):ISet[Instance]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getRelatedHeapInstances</span><span class="params">(<span name="insts">insts: <span class="extype" name="org.sireum.util.ISet">ISet</span>[<a href="../Instance.html" class="extype" name="org.sireum.jawa.alir.pta.Instance">Instance</a>]</span>, <span name="context">context: <a href="../../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>)</span><span class="result">: <span class="extype" name="org.sireum.util.ISet">ISet</span>[<a href="../Instance.html" class="extype" name="org.sireum.jawa.alir.pta.Instance">Instance</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PointsToMap@getRelatedHeapInstances(insts:org.sireum.util.ISet[org.sireum.jawa.alir.pta.Instance],context:org.sireum.jawa.alir.Context):org.sireum.util.ISet[org.sireum.jawa.alir.pta.Instance]" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../PTAResult.html" class="extype" name="org.sireum.jawa.alir.pta.PTAResult">PTAResult</a></dd></dl></div>
+    </li><li name="org.sireum.jawa.alir.pta.PTAResult#getRelatedInstances" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getRelatedInstances(s:org.sireum.alir.Slot,context:org.sireum.jawa.alir.Context):org.sireum.util.ISet[org.sireum.jawa.alir.pta.Instance]"></a>
+      <a id="getRelatedInstances(Slot,Context):ISet[Instance]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getRelatedInstances</span><span class="params">(<span name="s">s: <span class="extype" name="org.sireum.alir.Slot">Slot</span></span>, <span name="context">context: <a href="../../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>)</span><span class="result">: <span class="extype" name="org.sireum.util.ISet">ISet</span>[<a href="../Instance.html" class="extype" name="org.sireum.jawa.alir.pta.Instance">Instance</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PointsToMap@getRelatedInstances(s:org.sireum.alir.Slot,context:org.sireum.jawa.alir.Context):org.sireum.util.ISet[org.sireum.jawa.alir.pta.Instance]" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../PTAResult.html" class="extype" name="org.sireum.jawa.alir.pta.PTAResult">PTAResult</a></dd></dl></div>
+    </li><li name="org.sireum.jawa.alir.pta.suspark.PointsToMap#getThisDiff" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="getThisDiff(n1:org.sireum.jawa.alir.pta.suspark.PtaNode,n2:org.sireum.jawa.alir.pta.suspark.PtaNode):org.sireum.util.ISet[org.sireum.jawa.alir.pta.Instance]"></a>
+      <a id="getThisDiff(PtaNode,PtaNode):ISet[Instance]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getThisDiff</span><span class="params">(<span name="n1">n1: <a href="PtaNode.html" class="extype" name="org.sireum.jawa.alir.pta.suspark.PtaNode">PtaNode</a></span>, <span name="n2">n2: <a href="PtaNode.html" class="extype" name="org.sireum.jawa.alir.pta.suspark.PtaNode">PtaNode</a></span>)</span><span class="result">: <span class="extype" name="org.sireum.util.ISet">ISet</span>[<a href="../Instance.html" class="extype" name="org.sireum.jawa.alir.pta.Instance">Instance</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PointsToMap@getThisDiff(n1:org.sireum.jawa.alir.pta.suspark.PtaNode,n2:org.sireum.jawa.alir.pta.suspark.PtaNode):org.sireum.util.ISet[org.sireum.jawa.alir.pta.Instance]" title="Permalink" target="_top">
         <img src="../../../../../../lib/permalink.png" />
       </a>
     </span>
@@ -414,23 +467,6 @@
       </a>
     </span>
       
-    </li><li name="org.sireum.jawa.alir.pta.suspark.PointsToMap#isDiffForTransfer" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="isDiffForTransfer(n1:org.sireum.jawa.alir.pta.suspark.PtaNode,n2:org.sireum.jawa.alir.pta.suspark.PtaNode):Boolean"></a>
-      <a id="isDiffForTransfer(PtaNode,PtaNode):Boolean"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">isDiffForTransfer</span><span class="params">(<span name="n1">n1: <a href="PtaNode.html" class="extype" name="org.sireum.jawa.alir.pta.suspark.PtaNode">PtaNode</a></span>, <span name="n2">n2: <a href="PtaNode.html" class="extype" name="org.sireum.jawa.alir.pta.suspark.PtaNode">PtaNode</a></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PointsToMap@isDiffForTransfer(n1:org.sireum.jawa.alir.pta.suspark.PtaNode,n2:org.sireum.jawa.alir.pta.suspark.PtaNode):Boolean" title="Permalink" target="_top">
-        <img src="../../../../../../lib/permalink.png" />
-      </a>
-    </span>
-      
     </li><li name="scala.Any#isInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="isInstanceOf[T0]:Boolean"></a>
       <a id="isInstanceOf[T0]:Boolean"></a>
@@ -448,6 +484,23 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="org.sireum.jawa.alir.pta.suspark.PointsToMap#isThisDiff" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="isThisDiff(n1:org.sireum.jawa.alir.pta.suspark.PtaNode,n2:org.sireum.jawa.alir.pta.suspark.PtaNode):Boolean"></a>
+      <a id="isThisDiff(PtaNode,PtaNode):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isThisDiff</span><span class="params">(<span name="n1">n1: <a href="PtaNode.html" class="extype" name="org.sireum.jawa.alir.pta.suspark.PtaNode">PtaNode</a></span>, <span name="n2">n2: <a href="PtaNode.html" class="extype" name="org.sireum.jawa.alir.pta.suspark.PtaNode">PtaNode</a></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PointsToMap@isThisDiff(n1:org.sireum.jawa.alir.pta.suspark.PtaNode,n2:org.sireum.jawa.alir.pta.suspark.PtaNode):Boolean" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      
     </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="ne(x$1:AnyRef):Boolean"></a>
       <a id="ne(AnyRef):Boolean"></a>
@@ -499,130 +552,58 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="org.sireum.jawa.alir.pta.suspark.PointsToMap#pointsToMap" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="pointsToMap:org.sireum.util.MMap[String,org.sireum.util.MSet[org.sireum.jawa.alir.pta.PTAInstance]]"></a>
-      <a id="pointsToMap:MMap[String,MSet[PTAInstance]]"></a>
+    </li><li name="org.sireum.jawa.alir.pta.PTAResult#pointsToMap" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="pointsToMap:org.sireum.util.IMap[org.sireum.jawa.alir.Context,org.sireum.util.IMap[org.sireum.alir.Slot,org.sireum.util.ISet[org.sireum.jawa.alir.pta.Instance]]]"></a>
+      <a id="pointsToMap:IMap[Context,IMap[Slot,ISet[Instance]]]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">pointsToMap</span><span class="result">: <span class="extype" name="org.sireum.util.MMap">MMap</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="org.sireum.util.MSet">MSet</span>[<a href="../PTAInstance.html" class="extype" name="org.sireum.jawa.alir.pta.PTAInstance">PTAInstance</a>]]</span>
+        <span class="name">pointsToMap</span><span class="result">: <span class="extype" name="org.sireum.util.IMap">IMap</span>[<a href="../../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a>, <span class="extype" name="org.sireum.util.IMap">IMap</span>[<span class="extype" name="org.sireum.alir.Slot">Slot</span>, <span class="extype" name="org.sireum.util.ISet">ISet</span>[<a href="../Instance.html" class="extype" name="org.sireum.jawa.alir.pta.Instance">Instance</a>]]]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PointsToMap@pointsToMap:org.sireum.util.MMap[String,org.sireum.util.MSet[org.sireum.jawa.alir.pta.PTAInstance]]" title="Permalink" target="_top">
+      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PointsToMap@pointsToMap:org.sireum.util.IMap[org.sireum.jawa.alir.Context,org.sireum.util.IMap[org.sireum.alir.Slot,org.sireum.util.ISet[org.sireum.jawa.alir.pta.Instance]]]" title="Permalink" target="_top">
         <img src="../../../../../../lib/permalink.png" />
       </a>
     </span>
-      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../PTAResult.html" class="extype" name="org.sireum.jawa.alir.pta.PTAResult">PTAResult</a></dd></dl></div>
     </li><li name="org.sireum.jawa.alir.pta.suspark.PointsToMap#pointsToSet" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="pointsToSet(key:String):org.sireum.util.MSet[org.sireum.jawa.alir.pta.PTAInstance]"></a>
-      <a id="pointsToSet(String):MSet[PTAInstance]"></a>
+      <a id="pointsToSet(n:org.sireum.jawa.alir.pta.suspark.PtaNode):org.sireum.util.ISet[org.sireum.jawa.alir.pta.Instance]"></a>
+      <a id="pointsToSet(PtaNode):ISet[Instance]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">pointsToSet</span><span class="params">(<span name="key">key: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="org.sireum.util.MSet">MSet</span>[<a href="../PTAInstance.html" class="extype" name="org.sireum.jawa.alir.pta.PTAInstance">PTAInstance</a>]</span>
+        <span class="name">pointsToSet</span><span class="params">(<span name="n">n: <a href="PtaNode.html" class="extype" name="org.sireum.jawa.alir.pta.suspark.PtaNode">PtaNode</a></span>)</span><span class="result">: <span class="extype" name="org.sireum.util.ISet">ISet</span>[<a href="../Instance.html" class="extype" name="org.sireum.jawa.alir.pta.Instance">Instance</a>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PointsToMap@pointsToSet(key:String):org.sireum.util.MSet[org.sireum.jawa.alir.pta.PTAInstance]" title="Permalink" target="_top">
-        <img src="../../../../../../lib/permalink.png" />
-      </a>
-    </span>
-      
-    </li><li name="org.sireum.jawa.alir.pta.suspark.PointsToMap#pointsToSet" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="pointsToSet(n:org.sireum.jawa.alir.pta.suspark.PtaNode):org.sireum.util.MSet[org.sireum.jawa.alir.pta.PTAInstance]"></a>
-      <a id="pointsToSet(PtaNode):MSet[PTAInstance]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">pointsToSet</span><span class="params">(<span name="n">n: <a href="PtaNode.html" class="extype" name="org.sireum.jawa.alir.pta.suspark.PtaNode">PtaNode</a></span>)</span><span class="result">: <span class="extype" name="org.sireum.util.MSet">MSet</span>[<a href="../PTAInstance.html" class="extype" name="org.sireum.jawa.alir.pta.PTAInstance">PTAInstance</a>]</span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PointsToMap@pointsToSet(n:org.sireum.jawa.alir.pta.suspark.PtaNode):org.sireum.util.MSet[org.sireum.jawa.alir.pta.PTAInstance]" title="Permalink" target="_top">
+      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PointsToMap@pointsToSet(n:org.sireum.jawa.alir.pta.suspark.PtaNode):org.sireum.util.ISet[org.sireum.jawa.alir.pta.Instance]" title="Permalink" target="_top">
         <img src="../../../../../../lib/permalink.png" />
       </a>
     </span>
       <p class="shortcomment cmt">n or n.f or n[] or @@n
 </p>
-    </li><li name="org.sireum.jawa.alir.pta.suspark.PointsToMap#pointsToSetOfArrayBaseNode" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="pointsToSetOfArrayBaseNode(n:org.sireum.jawa.alir.pta.suspark.PtaArrayNode):org.sireum.util.MSet[org.sireum.jawa.alir.pta.PTAInstance]"></a>
-      <a id="pointsToSetOfArrayBaseNode(PtaArrayNode):MSet[PTAInstance]"></a>
+    </li><li name="org.sireum.jawa.alir.pta.PTAResult#pointsToSet" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="pointsToSet(s:org.sireum.alir.Slot,context:org.sireum.jawa.alir.Context):org.sireum.util.ISet[org.sireum.jawa.alir.pta.Instance]"></a>
+      <a id="pointsToSet(Slot,Context):ISet[Instance]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">pointsToSetOfArrayBaseNode</span><span class="params">(<span name="n">n: <a href="PtaArrayNode.html" class="extype" name="org.sireum.jawa.alir.pta.suspark.PtaArrayNode">PtaArrayNode</a></span>)</span><span class="result">: <span class="extype" name="org.sireum.util.MSet">MSet</span>[<a href="../PTAInstance.html" class="extype" name="org.sireum.jawa.alir.pta.PTAInstance">PTAInstance</a>]</span>
+        <span class="name">pointsToSet</span><span class="params">(<span name="s">s: <span class="extype" name="org.sireum.alir.Slot">Slot</span></span>, <span name="context">context: <a href="../../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>)</span><span class="result">: <span class="extype" name="org.sireum.util.ISet">ISet</span>[<a href="../Instance.html" class="extype" name="org.sireum.jawa.alir.pta.Instance">Instance</a>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PointsToMap@pointsToSetOfArrayBaseNode(n:org.sireum.jawa.alir.pta.suspark.PtaArrayNode):org.sireum.util.MSet[org.sireum.jawa.alir.pta.PTAInstance]" title="Permalink" target="_top">
+      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PointsToMap@pointsToSet(s:org.sireum.alir.Slot,context:org.sireum.jawa.alir.Context):org.sireum.util.ISet[org.sireum.jawa.alir.pta.Instance]" title="Permalink" target="_top">
         <img src="../../../../../../lib/permalink.png" />
       </a>
     </span>
-      <p class="shortcomment cmt">get n[]'s base type pt
-</p>
-    </li><li name="org.sireum.jawa.alir.pta.suspark.PointsToMap#propagateArrayStorePointsToSet" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="propagateArrayStorePointsToSet(n1:org.sireum.jawa.alir.pta.suspark.PtaNode,n2:org.sireum.jawa.alir.pta.suspark.PtaArrayNode):Unit"></a>
-      <a id="propagateArrayStorePointsToSet(PtaNode,PtaArrayNode):Unit"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">propagateArrayStorePointsToSet</span><span class="params">(<span name="n1">n1: <a href="PtaNode.html" class="extype" name="org.sireum.jawa.alir.pta.suspark.PtaNode">PtaNode</a></span>, <span name="n2">n2: <a href="PtaArrayNode.html" class="extype" name="org.sireum.jawa.alir.pta.suspark.PtaArrayNode">PtaArrayNode</a></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PointsToMap@propagateArrayStorePointsToSet(n1:org.sireum.jawa.alir.pta.suspark.PtaNode,n2:org.sireum.jawa.alir.pta.suspark.PtaArrayNode):Unit" title="Permalink" target="_top">
-        <img src="../../../../../../lib/permalink.png" />
-      </a>
-    </span>
-      <p class="shortcomment cmt">n1 -&gt; n2[]
-</p>
-    </li><li name="org.sireum.jawa.alir.pta.suspark.PointsToMap#propagateFieldStorePointsToSet" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="propagateFieldStorePointsToSet(n1:org.sireum.jawa.alir.pta.suspark.PtaNode,n2:org.sireum.jawa.alir.pta.suspark.PtaFieldNode):Unit"></a>
-      <a id="propagateFieldStorePointsToSet(PtaNode,PtaFieldNode):Unit"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">propagateFieldStorePointsToSet</span><span class="params">(<span name="n1">n1: <a href="PtaNode.html" class="extype" name="org.sireum.jawa.alir.pta.suspark.PtaNode">PtaNode</a></span>, <span name="n2">n2: <a href="PtaFieldNode.html" class="extype" name="org.sireum.jawa.alir.pta.suspark.PtaFieldNode">PtaFieldNode</a></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PointsToMap@propagateFieldStorePointsToSet(n1:org.sireum.jawa.alir.pta.suspark.PtaNode,n2:org.sireum.jawa.alir.pta.suspark.PtaFieldNode):Unit" title="Permalink" target="_top">
-        <img src="../../../../../../lib/permalink.png" />
-      </a>
-    </span>
-      <p class="shortcomment cmt">n1 -&gt; n2.f
-</p>
-    </li><li name="org.sireum.jawa.alir.pta.suspark.PointsToMap#propagateGlobalStorePointsToSet" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="propagateGlobalStorePointsToSet(n1:org.sireum.jawa.alir.pta.suspark.PtaNode,n2:org.sireum.jawa.alir.pta.suspark.PtaGlobalVarNode):scala.collection.mutable.Set[org.sireum.jawa.alir.pta.PTAInstance]"></a>
-      <a id="propagateGlobalStorePointsToSet(PtaNode,PtaGlobalVarNode):Set[PTAInstance]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">propagateGlobalStorePointsToSet</span><span class="params">(<span name="n1">n1: <a href="PtaNode.html" class="extype" name="org.sireum.jawa.alir.pta.suspark.PtaNode">PtaNode</a></span>, <span name="n2">n2: <a href="PtaGlobalVarNode.html" class="extype" name="org.sireum.jawa.alir.pta.suspark.PtaGlobalVarNode">PtaGlobalVarNode</a></span>)</span><span class="result">: <span class="extype" name="scala.collection.mutable.Set">Set</span>[<a href="../PTAInstance.html" class="extype" name="org.sireum.jawa.alir.pta.PTAInstance">PTAInstance</a>]</span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PointsToMap@propagateGlobalStorePointsToSet(n1:org.sireum.jawa.alir.pta.suspark.PtaNode,n2:org.sireum.jawa.alir.pta.suspark.PtaGlobalVarNode):scala.collection.mutable.Set[org.sireum.jawa.alir.pta.PTAInstance]" title="Permalink" target="_top">
-        <img src="../../../../../../lib/permalink.png" />
-      </a>
-    </span>
-      <p class="shortcomment cmt">n1 -&gt; @@n2
-</p>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../PTAResult.html" class="extype" name="org.sireum.jawa.alir.pta.PTAResult">PTAResult</a></dd></dl></div>
     </li><li name="org.sireum.jawa.alir.pta.suspark.PointsToMap#propagatePointsToSet" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="propagatePointsToSet(n1:org.sireum.jawa.alir.pta.suspark.PtaNode,n2:org.sireum.jawa.alir.pta.suspark.PtaNode):Unit"></a>
       <a id="propagatePointsToSet(PtaNode,PtaNode):Unit"></a>
@@ -639,144 +620,76 @@
         <img src="../../../../../../lib/permalink.png" />
       </a>
     </span>
-      <p class="shortcomment cmt">n1 -&gt; n2 or n1.f -&gt; n2 or n1[] -&gt; n2
+      <p class="shortcomment cmt">n1 -&gt; n2 or n1.f -&gt; n2 or n1[] -&gt; n2, n1 -&gt; n2.f, n1 -&gt; n2[]
 </p>
-    </li><li name="org.sireum.jawa.alir.pta.suspark.PointsToMap#removeInstance" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="removeInstance(n:org.sireum.jawa.alir.pta.suspark.PtaNode,i:org.sireum.jawa.alir.pta.PTAInstance):Boolean"></a>
-      <a id="removeInstance(PtaNode,PTAInstance):Boolean"></a>
+    </li><li name="org.sireum.jawa.alir.pta.PTAResult#removeInstance" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="removeInstance(s:org.sireum.alir.Slot,context:org.sireum.jawa.alir.Context,i:org.sireum.jawa.alir.pta.Instance):scala.collection.mutable.Set[org.sireum.jawa.alir.pta.Instance]"></a>
+      <a id="removeInstance(Slot,Context,Instance):Set[Instance]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">removeInstance</span><span class="params">(<span name="n">n: <a href="PtaNode.html" class="extype" name="org.sireum.jawa.alir.pta.suspark.PtaNode">PtaNode</a></span>, <span name="i">i: <a href="../PTAInstance.html" class="extype" name="org.sireum.jawa.alir.pta.PTAInstance">PTAInstance</a></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">removeInstance</span><span class="params">(<span name="s">s: <span class="extype" name="org.sireum.alir.Slot">Slot</span></span>, <span name="context">context: <a href="../../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>, <span name="i">i: <a href="../Instance.html" class="extype" name="org.sireum.jawa.alir.pta.Instance">Instance</a></span>)</span><span class="result">: <span class="extype" name="scala.collection.mutable.Set">Set</span>[<a href="../Instance.html" class="extype" name="org.sireum.jawa.alir.pta.Instance">Instance</a>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PointsToMap@removeInstance(n:org.sireum.jawa.alir.pta.suspark.PtaNode,i:org.sireum.jawa.alir.pta.PTAInstance):Boolean" title="Permalink" target="_top">
+      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PointsToMap@removeInstance(s:org.sireum.alir.Slot,context:org.sireum.jawa.alir.Context,i:org.sireum.jawa.alir.pta.Instance):scala.collection.mutable.Set[org.sireum.jawa.alir.pta.Instance]" title="Permalink" target="_top">
         <img src="../../../../../../lib/permalink.png" />
       </a>
     </span>
-      
-    </li><li name="org.sireum.jawa.alir.pta.suspark.PointsToMap#removeInstanceInternal" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="removeInstanceInternal(key:String,i:org.sireum.jawa.alir.pta.PTAInstance):Boolean"></a>
-      <a id="removeInstanceInternal(String,PTAInstance):Boolean"></a>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../PTAResult.html" class="extype" name="org.sireum.jawa.alir.pta.PTAResult">PTAResult</a></dd></dl></div>
+    </li><li name="org.sireum.jawa.alir.pta.PTAResult#removeInstances" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="removeInstances(s:org.sireum.alir.Slot,context:org.sireum.jawa.alir.Context,is:org.sireum.util.ISet[org.sireum.jawa.alir.pta.Instance]):scala.collection.mutable.Set[org.sireum.jawa.alir.pta.Instance]"></a>
+      <a id="removeInstances(Slot,Context,ISet[Instance]):Set[Instance]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">removeInstanceInternal</span><span class="params">(<span name="key">key: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="i">i: <a href="../PTAInstance.html" class="extype" name="org.sireum.jawa.alir.pta.PTAInstance">PTAInstance</a></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">removeInstances</span><span class="params">(<span name="s">s: <span class="extype" name="org.sireum.alir.Slot">Slot</span></span>, <span name="context">context: <a href="../../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>, <span name="is">is: <span class="extype" name="org.sireum.util.ISet">ISet</span>[<a href="../Instance.html" class="extype" name="org.sireum.jawa.alir.pta.Instance">Instance</a>]</span>)</span><span class="result">: <span class="extype" name="scala.collection.mutable.Set">Set</span>[<a href="../Instance.html" class="extype" name="org.sireum.jawa.alir.pta.Instance">Instance</a>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PointsToMap@removeInstanceInternal(key:String,i:org.sireum.jawa.alir.pta.PTAInstance):Boolean" title="Permalink" target="_top">
+      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PointsToMap@removeInstances(s:org.sireum.alir.Slot,context:org.sireum.jawa.alir.Context,is:org.sireum.util.ISet[org.sireum.jawa.alir.pta.Instance]):scala.collection.mutable.Set[org.sireum.jawa.alir.pta.Instance]" title="Permalink" target="_top">
         <img src="../../../../../../lib/permalink.png" />
       </a>
     </span>
-      
-    </li><li name="org.sireum.jawa.alir.pta.suspark.PointsToMap#removeInstances" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="removeInstances(n:org.sireum.jawa.alir.pta.suspark.PtaNode,is:org.sireum.util.MSet[org.sireum.jawa.alir.pta.PTAInstance]):scala.collection.mutable.Set[org.sireum.jawa.alir.pta.PTAInstance]"></a>
-      <a id="removeInstances(PtaNode,MSet[PTAInstance]):Set[PTAInstance]"></a>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../PTAResult.html" class="extype" name="org.sireum.jawa.alir.pta.PTAResult">PTAResult</a></dd></dl></div>
+    </li><li name="org.sireum.jawa.alir.pta.PTAResult#setInstance" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="setInstance(s:org.sireum.alir.Slot,context:org.sireum.jawa.alir.Context,i:org.sireum.jawa.alir.pta.Instance):Unit"></a>
+      <a id="setInstance(Slot,Context,Instance):Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">removeInstances</span><span class="params">(<span name="n">n: <a href="PtaNode.html" class="extype" name="org.sireum.jawa.alir.pta.suspark.PtaNode">PtaNode</a></span>, <span name="is">is: <span class="extype" name="org.sireum.util.MSet">MSet</span>[<a href="../PTAInstance.html" class="extype" name="org.sireum.jawa.alir.pta.PTAInstance">PTAInstance</a>]</span>)</span><span class="result">: <span class="extype" name="scala.collection.mutable.Set">Set</span>[<a href="../PTAInstance.html" class="extype" name="org.sireum.jawa.alir.pta.PTAInstance">PTAInstance</a>]</span>
+        <span class="name">setInstance</span><span class="params">(<span name="s">s: <span class="extype" name="org.sireum.alir.Slot">Slot</span></span>, <span name="context">context: <a href="../../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>, <span name="i">i: <a href="../Instance.html" class="extype" name="org.sireum.jawa.alir.pta.Instance">Instance</a></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PointsToMap@removeInstances(n:org.sireum.jawa.alir.pta.suspark.PtaNode,is:org.sireum.util.MSet[org.sireum.jawa.alir.pta.PTAInstance]):scala.collection.mutable.Set[org.sireum.jawa.alir.pta.PTAInstance]" title="Permalink" target="_top">
+      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PointsToMap@setInstance(s:org.sireum.alir.Slot,context:org.sireum.jawa.alir.Context,i:org.sireum.jawa.alir.pta.Instance):Unit" title="Permalink" target="_top">
         <img src="../../../../../../lib/permalink.png" />
       </a>
     </span>
-      
-    </li><li name="org.sireum.jawa.alir.pta.suspark.PointsToMap#removeInstancesInternal" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="removeInstancesInternal(key:String,is:org.sireum.util.MSet[org.sireum.jawa.alir.pta.PTAInstance]):scala.collection.mutable.Set[org.sireum.jawa.alir.pta.PTAInstance]"></a>
-      <a id="removeInstancesInternal(String,MSet[PTAInstance]):Set[PTAInstance]"></a>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../PTAResult.html" class="extype" name="org.sireum.jawa.alir.pta.PTAResult">PTAResult</a></dd></dl></div>
+    </li><li name="org.sireum.jawa.alir.pta.PTAResult#setInstances" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="setInstances(s:org.sireum.alir.Slot,context:org.sireum.jawa.alir.Context,is:org.sireum.util.ISet[org.sireum.jawa.alir.pta.Instance]):Unit"></a>
+      <a id="setInstances(Slot,Context,ISet[Instance]):Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">removeInstancesInternal</span><span class="params">(<span name="key">key: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="is">is: <span class="extype" name="org.sireum.util.MSet">MSet</span>[<a href="../PTAInstance.html" class="extype" name="org.sireum.jawa.alir.pta.PTAInstance">PTAInstance</a>]</span>)</span><span class="result">: <span class="extype" name="scala.collection.mutable.Set">Set</span>[<a href="../PTAInstance.html" class="extype" name="org.sireum.jawa.alir.pta.PTAInstance">PTAInstance</a>]</span>
+        <span class="name">setInstances</span><span class="params">(<span name="s">s: <span class="extype" name="org.sireum.alir.Slot">Slot</span></span>, <span name="context">context: <a href="../../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>, <span name="is">is: <span class="extype" name="org.sireum.util.ISet">ISet</span>[<a href="../Instance.html" class="extype" name="org.sireum.jawa.alir.pta.Instance">Instance</a>]</span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PointsToMap@removeInstancesInternal(key:String,is:org.sireum.util.MSet[org.sireum.jawa.alir.pta.PTAInstance]):scala.collection.mutable.Set[org.sireum.jawa.alir.pta.PTAInstance]" title="Permalink" target="_top">
+      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PointsToMap@setInstances(s:org.sireum.alir.Slot,context:org.sireum.jawa.alir.Context,is:org.sireum.util.ISet[org.sireum.jawa.alir.pta.Instance]):Unit" title="Permalink" target="_top">
         <img src="../../../../../../lib/permalink.png" />
       </a>
     </span>
-      
-    </li><li name="org.sireum.jawa.alir.pta.suspark.PointsToMap#setInstance" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="setInstance(n:org.sireum.jawa.alir.pta.suspark.PtaNode,i:org.sireum.jawa.alir.pta.PTAInstance):Unit"></a>
-      <a id="setInstance(PtaNode,PTAInstance):Unit"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">setInstance</span><span class="params">(<span name="n">n: <a href="PtaNode.html" class="extype" name="org.sireum.jawa.alir.pta.suspark.PtaNode">PtaNode</a></span>, <span name="i">i: <a href="../PTAInstance.html" class="extype" name="org.sireum.jawa.alir.pta.PTAInstance">PTAInstance</a></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PointsToMap@setInstance(n:org.sireum.jawa.alir.pta.suspark.PtaNode,i:org.sireum.jawa.alir.pta.PTAInstance):Unit" title="Permalink" target="_top">
-        <img src="../../../../../../lib/permalink.png" />
-      </a>
-    </span>
-      
-    </li><li name="org.sireum.jawa.alir.pta.suspark.PointsToMap#setInstanceInternal" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="setInstanceInternal(key:String,i:org.sireum.jawa.alir.pta.PTAInstance):Unit"></a>
-      <a id="setInstanceInternal(String,PTAInstance):Unit"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">setInstanceInternal</span><span class="params">(<span name="key">key: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="i">i: <a href="../PTAInstance.html" class="extype" name="org.sireum.jawa.alir.pta.PTAInstance">PTAInstance</a></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PointsToMap@setInstanceInternal(key:String,i:org.sireum.jawa.alir.pta.PTAInstance):Unit" title="Permalink" target="_top">
-        <img src="../../../../../../lib/permalink.png" />
-      </a>
-    </span>
-      
-    </li><li name="org.sireum.jawa.alir.pta.suspark.PointsToMap#setInstances" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="setInstances(n:org.sireum.jawa.alir.pta.suspark.PtaNode,is:org.sireum.util.MSet[org.sireum.jawa.alir.pta.PTAInstance]):Unit"></a>
-      <a id="setInstances(PtaNode,MSet[PTAInstance]):Unit"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">setInstances</span><span class="params">(<span name="n">n: <a href="PtaNode.html" class="extype" name="org.sireum.jawa.alir.pta.suspark.PtaNode">PtaNode</a></span>, <span name="is">is: <span class="extype" name="org.sireum.util.MSet">MSet</span>[<a href="../PTAInstance.html" class="extype" name="org.sireum.jawa.alir.pta.PTAInstance">PTAInstance</a>]</span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PointsToMap@setInstances(n:org.sireum.jawa.alir.pta.suspark.PtaNode,is:org.sireum.util.MSet[org.sireum.jawa.alir.pta.PTAInstance]):Unit" title="Permalink" target="_top">
-        <img src="../../../../../../lib/permalink.png" />
-      </a>
-    </span>
-      
-    </li><li name="org.sireum.jawa.alir.pta.suspark.PointsToMap#setInstancesInternal" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="setInstancesInternal(key:String,is:org.sireum.util.MSet[org.sireum.jawa.alir.pta.PTAInstance]):Unit"></a>
-      <a id="setInstancesInternal(String,MSet[PTAInstance]):Unit"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">setInstancesInternal</span><span class="params">(<span name="key">key: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="is">is: <span class="extype" name="org.sireum.util.MSet">MSet</span>[<a href="../PTAInstance.html" class="extype" name="org.sireum.jawa.alir.pta.PTAInstance">PTAInstance</a>]</span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PointsToMap@setInstancesInternal(key:String,is:org.sireum.util.MSet[org.sireum.jawa.alir.pta.PTAInstance]):Unit" title="Permalink" target="_top">
-        <img src="../../../../../../lib/permalink.png" />
-      </a>
-    </span>
-      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../PTAResult.html" class="extype" name="org.sireum.jawa.alir.pta.PTAResult">PTAResult</a></dd></dl></div>
     </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
       <a id="synchronized[T0](⇒T0):T0"></a>
@@ -812,18 +725,36 @@
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="org.sireum.jawa.alir.pta.suspark.PointsToMap#transferPointsToSet" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="transferPointsToSet(n1:org.sireum.jawa.alir.pta.suspark.PtaNode,n2:org.sireum.jawa.alir.pta.suspark.PtaNode):scala.collection.mutable.Set[org.sireum.jawa.alir.pta.PTAInstance]"></a>
-      <a id="transferPointsToSet(PtaNode,PtaNode):Set[PTAInstance]"></a>
+      <a id="transferPointsToSet(n:org.sireum.jawa.alir.pta.suspark.PtaNode,d:org.sireum.util.ISet[org.sireum.jawa.alir.pta.Instance]):Unit"></a>
+      <a id="transferPointsToSet(PtaNode,ISet[Instance]):Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">transferPointsToSet</span><span class="params">(<span name="n1">n1: <a href="PtaNode.html" class="extype" name="org.sireum.jawa.alir.pta.suspark.PtaNode">PtaNode</a></span>, <span name="n2">n2: <a href="PtaNode.html" class="extype" name="org.sireum.jawa.alir.pta.suspark.PtaNode">PtaNode</a></span>)</span><span class="result">: <span class="extype" name="scala.collection.mutable.Set">Set</span>[<a href="../PTAInstance.html" class="extype" name="org.sireum.jawa.alir.pta.PTAInstance">PTAInstance</a>]</span>
+        <span class="name">transferPointsToSet</span><span class="params">(<span name="n">n: <a href="PtaNode.html" class="extype" name="org.sireum.jawa.alir.pta.suspark.PtaNode">PtaNode</a></span>, <span name="d">d: <span class="extype" name="org.sireum.util.ISet">ISet</span>[<a href="../Instance.html" class="extype" name="org.sireum.jawa.alir.pta.Instance">Instance</a>]</span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PointsToMap@transferPointsToSet(n1:org.sireum.jawa.alir.pta.suspark.PtaNode,n2:org.sireum.jawa.alir.pta.suspark.PtaNode):scala.collection.mutable.Set[org.sireum.jawa.alir.pta.PTAInstance]" title="Permalink" target="_top">
+      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PointsToMap@transferPointsToSet(n:org.sireum.jawa.alir.pta.suspark.PtaNode,d:org.sireum.util.ISet[org.sireum.jawa.alir.pta.Instance]):Unit" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">e.g.</p><div class="fullcomment"><div class="comment cmt"><p>e.g. L0: p = q; L1:  r = p; transfer means p@L0 -&gt; p@L1
+</p></div></div>
+    </li><li name="org.sireum.jawa.alir.pta.suspark.PointsToMap#transferPointsToSet" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="transferPointsToSet(n1:org.sireum.jawa.alir.pta.suspark.PtaNode,n2:org.sireum.jawa.alir.pta.suspark.PtaNode):Unit"></a>
+      <a id="transferPointsToSet(PtaNode,PtaNode):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">transferPointsToSet</span><span class="params">(<span name="n1">n1: <a href="PtaNode.html" class="extype" name="org.sireum.jawa.alir.pta.suspark.PtaNode">PtaNode</a></span>, <span name="n2">n2: <a href="PtaNode.html" class="extype" name="org.sireum.jawa.alir.pta.suspark.PtaNode">PtaNode</a></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PointsToMap@transferPointsToSet(n1:org.sireum.jawa.alir.pta.suspark.PtaNode,n2:org.sireum.jawa.alir.pta.suspark.PtaNode):Unit" title="Permalink" target="_top">
         <img src="../../../../../../lib/permalink.png" />
       </a>
     </span>
@@ -907,7 +838,9 @@
         </div>
 
         <div id="inheritedMembers">
-        <div class="parent" name="scala.AnyRef">
+        <div class="parent" name="org.sireum.jawa.alir.pta.PTAResult">
+              <h3>Inherited from <a href="../PTAResult.html" class="extype" name="org.sireum.jawa.alir.pta.PTAResult">PTAResult</a></h3>
+            </div><div class="parent" name="scala.AnyRef">
               <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
             </div><div class="parent" name="scala.Any">
               <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>

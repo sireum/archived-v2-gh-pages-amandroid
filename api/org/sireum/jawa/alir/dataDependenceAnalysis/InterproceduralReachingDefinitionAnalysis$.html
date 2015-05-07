@@ -28,9 +28,13 @@
         </head>
         <body class="value">
       <div id="definition">
-        <a href="InterproceduralReachingDefinitionAnalysis.html" title="Go to companion"><img src="../../../../../lib/object_to_class_big.png" /></a>
+        <a href="InterproceduralReachingDefinitionAnalysis.html" title="See companion class"><img src="../../../../../lib/object_to_class_big.png" /></a>
         <p id="owner"><a href="../../../../package.html" class="extype" name="org">org</a>.<a href="../../../package.html" class="extype" name="org.sireum">sireum</a>.<a href="../../package.html" class="extype" name="org.sireum.jawa">jawa</a>.<a href="../package.html" class="extype" name="org.sireum.jawa.alir">alir</a>.<a href="package.html" class="extype" name="org.sireum.jawa.alir.dataDependenceAnalysis">dataDependenceAnalysis</a></p>
-        <h1><a href="InterproceduralReachingDefinitionAnalysis.html" title="Go to companion">InterproceduralReachingDefinitionAnalysis</a></h1> <span class="permalink">
+        <h1><a href="InterproceduralReachingDefinitionAnalysis.html" title="See companion class">InterproceduralReachingDefinitionAnalysis</a></h1><h3><span class="morelinks"><div>
+            Related Docs:
+            <a href="InterproceduralReachingDefinitionAnalysis.html" title="See companion class">class InterproceduralReachingDefinitionAnalysis</a>
+            | <a href="package.html" class="extype" name="org.sireum.jawa.alir.dataDependenceAnalysis">package dataDependenceAnalysis</a>
+          </div></span></h3><span class="permalink">
       <a href="../../../../../index.html#org.sireum.jawa.alir.dataDependenceAnalysis.InterproceduralReachingDefinitionAnalysis$" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" />
       </a>
@@ -107,7 +111,7 @@
     </span>
       
     </li><li name="org.sireum.jawa.alir.dataDependenceAnalysis.InterproceduralReachingDefinitionAnalysis.Node" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="Node=org.sireum.jawa.alir.controlFlowGraph.CGNode"></a>
+      <a id="Node=org.sireum.jawa.alir.controlFlowGraph.ICFGNode"></a>
       <a id="Node:Node"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -115,10 +119,10 @@
         <span class="kind">type</span>
       </span>
       <span class="symbol">
-        <span class="name">Node</span><span class="result"> = <a href="../controlFlowGraph/CGNode.html" class="extype" name="org.sireum.jawa.alir.controlFlowGraph.CGNode">CGNode</a></span>
+        <span class="name">Node</span><span class="result"> = <a href="../controlFlowGraph/ICFGNode.html" class="extype" name="org.sireum.jawa.alir.controlFlowGraph.ICFGNode">ICFGNode</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#org.sireum.jawa.alir.dataDependenceAnalysis.InterproceduralReachingDefinitionAnalysis$@Node=org.sireum.jawa.alir.controlFlowGraph.CGNode" title="Permalink" target="_top">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.dataDependenceAnalysis.InterproceduralReachingDefinitionAnalysis$@Node=org.sireum.jawa.alir.controlFlowGraph.ICFGNode" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" />
       </a>
     </span>
@@ -199,18 +203,18 @@
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="org.sireum.jawa.alir.dataDependenceAnalysis.InterproceduralReachingDefinitionAnalysis#apply" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="apply(cg:org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph[org.sireum.jawa.alir.dataDependenceAnalysis.InterproceduralReachingDefinitionAnalysis.Node],parallel:Boolean,timer:Option[org.sireum.jawa.util.MyTimer],switchAsOrderedMatch:Boolean):scala.collection.mutable.Map[org.sireum.jawa.alir.controlFlowGraph.CGNode,scala.collection.immutable.Set[((org.sireum.alir.Slot,org.sireum.alir.DefDesc),org.sireum.jawa.alir.Context)]]"></a>
-      <a id="apply(InterproceduralControlFlowGraph[Node],Boolean,Option[MyTimer],Boolean):Map[CGNode,Set[((Slot,DefDesc),Context)]]"></a>
+      <a id="apply(cg:org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph[org.sireum.jawa.alir.dataDependenceAnalysis.InterproceduralReachingDefinitionAnalysis.Node],parallel:Boolean,timer:Option[org.sireum.jawa.util.MyTimer],switchAsOrderedMatch:Boolean):scala.collection.mutable.Map[org.sireum.jawa.alir.controlFlowGraph.ICFGNode,scala.collection.immutable.Set[((org.sireum.alir.Slot,org.sireum.alir.DefDesc),org.sireum.jawa.alir.Context)]]"></a>
+      <a id="apply(InterproceduralControlFlowGraph[Node],Boolean,Option[MyTimer],Boolean):Map[ICFGNode,Set[((Slot,DefDesc),Context)]]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">apply</span><span class="params">(<span name="cg">cg: <a href="../controlFlowGraph/InterproceduralControlFlowGraph.html" class="extype" name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph">InterproceduralControlFlowGraph</a>[<a href="#Node=org.sireum.jawa.alir.controlFlowGraph.CGNode" class="extmbr" name="org.sireum.jawa.alir.dataDependenceAnalysis.InterproceduralReachingDefinitionAnalysis.Node">Node</a>]</span>, <span name="parallel">parallel: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">false</span></span>, <span name="timer">timer: <span class="extype" name="scala.Option">Option</span>[<a href="../../util/MyTimer.html" class="extype" name="org.sireum.jawa.util.MyTimer">MyTimer</a>] = <span class="symbol">None</span></span>, <span name="switchAsOrderedMatch">switchAsOrderedMatch: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">false</span></span>)</span><span class="result">: <span class="extype" name="scala.collection.mutable.Map">Map</span>[<a href="../controlFlowGraph/CGNode.html" class="extype" name="org.sireum.jawa.alir.controlFlowGraph.CGNode">CGNode</a>, <span class="extype" name="scala.collection.immutable.Set">Set</span>[((<span class="extype" name="org.sireum.alir.Slot">Slot</span>, <span class="extype" name="org.sireum.alir.DefDesc">DefDesc</span>), <a href="../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a>)]]</span>
+        <span class="name">apply</span><span class="params">(<span name="cg">cg: <a href="../controlFlowGraph/InterproceduralControlFlowGraph.html" class="extype" name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph">InterproceduralControlFlowGraph</a>[<a href="#Node=org.sireum.jawa.alir.controlFlowGraph.ICFGNode" class="extmbr" name="org.sireum.jawa.alir.dataDependenceAnalysis.InterproceduralReachingDefinitionAnalysis.Node">Node</a>]</span>, <span name="parallel">parallel: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">false</span></span>, <span name="timer">timer: <span class="extype" name="scala.Option">Option</span>[<a href="../../util/MyTimer.html" class="extype" name="org.sireum.jawa.util.MyTimer">MyTimer</a>] = <span class="symbol">None</span></span>, <span name="switchAsOrderedMatch">switchAsOrderedMatch: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">false</span></span>)</span><span class="result">: <span class="extype" name="scala.collection.mutable.Map">Map</span>[<a href="../controlFlowGraph/ICFGNode.html" class="extype" name="org.sireum.jawa.alir.controlFlowGraph.ICFGNode">ICFGNode</a>, <span class="extype" name="scala.collection.immutable.Set">Set</span>[((<span class="extype" name="org.sireum.alir.Slot">Slot</span>, <span class="extype" name="org.sireum.alir.DefDesc">DefDesc</span>), <a href="../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a>)]]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#org.sireum.jawa.alir.dataDependenceAnalysis.InterproceduralReachingDefinitionAnalysis$@apply(cg:org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph[org.sireum.jawa.alir.dataDependenceAnalysis.InterproceduralReachingDefinitionAnalysis.Node],parallel:Boolean,timer:Option[org.sireum.jawa.util.MyTimer],switchAsOrderedMatch:Boolean):scala.collection.mutable.Map[org.sireum.jawa.alir.controlFlowGraph.CGNode,scala.collection.immutable.Set[((org.sireum.alir.Slot,org.sireum.alir.DefDesc),org.sireum.jawa.alir.Context)]]" title="Permalink" target="_top">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.dataDependenceAnalysis.InterproceduralReachingDefinitionAnalysis$@apply(cg:org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph[org.sireum.jawa.alir.dataDependenceAnalysis.InterproceduralReachingDefinitionAnalysis.Node],parallel:Boolean,timer:Option[org.sireum.jawa.util.MyTimer],switchAsOrderedMatch:Boolean):scala.collection.mutable.Map[org.sireum.jawa.alir.controlFlowGraph.ICFGNode,scala.collection.immutable.Set[((org.sireum.alir.Slot,org.sireum.alir.DefDesc),org.sireum.jawa.alir.Context)]]" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" />
       </a>
     </span>
@@ -233,18 +237,18 @@
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
     </li><li name="org.sireum.jawa.alir.dataDependenceAnalysis.InterproceduralReachingDefinitionAnalysis#build" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="build(cg:org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph[org.sireum.jawa.alir.dataDependenceAnalysis.InterproceduralReachingDefinitionAnalysis.Node],parallel:Boolean,timer:Option[org.sireum.jawa.util.MyTimer],switchAsOrderedMatch:Boolean):scala.collection.mutable.Map[org.sireum.jawa.alir.controlFlowGraph.CGNode,scala.collection.immutable.Set[((org.sireum.alir.Slot,org.sireum.alir.DefDesc),org.sireum.jawa.alir.Context)]]"></a>
-      <a id="build(InterproceduralControlFlowGraph[Node],Boolean,Option[MyTimer],Boolean):Map[CGNode,Set[((Slot,DefDesc),Context)]]"></a>
+      <a id="build(cg:org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph[org.sireum.jawa.alir.dataDependenceAnalysis.InterproceduralReachingDefinitionAnalysis.Node],parallel:Boolean,timer:Option[org.sireum.jawa.util.MyTimer],switchAsOrderedMatch:Boolean):scala.collection.mutable.Map[org.sireum.jawa.alir.controlFlowGraph.ICFGNode,scala.collection.immutable.Set[((org.sireum.alir.Slot,org.sireum.alir.DefDesc),org.sireum.jawa.alir.Context)]]"></a>
+      <a id="build(InterproceduralControlFlowGraph[Node],Boolean,Option[MyTimer],Boolean):Map[ICFGNode,Set[((Slot,DefDesc),Context)]]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">build</span><span class="params">(<span name="cg">cg: <a href="../controlFlowGraph/InterproceduralControlFlowGraph.html" class="extype" name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph">InterproceduralControlFlowGraph</a>[<a href="#Node=org.sireum.jawa.alir.controlFlowGraph.CGNode" class="extmbr" name="org.sireum.jawa.alir.dataDependenceAnalysis.InterproceduralReachingDefinitionAnalysis.Node">Node</a>]</span>, <span name="parallel">parallel: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">false</span></span>, <span name="timer">timer: <span class="extype" name="scala.Option">Option</span>[<a href="../../util/MyTimer.html" class="extype" name="org.sireum.jawa.util.MyTimer">MyTimer</a>] = <span class="symbol">None</span></span>, <span name="switchAsOrderedMatch">switchAsOrderedMatch: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">false</span></span>)</span><span class="result">: <span class="extype" name="scala.collection.mutable.Map">Map</span>[<a href="../controlFlowGraph/CGNode.html" class="extype" name="org.sireum.jawa.alir.controlFlowGraph.CGNode">CGNode</a>, <span class="extype" name="scala.collection.immutable.Set">Set</span>[((<span class="extype" name="org.sireum.alir.Slot">Slot</span>, <span class="extype" name="org.sireum.alir.DefDesc">DefDesc</span>), <a href="../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a>)]]</span>
+        <span class="name">build</span><span class="params">(<span name="cg">cg: <a href="../controlFlowGraph/InterproceduralControlFlowGraph.html" class="extype" name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph">InterproceduralControlFlowGraph</a>[<a href="#Node=org.sireum.jawa.alir.controlFlowGraph.ICFGNode" class="extmbr" name="org.sireum.jawa.alir.dataDependenceAnalysis.InterproceduralReachingDefinitionAnalysis.Node">Node</a>]</span>, <span name="parallel">parallel: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">false</span></span>, <span name="timer">timer: <span class="extype" name="scala.Option">Option</span>[<a href="../../util/MyTimer.html" class="extype" name="org.sireum.jawa.util.MyTimer">MyTimer</a>] = <span class="symbol">None</span></span>, <span name="switchAsOrderedMatch">switchAsOrderedMatch: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">false</span></span>)</span><span class="result">: <span class="extype" name="scala.collection.mutable.Map">Map</span>[<a href="../controlFlowGraph/ICFGNode.html" class="extype" name="org.sireum.jawa.alir.controlFlowGraph.ICFGNode">ICFGNode</a>, <span class="extype" name="scala.collection.immutable.Set">Set</span>[((<span class="extype" name="org.sireum.alir.Slot">Slot</span>, <span class="extype" name="org.sireum.alir.DefDesc">DefDesc</span>), <a href="../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a>)]]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#org.sireum.jawa.alir.dataDependenceAnalysis.InterproceduralReachingDefinitionAnalysis$@build(cg:org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph[org.sireum.jawa.alir.dataDependenceAnalysis.InterproceduralReachingDefinitionAnalysis.Node],parallel:Boolean,timer:Option[org.sireum.jawa.util.MyTimer],switchAsOrderedMatch:Boolean):scala.collection.mutable.Map[org.sireum.jawa.alir.controlFlowGraph.CGNode,scala.collection.immutable.Set[((org.sireum.alir.Slot,org.sireum.alir.DefDesc),org.sireum.jawa.alir.Context)]]" title="Permalink" target="_top">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.dataDependenceAnalysis.InterproceduralReachingDefinitionAnalysis$@build(cg:org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph[org.sireum.jawa.alir.dataDependenceAnalysis.InterproceduralReachingDefinitionAnalysis.Node],parallel:Boolean,timer:Option[org.sireum.jawa.util.MyTimer],switchAsOrderedMatch:Boolean):scala.collection.mutable.Map[org.sireum.jawa.alir.controlFlowGraph.ICFGNode,scala.collection.immutable.Set[((org.sireum.alir.Slot,org.sireum.alir.DefDesc),org.sireum.jawa.alir.Context)]]" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" />
       </a>
     </span>

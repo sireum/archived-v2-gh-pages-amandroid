@@ -30,7 +30,9 @@
       <div id="definition">
         <img src="../../../lib/class_big.png" />
         <p id="owner"><a href="../../package.html" class="extype" name="org">org</a>.<a href="../package.html" class="extype" name="org.sireum">sireum</a>.<a href="package.html" class="extype" name="org.sireum.jawa">jawa</a></p>
-        <h1>PointArrayR</h1> <span class="permalink">
+        <h1>PointArrayR</h1><h3><span class="morelinks"><div>Related Doc:
+            <a href="package.html" class="extype" name="org.sireum.jawa">package jawa</a>
+          </div></span></h3><span class="permalink">
       <a href="../../../index.html#org.sireum.jawa.PointArrayR" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" />
       </a>
@@ -40,17 +42,17 @@
       <h4 id="signature" class="signature">
       <span class="modifier_kind">
         <span class="modifier">final </span>
-        <span class="kind">class</span>
+        <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <span class="name">PointArrayR</span><span class="result"> extends <a href="PointR.html" class="extype" name="org.sireum.jawa.PointR">PointR</a></span>
+        <span class="name">PointArrayR</span><span class="params">(<span name="arrayname">arrayname: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="dimensions">dimensions: <span class="extype" name="scala.Int">Int</span></span>, <span name="loc">loc: <span class="extype" name="org.sireum.util.ResourceUri">ResourceUri</span></span>, <span name="locIndex">locIndex: <span class="extype" name="scala.Int">Int</span></span>, <span name="ownerSig">ownerSig: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result"> extends <a href="Point.html" class="extype" name="org.sireum.jawa.Point">Point</a> with <a href="Loc.html" class="extype" name="org.sireum.jawa.Loc">Loc</a> with <a href="Right.html" class="extype" name="org.sireum.jawa.Right">Right</a> with <a href="Array.html" class="extype" name="org.sireum.jawa.Array">Array</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4>
       
           <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Set of program points corresponding to R-value array variable.
 </p></div><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
-          <div class="superTypes hiddenContent"><a href="PointR.html" class="extype" name="org.sireum.jawa.PointR">PointR</a>, <a href="PointWithIndex.html" class="extype" name="org.sireum.jawa.PointWithIndex">PointWithIndex</a>, <a href="PointWithUri.html" class="extype" name="org.sireum.jawa.PointWithUri">PointWithUri</a>, <a href="Point.html" class="extype" name="org.sireum.jawa.Point">Point</a>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+          <div class="superTypes hiddenContent"><span class="extype" name="scala.Serializable">Serializable</span>, <span class="extype" name="java.io.Serializable">Serializable</span>, <span class="extype" name="scala.Product">Product</span>, <span class="extype" name="scala.Equals">Equals</span>, <a href="Array.html" class="extype" name="org.sireum.jawa.Array">Array</a>, <a href="Right.html" class="extype" name="org.sireum.jawa.Right">Right</a>, <a href="Loc.html" class="extype" name="org.sireum.jawa.Loc">Loc</a>, <a href="Point.html" class="extype" name="org.sireum.jawa.Point">Point</a>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
         </div></div>
         
 
@@ -68,7 +70,7 @@
                 <span class="filtertype">Inherited<br />
                 </span>
                 <ol id="linearization">
-                  <li class="in" name="org.sireum.jawa.PointArrayR"><span>PointArrayR</span></li><li class="in" name="org.sireum.jawa.PointR"><span>PointR</span></li><li class="in" name="org.sireum.jawa.PointWithIndex"><span>PointWithIndex</span></li><li class="in" name="org.sireum.jawa.PointWithUri"><span>PointWithUri</span></li><li class="in" name="org.sireum.jawa.Point"><span>Point</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                  <li class="in" name="org.sireum.jawa.PointArrayR"><span>PointArrayR</span></li><li class="in" name="scala.Serializable"><span>Serializable</span></li><li class="in" name="java.io.Serializable"><span>Serializable</span></li><li class="in" name="scala.Product"><span>Product</span></li><li class="in" name="scala.Equals"><span>Equals</span></li><li class="in" name="org.sireum.jawa.Array"><span>Array</span></li><li class="in" name="org.sireum.jawa.Right"><span>Right</span></li><li class="in" name="org.sireum.jawa.Loc"><span>Loc</span></li><li class="in" name="org.sireum.jawa.Point"><span>Point</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
                 </ol>
               </div><div id="ancestors">
             <span class="filtertype"></span>
@@ -89,7 +91,7 @@
         <div id="constructors" class="members">
               <h3>Instance Constructors</h3>
               <ol><li name="org.sireum.jawa.PointArrayR#&lt;init&gt;" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="&lt;init&gt;(uri:org.sireum.util.ResourceUri,loc:org.sireum.util.ResourceUri,locIndex:Int,o:org.sireum.util.ResourceUri):org.sireum.jawa.PointArrayR"></a>
+      <a id="&lt;init&gt;(arrayname:String,dimensions:Int,loc:org.sireum.util.ResourceUri,locIndex:Int,ownerSig:String):org.sireum.jawa.PointArrayR"></a>
       <a id="&lt;init&gt;:PointArrayR"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -97,10 +99,10 @@
         <span class="kind">new</span>
       </span>
       <span class="symbol">
-        <span class="name">PointArrayR</span><span class="params">(<span name="uri">uri: <span class="extype" name="org.sireum.util.ResourceUri">ResourceUri</span></span>, <span name="loc">loc: <span class="extype" name="org.sireum.util.ResourceUri">ResourceUri</span></span>, <span name="locIndex">locIndex: <span class="extype" name="scala.Int">Int</span></span>, <span name="o">o: <span class="extype" name="org.sireum.util.ResourceUri">ResourceUri</span></span>)</span>
+        <span class="name">PointArrayR</span><span class="params">(<span name="arrayname">arrayname: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="dimensions">dimensions: <span class="extype" name="scala.Int">Int</span></span>, <span name="loc">loc: <span class="extype" name="org.sireum.util.ResourceUri">ResourceUri</span></span>, <span name="locIndex">locIndex: <span class="extype" name="scala.Int">Int</span></span>, <span name="ownerSig">ownerSig: <span class="extype" name="scala.Predef.String">String</span></span>)</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#org.sireum.jawa.PointArrayR@&lt;init&gt;(uri:org.sireum.util.ResourceUri,loc:org.sireum.util.ResourceUri,locIndex:Int,o:org.sireum.util.ResourceUri):org.sireum.jawa.PointArrayR" title="Permalink" target="_top">
+      <a href="../../../index.html#org.sireum.jawa.PointArrayR@&lt;init&gt;(arrayname:String,dimensions:Int,loc:org.sireum.util.ResourceUri,locIndex:Int,ownerSig:String):org.sireum.jawa.PointArrayR" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" />
       </a>
     </span>
@@ -165,6 +167,23 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="org.sireum.jawa.PointArrayR#arrayname" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="arrayname:String"></a>
+      <a id="arrayname:String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">arrayname</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#org.sireum.jawa.PointArrayR@arrayname:String" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      
     </li><li name="scala.Any#asInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="asInstanceOf[T0]:T0"></a>
       <a id="asInstanceOf[T0]:T0"></a>
@@ -205,13 +224,13 @@
     </span>)</span>
               
         </dd></dl></div>
-    </li><li name="org.sireum.jawa.PointArrayR#dimensions" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+    </li><li name="org.sireum.jawa.PointArrayR#dimensions" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="dimensions:Int"></a>
       <a id="dimensions:Int"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
-        <span class="kind">var</span>
+        <span class="kind">val</span>
       </span>
       <span class="symbol">
         <span class="name">dimensions</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
@@ -221,7 +240,7 @@
         <img src="../../../lib/permalink.png" />
       </a>
     </span>
-      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="org.sireum.jawa.PointArrayR">PointArrayR</a> → <a href="Array.html" class="extype" name="org.sireum.jawa.Array">Array</a></dd></dl></div>
     </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="eq(x$1:AnyRef):Boolean"></a>
       <a id="eq(AnyRef):Boolean"></a>
@@ -239,23 +258,6 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="scala.AnyRef#equals" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="equals(x$1:Any):Boolean"></a>
-      <a id="equals(Any):Boolean"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#org.sireum.jawa.PointArrayR@equals(x$1:Any):Boolean" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.AnyRef#finalize" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="finalize():Unit"></a>
       <a id="finalize():Unit"></a>
@@ -296,40 +298,6 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li name="org.sireum.jawa.Point#getLoc" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="getLoc:org.sireum.util.ResourceUri"></a>
-      <a id="getLoc:ResourceUri"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">getLoc</span><span class="result">: <span class="extype" name="org.sireum.util.ResourceUri">ResourceUri</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#org.sireum.jawa.PointArrayR@getLoc:org.sireum.util.ResourceUri" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Point.html" class="extype" name="org.sireum.jawa.Point">Point</a></dd></dl></div>
-    </li><li name="scala.AnyRef#hashCode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="hashCode():Int"></a>
-      <a id="hashCode():Int"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#org.sireum.jawa.PointArrayR@hashCode():Int" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.Any#isInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="isInstanceOf[T0]:Boolean"></a>
       <a id="isInstanceOf[T0]:Boolean"></a>
@@ -347,40 +315,40 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li name="org.sireum.jawa.PointWithIndex#locationIndex" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="locationIndex:Int"></a>
-      <a id="locationIndex:Int"></a>
+    </li><li name="org.sireum.jawa.PointArrayR#loc" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="loc:org.sireum.util.ResourceUri"></a>
+      <a id="loc:ResourceUri"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">val</span>
       </span>
       <span class="symbol">
-        <span class="name">locationIndex</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+        <span class="name">loc</span><span class="result">: <span class="extype" name="org.sireum.util.ResourceUri">ResourceUri</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#org.sireum.jawa.PointArrayR@locationIndex:Int" title="Permalink" target="_top">
+      <a href="../../../index.html#org.sireum.jawa.PointArrayR@loc:org.sireum.util.ResourceUri" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="PointWithIndex.html" class="extype" name="org.sireum.jawa.PointWithIndex">PointWithIndex</a></dd></dl></div>
-    </li><li name="org.sireum.jawa.PointWithIndex#locationUri" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="locationUri:org.sireum.util.ResourceUri"></a>
-      <a id="locationUri:ResourceUri"></a>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="org.sireum.jawa.PointArrayR">PointArrayR</a> → <a href="Loc.html" class="extype" name="org.sireum.jawa.Loc">Loc</a></dd></dl></div>
+    </li><li name="org.sireum.jawa.PointArrayR#locIndex" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="locIndex:Int"></a>
+      <a id="locIndex:Int"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">val</span>
       </span>
       <span class="symbol">
-        <span class="name">locationUri</span><span class="result">: <span class="extype" name="org.sireum.util.ResourceUri">ResourceUri</span></span>
+        <span class="name">locIndex</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#org.sireum.jawa.PointArrayR@locationUri:org.sireum.util.ResourceUri" title="Permalink" target="_top">
+      <a href="../../../index.html#org.sireum.jawa.PointArrayR@locIndex:Int" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="PointWithIndex.html" class="extype" name="org.sireum.jawa.PointWithIndex">PointWithIndex</a></dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="org.sireum.jawa.PointArrayR">PointArrayR</a> → <a href="Loc.html" class="extype" name="org.sireum.jawa.Loc">Loc</a></dd></dl></div>
     </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="ne(x$1:AnyRef):Boolean"></a>
       <a id="ne(AnyRef):Boolean"></a>
@@ -432,23 +400,23 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="org.sireum.jawa.PointWithIndex#owner" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="owner:org.sireum.util.ResourceUri"></a>
-      <a id="owner:ResourceUri"></a>
+    </li><li name="org.sireum.jawa.PointArrayR#ownerSig" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ownerSig:String"></a>
+      <a id="ownerSig:String"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">val</span>
       </span>
       <span class="symbol">
-        <span class="name">owner</span><span class="result">: <span class="extype" name="org.sireum.util.ResourceUri">ResourceUri</span></span>
+        <span class="name">ownerSig</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#org.sireum.jawa.PointArrayR@owner:org.sireum.util.ResourceUri" title="Permalink" target="_top">
+      <a href="../../../index.html#org.sireum.jawa.PointArrayR@ownerSig:String" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="PointWithIndex.html" class="extype" name="org.sireum.jawa.PointWithIndex">PointWithIndex</a></dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="org.sireum.jawa.PointArrayR">PointArrayR</a> → <a href="Point.html" class="extype" name="org.sireum.jawa.Point">Point</a></dd></dl></div>
     </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
       <a id="synchronized[T0](⇒T0):T0"></a>
@@ -466,40 +434,6 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="org.sireum.jawa.PointArrayR#toString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="toString():String"></a>
-      <a id="toString():String"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#org.sireum.jawa.PointArrayR@toString():String" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="org.sireum.jawa.PointArrayR">PointArrayR</a> → <a href="PointR.html" class="extype" name="org.sireum.jawa.PointR">PointR</a> → AnyRef → Any</dd></dl></div>
-    </li><li name="org.sireum.jawa.PointWithUri#varName" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="varName:org.sireum.util.ResourceUri"></a>
-      <a id="varName:ResourceUri"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">val</span>
-      </span>
-      <span class="symbol">
-        <span class="name">varName</span><span class="result">: <span class="extype" name="org.sireum.util.ResourceUri">ResourceUri</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#org.sireum.jawa.PointArrayR@varName:org.sireum.util.ResourceUri" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="PointWithUri.html" class="extype" name="org.sireum.jawa.PointWithUri">PointWithUri</a></dd></dl></div>
     </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="wait():Unit"></a>
       <a id="wait():Unit"></a>
@@ -578,12 +512,20 @@
         </div>
 
         <div id="inheritedMembers">
-        <div class="parent" name="org.sireum.jawa.PointR">
-              <h3>Inherited from <a href="PointR.html" class="extype" name="org.sireum.jawa.PointR">PointR</a></h3>
-            </div><div class="parent" name="org.sireum.jawa.PointWithIndex">
-              <h3>Inherited from <a href="PointWithIndex.html" class="extype" name="org.sireum.jawa.PointWithIndex">PointWithIndex</a></h3>
-            </div><div class="parent" name="org.sireum.jawa.PointWithUri">
-              <h3>Inherited from <a href="PointWithUri.html" class="extype" name="org.sireum.jawa.PointWithUri">PointWithUri</a></h3>
+        <div class="parent" name="scala.Serializable">
+              <h3>Inherited from <span class="extype" name="scala.Serializable">Serializable</span></h3>
+            </div><div class="parent" name="java.io.Serializable">
+              <h3>Inherited from <span class="extype" name="java.io.Serializable">Serializable</span></h3>
+            </div><div class="parent" name="scala.Product">
+              <h3>Inherited from <span class="extype" name="scala.Product">Product</span></h3>
+            </div><div class="parent" name="scala.Equals">
+              <h3>Inherited from <span class="extype" name="scala.Equals">Equals</span></h3>
+            </div><div class="parent" name="org.sireum.jawa.Array">
+              <h3>Inherited from <a href="Array.html" class="extype" name="org.sireum.jawa.Array">Array</a></h3>
+            </div><div class="parent" name="org.sireum.jawa.Right">
+              <h3>Inherited from <a href="Right.html" class="extype" name="org.sireum.jawa.Right">Right</a></h3>
+            </div><div class="parent" name="org.sireum.jawa.Loc">
+              <h3>Inherited from <a href="Loc.html" class="extype" name="org.sireum.jawa.Loc">Loc</a></h3>
             </div><div class="parent" name="org.sireum.jawa.Point">
               <h3>Inherited from <a href="Point.html" class="extype" name="org.sireum.jawa.Point">Point</a></h3>
             </div><div class="parent" name="scala.AnyRef">

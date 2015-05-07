@@ -30,7 +30,7 @@
       <div id="definition">
         <img src="../../../../../lib/package_big.png" />
         <p id="owner"><a href="../../../../package.html" class="extype" name="org">org</a>.<a href="../../../package.html" class="extype" name="org.sireum">sireum</a>.<a href="../../package.html" class="extype" name="org.sireum.jawa">jawa</a>.<a href="../package.html" class="extype" name="org.sireum.jawa.alir">alir</a></p>
-        <h1>interProcedural</h1> <span class="permalink">
+        <h1>interProcedural</h1><span class="permalink">
       <a href="../../../../../index.html#org.sireum.jawa.alir.interProcedural.package" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" />
       </a>
@@ -66,24 +66,7 @@
 
         <div id="types" class="types members">
               <h3>Type Members</h3>
-              <ol><li name="org.sireum.jawa.alir.interProcedural.CallResolver" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="CallResolver[LatticeElement]extendsAnyRef"></a>
-      <a id="CallResolver[LatticeElement]:CallResolver[LatticeElement]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">trait</span>
-      </span>
-      <span class="symbol">
-        <a href="CallResolver.html"><span class="name">CallResolver</span></a><span class="tparams">[<span name="LatticeElement">LatticeElement</span>]</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../../index.html#org.sireum.jawa.alir.interProcedural.package@CallResolver[LatticeElement]extendsAnyRef" title="Permalink" target="_top">
-        <img src="../../../../../lib/permalink.png" />
-      </a>
-    </span>
-      <p class="shortcomment cmt"></p>
-    </li><li name="org.sireum.jawa.alir.interProcedural.Callee" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+              <ol><li name="org.sireum.jawa.alir.interProcedural.Callee" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
       <a id="CalleeextendsAnyRef"></a>
       <a id="Callee:Callee"></a>
       <h4 class="signature">
@@ -109,45 +92,10 @@
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="InstanceCallee.html"><span class="name">InstanceCallee</span></a><span class="params">(<span name="callee">callee: <a href="../../JawaProcedure.html" class="extype" name="org.sireum.jawa.JawaProcedure">JawaProcedure</a></span>, <span name="ins">ins: <a href="../Instance.html" class="extype" name="org.sireum.jawa.alir.Instance">Instance</a></span>)</span><span class="result"> extends <a href="Callee.html" class="extype" name="org.sireum.jawa.alir.interProcedural.Callee">Callee</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+        <a href="InstanceCallee.html"><span class="name">InstanceCallee</span></a><span class="params">(<span name="callee">callee: <a href="../../JawaMethod.html" class="extype" name="org.sireum.jawa.JawaMethod">JawaMethod</a></span>, <span name="ins">ins: <a href="../pta/Instance.html" class="extype" name="org.sireum.jawa.alir.pta.Instance">Instance</a></span>)</span><span class="result"> extends <a href="Callee.html" class="extype" name="org.sireum.jawa.alir.interProcedural.Callee">Callee</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../../../index.html#org.sireum.jawa.alir.interProcedural.package@InstanceCalleeextendsCalleewithProductwithSerializable" title="Permalink" target="_top">
-        <img src="../../../../../lib/permalink.png" />
-      </a>
-    </span>
-      <p class="shortcomment cmt"></p>
-    </li><li name="org.sireum.jawa.alir.interProcedural.InterProceduralDataFlowAnalysisResult" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="InterProceduralDataFlowAnalysisResult[LatticeElement]extendsAnyRef"></a>
-      <a id="InterProceduralDataFlowAnalysisResult[LatticeElement]:InterProceduralDataFlowAnalysisResult[LatticeElement]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">trait</span>
-      </span>
-      <span class="symbol">
-        <a href="InterProceduralDataFlowAnalysisResult.html"><span class="name">InterProceduralDataFlowAnalysisResult</span></a><span class="tparams">[<span name="LatticeElement">LatticeElement</span>]</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../../index.html#org.sireum.jawa.alir.interProcedural.package@InterProceduralDataFlowAnalysisResult[LatticeElement]extendsAnyRef" title="Permalink" target="_top">
-        <img src="../../../../../lib/permalink.png" />
-      </a>
-    </span>
-      <p class="shortcomment cmt">Provide an Interface to let the developer get data facts corresponding
-to each statement.</p>
-    </li><li name="org.sireum.jawa.alir.interProcedural.InterProceduralDataFlowGraph" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="InterProceduralDataFlowGraphextendsProductwithSerializable"></a>
-      <a id="InterProceduralDataFlowGraph:InterProceduralDataFlowGraph"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">case class</span>
-      </span>
-      <span class="symbol">
-        <a href="InterProceduralDataFlowGraph.html"><span class="name">InterProceduralDataFlowGraph</span></a><span class="params">(<span name="icfg">icfg: <a href="../controlFlowGraph/InterproceduralControlFlowGraph.html" class="extype" name="org.sireum.jawa.alir.controlFlowGraph.InterproceduralControlFlowGraph">InterproceduralControlFlowGraph</a>[<a href="../controlFlowGraph/CGNode.html" class="extype" name="org.sireum.jawa.alir.controlFlowGraph.CGNode">CGNode</a>]</span>, <span name="summary">summary: <a href="InterProceduralMonotoneDataFlowAnalysisResult.html" class="extype" name="org.sireum.jawa.alir.interProcedural.InterProceduralMonotoneDataFlowAnalysisResult">InterProceduralMonotoneDataFlowAnalysisResult</a>[<a href="../pta/reachingFactsAnalysis/RFAFact.html" class="extype" name="org.sireum.jawa.alir.pta.reachingFactsAnalysis.RFAFact">RFAFact</a>]</span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../../index.html#org.sireum.jawa.alir.interProcedural.package@InterProceduralDataFlowGraphextendsProductwithSerializable" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" />
       </a>
     </span>
@@ -169,40 +117,6 @@ to each statement.</p>
       </a>
     </span>
       <p class="shortcomment cmt"></p>
-    </li><li name="org.sireum.jawa.alir.interProcedural.InterProceduralMonotoneDataFlowAnalysisResult" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="InterProceduralMonotoneDataFlowAnalysisResult[LatticeElement]extendsInterProceduralDataFlowAnalysisResult[LatticeElement]"></a>
-      <a id="InterProceduralMonotoneDataFlowAnalysisResult[LatticeElement]:InterProceduralMonotoneDataFlowAnalysisResult[LatticeElement]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">trait</span>
-      </span>
-      <span class="symbol">
-        <a href="InterProceduralMonotoneDataFlowAnalysisResult.html"><span class="name">InterProceduralMonotoneDataFlowAnalysisResult</span></a><span class="tparams">[<span name="LatticeElement">LatticeElement</span>]</span><span class="result"> extends <a href="InterProceduralDataFlowAnalysisResult.html" class="extype" name="org.sireum.jawa.alir.interProcedural.InterProceduralDataFlowAnalysisResult">InterProceduralDataFlowAnalysisResult</a>[<span class="extype" name="org.sireum.jawa.alir.interProcedural.InterProceduralMonotoneDataFlowAnalysisResult.LatticeElement">LatticeElement</span>]</span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../../index.html#org.sireum.jawa.alir.interProcedural.package@InterProceduralMonotoneDataFlowAnalysisResult[LatticeElement]extendsInterProceduralDataFlowAnalysisResult[LatticeElement]" title="Permalink" target="_top">
-        <img src="../../../../../lib/permalink.png" />
-      </a>
-    </span>
-      <p class="shortcomment cmt"></p>
-    </li><li name="org.sireum.jawa.alir.interProcedural.InterProceduralMonotonicFunction" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="InterProceduralMonotonicFunction[LatticeElement]extendsAnyRef"></a>
-      <a id="InterProceduralMonotonicFunction[LatticeElement]:InterProceduralMonotonicFunction[LatticeElement]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">trait</span>
-      </span>
-      <span class="symbol">
-        <a href="InterProceduralMonotonicFunction.html"><span class="name">InterProceduralMonotonicFunction</span></a><span class="tparams">[<span name="LatticeElement">LatticeElement</span>]</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../../index.html#org.sireum.jawa.alir.interProcedural.package@InterProceduralMonotonicFunction[LatticeElement]extendsAnyRef" title="Permalink" target="_top">
-        <img src="../../../../../lib/permalink.png" />
-      </a>
-    </span>
-      <p class="shortcomment cmt"></p>
     </li><li name="org.sireum.jawa.alir.interProcedural.InterProceduralNode" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
       <a id="InterProceduralNodeextendsPropertyProviderwithSerializable"></a>
       <a id="InterProceduralNode:InterProceduralNode"></a>
@@ -220,23 +134,6 @@ to each statement.</p>
       </a>
     </span>
       <p class="shortcomment cmt"></p>
-    </li><li name="org.sireum.jawa.alir.interProcedural.NodeListener" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="NodeListenerextendsAnyRef"></a>
-      <a id="NodeListener:NodeListener"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">trait</span>
-      </span>
-      <span class="symbol">
-        <a href="NodeListener.html"><span class="name">NodeListener</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../../index.html#org.sireum.jawa.alir.interProcedural.package@NodeListenerextendsAnyRef" title="Permalink" target="_top">
-        <img src="../../../../../lib/permalink.png" />
-      </a>
-    </span>
-      <p class="shortcomment cmt"></p>
     </li><li name="org.sireum.jawa.alir.interProcedural.StaticCallee" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="StaticCalleeextendsCalleewithProductwithSerializable"></a>
       <a id="StaticCallee:StaticCallee"></a>
@@ -246,7 +143,7 @@ to each statement.</p>
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="StaticCallee.html"><span class="name">StaticCallee</span></a><span class="params">(<span name="callee">callee: <a href="../../JawaProcedure.html" class="extype" name="org.sireum.jawa.JawaProcedure">JawaProcedure</a></span>)</span><span class="result"> extends <a href="Callee.html" class="extype" name="org.sireum.jawa.alir.interProcedural.Callee">Callee</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+        <a href="StaticCallee.html"><span class="name">StaticCallee</span></a><span class="params">(<span name="callee">callee: <a href="../../JawaMethod.html" class="extype" name="org.sireum.jawa.JawaMethod">JawaMethod</a></span>)</span><span class="result"> extends <a href="Callee.html" class="extype" name="org.sireum.jawa.alir.interProcedural.Callee">Callee</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../../../index.html#org.sireum.jawa.alir.interProcedural.package@StaticCalleeextendsCalleewithProductwithSerializable" title="Permalink" target="_top">
@@ -263,7 +160,7 @@ to each statement.</p>
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="UnknownCallee.html"><span class="name">UnknownCallee</span></a><span class="params">(<span name="callee">callee: <a href="../../JawaProcedure.html" class="extype" name="org.sireum.jawa.JawaProcedure">JawaProcedure</a></span>)</span><span class="result"> extends <a href="Callee.html" class="extype" name="org.sireum.jawa.alir.interProcedural.Callee">Callee</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+        <a href="UnknownCallee.html"><span class="name">UnknownCallee</span></a><span class="params">(<span name="callee">callee: <a href="../../JawaMethod.html" class="extype" name="org.sireum.jawa.JawaMethod">JawaMethod</a></span>)</span><span class="result"> extends <a href="Callee.html" class="extype" name="org.sireum.jawa.alir.interProcedural.Callee">Callee</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../../../index.html#org.sireum.jawa.alir.interProcedural.package@UnknownCalleeextendsCalleewithProductwithSerializable" title="Permalink" target="_top">
@@ -276,27 +173,7 @@ to each statement.</p>
 
         
 
-        <div id="values" class="values members">
-              <h3>Value Members</h3>
-              <ol><li name="org.sireum.jawa.alir.interProcedural.InterProceduralMonotoneDataFlowAnalysisFramework" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="InterProceduralMonotoneDataFlowAnalysisFramework"></a>
-      <a id="InterProceduralMonotoneDataFlowAnalysisFramework:InterProceduralMonotoneDataFlowAnalysisFramework"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">object</span>
-      </span>
-      <span class="symbol">
-        <a href="InterProceduralMonotoneDataFlowAnalysisFramework$.html"><span class="name">InterProceduralMonotoneDataFlowAnalysisFramework</span></a>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../../index.html#org.sireum.jawa.alir.interProcedural.package@InterProceduralMonotoneDataFlowAnalysisFramework" title="Permalink" target="_top">
-        <img src="../../../../../lib/permalink.png" />
-      </a>
-    </span>
-      <p class="shortcomment cmt"></p>
-    </li></ol>
-            </div>
+        
 
         
 

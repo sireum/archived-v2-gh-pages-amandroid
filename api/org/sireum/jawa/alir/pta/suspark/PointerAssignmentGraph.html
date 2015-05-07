@@ -30,7 +30,9 @@
       <div id="definition">
         <img src="../../../../../../lib/class_big.png" />
         <p id="owner"><a href="../../../../../package.html" class="extype" name="org">org</a>.<a href="../../../../package.html" class="extype" name="org.sireum">sireum</a>.<a href="../../../package.html" class="extype" name="org.sireum.jawa">jawa</a>.<a href="../../package.html" class="extype" name="org.sireum.jawa.alir">alir</a>.<a href="../package.html" class="extype" name="org.sireum.jawa.alir.pta">pta</a>.<a href="package.html" class="extype" name="org.sireum.jawa.alir.pta.suspark">suspark</a></p>
-        <h1>PointerAssignmentGraph</h1> <span class="permalink">
+        <h1>PointerAssignmentGraph</h1><h3><span class="morelinks"><div>Related Doc:
+            <a href="package.html" class="extype" name="org.sireum.jawa.alir.pta.suspark">package suspark</a>
+          </div></span></h3><span class="permalink">
       <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph" title="Permalink" target="_top">
         <img src="../../../../../../lib/permalink.png" />
       </a>
@@ -135,7 +137,7 @@
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="PointerAssignmentGraph$PTACallee.html"><span class="name">PTACallee</span></a><span class="params">(<span name="callee">callee: <a href="../../../JawaProcedure.html" class="extype" name="org.sireum.jawa.JawaProcedure">JawaProcedure</a></span>, <span name="pi">pi: <a href="../../../PointI.html" class="extype" name="org.sireum.jawa.PointI">PointI</a></span>, <span name="node">node: <span class="extype" name="org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph.Node">Node</span></span>)</span><span class="result"> extends <a href="../../interProcedural/Callee.html" class="extype" name="org.sireum.jawa.alir.interProcedural.Callee">Callee</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+        <a href="PointerAssignmentGraph$PTACallee.html"><span class="name">PTACallee</span></a><span class="params">(<span name="callee">callee: <a href="../../../JawaMethod.html" class="extype" name="org.sireum.jawa.JawaMethod">JawaMethod</a></span>, <span name="pi">pi: <a href="../../../Point.html" class="extype" name="org.sireum.jawa.Point">Point</a> with <a href="../../../Invoke.html" class="extype" name="org.sireum.jawa.Invoke">Invoke</a></span>, <span name="node">node: <span class="extype" name="org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph.Node">Node</span></span>)</span><span class="result"> extends <a href="../../interProcedural/Callee.html" class="extype" name="org.sireum.jawa.alir.interProcedural.Callee">Callee</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph@PTACalleeextendsCalleewithProductwithSerializable" title="Permalink" target="_top">
@@ -252,74 +254,6 @@
       </a>
     </span>
       
-    </li><li name="org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph#addArgCallNode" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="addArgCallNode(uri:org.sireum.util.ResourceUri,loc:org.sireum.util.ResourceUri,context:org.sireum.jawa.alir.Context):Node"></a>
-      <a id="addArgCallNode(ResourceUri,ResourceUri,Context):Node"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">addArgCallNode</span><span class="params">(<span name="uri">uri: <span class="extype" name="org.sireum.util.ResourceUri">ResourceUri</span></span>, <span name="loc">loc: <span class="extype" name="org.sireum.util.ResourceUri">ResourceUri</span></span>, <span name="context">context: <a href="../../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>)</span><span class="result">: <span class="extype" name="org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph.Node">Node</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph@addArgCallNode(uri:org.sireum.util.ResourceUri,loc:org.sireum.util.ResourceUri,context:org.sireum.jawa.alir.Context):Node" title="Permalink" target="_top">
-        <img src="../../../../../../lib/permalink.png" />
-      </a>
-    </span>
-      
-    </li><li name="org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph#addArgReturnNode" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="addArgReturnNode(uri:org.sireum.util.ResourceUri,loc:org.sireum.util.ResourceUri,context:org.sireum.jawa.alir.Context):Node"></a>
-      <a id="addArgReturnNode(ResourceUri,ResourceUri,Context):Node"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">addArgReturnNode</span><span class="params">(<span name="uri">uri: <span class="extype" name="org.sireum.util.ResourceUri">ResourceUri</span></span>, <span name="loc">loc: <span class="extype" name="org.sireum.util.ResourceUri">ResourceUri</span></span>, <span name="context">context: <a href="../../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>)</span><span class="result">: <span class="extype" name="org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph.Node">Node</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph@addArgReturnNode(uri:org.sireum.util.ResourceUri,loc:org.sireum.util.ResourceUri,context:org.sireum.jawa.alir.Context):Node" title="Permalink" target="_top">
-        <img src="../../../../../../lib/permalink.png" />
-      </a>
-    </span>
-      
-    </li><li name="org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph#addArrayNodeL" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="addArrayNodeL(uri:org.sireum.util.ResourceUri,loc:org.sireum.util.ResourceUri,context:org.sireum.jawa.alir.Context,dimensions:Int):Node"></a>
-      <a id="addArrayNodeL(ResourceUri,ResourceUri,Context,Int):Node"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">addArrayNodeL</span><span class="params">(<span name="uri">uri: <span class="extype" name="org.sireum.util.ResourceUri">ResourceUri</span></span>, <span name="loc">loc: <span class="extype" name="org.sireum.util.ResourceUri">ResourceUri</span></span>, <span name="context">context: <a href="../../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>, <span name="dimensions">dimensions: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph.Node">Node</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph@addArrayNodeL(uri:org.sireum.util.ResourceUri,loc:org.sireum.util.ResourceUri,context:org.sireum.jawa.alir.Context,dimensions:Int):Node" title="Permalink" target="_top">
-        <img src="../../../../../../lib/permalink.png" />
-      </a>
-    </span>
-      
-    </li><li name="org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph#addArrayNodeR" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="addArrayNodeR(uri:org.sireum.util.ResourceUri,loc:org.sireum.util.ResourceUri,context:org.sireum.jawa.alir.Context,dimensions:Int):Node"></a>
-      <a id="addArrayNodeR(ResourceUri,ResourceUri,Context,Int):Node"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">addArrayNodeR</span><span class="params">(<span name="uri">uri: <span class="extype" name="org.sireum.util.ResourceUri">ResourceUri</span></span>, <span name="loc">loc: <span class="extype" name="org.sireum.util.ResourceUri">ResourceUri</span></span>, <span name="context">context: <a href="../../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>, <span name="dimensions">dimensions: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph.Node">Node</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph@addArrayNodeR(uri:org.sireum.util.ResourceUri,loc:org.sireum.util.ResourceUri,context:org.sireum.jawa.alir.Context,dimensions:Int):Node" title="Permalink" target="_top">
-        <img src="../../../../../../lib/permalink.png" />
-      </a>
-    </span>
-      
     </li><li name="org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph#addEdge" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="addEdge(source:Node,target:Node,typ:PointerAssignmentGraph.this.EdgeType.Value):PointerAssignmentGraph.this.Edge"></a>
       <a id="addEdge(Node,Node,PAGConstraint.EdgeType.Value):Edge"></a>
@@ -371,104 +305,19 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AlirEdgeAccesses</dd></dl></div>
-    </li><li name="org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph#addFieldBaseNodeL" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="addFieldBaseNodeL(uri:org.sireum.util.ResourceUri,loc:org.sireum.util.ResourceUri,context:org.sireum.jawa.alir.Context):Node"></a>
-      <a id="addFieldBaseNodeL(ResourceUri,ResourceUri,Context):Node"></a>
+    </li><li name="org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph#addNode" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="addNode(point:org.sireum.jawa.Point,context:org.sireum.jawa.alir.Context):Node"></a>
+      <a id="addNode(Point,Context):Node"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">addFieldBaseNodeL</span><span class="params">(<span name="uri">uri: <span class="extype" name="org.sireum.util.ResourceUri">ResourceUri</span></span>, <span name="loc">loc: <span class="extype" name="org.sireum.util.ResourceUri">ResourceUri</span></span>, <span name="context">context: <a href="../../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>)</span><span class="result">: <span class="extype" name="org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph.Node">Node</span></span>
+        <span class="name">addNode</span><span class="params">(<span name="point">point: <a href="../../../Point.html" class="extype" name="org.sireum.jawa.Point">Point</a></span>, <span name="context">context: <a href="../../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>)</span><span class="result">: <span class="extype" name="org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph.Node">Node</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph@addFieldBaseNodeL(uri:org.sireum.util.ResourceUri,loc:org.sireum.util.ResourceUri,context:org.sireum.jawa.alir.Context):Node" title="Permalink" target="_top">
-        <img src="../../../../../../lib/permalink.png" />
-      </a>
-    </span>
-      
-    </li><li name="org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph#addFieldBaseNodeR" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="addFieldBaseNodeR(uri:org.sireum.util.ResourceUri,loc:org.sireum.util.ResourceUri,context:org.sireum.jawa.alir.Context):Node"></a>
-      <a id="addFieldBaseNodeR(ResourceUri,ResourceUri,Context):Node"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">addFieldBaseNodeR</span><span class="params">(<span name="uri">uri: <span class="extype" name="org.sireum.util.ResourceUri">ResourceUri</span></span>, <span name="loc">loc: <span class="extype" name="org.sireum.util.ResourceUri">ResourceUri</span></span>, <span name="context">context: <a href="../../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>)</span><span class="result">: <span class="extype" name="org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph.Node">Node</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph@addFieldBaseNodeR(uri:org.sireum.util.ResourceUri,loc:org.sireum.util.ResourceUri,context:org.sireum.jawa.alir.Context):Node" title="Permalink" target="_top">
-        <img src="../../../../../../lib/permalink.png" />
-      </a>
-    </span>
-      
-    </li><li name="org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph#addFieldNode" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="addFieldNode(baseName:org.sireum.util.ResourceUri,fieldName:org.sireum.util.ResourceUri,loc:org.sireum.util.ResourceUri,context:org.sireum.jawa.alir.Context):Node"></a>
-      <a id="addFieldNode(ResourceUri,ResourceUri,ResourceUri,Context):Node"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">addFieldNode</span><span class="params">(<span name="baseName">baseName: <span class="extype" name="org.sireum.util.ResourceUri">ResourceUri</span></span>, <span name="fieldName">fieldName: <span class="extype" name="org.sireum.util.ResourceUri">ResourceUri</span></span>, <span name="loc">loc: <span class="extype" name="org.sireum.util.ResourceUri">ResourceUri</span></span>, <span name="context">context: <a href="../../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>)</span><span class="result">: <span class="extype" name="org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph.Node">Node</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph@addFieldNode(baseName:org.sireum.util.ResourceUri,fieldName:org.sireum.util.ResourceUri,loc:org.sireum.util.ResourceUri,context:org.sireum.jawa.alir.Context):Node" title="Permalink" target="_top">
-        <img src="../../../../../../lib/permalink.png" />
-      </a>
-    </span>
-      
-    </li><li name="org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph#addGlobalVarNodeL" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="addGlobalVarNodeL(uri:org.sireum.util.ResourceUri,loc:org.sireum.util.ResourceUri,context:org.sireum.jawa.alir.Context):Node"></a>
-      <a id="addGlobalVarNodeL(ResourceUri,ResourceUri,Context):Node"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">addGlobalVarNodeL</span><span class="params">(<span name="uri">uri: <span class="extype" name="org.sireum.util.ResourceUri">ResourceUri</span></span>, <span name="loc">loc: <span class="extype" name="org.sireum.util.ResourceUri">ResourceUri</span></span>, <span name="context">context: <a href="../../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>)</span><span class="result">: <span class="extype" name="org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph.Node">Node</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph@addGlobalVarNodeL(uri:org.sireum.util.ResourceUri,loc:org.sireum.util.ResourceUri,context:org.sireum.jawa.alir.Context):Node" title="Permalink" target="_top">
-        <img src="../../../../../../lib/permalink.png" />
-      </a>
-    </span>
-      
-    </li><li name="org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph#addGlobalVarNodeR" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="addGlobalVarNodeR(uri:org.sireum.util.ResourceUri,loc:org.sireum.util.ResourceUri,context:org.sireum.jawa.alir.Context):Node"></a>
-      <a id="addGlobalVarNodeR(ResourceUri,ResourceUri,Context):Node"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">addGlobalVarNodeR</span><span class="params">(<span name="uri">uri: <span class="extype" name="org.sireum.util.ResourceUri">ResourceUri</span></span>, <span name="loc">loc: <span class="extype" name="org.sireum.util.ResourceUri">ResourceUri</span></span>, <span name="context">context: <a href="../../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>)</span><span class="result">: <span class="extype" name="org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph.Node">Node</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph@addGlobalVarNodeR(uri:org.sireum.util.ResourceUri,loc:org.sireum.util.ResourceUri,context:org.sireum.jawa.alir.Context):Node" title="Permalink" target="_top">
-        <img src="../../../../../../lib/permalink.png" />
-      </a>
-    </span>
-      
-    </li><li name="org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph#addInvokeNode" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="addInvokeNode(uri:org.sireum.util.ResourceUri,loc:org.sireum.util.ResourceUri,context:org.sireum.jawa.alir.Context,pi:org.sireum.jawa.PointI):Node"></a>
-      <a id="addInvokeNode(ResourceUri,ResourceUri,Context,PointI):Node"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">addInvokeNode</span><span class="params">(<span name="uri">uri: <span class="extype" name="org.sireum.util.ResourceUri">ResourceUri</span></span>, <span name="loc">loc: <span class="extype" name="org.sireum.util.ResourceUri">ResourceUri</span></span>, <span name="context">context: <a href="../../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>, <span name="pi">pi: <a href="../../../PointI.html" class="extype" name="org.sireum.jawa.PointI">PointI</a></span>)</span><span class="result">: <span class="extype" name="org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph.Node">Node</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph@addInvokeNode(uri:org.sireum.util.ResourceUri,loc:org.sireum.util.ResourceUri,context:org.sireum.jawa.alir.Context,pi:org.sireum.jawa.PointI):Node" title="Permalink" target="_top">
+      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph@addNode(point:org.sireum.jawa.Point,context:org.sireum.jawa.alir.Context):Node" title="Permalink" target="_top">
         <img src="../../../../../../lib/permalink.png" />
       </a>
     </span>
@@ -490,70 +339,19 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../interProcedural/InterProceduralGraph.html" class="extype" name="org.sireum.jawa.alir.interProcedural.InterProceduralGraph">InterProceduralGraph</a> → AlirEdgeAccesses</dd></dl></div>
-    </li><li name="org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph#addPointNode" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="addPointNode(uri:org.sireum.util.ResourceUri,loc:org.sireum.util.ResourceUri,context:org.sireum.jawa.alir.Context):Node"></a>
-      <a id="addPointNode(ResourceUri,ResourceUri,Context):Node"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">addPointNode</span><span class="params">(<span name="uri">uri: <span class="extype" name="org.sireum.util.ResourceUri">ResourceUri</span></span>, <span name="loc">loc: <span class="extype" name="org.sireum.util.ResourceUri">ResourceUri</span></span>, <span name="context">context: <a href="../../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>)</span><span class="result">: <span class="extype" name="org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph.Node">Node</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph@addPointNode(uri:org.sireum.util.ResourceUri,loc:org.sireum.util.ResourceUri,context:org.sireum.jawa.alir.Context):Node" title="Permalink" target="_top">
-        <img src="../../../../../../lib/permalink.png" />
-      </a>
-    </span>
-      
     </li><li name="org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph#addProcessed" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="addProcessed(jp:org.sireum.jawa.JawaProcedure,c:org.sireum.jawa.alir.Context,ps:Set[org.sireum.jawa.Point]):Unit"></a>
-      <a id="addProcessed(JawaProcedure,Context,Set[Point]):Unit"></a>
+      <a id="addProcessed(jp:org.sireum.jawa.JawaMethod,c:org.sireum.jawa.alir.Context,ps:Set[org.sireum.jawa.Point]):Unit"></a>
+      <a id="addProcessed(JawaMethod,Context,Set[Point]):Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">addProcessed</span><span class="params">(<span name="jp">jp: <a href="../../../JawaProcedure.html" class="extype" name="org.sireum.jawa.JawaProcedure">JawaProcedure</a></span>, <span name="c">c: <a href="../../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>, <span name="ps">ps: <span class="extype" name="scala.Predef.Set">Set</span>[<a href="../../../Point.html" class="extype" name="org.sireum.jawa.Point">Point</a>]</span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">addProcessed</span><span class="params">(<span name="jp">jp: <a href="../../../JawaMethod.html" class="extype" name="org.sireum.jawa.JawaMethod">JawaMethod</a></span>, <span name="c">c: <a href="../../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>, <span name="ps">ps: <span class="extype" name="scala.Predef.Set">Set</span>[<a href="../../../Point.html" class="extype" name="org.sireum.jawa.Point">Point</a>]</span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph@addProcessed(jp:org.sireum.jawa.JawaProcedure,c:org.sireum.jawa.alir.Context,ps:Set[org.sireum.jawa.Point]):Unit" title="Permalink" target="_top">
-        <img src="../../../../../../lib/permalink.png" />
-      </a>
-    </span>
-      
-    </li><li name="org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph#addRecvCallNode" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="addRecvCallNode(uri:org.sireum.util.ResourceUri,loc:org.sireum.util.ResourceUri,context:org.sireum.jawa.alir.Context,pi:org.sireum.jawa.PointI):Node"></a>
-      <a id="addRecvCallNode(ResourceUri,ResourceUri,Context,PointI):Node"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">addRecvCallNode</span><span class="params">(<span name="uri">uri: <span class="extype" name="org.sireum.util.ResourceUri">ResourceUri</span></span>, <span name="loc">loc: <span class="extype" name="org.sireum.util.ResourceUri">ResourceUri</span></span>, <span name="context">context: <a href="../../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>, <span name="pi">pi: <a href="../../../PointI.html" class="extype" name="org.sireum.jawa.PointI">PointI</a></span>)</span><span class="result">: <span class="extype" name="org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph.Node">Node</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph@addRecvCallNode(uri:org.sireum.util.ResourceUri,loc:org.sireum.util.ResourceUri,context:org.sireum.jawa.alir.Context,pi:org.sireum.jawa.PointI):Node" title="Permalink" target="_top">
-        <img src="../../../../../../lib/permalink.png" />
-      </a>
-    </span>
-      
-    </li><li name="org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph#addRecvReturnNode" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="addRecvReturnNode(uri:org.sireum.util.ResourceUri,loc:org.sireum.util.ResourceUri,context:org.sireum.jawa.alir.Context):Node"></a>
-      <a id="addRecvReturnNode(ResourceUri,ResourceUri,Context):Node"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">addRecvReturnNode</span><span class="params">(<span name="uri">uri: <span class="extype" name="org.sireum.util.ResourceUri">ResourceUri</span></span>, <span name="loc">loc: <span class="extype" name="org.sireum.util.ResourceUri">ResourceUri</span></span>, <span name="context">context: <a href="../../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>)</span><span class="result">: <span class="extype" name="org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph.Node">Node</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph@addRecvReturnNode(uri:org.sireum.util.ResourceUri,loc:org.sireum.util.ResourceUri,context:org.sireum.jawa.alir.Context):Node" title="Permalink" target="_top">
+      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph@addProcessed(jp:org.sireum.jawa.JawaMethod,c:org.sireum.jawa.alir.Context,ps:Set[org.sireum.jawa.Point]):Unit" title="Permalink" target="_top">
         <img src="../../../../../../lib/permalink.png" />
       </a>
     </span>
@@ -575,74 +373,6 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="PAGConstraint.html" class="extype" name="org.sireum.jawa.alir.pta.suspark.PAGConstraint">PAGConstraint</a></dd></dl></div>
-    </li><li name="org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph#argCallNodeExists" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="argCallNodeExists(uri:org.sireum.util.ResourceUri,loc:org.sireum.util.ResourceUri,context:org.sireum.jawa.alir.Context):Boolean"></a>
-      <a id="argCallNodeExists(ResourceUri,ResourceUri,Context):Boolean"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">argCallNodeExists</span><span class="params">(<span name="uri">uri: <span class="extype" name="org.sireum.util.ResourceUri">ResourceUri</span></span>, <span name="loc">loc: <span class="extype" name="org.sireum.util.ResourceUri">ResourceUri</span></span>, <span name="context">context: <a href="../../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph@argCallNodeExists(uri:org.sireum.util.ResourceUri,loc:org.sireum.util.ResourceUri,context:org.sireum.jawa.alir.Context):Boolean" title="Permalink" target="_top">
-        <img src="../../../../../../lib/permalink.png" />
-      </a>
-    </span>
-      
-    </li><li name="org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph#argReturnNodeExists" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="argReturnNodeExists(uri:org.sireum.util.ResourceUri,loc:org.sireum.util.ResourceUri,context:org.sireum.jawa.alir.Context):Boolean"></a>
-      <a id="argReturnNodeExists(ResourceUri,ResourceUri,Context):Boolean"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">argReturnNodeExists</span><span class="params">(<span name="uri">uri: <span class="extype" name="org.sireum.util.ResourceUri">ResourceUri</span></span>, <span name="loc">loc: <span class="extype" name="org.sireum.util.ResourceUri">ResourceUri</span></span>, <span name="context">context: <a href="../../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph@argReturnNodeExists(uri:org.sireum.util.ResourceUri,loc:org.sireum.util.ResourceUri,context:org.sireum.jawa.alir.Context):Boolean" title="Permalink" target="_top">
-        <img src="../../../../../../lib/permalink.png" />
-      </a>
-    </span>
-      
-    </li><li name="org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph#arrayNodeLExists" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="arrayNodeLExists(uri:org.sireum.util.ResourceUri,loc:org.sireum.util.ResourceUri,context:org.sireum.jawa.alir.Context,dimensions:Int):Boolean"></a>
-      <a id="arrayNodeLExists(ResourceUri,ResourceUri,Context,Int):Boolean"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">arrayNodeLExists</span><span class="params">(<span name="uri">uri: <span class="extype" name="org.sireum.util.ResourceUri">ResourceUri</span></span>, <span name="loc">loc: <span class="extype" name="org.sireum.util.ResourceUri">ResourceUri</span></span>, <span name="context">context: <a href="../../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>, <span name="dimensions">dimensions: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph@arrayNodeLExists(uri:org.sireum.util.ResourceUri,loc:org.sireum.util.ResourceUri,context:org.sireum.jawa.alir.Context,dimensions:Int):Boolean" title="Permalink" target="_top">
-        <img src="../../../../../../lib/permalink.png" />
-      </a>
-    </span>
-      
-    </li><li name="org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph#arrayNodeRExists" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="arrayNodeRExists(uri:org.sireum.util.ResourceUri,loc:org.sireum.util.ResourceUri,context:org.sireum.jawa.alir.Context,dimensions:Int):Boolean"></a>
-      <a id="arrayNodeRExists(ResourceUri,ResourceUri,Context,Int):Boolean"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">arrayNodeRExists</span><span class="params">(<span name="uri">uri: <span class="extype" name="org.sireum.util.ResourceUri">ResourceUri</span></span>, <span name="loc">loc: <span class="extype" name="org.sireum.util.ResourceUri">ResourceUri</span></span>, <span name="context">context: <a href="../../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>, <span name="dimensions">dimensions: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph@arrayNodeRExists(uri:org.sireum.util.ResourceUri,loc:org.sireum.util.ResourceUri,context:org.sireum.jawa.alir.Context,dimensions:Int):Boolean" title="Permalink" target="_top">
-        <img src="../../../../../../lib/permalink.png" />
-      </a>
-    </span>
-      
     </li><li name="scala.Any#asInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="asInstanceOf[T0]:T0"></a>
       <a id="asInstanceOf[T0]:T0"></a>
@@ -661,18 +391,18 @@
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
     </li><li name="org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph#breakPiEdges" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="breakPiEdges(pi:org.sireum.jawa.PointI,calleeAccessTyp:String,srcContext:org.sireum.jawa.alir.Context):Unit"></a>
-      <a id="breakPiEdges(PointI,String,Context):Unit"></a>
+      <a id="breakPiEdges(pi:org.sireum.jawa.Pointwithorg.sireum.jawa.Invoke,calleeAccessTyp:String,srcContext:org.sireum.jawa.alir.Context):Unit"></a>
+      <a id="breakPiEdges(PointwithInvoke,String,Context):Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">breakPiEdges</span><span class="params">(<span name="pi">pi: <a href="../../../PointI.html" class="extype" name="org.sireum.jawa.PointI">PointI</a></span>, <span name="calleeAccessTyp">calleeAccessTyp: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="srcContext">srcContext: <a href="../../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">breakPiEdges</span><span class="params">(<span name="pi">pi: <a href="../../../Point.html" class="extype" name="org.sireum.jawa.Point">Point</a> with <a href="../../../Invoke.html" class="extype" name="org.sireum.jawa.Invoke">Invoke</a></span>, <span name="calleeAccessTyp">calleeAccessTyp: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="srcContext">srcContext: <a href="../../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph@breakPiEdges(pi:org.sireum.jawa.PointI,calleeAccessTyp:String,srcContext:org.sireum.jawa.alir.Context):Unit" title="Permalink" target="_top">
+      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph@breakPiEdges(pi:org.sireum.jawa.Pointwithorg.sireum.jawa.Invoke,calleeAccessTyp:String,srcContext:org.sireum.jawa.alir.Context):Unit" title="Permalink" target="_top">
         <img src="../../../../../../lib/permalink.png" />
       </a>
     </span>
@@ -734,24 +464,6 @@
       </a>
     </span>
       
-    </li><li name="org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph#collectTrackerNodes" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="collectTrackerNodes(sig:String,pi:org.sireum.jawa.PointI,callerContext:org.sireum.jawa.alir.Context):org.sireum.jawa.alir.objectFlowAnalysis.InvokePointNode[Node]"></a>
-      <a id="collectTrackerNodes(String,PointI,Context):InvokePointNode[Node]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">collectTrackerNodes</span><span class="params">(<span name="sig">sig: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="pi">pi: <a href="../../../PointI.html" class="extype" name="org.sireum.jawa.PointI">PointI</a></span>, <span name="callerContext">callerContext: <a href="../../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>)</span><span class="result">: <a href="../../objectFlowAnalysis/InvokePointNode.html" class="extype" name="org.sireum.jawa.alir.objectFlowAnalysis.InvokePointNode">InvokePointNode</a>[<span class="extype" name="org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph.Node">Node</span>]</span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph@collectTrackerNodes(sig:String,pi:org.sireum.jawa.PointI,callerContext:org.sireum.jawa.alir.Context):org.sireum.jawa.alir.objectFlowAnalysis.InvokePointNode[Node]" title="Permalink" target="_top">
-        <img src="../../../../../../lib/permalink.png" />
-      </a>
-    </span>
-      <p class="shortcomment cmt">combine proc point and relevant node
-</p>
     </li><li name="org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph#combinePags" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="combinePags(pag2:org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph[Node]):org.sireum.util.MList[Node]"></a>
       <a id="combinePags(PointerAssignmentGraph[Node]):MList[Node]"></a>
@@ -770,18 +482,18 @@
     </span>
       <p class="shortcomment cmt">combine two pags into one.</p>
     </li><li name="org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph#constructGraph" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="constructGraph(ap:org.sireum.jawa.JawaProcedure,ps:Set[org.sireum.jawa.Point],callerContext:org.sireum.jawa.alir.Context):Unit"></a>
-      <a id="constructGraph(JawaProcedure,Set[Point],Context):Unit"></a>
+      <a id="constructGraph(ap:org.sireum.jawa.JawaMethod,ps:Set[org.sireum.jawa.Point],callerContext:org.sireum.jawa.alir.Context):Unit"></a>
+      <a id="constructGraph(JawaMethod,Set[Point],Context):Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">constructGraph</span><span class="params">(<span name="ap">ap: <a href="../../../JawaProcedure.html" class="extype" name="org.sireum.jawa.JawaProcedure">JawaProcedure</a></span>, <span name="ps">ps: <span class="extype" name="scala.Predef.Set">Set</span>[<a href="../../../Point.html" class="extype" name="org.sireum.jawa.Point">Point</a>]</span>, <span name="callerContext">callerContext: <a href="../../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">constructGraph</span><span class="params">(<span name="ap">ap: <a href="../../../JawaMethod.html" class="extype" name="org.sireum.jawa.JawaMethod">JawaMethod</a></span>, <span name="ps">ps: <span class="extype" name="scala.Predef.Set">Set</span>[<a href="../../../Point.html" class="extype" name="org.sireum.jawa.Point">Point</a>]</span>, <span name="callerContext">callerContext: <a href="../../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph@constructGraph(ap:org.sireum.jawa.JawaProcedure,ps:Set[org.sireum.jawa.Point],callerContext:org.sireum.jawa.alir.Context):Unit" title="Permalink" target="_top">
+      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph@constructGraph(ap:org.sireum.jawa.JawaMethod,ps:Set[org.sireum.jawa.Point],callerContext:org.sireum.jawa.alir.Context):Unit" title="Permalink" target="_top">
         <img src="../../../../../../lib/permalink.png" />
       </a>
     </span>
@@ -841,6 +553,23 @@ node is added to the worklist.
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../interProcedural/InterProceduralGraph.html" class="extype" name="org.sireum.jawa.alir.interProcedural.InterProceduralGraph">InterProceduralGraph</a></dd></dl></div>
+    </li><li name="org.sireum.jawa.alir.interProcedural.InterProceduralGraph#eIDProvider" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="eIDProvider:org.jgrapht.ext.EdgeNameProvider[InterProceduralGraph.this.Edge]{deffilterLabel(uri:String):String}"></a>
+      <a id="eIDProvider:EdgeNameProvider[Edge]{deffilterLabel(uri:String):String}"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">eIDProvider</span><span class="result">: <span class="extype" name="org.jgrapht.ext.EdgeNameProvider">EdgeNameProvider</span>[<a href="#Edge=org.sireum.alir.AlirEdge[Node]" class="extmbr" name="org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph.Edge">Edge</a>] { def filterLabel(uri: String): String }</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph@eIDProvider:org.jgrapht.ext.EdgeNameProvider[InterProceduralGraph.this.Edge]{deffilterLabel(uri:String):String}" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="../../interProcedural/InterProceduralGraph.html" class="extype" name="org.sireum.jawa.alir.interProcedural.InterProceduralGraph">InterProceduralGraph</a></dd></dl></div>
     </li><li name="org.sireum.alir.AlirSuccPredAccesses#edgeSource" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="edgeSource(edge:org.sireum.alir.AlirEdge[Node]):Node"></a>
       <a id="edgeSource(AlirEdge[Node]):Node"></a>
@@ -892,23 +621,6 @@ node is added to the worklist.
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AlirGraph</dd></dl></div>
-    </li><li name="org.sireum.jawa.alir.interProcedural.InterProceduralGraph#elabelProvider" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="elabelProvider:org.jgrapht.ext.EdgeNameProvider[InterProceduralGraph.this.Edge]{deffilterLabel(uri:String):String}"></a>
-      <a id="elabelProvider:EdgeNameProvider[Edge]{deffilterLabel(uri:String):String}"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">val</span>
-      </span>
-      <span class="symbol">
-        <span class="name">elabelProvider</span><span class="result">: <span class="extype" name="org.jgrapht.ext.EdgeNameProvider">EdgeNameProvider</span>[<a href="#Edge=org.sireum.alir.AlirEdge[Node]" class="extmbr" name="org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph.Edge">Edge</a>] { def filterLabel(uri: String): String }</span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph@elabelProvider:org.jgrapht.ext.EdgeNameProvider[InterProceduralGraph.this.Edge]{deffilterLabel(uri:String):String}" title="Permalink" target="_top">
-        <img src="../../../../../../lib/permalink.png" />
-      </a>
-    </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="../../interProcedural/InterProceduralGraph.html" class="extype" name="org.sireum.jawa.alir.interProcedural.InterProceduralGraph">InterProceduralGraph</a></dd></dl></div>
     </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="eq(x$1:AnyRef):Boolean"></a>
       <a id="eq(AnyRef):Boolean"></a>
@@ -944,69 +656,18 @@ node is added to the worklist.
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph#extendGraph" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="extendGraph(met:org.sireum.jawa.PointProc,pi:org.sireum.jawa.PointI,srcContext:org.sireum.jawa.alir.Context):Any"></a>
-      <a id="extendGraph(PointProc,PointI,Context):Any"></a>
+      <a id="extendGraph(met:org.sireum.jawa.Pointwithorg.sireum.jawa.Method,pi:org.sireum.jawa.Pointwithorg.sireum.jawa.Invoke,srcContext:org.sireum.jawa.alir.Context):Any"></a>
+      <a id="extendGraph(PointwithMethod,PointwithInvoke,Context):Any"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">extendGraph</span><span class="params">(<span name="met">met: <a href="../../../PointProc.html" class="extype" name="org.sireum.jawa.PointProc">PointProc</a></span>, <span name="pi">pi: <a href="../../../PointI.html" class="extype" name="org.sireum.jawa.PointI">PointI</a></span>, <span name="srcContext">srcContext: <a href="../../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>)</span><span class="result">: <span class="extype" name="scala.Any">Any</span></span>
+        <span class="name">extendGraph</span><span class="params">(<span name="met">met: <a href="../../../Point.html" class="extype" name="org.sireum.jawa.Point">Point</a> with <a href="../../../Method.html" class="extype" name="org.sireum.jawa.Method">Method</a></span>, <span name="pi">pi: <a href="../../../Point.html" class="extype" name="org.sireum.jawa.Point">Point</a> with <a href="../../../Invoke.html" class="extype" name="org.sireum.jawa.Invoke">Invoke</a></span>, <span name="srcContext">srcContext: <a href="../../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>)</span><span class="result">: <span class="extype" name="scala.Any">Any</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph@extendGraph(met:org.sireum.jawa.PointProc,pi:org.sireum.jawa.PointI,srcContext:org.sireum.jawa.alir.Context):Any" title="Permalink" target="_top">
-        <img src="../../../../../../lib/permalink.png" />
-      </a>
-    </span>
-      
-    </li><li name="org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph#fieldBaseNodeLExists" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="fieldBaseNodeLExists(uri:org.sireum.util.ResourceUri,loc:org.sireum.util.ResourceUri,context:org.sireum.jawa.alir.Context):Boolean"></a>
-      <a id="fieldBaseNodeLExists(ResourceUri,ResourceUri,Context):Boolean"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">fieldBaseNodeLExists</span><span class="params">(<span name="uri">uri: <span class="extype" name="org.sireum.util.ResourceUri">ResourceUri</span></span>, <span name="loc">loc: <span class="extype" name="org.sireum.util.ResourceUri">ResourceUri</span></span>, <span name="context">context: <a href="../../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph@fieldBaseNodeLExists(uri:org.sireum.util.ResourceUri,loc:org.sireum.util.ResourceUri,context:org.sireum.jawa.alir.Context):Boolean" title="Permalink" target="_top">
-        <img src="../../../../../../lib/permalink.png" />
-      </a>
-    </span>
-      
-    </li><li name="org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph#fieldBaseNodeRExists" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="fieldBaseNodeRExists(uri:org.sireum.util.ResourceUri,loc:org.sireum.util.ResourceUri,context:org.sireum.jawa.alir.Context):Boolean"></a>
-      <a id="fieldBaseNodeRExists(ResourceUri,ResourceUri,Context):Boolean"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">fieldBaseNodeRExists</span><span class="params">(<span name="uri">uri: <span class="extype" name="org.sireum.util.ResourceUri">ResourceUri</span></span>, <span name="loc">loc: <span class="extype" name="org.sireum.util.ResourceUri">ResourceUri</span></span>, <span name="context">context: <a href="../../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph@fieldBaseNodeRExists(uri:org.sireum.util.ResourceUri,loc:org.sireum.util.ResourceUri,context:org.sireum.jawa.alir.Context):Boolean" title="Permalink" target="_top">
-        <img src="../../../../../../lib/permalink.png" />
-      </a>
-    </span>
-      
-    </li><li name="org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph#fieldNodeExists" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="fieldNodeExists(baseName:org.sireum.util.ResourceUri,fieldName:org.sireum.util.ResourceUri,loc:org.sireum.util.ResourceUri,context:org.sireum.jawa.alir.Context):Boolean"></a>
-      <a id="fieldNodeExists(ResourceUri,ResourceUri,ResourceUri,Context):Boolean"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">fieldNodeExists</span><span class="params">(<span name="baseName">baseName: <span class="extype" name="org.sireum.util.ResourceUri">ResourceUri</span></span>, <span name="fieldName">fieldName: <span class="extype" name="org.sireum.util.ResourceUri">ResourceUri</span></span>, <span name="loc">loc: <span class="extype" name="org.sireum.util.ResourceUri">ResourceUri</span></span>, <span name="context">context: <a href="../../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph@fieldNodeExists(baseName:org.sireum.util.ResourceUri,fieldName:org.sireum.util.ResourceUri,loc:org.sireum.util.ResourceUri,context:org.sireum.jawa.alir.Context):Boolean" title="Permalink" target="_top">
+      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph@extendGraph(met:org.sireum.jawa.Pointwithorg.sireum.jawa.Method,pi:org.sireum.jawa.Pointwithorg.sireum.jawa.Invoke,srcContext:org.sireum.jawa.alir.Context):Any" title="Permalink" target="_top">
         <img src="../../../../../../lib/permalink.png" />
       </a>
     </span>
@@ -1051,74 +712,6 @@ node is added to the worklist.
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../interProcedural/InterProceduralGraph.html" class="extype" name="org.sireum.jawa.alir.interProcedural.InterProceduralGraph">InterProceduralGraph</a></dd></dl></div>
-    </li><li name="org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph#getArgCallNode" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="getArgCallNode(uri:org.sireum.util.ResourceUri,loc:org.sireum.util.ResourceUri,context:org.sireum.jawa.alir.Context):Node"></a>
-      <a id="getArgCallNode(ResourceUri,ResourceUri,Context):Node"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">getArgCallNode</span><span class="params">(<span name="uri">uri: <span class="extype" name="org.sireum.util.ResourceUri">ResourceUri</span></span>, <span name="loc">loc: <span class="extype" name="org.sireum.util.ResourceUri">ResourceUri</span></span>, <span name="context">context: <a href="../../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>)</span><span class="result">: <span class="extype" name="org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph.Node">Node</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph@getArgCallNode(uri:org.sireum.util.ResourceUri,loc:org.sireum.util.ResourceUri,context:org.sireum.jawa.alir.Context):Node" title="Permalink" target="_top">
-        <img src="../../../../../../lib/permalink.png" />
-      </a>
-    </span>
-      
-    </li><li name="org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph#getArgReturnNode" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="getArgReturnNode(uri:org.sireum.util.ResourceUri,loc:org.sireum.util.ResourceUri,context:org.sireum.jawa.alir.Context):Node"></a>
-      <a id="getArgReturnNode(ResourceUri,ResourceUri,Context):Node"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">getArgReturnNode</span><span class="params">(<span name="uri">uri: <span class="extype" name="org.sireum.util.ResourceUri">ResourceUri</span></span>, <span name="loc">loc: <span class="extype" name="org.sireum.util.ResourceUri">ResourceUri</span></span>, <span name="context">context: <a href="../../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>)</span><span class="result">: <span class="extype" name="org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph.Node">Node</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph@getArgReturnNode(uri:org.sireum.util.ResourceUri,loc:org.sireum.util.ResourceUri,context:org.sireum.jawa.alir.Context):Node" title="Permalink" target="_top">
-        <img src="../../../../../../lib/permalink.png" />
-      </a>
-    </span>
-      
-    </li><li name="org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph#getArrayNodeL" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="getArrayNodeL(uri:org.sireum.util.ResourceUri,loc:org.sireum.util.ResourceUri,context:org.sireum.jawa.alir.Context,dimensions:Int):Node"></a>
-      <a id="getArrayNodeL(ResourceUri,ResourceUri,Context,Int):Node"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">getArrayNodeL</span><span class="params">(<span name="uri">uri: <span class="extype" name="org.sireum.util.ResourceUri">ResourceUri</span></span>, <span name="loc">loc: <span class="extype" name="org.sireum.util.ResourceUri">ResourceUri</span></span>, <span name="context">context: <a href="../../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>, <span name="dimensions">dimensions: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph.Node">Node</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph@getArrayNodeL(uri:org.sireum.util.ResourceUri,loc:org.sireum.util.ResourceUri,context:org.sireum.jawa.alir.Context,dimensions:Int):Node" title="Permalink" target="_top">
-        <img src="../../../../../../lib/permalink.png" />
-      </a>
-    </span>
-      
-    </li><li name="org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph#getArrayNodeR" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="getArrayNodeR(uri:org.sireum.util.ResourceUri,loc:org.sireum.util.ResourceUri,context:org.sireum.jawa.alir.Context,dimensions:Int):Node"></a>
-      <a id="getArrayNodeR(ResourceUri,ResourceUri,Context,Int):Node"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">getArrayNodeR</span><span class="params">(<span name="uri">uri: <span class="extype" name="org.sireum.util.ResourceUri">ResourceUri</span></span>, <span name="loc">loc: <span class="extype" name="org.sireum.util.ResourceUri">ResourceUri</span></span>, <span name="context">context: <a href="../../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>, <span name="dimensions">dimensions: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph.Node">Node</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph@getArrayNodeR(uri:org.sireum.util.ResourceUri,loc:org.sireum.util.ResourceUri,context:org.sireum.jawa.alir.Context,dimensions:Int):Node" title="Permalink" target="_top">
-        <img src="../../../../../../lib/permalink.png" />
-      </a>
-    </span>
-      
     </li><li name="scala.AnyRef#getClass" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="getClass():Class[_]"></a>
       <a id="getClass():Class[_]"></a>
@@ -1137,18 +730,18 @@ node is added to the worklist.
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph#getDirectCallee" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="getDirectCallee(pi:org.sireum.jawa.PointI):org.sireum.jawa.JawaProcedure"></a>
-      <a id="getDirectCallee(PointI):JawaProcedure"></a>
+      <a id="getDirectCallee(pi:org.sireum.jawa.Pointwithorg.sireum.jawa.Invoke):org.sireum.jawa.JawaMethod"></a>
+      <a id="getDirectCallee(PointwithInvoke):JawaMethod"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">getDirectCallee</span><span class="params">(<span name="pi">pi: <a href="../../../PointI.html" class="extype" name="org.sireum.jawa.PointI">PointI</a></span>)</span><span class="result">: <a href="../../../JawaProcedure.html" class="extype" name="org.sireum.jawa.JawaProcedure">JawaProcedure</a></span>
+        <span class="name">getDirectCallee</span><span class="params">(<span name="pi">pi: <a href="../../../Point.html" class="extype" name="org.sireum.jawa.Point">Point</a> with <a href="../../../Invoke.html" class="extype" name="org.sireum.jawa.Invoke">Invoke</a></span>)</span><span class="result">: <a href="../../../JawaMethod.html" class="extype" name="org.sireum.jawa.JawaMethod">JawaMethod</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph@getDirectCallee(pi:org.sireum.jawa.PointI):org.sireum.jawa.JawaProcedure" title="Permalink" target="_top">
+      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph@getDirectCallee(pi:org.sireum.jawa.Pointwithorg.sireum.jawa.Invoke):org.sireum.jawa.JawaMethod" title="Permalink" target="_top">
         <img src="../../../../../../lib/permalink.png" />
       </a>
     </span>
@@ -1187,110 +780,8 @@ node is added to the worklist.
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AlirGraph</dd></dl></div>
-    </li><li name="org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph#getFieldBaseNodeL" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="getFieldBaseNodeL(uri:org.sireum.util.ResourceUri,loc:org.sireum.util.ResourceUri,context:org.sireum.jawa.alir.Context):Node"></a>
-      <a id="getFieldBaseNodeL(ResourceUri,ResourceUri,Context):Node"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">getFieldBaseNodeL</span><span class="params">(<span name="uri">uri: <span class="extype" name="org.sireum.util.ResourceUri">ResourceUri</span></span>, <span name="loc">loc: <span class="extype" name="org.sireum.util.ResourceUri">ResourceUri</span></span>, <span name="context">context: <a href="../../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>)</span><span class="result">: <span class="extype" name="org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph.Node">Node</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph@getFieldBaseNodeL(uri:org.sireum.util.ResourceUri,loc:org.sireum.util.ResourceUri,context:org.sireum.jawa.alir.Context):Node" title="Permalink" target="_top">
-        <img src="../../../../../../lib/permalink.png" />
-      </a>
-    </span>
-      
-    </li><li name="org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph#getFieldBaseNodeR" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="getFieldBaseNodeR(uri:org.sireum.util.ResourceUri,loc:org.sireum.util.ResourceUri,context:org.sireum.jawa.alir.Context):Node"></a>
-      <a id="getFieldBaseNodeR(ResourceUri,ResourceUri,Context):Node"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">getFieldBaseNodeR</span><span class="params">(<span name="uri">uri: <span class="extype" name="org.sireum.util.ResourceUri">ResourceUri</span></span>, <span name="loc">loc: <span class="extype" name="org.sireum.util.ResourceUri">ResourceUri</span></span>, <span name="context">context: <a href="../../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>)</span><span class="result">: <span class="extype" name="org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph.Node">Node</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph@getFieldBaseNodeR(uri:org.sireum.util.ResourceUri,loc:org.sireum.util.ResourceUri,context:org.sireum.jawa.alir.Context):Node" title="Permalink" target="_top">
-        <img src="../../../../../../lib/permalink.png" />
-      </a>
-    </span>
-      
-    </li><li name="org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph#getFieldNode" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="getFieldNode(baseName:org.sireum.util.ResourceUri,fieldName:org.sireum.util.ResourceUri,loc:org.sireum.util.ResourceUri,context:org.sireum.jawa.alir.Context):Node"></a>
-      <a id="getFieldNode(ResourceUri,ResourceUri,ResourceUri,Context):Node"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">getFieldNode</span><span class="params">(<span name="baseName">baseName: <span class="extype" name="org.sireum.util.ResourceUri">ResourceUri</span></span>, <span name="fieldName">fieldName: <span class="extype" name="org.sireum.util.ResourceUri">ResourceUri</span></span>, <span name="loc">loc: <span class="extype" name="org.sireum.util.ResourceUri">ResourceUri</span></span>, <span name="context">context: <a href="../../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>)</span><span class="result">: <span class="extype" name="org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph.Node">Node</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph@getFieldNode(baseName:org.sireum.util.ResourceUri,fieldName:org.sireum.util.ResourceUri,loc:org.sireum.util.ResourceUri,context:org.sireum.jawa.alir.Context):Node" title="Permalink" target="_top">
-        <img src="../../../../../../lib/permalink.png" />
-      </a>
-    </span>
-      
-    </li><li name="org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph#getGlobalVarNodeL" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="getGlobalVarNodeL(uri:org.sireum.util.ResourceUri,loc:org.sireum.util.ResourceUri,context:org.sireum.jawa.alir.Context):Node"></a>
-      <a id="getGlobalVarNodeL(ResourceUri,ResourceUri,Context):Node"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">getGlobalVarNodeL</span><span class="params">(<span name="uri">uri: <span class="extype" name="org.sireum.util.ResourceUri">ResourceUri</span></span>, <span name="loc">loc: <span class="extype" name="org.sireum.util.ResourceUri">ResourceUri</span></span>, <span name="context">context: <a href="../../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>)</span><span class="result">: <span class="extype" name="org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph.Node">Node</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph@getGlobalVarNodeL(uri:org.sireum.util.ResourceUri,loc:org.sireum.util.ResourceUri,context:org.sireum.jawa.alir.Context):Node" title="Permalink" target="_top">
-        <img src="../../../../../../lib/permalink.png" />
-      </a>
-    </span>
-      
-    </li><li name="org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph#getGlobalVarNodeR" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="getGlobalVarNodeR(uri:org.sireum.util.ResourceUri,loc:org.sireum.util.ResourceUri,context:org.sireum.jawa.alir.Context):Node"></a>
-      <a id="getGlobalVarNodeR(ResourceUri,ResourceUri,Context):Node"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">getGlobalVarNodeR</span><span class="params">(<span name="uri">uri: <span class="extype" name="org.sireum.util.ResourceUri">ResourceUri</span></span>, <span name="loc">loc: <span class="extype" name="org.sireum.util.ResourceUri">ResourceUri</span></span>, <span name="context">context: <a href="../../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>)</span><span class="result">: <span class="extype" name="org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph.Node">Node</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph@getGlobalVarNodeR(uri:org.sireum.util.ResourceUri,loc:org.sireum.util.ResourceUri,context:org.sireum.jawa.alir.Context):Node" title="Permalink" target="_top">
-        <img src="../../../../../../lib/permalink.png" />
-      </a>
-    </span>
-      
-    </li><li name="org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph#getInvokeNode" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="getInvokeNode(uri:org.sireum.util.ResourceUri,loc:org.sireum.util.ResourceUri,context:org.sireum.jawa.alir.Context,pi:org.sireum.jawa.PointI):Node"></a>
-      <a id="getInvokeNode(ResourceUri,ResourceUri,Context,PointI):Node"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">getInvokeNode</span><span class="params">(<span name="uri">uri: <span class="extype" name="org.sireum.util.ResourceUri">ResourceUri</span></span>, <span name="loc">loc: <span class="extype" name="org.sireum.util.ResourceUri">ResourceUri</span></span>, <span name="context">context: <a href="../../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>, <span name="pi">pi: <a href="../../../PointI.html" class="extype" name="org.sireum.jawa.PointI">PointI</a></span>)</span><span class="result">: <span class="extype" name="org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph.Node">Node</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph@getInvokeNode(uri:org.sireum.util.ResourceUri,loc:org.sireum.util.ResourceUri,context:org.sireum.jawa.alir.Context,pi:org.sireum.jawa.PointI):Node" title="Permalink" target="_top">
-        <img src="../../../../../../lib/permalink.png" />
-      </a>
-    </span>
-      
     </li><li name="org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph#getNode" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="getNode(p:org.sireum.jawa.Point,context:org.sireum.jawa.alir.Context):Node"></a>
+      <a id="getNode(point:org.sireum.jawa.Point,context:org.sireum.jawa.alir.Context):Node"></a>
       <a id="getNode(Point,Context):Node"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -1298,10 +789,10 @@ node is added to the worklist.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">getNode</span><span class="params">(<span name="p">p: <a href="../../../Point.html" class="extype" name="org.sireum.jawa.Point">Point</a></span>, <span name="context">context: <a href="../../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>)</span><span class="result">: <span class="extype" name="org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph.Node">Node</span></span>
+        <span class="name">getNode</span><span class="params">(<span name="point">point: <a href="../../../Point.html" class="extype" name="org.sireum.jawa.Point">Point</a></span>, <span name="context">context: <a href="../../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>)</span><span class="result">: <span class="extype" name="org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph.Node">Node</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph@getNode(p:org.sireum.jawa.Point,context:org.sireum.jawa.alir.Context):Node" title="Permalink" target="_top">
+      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph@getNode(point:org.sireum.jawa.Point,context:org.sireum.jawa.alir.Context):Node" title="Permalink" target="_top">
         <img src="../../../../../../lib/permalink.png" />
       </a>
     </span>
@@ -1408,172 +899,87 @@ node is added to the worklist.
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="PAGConstraint.html" class="extype" name="org.sireum.jawa.alir.pta.suspark.PAGConstraint">PAGConstraint</a></dd></dl></div>
-    </li><li name="org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph#getPointNode" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="getPointNode(uri:org.sireum.util.ResourceUri,loc:org.sireum.util.ResourceUri,context:org.sireum.jawa.alir.Context):Node"></a>
-      <a id="getPointNode(ResourceUri,ResourceUri,Context):Node"></a>
+    </li><li name="org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph#getPointMethod" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="getPointMethod(proc:org.sireum.jawa.JawaMethod,callerContext:org.sireum.jawa.alir.Context):org.sireum.jawa.Pointwithorg.sireum.jawa.Method"></a>
+      <a id="getPointMethod(JawaMethod,Context):PointwithMethod"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">getPointNode</span><span class="params">(<span name="uri">uri: <span class="extype" name="org.sireum.util.ResourceUri">ResourceUri</span></span>, <span name="loc">loc: <span class="extype" name="org.sireum.util.ResourceUri">ResourceUri</span></span>, <span name="context">context: <a href="../../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>)</span><span class="result">: <span class="extype" name="org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph.Node">Node</span></span>
+        <span class="name">getPointMethod</span><span class="params">(<span name="proc">proc: <a href="../../../JawaMethod.html" class="extype" name="org.sireum.jawa.JawaMethod">JawaMethod</a></span>, <span name="callerContext">callerContext: <a href="../../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>)</span><span class="result">: <a href="../../../Point.html" class="extype" name="org.sireum.jawa.Point">Point</a> with <a href="../../../Method.html" class="extype" name="org.sireum.jawa.Method">Method</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph@getPointNode(uri:org.sireum.util.ResourceUri,loc:org.sireum.util.ResourceUri,context:org.sireum.jawa.alir.Context):Node" title="Permalink" target="_top">
-        <img src="../../../../../../lib/permalink.png" />
-      </a>
-    </span>
-      
-    </li><li name="org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph#getPointProc" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="getPointProc(proc:org.sireum.jawa.JawaProcedure,callerContext:org.sireum.jawa.alir.Context):org.sireum.jawa.PointProc"></a>
-      <a id="getPointProc(JawaProcedure,Context):PointProc"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">getPointProc</span><span class="params">(<span name="proc">proc: <a href="../../../JawaProcedure.html" class="extype" name="org.sireum.jawa.JawaProcedure">JawaProcedure</a></span>, <span name="callerContext">callerContext: <a href="../../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>)</span><span class="result">: <a href="../../../PointProc.html" class="extype" name="org.sireum.jawa.PointProc">PointProc</a></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph@getPointProc(proc:org.sireum.jawa.JawaProcedure,callerContext:org.sireum.jawa.alir.Context):org.sireum.jawa.PointProc" title="Permalink" target="_top">
+      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph@getPointMethod(proc:org.sireum.jawa.JawaMethod,callerContext:org.sireum.jawa.alir.Context):org.sireum.jawa.Pointwithorg.sireum.jawa.Method" title="Permalink" target="_top">
         <img src="../../../../../../lib/permalink.png" />
       </a>
     </span>
       
     </li><li name="org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph#getProcessed" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="getProcessed:org.sireum.util.MMap[(org.sireum.jawa.JawaProcedure,org.sireum.jawa.alir.Context),org.sireum.jawa.PointProc]"></a>
-      <a id="getProcessed:MMap[(JawaProcedure,Context),PointProc]"></a>
+      <a id="getProcessed:org.sireum.util.MMap[(org.sireum.jawa.JawaMethod,org.sireum.jawa.alir.Context),org.sireum.jawa.Pointwithorg.sireum.jawa.Method]"></a>
+      <a id="getProcessed:MMap[(JawaMethod,Context),PointwithMethod]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">getProcessed</span><span class="result">: <span class="extype" name="org.sireum.util.MMap">MMap</span>[(<a href="../../../JawaProcedure.html" class="extype" name="org.sireum.jawa.JawaProcedure">JawaProcedure</a>, <a href="../../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a>), <a href="../../../PointProc.html" class="extype" name="org.sireum.jawa.PointProc">PointProc</a>]</span>
+        <span class="name">getProcessed</span><span class="result">: <span class="extype" name="org.sireum.util.MMap">MMap</span>[(<a href="../../../JawaMethod.html" class="extype" name="org.sireum.jawa.JawaMethod">JawaMethod</a>, <a href="../../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a>), <a href="../../../Point.html" class="extype" name="org.sireum.jawa.Point">Point</a> with <a href="../../../Method.html" class="extype" name="org.sireum.jawa.Method">Method</a>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph@getProcessed:org.sireum.util.MMap[(org.sireum.jawa.JawaProcedure,org.sireum.jawa.alir.Context),org.sireum.jawa.PointProc]" title="Permalink" target="_top">
-        <img src="../../../../../../lib/permalink.png" />
-      </a>
-    </span>
-      
-    </li><li name="org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph#getRecvCallNode" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="getRecvCallNode(uri:org.sireum.util.ResourceUri,loc:org.sireum.util.ResourceUri,context:org.sireum.jawa.alir.Context,pi:org.sireum.jawa.PointI):Node"></a>
-      <a id="getRecvCallNode(ResourceUri,ResourceUri,Context,PointI):Node"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">getRecvCallNode</span><span class="params">(<span name="uri">uri: <span class="extype" name="org.sireum.util.ResourceUri">ResourceUri</span></span>, <span name="loc">loc: <span class="extype" name="org.sireum.util.ResourceUri">ResourceUri</span></span>, <span name="context">context: <a href="../../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>, <span name="pi">pi: <a href="../../../PointI.html" class="extype" name="org.sireum.jawa.PointI">PointI</a></span>)</span><span class="result">: <span class="extype" name="org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph.Node">Node</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph@getRecvCallNode(uri:org.sireum.util.ResourceUri,loc:org.sireum.util.ResourceUri,context:org.sireum.jawa.alir.Context,pi:org.sireum.jawa.PointI):Node" title="Permalink" target="_top">
-        <img src="../../../../../../lib/permalink.png" />
-      </a>
-    </span>
-      
-    </li><li name="org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph#getRecvReturnNode" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="getRecvReturnNode(uri:org.sireum.util.ResourceUri,loc:org.sireum.util.ResourceUri,context:org.sireum.jawa.alir.Context):Node"></a>
-      <a id="getRecvReturnNode(ResourceUri,ResourceUri,Context):Node"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">getRecvReturnNode</span><span class="params">(<span name="uri">uri: <span class="extype" name="org.sireum.util.ResourceUri">ResourceUri</span></span>, <span name="loc">loc: <span class="extype" name="org.sireum.util.ResourceUri">ResourceUri</span></span>, <span name="context">context: <a href="../../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>)</span><span class="result">: <span class="extype" name="org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph.Node">Node</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph@getRecvReturnNode(uri:org.sireum.util.ResourceUri,loc:org.sireum.util.ResourceUri,context:org.sireum.jawa.alir.Context):Node" title="Permalink" target="_top">
+      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph@getProcessed:org.sireum.util.MMap[(org.sireum.jawa.JawaMethod,org.sireum.jawa.alir.Context),org.sireum.jawa.Pointwithorg.sireum.jawa.Method]" title="Permalink" target="_top">
         <img src="../../../../../../lib/permalink.png" />
       </a>
     </span>
       
     </li><li name="org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph#getStaticCallee" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="getStaticCallee(pi:org.sireum.jawa.PointI):org.sireum.jawa.JawaProcedure"></a>
-      <a id="getStaticCallee(PointI):JawaProcedure"></a>
+      <a id="getStaticCallee(pi:org.sireum.jawa.Pointwithorg.sireum.jawa.Invoke):org.sireum.jawa.JawaMethod"></a>
+      <a id="getStaticCallee(PointwithInvoke):JawaMethod"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">getStaticCallee</span><span class="params">(<span name="pi">pi: <a href="../../../PointI.html" class="extype" name="org.sireum.jawa.PointI">PointI</a></span>)</span><span class="result">: <a href="../../../JawaProcedure.html" class="extype" name="org.sireum.jawa.JawaProcedure">JawaProcedure</a></span>
+        <span class="name">getStaticCallee</span><span class="params">(<span name="pi">pi: <a href="../../../Point.html" class="extype" name="org.sireum.jawa.Point">Point</a> with <a href="../../../Invoke.html" class="extype" name="org.sireum.jawa.Invoke">Invoke</a></span>)</span><span class="result">: <a href="../../../JawaMethod.html" class="extype" name="org.sireum.jawa.JawaMethod">JawaMethod</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph@getStaticCallee(pi:org.sireum.jawa.PointI):org.sireum.jawa.JawaProcedure" title="Permalink" target="_top">
+      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph@getStaticCallee(pi:org.sireum.jawa.Pointwithorg.sireum.jawa.Invoke):org.sireum.jawa.JawaMethod" title="Permalink" target="_top">
         <img src="../../../../../../lib/permalink.png" />
       </a>
     </span>
       
     </li><li name="org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph#getSuperCalleeSet" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="getSuperCalleeSet(diff:org.sireum.util.MSet[org.sireum.jawa.alir.pta.PTAInstance],pi:org.sireum.jawa.PointI):org.sireum.util.MSet[org.sireum.jawa.JawaProcedure]"></a>
-      <a id="getSuperCalleeSet(MSet[PTAInstance],PointI):MSet[JawaProcedure]"></a>
+      <a id="getSuperCalleeSet(diff:org.sireum.util.ISet[org.sireum.jawa.alir.pta.Instance],pi:org.sireum.jawa.Pointwithorg.sireum.jawa.Invoke):org.sireum.util.ISet[org.sireum.jawa.JawaMethod]"></a>
+      <a id="getSuperCalleeSet(ISet[Instance],PointwithInvoke):ISet[JawaMethod]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">getSuperCalleeSet</span><span class="params">(<span name="diff">diff: <span class="extype" name="org.sireum.util.MSet">MSet</span>[<a href="../PTAInstance.html" class="extype" name="org.sireum.jawa.alir.pta.PTAInstance">PTAInstance</a>]</span>, <span name="pi">pi: <a href="../../../PointI.html" class="extype" name="org.sireum.jawa.PointI">PointI</a></span>)</span><span class="result">: <span class="extype" name="org.sireum.util.MSet">MSet</span>[<a href="../../../JawaProcedure.html" class="extype" name="org.sireum.jawa.JawaProcedure">JawaProcedure</a>]</span>
+        <span class="name">getSuperCalleeSet</span><span class="params">(<span name="diff">diff: <span class="extype" name="org.sireum.util.ISet">ISet</span>[<a href="../Instance.html" class="extype" name="org.sireum.jawa.alir.pta.Instance">Instance</a>]</span>, <span name="pi">pi: <a href="../../../Point.html" class="extype" name="org.sireum.jawa.Point">Point</a> with <a href="../../../Invoke.html" class="extype" name="org.sireum.jawa.Invoke">Invoke</a></span>)</span><span class="result">: <span class="extype" name="org.sireum.util.ISet">ISet</span>[<a href="../../../JawaMethod.html" class="extype" name="org.sireum.jawa.JawaMethod">JawaMethod</a>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph@getSuperCalleeSet(diff:org.sireum.util.MSet[org.sireum.jawa.alir.pta.PTAInstance],pi:org.sireum.jawa.PointI):org.sireum.util.MSet[org.sireum.jawa.JawaProcedure]" title="Permalink" target="_top">
+      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph@getSuperCalleeSet(diff:org.sireum.util.ISet[org.sireum.jawa.alir.pta.Instance],pi:org.sireum.jawa.Pointwithorg.sireum.jawa.Invoke):org.sireum.util.ISet[org.sireum.jawa.JawaMethod]" title="Permalink" target="_top">
         <img src="../../../../../../lib/permalink.png" />
       </a>
     </span>
       
     </li><li name="org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph#getVirtualCalleeSet" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="getVirtualCalleeSet(diff:org.sireum.util.MSet[org.sireum.jawa.alir.pta.PTAInstance],pi:org.sireum.jawa.PointI):org.sireum.util.MSet[org.sireum.jawa.JawaProcedure]"></a>
-      <a id="getVirtualCalleeSet(MSet[PTAInstance],PointI):MSet[JawaProcedure]"></a>
+      <a id="getVirtualCalleeSet(diff:org.sireum.util.ISet[org.sireum.jawa.alir.pta.Instance],pi:org.sireum.jawa.Pointwithorg.sireum.jawa.Invoke):org.sireum.util.ISet[org.sireum.jawa.JawaMethod]"></a>
+      <a id="getVirtualCalleeSet(ISet[Instance],PointwithInvoke):ISet[JawaMethod]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">getVirtualCalleeSet</span><span class="params">(<span name="diff">diff: <span class="extype" name="org.sireum.util.MSet">MSet</span>[<a href="../PTAInstance.html" class="extype" name="org.sireum.jawa.alir.pta.PTAInstance">PTAInstance</a>]</span>, <span name="pi">pi: <a href="../../../PointI.html" class="extype" name="org.sireum.jawa.PointI">PointI</a></span>)</span><span class="result">: <span class="extype" name="org.sireum.util.MSet">MSet</span>[<a href="../../../JawaProcedure.html" class="extype" name="org.sireum.jawa.JawaProcedure">JawaProcedure</a>]</span>
+        <span class="name">getVirtualCalleeSet</span><span class="params">(<span name="diff">diff: <span class="extype" name="org.sireum.util.ISet">ISet</span>[<a href="../Instance.html" class="extype" name="org.sireum.jawa.alir.pta.Instance">Instance</a>]</span>, <span name="pi">pi: <a href="../../../Point.html" class="extype" name="org.sireum.jawa.Point">Point</a> with <a href="../../../Invoke.html" class="extype" name="org.sireum.jawa.Invoke">Invoke</a></span>)</span><span class="result">: <span class="extype" name="org.sireum.util.ISet">ISet</span>[<a href="../../../JawaMethod.html" class="extype" name="org.sireum.jawa.JawaMethod">JawaMethod</a>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph@getVirtualCalleeSet(diff:org.sireum.util.MSet[org.sireum.jawa.alir.pta.PTAInstance],pi:org.sireum.jawa.PointI):org.sireum.util.MSet[org.sireum.jawa.JawaProcedure]" title="Permalink" target="_top">
-        <img src="../../../../../../lib/permalink.png" />
-      </a>
-    </span>
-      
-    </li><li name="org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph#globalVarNodeLExists" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="globalVarNodeLExists(uri:org.sireum.util.ResourceUri,loc:org.sireum.util.ResourceUri,context:org.sireum.jawa.alir.Context):Boolean"></a>
-      <a id="globalVarNodeLExists(ResourceUri,ResourceUri,Context):Boolean"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">globalVarNodeLExists</span><span class="params">(<span name="uri">uri: <span class="extype" name="org.sireum.util.ResourceUri">ResourceUri</span></span>, <span name="loc">loc: <span class="extype" name="org.sireum.util.ResourceUri">ResourceUri</span></span>, <span name="context">context: <a href="../../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph@globalVarNodeLExists(uri:org.sireum.util.ResourceUri,loc:org.sireum.util.ResourceUri,context:org.sireum.jawa.alir.Context):Boolean" title="Permalink" target="_top">
-        <img src="../../../../../../lib/permalink.png" />
-      </a>
-    </span>
-      
-    </li><li name="org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph#globalVarNodeRExists" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="globalVarNodeRExists(uri:org.sireum.util.ResourceUri,loc:org.sireum.util.ResourceUri,context:org.sireum.jawa.alir.Context):Boolean"></a>
-      <a id="globalVarNodeRExists(ResourceUri,ResourceUri,Context):Boolean"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">globalVarNodeRExists</span><span class="params">(<span name="uri">uri: <span class="extype" name="org.sireum.util.ResourceUri">ResourceUri</span></span>, <span name="loc">loc: <span class="extype" name="org.sireum.util.ResourceUri">ResourceUri</span></span>, <span name="context">context: <a href="../../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph@globalVarNodeRExists(uri:org.sireum.util.ResourceUri,loc:org.sireum.util.ResourceUri,context:org.sireum.jawa.alir.Context):Boolean" title="Permalink" target="_top">
+      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph@getVirtualCalleeSet(diff:org.sireum.util.ISet[org.sireum.jawa.alir.pta.Instance],pi:org.sireum.jawa.Pointwithorg.sireum.jawa.Invoke):org.sireum.util.ISet[org.sireum.jawa.JawaMethod]" title="Permalink" target="_top">
         <img src="../../../../../../lib/permalink.png" />
       </a>
     </span>
@@ -1613,7 +1019,7 @@ node is added to the worklist.
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AlirGraph</dd></dl></div>
     </li><li name="org.sireum.alir.AlirGraph#hasNode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="hasNode(n:Node):Boolean"></a>
+      <a id="hasNode(n:&lt;?&gt;):Boolean"></a>
       <a id="hasNode(Node):Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -1646,23 +1052,6 @@ node is added to the worklist.
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li name="org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph#invokeNodeExists" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="invokeNodeExists(uri:org.sireum.util.ResourceUri,loc:org.sireum.util.ResourceUri,context:org.sireum.jawa.alir.Context,pi:org.sireum.jawa.PointI):Boolean"></a>
-      <a id="invokeNodeExists(ResourceUri,ResourceUri,Context,PointI):Boolean"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">invokeNodeExists</span><span class="params">(<span name="uri">uri: <span class="extype" name="org.sireum.util.ResourceUri">ResourceUri</span></span>, <span name="loc">loc: <span class="extype" name="org.sireum.util.ResourceUri">ResourceUri</span></span>, <span name="context">context: <a href="../../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>, <span name="pi">pi: <a href="../../../PointI.html" class="extype" name="org.sireum.jawa.PointI">PointI</a></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph@invokeNodeExists(uri:org.sireum.util.ResourceUri,loc:org.sireum.util.ResourceUri,context:org.sireum.jawa.alir.Context,pi:org.sireum.jawa.PointI):Boolean" title="Permalink" target="_top">
-        <img src="../../../../../../lib/permalink.png" />
-      </a>
-    </span>
-      
     </li><li name="scala.Any#isInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="isInstanceOf[T0]:Boolean"></a>
       <a id="isInstanceOf[T0]:Boolean"></a>
@@ -1681,18 +1070,18 @@ node is added to the worklist.
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
     </li><li name="org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph#isProcessed" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="isProcessed(proc:org.sireum.jawa.JawaProcedure,callerContext:org.sireum.jawa.alir.Context):Boolean"></a>
-      <a id="isProcessed(JawaProcedure,Context):Boolean"></a>
+      <a id="isProcessed(proc:org.sireum.jawa.JawaMethod,callerContext:org.sireum.jawa.alir.Context):Boolean"></a>
+      <a id="isProcessed(JawaMethod,Context):Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">isProcessed</span><span class="params">(<span name="proc">proc: <a href="../../../JawaProcedure.html" class="extype" name="org.sireum.jawa.JawaProcedure">JawaProcedure</a></span>, <span name="callerContext">callerContext: <a href="../../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">isProcessed</span><span class="params">(<span name="proc">proc: <a href="../../../JawaMethod.html" class="extype" name="org.sireum.jawa.JawaMethod">JawaMethod</a></span>, <span name="callerContext">callerContext: <a href="../../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph@isProcessed(proc:org.sireum.jawa.JawaProcedure,callerContext:org.sireum.jawa.alir.Context):Boolean" title="Permalink" target="_top">
+      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph@isProcessed(proc:org.sireum.jawa.JawaMethod,callerContext:org.sireum.jawa.alir.Context):Boolean" title="Permalink" target="_top">
         <img src="../../../../../../lib/permalink.png" />
       </a>
     </span>
@@ -1714,227 +1103,40 @@ node is added to the worklist.
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph#newArgCallNode" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="newArgCallNode(uri:org.sireum.util.ResourceUri,loc:org.sireum.util.ResourceUri,context:org.sireum.jawa.alir.Context):org.sireum.jawa.alir.pta.suspark.PtaArgCallNode"></a>
-      <a id="newArgCallNode(ResourceUri,ResourceUri,Context):PtaArgCallNode"></a>
+    </li><li name="org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph#newNode" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="newNode(point:org.sireum.jawa.Point,context:org.sireum.jawa.alir.Context):org.sireum.jawa.alir.pta.suspark.PtaNode"></a>
+      <a id="newNode(Point,Context):PtaNode"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">newArgCallNode</span><span class="params">(<span name="uri">uri: <span class="extype" name="org.sireum.util.ResourceUri">ResourceUri</span></span>, <span name="loc">loc: <span class="extype" name="org.sireum.util.ResourceUri">ResourceUri</span></span>, <span name="context">context: <a href="../../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>)</span><span class="result">: <a href="PtaArgCallNode.html" class="extype" name="org.sireum.jawa.alir.pta.suspark.PtaArgCallNode">PtaArgCallNode</a></span>
+        <span class="name">newNode</span><span class="params">(<span name="point">point: <a href="../../../Point.html" class="extype" name="org.sireum.jawa.Point">Point</a></span>, <span name="context">context: <a href="../../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>)</span><span class="result">: <a href="PtaNode.html" class="extype" name="org.sireum.jawa.alir.pta.suspark.PtaNode">PtaNode</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph@newArgCallNode(uri:org.sireum.util.ResourceUri,loc:org.sireum.util.ResourceUri,context:org.sireum.jawa.alir.Context):org.sireum.jawa.alir.pta.suspark.PtaArgCallNode" title="Permalink" target="_top">
+      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph@newNode(point:org.sireum.jawa.Point,context:org.sireum.jawa.alir.Context):org.sireum.jawa.alir.pta.suspark.PtaNode" title="Permalink" target="_top">
         <img src="../../../../../../lib/permalink.png" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
-    </li><li name="org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph#newArgReturnNode" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="newArgReturnNode(uri:org.sireum.util.ResourceUri,loc:org.sireum.util.ResourceUri,context:org.sireum.jawa.alir.Context):org.sireum.jawa.alir.pta.suspark.PtaArgReturnNode"></a>
-      <a id="newArgReturnNode(ResourceUri,ResourceUri,Context):PtaArgReturnNode"></a>
+    </li><li name="org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph#nodeExists" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="nodeExists(point:org.sireum.jawa.Point,context:org.sireum.jawa.alir.Context):Boolean"></a>
+      <a id="nodeExists(Point,Context):Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">newArgReturnNode</span><span class="params">(<span name="uri">uri: <span class="extype" name="org.sireum.util.ResourceUri">ResourceUri</span></span>, <span name="loc">loc: <span class="extype" name="org.sireum.util.ResourceUri">ResourceUri</span></span>, <span name="context">context: <a href="../../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>)</span><span class="result">: <a href="PtaArgReturnNode.html" class="extype" name="org.sireum.jawa.alir.pta.suspark.PtaArgReturnNode">PtaArgReturnNode</a></span>
+        <span class="name">nodeExists</span><span class="params">(<span name="point">point: <a href="../../../Point.html" class="extype" name="org.sireum.jawa.Point">Point</a></span>, <span name="context">context: <a href="../../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph@newArgReturnNode(uri:org.sireum.util.ResourceUri,loc:org.sireum.util.ResourceUri,context:org.sireum.jawa.alir.Context):org.sireum.jawa.alir.pta.suspark.PtaArgReturnNode" title="Permalink" target="_top">
+      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph@nodeExists(point:org.sireum.jawa.Point,context:org.sireum.jawa.alir.Context):Boolean" title="Permalink" target="_top">
         <img src="../../../../../../lib/permalink.png" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
-    </li><li name="org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph#newArrayNodeL" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="newArrayNodeL(uri:org.sireum.util.ResourceUri,loc:org.sireum.util.ResourceUri,context:org.sireum.jawa.alir.Context,dimensions:Int):org.sireum.jawa.alir.pta.suspark.PtaArrayNodeL"></a>
-      <a id="newArrayNodeL(ResourceUri,ResourceUri,Context,Int):PtaArrayNodeL"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">newArrayNodeL</span><span class="params">(<span name="uri">uri: <span class="extype" name="org.sireum.util.ResourceUri">ResourceUri</span></span>, <span name="loc">loc: <span class="extype" name="org.sireum.util.ResourceUri">ResourceUri</span></span>, <span name="context">context: <a href="../../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>, <span name="dimensions">dimensions: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <a href="PtaArrayNodeL.html" class="extype" name="org.sireum.jawa.alir.pta.suspark.PtaArrayNodeL">PtaArrayNodeL</a></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph@newArrayNodeL(uri:org.sireum.util.ResourceUri,loc:org.sireum.util.ResourceUri,context:org.sireum.jawa.alir.Context,dimensions:Int):org.sireum.jawa.alir.pta.suspark.PtaArrayNodeL" title="Permalink" target="_top">
-        <img src="../../../../../../lib/permalink.png" />
-      </a>
-    </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
-    </li><li name="org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph#newArrayNodeR" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="newArrayNodeR(uri:org.sireum.util.ResourceUri,loc:org.sireum.util.ResourceUri,context:org.sireum.jawa.alir.Context,dimensions:Int):org.sireum.jawa.alir.pta.suspark.PtaArrayNodeR"></a>
-      <a id="newArrayNodeR(ResourceUri,ResourceUri,Context,Int):PtaArrayNodeR"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">newArrayNodeR</span><span class="params">(<span name="uri">uri: <span class="extype" name="org.sireum.util.ResourceUri">ResourceUri</span></span>, <span name="loc">loc: <span class="extype" name="org.sireum.util.ResourceUri">ResourceUri</span></span>, <span name="context">context: <a href="../../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>, <span name="dimensions">dimensions: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <a href="PtaArrayNodeR.html" class="extype" name="org.sireum.jawa.alir.pta.suspark.PtaArrayNodeR">PtaArrayNodeR</a></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph@newArrayNodeR(uri:org.sireum.util.ResourceUri,loc:org.sireum.util.ResourceUri,context:org.sireum.jawa.alir.Context,dimensions:Int):org.sireum.jawa.alir.pta.suspark.PtaArrayNodeR" title="Permalink" target="_top">
-        <img src="../../../../../../lib/permalink.png" />
-      </a>
-    </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
-    </li><li name="org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph#newFieldBaseNodeL" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="newFieldBaseNodeL(uri:org.sireum.util.ResourceUri,loc:org.sireum.util.ResourceUri,context:org.sireum.jawa.alir.Context):org.sireum.jawa.alir.pta.suspark.PtaFieldBaseNodeL"></a>
-      <a id="newFieldBaseNodeL(ResourceUri,ResourceUri,Context):PtaFieldBaseNodeL"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">newFieldBaseNodeL</span><span class="params">(<span name="uri">uri: <span class="extype" name="org.sireum.util.ResourceUri">ResourceUri</span></span>, <span name="loc">loc: <span class="extype" name="org.sireum.util.ResourceUri">ResourceUri</span></span>, <span name="context">context: <a href="../../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>)</span><span class="result">: <a href="PtaFieldBaseNodeL.html" class="extype" name="org.sireum.jawa.alir.pta.suspark.PtaFieldBaseNodeL">PtaFieldBaseNodeL</a></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph@newFieldBaseNodeL(uri:org.sireum.util.ResourceUri,loc:org.sireum.util.ResourceUri,context:org.sireum.jawa.alir.Context):org.sireum.jawa.alir.pta.suspark.PtaFieldBaseNodeL" title="Permalink" target="_top">
-        <img src="../../../../../../lib/permalink.png" />
-      </a>
-    </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
-    </li><li name="org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph#newFieldBaseNodeR" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="newFieldBaseNodeR(uri:org.sireum.util.ResourceUri,loc:org.sireum.util.ResourceUri,context:org.sireum.jawa.alir.Context):org.sireum.jawa.alir.pta.suspark.PtaFieldBaseNodeR"></a>
-      <a id="newFieldBaseNodeR(ResourceUri,ResourceUri,Context):PtaFieldBaseNodeR"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">newFieldBaseNodeR</span><span class="params">(<span name="uri">uri: <span class="extype" name="org.sireum.util.ResourceUri">ResourceUri</span></span>, <span name="loc">loc: <span class="extype" name="org.sireum.util.ResourceUri">ResourceUri</span></span>, <span name="context">context: <a href="../../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>)</span><span class="result">: <a href="PtaFieldBaseNodeR.html" class="extype" name="org.sireum.jawa.alir.pta.suspark.PtaFieldBaseNodeR">PtaFieldBaseNodeR</a></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph@newFieldBaseNodeR(uri:org.sireum.util.ResourceUri,loc:org.sireum.util.ResourceUri,context:org.sireum.jawa.alir.Context):org.sireum.jawa.alir.pta.suspark.PtaFieldBaseNodeR" title="Permalink" target="_top">
-        <img src="../../../../../../lib/permalink.png" />
-      </a>
-    </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
-    </li><li name="org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph#newFieldNode" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="newFieldNode(baseName:org.sireum.util.ResourceUri,fieldName:org.sireum.util.ResourceUri,loc:org.sireum.util.ResourceUri,context:org.sireum.jawa.alir.Context):org.sireum.jawa.alir.pta.suspark.PtaFieldNode"></a>
-      <a id="newFieldNode(ResourceUri,ResourceUri,ResourceUri,Context):PtaFieldNode"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">newFieldNode</span><span class="params">(<span name="baseName">baseName: <span class="extype" name="org.sireum.util.ResourceUri">ResourceUri</span></span>, <span name="fieldName">fieldName: <span class="extype" name="org.sireum.util.ResourceUri">ResourceUri</span></span>, <span name="loc">loc: <span class="extype" name="org.sireum.util.ResourceUri">ResourceUri</span></span>, <span name="context">context: <a href="../../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>)</span><span class="result">: <a href="PtaFieldNode.html" class="extype" name="org.sireum.jawa.alir.pta.suspark.PtaFieldNode">PtaFieldNode</a></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph@newFieldNode(baseName:org.sireum.util.ResourceUri,fieldName:org.sireum.util.ResourceUri,loc:org.sireum.util.ResourceUri,context:org.sireum.jawa.alir.Context):org.sireum.jawa.alir.pta.suspark.PtaFieldNode" title="Permalink" target="_top">
-        <img src="../../../../../../lib/permalink.png" />
-      </a>
-    </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
-    </li><li name="org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph#newGlobalVarNodeL" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="newGlobalVarNodeL(uri:org.sireum.util.ResourceUri,loc:org.sireum.util.ResourceUri,context:org.sireum.jawa.alir.Context):org.sireum.jawa.alir.pta.suspark.PtaGlobalVarNodeL"></a>
-      <a id="newGlobalVarNodeL(ResourceUri,ResourceUri,Context):PtaGlobalVarNodeL"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">newGlobalVarNodeL</span><span class="params">(<span name="uri">uri: <span class="extype" name="org.sireum.util.ResourceUri">ResourceUri</span></span>, <span name="loc">loc: <span class="extype" name="org.sireum.util.ResourceUri">ResourceUri</span></span>, <span name="context">context: <a href="../../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>)</span><span class="result">: <a href="PtaGlobalVarNodeL.html" class="extype" name="org.sireum.jawa.alir.pta.suspark.PtaGlobalVarNodeL">PtaGlobalVarNodeL</a></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph@newGlobalVarNodeL(uri:org.sireum.util.ResourceUri,loc:org.sireum.util.ResourceUri,context:org.sireum.jawa.alir.Context):org.sireum.jawa.alir.pta.suspark.PtaGlobalVarNodeL" title="Permalink" target="_top">
-        <img src="../../../../../../lib/permalink.png" />
-      </a>
-    </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
-    </li><li name="org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph#newGlobalVarNodeR" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="newGlobalVarNodeR(uri:org.sireum.util.ResourceUri,loc:org.sireum.util.ResourceUri,context:org.sireum.jawa.alir.Context):org.sireum.jawa.alir.pta.suspark.PtaGlobalVarNodeR"></a>
-      <a id="newGlobalVarNodeR(ResourceUri,ResourceUri,Context):PtaGlobalVarNodeR"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">newGlobalVarNodeR</span><span class="params">(<span name="uri">uri: <span class="extype" name="org.sireum.util.ResourceUri">ResourceUri</span></span>, <span name="loc">loc: <span class="extype" name="org.sireum.util.ResourceUri">ResourceUri</span></span>, <span name="context">context: <a href="../../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>)</span><span class="result">: <a href="PtaGlobalVarNodeR.html" class="extype" name="org.sireum.jawa.alir.pta.suspark.PtaGlobalVarNodeR">PtaGlobalVarNodeR</a></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph@newGlobalVarNodeR(uri:org.sireum.util.ResourceUri,loc:org.sireum.util.ResourceUri,context:org.sireum.jawa.alir.Context):org.sireum.jawa.alir.pta.suspark.PtaGlobalVarNodeR" title="Permalink" target="_top">
-        <img src="../../../../../../lib/permalink.png" />
-      </a>
-    </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
-    </li><li name="org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph#newInvokeNode" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="newInvokeNode(uri:org.sireum.util.ResourceUri,loc:org.sireum.util.ResourceUri,context:org.sireum.jawa.alir.Context,pi:org.sireum.jawa.PointI):org.sireum.jawa.alir.pta.suspark.PtaInvokeNode"></a>
-      <a id="newInvokeNode(ResourceUri,ResourceUri,Context,PointI):PtaInvokeNode"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">newInvokeNode</span><span class="params">(<span name="uri">uri: <span class="extype" name="org.sireum.util.ResourceUri">ResourceUri</span></span>, <span name="loc">loc: <span class="extype" name="org.sireum.util.ResourceUri">ResourceUri</span></span>, <span name="context">context: <a href="../../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>, <span name="pi">pi: <a href="../../../PointI.html" class="extype" name="org.sireum.jawa.PointI">PointI</a></span>)</span><span class="result">: <a href="PtaInvokeNode.html" class="extype" name="org.sireum.jawa.alir.pta.suspark.PtaInvokeNode">PtaInvokeNode</a></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph@newInvokeNode(uri:org.sireum.util.ResourceUri,loc:org.sireum.util.ResourceUri,context:org.sireum.jawa.alir.Context,pi:org.sireum.jawa.PointI):org.sireum.jawa.alir.pta.suspark.PtaInvokeNode" title="Permalink" target="_top">
-        <img src="../../../../../../lib/permalink.png" />
-      </a>
-    </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
-    </li><li name="org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph#newPointNode" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="newPointNode(uri:org.sireum.util.ResourceUri,loc:org.sireum.util.ResourceUri,context:org.sireum.jawa.alir.Context):org.sireum.jawa.alir.pta.suspark.PtaPointNode"></a>
-      <a id="newPointNode(ResourceUri,ResourceUri,Context):PtaPointNode"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">newPointNode</span><span class="params">(<span name="uri">uri: <span class="extype" name="org.sireum.util.ResourceUri">ResourceUri</span></span>, <span name="loc">loc: <span class="extype" name="org.sireum.util.ResourceUri">ResourceUri</span></span>, <span name="context">context: <a href="../../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>)</span><span class="result">: <a href="PtaPointNode.html" class="extype" name="org.sireum.jawa.alir.pta.suspark.PtaPointNode">PtaPointNode</a></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph@newPointNode(uri:org.sireum.util.ResourceUri,loc:org.sireum.util.ResourceUri,context:org.sireum.jawa.alir.Context):org.sireum.jawa.alir.pta.suspark.PtaPointNode" title="Permalink" target="_top">
-        <img src="../../../../../../lib/permalink.png" />
-      </a>
-    </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
-    </li><li name="org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph#newRecvCallNode" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="newRecvCallNode(uri:org.sireum.util.ResourceUri,loc:org.sireum.util.ResourceUri,context:org.sireum.jawa.alir.Context,pi:org.sireum.jawa.PointI):org.sireum.jawa.alir.pta.suspark.PtaRecvCallNode"></a>
-      <a id="newRecvCallNode(ResourceUri,ResourceUri,Context,PointI):PtaRecvCallNode"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">newRecvCallNode</span><span class="params">(<span name="uri">uri: <span class="extype" name="org.sireum.util.ResourceUri">ResourceUri</span></span>, <span name="loc">loc: <span class="extype" name="org.sireum.util.ResourceUri">ResourceUri</span></span>, <span name="context">context: <a href="../../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>, <span name="pi">pi: <a href="../../../PointI.html" class="extype" name="org.sireum.jawa.PointI">PointI</a></span>)</span><span class="result">: <a href="PtaRecvCallNode.html" class="extype" name="org.sireum.jawa.alir.pta.suspark.PtaRecvCallNode">PtaRecvCallNode</a></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph@newRecvCallNode(uri:org.sireum.util.ResourceUri,loc:org.sireum.util.ResourceUri,context:org.sireum.jawa.alir.Context,pi:org.sireum.jawa.PointI):org.sireum.jawa.alir.pta.suspark.PtaRecvCallNode" title="Permalink" target="_top">
-        <img src="../../../../../../lib/permalink.png" />
-      </a>
-    </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
-    </li><li name="org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph#newRecvReturnNode" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="newRecvReturnNode(uri:org.sireum.util.ResourceUri,loc:org.sireum.util.ResourceUri,context:org.sireum.jawa.alir.Context):org.sireum.jawa.alir.pta.suspark.PtaRecvReturnNode"></a>
-      <a id="newRecvReturnNode(ResourceUri,ResourceUri,Context):PtaRecvReturnNode"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">newRecvReturnNode</span><span class="params">(<span name="uri">uri: <span class="extype" name="org.sireum.util.ResourceUri">ResourceUri</span></span>, <span name="loc">loc: <span class="extype" name="org.sireum.util.ResourceUri">ResourceUri</span></span>, <span name="context">context: <a href="../../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>)</span><span class="result">: <a href="PtaRecvReturnNode.html" class="extype" name="org.sireum.jawa.alir.pta.suspark.PtaRecvReturnNode">PtaRecvReturnNode</a></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph@newRecvReturnNode(uri:org.sireum.util.ResourceUri,loc:org.sireum.util.ResourceUri,context:org.sireum.jawa.alir.Context):org.sireum.jawa.alir.pta.suspark.PtaRecvReturnNode" title="Permalink" target="_top">
-        <img src="../../../../../../lib/permalink.png" />
-      </a>
-    </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
+      
     </li><li name="org.sireum.alir.AlirGraph#nodes" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="nodes:Iterable[Node]"></a>
       <a id="nodes:Iterable[Node]"></a>
@@ -2037,23 +1239,6 @@ node is added to the worklist.
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="../../interProcedural/InterProceduralGraph.html" class="extype" name="org.sireum.jawa.alir.interProcedural.InterProceduralGraph">InterProceduralGraph</a></dd></dl></div>
-    </li><li name="org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph#pointNodeExists" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="pointNodeExists(uri:org.sireum.util.ResourceUri,loc:org.sireum.util.ResourceUri,context:org.sireum.jawa.alir.Context):Boolean"></a>
-      <a id="pointNodeExists(ResourceUri,ResourceUri,Context):Boolean"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">pointNodeExists</span><span class="params">(<span name="uri">uri: <span class="extype" name="org.sireum.util.ResourceUri">ResourceUri</span></span>, <span name="loc">loc: <span class="extype" name="org.sireum.util.ResourceUri">ResourceUri</span></span>, <span name="context">context: <a href="../../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph@pointNodeExists(uri:org.sireum.util.ResourceUri,loc:org.sireum.util.ResourceUri,context:org.sireum.jawa.alir.Context):Boolean" title="Permalink" target="_top">
-        <img src="../../../../../../lib/permalink.png" />
-      </a>
-    </span>
-      
     </li><li name="org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph#pointsToMap" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="pointsToMap:org.sireum.jawa.alir.pta.suspark.PointsToMap"></a>
       <a id="pointsToMap:PointsToMap"></a>
@@ -2089,7 +1274,7 @@ node is added to the worklist.
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../interProcedural/InterProceduralGraph.html" class="extype" name="org.sireum.jawa.alir.interProcedural.InterProceduralGraph">InterProceduralGraph</a></dd></dl></div>
     </li><li name="org.sireum.alir.AlirGraph#prePostNodeOrder" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="prePostNodeOrder(n:Node):org.sireum.util.MMap[Node,(Int,Int)]"></a>
+      <a id="prePostNodeOrder(n:&lt;?&gt;):org.sireum.util.MMap[Node,(Int,Int)]"></a>
       <a id="prePostNodeOrder(Node):MMap[Node,(Int,Int)]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -2123,7 +1308,7 @@ node is added to the worklist.
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AlirSuccPredAccesses</dd></dl></div>
     </li><li name="org.sireum.alir.AlirSuccPredAccesses#predecessorEdges" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="predecessorEdges(node:Node):org.sireum.util.CSet[AlirSuccPredAccesses.this.Edge]"></a>
+      <a id="predecessorEdges(node:&lt;?&gt;):org.sireum.util.CSet[AlirSuccPredAccesses.this.Edge]"></a>
       <a id="predecessorEdges(Node):CSet[Edge]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -2190,71 +1375,37 @@ node is added to the worklist.
       </a>
     </span>
       
-    </li><li name="org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph#recvCallNodeExists" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="recvCallNodeExists(uri:org.sireum.util.ResourceUri,loc:org.sireum.util.ResourceUri,context:org.sireum.jawa.alir.Context,pi:org.sireum.jawa.PointI):Boolean"></a>
-      <a id="recvCallNodeExists(ResourceUri,ResourceUri,Context,PointI):Boolean"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">recvCallNodeExists</span><span class="params">(<span name="uri">uri: <span class="extype" name="org.sireum.util.ResourceUri">ResourceUri</span></span>, <span name="loc">loc: <span class="extype" name="org.sireum.util.ResourceUri">ResourceUri</span></span>, <span name="context">context: <a href="../../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>, <span name="pi">pi: <a href="../../../PointI.html" class="extype" name="org.sireum.jawa.PointI">PointI</a></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph@recvCallNodeExists(uri:org.sireum.util.ResourceUri,loc:org.sireum.util.ResourceUri,context:org.sireum.jawa.alir.Context,pi:org.sireum.jawa.PointI):Boolean" title="Permalink" target="_top">
-        <img src="../../../../../../lib/permalink.png" />
-      </a>
-    </span>
-      
     </li><li name="org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph#recvInverse" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="recvInverse(n:Node):Option[org.sireum.jawa.PointI]"></a>
-      <a id="recvInverse(Node):Option[PointI]"></a>
+      <a id="recvInverse(n:Node):Option[org.sireum.jawa.Pointwithorg.sireum.jawa.Invoke]"></a>
+      <a id="recvInverse(Node):Option[PointwithInvoke]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">recvInverse</span><span class="params">(<span name="n">n: <span class="extype" name="org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph.Node">Node</span></span>)</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<a href="../../../PointI.html" class="extype" name="org.sireum.jawa.PointI">PointI</a>]</span>
+        <span class="name">recvInverse</span><span class="params">(<span name="n">n: <span class="extype" name="org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph.Node">Node</span></span>)</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<a href="../../../Point.html" class="extype" name="org.sireum.jawa.Point">Point</a> with <a href="../../../Invoke.html" class="extype" name="org.sireum.jawa.Invoke">Invoke</a>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph@recvInverse(n:Node):Option[org.sireum.jawa.PointI]" title="Permalink" target="_top">
+      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph@recvInverse(n:Node):Option[org.sireum.jawa.Pointwithorg.sireum.jawa.Invoke]" title="Permalink" target="_top">
         <img src="../../../../../../lib/permalink.png" />
       </a>
     </span>
       <p class="shortcomment cmt">This is the recv bar method in original algo
 </p>
-    </li><li name="org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph#recvReturnNodeExists" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="recvReturnNodeExists(uri:org.sireum.util.ResourceUri,loc:org.sireum.util.ResourceUri,context:org.sireum.jawa.alir.Context):Boolean"></a>
-      <a id="recvReturnNodeExists(ResourceUri,ResourceUri,Context):Boolean"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">recvReturnNodeExists</span><span class="params">(<span name="uri">uri: <span class="extype" name="org.sireum.util.ResourceUri">ResourceUri</span></span>, <span name="loc">loc: <span class="extype" name="org.sireum.util.ResourceUri">ResourceUri</span></span>, <span name="context">context: <a href="../../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph@recvReturnNodeExists(uri:org.sireum.util.ResourceUri,loc:org.sireum.util.ResourceUri,context:org.sireum.jawa.alir.Context):Boolean" title="Permalink" target="_top">
-        <img src="../../../../../../lib/permalink.png" />
-      </a>
-    </span>
-      
     </li><li name="org.sireum.jawa.alir.pta.suspark.PAGConstraint#searchRda" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="searchRda(p:org.sireum.jawa.PointWithUri,points:Set[org.sireum.jawa.Point],slots:org.sireum.util.ISet[(org.sireum.alir.Slot,org.sireum.alir.DefDesc)],avoidMode:Boolean):Set[org.sireum.jawa.Point]"></a>
-      <a id="searchRda(PointWithUri,Set[Point],ISet[(Slot,DefDesc)],Boolean):Set[Point]"></a>
+      <a id="searchRda(p:org.sireum.jawa.Point,points:Set[org.sireum.jawa.Point],slots:org.sireum.util.ISet[(org.sireum.alir.Slot,org.sireum.alir.DefDesc)],avoidMode:Boolean):Set[org.sireum.jawa.Point]"></a>
+      <a id="searchRda(Point,Set[Point],ISet[(Slot,DefDesc)],Boolean):Set[Point]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">searchRda</span><span class="params">(<span name="p">p: <a href="../../../PointWithUri.html" class="extype" name="org.sireum.jawa.PointWithUri">PointWithUri</a></span>, <span name="points">points: <span class="extype" name="scala.Predef.Set">Set</span>[<a href="../../../Point.html" class="extype" name="org.sireum.jawa.Point">Point</a>]</span>, <span name="slots">slots: <span class="extype" name="org.sireum.util.ISet">ISet</span>[(<span class="extype" name="org.sireum.alir.Slot">Slot</span>, <span class="extype" name="org.sireum.alir.DefDesc">DefDesc</span>)]</span>, <span name="avoidMode">avoidMode: <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: <span class="extype" name="scala.Predef.Set">Set</span>[<a href="../../../Point.html" class="extype" name="org.sireum.jawa.Point">Point</a>]</span>
+        <span class="name">searchRda</span><span class="params">(<span name="p">p: <a href="../../../Point.html" class="extype" name="org.sireum.jawa.Point">Point</a></span>, <span name="points">points: <span class="extype" name="scala.Predef.Set">Set</span>[<a href="../../../Point.html" class="extype" name="org.sireum.jawa.Point">Point</a>]</span>, <span name="slots">slots: <span class="extype" name="org.sireum.util.ISet">ISet</span>[(<span class="extype" name="org.sireum.alir.Slot">Slot</span>, <span class="extype" name="org.sireum.alir.DefDesc">DefDesc</span>)]</span>, <span name="avoidMode">avoidMode: <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: <span class="extype" name="scala.Predef.Set">Set</span>[<a href="../../../Point.html" class="extype" name="org.sireum.jawa.Point">Point</a>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph@searchRda(p:org.sireum.jawa.PointWithUri,points:Set[org.sireum.jawa.Point],slots:org.sireum.util.ISet[(org.sireum.alir.Slot,org.sireum.alir.DefDesc)],avoidMode:Boolean):Set[org.sireum.jawa.Point]" title="Permalink" target="_top">
+      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph@searchRda(p:org.sireum.jawa.Point,points:Set[org.sireum.jawa.Point],slots:org.sireum.util.ISet[(org.sireum.alir.Slot,org.sireum.alir.DefDesc)],avoidMode:Boolean):Set[org.sireum.jawa.Point]" title="Permalink" target="_top">
         <img src="../../../../../../lib/permalink.png" />
       </a>
     </span>
@@ -2345,52 +1496,52 @@ node is added to the worklist.
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="org.sireum.jawa.alir.interProcedural.InterProceduralGraph#toDot" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="toDot(w:java.io.Writer):Unit"></a>
-      <a id="toDot(Writer):Unit"></a>
+      <a id="toDot(w:java.io.Writer,vlp:org.jgrapht.ext.VertexNameProvider[Node]):Unit"></a>
+      <a id="toDot(Writer,VertexNameProvider[Node]):Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">toDot</span><span class="params">(<span name="w">w: <span class="extype" name="java.io.Writer">Writer</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">toDot</span><span class="params">(<span name="w">w: <span class="extype" name="java.io.Writer">Writer</span></span>, <span name="vlp">vlp: <span class="extype" name="org.jgrapht.ext.VertexNameProvider">VertexNameProvider</span>[<span class="extype" name="org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph.Node">Node</span>] = <span class="symbol"><span class="name"><a href="../../interProcedural/InterProceduralGraph.html#vIDProvider:org.jgrapht.ext.VertexNameProvider[Node]{deffilterLabel(uri:String):String}">vIDProvider</a></span></span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph@toDot(w:java.io.Writer):Unit" title="Permalink" target="_top">
+      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph@toDot(w:java.io.Writer,vlp:org.jgrapht.ext.VertexNameProvider[Node]):Unit" title="Permalink" target="_top">
         <img src="../../../../../../lib/permalink.png" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../interProcedural/InterProceduralGraph.html" class="extype" name="org.sireum.jawa.alir.interProcedural.InterProceduralGraph">InterProceduralGraph</a></dd></dl></div>
     </li><li name="org.sireum.jawa.alir.interProcedural.InterProceduralGraph#toGML" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="toGML(w:java.io.Writer):Unit"></a>
-      <a id="toGML(Writer):Unit"></a>
+      <a id="toGML(w:java.io.Writer,vip:org.jgrapht.ext.VertexNameProvider[Node],vlp:org.jgrapht.ext.VertexNameProvider[Node],eip:org.jgrapht.ext.EdgeNameProvider[InterProceduralGraph.this.Edge],elp:org.jgrapht.ext.EdgeNameProvider[InterProceduralGraph.this.Edge]):Unit"></a>
+      <a id="toGML(Writer,VertexNameProvider[Node],VertexNameProvider[Node],EdgeNameProvider[Edge],EdgeNameProvider[Edge]):Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">toGML</span><span class="params">(<span name="w">w: <span class="extype" name="java.io.Writer">Writer</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">toGML</span><span class="params">(<span name="w">w: <span class="extype" name="java.io.Writer">Writer</span></span>, <span name="vip">vip: <span class="extype" name="org.jgrapht.ext.VertexNameProvider">VertexNameProvider</span>[<span class="extype" name="org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph.Node">Node</span>] = <span class="symbol"><span class="name"><a href="../../interProcedural/InterProceduralGraph.html#vIDProvider:org.jgrapht.ext.VertexNameProvider[Node]{deffilterLabel(uri:String):String}">vIDProvider</a></span></span></span>, <span name="vlp">vlp: <span class="extype" name="org.jgrapht.ext.VertexNameProvider">VertexNameProvider</span>[<span class="extype" name="org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph.Node">Node</span>] = <span class="symbol">null</span></span>, <span name="eip">eip: <span class="extype" name="org.jgrapht.ext.EdgeNameProvider">EdgeNameProvider</span>[<a href="#Edge=org.sireum.alir.AlirEdge[Node]" class="extmbr" name="org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph.Edge">Edge</a>] = <span class="symbol"><span class="name"><a href="../../interProcedural/InterProceduralGraph.html#eIDProvider:org.jgrapht.ext.EdgeNameProvider[InterProceduralGraph.this.Edge]{deffilterLabel(uri:String):String}">eIDProvider</a></span></span></span>, <span name="elp">elp: <span class="extype" name="org.jgrapht.ext.EdgeNameProvider">EdgeNameProvider</span>[<a href="#Edge=org.sireum.alir.AlirEdge[Node]" class="extmbr" name="org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph.Edge">Edge</a>] = <span class="symbol">null</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph@toGML(w:java.io.Writer):Unit" title="Permalink" target="_top">
+      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph@toGML(w:java.io.Writer,vip:org.jgrapht.ext.VertexNameProvider[Node],vlp:org.jgrapht.ext.VertexNameProvider[Node],eip:org.jgrapht.ext.EdgeNameProvider[InterProceduralGraph.this.Edge],elp:org.jgrapht.ext.EdgeNameProvider[InterProceduralGraph.this.Edge]):Unit" title="Permalink" target="_top">
         <img src="../../../../../../lib/permalink.png" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../interProcedural/InterProceduralGraph.html" class="extype" name="org.sireum.jawa.alir.interProcedural.InterProceduralGraph">InterProceduralGraph</a></dd></dl></div>
     </li><li name="org.sireum.jawa.alir.interProcedural.InterProceduralGraph#toGraphML" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="toGraphML(w:java.io.Writer):Unit"></a>
-      <a id="toGraphML(Writer):Unit"></a>
+      <a id="toGraphML(w:java.io.Writer,vip:org.jgrapht.ext.VertexNameProvider[Node],vlp:org.jgrapht.ext.VertexNameProvider[Node],eip:org.jgrapht.ext.EdgeNameProvider[InterProceduralGraph.this.Edge],elp:org.jgrapht.ext.EdgeNameProvider[InterProceduralGraph.this.Edge]):Unit"></a>
+      <a id="toGraphML(Writer,VertexNameProvider[Node],VertexNameProvider[Node],EdgeNameProvider[Edge],EdgeNameProvider[Edge]):Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">toGraphML</span><span class="params">(<span name="w">w: <span class="extype" name="java.io.Writer">Writer</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">toGraphML</span><span class="params">(<span name="w">w: <span class="extype" name="java.io.Writer">Writer</span></span>, <span name="vip">vip: <span class="extype" name="org.jgrapht.ext.VertexNameProvider">VertexNameProvider</span>[<span class="extype" name="org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph.Node">Node</span>] = <span class="symbol"><span class="name"><a href="../../interProcedural/InterProceduralGraph.html#vIDProvider:org.jgrapht.ext.VertexNameProvider[Node]{deffilterLabel(uri:String):String}">vIDProvider</a></span></span></span>, <span name="vlp">vlp: <span class="extype" name="org.jgrapht.ext.VertexNameProvider">VertexNameProvider</span>[<span class="extype" name="org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph.Node">Node</span>] = <span class="symbol">null</span></span>, <span name="eip">eip: <span class="extype" name="org.jgrapht.ext.EdgeNameProvider">EdgeNameProvider</span>[<a href="#Edge=org.sireum.alir.AlirEdge[Node]" class="extmbr" name="org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph.Edge">Edge</a>] = <span class="symbol"><span class="name"><a href="../../interProcedural/InterProceduralGraph.html#eIDProvider:org.jgrapht.ext.EdgeNameProvider[InterProceduralGraph.this.Edge]{deffilterLabel(uri:String):String}">eIDProvider</a></span></span></span>, <span name="elp">elp: <span class="extype" name="org.jgrapht.ext.EdgeNameProvider">EdgeNameProvider</span>[<a href="#Edge=org.sireum.alir.AlirEdge[Node]" class="extmbr" name="org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph.Edge">Edge</a>] = <span class="symbol">null</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph@toGraphML(w:java.io.Writer):Unit" title="Permalink" target="_top">
+      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph@toGraphML(w:java.io.Writer,vip:org.jgrapht.ext.VertexNameProvider[Node],vlp:org.jgrapht.ext.VertexNameProvider[Node],eip:org.jgrapht.ext.EdgeNameProvider[InterProceduralGraph.this.Edge],elp:org.jgrapht.ext.EdgeNameProvider[InterProceduralGraph.this.Edge]):Unit" title="Permalink" target="_top">
         <img src="../../../../../../lib/permalink.png" />
       </a>
     </span>
@@ -2413,35 +1564,35 @@ node is added to the worklist.
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph">PointerAssignmentGraph</a> → AnyRef → Any</dd></dl></div>
     </li><li name="org.sireum.jawa.alir.pta.suspark.PAGConstraint#udChain" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="udChain(p:org.sireum.jawa.PointWithIndex,points:Set[org.sireum.jawa.Point],cfg:org.sireum.alir.ControlFlowGraph[String],rda:org.sireum.jawa.alir.reachingDefinitionAnalysis.JawaReachingDefinitionAnalysis.Result,avoidMode:Boolean):Set[org.sireum.jawa.Point]"></a>
-      <a id="udChain(PointWithIndex,Set[Point],ControlFlowGraph[String],Result,Boolean):Set[Point]"></a>
+      <a id="udChain(p:org.sireum.jawa.Pointwithorg.sireum.jawa.Loc,points:Set[org.sireum.jawa.Point],cfg:org.sireum.alir.ControlFlowGraph[String],rda:org.sireum.jawa.alir.reachingDefinitionAnalysis.JawaReachingDefinitionAnalysis.Result,avoidMode:Boolean):Set[org.sireum.jawa.Point]"></a>
+      <a id="udChain(PointwithLoc,Set[Point],ControlFlowGraph[String],Result,Boolean):Set[Point]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">udChain</span><span class="params">(<span name="p">p: <a href="../../../PointWithIndex.html" class="extype" name="org.sireum.jawa.PointWithIndex">PointWithIndex</a></span>, <span name="points">points: <span class="extype" name="scala.Predef.Set">Set</span>[<a href="../../../Point.html" class="extype" name="org.sireum.jawa.Point">Point</a>]</span>, <span name="cfg">cfg: <span class="extype" name="org.sireum.alir.ControlFlowGraph">ControlFlowGraph</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="rda">rda: <a href="../../reachingDefinitionAnalysis/JawaReachingDefinitionAnalysis$.html#Result=org.sireum.alir.MonotoneDataFlowAnalysisResult[org.sireum.jawa.alir.reachingDefinitionAnalysis.JawaReachingDefinitionAnalysis.RDFact]" class="extmbr" name="org.sireum.jawa.alir.reachingDefinitionAnalysis.JawaReachingDefinitionAnalysis.Result">Result</a></span>, <span name="avoidMode">avoidMode: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">true</span></span>)</span><span class="result">: <span class="extype" name="scala.Predef.Set">Set</span>[<a href="../../../Point.html" class="extype" name="org.sireum.jawa.Point">Point</a>]</span>
+        <span class="name">udChain</span><span class="params">(<span name="p">p: <a href="../../../Point.html" class="extype" name="org.sireum.jawa.Point">Point</a> with <a href="../../../Loc.html" class="extype" name="org.sireum.jawa.Loc">Loc</a></span>, <span name="points">points: <span class="extype" name="scala.Predef.Set">Set</span>[<a href="../../../Point.html" class="extype" name="org.sireum.jawa.Point">Point</a>]</span>, <span name="cfg">cfg: <span class="extype" name="org.sireum.alir.ControlFlowGraph">ControlFlowGraph</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="rda">rda: <a href="../../reachingDefinitionAnalysis/JawaReachingDefinitionAnalysis$.html#Result=org.sireum.alir.MonotoneDataFlowAnalysisResult[org.sireum.jawa.alir.reachingDefinitionAnalysis.JawaReachingDefinitionAnalysis.RDFact]" class="extmbr" name="org.sireum.jawa.alir.reachingDefinitionAnalysis.JawaReachingDefinitionAnalysis.Result">Result</a></span>, <span name="avoidMode">avoidMode: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">true</span></span>)</span><span class="result">: <span class="extype" name="scala.Predef.Set">Set</span>[<a href="../../../Point.html" class="extype" name="org.sireum.jawa.Point">Point</a>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph@udChain(p:org.sireum.jawa.PointWithIndex,points:Set[org.sireum.jawa.Point],cfg:org.sireum.alir.ControlFlowGraph[String],rda:org.sireum.jawa.alir.reachingDefinitionAnalysis.JawaReachingDefinitionAnalysis.Result,avoidMode:Boolean):Set[org.sireum.jawa.Point]" title="Permalink" target="_top">
+      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph@udChain(p:org.sireum.jawa.Pointwithorg.sireum.jawa.Loc,points:Set[org.sireum.jawa.Point],cfg:org.sireum.alir.ControlFlowGraph[String],rda:org.sireum.jawa.alir.reachingDefinitionAnalysis.JawaReachingDefinitionAnalysis.Result,avoidMode:Boolean):Set[org.sireum.jawa.Point]" title="Permalink" target="_top">
         <img src="../../../../../../lib/permalink.png" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="PAGConstraint.html" class="extype" name="org.sireum.jawa.alir.pta.suspark.PAGConstraint">PAGConstraint</a></dd></dl></div>
-    </li><li name="org.sireum.jawa.alir.pta.suspark.PAGConstraint#udChainForProcExit" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="udChainForProcExit(p:org.sireum.jawa.PointRNoIndex,points:Set[org.sireum.jawa.Point],cfg:org.sireum.alir.ControlFlowGraph[String],rda:org.sireum.jawa.alir.reachingDefinitionAnalysis.JawaReachingDefinitionAnalysis.Result,avoidMode:Boolean):Set[org.sireum.jawa.Point]"></a>
-      <a id="udChainForProcExit(PointRNoIndex,Set[Point],ControlFlowGraph[String],Result,Boolean):Set[Point]"></a>
+    </li><li name="org.sireum.jawa.alir.pta.suspark.PAGConstraint#udChainForMethodExit" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="udChainForMethodExit(p:org.sireum.jawa.Pointwithorg.sireum.jawa.Paramwithorg.sireum.jawa.Exit,points:Set[org.sireum.jawa.Point],cfg:org.sireum.alir.ControlFlowGraph[String],rda:org.sireum.jawa.alir.reachingDefinitionAnalysis.JawaReachingDefinitionAnalysis.Result,avoidMode:Boolean):Set[org.sireum.jawa.Point]"></a>
+      <a id="udChainForMethodExit(PointwithParamwithExit,Set[Point],ControlFlowGraph[String],Result,Boolean):Set[Point]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">udChainForProcExit</span><span class="params">(<span name="p">p: <a href="../../../PointRNoIndex.html" class="extype" name="org.sireum.jawa.PointRNoIndex">PointRNoIndex</a></span>, <span name="points">points: <span class="extype" name="scala.Predef.Set">Set</span>[<a href="../../../Point.html" class="extype" name="org.sireum.jawa.Point">Point</a>]</span>, <span name="cfg">cfg: <span class="extype" name="org.sireum.alir.ControlFlowGraph">ControlFlowGraph</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="rda">rda: <a href="../../reachingDefinitionAnalysis/JawaReachingDefinitionAnalysis$.html#Result=org.sireum.alir.MonotoneDataFlowAnalysisResult[org.sireum.jawa.alir.reachingDefinitionAnalysis.JawaReachingDefinitionAnalysis.RDFact]" class="extmbr" name="org.sireum.jawa.alir.reachingDefinitionAnalysis.JawaReachingDefinitionAnalysis.Result">Result</a></span>, <span name="avoidMode">avoidMode: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">true</span></span>)</span><span class="result">: <span class="extype" name="scala.Predef.Set">Set</span>[<a href="../../../Point.html" class="extype" name="org.sireum.jawa.Point">Point</a>]</span>
+        <span class="name">udChainForMethodExit</span><span class="params">(<span name="p">p: <a href="../../../Point.html" class="extype" name="org.sireum.jawa.Point">Point</a> with <a href="../../../Param.html" class="extype" name="org.sireum.jawa.Param">Param</a> with <a href="../../../Exit.html" class="extype" name="org.sireum.jawa.Exit">Exit</a></span>, <span name="points">points: <span class="extype" name="scala.Predef.Set">Set</span>[<a href="../../../Point.html" class="extype" name="org.sireum.jawa.Point">Point</a>]</span>, <span name="cfg">cfg: <span class="extype" name="org.sireum.alir.ControlFlowGraph">ControlFlowGraph</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="rda">rda: <a href="../../reachingDefinitionAnalysis/JawaReachingDefinitionAnalysis$.html#Result=org.sireum.alir.MonotoneDataFlowAnalysisResult[org.sireum.jawa.alir.reachingDefinitionAnalysis.JawaReachingDefinitionAnalysis.RDFact]" class="extmbr" name="org.sireum.jawa.alir.reachingDefinitionAnalysis.JawaReachingDefinitionAnalysis.Result">Result</a></span>, <span name="avoidMode">avoidMode: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">true</span></span>)</span><span class="result">: <span class="extype" name="scala.Predef.Set">Set</span>[<a href="../../../Point.html" class="extype" name="org.sireum.jawa.Point">Point</a>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph@udChainForProcExit(p:org.sireum.jawa.PointRNoIndex,points:Set[org.sireum.jawa.Point],cfg:org.sireum.alir.ControlFlowGraph[String],rda:org.sireum.jawa.alir.reachingDefinitionAnalysis.JawaReachingDefinitionAnalysis.Result,avoidMode:Boolean):Set[org.sireum.jawa.Point]" title="Permalink" target="_top">
+      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph@udChainForMethodExit(p:org.sireum.jawa.Pointwithorg.sireum.jawa.Paramwithorg.sireum.jawa.Exit,points:Set[org.sireum.jawa.Point],cfg:org.sireum.alir.ControlFlowGraph[String],rda:org.sireum.jawa.alir.reachingDefinitionAnalysis.JawaReachingDefinitionAnalysis.Result,avoidMode:Boolean):Set[org.sireum.jawa.Point]" title="Permalink" target="_top">
         <img src="../../../../../../lib/permalink.png" />
       </a>
     </span>
@@ -2463,19 +1614,19 @@ node is added to the worklist.
       </a>
     </span>
       
-    </li><li name="org.sireum.jawa.alir.interProcedural.InterProceduralGraph#vlabelProvider" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="vlabelProvider:org.jgrapht.ext.VertexNameProvider[Node]{deffilterLabel(uri:String):String}"></a>
-      <a id="vlabelProvider:VertexNameProvider[Node]{deffilterLabel(uri:String):String}"></a>
+    </li><li name="org.sireum.jawa.alir.interProcedural.InterProceduralGraph#vIDProvider" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="vIDProvider:org.jgrapht.ext.VertexNameProvider[Node]{deffilterLabel(uri:String):String}"></a>
+      <a id="vIDProvider:VertexNameProvider[Node]{deffilterLabel(uri:String):String}"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">val</span>
       </span>
       <span class="symbol">
-        <span class="name">vlabelProvider</span><span class="result">: <span class="extype" name="org.jgrapht.ext.VertexNameProvider">VertexNameProvider</span>[<span class="extype" name="org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph.Node">Node</span>] { def filterLabel(uri: String): String }</span>
+        <span class="name">vIDProvider</span><span class="result">: <span class="extype" name="org.jgrapht.ext.VertexNameProvider">VertexNameProvider</span>[<span class="extype" name="org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph.Node">Node</span>] { def filterLabel(uri: String): String }</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph@vlabelProvider:org.jgrapht.ext.VertexNameProvider[Node]{deffilterLabel(uri:String):String}" title="Permalink" target="_top">
+      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.suspark.PointerAssignmentGraph@vIDProvider:org.jgrapht.ext.VertexNameProvider[Node]{deffilterLabel(uri:String):String}" title="Permalink" target="_top">
         <img src="../../../../../../lib/permalink.png" />
       </a>
     </span>

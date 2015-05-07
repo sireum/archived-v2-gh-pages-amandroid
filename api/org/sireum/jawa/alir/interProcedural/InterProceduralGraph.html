@@ -30,7 +30,9 @@
       <div id="definition">
         <img src="../../../../../lib/trait_big.png" />
         <p id="owner"><a href="../../../../package.html" class="extype" name="org">org</a>.<a href="../../../package.html" class="extype" name="org.sireum">sireum</a>.<a href="../../package.html" class="extype" name="org.sireum.jawa">jawa</a>.<a href="../package.html" class="extype" name="org.sireum.jawa.alir">alir</a>.<a href="package.html" class="extype" name="org.sireum.jawa.alir.interProcedural">interProcedural</a></p>
-        <h1>InterProceduralGraph</h1> <span class="permalink">
+        <h1>InterProceduralGraph</h1><h3><span class="morelinks"><div>Related Doc:
+            <a href="package.html" class="extype" name="org.sireum.jawa.alir.interProcedural">package interProcedural</a>
+          </div></span></h3><span class="permalink">
       <a href="../../../../../index.html#org.sireum.jawa.alir.interProcedural.InterProceduralGraph" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" />
       </a>
@@ -309,6 +311,23 @@
       </a>
     </span>
       
+    </li><li name="org.sireum.jawa.alir.interProcedural.InterProceduralGraph#eIDProvider" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="eIDProvider:org.jgrapht.ext.EdgeNameProvider[InterProceduralGraph.this.Edge]{deffilterLabel(uri:String):String}"></a>
+      <a id="eIDProvider:EdgeNameProvider[Edge]{deffilterLabel(uri:String):String}"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">eIDProvider</span><span class="result">: <span class="extype" name="org.jgrapht.ext.EdgeNameProvider">EdgeNameProvider</span>[<a href="#Edge=org.sireum.alir.AlirEdge[Node]" class="extmbr" name="org.sireum.jawa.alir.interProcedural.InterProceduralGraph.Edge">Edge</a>] { def filterLabel(uri: String): String }</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.interProcedural.InterProceduralGraph@eIDProvider:org.jgrapht.ext.EdgeNameProvider[InterProceduralGraph.this.Edge]{deffilterLabel(uri:String):String}" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
     </li><li name="org.sireum.alir.AlirSuccPredAccesses#edgeSource" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="edgeSource(edge:org.sireum.alir.AlirEdge[Node]):Node"></a>
       <a id="edgeSource(AlirEdge[Node]):Node"></a>
@@ -360,23 +379,6 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AlirGraph</dd></dl></div>
-    </li><li name="org.sireum.jawa.alir.interProcedural.InterProceduralGraph#elabelProvider" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="elabelProvider:org.jgrapht.ext.EdgeNameProvider[InterProceduralGraph.this.Edge]{deffilterLabel(uri:String):String}"></a>
-      <a id="elabelProvider:EdgeNameProvider[Edge]{deffilterLabel(uri:String):String}"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">val</span>
-      </span>
-      <span class="symbol">
-        <span class="name">elabelProvider</span><span class="result">: <span class="extype" name="org.jgrapht.ext.EdgeNameProvider">EdgeNameProvider</span>[<a href="#Edge=org.sireum.alir.AlirEdge[Node]" class="extmbr" name="org.sireum.jawa.alir.interProcedural.InterProceduralGraph.Edge">Edge</a>] { def filterLabel(uri: String): String }</span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../../index.html#org.sireum.jawa.alir.interProcedural.InterProceduralGraph@elabelProvider:org.jgrapht.ext.EdgeNameProvider[InterProceduralGraph.this.Edge]{deffilterLabel(uri:String):String}" title="Permalink" target="_top">
-        <img src="../../../../../lib/permalink.png" />
-      </a>
-    </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
     </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="eq(x$1:AnyRef):Boolean"></a>
       <a id="eq(AnyRef):Boolean"></a>
@@ -877,52 +879,52 @@
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="org.sireum.jawa.alir.interProcedural.InterProceduralGraph#toDot" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="toDot(w:java.io.Writer):Unit"></a>
-      <a id="toDot(Writer):Unit"></a>
+      <a id="toDot(w:java.io.Writer,vlp:org.jgrapht.ext.VertexNameProvider[Node]):Unit"></a>
+      <a id="toDot(Writer,VertexNameProvider[Node]):Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">toDot</span><span class="params">(<span name="w">w: <span class="extype" name="java.io.Writer">Writer</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">toDot</span><span class="params">(<span name="w">w: <span class="extype" name="java.io.Writer">Writer</span></span>, <span name="vlp">vlp: <span class="extype" name="org.jgrapht.ext.VertexNameProvider">VertexNameProvider</span>[<span class="extype" name="org.sireum.jawa.alir.interProcedural.InterProceduralGraph.Node">Node</span>] = <span class="symbol"><span class="name"><a href="#vIDProvider:org.jgrapht.ext.VertexNameProvider[Node]{deffilterLabel(uri:String):String}">vIDProvider</a></span></span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#org.sireum.jawa.alir.interProcedural.InterProceduralGraph@toDot(w:java.io.Writer):Unit" title="Permalink" target="_top">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.interProcedural.InterProceduralGraph@toDot(w:java.io.Writer,vlp:org.jgrapht.ext.VertexNameProvider[Node]):Unit" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" />
       </a>
     </span>
       
     </li><li name="org.sireum.jawa.alir.interProcedural.InterProceduralGraph#toGML" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="toGML(w:java.io.Writer):Unit"></a>
-      <a id="toGML(Writer):Unit"></a>
+      <a id="toGML(w:java.io.Writer,vip:org.jgrapht.ext.VertexNameProvider[Node],vlp:org.jgrapht.ext.VertexNameProvider[Node],eip:org.jgrapht.ext.EdgeNameProvider[InterProceduralGraph.this.Edge],elp:org.jgrapht.ext.EdgeNameProvider[InterProceduralGraph.this.Edge]):Unit"></a>
+      <a id="toGML(Writer,VertexNameProvider[Node],VertexNameProvider[Node],EdgeNameProvider[Edge],EdgeNameProvider[Edge]):Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">toGML</span><span class="params">(<span name="w">w: <span class="extype" name="java.io.Writer">Writer</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">toGML</span><span class="params">(<span name="w">w: <span class="extype" name="java.io.Writer">Writer</span></span>, <span name="vip">vip: <span class="extype" name="org.jgrapht.ext.VertexNameProvider">VertexNameProvider</span>[<span class="extype" name="org.sireum.jawa.alir.interProcedural.InterProceduralGraph.Node">Node</span>] = <span class="symbol"><span class="name"><a href="#vIDProvider:org.jgrapht.ext.VertexNameProvider[Node]{deffilterLabel(uri:String):String}">vIDProvider</a></span></span></span>, <span name="vlp">vlp: <span class="extype" name="org.jgrapht.ext.VertexNameProvider">VertexNameProvider</span>[<span class="extype" name="org.sireum.jawa.alir.interProcedural.InterProceduralGraph.Node">Node</span>] = <span class="symbol">null</span></span>, <span name="eip">eip: <span class="extype" name="org.jgrapht.ext.EdgeNameProvider">EdgeNameProvider</span>[<a href="#Edge=org.sireum.alir.AlirEdge[Node]" class="extmbr" name="org.sireum.jawa.alir.interProcedural.InterProceduralGraph.Edge">Edge</a>] = <span class="symbol"><span class="name"><a href="#eIDProvider:org.jgrapht.ext.EdgeNameProvider[InterProceduralGraph.this.Edge]{deffilterLabel(uri:String):String}">eIDProvider</a></span></span></span>, <span name="elp">elp: <span class="extype" name="org.jgrapht.ext.EdgeNameProvider">EdgeNameProvider</span>[<a href="#Edge=org.sireum.alir.AlirEdge[Node]" class="extmbr" name="org.sireum.jawa.alir.interProcedural.InterProceduralGraph.Edge">Edge</a>] = <span class="symbol">null</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#org.sireum.jawa.alir.interProcedural.InterProceduralGraph@toGML(w:java.io.Writer):Unit" title="Permalink" target="_top">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.interProcedural.InterProceduralGraph@toGML(w:java.io.Writer,vip:org.jgrapht.ext.VertexNameProvider[Node],vlp:org.jgrapht.ext.VertexNameProvider[Node],eip:org.jgrapht.ext.EdgeNameProvider[InterProceduralGraph.this.Edge],elp:org.jgrapht.ext.EdgeNameProvider[InterProceduralGraph.this.Edge]):Unit" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" />
       </a>
     </span>
       
     </li><li name="org.sireum.jawa.alir.interProcedural.InterProceduralGraph#toGraphML" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="toGraphML(w:java.io.Writer):Unit"></a>
-      <a id="toGraphML(Writer):Unit"></a>
+      <a id="toGraphML(w:java.io.Writer,vip:org.jgrapht.ext.VertexNameProvider[Node],vlp:org.jgrapht.ext.VertexNameProvider[Node],eip:org.jgrapht.ext.EdgeNameProvider[InterProceduralGraph.this.Edge],elp:org.jgrapht.ext.EdgeNameProvider[InterProceduralGraph.this.Edge]):Unit"></a>
+      <a id="toGraphML(Writer,VertexNameProvider[Node],VertexNameProvider[Node],EdgeNameProvider[Edge],EdgeNameProvider[Edge]):Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">toGraphML</span><span class="params">(<span name="w">w: <span class="extype" name="java.io.Writer">Writer</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">toGraphML</span><span class="params">(<span name="w">w: <span class="extype" name="java.io.Writer">Writer</span></span>, <span name="vip">vip: <span class="extype" name="org.jgrapht.ext.VertexNameProvider">VertexNameProvider</span>[<span class="extype" name="org.sireum.jawa.alir.interProcedural.InterProceduralGraph.Node">Node</span>] = <span class="symbol"><span class="name"><a href="#vIDProvider:org.jgrapht.ext.VertexNameProvider[Node]{deffilterLabel(uri:String):String}">vIDProvider</a></span></span></span>, <span name="vlp">vlp: <span class="extype" name="org.jgrapht.ext.VertexNameProvider">VertexNameProvider</span>[<span class="extype" name="org.sireum.jawa.alir.interProcedural.InterProceduralGraph.Node">Node</span>] = <span class="symbol">null</span></span>, <span name="eip">eip: <span class="extype" name="org.jgrapht.ext.EdgeNameProvider">EdgeNameProvider</span>[<a href="#Edge=org.sireum.alir.AlirEdge[Node]" class="extmbr" name="org.sireum.jawa.alir.interProcedural.InterProceduralGraph.Edge">Edge</a>] = <span class="symbol"><span class="name"><a href="#eIDProvider:org.jgrapht.ext.EdgeNameProvider[InterProceduralGraph.this.Edge]{deffilterLabel(uri:String):String}">eIDProvider</a></span></span></span>, <span name="elp">elp: <span class="extype" name="org.jgrapht.ext.EdgeNameProvider">EdgeNameProvider</span>[<a href="#Edge=org.sireum.alir.AlirEdge[Node]" class="extmbr" name="org.sireum.jawa.alir.interProcedural.InterProceduralGraph.Edge">Edge</a>] = <span class="symbol">null</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#org.sireum.jawa.alir.interProcedural.InterProceduralGraph@toGraphML(w:java.io.Writer):Unit" title="Permalink" target="_top">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.interProcedural.InterProceduralGraph@toGraphML(w:java.io.Writer,vip:org.jgrapht.ext.VertexNameProvider[Node],vlp:org.jgrapht.ext.VertexNameProvider[Node],eip:org.jgrapht.ext.EdgeNameProvider[InterProceduralGraph.this.Edge],elp:org.jgrapht.ext.EdgeNameProvider[InterProceduralGraph.this.Edge]):Unit" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" />
       </a>
     </span>
@@ -944,19 +946,19 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li name="org.sireum.jawa.alir.interProcedural.InterProceduralGraph#vlabelProvider" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="vlabelProvider:org.jgrapht.ext.VertexNameProvider[Node]{deffilterLabel(uri:String):String}"></a>
-      <a id="vlabelProvider:VertexNameProvider[Node]{deffilterLabel(uri:String):String}"></a>
+    </li><li name="org.sireum.jawa.alir.interProcedural.InterProceduralGraph#vIDProvider" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="vIDProvider:org.jgrapht.ext.VertexNameProvider[Node]{deffilterLabel(uri:String):String}"></a>
+      <a id="vIDProvider:VertexNameProvider[Node]{deffilterLabel(uri:String):String}"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">val</span>
       </span>
       <span class="symbol">
-        <span class="name">vlabelProvider</span><span class="result">: <span class="extype" name="org.jgrapht.ext.VertexNameProvider">VertexNameProvider</span>[<span class="extype" name="org.sireum.jawa.alir.interProcedural.InterProceduralGraph.Node">Node</span>] { def filterLabel(uri: String): String }</span>
+        <span class="name">vIDProvider</span><span class="result">: <span class="extype" name="org.jgrapht.ext.VertexNameProvider">VertexNameProvider</span>[<span class="extype" name="org.sireum.jawa.alir.interProcedural.InterProceduralGraph.Node">Node</span>] { def filterLabel(uri: String): String }</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#org.sireum.jawa.alir.interProcedural.InterProceduralGraph@vlabelProvider:org.jgrapht.ext.VertexNameProvider[Node]{deffilterLabel(uri:String):String}" title="Permalink" target="_top">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.interProcedural.InterProceduralGraph@vIDProvider:org.jgrapht.ext.VertexNameProvider[Node]{deffilterLabel(uri:String):String}" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" />
       </a>
     </span>

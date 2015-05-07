@@ -30,7 +30,9 @@
       <div id="definition">
         <img src="../../../../../../lib/object_big.png" />
         <p id="owner"><a href="../../../../../package.html" class="extype" name="org">org</a>.<a href="../../../../package.html" class="extype" name="org.sireum">sireum</a>.<a href="../../../package.html" class="extype" name="org.sireum.jawa">jawa</a>.<a href="../../package.html" class="extype" name="org.sireum.jawa.alir">alir</a>.<a href="../package.html" class="extype" name="org.sireum.jawa.alir.pta">pta</a>.<a href="package.html" class="extype" name="org.sireum.jawa.alir.pta.reachingFactsAnalysis">reachingFactsAnalysis</a></p>
-        <h1>ReachingFactsAnalysisHelper</h1> <span class="permalink">
+        <h1>ReachingFactsAnalysisHelper</h1><h3><span class="morelinks"><div>Related Doc:
+            <a href="package.html" class="extype" name="org.sireum.jawa.alir.pta.reachingFactsAnalysis">package reachingFactsAnalysis</a>
+          </div></span></h3><span class="permalink">
       <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.reachingFactsAnalysis.ReachingFactsAnalysisHelper$" title="Permalink" target="_top">
         <img src="../../../../../../lib/permalink.png" />
       </a>
@@ -178,23 +180,6 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li name="org.sireum.jawa.alir.pta.reachingFactsAnalysis.ReachingFactsAnalysisHelper#checkRHSs" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="checkRHSs(rhss:List[org.sireum.pilar.ast.Exp],s:org.sireum.util.ISet[org.sireum.jawa.alir.pta.reachingFactsAnalysis.RFAFact]):Boolean"></a>
-      <a id="checkRHSs(List[Exp],ISet[RFAFact]):Boolean"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">checkRHSs</span><span class="params">(<span name="rhss">rhss: <span class="extype" name="scala.List">List</span>[<span class="extype" name="org.sireum.pilar.ast.Exp">Exp</span>]</span>, <span name="s">s: <span class="extype" name="org.sireum.util.ISet">ISet</span>[<a href="RFAFact.html" class="extype" name="org.sireum.jawa.alir.pta.reachingFactsAnalysis.RFAFact">RFAFact</a>]</span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.reachingFactsAnalysis.ReachingFactsAnalysisHelper$@checkRHSs(rhss:List[org.sireum.pilar.ast.Exp],s:org.sireum.util.ISet[org.sireum.jawa.alir.pta.reachingFactsAnalysis.RFAFact]):Boolean" title="Permalink" target="_top">
-        <img src="../../../../../../lib/permalink.png" />
-      </a>
-    </span>
-      
     </li><li name="scala.AnyRef#clone" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="clone():Object"></a>
       <a id="clone():AnyRef"></a>
@@ -276,18 +261,18 @@
               
         </dd></dl></div>
     </li><li name="org.sireum.jawa.alir.pta.reachingFactsAnalysis.ReachingFactsAnalysisHelper#getCalleeSet" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="getCalleeSet(s:org.sireum.util.ISet[org.sireum.jawa.alir.pta.reachingFactsAnalysis.RFAFact],cj:org.sireum.pilar.ast.CallJump,callerContext:org.sireum.jawa.alir.Context):org.sireum.util.ISet[org.sireum.jawa.alir.interProcedural.Callee]"></a>
-      <a id="getCalleeSet(ISet[RFAFact],CallJump,Context):ISet[Callee]"></a>
+      <a id="getCalleeSet(cj:org.sireum.pilar.ast.CallJump,callerContext:org.sireum.jawa.alir.Context,ptaresult:org.sireum.jawa.alir.pta.PTAResult):org.sireum.util.ISet[org.sireum.jawa.alir.interProcedural.Callee]"></a>
+      <a id="getCalleeSet(CallJump,Context,PTAResult):ISet[Callee]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">getCalleeSet</span><span class="params">(<span name="s">s: <span class="extype" name="org.sireum.util.ISet">ISet</span>[<a href="RFAFact.html" class="extype" name="org.sireum.jawa.alir.pta.reachingFactsAnalysis.RFAFact">RFAFact</a>]</span>, <span name="cj">cj: <span class="extype" name="org.sireum.pilar.ast.CallJump">CallJump</span></span>, <span name="callerContext">callerContext: <a href="../../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>)</span><span class="result">: <span class="extype" name="org.sireum.util.ISet">ISet</span>[<a href="../../interProcedural/Callee.html" class="extype" name="org.sireum.jawa.alir.interProcedural.Callee">Callee</a>]</span>
+        <span class="name">getCalleeSet</span><span class="params">(<span name="cj">cj: <span class="extype" name="org.sireum.pilar.ast.CallJump">CallJump</span></span>, <span name="callerContext">callerContext: <a href="../../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>, <span name="ptaresult">ptaresult: <a href="../PTAResult.html" class="extype" name="org.sireum.jawa.alir.pta.PTAResult">PTAResult</a></span>)</span><span class="result">: <span class="extype" name="org.sireum.util.ISet">ISet</span>[<a href="../../interProcedural/Callee.html" class="extype" name="org.sireum.jawa.alir.interProcedural.Callee">Callee</a>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.reachingFactsAnalysis.ReachingFactsAnalysisHelper$@getCalleeSet(s:org.sireum.util.ISet[org.sireum.jawa.alir.pta.reachingFactsAnalysis.RFAFact],cj:org.sireum.pilar.ast.CallJump,callerContext:org.sireum.jawa.alir.Context):org.sireum.util.ISet[org.sireum.jawa.alir.interProcedural.Callee]" title="Permalink" target="_top">
+      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.reachingFactsAnalysis.ReachingFactsAnalysisHelper$@getCalleeSet(cj:org.sireum.pilar.ast.CallJump,callerContext:org.sireum.jawa.alir.Context,ptaresult:org.sireum.jawa.alir.pta.PTAResult):org.sireum.util.ISet[org.sireum.jawa.alir.interProcedural.Callee]" title="Permalink" target="_top">
         <img src="../../../../../../lib/permalink.png" />
       </a>
     </span>
@@ -310,7 +295,7 @@
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="org.sireum.jawa.alir.pta.reachingFactsAnalysis.ReachingFactsAnalysisHelper#getFactMap" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="getFactMap(s:org.sireum.util.ISet[org.sireum.jawa.alir.pta.reachingFactsAnalysis.RFAFact]):Map[org.sireum.alir.Slot,Set[org.sireum.jawa.alir.Instance]]"></a>
+      <a id="getFactMap(s:org.sireum.util.ISet[org.sireum.jawa.alir.pta.reachingFactsAnalysis.RFAFact]):Map[org.sireum.alir.Slot,Set[org.sireum.jawa.alir.pta.Instance]]"></a>
       <a id="getFactMap(ISet[RFAFact]):Map[Slot,Set[Instance]]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -318,10 +303,10 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">getFactMap</span><span class="params">(<span name="s">s: <span class="extype" name="org.sireum.util.ISet">ISet</span>[<a href="RFAFact.html" class="extype" name="org.sireum.jawa.alir.pta.reachingFactsAnalysis.RFAFact">RFAFact</a>]</span>)</span><span class="result">: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="org.sireum.alir.Slot">Slot</span>, <span class="extype" name="scala.Predef.Set">Set</span>[<a href="../../Instance.html" class="extype" name="org.sireum.jawa.alir.Instance">Instance</a>]]</span>
+        <span class="name">getFactMap</span><span class="params">(<span name="s">s: <span class="extype" name="org.sireum.util.ISet">ISet</span>[<a href="RFAFact.html" class="extype" name="org.sireum.jawa.alir.pta.reachingFactsAnalysis.RFAFact">RFAFact</a>]</span>)</span><span class="result">: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="org.sireum.alir.Slot">Slot</span>, <span class="extype" name="scala.Predef.Set">Set</span>[<a href="../Instance.html" class="extype" name="org.sireum.jawa.alir.pta.Instance">Instance</a>]]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.reachingFactsAnalysis.ReachingFactsAnalysisHelper$@getFactMap(s:org.sireum.util.ISet[org.sireum.jawa.alir.pta.reachingFactsAnalysis.RFAFact]):Map[org.sireum.alir.Slot,Set[org.sireum.jawa.alir.Instance]]" title="Permalink" target="_top">
+      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.reachingFactsAnalysis.ReachingFactsAnalysisHelper$@getFactMap(s:org.sireum.util.ISet[org.sireum.jawa.alir.pta.reachingFactsAnalysis.RFAFact]):Map[org.sireum.alir.Slot,Set[org.sireum.jawa.alir.pta.Instance]]" title="Permalink" target="_top">
         <img src="../../../../../../lib/permalink.png" />
       </a>
     </span>
@@ -344,7 +329,7 @@
     </span>
       
     </li><li name="org.sireum.jawa.alir.pta.reachingFactsAnalysis.ReachingFactsAnalysisHelper#getHeapFacts" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="getHeapFacts(s:org.sireum.util.ISet[org.sireum.jawa.alir.pta.reachingFactsAnalysis.RFAFact]):org.sireum.util.ISet[(org.sireum.jawa.alir.pta.reachingFactsAnalysis.HeapSlot,org.sireum.jawa.alir.Instance)]"></a>
+      <a id="getHeapFacts(s:org.sireum.util.ISet[org.sireum.jawa.alir.pta.reachingFactsAnalysis.RFAFact]):org.sireum.util.ISet[(org.sireum.jawa.alir.pta.HeapSlot,org.sireum.jawa.alir.pta.Instance)]"></a>
       <a id="getHeapFacts(ISet[RFAFact]):ISet[(HeapSlot,Instance)]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -352,16 +337,16 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">getHeapFacts</span><span class="params">(<span name="s">s: <span class="extype" name="org.sireum.util.ISet">ISet</span>[<a href="RFAFact.html" class="extype" name="org.sireum.jawa.alir.pta.reachingFactsAnalysis.RFAFact">RFAFact</a>]</span>)</span><span class="result">: <span class="extype" name="org.sireum.util.ISet">ISet</span>[(<a href="HeapSlot.html" class="extype" name="org.sireum.jawa.alir.pta.reachingFactsAnalysis.HeapSlot">HeapSlot</a>, <a href="../../Instance.html" class="extype" name="org.sireum.jawa.alir.Instance">Instance</a>)]</span>
+        <span class="name">getHeapFacts</span><span class="params">(<span name="s">s: <span class="extype" name="org.sireum.util.ISet">ISet</span>[<a href="RFAFact.html" class="extype" name="org.sireum.jawa.alir.pta.reachingFactsAnalysis.RFAFact">RFAFact</a>]</span>)</span><span class="result">: <span class="extype" name="org.sireum.util.ISet">ISet</span>[(<a href="../HeapSlot.html" class="extype" name="org.sireum.jawa.alir.pta.HeapSlot">HeapSlot</a>, <a href="../Instance.html" class="extype" name="org.sireum.jawa.alir.pta.Instance">Instance</a>)]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.reachingFactsAnalysis.ReachingFactsAnalysisHelper$@getHeapFacts(s:org.sireum.util.ISet[org.sireum.jawa.alir.pta.reachingFactsAnalysis.RFAFact]):org.sireum.util.ISet[(org.sireum.jawa.alir.pta.reachingFactsAnalysis.HeapSlot,org.sireum.jawa.alir.Instance)]" title="Permalink" target="_top">
+      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.reachingFactsAnalysis.ReachingFactsAnalysisHelper$@getHeapFacts(s:org.sireum.util.ISet[org.sireum.jawa.alir.pta.reachingFactsAnalysis.RFAFact]):org.sireum.util.ISet[(org.sireum.jawa.alir.pta.HeapSlot,org.sireum.jawa.alir.pta.Instance)]" title="Permalink" target="_top">
         <img src="../../../../../../lib/permalink.png" />
       </a>
     </span>
       
     </li><li name="org.sireum.jawa.alir.pta.reachingFactsAnalysis.ReachingFactsAnalysisHelper#getInstanceFromType" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="getInstanceFromType(typ:org.sireum.jawa.Type,currentContext:org.sireum.jawa.alir.Context):Option[org.sireum.jawa.alir.Instance]"></a>
+      <a id="getInstanceFromType(typ:org.sireum.jawa.Type,currentContext:org.sireum.jawa.alir.Context):Option[org.sireum.jawa.alir.pta.Instance]"></a>
       <a id="getInstanceFromType(Type,Context):Option[Instance]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -369,10 +354,10 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">getInstanceFromType</span><span class="params">(<span name="typ">typ: <a href="../../../Type.html" class="extype" name="org.sireum.jawa.Type">Type</a></span>, <span name="currentContext">currentContext: <a href="../../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>)</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<a href="../../Instance.html" class="extype" name="org.sireum.jawa.alir.Instance">Instance</a>]</span>
+        <span class="name">getInstanceFromType</span><span class="params">(<span name="typ">typ: <a href="../../../Type.html" class="extype" name="org.sireum.jawa.Type">Type</a></span>, <span name="currentContext">currentContext: <a href="../../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>)</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<a href="../Instance.html" class="extype" name="org.sireum.jawa.alir.pta.Instance">Instance</a>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.reachingFactsAnalysis.ReachingFactsAnalysisHelper$@getInstanceFromType(typ:org.sireum.jawa.Type,currentContext:org.sireum.jawa.alir.Context):Option[org.sireum.jawa.alir.Instance]" title="Permalink" target="_top">
+      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.reachingFactsAnalysis.ReachingFactsAnalysisHelper$@getInstanceFromType(typ:org.sireum.jawa.Type,currentContext:org.sireum.jawa.alir.Context):Option[org.sireum.jawa.alir.pta.Instance]" title="Permalink" target="_top">
         <img src="../../../../../../lib/permalink.png" />
       </a>
     </span>
@@ -395,7 +380,7 @@
     </span>
       
     </li><li name="org.sireum.jawa.alir.pta.reachingFactsAnalysis.ReachingFactsAnalysisHelper#getRelatedHeapFacts" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="getRelatedHeapFacts(insts:org.sireum.util.ISet[org.sireum.jawa.alir.Instance],s:org.sireum.util.ISet[org.sireum.jawa.alir.pta.reachingFactsAnalysis.RFAFact]):org.sireum.util.ISet[org.sireum.jawa.alir.pta.reachingFactsAnalysis.RFAFact]"></a>
+      <a id="getRelatedHeapFacts(insts:org.sireum.util.ISet[org.sireum.jawa.alir.pta.Instance],s:org.sireum.util.ISet[org.sireum.jawa.alir.pta.reachingFactsAnalysis.RFAFact]):org.sireum.util.ISet[org.sireum.jawa.alir.pta.reachingFactsAnalysis.RFAFact]"></a>
       <a id="getRelatedHeapFacts(ISet[Instance],ISet[RFAFact]):ISet[RFAFact]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -403,10 +388,10 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">getRelatedHeapFacts</span><span class="params">(<span name="insts">insts: <span class="extype" name="org.sireum.util.ISet">ISet</span>[<a href="../../Instance.html" class="extype" name="org.sireum.jawa.alir.Instance">Instance</a>]</span>, <span name="s">s: <span class="extype" name="org.sireum.util.ISet">ISet</span>[<a href="RFAFact.html" class="extype" name="org.sireum.jawa.alir.pta.reachingFactsAnalysis.RFAFact">RFAFact</a>]</span>)</span><span class="result">: <span class="extype" name="org.sireum.util.ISet">ISet</span>[<a href="RFAFact.html" class="extype" name="org.sireum.jawa.alir.pta.reachingFactsAnalysis.RFAFact">RFAFact</a>]</span>
+        <span class="name">getRelatedHeapFacts</span><span class="params">(<span name="insts">insts: <span class="extype" name="org.sireum.util.ISet">ISet</span>[<a href="../Instance.html" class="extype" name="org.sireum.jawa.alir.pta.Instance">Instance</a>]</span>, <span name="s">s: <span class="extype" name="org.sireum.util.ISet">ISet</span>[<a href="RFAFact.html" class="extype" name="org.sireum.jawa.alir.pta.reachingFactsAnalysis.RFAFact">RFAFact</a>]</span>)</span><span class="result">: <span class="extype" name="org.sireum.util.ISet">ISet</span>[<a href="RFAFact.html" class="extype" name="org.sireum.jawa.alir.pta.reachingFactsAnalysis.RFAFact">RFAFact</a>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.reachingFactsAnalysis.ReachingFactsAnalysisHelper$@getRelatedHeapFacts(insts:org.sireum.util.ISet[org.sireum.jawa.alir.Instance],s:org.sireum.util.ISet[org.sireum.jawa.alir.pta.reachingFactsAnalysis.RFAFact]):org.sireum.util.ISet[org.sireum.jawa.alir.pta.reachingFactsAnalysis.RFAFact]" title="Permalink" target="_top">
+      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.reachingFactsAnalysis.ReachingFactsAnalysisHelper$@getRelatedHeapFacts(insts:org.sireum.util.ISet[org.sireum.jawa.alir.pta.Instance],s:org.sireum.util.ISet[org.sireum.jawa.alir.pta.reachingFactsAnalysis.RFAFact]):org.sireum.util.ISet[org.sireum.jawa.alir.pta.reachingFactsAnalysis.RFAFact]" title="Permalink" target="_top">
         <img src="../../../../../../lib/permalink.png" />
       </a>
     </span>
@@ -446,35 +431,35 @@
     </span>
       
     </li><li name="org.sireum.jawa.alir.pta.reachingFactsAnalysis.ReachingFactsAnalysisHelper#getUnknownObject" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="getUnknownObject(calleeProc:org.sireum.jawa.JawaProcedure,s:org.sireum.util.ISet[org.sireum.jawa.alir.pta.reachingFactsAnalysis.RFAFact],args:Seq[String],retVars:Seq[String],currentContext:org.sireum.jawa.alir.Context):(org.sireum.util.ISet[org.sireum.jawa.alir.pta.reachingFactsAnalysis.RFAFact],org.sireum.util.ISet[org.sireum.jawa.alir.pta.reachingFactsAnalysis.RFAFact])"></a>
-      <a id="getUnknownObject(JawaProcedure,ISet[RFAFact],Seq[String],Seq[String],Context):(ISet[RFAFact],ISet[RFAFact])"></a>
+      <a id="getUnknownObject(calleeMethod:org.sireum.jawa.JawaMethod,s:org.sireum.jawa.alir.pta.PTAResult,args:Seq[String],retVars:Seq[String],currentContext:org.sireum.jawa.alir.Context):(org.sireum.util.ISet[org.sireum.jawa.alir.pta.reachingFactsAnalysis.RFAFact],org.sireum.util.ISet[org.sireum.jawa.alir.pta.reachingFactsAnalysis.RFAFact])"></a>
+      <a id="getUnknownObject(JawaMethod,PTAResult,Seq[String],Seq[String],Context):(ISet[RFAFact],ISet[RFAFact])"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">getUnknownObject</span><span class="params">(<span name="calleeProc">calleeProc: <a href="../../../JawaProcedure.html" class="extype" name="org.sireum.jawa.JawaProcedure">JawaProcedure</a></span>, <span name="s">s: <span class="extype" name="org.sireum.util.ISet">ISet</span>[<a href="RFAFact.html" class="extype" name="org.sireum.jawa.alir.pta.reachingFactsAnalysis.RFAFact">RFAFact</a>]</span>, <span name="args">args: <span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="retVars">retVars: <span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="currentContext">currentContext: <a href="../../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>)</span><span class="result">: (<span class="extype" name="org.sireum.util.ISet">ISet</span>[<a href="RFAFact.html" class="extype" name="org.sireum.jawa.alir.pta.reachingFactsAnalysis.RFAFact">RFAFact</a>], <span class="extype" name="org.sireum.util.ISet">ISet</span>[<a href="RFAFact.html" class="extype" name="org.sireum.jawa.alir.pta.reachingFactsAnalysis.RFAFact">RFAFact</a>])</span>
+        <span class="name">getUnknownObject</span><span class="params">(<span name="calleeMethod">calleeMethod: <a href="../../../JawaMethod.html" class="extype" name="org.sireum.jawa.JawaMethod">JawaMethod</a></span>, <span name="s">s: <a href="../PTAResult.html" class="extype" name="org.sireum.jawa.alir.pta.PTAResult">PTAResult</a></span>, <span name="args">args: <span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="retVars">retVars: <span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="currentContext">currentContext: <a href="../../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>)</span><span class="result">: (<span class="extype" name="org.sireum.util.ISet">ISet</span>[<a href="RFAFact.html" class="extype" name="org.sireum.jawa.alir.pta.reachingFactsAnalysis.RFAFact">RFAFact</a>], <span class="extype" name="org.sireum.util.ISet">ISet</span>[<a href="RFAFact.html" class="extype" name="org.sireum.jawa.alir.pta.reachingFactsAnalysis.RFAFact">RFAFact</a>])</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.reachingFactsAnalysis.ReachingFactsAnalysisHelper$@getUnknownObject(calleeProc:org.sireum.jawa.JawaProcedure,s:org.sireum.util.ISet[org.sireum.jawa.alir.pta.reachingFactsAnalysis.RFAFact],args:Seq[String],retVars:Seq[String],currentContext:org.sireum.jawa.alir.Context):(org.sireum.util.ISet[org.sireum.jawa.alir.pta.reachingFactsAnalysis.RFAFact],org.sireum.util.ISet[org.sireum.jawa.alir.pta.reachingFactsAnalysis.RFAFact])" title="Permalink" target="_top">
+      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.reachingFactsAnalysis.ReachingFactsAnalysisHelper$@getUnknownObject(calleeMethod:org.sireum.jawa.JawaMethod,s:org.sireum.jawa.alir.pta.PTAResult,args:Seq[String],retVars:Seq[String],currentContext:org.sireum.jawa.alir.Context):(org.sireum.util.ISet[org.sireum.jawa.alir.pta.reachingFactsAnalysis.RFAFact],org.sireum.util.ISet[org.sireum.jawa.alir.pta.reachingFactsAnalysis.RFAFact])" title="Permalink" target="_top">
         <img src="../../../../../../lib/permalink.png" />
       </a>
     </span>
       
     </li><li name="org.sireum.jawa.alir.pta.reachingFactsAnalysis.ReachingFactsAnalysisHelper#getUnknownObjectForClinit" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="getUnknownObjectForClinit(calleeProc:org.sireum.jawa.JawaProcedure,currentContext:org.sireum.jawa.alir.Context):org.sireum.util.ISet[org.sireum.jawa.alir.pta.reachingFactsAnalysis.RFAFact]"></a>
-      <a id="getUnknownObjectForClinit(JawaProcedure,Context):ISet[RFAFact]"></a>
+      <a id="getUnknownObjectForClinit(calleeMethod:org.sireum.jawa.JawaMethod,currentContext:org.sireum.jawa.alir.Context):org.sireum.util.ISet[org.sireum.jawa.alir.pta.reachingFactsAnalysis.RFAFact]"></a>
+      <a id="getUnknownObjectForClinit(JawaMethod,Context):ISet[RFAFact]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">getUnknownObjectForClinit</span><span class="params">(<span name="calleeProc">calleeProc: <a href="../../../JawaProcedure.html" class="extype" name="org.sireum.jawa.JawaProcedure">JawaProcedure</a></span>, <span name="currentContext">currentContext: <a href="../../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>)</span><span class="result">: <span class="extype" name="org.sireum.util.ISet">ISet</span>[<a href="RFAFact.html" class="extype" name="org.sireum.jawa.alir.pta.reachingFactsAnalysis.RFAFact">RFAFact</a>]</span>
+        <span class="name">getUnknownObjectForClinit</span><span class="params">(<span name="calleeMethod">calleeMethod: <a href="../../../JawaMethod.html" class="extype" name="org.sireum.jawa.JawaMethod">JawaMethod</a></span>, <span name="currentContext">currentContext: <a href="../../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>)</span><span class="result">: <span class="extype" name="org.sireum.util.ISet">ISet</span>[<a href="RFAFact.html" class="extype" name="org.sireum.jawa.alir.pta.reachingFactsAnalysis.RFAFact">RFAFact</a>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.reachingFactsAnalysis.ReachingFactsAnalysisHelper$@getUnknownObjectForClinit(calleeProc:org.sireum.jawa.JawaProcedure,currentContext:org.sireum.jawa.alir.Context):org.sireum.util.ISet[org.sireum.jawa.alir.pta.reachingFactsAnalysis.RFAFact]" title="Permalink" target="_top">
+      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.reachingFactsAnalysis.ReachingFactsAnalysisHelper$@getUnknownObjectForClinit(calleeMethod:org.sireum.jawa.JawaMethod,currentContext:org.sireum.jawa.alir.Context):org.sireum.util.ISet[org.sireum.jawa.alir.pta.reachingFactsAnalysis.RFAFact]" title="Permalink" target="_top">
         <img src="../../../../../../lib/permalink.png" />
       </a>
     </span>
@@ -616,35 +601,35 @@
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="org.sireum.jawa.alir.pta.reachingFactsAnalysis.ReachingFactsAnalysisHelper#processLHSs" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="processLHSs(lhss:List[org.sireum.pilar.ast.Exp],s:org.sireum.util.ISet[org.sireum.jawa.alir.pta.reachingFactsAnalysis.RFAFact],currentContext:org.sireum.jawa.alir.Context):Map[Int,(org.sireum.alir.Slot,Boolean)]"></a>
-      <a id="processLHSs(List[Exp],ISet[RFAFact],Context):Map[Int,(Slot,Boolean)]"></a>
+      <a id="processLHSs(lhss:List[org.sireum.pilar.ast.Exp],currentContext:org.sireum.jawa.alir.Context,ptaresult:org.sireum.jawa.alir.pta.PTAResult):Map[Int,(org.sireum.alir.Slot,Boolean)]"></a>
+      <a id="processLHSs(List[Exp],Context,PTAResult):Map[Int,(Slot,Boolean)]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">processLHSs</span><span class="params">(<span name="lhss">lhss: <span class="extype" name="scala.List">List</span>[<span class="extype" name="org.sireum.pilar.ast.Exp">Exp</span>]</span>, <span name="s">s: <span class="extype" name="org.sireum.util.ISet">ISet</span>[<a href="RFAFact.html" class="extype" name="org.sireum.jawa.alir.pta.reachingFactsAnalysis.RFAFact">RFAFact</a>]</span>, <span name="currentContext">currentContext: <a href="../../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>)</span><span class="result">: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Int">Int</span>, (<span class="extype" name="org.sireum.alir.Slot">Slot</span>, <span class="extype" name="scala.Boolean">Boolean</span>)]</span>
+        <span class="name">processLHSs</span><span class="params">(<span name="lhss">lhss: <span class="extype" name="scala.List">List</span>[<span class="extype" name="org.sireum.pilar.ast.Exp">Exp</span>]</span>, <span name="currentContext">currentContext: <a href="../../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>, <span name="ptaresult">ptaresult: <a href="../PTAResult.html" class="extype" name="org.sireum.jawa.alir.pta.PTAResult">PTAResult</a></span>)</span><span class="result">: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Int">Int</span>, (<span class="extype" name="org.sireum.alir.Slot">Slot</span>, <span class="extype" name="scala.Boolean">Boolean</span>)]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.reachingFactsAnalysis.ReachingFactsAnalysisHelper$@processLHSs(lhss:List[org.sireum.pilar.ast.Exp],s:org.sireum.util.ISet[org.sireum.jawa.alir.pta.reachingFactsAnalysis.RFAFact],currentContext:org.sireum.jawa.alir.Context):Map[Int,(org.sireum.alir.Slot,Boolean)]" title="Permalink" target="_top">
+      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.reachingFactsAnalysis.ReachingFactsAnalysisHelper$@processLHSs(lhss:List[org.sireum.pilar.ast.Exp],currentContext:org.sireum.jawa.alir.Context,ptaresult:org.sireum.jawa.alir.pta.PTAResult):Map[Int,(org.sireum.alir.Slot,Boolean)]" title="Permalink" target="_top">
         <img src="../../../../../../lib/permalink.png" />
       </a>
     </span>
       
     </li><li name="org.sireum.jawa.alir.pta.reachingFactsAnalysis.ReachingFactsAnalysisHelper#processRHSs" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="processRHSs(rhss:List[org.sireum.pilar.ast.Exp],s:org.sireum.util.ISet[org.sireum.jawa.alir.pta.reachingFactsAnalysis.RFAFact],currentContext:org.sireum.jawa.alir.Context):Map[Int,Set[org.sireum.jawa.alir.Instance]]"></a>
-      <a id="processRHSs(List[Exp],ISet[RFAFact],Context):Map[Int,Set[Instance]]"></a>
+      <a id="processRHSs(rhss:List[org.sireum.pilar.ast.Exp],currentContext:org.sireum.jawa.alir.Context,ptaresult:org.sireum.jawa.alir.pta.PTAResult):Map[Int,Set[org.sireum.jawa.alir.pta.Instance]]"></a>
+      <a id="processRHSs(List[Exp],Context,PTAResult):Map[Int,Set[Instance]]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">processRHSs</span><span class="params">(<span name="rhss">rhss: <span class="extype" name="scala.List">List</span>[<span class="extype" name="org.sireum.pilar.ast.Exp">Exp</span>]</span>, <span name="s">s: <span class="extype" name="org.sireum.util.ISet">ISet</span>[<a href="RFAFact.html" class="extype" name="org.sireum.jawa.alir.pta.reachingFactsAnalysis.RFAFact">RFAFact</a>]</span>, <span name="currentContext">currentContext: <a href="../../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>)</span><span class="result">: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Int">Int</span>, <span class="extype" name="scala.Predef.Set">Set</span>[<a href="../../Instance.html" class="extype" name="org.sireum.jawa.alir.Instance">Instance</a>]]</span>
+        <span class="name">processRHSs</span><span class="params">(<span name="rhss">rhss: <span class="extype" name="scala.List">List</span>[<span class="extype" name="org.sireum.pilar.ast.Exp">Exp</span>]</span>, <span name="currentContext">currentContext: <a href="../../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>, <span name="ptaresult">ptaresult: <a href="../PTAResult.html" class="extype" name="org.sireum.jawa.alir.pta.PTAResult">PTAResult</a></span>)</span><span class="result">: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Int">Int</span>, <span class="extype" name="scala.Predef.Set">Set</span>[<a href="../Instance.html" class="extype" name="org.sireum.jawa.alir.pta.Instance">Instance</a>]]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.reachingFactsAnalysis.ReachingFactsAnalysisHelper$@processRHSs(rhss:List[org.sireum.pilar.ast.Exp],s:org.sireum.util.ISet[org.sireum.jawa.alir.pta.reachingFactsAnalysis.RFAFact],currentContext:org.sireum.jawa.alir.Context):Map[Int,Set[org.sireum.jawa.alir.Instance]]" title="Permalink" target="_top">
+      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.reachingFactsAnalysis.ReachingFactsAnalysisHelper$@processRHSs(rhss:List[org.sireum.pilar.ast.Exp],currentContext:org.sireum.jawa.alir.Context,ptaresult:org.sireum.jawa.alir.pta.PTAResult):Map[Int,Set[org.sireum.jawa.alir.pta.Instance]]" title="Permalink" target="_top">
         <img src="../../../../../../lib/permalink.png" />
       </a>
     </span>
@@ -683,6 +668,91 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="org.sireum.jawa.alir.pta.reachingFactsAnalysis.ReachingFactsAnalysisHelper#updatePTAResultCallArg" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="updatePTAResultCallArg(exp:org.sireum.pilar.ast.Exp,currentContext:org.sireum.jawa.alir.Context,s:org.sireum.util.ISet[org.sireum.jawa.alir.pta.reachingFactsAnalysis.RFAFact],ptaresult:org.sireum.jawa.alir.pta.PTAResult):Unit"></a>
+      <a id="updatePTAResultCallArg(Exp,Context,ISet[RFAFact],PTAResult):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">updatePTAResultCallArg</span><span class="params">(<span name="exp">exp: <span class="extype" name="org.sireum.pilar.ast.Exp">Exp</span></span>, <span name="currentContext">currentContext: <a href="../../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>, <span name="s">s: <span class="extype" name="org.sireum.util.ISet">ISet</span>[<a href="RFAFact.html" class="extype" name="org.sireum.jawa.alir.pta.reachingFactsAnalysis.RFAFact">RFAFact</a>]</span>, <span name="ptaresult">ptaresult: <a href="../PTAResult.html" class="extype" name="org.sireum.jawa.alir.pta.PTAResult">PTAResult</a></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.reachingFactsAnalysis.ReachingFactsAnalysisHelper$@updatePTAResultCallArg(exp:org.sireum.pilar.ast.Exp,currentContext:org.sireum.jawa.alir.Context,s:org.sireum.util.ISet[org.sireum.jawa.alir.pta.reachingFactsAnalysis.RFAFact],ptaresult:org.sireum.jawa.alir.pta.PTAResult):Unit" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.jawa.alir.pta.reachingFactsAnalysis.ReachingFactsAnalysisHelper#updatePTAResultCallJump" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="updatePTAResultCallJump(cj:org.sireum.pilar.ast.CallJump,callerContext:org.sireum.jawa.alir.Context,s:org.sireum.util.ISet[org.sireum.jawa.alir.pta.reachingFactsAnalysis.RFAFact],ptaresult:org.sireum.jawa.alir.pta.PTAResult):scala.collection.immutable.Seq[Unit]"></a>
+      <a id="updatePTAResultCallJump(CallJump,Context,ISet[RFAFact],PTAResult):Seq[Unit]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">updatePTAResultCallJump</span><span class="params">(<span name="cj">cj: <span class="extype" name="org.sireum.pilar.ast.CallJump">CallJump</span></span>, <span name="callerContext">callerContext: <a href="../../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>, <span name="s">s: <span class="extype" name="org.sireum.util.ISet">ISet</span>[<a href="RFAFact.html" class="extype" name="org.sireum.jawa.alir.pta.reachingFactsAnalysis.RFAFact">RFAFact</a>]</span>, <span name="ptaresult">ptaresult: <a href="../PTAResult.html" class="extype" name="org.sireum.jawa.alir.pta.PTAResult">PTAResult</a></span>)</span><span class="result">: <span class="extype" name="scala.collection.immutable.Seq">Seq</span>[<span class="extype" name="scala.Unit">Unit</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.reachingFactsAnalysis.ReachingFactsAnalysisHelper$@updatePTAResultCallJump(cj:org.sireum.pilar.ast.CallJump,callerContext:org.sireum.jawa.alir.Context,s:org.sireum.util.ISet[org.sireum.jawa.alir.pta.reachingFactsAnalysis.RFAFact],ptaresult:org.sireum.jawa.alir.pta.PTAResult):scala.collection.immutable.Seq[Unit]" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.jawa.alir.pta.reachingFactsAnalysis.ReachingFactsAnalysisHelper#updatePTAResultExp" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="updatePTAResultExp(exp:org.sireum.pilar.ast.Exp,currentContext:org.sireum.jawa.alir.Context,s:org.sireum.util.ISet[org.sireum.jawa.alir.pta.reachingFactsAnalysis.RFAFact],ptaresult:org.sireum.jawa.alir.pta.PTAResult):Unit"></a>
+      <a id="updatePTAResultExp(Exp,Context,ISet[RFAFact],PTAResult):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">updatePTAResultExp</span><span class="params">(<span name="exp">exp: <span class="extype" name="org.sireum.pilar.ast.Exp">Exp</span></span>, <span name="currentContext">currentContext: <a href="../../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>, <span name="s">s: <span class="extype" name="org.sireum.util.ISet">ISet</span>[<a href="RFAFact.html" class="extype" name="org.sireum.jawa.alir.pta.reachingFactsAnalysis.RFAFact">RFAFact</a>]</span>, <span name="ptaresult">ptaresult: <a href="../PTAResult.html" class="extype" name="org.sireum.jawa.alir.pta.PTAResult">PTAResult</a></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.reachingFactsAnalysis.ReachingFactsAnalysisHelper$@updatePTAResultExp(exp:org.sireum.pilar.ast.Exp,currentContext:org.sireum.jawa.alir.Context,s:org.sireum.util.ISet[org.sireum.jawa.alir.pta.reachingFactsAnalysis.RFAFact],ptaresult:org.sireum.jawa.alir.pta.PTAResult):Unit" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.jawa.alir.pta.reachingFactsAnalysis.ReachingFactsAnalysisHelper#updatePTAResultLHSs" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="updatePTAResultLHSs(lhss:Seq[org.sireum.pilar.ast.Exp],currentContext:org.sireum.jawa.alir.Context,s:org.sireum.util.ISet[org.sireum.jawa.alir.pta.reachingFactsAnalysis.RFAFact],ptaresult:org.sireum.jawa.alir.pta.PTAResult):Unit"></a>
+      <a id="updatePTAResultLHSs(Seq[Exp],Context,ISet[RFAFact],PTAResult):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">updatePTAResultLHSs</span><span class="params">(<span name="lhss">lhss: <span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="org.sireum.pilar.ast.Exp">Exp</span>]</span>, <span name="currentContext">currentContext: <a href="../../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>, <span name="s">s: <span class="extype" name="org.sireum.util.ISet">ISet</span>[<a href="RFAFact.html" class="extype" name="org.sireum.jawa.alir.pta.reachingFactsAnalysis.RFAFact">RFAFact</a>]</span>, <span name="ptaresult">ptaresult: <a href="../PTAResult.html" class="extype" name="org.sireum.jawa.alir.pta.PTAResult">PTAResult</a></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.reachingFactsAnalysis.ReachingFactsAnalysisHelper$@updatePTAResultLHSs(lhss:Seq[org.sireum.pilar.ast.Exp],currentContext:org.sireum.jawa.alir.Context,s:org.sireum.util.ISet[org.sireum.jawa.alir.pta.reachingFactsAnalysis.RFAFact],ptaresult:org.sireum.jawa.alir.pta.PTAResult):Unit" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.jawa.alir.pta.reachingFactsAnalysis.ReachingFactsAnalysisHelper#updatePTAResultRHSs" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="updatePTAResultRHSs(rhss:List[org.sireum.pilar.ast.Exp],currentContext:org.sireum.jawa.alir.Context,s:org.sireum.util.ISet[org.sireum.jawa.alir.pta.reachingFactsAnalysis.RFAFact],ptaresult:org.sireum.jawa.alir.pta.PTAResult):Unit"></a>
+      <a id="updatePTAResultRHSs(List[Exp],Context,ISet[RFAFact],PTAResult):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">updatePTAResultRHSs</span><span class="params">(<span name="rhss">rhss: <span class="extype" name="scala.List">List</span>[<span class="extype" name="org.sireum.pilar.ast.Exp">Exp</span>]</span>, <span name="currentContext">currentContext: <a href="../../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>, <span name="s">s: <span class="extype" name="org.sireum.util.ISet">ISet</span>[<a href="RFAFact.html" class="extype" name="org.sireum.jawa.alir.pta.reachingFactsAnalysis.RFAFact">RFAFact</a>]</span>, <span name="ptaresult">ptaresult: <a href="../PTAResult.html" class="extype" name="org.sireum.jawa.alir.pta.PTAResult">PTAResult</a></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.reachingFactsAnalysis.ReachingFactsAnalysisHelper$@updatePTAResultRHSs(rhss:List[org.sireum.pilar.ast.Exp],currentContext:org.sireum.jawa.alir.Context,s:org.sireum.util.ISet[org.sireum.jawa.alir.pta.reachingFactsAnalysis.RFAFact],ptaresult:org.sireum.jawa.alir.pta.PTAResult):Unit" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      
     </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="wait():Unit"></a>
       <a id="wait():Unit"></a>

@@ -30,7 +30,9 @@
       <div id="definition">
         <img src="../../../lib/object_big.png" />
         <p id="owner"><a href="../../package.html" class="extype" name="org">org</a>.<a href="../package.html" class="extype" name="org.sireum">sireum</a>.<a href="package.html" class="extype" name="org.sireum.jawa">jawa</a></p>
-        <h1>JawaResolver</h1> <span class="permalink">
+        <h1>JawaResolver</h1><h3><span class="morelinks"><div>Related Doc:
+            <a href="package.html" class="extype" name="org.sireum.jawa">package jawa</a>
+          </div></span></h3><span class="permalink">
       <a href="../../../index.html#org.sireum.jawa.JawaResolver$" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" />
       </a>
@@ -47,7 +49,7 @@
       </span>
       </h4>
       
-          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>this object collects info from the symbol table and builds Center, JawaRecord, and JawaProcedure
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>this object collects info from the symbol table and builds Center, JawaClass, and JawaMethod
 </p></div><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
           <div class="superTypes hiddenContent"><span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
@@ -259,23 +261,23 @@
     </span>)</span>
               
         </dd></dl></div>
-    </li><li name="org.sireum.jawa.JawaResolver#forceResolveRecord" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="forceResolveRecord(recordName:String,desiredLevel:org.sireum.jawa.Center.ResolveLevel.Value):org.sireum.jawa.JawaRecord"></a>
-      <a id="forceResolveRecord(String,Center.ResolveLevel.Value):JawaRecord"></a>
+    </li><li name="org.sireum.jawa.JawaResolver#forceResolveClass" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="forceResolveClass(className:String,desiredLevel:org.sireum.jawa.Center.ResolveLevel.Value):org.sireum.jawa.JawaClass"></a>
+      <a id="forceResolveClass(String,Center.ResolveLevel.Value):JawaClass"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">forceResolveRecord</span><span class="params">(<span name="recordName">recordName: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="desiredLevel">desiredLevel: <a href="Center$$ResolveLevel$.html#ValueextendsOrdered[Enumeration.this.Value]withSerializable" class="extmbr" name="org.sireum.jawa.Center.ResolveLevel.Value">Center.ResolveLevel.Value</a></span>)</span><span class="result">: <a href="JawaRecord.html" class="extype" name="org.sireum.jawa.JawaRecord">JawaRecord</a></span>
+        <span class="name">forceResolveClass</span><span class="params">(<span name="className">className: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="desiredLevel">desiredLevel: <a href="Center$$ResolveLevel$.html#ValueextendsOrdered[Enumeration.this.Value]withSerializable" class="extmbr" name="org.sireum.jawa.Center.ResolveLevel.Value">Center.ResolveLevel.Value</a></span>)</span><span class="result">: <a href="JawaClass.html" class="extype" name="org.sireum.jawa.JawaClass">JawaClass</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#org.sireum.jawa.JawaResolver$@forceResolveRecord(recordName:String,desiredLevel:org.sireum.jawa.Center.ResolveLevel.Value):org.sireum.jawa.JawaRecord" title="Permalink" target="_top">
+      <a href="../../../index.html#org.sireum.jawa.JawaResolver$@forceResolveClass(className:String,desiredLevel:org.sireum.jawa.Center.ResolveLevel.Value):org.sireum.jawa.JawaClass" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" />
       </a>
     </span>
-      <p class="shortcomment cmt">resolve the given records to desired level.</p>
+      <p class="shortcomment cmt">resolve the given classes to desired level.</p>
     </li><li name="scala.AnyRef#getClass" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="getClass():Class[_]"></a>
       <a id="getClass():Class[_]"></a>
@@ -378,23 +380,58 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="org.sireum.jawa.JawaResolver#resolveArrayRecord" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="resolveArrayRecord(typ:org.sireum.jawa.Type):Unit"></a>
-      <a id="resolveArrayRecord(Type):Unit"></a>
+    </li><li name="org.sireum.jawa.JawaResolver#resolveArrayClass" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="resolveArrayClass(typ:org.sireum.jawa.Type):Unit"></a>
+      <a id="resolveArrayClass(Type):Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">resolveArrayRecord</span><span class="params">(<span name="typ">typ: <a href="Type.html" class="extype" name="org.sireum.jawa.Type">Type</a></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">resolveArrayClass</span><span class="params">(<span name="typ">typ: <a href="Type.html" class="extype" name="org.sireum.jawa.Type">Type</a></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#org.sireum.jawa.JawaResolver$@resolveArrayRecord(typ:org.sireum.jawa.Type):Unit" title="Permalink" target="_top">
+      <a href="../../../index.html#org.sireum.jawa.JawaResolver$@resolveArrayClass(typ:org.sireum.jawa.Type):Unit" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" />
       </a>
     </span>
-      <p class="shortcomment cmt">resolve array record
+      <p class="shortcomment cmt">resolve array class
+</p>
+    </li><li name="org.sireum.jawa.JawaResolver#resolveClass" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="resolveClass(className:String,desiredLevel:org.sireum.jawa.Center.ResolveLevel.Value):org.sireum.jawa.JawaClass"></a>
+      <a id="resolveClass(String,Center.ResolveLevel.Value):JawaClass"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">resolveClass</span><span class="params">(<span name="className">className: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="desiredLevel">desiredLevel: <a href="Center$$ResolveLevel$.html#ValueextendsOrdered[Enumeration.this.Value]withSerializable" class="extmbr" name="org.sireum.jawa.Center.ResolveLevel.Value">Center.ResolveLevel.Value</a></span>)</span><span class="result">: <a href="JawaClass.html" class="extype" name="org.sireum.jawa.JawaClass">JawaClass</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#org.sireum.jawa.JawaResolver$@resolveClass(className:String,desiredLevel:org.sireum.jawa.Center.ResolveLevel.Value):org.sireum.jawa.JawaClass" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">resolve the given classes to desired level.</p>
+    </li><li name="org.sireum.jawa.JawaResolver#resolveClasses" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="resolveClasses(stp:org.sireum.pilar.symbol.SymbolTableProducer,level:org.sireum.jawa.Center.ResolveLevel.Value,par:Boolean):Unit"></a>
+      <a id="resolveClasses(SymbolTableProducer,Center.ResolveLevel.Value,Boolean):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">resolveClasses</span><span class="params">(<span name="stp">stp: <span class="extype" name="org.sireum.pilar.symbol.SymbolTableProducer">SymbolTableProducer</span></span>, <span name="level">level: <a href="Center$$ResolveLevel$.html#ValueextendsOrdered[Enumeration.this.Value]withSerializable" class="extmbr" name="org.sireum.jawa.Center.ResolveLevel.Value">Center.ResolveLevel.Value</a></span>, <span name="par">par: <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#org.sireum.jawa.JawaResolver$@resolveClasses(stp:org.sireum.pilar.symbol.SymbolTableProducer,level:org.sireum.jawa.Center.ResolveLevel.Value,par:Boolean):Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">collect class info from symbol table
 </p>
     </li><li name="org.sireum.jawa.JawaResolver#resolveFromST" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="resolveFromST(st:org.sireum.pilar.symbol.SymbolTable,level:org.sireum.jawa.Center.ResolveLevel.Value,par:Boolean):Unit"></a>
@@ -412,7 +449,7 @@
         <img src="../../../lib/permalink.png" />
       </a>
     </span>
-      <p class="shortcomment cmt">resolve all the records, fields and procedures from symbol table producer which are provided from symbol table model
+      <p class="shortcomment cmt">resolve all the classes, fields and procedures from symbol table producer which are provided from symbol table model
 </p>
     </li><li name="org.sireum.jawa.JawaResolver#resolveGlobalVars" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="resolveGlobalVars(stp:org.sireum.pilar.symbol.SymbolTableProducer,level:org.sireum.jawa.Center.ResolveLevel.Value,par:Boolean):Unit"></a>
@@ -432,129 +469,94 @@
     </span>
       <p class="shortcomment cmt">collect global variables info from the symbol table
 </p>
-    </li><li name="org.sireum.jawa.JawaResolver#resolveProcedureBody" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="resolveProcedureBody(procSig:String):org.sireum.jawa.ProcedureBody"></a>
-      <a id="resolveProcedureBody(String):ProcedureBody"></a>
+    </li><li name="org.sireum.jawa.JawaResolver#resolveMethodBody" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="resolveMethodBody(procSig:String):org.sireum.jawa.MethodBody"></a>
+      <a id="resolveMethodBody(String):MethodBody"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">resolveProcedureBody</span><span class="params">(<span name="procSig">procSig: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="ProcedureBody.html" class="extype" name="org.sireum.jawa.ProcedureBody">ProcedureBody</a></span>
+        <span class="name">resolveMethodBody</span><span class="params">(<span name="procSig">procSig: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="MethodBody.html" class="extype" name="org.sireum.jawa.MethodBody">MethodBody</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#org.sireum.jawa.JawaResolver$@resolveProcedureBody(procSig:String):org.sireum.jawa.ProcedureBody" title="Permalink" target="_top">
+      <a href="../../../index.html#org.sireum.jawa.JawaResolver$@resolveMethodBody(procSig:String):org.sireum.jawa.MethodBody" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" />
       </a>
     </span>
-      <p class="shortcomment cmt">resolve the given procedure's body to body level.</p>
-    </li><li name="org.sireum.jawa.JawaResolver#resolveProcedureCode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="resolveProcedureCode(procSig:String,code:String):org.sireum.jawa.JawaProcedure"></a>
-      <a id="resolveProcedureCode(String,String):JawaProcedure"></a>
+      <p class="shortcomment cmt">resolve the given method's body to body level.</p>
+    </li><li name="org.sireum.jawa.JawaResolver#resolveMethodCode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="resolveMethodCode(procSig:String,code:String):org.sireum.jawa.JawaMethod"></a>
+      <a id="resolveMethodCode(String,String):JawaMethod"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">resolveProcedureCode</span><span class="params">(<span name="procSig">procSig: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="code">code: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="JawaProcedure.html" class="extype" name="org.sireum.jawa.JawaProcedure">JawaProcedure</a></span>
+        <span class="name">resolveMethodCode</span><span class="params">(<span name="procSig">procSig: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="code">code: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="JawaMethod.html" class="extype" name="org.sireum.jawa.JawaMethod">JawaMethod</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#org.sireum.jawa.JawaResolver$@resolveProcedureCode(procSig:String,code:String):org.sireum.jawa.JawaProcedure" title="Permalink" target="_top">
+      <a href="../../../index.html#org.sireum.jawa.JawaResolver$@resolveMethodCode(procSig:String,code:String):org.sireum.jawa.JawaMethod" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" />
       </a>
     </span>
-      <p class="shortcomment cmt">resolve the given procedure code.</p><div class="fullcomment"><div class="comment cmt"><p>resolve the given procedure code. Normally only for dummyMain i.e. environment method
+      <p class="shortcomment cmt">resolve the given method code.</p><div class="fullcomment"><div class="comment cmt"><p>resolve the given method code. Normally only for dummyMain i.e. environment method
 </p></div></div>
-    </li><li name="org.sireum.jawa.JawaResolver#resolveProcedures" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="resolveProcedures(stp:org.sireum.pilar.symbol.SymbolTableProducer,level:org.sireum.jawa.Center.ResolveLevel.Value,par:Boolean):Unit"></a>
-      <a id="resolveProcedures(SymbolTableProducer,Center.ResolveLevel.Value,Boolean):Unit"></a>
+    </li><li name="org.sireum.jawa.JawaResolver#resolveMethods" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="resolveMethods(stp:org.sireum.pilar.symbol.SymbolTableProducer,level:org.sireum.jawa.Center.ResolveLevel.Value,par:Boolean):Unit"></a>
+      <a id="resolveMethods(SymbolTableProducer,Center.ResolveLevel.Value,Boolean):Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">resolveProcedures</span><span class="params">(<span name="stp">stp: <span class="extype" name="org.sireum.pilar.symbol.SymbolTableProducer">SymbolTableProducer</span></span>, <span name="level">level: <a href="Center$$ResolveLevel$.html#ValueextendsOrdered[Enumeration.this.Value]withSerializable" class="extmbr" name="org.sireum.jawa.Center.ResolveLevel.Value">Center.ResolveLevel.Value</a></span>, <span name="par">par: <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">resolveMethods</span><span class="params">(<span name="stp">stp: <span class="extype" name="org.sireum.pilar.symbol.SymbolTableProducer">SymbolTableProducer</span></span>, <span name="level">level: <a href="Center$$ResolveLevel$.html#ValueextendsOrdered[Enumeration.this.Value]withSerializable" class="extmbr" name="org.sireum.jawa.Center.ResolveLevel.Value">Center.ResolveLevel.Value</a></span>, <span name="par">par: <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#org.sireum.jawa.JawaResolver$@resolveProcedures(stp:org.sireum.pilar.symbol.SymbolTableProducer,level:org.sireum.jawa.Center.ResolveLevel.Value,par:Boolean):Unit" title="Permalink" target="_top">
+      <a href="../../../index.html#org.sireum.jawa.JawaResolver$@resolveMethods(stp:org.sireum.pilar.symbol.SymbolTableProducer,level:org.sireum.jawa.Center.ResolveLevel.Value,par:Boolean):Unit" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" />
       </a>
     </span>
-      <p class="shortcomment cmt">collect procedure info from symbol table
-</p>
-    </li><li name="org.sireum.jawa.JawaResolver#resolveRecord" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="resolveRecord(recordName:String,desiredLevel:org.sireum.jawa.Center.ResolveLevel.Value):org.sireum.jawa.JawaRecord"></a>
-      <a id="resolveRecord(String,Center.ResolveLevel.Value):JawaRecord"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">resolveRecord</span><span class="params">(<span name="recordName">recordName: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="desiredLevel">desiredLevel: <a href="Center$$ResolveLevel$.html#ValueextendsOrdered[Enumeration.this.Value]withSerializable" class="extmbr" name="org.sireum.jawa.Center.ResolveLevel.Value">Center.ResolveLevel.Value</a></span>)</span><span class="result">: <a href="JawaRecord.html" class="extype" name="org.sireum.jawa.JawaRecord">JawaRecord</a></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#org.sireum.jawa.JawaResolver$@resolveRecord(recordName:String,desiredLevel:org.sireum.jawa.Center.ResolveLevel.Value):org.sireum.jawa.JawaRecord" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
-      <p class="shortcomment cmt">resolve the given records to desired level.</p>
-    </li><li name="org.sireum.jawa.JawaResolver#resolveRecords" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="resolveRecords(stp:org.sireum.pilar.symbol.SymbolTableProducer,level:org.sireum.jawa.Center.ResolveLevel.Value,par:Boolean):Unit"></a>
-      <a id="resolveRecords(SymbolTableProducer,Center.ResolveLevel.Value,Boolean):Unit"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">resolveRecords</span><span class="params">(<span name="stp">stp: <span class="extype" name="org.sireum.pilar.symbol.SymbolTableProducer">SymbolTableProducer</span></span>, <span name="level">level: <a href="Center$$ResolveLevel$.html#ValueextendsOrdered[Enumeration.this.Value]withSerializable" class="extmbr" name="org.sireum.jawa.Center.ResolveLevel.Value">Center.ResolveLevel.Value</a></span>, <span name="par">par: <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../index.html#org.sireum.jawa.JawaResolver$@resolveRecords(stp:org.sireum.pilar.symbol.SymbolTableProducer,level:org.sireum.jawa.Center.ResolveLevel.Value,par:Boolean):Unit" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
-      </a>
-    </span>
-      <p class="shortcomment cmt">collect record info from symbol table
+      <p class="shortcomment cmt">collect method info from symbol table
 </p>
     </li><li name="org.sireum.jawa.JawaResolver#resolveToBody" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="resolveToBody(recordName:String):org.sireum.jawa.JawaRecord"></a>
-      <a id="resolveToBody(String):JawaRecord"></a>
+      <a id="resolveToBody(className:String):org.sireum.jawa.JawaClass"></a>
+      <a id="resolveToBody(String):JawaClass"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">resolveToBody</span><span class="params">(<span name="recordName">recordName: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="JawaRecord.html" class="extype" name="org.sireum.jawa.JawaRecord">JawaRecord</a></span>
+        <span class="name">resolveToBody</span><span class="params">(<span name="className">className: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="JawaClass.html" class="extype" name="org.sireum.jawa.JawaClass">JawaClass</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#org.sireum.jawa.JawaResolver$@resolveToBody(recordName:String):org.sireum.jawa.JawaRecord" title="Permalink" target="_top">
+      <a href="../../../index.html#org.sireum.jawa.JawaResolver$@resolveToBody(className:String):org.sireum.jawa.JawaClass" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" />
       </a>
     </span>
-      <p class="shortcomment cmt">resolve the given record to body level
+      <p class="shortcomment cmt">resolve the given class to body level
 </p>
     </li><li name="org.sireum.jawa.JawaResolver#resolveToHierarchy" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="resolveToHierarchy(recordName:String):org.sireum.jawa.JawaRecord"></a>
-      <a id="resolveToHierarchy(String):JawaRecord"></a>
+      <a id="resolveToHierarchy(className:String):org.sireum.jawa.JawaClass"></a>
+      <a id="resolveToHierarchy(String):JawaClass"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">resolveToHierarchy</span><span class="params">(<span name="recordName">recordName: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="JawaRecord.html" class="extype" name="org.sireum.jawa.JawaRecord">JawaRecord</a></span>
+        <span class="name">resolveToHierarchy</span><span class="params">(<span name="className">className: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="JawaClass.html" class="extype" name="org.sireum.jawa.JawaClass">JawaClass</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#org.sireum.jawa.JawaResolver$@resolveToHierarchy(recordName:String):org.sireum.jawa.JawaRecord" title="Permalink" target="_top">
+      <a href="../../../index.html#org.sireum.jawa.JawaResolver$@resolveToHierarchy(className:String):org.sireum.jawa.JawaClass" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" />
       </a>
     </span>
-      <p class="shortcomment cmt">resolve the given record to hierarchy level
+      <p class="shortcomment cmt">resolve the given class to hierarchy level
 </p>
     </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
@@ -590,23 +592,23 @@
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li name="org.sireum.jawa.JawaResolver#tryResolveRecord" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="tryResolveRecord(recordName:String,desiredLevel:org.sireum.jawa.Center.ResolveLevel.Value):Option[org.sireum.jawa.JawaRecord]"></a>
-      <a id="tryResolveRecord(String,Center.ResolveLevel.Value):Option[JawaRecord]"></a>
+    </li><li name="org.sireum.jawa.JawaResolver#tryResolveClass" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="tryResolveClass(className:String,desiredLevel:org.sireum.jawa.Center.ResolveLevel.Value):Option[org.sireum.jawa.JawaClass]"></a>
+      <a id="tryResolveClass(String,Center.ResolveLevel.Value):Option[JawaClass]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">tryResolveRecord</span><span class="params">(<span name="recordName">recordName: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="desiredLevel">desiredLevel: <a href="Center$$ResolveLevel$.html#ValueextendsOrdered[Enumeration.this.Value]withSerializable" class="extmbr" name="org.sireum.jawa.Center.ResolveLevel.Value">Center.ResolveLevel.Value</a></span>)</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<a href="JawaRecord.html" class="extype" name="org.sireum.jawa.JawaRecord">JawaRecord</a>]</span>
+        <span class="name">tryResolveClass</span><span class="params">(<span name="className">className: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="desiredLevel">desiredLevel: <a href="Center$$ResolveLevel$.html#ValueextendsOrdered[Enumeration.this.Value]withSerializable" class="extmbr" name="org.sireum.jawa.Center.ResolveLevel.Value">Center.ResolveLevel.Value</a></span>)</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<a href="JawaClass.html" class="extype" name="org.sireum.jawa.JawaClass">JawaClass</a>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#org.sireum.jawa.JawaResolver$@tryResolveRecord(recordName:String,desiredLevel:org.sireum.jawa.Center.ResolveLevel.Value):Option[org.sireum.jawa.JawaRecord]" title="Permalink" target="_top">
+      <a href="../../../index.html#org.sireum.jawa.JawaResolver$@tryResolveClass(className:String,desiredLevel:org.sireum.jawa.Center.ResolveLevel.Value):Option[org.sireum.jawa.JawaClass]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" />
       </a>
     </span>
-      <p class="shortcomment cmt">resolve the given records to desired level.</p>
+      <p class="shortcomment cmt">resolve the given classes to desired level.</p>
     </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="wait():Unit"></a>
       <a id="wait():Unit"></a>

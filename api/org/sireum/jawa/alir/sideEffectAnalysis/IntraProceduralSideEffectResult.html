@@ -30,7 +30,9 @@
       <div id="definition">
         <img src="../../../../../lib/class_big.png" />
         <p id="owner"><a href="../../../../package.html" class="extype" name="org">org</a>.<a href="../../../package.html" class="extype" name="org.sireum">sireum</a>.<a href="../../package.html" class="extype" name="org.sireum.jawa">jawa</a>.<a href="../package.html" class="extype" name="org.sireum.jawa.alir">alir</a>.<a href="package.html" class="extype" name="org.sireum.jawa.alir.sideEffectAnalysis">sideEffectAnalysis</a></p>
-        <h1>IntraProceduralSideEffectResult</h1> <span class="permalink">
+        <h1>IntraProceduralSideEffectResult</h1><h3><span class="morelinks"><div>Related Doc:
+            <a href="package.html" class="extype" name="org.sireum.jawa.alir.sideEffectAnalysis">package sideEffectAnalysis</a>
+          </div></span></h3><span class="permalink">
       <a href="../../../../../index.html#org.sireum.jawa.alir.sideEffectAnalysis.IntraProceduralSideEffectResult" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" />
       </a>
@@ -43,7 +45,7 @@
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <span class="name">IntraProceduralSideEffectResult</span><span class="params">(<span name="procedure">procedure: <a href="../../JawaProcedure.html" class="extype" name="org.sireum.jawa.JawaProcedure">JawaProcedure</a></span>, <span name="readMap">readMap: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Int">Int</span>, <span class="extype" name="scala.Predef.Set">Set</span>[<span class="extype" name="scala.Predef.String">String</span>]]</span>, <span name="writeMap">writeMap: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Int">Int</span>, <span class="extype" name="scala.Predef.Set">Set</span>[<span class="extype" name="scala.Predef.String">String</span>]]</span>, <span name="globalRead">globalRead: <span class="extype" name="scala.Predef.Set">Set</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="globalWrite">globalWrite: <span class="extype" name="scala.Predef.Set">Set</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="callInfos">callInfos: <span class="extype" name="scala.Predef.Set">Set</span>[<a href="CallInfo.html" class="extype" name="org.sireum.jawa.alir.sideEffectAnalysis.CallInfo">CallInfo</a>]</span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+        <span class="name">IntraProceduralSideEffectResult</span><span class="params">(<span name="procedure">procedure: <a href="../../JawaMethod.html" class="extype" name="org.sireum.jawa.JawaMethod">JawaMethod</a></span>, <span name="readMap">readMap: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Int">Int</span>, <span class="extype" name="scala.Predef.Set">Set</span>[<span class="extype" name="scala.Predef.String">String</span>]]</span>, <span name="writeMap">writeMap: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Int">Int</span>, <span class="extype" name="scala.Predef.Set">Set</span>[<span class="extype" name="scala.Predef.String">String</span>]]</span>, <span name="globalRead">globalRead: <span class="extype" name="scala.Predef.Set">Set</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="globalWrite">globalWrite: <span class="extype" name="scala.Predef.Set">Set</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="callInfos">callInfos: <span class="extype" name="scala.Predef.Set">Set</span>[<a href="CallInfo.html" class="extype" name="org.sireum.jawa.alir.sideEffectAnalysis.CallInfo">CallInfo</a>]</span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4>
       
@@ -88,7 +90,7 @@
         <div id="constructors" class="members">
               <h3>Instance Constructors</h3>
               <ol><li name="org.sireum.jawa.alir.sideEffectAnalysis.IntraProceduralSideEffectResult#&lt;init&gt;" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="&lt;init&gt;(procedure:org.sireum.jawa.JawaProcedure,readMap:Map[Int,Set[String]],writeMap:Map[Int,Set[String]],globalRead:Set[String],globalWrite:Set[String],callInfos:Set[org.sireum.jawa.alir.sideEffectAnalysis.CallInfo]):org.sireum.jawa.alir.sideEffectAnalysis.IntraProceduralSideEffectResult"></a>
+      <a id="&lt;init&gt;(procedure:org.sireum.jawa.JawaMethod,readMap:Map[Int,Set[String]],writeMap:Map[Int,Set[String]],globalRead:Set[String],globalWrite:Set[String],callInfos:Set[org.sireum.jawa.alir.sideEffectAnalysis.CallInfo]):org.sireum.jawa.alir.sideEffectAnalysis.IntraProceduralSideEffectResult"></a>
       <a id="&lt;init&gt;:IntraProceduralSideEffectResult"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -96,10 +98,10 @@
         <span class="kind">new</span>
       </span>
       <span class="symbol">
-        <span class="name">IntraProceduralSideEffectResult</span><span class="params">(<span name="procedure">procedure: <a href="../../JawaProcedure.html" class="extype" name="org.sireum.jawa.JawaProcedure">JawaProcedure</a></span>, <span name="readMap">readMap: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Int">Int</span>, <span class="extype" name="scala.Predef.Set">Set</span>[<span class="extype" name="scala.Predef.String">String</span>]]</span>, <span name="writeMap">writeMap: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Int">Int</span>, <span class="extype" name="scala.Predef.Set">Set</span>[<span class="extype" name="scala.Predef.String">String</span>]]</span>, <span name="globalRead">globalRead: <span class="extype" name="scala.Predef.Set">Set</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="globalWrite">globalWrite: <span class="extype" name="scala.Predef.Set">Set</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="callInfos">callInfos: <span class="extype" name="scala.Predef.Set">Set</span>[<a href="CallInfo.html" class="extype" name="org.sireum.jawa.alir.sideEffectAnalysis.CallInfo">CallInfo</a>]</span>)</span>
+        <span class="name">IntraProceduralSideEffectResult</span><span class="params">(<span name="procedure">procedure: <a href="../../JawaMethod.html" class="extype" name="org.sireum.jawa.JawaMethod">JawaMethod</a></span>, <span name="readMap">readMap: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Int">Int</span>, <span class="extype" name="scala.Predef.Set">Set</span>[<span class="extype" name="scala.Predef.String">String</span>]]</span>, <span name="writeMap">writeMap: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Int">Int</span>, <span class="extype" name="scala.Predef.Set">Set</span>[<span class="extype" name="scala.Predef.String">String</span>]]</span>, <span name="globalRead">globalRead: <span class="extype" name="scala.Predef.Set">Set</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="globalWrite">globalWrite: <span class="extype" name="scala.Predef.Set">Set</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="callInfos">callInfos: <span class="extype" name="scala.Predef.Set">Set</span>[<a href="CallInfo.html" class="extype" name="org.sireum.jawa.alir.sideEffectAnalysis.CallInfo">CallInfo</a>]</span>)</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#org.sireum.jawa.alir.sideEffectAnalysis.IntraProceduralSideEffectResult@&lt;init&gt;(procedure:org.sireum.jawa.JawaProcedure,readMap:Map[Int,Set[String]],writeMap:Map[Int,Set[String]],globalRead:Set[String],globalWrite:Set[String],callInfos:Set[org.sireum.jawa.alir.sideEffectAnalysis.CallInfo]):org.sireum.jawa.alir.sideEffectAnalysis.IntraProceduralSideEffectResult" title="Permalink" target="_top">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.sideEffectAnalysis.IntraProceduralSideEffectResult@&lt;init&gt;(procedure:org.sireum.jawa.JawaMethod,readMap:Map[Int,Set[String]],writeMap:Map[Int,Set[String]],globalRead:Set[String],globalWrite:Set[String],callInfos:Set[org.sireum.jawa.alir.sideEffectAnalysis.CallInfo]):org.sireum.jawa.alir.sideEffectAnalysis.IntraProceduralSideEffectResult" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" />
       </a>
     </span>
@@ -381,18 +383,18 @@
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="org.sireum.jawa.alir.sideEffectAnalysis.IntraProceduralSideEffectResult#procedure" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="procedure:org.sireum.jawa.JawaProcedure"></a>
-      <a id="procedure:JawaProcedure"></a>
+      <a id="procedure:org.sireum.jawa.JawaMethod"></a>
+      <a id="procedure:JawaMethod"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">val</span>
       </span>
       <span class="symbol">
-        <span class="name">procedure</span><span class="result">: <a href="../../JawaProcedure.html" class="extype" name="org.sireum.jawa.JawaProcedure">JawaProcedure</a></span>
+        <span class="name">procedure</span><span class="result">: <a href="../../JawaMethod.html" class="extype" name="org.sireum.jawa.JawaMethod">JawaMethod</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#org.sireum.jawa.alir.sideEffectAnalysis.IntraProceduralSideEffectResult@procedure:org.sireum.jawa.JawaProcedure" title="Permalink" target="_top">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.sideEffectAnalysis.IntraProceduralSideEffectResult@procedure:org.sireum.jawa.JawaMethod" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" />
       </a>
     </span>

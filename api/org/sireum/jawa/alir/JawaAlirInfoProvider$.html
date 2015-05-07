@@ -30,7 +30,9 @@
       <div id="definition">
         <img src="../../../../lib/object_big.png" />
         <p id="owner"><a href="../../../package.html" class="extype" name="org">org</a>.<a href="../../package.html" class="extype" name="org.sireum">sireum</a>.<a href="../package.html" class="extype" name="org.sireum.jawa">jawa</a>.<a href="package.html" class="extype" name="org.sireum.jawa.alir">alir</a></p>
-        <h1>JawaAlirInfoProvider</h1> <span class="permalink">
+        <h1>JawaAlirInfoProvider</h1><h3><span class="morelinks"><div>Related Doc:
+            <a href="package.html" class="extype" name="org.sireum.jawa.alir">package alir</a>
+          </div></span></h3><span class="permalink">
       <a href="../../../../index.html#org.sireum.jawa.alir.JawaAlirInfoProvider$" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" />
       </a>
@@ -347,18 +349,18 @@
               
         </dd></dl></div>
     </li><li name="org.sireum.jawa.alir.JawaAlirInfoProvider#getCfg" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="getCfg(p:org.sireum.jawa.JawaProcedure):org.sireum.alir.ControlFlowGraph[org.sireum.jawa.alir.JawaAlirInfoProvider.VirtualLabel]"></a>
-      <a id="getCfg(JawaProcedure):ControlFlowGraph[VirtualLabel]"></a>
+      <a id="getCfg(p:org.sireum.jawa.JawaMethod):org.sireum.alir.ControlFlowGraph[org.sireum.jawa.alir.JawaAlirInfoProvider.VirtualLabel]"></a>
+      <a id="getCfg(JawaMethod):ControlFlowGraph[VirtualLabel]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">getCfg</span><span class="params">(<span name="p">p: <a href="../JawaProcedure.html" class="extype" name="org.sireum.jawa.JawaProcedure">JawaProcedure</a></span>)</span><span class="result">: <span class="extype" name="org.sireum.alir.ControlFlowGraph">ControlFlowGraph</span>[<a href="#VirtualLabel=String" class="extmbr" name="org.sireum.jawa.alir.JawaAlirInfoProvider.VirtualLabel">VirtualLabel</a>]</span>
+        <span class="name">getCfg</span><span class="params">(<span name="p">p: <a href="../JawaMethod.html" class="extype" name="org.sireum.jawa.JawaMethod">JawaMethod</a></span>)</span><span class="result">: <span class="extype" name="org.sireum.alir.ControlFlowGraph">ControlFlowGraph</span>[<a href="#VirtualLabel=String" class="extmbr" name="org.sireum.jawa.alir.JawaAlirInfoProvider.VirtualLabel">VirtualLabel</a>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#org.sireum.jawa.alir.JawaAlirInfoProvider$@getCfg(p:org.sireum.jawa.JawaProcedure):org.sireum.alir.ControlFlowGraph[org.sireum.jawa.alir.JawaAlirInfoProvider.VirtualLabel]" title="Permalink" target="_top">
+      <a href="../../../../index.html#org.sireum.jawa.alir.JawaAlirInfoProvider$@getCfg(p:org.sireum.jawa.JawaMethod):org.sireum.alir.ControlFlowGraph[org.sireum.jawa.alir.JawaAlirInfoProvider.VirtualLabel]" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" />
       </a>
     </span>
@@ -382,18 +384,18 @@
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="org.sireum.jawa.alir.JawaAlirInfoProvider#getClassInstance" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="getClassInstance(r:org.sireum.jawa.JawaRecord):org.sireum.jawa.alir.ClassInstance"></a>
-      <a id="getClassInstance(JawaRecord):ClassInstance"></a>
+      <a id="getClassInstance(r:org.sireum.jawa.JawaClass):org.sireum.jawa.alir.pta.ClassInstance"></a>
+      <a id="getClassInstance(JawaClass):ClassInstance"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">getClassInstance</span><span class="params">(<span name="r">r: <a href="../JawaRecord.html" class="extype" name="org.sireum.jawa.JawaRecord">JawaRecord</a></span>)</span><span class="result">: <a href="ClassInstance.html" class="extype" name="org.sireum.jawa.alir.ClassInstance">ClassInstance</a></span>
+        <span class="name">getClassInstance</span><span class="params">(<span name="r">r: <a href="../JawaClass.html" class="extype" name="org.sireum.jawa.JawaClass">JawaClass</a></span>)</span><span class="result">: <a href="pta/ClassInstance.html" class="extype" name="org.sireum.jawa.alir.pta.ClassInstance">ClassInstance</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#org.sireum.jawa.alir.JawaAlirInfoProvider$@getClassInstance(r:org.sireum.jawa.JawaRecord):org.sireum.jawa.alir.ClassInstance" title="Permalink" target="_top">
+      <a href="../../../../index.html#org.sireum.jawa.alir.JawaAlirInfoProvider$@getClassInstance(r:org.sireum.jawa.JawaClass):org.sireum.jawa.alir.pta.ClassInstance" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" />
       </a>
     </span>
@@ -415,53 +417,53 @@
       </a>
     </span>
       
-    </li><li name="org.sireum.jawa.alir.JawaAlirInfoProvider#getIntraProcedureResult" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="getIntraProcedureResult(codes:Set[String]):Map[org.sireum.util.ResourceUri,org.sireum.jawa.alir.TransformIntraProcedureResult]"></a>
-      <a id="getIntraProcedureResult(Set[String]):Map[ResourceUri,TransformIntraProcedureResult]"></a>
+    </li><li name="org.sireum.jawa.alir.JawaAlirInfoProvider#getIntraMethodResult" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="getIntraMethodResult(codes:Set[String]):Map[org.sireum.util.ResourceUri,org.sireum.jawa.alir.TransformIntraMethodResult]"></a>
+      <a id="getIntraMethodResult(Set[String]):Map[ResourceUri,TransformIntraMethodResult]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">getIntraProcedureResult</span><span class="params">(<span name="codes">codes: <span class="extype" name="scala.Predef.Set">Set</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>)</span><span class="result">: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="org.sireum.util.ResourceUri">ResourceUri</span>, <a href="TransformIntraProcedureResult.html" class="extype" name="org.sireum.jawa.alir.TransformIntraProcedureResult">TransformIntraProcedureResult</a>]</span>
+        <span class="name">getIntraMethodResult</span><span class="params">(<span name="codes">codes: <span class="extype" name="scala.Predef.Set">Set</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>)</span><span class="result">: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="org.sireum.util.ResourceUri">ResourceUri</span>, <a href="TransformIntraMethodResult.html" class="extype" name="org.sireum.jawa.alir.TransformIntraMethodResult">TransformIntraMethodResult</a>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#org.sireum.jawa.alir.JawaAlirInfoProvider$@getIntraProcedureResult(codes:Set[String]):Map[org.sireum.util.ResourceUri,org.sireum.jawa.alir.TransformIntraProcedureResult]" title="Permalink" target="_top">
+      <a href="../../../../index.html#org.sireum.jawa.alir.JawaAlirInfoProvider$@getIntraMethodResult(codes:Set[String]):Map[org.sireum.util.ResourceUri,org.sireum.jawa.alir.TransformIntraMethodResult]" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" />
       </a>
     </span>
       
-    </li><li name="org.sireum.jawa.alir.JawaAlirInfoProvider#getIntraProcedureResult" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="getIntraProcedureResult(code:String):Map[org.sireum.util.ResourceUri,org.sireum.jawa.alir.TransformIntraProcedureResult]"></a>
-      <a id="getIntraProcedureResult(String):Map[ResourceUri,TransformIntraProcedureResult]"></a>
+    </li><li name="org.sireum.jawa.alir.JawaAlirInfoProvider#getIntraMethodResult" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="getIntraMethodResult(code:String):Map[org.sireum.util.ResourceUri,org.sireum.jawa.alir.TransformIntraMethodResult]"></a>
+      <a id="getIntraMethodResult(String):Map[ResourceUri,TransformIntraMethodResult]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">getIntraProcedureResult</span><span class="params">(<span name="code">code: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="org.sireum.util.ResourceUri">ResourceUri</span>, <a href="TransformIntraProcedureResult.html" class="extype" name="org.sireum.jawa.alir.TransformIntraProcedureResult">TransformIntraProcedureResult</a>]</span>
+        <span class="name">getIntraMethodResult</span><span class="params">(<span name="code">code: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="org.sireum.util.ResourceUri">ResourceUri</span>, <a href="TransformIntraMethodResult.html" class="extype" name="org.sireum.jawa.alir.TransformIntraMethodResult">TransformIntraMethodResult</a>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#org.sireum.jawa.alir.JawaAlirInfoProvider$@getIntraProcedureResult(code:String):Map[org.sireum.util.ResourceUri,org.sireum.jawa.alir.TransformIntraProcedureResult]" title="Permalink" target="_top">
+      <a href="../../../../index.html#org.sireum.jawa.alir.JawaAlirInfoProvider$@getIntraMethodResult(code:String):Map[org.sireum.util.ResourceUri,org.sireum.jawa.alir.TransformIntraMethodResult]" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" />
       </a>
     </span>
       
     </li><li name="org.sireum.jawa.alir.JawaAlirInfoProvider#getRda" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="getRda(p:org.sireum.jawa.JawaProcedure,cfg:org.sireum.alir.ControlFlowGraph[org.sireum.jawa.alir.JawaAlirInfoProvider.VirtualLabel]):org.sireum.jawa.alir.reachingDefinitionAnalysis.JawaReachingDefinitionAnalysis.Result"></a>
-      <a id="getRda(JawaProcedure,ControlFlowGraph[VirtualLabel]):Result"></a>
+      <a id="getRda(p:org.sireum.jawa.JawaMethod,cfg:org.sireum.alir.ControlFlowGraph[org.sireum.jawa.alir.JawaAlirInfoProvider.VirtualLabel]):org.sireum.jawa.alir.reachingDefinitionAnalysis.JawaReachingDefinitionAnalysis.Result"></a>
+      <a id="getRda(JawaMethod,ControlFlowGraph[VirtualLabel]):Result"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">getRda</span><span class="params">(<span name="p">p: <a href="../JawaProcedure.html" class="extype" name="org.sireum.jawa.JawaProcedure">JawaProcedure</a></span>, <span name="cfg">cfg: <span class="extype" name="org.sireum.alir.ControlFlowGraph">ControlFlowGraph</span>[<a href="#VirtualLabel=String" class="extmbr" name="org.sireum.jawa.alir.JawaAlirInfoProvider.VirtualLabel">VirtualLabel</a>]</span>)</span><span class="result">: <a href="reachingDefinitionAnalysis/JawaReachingDefinitionAnalysis$.html#Result=org.sireum.alir.MonotoneDataFlowAnalysisResult[org.sireum.jawa.alir.reachingDefinitionAnalysis.JawaReachingDefinitionAnalysis.RDFact]" class="extmbr" name="org.sireum.jawa.alir.reachingDefinitionAnalysis.JawaReachingDefinitionAnalysis.Result">Result</a></span>
+        <span class="name">getRda</span><span class="params">(<span name="p">p: <a href="../JawaMethod.html" class="extype" name="org.sireum.jawa.JawaMethod">JawaMethod</a></span>, <span name="cfg">cfg: <span class="extype" name="org.sireum.alir.ControlFlowGraph">ControlFlowGraph</span>[<a href="#VirtualLabel=String" class="extmbr" name="org.sireum.jawa.alir.JawaAlirInfoProvider.VirtualLabel">VirtualLabel</a>]</span>)</span><span class="result">: <a href="reachingDefinitionAnalysis/JawaReachingDefinitionAnalysis$.html#Result=org.sireum.alir.MonotoneDataFlowAnalysisResult[org.sireum.jawa.alir.reachingDefinitionAnalysis.JawaReachingDefinitionAnalysis.RDFact]" class="extmbr" name="org.sireum.jawa.alir.reachingDefinitionAnalysis.JawaReachingDefinitionAnalysis.Result">Result</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#org.sireum.jawa.alir.JawaAlirInfoProvider$@getRda(p:org.sireum.jawa.JawaProcedure,cfg:org.sireum.alir.ControlFlowGraph[org.sireum.jawa.alir.JawaAlirInfoProvider.VirtualLabel]):org.sireum.jawa.alir.reachingDefinitionAnalysis.JawaReachingDefinitionAnalysis.Result" title="Permalink" target="_top">
+      <a href="../../../../index.html#org.sireum.jawa.alir.JawaAlirInfoProvider$@getRda(p:org.sireum.jawa.JawaMethod,cfg:org.sireum.alir.ControlFlowGraph[org.sireum.jawa.alir.JawaAlirInfoProvider.VirtualLabel]):org.sireum.jawa.alir.reachingDefinitionAnalysis.JawaReachingDefinitionAnalysis.Result" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" />
       </a>
     </span>

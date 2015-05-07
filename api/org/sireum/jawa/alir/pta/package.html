@@ -30,7 +30,7 @@
       <div id="definition">
         <img src="../../../../../lib/package_big.png" />
         <p id="owner"><a href="../../../../package.html" class="extype" name="org">org</a>.<a href="../../../package.html" class="extype" name="org.sireum">sireum</a>.<a href="../../package.html" class="extype" name="org.sireum.jawa">jawa</a>.<a href="../package.html" class="extype" name="org.sireum.jawa.alir">alir</a></p>
-        <h1>pta</h1> <span class="permalink">
+        <h1>pta</h1><span class="permalink">
       <a href="../../../../../index.html#org.sireum.jawa.alir.pta.package" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" />
       </a>
@@ -66,25 +66,161 @@
 
         <div id="types" class="types members">
               <h3>Type Members</h3>
-              <ol><li name="org.sireum.jawa.alir.pta.PTAAbstractInstance" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="PTAAbstractInstanceextendsInstance"></a>
-      <a id="PTAAbstractInstance:PTAAbstractInstance"></a>
+              <ol><li name="org.sireum.jawa.alir.pta.ArraySlot" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ArraySlotextendsHeapSlotwithProductwithSerializable"></a>
+      <a id="ArraySlot:ArraySlot"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="ArraySlot.html"><span class="name">ArraySlot</span></a><span class="params">(<span name="ins">ins: <a href="Instance.html" class="extype" name="org.sireum.jawa.alir.pta.Instance">Instance</a></span>)</span><span class="result"> extends <a href="HeapSlot.html" class="extype" name="org.sireum.jawa.alir.pta.HeapSlot">HeapSlot</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.pta.package@ArraySlotextendsHeapSlotwithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt"></p>
+    </li><li name="org.sireum.jawa.alir.pta.BaseSlot" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="BaseSlotextendsSlotwithProductwithSerializable"></a>
+      <a id="BaseSlot:BaseSlot"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="BaseSlot.html"><span class="name">BaseSlot</span></a><span class="params">(<span name="varName">varName: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result"> extends <span class="extype" name="org.sireum.alir.Slot">Slot</span> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.pta.package@BaseSlotextendsSlotwithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt"></p>
+    </li><li name="org.sireum.jawa.alir.pta.ClassInstance" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ClassInstanceextendsInstancewithProductwithSerializable"></a>
+      <a id="ClassInstance:ClassInstance"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="ClassInstance.html"><span class="name">ClassInstance</span></a><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="defSite">defSite: <a href="../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>)</span><span class="result"> extends <a href="Instance.html" class="extype" name="org.sireum.jawa.alir.pta.Instance">Instance</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.pta.package@ClassInstanceextendsInstancewithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.jawa.alir.pta.FieldSlot" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="FieldSlotextendsHeapSlotwithProductwithSerializable"></a>
+      <a id="FieldSlot:FieldSlot"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="FieldSlot.html"><span class="name">FieldSlot</span></a><span class="params">(<span name="ins">ins: <a href="Instance.html" class="extype" name="org.sireum.jawa.alir.pta.Instance">Instance</a></span>, <span name="fieldName">fieldName: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result"> extends <a href="HeapSlot.html" class="extype" name="org.sireum.jawa.alir.pta.HeapSlot">HeapSlot</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.pta.package@FieldSlotextendsHeapSlotwithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt"></p>
+    </li><li name="org.sireum.jawa.alir.pta.HeapSlot" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="HeapSlotextendsSlot"></a>
+      <a id="HeapSlot:HeapSlot"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">abstract </span>
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="PTAAbstractInstance.html"><span class="name">PTAAbstractInstance</span></a><span class="result"> extends <a href="../Instance.html" class="extype" name="org.sireum.jawa.alir.Instance">Instance</a></span>
+        <a href="HeapSlot.html"><span class="name">HeapSlot</span></a><span class="result"> extends <span class="extype" name="org.sireum.alir.Slot">Slot</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#org.sireum.jawa.alir.pta.package@PTAAbstractInstanceextendsInstance" title="Permalink" target="_top">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.pta.package@HeapSlotextendsSlot" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt"></p>
+    </li><li name="org.sireum.jawa.alir.pta.Instance" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="InstanceextendsAnyRef"></a>
+      <a id="Instance:Instance"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="Instance.html"><span class="name">Instance</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.pta.package@InstanceextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt"></p>
+    </li><li name="org.sireum.jawa.alir.pta.InstanceSlot" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="InstanceSlotextendsSlotwithProductwithSerializable"></a>
+      <a id="InstanceSlot:InstanceSlot"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="InstanceSlot.html"><span class="name">InstanceSlot</span></a><span class="params">(<span name="ins">ins: <a href="Instance.html" class="extype" name="org.sireum.jawa.alir.pta.Instance">Instance</a></span>)</span><span class="result"> extends <span class="extype" name="org.sireum.alir.Slot">Slot</span> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.pta.package@InstanceSlotextendsSlotwithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt"></p>
+    </li><li name="org.sireum.jawa.alir.pta.InvokeSlot" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="InvokeSlotextendsSlotwithProductwithSerializable"></a>
+      <a id="InvokeSlot:InvokeSlot"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="InvokeSlot.html"><span class="name">InvokeSlot</span></a><span class="params">(<span name="sig">sig: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="invTyp">invTyp: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result"> extends <span class="extype" name="org.sireum.alir.Slot">Slot</span> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.pta.package@InvokeSlotextendsSlotwithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt"></p>
+    </li><li name="org.sireum.jawa.alir.pta.NullInstance" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="NullInstanceextendsInstancewithProductwithSerializable"></a>
+      <a id="NullInstance:NullInstance"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="NullInstance.html"><span class="name">NullInstance</span></a><span class="params">(<span name="defSite">defSite: <a href="../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>)</span><span class="result"> extends <a href="Instance.html" class="extype" name="org.sireum.jawa.alir.pta.Instance">Instance</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.pta.package@NullInstanceextendsInstancewithProductwithSerializable" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" />
       </a>
     </span>
       
     </li><li name="org.sireum.jawa.alir.pta.PTAAbstractStringInstance" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="PTAAbstractStringInstanceextendsPTAAbstractInstance"></a>
+      <a id="PTAAbstractStringInstanceextendsInstance"></a>
       <a id="PTAAbstractStringInstance:PTAAbstractStringInstance"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -92,10 +228,10 @@
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="PTAAbstractStringInstance.html"><span class="name">PTAAbstractStringInstance</span></a><span class="result"> extends <a href="PTAAbstractInstance.html" class="extype" name="org.sireum.jawa.alir.pta.PTAAbstractInstance">PTAAbstractInstance</a></span>
+        <a href="PTAAbstractStringInstance.html"><span class="name">PTAAbstractStringInstance</span></a><span class="result"> extends <a href="Instance.html" class="extype" name="org.sireum.jawa.alir.pta.Instance">Instance</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#org.sireum.jawa.alir.pta.package@PTAAbstractStringInstanceextendsPTAAbstractInstance" title="Permalink" target="_top">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.pta.package@PTAAbstractStringInstanceextendsInstance" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" />
       </a>
     </span>
@@ -118,7 +254,7 @@
     </span>
       <p class="shortcomment cmt"></p>
     </li><li name="org.sireum.jawa.alir.pta.PTAInstance" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="PTAInstanceextendsPTAAbstractInstancewithProductwithSerializable"></a>
+      <a id="PTAInstanceextendsInstancewithProductwithSerializable"></a>
       <a id="PTAInstance:PTAInstance"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -126,10 +262,10 @@
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="PTAInstance.html"><span class="name">PTAInstance</span></a><span class="params">(<span name="typ">typ: <a href="../../Type.html" class="extype" name="org.sireum.jawa.Type">Type</a></span>, <span name="defSite">defSite: <a href="../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>)</span><span class="result"> extends <a href="PTAAbstractInstance.html" class="extype" name="org.sireum.jawa.alir.pta.PTAAbstractInstance">PTAAbstractInstance</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+        <a href="PTAInstance.html"><span class="name">PTAInstance</span></a><span class="params">(<span name="typ">typ: <a href="../../Type.html" class="extype" name="org.sireum.jawa.Type">Type</a></span>, <span name="defSite">defSite: <a href="../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>)</span><span class="result"> extends <a href="Instance.html" class="extype" name="org.sireum.jawa.alir.pta.Instance">Instance</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#org.sireum.jawa.alir.pta.package@PTAInstanceextendsPTAAbstractInstancewithProductwithSerializable" title="Permalink" target="_top">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.pta.package@PTAInstanceextendsInstancewithProductwithSerializable" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" />
       </a>
     </span>
@@ -152,8 +288,25 @@
     </span>
       <p class="shortcomment cmt">PTAPointStringInstance represents a general String instance whose content can be any string i.e.</p><div class="fullcomment"><div class="comment cmt"><p>PTAPointStringInstance represents a general String instance whose content can be any string i.e. reg expression &quot;*&quot;
 </p></div></div>
+    </li><li name="org.sireum.jawa.alir.pta.PTAResult" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="PTAResultextendsAnyRef"></a>
+      <a id="PTAResult:PTAResult"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="PTAResult.html"><span class="name">PTAResult</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.pta.package@PTAResultextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      
     </li><li name="org.sireum.jawa.alir.pta.PTATupleInstance" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="PTATupleInstanceextendsPTAAbstractInstancewithProductwithSerializable"></a>
+      <a id="PTATupleInstanceextendsInstancewithProductwithSerializable"></a>
       <a id="PTATupleInstance:PTATupleInstance"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -161,10 +314,44 @@
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="PTATupleInstance.html"><span class="name">PTATupleInstance</span></a><span class="params">(<span name="left">left: <a href="../Instance.html" class="extype" name="org.sireum.jawa.alir.Instance">Instance</a></span>, <span name="right">right: <a href="../Instance.html" class="extype" name="org.sireum.jawa.alir.Instance">Instance</a></span>, <span name="defSite">defSite: <a href="../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>)</span><span class="result"> extends <a href="PTAAbstractInstance.html" class="extype" name="org.sireum.jawa.alir.pta.PTAAbstractInstance">PTAAbstractInstance</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+        <a href="PTATupleInstance.html"><span class="name">PTATupleInstance</span></a><span class="params">(<span name="left">left: <a href="Instance.html" class="extype" name="org.sireum.jawa.alir.pta.Instance">Instance</a></span>, <span name="right">right: <a href="Instance.html" class="extype" name="org.sireum.jawa.alir.pta.Instance">Instance</a></span>, <span name="defSite">defSite: <a href="../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>)</span><span class="result"> extends <a href="Instance.html" class="extype" name="org.sireum.jawa.alir.pta.Instance">Instance</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#org.sireum.jawa.alir.pta.package@PTATupleInstanceextendsPTAAbstractInstancewithProductwithSerializable" title="Permalink" target="_top">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.pta.package@PTATupleInstanceextendsInstancewithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt"></p>
+    </li><li name="org.sireum.jawa.alir.pta.UnknownInstance" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="UnknownInstanceextendsInstancewithProductwithSerializable"></a>
+      <a id="UnknownInstance:UnknownInstance"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="UnknownInstance.html"><span class="name">UnknownInstance</span></a><span class="params">(<span name="baseTyp">baseTyp: <a href="../../Type.html" class="extype" name="org.sireum.jawa.Type">Type</a></span>, <span name="defSite">defSite: <a href="../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>)</span><span class="result"> extends <a href="Instance.html" class="extype" name="org.sireum.jawa.alir.pta.Instance">Instance</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.pta.package@UnknownInstanceextendsInstancewithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.jawa.alir.pta.VarSlot" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="VarSlotextendsSlotwithProductwithSerializable"></a>
+      <a id="VarSlot:VarSlot"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="VarSlot.html"><span class="name">VarSlot</span></a><span class="params">(<span name="varName">varName: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result"> extends <span class="extype" name="org.sireum.alir.Slot">Slot</span> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.pta.package@VarSlotextendsSlotwithProductwithSerializable" title="Permalink" target="_top">
         <img src="../../../../../lib/permalink.png" />
       </a>
     </span>
