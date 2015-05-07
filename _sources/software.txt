@@ -20,7 +20,7 @@ Links
 Getting Started
 ******************
 
-.. warning:: Amandroid currently does not work on windows.
+.. warning:: Amandroid currently is not available for Windows.
 
 
 This section will help you to start with using Amandroid.

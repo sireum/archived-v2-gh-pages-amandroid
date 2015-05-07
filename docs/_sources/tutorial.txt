@@ -13,7 +13,7 @@ Setup Sireum CLI
 
 	To get more detailed information about how Sireum CLI works, please follow instructions at http://www.sireum.org/software.html.
 
-.. warning:: Amandroid currently does not work on windows.
+.. warning:: Amandroid currently is not available for Windows.
 
 Sireum CLI setup is pretty strait-forward, following steps need to be followed: 
 
