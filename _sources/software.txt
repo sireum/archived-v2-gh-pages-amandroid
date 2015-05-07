@@ -45,7 +45,7 @@ Amandroid is a feature in `Sireum <http://www.sireum.org/>`__ Command Line Inter
 Download Sireum
 --------------------
 
-	Follow instructions in http://www.sireum.org/software.html to download and setup Sireum.
+	Follow instructions in http://www.sireum.org/software.html to download and setup Sireum-cli.
 
 
 Run Amandroid
