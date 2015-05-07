@@ -22,6 +22,8 @@ Getting Started
 
 This section will help you to start with using Amandroid.
 
+.. warning: Amandroid currently does not work on windows.
+
 .. toctree::
 	:numbered:
 	:maxdepth: 1
