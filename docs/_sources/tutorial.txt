@@ -48,7 +48,7 @@ Amandroid is implemented on top of `Sireum <https://github.com/sireum>`__, so fo
 
 ``Sireum Parser``: https://github.com/sireum/parser
 
-``Sireum Core``: https://github.com/fgwei/core
+``Sireum Core``: https://github.com/sireum/core
 
 ``Sireum Jawa``: https://github.com/sireum/jawa
 
