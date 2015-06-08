@@ -8,7 +8,7 @@
     
     <title>1. Introduction &mdash; Sireum Amandroid 1.0 documentation</title>
     
-    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     
     <script type="text/javascript">
@@ -27,8 +27,8 @@
     <link rel="next" title="2. First Steps with Amandroid" href="tutorial.html" />
     <link rel="prev" title="Welcome to Sireum Amandroid’s documentation!" href="index.html" /> 
   </head>
-  <body>
-    <div class="related">
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
       <h3>Navigation</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
@@ -40,14 +40,14 @@
         <li class="right" >
           <a href="index.html" title="Welcome to Sireum Amandroid’s documentation!"
              accesskey="P">previous</a> |</li>
-        <li><a href="index.html">Sireum Amandroid 1.0 documentation</a> &raquo;</li> 
+        <li class="nav-item nav-item-0"><a href="index.html">Sireum Amandroid 1.0 documentation</a> &raquo;</li> 
       </ul>
     </div>  
 
     <div class="document">
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body">
+          <div class="body" role="main">
             
   <span class="target" id="intro"></span><div class="section" id="introduction">
 <h1>1. Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h1>
@@ -66,27 +66,27 @@
 </div>
 <div class="section" id="amandroid-workflow">
 <h2>1.2. Amandroid Workflow<a class="headerlink" href="#amandroid-workflow" title="Permalink to this headline">¶</a></h2>
-<div class="figure align-center">
+<div class="figure align-center" id="id1">
 <a class="reference internal image-reference" href="_images/detailpipeline.png"><img alt="alternate text" src="_images/detailpipeline.png" style="width: 800px; height: 500px;" /></a>
-<p class="caption">Figure: The pipeline of Amandroid framework.</p>
+<p class="caption"><span class="caption-text">Figure: The pipeline of Amandroid framework.</span></p>
 </div>
 <div class="sidebar">
 <p class="first sidebar-title">Pilar</p>
 <p>Pilar is a highly flexible, typed, annotation based intermediate representation language designed by <a class="reference external" href="http://people.cis.ksu.edu/~robby">Robby</a>.</p>
 <p class="last">Pilar is the IR we used in Amandroid analysis, and we decompile dalvik bytecode to Pilar via modifying dexdump program.</p>
 </div>
-<p>Amandroid take an Android APK <tt class="docutils literal"><span class="pre">x</span></tt> as the input, then it works as following:</p>
+<p>Amandroid take an Android APK <code class="docutils literal"><span class="pre">x</span></code> as the input, then it works as following:</p>
 <ol class="arabic">
-<li><p class="first">Extract <tt class="docutils literal"><span class="pre">x</span></tt>, then parse <tt class="docutils literal"><span class="pre">*.dex</span></tt> file to Dex2Pilar module and other files (like <tt class="docutils literal"><span class="pre">*.xml</span></tt>, <tt class="docutils literal"><span class="pre">resource.arsc</span></tt>) to Preprocess module.</p>
+<li><p class="first">Extract <code class="docutils literal"><span class="pre">x</span></code>, then parse <code class="docutils literal"><span class="pre">*.dex</span></code> file to Dex2Pilar module and other files (like <code class="docutils literal"><span class="pre">*.xml</span></code>, <code class="docutils literal"><span class="pre">resource.arsc</span></code>) to Preprocess module.</p>
 </li>
-<li><p class="first"><tt class="docutils literal"><span class="pre">Dex2PilarConverter</span></tt> in <tt class="docutils literal"><span class="pre">Dex2Pilar</span></tt> module <em class="xref std std-ref">decompile</em> the <tt class="docutils literal"><span class="pre">*.dex</span></tt> file into Pilar format. Parsers in <tt class="docutils literal"><span class="pre">Preprocess</span></tt> module can provide app’s information to <tt class="docutils literal"><span class="pre">AppInfoCollector</span></tt>. Developer can specify what kind of information he/she is interested and non-interesting app can be ignored. Finally, <tt class="docutils literal"><span class="pre">Preprocess</span></tt> module will output meta data of <tt class="docutils literal"><span class="pre">x</span></tt>.</p>
+<li><p class="first"><code class="docutils literal"><span class="pre">Dex2PilarConverter</span></code> in <code class="docutils literal"><span class="pre">Dex2Pilar</span></code> module <span class="xref std std-ref">decompile</span> the <code class="docutils literal"><span class="pre">*.dex</span></code> file into Pilar format. Parsers in <code class="docutils literal"><span class="pre">Preprocess</span></code> module can provide app’s information to <code class="docutils literal"><span class="pre">AppInfoCollector</span></code>. Developer can specify what kind of information he/she is interested and non-interesting app can be ignored. Finally, <code class="docutils literal"><span class="pre">Preprocess</span></code> module will output meta data of <code class="docutils literal"><span class="pre">x</span></code>.</p>
 </li>
-<li><p class="first"><tt class="docutils literal"><span class="pre">AndroidEnvironmentGenerator</span></tt> in <tt class="docutils literal"><span class="pre">EnvironmentBuilder</span></tt> is getting all sources codes and meta datas from previous step, then building the environment method for each of the component.</p>
+<li><p class="first"><code class="docutils literal"><span class="pre">AndroidEnvironmentGenerator</span></code> in <code class="docutils literal"><span class="pre">EnvironmentBuilder</span></code> is getting all sources codes and meta datas from previous step, then building the environment method for each of the component.</p>
 </li>
-<li><p class="first"><tt class="docutils literal"><span class="pre">DataFlowFramework</span></tt> provide data flow analysis technics to examine data flow problems.</p>
-<p><tt class="docutils literal"><span class="pre">AndroidReachingFactsAnalysis</span></tt> takes environment methods as the entry points and <em class="xref std std-ref">build IDFG</em>.</p>
-<p><tt class="docutils literal"><span class="pre">InterproceduralDataDependenceAnalysis</span></tt> takes IDFG and <em class="xref std std-ref">build DDG</em>.</p>
-<p><tt class="docutils literal"><span class="pre">AndroidDataDependentTaintAnalysis</span></tt> takes DDG and SourceAndSinkManager (provided by the developer) to do taint analysis and output taint result.</p>
+<li><p class="first"><code class="docutils literal"><span class="pre">DataFlowFramework</span></code> provide data flow analysis technics to examine data flow problems.</p>
+<p><code class="docutils literal"><span class="pre">AndroidReachingFactsAnalysis</span></code> takes environment methods as the entry points and <span class="xref std std-ref">build IDFG</span>.</p>
+<p><code class="docutils literal"><span class="pre">InterproceduralDataDependenceAnalysis</span></code> takes IDFG and <span class="xref std std-ref">build DDG</span>.</p>
+<p><code class="docutils literal"><span class="pre">AndroidDataDependentTaintAnalysis</span></code> takes DDG and SourceAndSinkManager (provided by the developer) to do taint analysis and output taint result.</p>
 </li>
 <li><p class="first">Developer specified plugin get all the result, then he/she can do further analysis or visualize it in certain way.</p>
 </li>
@@ -102,7 +102,7 @@
           </div>
         </div>
       </div>
-      <div class="sphinxsidebar">
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
         <div class="sphinxsidebarwrapper">
   <h3><a href="index.html">Table Of Contents</a></h3>
   <ul>
@@ -119,7 +119,7 @@
   <h4>Next topic</h4>
   <p class="topless"><a href="tutorial.html"
                         title="next chapter">2. First Steps with Amandroid</a></p>
-<div id="searchbox" style="display: none">
+<div id="searchbox" style="display: none" role="search">
   <h3>Quick search</h3>
     <form class="search" action="search.html" method="get">
       <input type="text" name="q" />
@@ -136,7 +136,7 @@
       </div>
       <div class="clearer"></div>
     </div>
-    <div class="related">
+    <div class="related" role="navigation" aria-label="related navigation">
       <h3>Navigation</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
@@ -148,12 +148,12 @@
         <li class="right" >
           <a href="index.html" title="Welcome to Sireum Amandroid’s documentation!"
              >previous</a> |</li>
-        <li><a href="index.html">Sireum Amandroid 1.0 documentation</a> &raquo;</li> 
+        <li class="nav-item nav-item-0"><a href="index.html">Sireum Amandroid 1.0 documentation</a> &raquo;</li> 
       </ul>
     </div>
-    <div class="footer">
+    <div class="footer" role="contentinfo">
         &copy; Copyright 2014, Fengguo Wei &amp; Sankardas Roy.
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.3.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.3.1.
     </div>
   </body>
 </html>
