@@ -117,7 +117,7 @@
 <h2>Getting Started<a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h2>
 <div class="admonition warning">
 <p class="first admonition-title">Warning</p>
-<p class="last">Amandroid currently is not available for Windows.</p>
+<p class="last">Amandroid currently is available ONLY for Linux and Mac, but not for Windows.</p>
 </div>
 <p>This section will help you to start with using Amandroid.</p>
 <div class="toctree-wrapper compound">
@@ -135,22 +135,11 @@
 </div>
 <div class="section" id="start-with-executable">
 <h3>Start with Executable<a class="headerlink" href="#start-with-executable" title="Permalink to this headline">¶</a></h3>
-<p>Amandroid is a feature in <a class="reference external" href="http://www.sireum.org/">Sireum</a> Command Line Interface (CLI), following instruction will help you to setup.</p>
+<p>Amandroid is a feature in <a class="reference external" href="http://www.sireum.org/">Sireum</a> (a static analysis framework) Command Line Interface (CLI); the instructions below will help you setup.</p>
 <div class="section" id="download-sireum">
 <h4>Download Sireum<a class="headerlink" href="#download-sireum" title="Permalink to this headline">¶</a></h4>
 <blockquote>
 <div>Follow instructions in <a class="reference external" href="http://sireum.org/software.html#strawberry">Sireum Strawberry</a> to download and setup Sireum-cli.</div></blockquote>
-</div>
-<div class="section" id="test-amandroid">
-<h4>Test Amandroid<a class="headerlink" href="#test-amandroid" title="Permalink to this headline">¶</a></h4>
-<blockquote>
-<div><p>To make sure Amandroid running on your environment, you can execute it on our test apks, which you can find in the <code class="docutils literal"><span class="pre">/path/Sireum/apps/amandroid/sources/icc-bench</span></code> folder or <a class="reference external" href="https://github.com/fgwei/ICC-Bench/tree/master/apks">ICC-Bench</a>.</p>
-<p>The command to run is:</p>
-<div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>sireum amandroid taintAnalysis -m <span class="m">4</span> -p -t DIR -o /outputPath /path/Sireum/apps/amandroid/sources/icc-bench /path/Sireum/apps/amandroid/taintAnalysis/sourceAndSinks/TaintSourcesAndSinks.txt
-</pre></div>
-</div>
-<p>More test apks you can find from <a class="reference external" href="https://github.com/secure-software-engineering/DroidBench/tree/master/apk">DroidBench</a>.</p>
-</div></blockquote>
 </div>
 <div class="section" id="run-amandroid">
 <h4>Run Amandroid<a class="headerlink" href="#run-amandroid" title="Permalink to this headline">¶</a></h4>
@@ -164,9 +153,20 @@
 <div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>sireum amandroid decompile /path/some.apk /outputPath
 </pre></div>
 </div>
-<div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>sireum amandroid taintAnalysis -m <span class="m">12</span> -p -o /outputPath /path/some.apk /your_Amandroid_Home/taintAnalysis/sourceAndSinks/TaintSourcesAndSinks.txt
+<div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>sireum amandroid taintAnalysis -m <span class="m">12</span> -p -o /outputPath /path/some.apk /path/Sireum/apps/amandroid/taintAnalysis/sourceAndSinks/TaintSourcesAndSinks.txt
 </pre></div>
 </div>
+</div></blockquote>
+</div>
+<div class="section" id="test-amandroid">
+<h4>Test Amandroid<a class="headerlink" href="#test-amandroid" title="Permalink to this headline">¶</a></h4>
+<blockquote>
+<div><p>To make sure Amandroid running on your environment, you can execute it on our test apks, which you can find in the <code class="docutils literal"><span class="pre">/path/Sireum/apps/amandroid/sources/icc-bench</span></code> folder or <a class="reference external" href="https://github.com/fgwei/ICC-Bench/tree/master/apks">ICC-Bench</a>.</p>
+<p>The command to run is:</p>
+<div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>sireum amandroid taintAnalysis -m <span class="m">4</span> -p -t DIR -o /outputPath /path/Sireum/apps/amandroid/sources/icc-bench /path/Sireum/apps/amandroid/taintAnalysis/sourceAndSinks/TaintSourcesAndSinks.txt
+</pre></div>
+</div>
+<p>More test apks you can find from <a class="reference external" href="https://github.com/secure-software-engineering/DroidBench/tree/master/apk">DroidBench</a>.</p>
 </div></blockquote>
 <hr class="docutils" />
 </div>
