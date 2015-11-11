@@ -10,8 +10,8 @@
     
     <link rel="stylesheet" href="_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="_static/bootstrap-3.1.0/css/bootstrap.min.css" type="text/css" />
-    <link rel="stylesheet" href="_static/bootstrap-3.1.0/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.2.0/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.2.0/css/bootstrap-theme.min.css" type="text/css" />
     <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
     <link rel="stylesheet" href="_static/sireum.css" type="text/css" />
     
@@ -29,7 +29,7 @@
     <script type="text/javascript" src="_static/doctools.js"></script>
     <script type="text/javascript" src="_static/js/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="_static/js/jquery-fix.js"></script>
-    <script type="text/javascript" src="_static/bootstrap-3.1.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-3.2.0/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
     <link rel="top" title="Sireum Amandroid" href="index.html" />
     <link rel="next" title="Discovered Results" href="problems.html" />
@@ -140,6 +140,17 @@
 <h4>Download Sireum<a class="headerlink" href="#download-sireum" title="Permalink to this headline">¶</a></h4>
 <blockquote>
 <div>Follow instructions in <a class="reference external" href="http://sireum.org/software.html#strawberry">Sireum Strawberry</a> to download and setup Sireum-cli.</div></blockquote>
+</div>
+<div class="section" id="test-amandroid">
+<h4>Test Amandroid<a class="headerlink" href="#test-amandroid" title="Permalink to this headline">¶</a></h4>
+<blockquote>
+<div><p>To make sure Amandroid running on your environment, you can execute it on our test apks, which you can find in the <code class="docutils literal"><span class="pre">/path/Sireum/apps/amandroid/sources/icc-bench</span></code> folder or <a class="reference external" href="https://github.com/fgwei/ICC-Bench/tree/master/apks">ICC-Bench</a>.</p>
+<p>The command to run is:</p>
+<div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>sireum amandroid taintAnalysis -m <span class="m">4</span> -p -t DIR -o /outputPath /path/Sireum/apps/amandroid/sources/icc-bench /path/Sireum/apps/amandroid/taintAnalysis/sourceAndSinks/TaintSourcesAndSinks.txt
+</pre></div>
+</div>
+<p>More test apks you can find from <a class="reference external" href="https://github.com/secure-software-engineering/DroidBench/tree/master/apk">DroidBench</a>.</p>
+</div></blockquote>
 </div>
 <div class="section" id="run-amandroid">
 <h4>Run Amandroid<a class="headerlink" href="#run-amandroid" title="Permalink to this headline">¶</a></h4>
