@@ -60,19 +60,19 @@ So the first thing we need to do is to setup Sireum command-line interface (CLI)
 <p>Sireum is a long-term research effort to develop an over-arching software analysis platform that incorporates various static analysis techniques such as data-flow framework, model checking, symbolic execution, abstract interpretation, and deductive reasoning techniques (e.g., using weakest precondition calculation). It can be used to build various kinds of software static analyzers for different kinds of properties.</p>
 <p class="last">To get more detailed information about how Sireum CLI works, please follow instructions at <a class="reference external" href="http://www.sireum.org/software.html">http://www.sireum.org/software.html</a>.</p>
 </div>
-<div class="admonition warning">
-<p class="first admonition-title">Warning</p>
-<p class="last">Amandroid currently is not available for Windows.</p>
-</div>
 <p>Sireum CLI setup is pretty strait-forward, following steps need to be followed:</p>
-<ol class="arabic simple">
-<li>Follow instructions in <a class="reference external" href="http://sireum.org/software.html#shortcake">Sireum Shortcake</a> to download and setup Sireum-ide.</li>
-<li>Launch Eclipse:</li>
-</ol>
-<div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>sireum launch sireumdev -j <span class="s2">&quot;-Xms256m,-Xmx2048m&quot;</span> --args -clean
+<ol class="arabic">
+<li><p class="first">Follow instructions in <a class="reference external" href="http://sireum.org/software.html#shortcake">Sireum Shortcake</a> to download and setup Sireum-ide, make sure you are using the <code class="docutils literal"><span class="pre">dev(nightly)</span></code> version.</p>
+</li>
+<li><p class="first">Launch Eclipse:</p>
+<blockquote>
+<div><div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>sireum launch sireumdev -j <span class="s2">&quot;-Xms256m,-Xmx2048m&quot;</span>
 </pre></div>
 </div>
-<p>This will launch Eclipse IDE with all required pulgins. <code class="docutils literal"><span class="pre">-j</span> <span class="pre">&quot;-Xms512m,-Xmx4096m&quot;</span> <span class="pre">--args</span> <span class="pre">-clean</span></code> is parameter gives to Eclipse (you can modify it based on your machines performance).</p>
+<p>This will launch Eclipse IDE with all required pulgins. <code class="docutils literal"><span class="pre">-j</span> <span class="pre">&quot;-Xms512m,-Xmx4096m&quot;</span></code> is parameter gives to Eclipse (you can modify it based on your machines performance).</p>
+</div></blockquote>
+</li>
+</ol>
 <p>After above steps you will get a working development platform with all the necessary plugins setup. Then it is time to get code of Amandroid.</p>
 </div>
 <div class="section" id="checking-out-the-source-of-amandroid">
@@ -91,33 +91,27 @@ So the first thing we need to do is to setup Sireum command-line interface (CLI)
 <p>Amandroid’s repository:</p>
 <p><code class="docutils literal"><span class="pre">Sireum</span> <span class="pre">Amandroid</span></code>: <a class="reference external" href="https://github.com/sireum/amandroid">https://github.com/sireum/amandroid</a></p>
 <p>Clone all the required repositories into your workspace using Eclipse:</p>
-<ol class="arabic simple">
-<li>Switch to the Git Repository Exploring perspective in Eclipse.</li>
-<li>Click Clone a Git Repository and give the URL. Then, fill in necessary informations until finish.</li>
-<li>Wait for the repository to be cloned—this may take a couple of minutes.</li>
-<li>Import all the projects by:</li>
-</ol>
-<p>right-click on each repository -&gt; select <code class="docutils literal"><span class="pre">Import</span> <span class="pre">Projects</span> <span class="pre">…</span></code> -&gt; check <code class="docutils literal"><span class="pre">Import</span> <span class="pre">existing</span> <span class="pre">projects</span></code> and go <code class="docutils literal"><span class="pre">Next</span></code> -&gt; Click <code class="docutils literal"><span class="pre">Finish</span></code> with all projects checked.</p>
-<ol class="arabic simple" start="5">
-<li>Wait for the projects to be imported, and the indexing to finish.</li>
+<ol class="arabic">
+<li><p class="first">Switch to the Git Repository Exploring perspective in Eclipse.</p>
+</li>
+<li><p class="first">Click Clone a Git Repository and give the URL. Then, fill in necessary informations until finish.</p>
+</li>
+<li><p class="first">Wait for the repository to be cloned—this may take a couple of minutes.</p>
+</li>
+<li><p class="first">Import all the projects <code class="docutils literal"><span class="pre">in</span> <span class="pre">order</span> <span class="pre">(from</span> <span class="pre">Sireum</span> <span class="pre">Prelude</span> <span class="pre">to</span> <span class="pre">Sireum</span> <span class="pre">Amandroid)</span></code> by:</p>
+<blockquote>
+<div><p>right-click on each repository -&gt; select <code class="docutils literal"><span class="pre">Import</span> <span class="pre">Projects</span> <span class="pre">…</span></code> -&gt; check <code class="docutils literal"><span class="pre">Import</span> <span class="pre">existing</span> <span class="pre">projects</span></code> and go <code class="docutils literal"><span class="pre">Next</span></code> -&gt; Click <code class="docutils literal"><span class="pre">Finish</span></code> with all projects checked.</p>
+</div></blockquote>
+</li>
+<li><p class="first">Wait for the projects to be imported, and the indexing to finish.</p>
+</li>
 </ol>
 </div>
 <div class="section" id="troubleshooting">
 <h2>2.3. TroubleShooting<a class="headerlink" href="#troubleshooting" title="Permalink to this headline">¶</a></h2>
-<ol class="arabic">
-<li><p class="first">Sometimes, after you import all the projects it will show error mark on some of the projects. Just make sure you are using correct Java compiler version, and then clean all projects.</p>
-</li>
-<li><p class="first">If you get issue related to dex2pilar, please try following:</p>
-<blockquote>
-<div><ol class="loweralpha simple">
-<li><code class="docutils literal"><span class="pre">sudo</span> <span class="pre">apt-get</span> <span class="pre">install</span> <span class="pre">libc6:i386</span> <span class="pre">libncurses5:i386</span> <span class="pre">libstdc++6:i386</span></code></li>
-<li><code class="docutils literal"><span class="pre">cd</span> <span class="pre">/usr/lib32</span></code></li>
-<li><code class="docutils literal"><span class="pre">sudo</span> <span class="pre">ln</span> <span class="pre">-sf</span> <span class="pre">libstdc++.so.6</span> <span class="pre">libc++.so</span></code></li>
-<li><code class="docutils literal"><span class="pre">export</span> <span class="pre">LD_LIBRARY_PATH=/usr/lib32</span></code></li>
-<li>Try again. If the problem remains check <a class="reference external" href="https://github.com/sireum/amandroid/issues/17">Issue 17</a>. Or report to us.</li>
-</ol>
-</div></blockquote>
-</li>
+<ol class="arabic simple">
+<li>The order of importing those repositories is really important.</li>
+<li>Sometimes, after you import all the projects it will show error mark on some of the projects. Just clean all projects.</li>
 </ol>
 </div>
 </div>
