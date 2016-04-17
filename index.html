@@ -10,8 +10,8 @@
     
     <link rel="stylesheet" href="_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="_static/bootstrap-3.2.0/css/bootstrap.min.css" type="text/css" />
-    <link rel="stylesheet" href="_static/bootstrap-3.2.0/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.3.4/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.3.4/css/bootstrap-theme.min.css" type="text/css" />
     <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
     <link rel="stylesheet" href="_static/sireum.css" type="text/css" />
     
@@ -29,7 +29,7 @@
     <script type="text/javascript" src="_static/doctools.js"></script>
     <script type="text/javascript" src="_static/js/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="_static/js/jquery-fix.js"></script>
-    <script type="text/javascript" src="_static/bootstrap-3.2.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-3.3.4/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
     <link rel="top" title="Sireum Amandroid" href="#" />
     <link rel="next" title="Documentation" href="documentation.html" />
@@ -52,7 +52,6 @@
 
         <div class="collapse navbar-collapse nav-collapse">
           <ul class="nav navbar-nav">
-            <li class="divider-vertical"></li>
             
                 <li><a href="documentation.html">Documentation</a></li>
                 <li><a href="software.html">Software</a></li>
@@ -95,17 +94,27 @@
 
 <div class="container">
   <div class="row">
-    <div class="col-md-12">
+    <div class="col-md-12 content">
       
   <div class="toctree-wrapper compound">
 </div>
 <div class="section" id="amandroid">
 <h1>Amandroid<a class="headerlink" href="#amandroid" title="Permalink to this headline">¶</a></h1>
 <div class="container-fluid">
-  <div class="row">
-    <div class="col-md-12">
-      <img src="_static/amandroid.png" />
-    </div>
+  <div class="jumbotron">
+     <div class="row">
+         <div class="col-xs-12 col-md-8">
+             <h1>Amandroid</h1>
+             <p>Amandroid is a static analysis framework for Android apps.</p>
+             <p>
+                 <a class="btn btn-lg btn-primary" href="documentation.html" role="button">Amandroid Documentation &raquo;</a>
+             </p>
+         </div>
+         <div class="col-xs-6 col-md-4">
+             <img src="_static/argus.png" alt="..." class="img-rounded img-responsive">
+             <img src="_static/santos.png" alt="..." class="img-rounded img-responsive">
+         </div>
+     </div>
   </div>
 
   <br/>
@@ -124,6 +133,13 @@
               <td width="50px"><img src="_static/news-icon.png"></img></td>
               <td>
                 <div id="news"><ul>
+  <li>
+
+    Updated Amandroid website cover picture.
+
+    &nbsp;&nbsp;<span data-livestamp="2016-04-17T15:00:00-0500"></span>
+
+  </li>
   <li>
 
     Amandroid is open sourced under EPL.
@@ -168,8 +184,6 @@
 <p>Our approach shows that a comprehensive (tracking all objects) static analysis method on Android apps is totally feasible in terms of computation resources, and the Amandroid framework is flexible and easy to be extended for many types of specialized security analyses.</p>
 <p>Since Amandroid directly handles Inter-component control and data flows, it can be used to address security problems that result from interactions among multiple components from either the same or different apps. Amandroid analysis is sound in that it can provide assurance of the absence of the specified security problems in an app with well-specified and reasonable assumptions on the Android runtime and its library.</p>
 <p>On top of Amandroid we performed certain specific security analyses, for instance, a) user password flow tracking, b) intent injection detection, and c) crypto API misuse checking. We apply those analyses on hundreds of apps collected from Google Play&#8217;s popular apps and a third-party security company, and the results show that it is capable of finding real security issues and efficient enough in terms of analysis time.</p>
-      <br>
-      <br>
     </div>
   </div>
 </div>
@@ -182,14 +196,14 @@
 <div class="line"><a class="reference external" href="http://arguslab.org">Argus Laboratory</a></div>
 <div class="line"><a class="reference external" href="http://www.usf.edu/engineering/cse/">Computer Science and Engineering Department</a></div>
 <div class="line"><a class="reference external" href="http://www.usf.edu/">University of South Florida</a></div>
-<div class="line">4202 E. Fowler Avenue, ENB 118</div>
+<div class="line">4202 E. Fowler Avenue, ENB2 226</div>
 <div class="line">Tampa, FL, 33620</div>
 <div class="line"><br /></div>
 <div class="line"><a class="reference external" href="http://santoslab.org">SAnToS Laboratory</a></div>
 <div class="line"><a class="reference external" href="http://www.cis.ksu.edu">Computing and Information Sciences Department</a></div>
 <div class="line"><a class="reference external" href="http://www.ksu.edu">Kansas State University</a></div>
-<div class="line">234 Nichols Hall</div>
-<div class="line">Manhattan , KS, 66506</div>
+<div class="line"><a class="reference external" href="http://goo.gl/maps/uWgRY">702 Mid-Campus Drive South</a></div>
+<div class="line"><a class="reference external" href="http://www.ci.manhattan.ks.us/">Manhattan</a>, <a class="reference external" href="http://www.kansas.gov/">KS</a>, <a class="reference external" href="https://www.google.com/maps/place/Manhattan,+KS+66506">66506</a></div>
 <div class="line"><br /></div>
 <div class="line">Email: <a class="reference external" href="mailto:amandroid&#37;&#52;&#48;sireum&#46;org">amandroid<span>&#64;</span>sireum<span>&#46;</span>org</a></div>
 </div>
@@ -212,7 +226,11 @@ award <a class="reference external" href="http://www.nsf.gov/awardsearch/showAwa
 Any opinions, findings, conclusions, or recommendations expressed in
 this material are those of the authors and do not necessarily reflect
 the views of the previously mentioned institutions.</p>
-</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div></div>
 
 
     </div>

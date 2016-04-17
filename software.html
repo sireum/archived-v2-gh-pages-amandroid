@@ -10,8 +10,8 @@
     
     <link rel="stylesheet" href="_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="_static/bootstrap-3.2.0/css/bootstrap.min.css" type="text/css" />
-    <link rel="stylesheet" href="_static/bootstrap-3.2.0/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.3.4/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.3.4/css/bootstrap-theme.min.css" type="text/css" />
     <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
     <link rel="stylesheet" href="_static/sireum.css" type="text/css" />
     
@@ -29,7 +29,7 @@
     <script type="text/javascript" src="_static/doctools.js"></script>
     <script type="text/javascript" src="_static/js/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="_static/js/jquery-fix.js"></script>
-    <script type="text/javascript" src="_static/bootstrap-3.2.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-3.3.4/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
     <link rel="top" title="Sireum Amandroid" href="index.html" />
     <link rel="next" title="Discovered Results" href="problems.html" />
@@ -53,7 +53,6 @@
 
         <div class="collapse navbar-collapse nav-collapse">
           <ul class="nav navbar-nav">
-            <li class="divider-vertical"></li>
             
                 <li><a href="documentation.html">Documentation</a></li>
                 <li><a href="#">Software</a></li>
@@ -96,7 +95,7 @@
 
 <div class="container">
   <div class="row">
-    <div class="col-md-12">
+    <div class="col-md-12 content">
       
   <div class="section" id="software">
 <h1>Software<a class="headerlink" href="#software" title="Permalink to this headline">¶</a></h1>
@@ -145,15 +144,15 @@
 <h4>Run Amandroid<a class="headerlink" href="#run-amandroid" title="Permalink to this headline">¶</a></h4>
 <blockquote>
 <div><p>To run Amandroid, in a terminal command prompt, type:</p>
-<div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>sireum amandroid
+<div class="highlight-bash"><div class="highlight"><pre><span></span>$ sireum amandroid
 </pre></div>
 </div>
 <p>After running above command you will get the list of existing Amandroid plugins. You may choose one of them and perform such analysis.</p>
 <p>Example commands:</p>
-<div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>sireum amandroid decompile /path/some.apk /outputPath
+<div class="highlight-bash"><div class="highlight"><pre><span></span>$ sireum amandroid decompile /path/some.apk /outputPath
 </pre></div>
 </div>
-<div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>sireum amandroid taintAnalysis -m <span class="m">8</span> -o /outputPath /path/some.apk
+<div class="highlight-bash"><div class="highlight"><pre><span></span>$ sireum amandroid taintAnalysis -m <span class="m">8</span> -o /outputPath /path/some.apk
 </pre></div>
 </div>
 </div></blockquote>
@@ -163,7 +162,7 @@
 <blockquote>
 <div><p>To make sure Amandroid running on your environment, you can execute it on our test apks, which you can find in the <code class="docutils literal"><span class="pre">/path/Sireum/apps/amandroid/sources/icc-bench</span></code> folder or <a class="reference external" href="https://github.com/fgwei/ICC-Bench/tree/master/apks">ICC-Bench</a>.</p>
 <p>The command to run is:</p>
-<div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>sireum amandroid taintAnalysis -m <span class="m">4</span> -o /outputPath /path/Sireum/apps/amandroid/sources/icc-bench
+<div class="highlight-bash"><div class="highlight"><pre><span></span>$ sireum amandroid taintAnalysis -m <span class="m">4</span> -o /outputPath /path/Sireum/apps/amandroid/sources/icc-bench
 </pre></div>
 </div>
 <p>More test apks you can find from <a class="reference external" href="https://github.com/secure-software-engineering/DroidBench/tree/master/apk">DroidBench</a>.</p>

@@ -28,13 +28,13 @@
         </head>
         <body class="type">
       <div id="definition">
-        <img src="../../../../../lib/trait_big.png" />
+        <img alt="Class" src="../../../../../lib/class_big.png" />
         <p id="owner"><a href="../../../../package.html" class="extype" name="org">org</a>.<a href="../../../package.html" class="extype" name="org.sireum">sireum</a>.<a href="../../package.html" class="extype" name="org.sireum.jawa">jawa</a>.<a href="../package.html" class="extype" name="org.sireum.jawa.alir">alir</a>.<a href="package.html" class="extype" name="org.sireum.jawa.alir.taintAnalysis">taintAnalysis</a></p>
         <h1>TaintNode</h1><h3><span class="morelinks"><div>Related Doc:
             <a href="package.html" class="extype" name="org.sireum.jawa.alir.taintAnalysis">package taintAnalysis</a>
           </div></span></h3><span class="permalink">
       <a href="../../../../../index.html#org.sireum.jawa.alir.taintAnalysis.TaintNode" title="Permalink" target="_top">
-        <img src="../../../../../lib/permalink.png" />
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       </div>
@@ -42,20 +42,17 @@
       <h4 id="signature" class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
-        <span class="kind">trait</span>
+        <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <span class="name">TaintNode</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+        <span class="name">TaintNode</span><span class="params">(<span name="tf">tf: <a href="TaintSlot.html" class="extype" name="org.sireum.jawa.alir.taintAnalysis.TaintSlot">TaintSlot</a></span>)</span><span class="result"> extends <a href="../interProcedural/InterProceduralNode.html" class="extype" name="org.sireum.jawa.alir.interProcedural.InterProceduralNode">InterProceduralNode</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4>
       
-          <div id="comment" class="fullcommenttop"><div class="comment cmt"></div><div class="toggleContainer block">
+          <div id="comment" class="fullcommenttop"><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
-          <div class="superTypes hiddenContent"><span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
-        </div><div class="toggleContainer block">
-            <span class="toggle">Known Subclasses</span>
-            <div class="subClasses hiddenContent"><a href="../../../amandroid/alir/taintAnalysis/AndroidDataDependentTaintAnalysis$$Tn.html" class="extype" name="org.sireum.amandroid.alir.taintAnalysis.AndroidDataDependentTaintAnalysis.Tn">Tn</a></div>
-          </div></div>
+          <div class="superTypes hiddenContent"><span class="extype" name="scala.Product">Product</span>, <span class="extype" name="scala.Equals">Equals</span>, <a href="../interProcedural/InterProceduralNode.html" class="extype" name="org.sireum.jawa.alir.interProcedural.InterProceduralNode">InterProceduralNode</a>, <span class="extype" name="scala.Serializable">Serializable</span>, <span class="extype" name="java.io.Serializable">Serializable</span>, <span class="extype" name="org.sireum.util.PropertyProvider">PropertyProvider</span>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+        </div></div>
         
 
       <div id="mbrsel">
@@ -72,7 +69,7 @@
                 <span class="filtertype">Inherited<br />
                 </span>
                 <ol id="linearization">
-                  <li class="in" name="org.sireum.jawa.alir.taintAnalysis.TaintNode"><span>TaintNode</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                  <li class="in" name="org.sireum.jawa.alir.taintAnalysis.TaintNode"><span>TaintNode</span></li><li class="in" name="scala.Product"><span>Product</span></li><li class="in" name="scala.Equals"><span>Equals</span></li><li class="in" name="org.sireum.jawa.alir.interProcedural.InterProceduralNode"><span>InterProceduralNode</span></li><li class="in" name="scala.Serializable"><span>Serializable</span></li><li class="in" name="java.io.Serializable"><span>Serializable</span></li><li class="in" name="org.sireum.util.PropertyProvider"><span>PropertyProvider</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
                 </ol>
               </div><div id="ancestors">
             <span class="filtertype"></span>
@@ -80,7 +77,6 @@
               <li class="hideall out"><span>Hide All</span></li>
               <li class="showall in"><span>Show all</span></li>
             </ol>
-            <a href="http://docs.scala-lang.org/overviews/scaladoc/usage.html#members" target="_blank">Learn more about member selection</a>
           </div>
         <div id="visbl">
             <span class="filtertype">Visibility</span>
@@ -90,102 +86,34 @@
 
       <div id="template">
         <div id="allMembers">
-        
-
-        
-
-        <div id="values" class="values members">
-              <h3>Abstract Value Members</h3>
-              <ol><li name="org.sireum.jawa.alir.taintAnalysis.TaintNode#getDescriptors" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="getDescriptors:org.sireum.util.ISet[org.sireum.jawa.alir.taintAnalysis.TaintDescriptor]"></a>
-      <a id="getDescriptors:ISet[TaintDescriptor]"></a>
+        <div id="constructors" class="members">
+              <h3>Instance Constructors</h3>
+              <ol><li name="org.sireum.jawa.alir.taintAnalysis.TaintNode#&lt;init&gt;" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="&lt;init&gt;(tf:org.sireum.jawa.alir.taintAnalysis.TaintSlot):org.sireum.jawa.alir.taintAnalysis.TaintNode"></a>
+      <a id="&lt;init&gt;:TaintNode"></a>
       <h4 class="signature">
       <span class="modifier_kind">
-        <span class="modifier">abstract </span>
-        <span class="kind">def</span>
+        <span class="modifier"></span>
+        <span class="kind">new</span>
       </span>
       <span class="symbol">
-        <span class="name">getDescriptors</span><span class="result">: <span class="extype" name="org.sireum.util.ISet">ISet</span>[<a href="TaintDescriptor.html" class="extype" name="org.sireum.jawa.alir.taintAnalysis.TaintDescriptor">TaintDescriptor</a>]</span>
+        <span class="name">TaintNode</span><span class="params">(<span name="tf">tf: <a href="TaintSlot.html" class="extype" name="org.sireum.jawa.alir.taintAnalysis.TaintSlot">TaintSlot</a></span>)</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#org.sireum.jawa.alir.taintAnalysis.TaintNode@getDescriptors:org.sireum.util.ISet[org.sireum.jawa.alir.taintAnalysis.TaintDescriptor]" title="Permalink" target="_top">
-        <img src="../../../../../lib/permalink.png" />
-      </a>
-    </span>
-      
-    </li><li name="org.sireum.jawa.alir.taintAnalysis.TaintNode#getNode" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="getNode:org.sireum.jawa.alir.dataDependenceAnalysis.InterproceduralDataDependenceAnalysis.Node"></a>
-      <a id="getNode:Node"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">abstract </span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">getNode</span><span class="result">: <a href="../dataDependenceAnalysis/InterproceduralDataDependenceAnalysis$.html#Node=org.sireum.jawa.alir.dataDependenceAnalysis.IDDGNode" class="extmbr" name="org.sireum.jawa.alir.dataDependenceAnalysis.InterproceduralDataDependenceAnalysis.Node">Node</a></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../../index.html#org.sireum.jawa.alir.taintAnalysis.TaintNode@getNode:org.sireum.jawa.alir.dataDependenceAnalysis.InterproceduralDataDependenceAnalysis.Node" title="Permalink" target="_top">
-        <img src="../../../../../lib/permalink.png" />
-      </a>
-    </span>
-      
-    </li><li name="org.sireum.jawa.alir.taintAnalysis.TaintNode#isSame" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="isSame(tn:org.sireum.jawa.alir.taintAnalysis.TaintNode):Boolean"></a>
-      <a id="isSame(TaintNode):Boolean"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">abstract </span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">isSame</span><span class="params">(<span name="tn">tn: <a href="" class="extype" name="org.sireum.jawa.alir.taintAnalysis.TaintNode">TaintNode</a></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../../index.html#org.sireum.jawa.alir.taintAnalysis.TaintNode@isSame(tn:org.sireum.jawa.alir.taintAnalysis.TaintNode):Boolean" title="Permalink" target="_top">
-        <img src="../../../../../lib/permalink.png" />
-      </a>
-    </span>
-      
-    </li><li name="org.sireum.jawa.alir.taintAnalysis.TaintNode#isSink" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="isSink:Boolean"></a>
-      <a id="isSink:Boolean"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">abstract </span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">isSink</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../../index.html#org.sireum.jawa.alir.taintAnalysis.TaintNode@isSink:Boolean" title="Permalink" target="_top">
-        <img src="../../../../../lib/permalink.png" />
-      </a>
-    </span>
-      
-    </li><li name="org.sireum.jawa.alir.taintAnalysis.TaintNode#isSource" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="isSource:Boolean"></a>
-      <a id="isSource:Boolean"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">abstract </span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">isSource</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../../index.html#org.sireum.jawa.alir.taintAnalysis.TaintNode@isSource:Boolean" title="Permalink" target="_top">
-        <img src="../../../../../lib/permalink.png" />
+      <a href="../../../../../index.html#org.sireum.jawa.alir.taintAnalysis.TaintNode@&lt;init&gt;(tf:org.sireum.jawa.alir.taintAnalysis.TaintSlot):org.sireum.jawa.alir.taintAnalysis.TaintNode" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       
     </li></ol>
             </div>
 
+        
+
+        
+
         <div id="values" class="values members">
-              <h3>Concrete Value Members</h3>
+              <h3>Value Members</h3>
               <ol><li name="scala.AnyRef#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="!=(x$1:Any):Boolean"></a>
       <a id="!=(Any):Boolean"></a>
@@ -199,7 +127,7 @@
       </span>
       </h4><span class="permalink">
       <a href="../../../../../index.html#org.sireum.jawa.alir.taintAnalysis.TaintNode@!=(x$1:Any):Boolean" title="Permalink" target="_top">
-        <img src="../../../../../lib/permalink.png" />
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
@@ -216,7 +144,7 @@
       </span>
       </h4><span class="permalink">
       <a href="../../../../../index.html#org.sireum.jawa.alir.taintAnalysis.TaintNode@##():Int" title="Permalink" target="_top">
-        <img src="../../../../../lib/permalink.png" />
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
@@ -233,10 +161,44 @@
       </span>
       </h4><span class="permalink">
       <a href="../../../../../index.html#org.sireum.jawa.alir.taintAnalysis.TaintNode@==(x$1:Any):Boolean" title="Permalink" target="_top">
-        <img src="../../../../../lib/permalink.png" />
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="org.sireum.util.PropertyProvider#?" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="?(key:org.sireum.util.Property.Key):Boolean"></a>
+      <a id="?(Key):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $qmark" class="name">?</span><span class="params">(<span name="key">key: <span class="extype" name="org.sireum.util.Property.Key">Key</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.taintAnalysis.TaintNode@?(key:org.sireum.util.Property.Key):Boolean" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>PropertyProvider</dd></dl></div>
+    </li><li name="org.sireum.util.PropertyProvider#apply" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="apply[T](key:org.sireum.util.Property.Key):T"></a>
+      <a id="apply[T](Key):T"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">apply</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="key">key: <span class="extype" name="org.sireum.util.Property.Key">Key</span></span>)</span><span class="result">: <span class="extype" name="org.sireum.util.PropertyProvider.apply.T">T</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.taintAnalysis.TaintNode@apply[T](key:org.sireum.util.Property.Key):T" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>PropertyProvider</dd></dl></div>
     </li><li name="scala.Any#asInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="asInstanceOf[T0]:T0"></a>
       <a id="asInstanceOf[T0]:T0"></a>
@@ -250,7 +212,7 @@
       </span>
       </h4><span class="permalink">
       <a href="../../../../../index.html#org.sireum.jawa.alir.taintAnalysis.TaintNode@asInstanceOf[T0]:T0" title="Permalink" target="_top">
-        <img src="../../../../../lib/permalink.png" />
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
@@ -267,7 +229,7 @@
       </span>
       </h4><span class="permalink">
       <a href="../../../../../index.html#org.sireum.jawa.alir.taintAnalysis.TaintNode@clone():Object" title="Permalink" target="_top">
-        <img src="../../../../../lib/permalink.png" />
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
@@ -290,27 +252,10 @@
       </span>
       </h4><span class="permalink">
       <a href="../../../../../index.html#org.sireum.jawa.alir.taintAnalysis.TaintNode@eq(x$1:AnyRef):Boolean" title="Permalink" target="_top">
-        <img src="../../../../../lib/permalink.png" />
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="scala.AnyRef#equals" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="equals(x$1:Any):Boolean"></a>
-      <a id="equals(Any):Boolean"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../../index.html#org.sireum.jawa.alir.taintAnalysis.TaintNode@equals(x$1:Any):Boolean" title="Permalink" target="_top">
-        <img src="../../../../../lib/permalink.png" />
-      </a>
-    </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.AnyRef#finalize" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="finalize():Unit"></a>
       <a id="finalize():Unit"></a>
@@ -324,7 +269,7 @@
       </span>
       </h4><span class="permalink">
       <a href="../../../../../index.html#org.sireum.jawa.alir.taintAnalysis.TaintNode@finalize():Unit" title="Permalink" target="_top">
-        <img src="../../../../../lib/permalink.png" />
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
@@ -347,27 +292,78 @@
       </span>
       </h4><span class="permalink">
       <a href="../../../../../index.html#org.sireum.jawa.alir.taintAnalysis.TaintNode@getClass():Class[_]" title="Permalink" target="_top">
-        <img src="../../../../../lib/permalink.png" />
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li name="scala.AnyRef#hashCode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="hashCode():Int"></a>
-      <a id="hashCode():Int"></a>
+    </li><li name="org.sireum.jawa.alir.interProcedural.InterProceduralNode#getContext" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getContext:org.sireum.jawa.alir.Context"></a>
+      <a id="getContext:Context"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+        <span class="name">getContext</span><span class="result">: <a href="../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#org.sireum.jawa.alir.taintAnalysis.TaintNode@hashCode():Int" title="Permalink" target="_top">
-        <img src="../../../../../lib/permalink.png" />
+      <a href="../../../../../index.html#org.sireum.jawa.alir.taintAnalysis.TaintNode@getContext:org.sireum.jawa.alir.Context" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../interProcedural/InterProceduralNode.html" class="extype" name="org.sireum.jawa.alir.interProcedural.InterProceduralNode">InterProceduralNode</a></dd></dl></div>
+    </li><li name="org.sireum.util.PropertyProvider#getProperty" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getProperty[T](key:org.sireum.util.Property.Key):T"></a>
+      <a id="getProperty[T](Key):T"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getProperty</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="key">key: <span class="extype" name="org.sireum.util.Property.Key">Key</span></span>)</span><span class="result">: <span class="extype" name="org.sireum.util.PropertyProvider.getProperty.T">T</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.taintAnalysis.TaintNode@getProperty[T](key:org.sireum.util.Property.Key):T" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>PropertyProvider</dd></dl></div>
+    </li><li name="org.sireum.util.PropertyProvider#getPropertyOrElse" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getPropertyOrElse[T](key:org.sireum.util.Property.Key,defaultValue:=&gt;T):T"></a>
+      <a id="getPropertyOrElse[T](Key,⇒T):T"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getPropertyOrElse</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="key">key: <span class="extype" name="org.sireum.util.Property.Key">Key</span></span>, <span name="defaultValue">defaultValue: ⇒ <span class="extype" name="org.sireum.util.PropertyProvider.getPropertyOrElse.T">T</span></span>)</span><span class="result">: <span class="extype" name="org.sireum.util.PropertyProvider.getPropertyOrElse.T">T</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.taintAnalysis.TaintNode@getPropertyOrElse[T](key:org.sireum.util.Property.Key,defaultValue:=&gt;T):T" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>PropertyProvider</dd></dl></div>
+    </li><li name="org.sireum.util.PropertyProvider#getPropertyOrElseUpdate" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getPropertyOrElseUpdate[T&lt;:&lt;?&gt;](key:&lt;?&gt;,initValue:&lt;?&gt;):T"></a>
+      <a id="getPropertyOrElseUpdate[T](Key,⇒T):T"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getPropertyOrElseUpdate</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="key">key: <span class="extype" name="org.sireum.util.Property.Key">Key</span></span>, <span name="initValue">initValue: ⇒ <span class="extype" name="org.sireum.util.PropertyProvider.getPropertyOrElseUpdate.T">T</span></span>)</span><span class="result">: <span class="extype" name="org.sireum.util.PropertyProvider.getPropertyOrElseUpdate.T">T</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.taintAnalysis.TaintNode@getPropertyOrElseUpdate[T](key:org.sireum.util.Property.Key,initValue:=&gt;T):T" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>PropertyProvider</dd></dl></div>
     </li><li name="scala.Any#isInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="isInstanceOf[T0]:Boolean"></a>
       <a id="isInstanceOf[T0]:Boolean"></a>
@@ -381,7 +377,7 @@
       </span>
       </h4><span class="permalink">
       <a href="../../../../../index.html#org.sireum.jawa.alir.taintAnalysis.TaintNode@isInstanceOf[T0]:Boolean" title="Permalink" target="_top">
-        <img src="../../../../../lib/permalink.png" />
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
@@ -398,7 +394,7 @@
       </span>
       </h4><span class="permalink">
       <a href="../../../../../index.html#org.sireum.jawa.alir.taintAnalysis.TaintNode@ne(x$1:AnyRef):Boolean" title="Permalink" target="_top">
-        <img src="../../../../../lib/permalink.png" />
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
@@ -415,7 +411,7 @@
       </span>
       </h4><span class="permalink">
       <a href="../../../../../index.html#org.sireum.jawa.alir.taintAnalysis.TaintNode@notify():Unit" title="Permalink" target="_top">
-        <img src="../../../../../lib/permalink.png" />
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
@@ -432,10 +428,78 @@
       </span>
       </h4><span class="permalink">
       <a href="../../../../../index.html#org.sireum.jawa.alir.taintAnalysis.TaintNode@notifyAll():Unit" title="Permalink" target="_top">
-        <img src="../../../../../lib/permalink.png" />
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="org.sireum.util.PropertyProvider#propertyEmpty" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="propertyEmpty:Boolean"></a>
+      <a id="propertyEmpty:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">propertyEmpty</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.taintAnalysis.TaintNode@propertyEmpty:Boolean" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>PropertyProvider</dd></dl></div>
+    </li><li name="org.sireum.jawa.alir.interProcedural.InterProceduralNode#propertyMap" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="propertyMap:org.sireum.util.MLinkedMap[org.sireum.util.Property.Key,Any]"></a>
+      <a id="propertyMap:MLinkedMap[Key,Any]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">propertyMap</span><span class="result">: <span class="extype" name="org.sireum.util.MLinkedMap">MLinkedMap</span>[<span class="extype" name="org.sireum.util.Property.Key">Key</span>, <span class="extype" name="scala.Any">Any</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.taintAnalysis.TaintNode@propertyMap:org.sireum.util.MLinkedMap[org.sireum.util.Property.Key,Any]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../interProcedural/InterProceduralNode.html" class="extype" name="org.sireum.jawa.alir.interProcedural.InterProceduralNode">InterProceduralNode</a> → PropertyProvider</dd></dl></div>
+    </li><li name="org.sireum.util.PropertyProvider#removeProperty" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="removeProperty(key:&lt;?&gt;):Option[Any]"></a>
+      <a id="removeProperty(Key):Option[Any]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">removeProperty</span><span class="params">(<span name="key">key: <span class="extype" name="org.sireum.util.Property.Key">Key</span></span>)</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Any">Any</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.taintAnalysis.TaintNode@removeProperty(key:org.sireum.util.Property.Key):Option[Any]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>PropertyProvider</dd></dl></div>
+    </li><li name="org.sireum.util.PropertyProvider#setProperty" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="setProperty[T](key:org.sireum.util.Property.Key,value:T):Option[T]"></a>
+      <a id="setProperty[T](Key,T):Option[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">setProperty</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="key">key: <span class="extype" name="org.sireum.util.Property.Key">Key</span></span>, <span name="value">value: <span class="extype" name="org.sireum.util.PropertyProvider.setProperty.T">T</span></span>)</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="org.sireum.util.PropertyProvider.setProperty.T">T</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.taintAnalysis.TaintNode@setProperty[T](key:org.sireum.util.Property.Key,value:T):Option[T]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>PropertyProvider</dd></dl></div>
     </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
       <a id="synchronized[T0](⇒T0):T0"></a>
@@ -449,27 +513,44 @@
       </span>
       </h4><span class="permalink">
       <a href="../../../../../index.html#org.sireum.jawa.alir.taintAnalysis.TaintNode@synchronized[T0](x$1:=&gt;T0):T0" title="Permalink" target="_top">
-        <img src="../../../../../lib/permalink.png" />
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="scala.AnyRef#toString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="toString():String"></a>
-      <a id="toString():String"></a>
+    </li><li name="org.sireum.jawa.alir.taintAnalysis.TaintNode#tf" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="tf:org.sireum.jawa.alir.taintAnalysis.TaintSlot"></a>
+      <a id="tf:TaintSlot"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">tf</span><span class="result">: <a href="TaintSlot.html" class="extype" name="org.sireum.jawa.alir.taintAnalysis.TaintSlot">TaintSlot</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.taintAnalysis.TaintNode@tf:org.sireum.jawa.alir.taintAnalysis.TaintSlot" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.util.PropertyProvider#update" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="update[T](key:org.sireum.util.Property.Key,value:T):Unit"></a>
+      <a id="update[T](Key,T):Unit"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+        <span class="name">update</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="key">key: <span class="extype" name="org.sireum.util.Property.Key">Key</span></span>, <span name="value">value: <span class="extype" name="org.sireum.util.PropertyProvider.update.T">T</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#org.sireum.jawa.alir.taintAnalysis.TaintNode@toString():String" title="Permalink" target="_top">
-        <img src="../../../../../lib/permalink.png" />
+      <a href="../../../../../index.html#org.sireum.jawa.alir.taintAnalysis.TaintNode@update[T](key:org.sireum.util.Property.Key,value:T):Unit" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>PropertyProvider</dd></dl></div>
     </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="wait():Unit"></a>
       <a id="wait():Unit"></a>
@@ -483,7 +564,7 @@
       </span>
       </h4><span class="permalink">
       <a href="../../../../../index.html#org.sireum.jawa.alir.taintAnalysis.TaintNode@wait():Unit" title="Permalink" target="_top">
-        <img src="../../../../../lib/permalink.png" />
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
@@ -506,7 +587,7 @@
       </span>
       </h4><span class="permalink">
       <a href="../../../../../index.html#org.sireum.jawa.alir.taintAnalysis.TaintNode@wait(x$1:Long,x$2:Int):Unit" title="Permalink" target="_top">
-        <img src="../../../../../lib/permalink.png" />
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
@@ -529,7 +610,7 @@
       </span>
       </h4><span class="permalink">
       <a href="../../../../../index.html#org.sireum.jawa.alir.taintAnalysis.TaintNode@wait(x$1:Long):Unit" title="Permalink" target="_top">
-        <img src="../../../../../lib/permalink.png" />
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
@@ -548,7 +629,19 @@
         </div>
 
         <div id="inheritedMembers">
-        <div class="parent" name="scala.AnyRef">
+        <div class="parent" name="scala.Product">
+              <h3>Inherited from <span class="extype" name="scala.Product">Product</span></h3>
+            </div><div class="parent" name="scala.Equals">
+              <h3>Inherited from <span class="extype" name="scala.Equals">Equals</span></h3>
+            </div><div class="parent" name="org.sireum.jawa.alir.interProcedural.InterProceduralNode">
+              <h3>Inherited from <a href="../interProcedural/InterProceduralNode.html" class="extype" name="org.sireum.jawa.alir.interProcedural.InterProceduralNode">InterProceduralNode</a></h3>
+            </div><div class="parent" name="scala.Serializable">
+              <h3>Inherited from <span class="extype" name="scala.Serializable">Serializable</span></h3>
+            </div><div class="parent" name="java.io.Serializable">
+              <h3>Inherited from <span class="extype" name="java.io.Serializable">Serializable</span></h3>
+            </div><div class="parent" name="org.sireum.util.PropertyProvider">
+              <h3>Inherited from <span class="extype" name="org.sireum.util.PropertyProvider">PropertyProvider</span></h3>
+            </div><div class="parent" name="scala.AnyRef">
               <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
             </div><div class="parent" name="scala.Any">
               <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>

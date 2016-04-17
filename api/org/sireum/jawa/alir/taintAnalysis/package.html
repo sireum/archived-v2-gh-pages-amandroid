@@ -28,11 +28,11 @@
         </head>
         <body class="value">
       <div id="definition">
-        <img src="../../../../../lib/package_big.png" />
+        <img alt="Package" src="../../../../../lib/package_big.png" />
         <p id="owner"><a href="../../../../package.html" class="extype" name="org">org</a>.<a href="../../../package.html" class="extype" name="org.sireum">sireum</a>.<a href="../../package.html" class="extype" name="org.sireum.jawa">jawa</a>.<a href="../package.html" class="extype" name="org.sireum.jawa.alir">alir</a></p>
         <h1>taintAnalysis</h1><span class="permalink">
       <a href="../../../../../index.html#org.sireum.jawa.alir.taintAnalysis.package" title="Permalink" target="_top">
-        <img src="../../../../../lib/permalink.png" />
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       </div>
@@ -66,7 +66,41 @@
 
         <div id="types" class="types members">
               <h3>Type Members</h3>
-              <ol><li name="org.sireum.jawa.alir.taintAnalysis.SourceAndSinkManager" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+              <ol><li name="org.sireum.jawa.alir.taintAnalysis.InstanceTaintSlot" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="InstanceTaintSlotextendsSlotwithTaintSlotwithProductwithSerializable"></a>
+      <a id="InstanceTaintSlot:InstanceTaintSlot"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="InstanceTaintSlot.html"><span class="name">InstanceTaintSlot</span></a><span class="params">(<span name="s">s: <a href="../pta/PTASlot.html" class="extype" name="org.sireum.jawa.alir.pta.PTASlot">PTASlot</a></span>, <span name="pos">pos: <a href="TaintSlotPosition$.html#ValueextendsOrdered[Enumeration.this.Value]withSerializable" class="extmbr" name="org.sireum.jawa.alir.taintAnalysis.TaintSlotPosition.Value">TaintSlotPosition.Value</a></span>, <span name="context">context: <a href="../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>, <span name="ins">ins: <a href="../pta/Instance.html" class="extype" name="org.sireum.jawa.alir.pta.Instance">Instance</a></span>)</span><span class="result"> extends <span class="extype" name="org.sireum.alir.Slot">Slot</span> with <a href="TaintSlot.html" class="extype" name="org.sireum.jawa.alir.taintAnalysis.TaintSlot">TaintSlot</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.taintAnalysis.package@InstanceTaintSlotextendsSlotwithTaintSlotwithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt"></p>
+    </li><li name="org.sireum.jawa.alir.taintAnalysis.PrimitiveTaintSlot" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="PrimitiveTaintSlotextendsSlotwithTaintSlotwithProductwithSerializable"></a>
+      <a id="PrimitiveTaintSlot:PrimitiveTaintSlot"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="PrimitiveTaintSlot.html"><span class="name">PrimitiveTaintSlot</span></a><span class="params">(<span name="s">s: <a href="../pta/PTASlot.html" class="extype" name="org.sireum.jawa.alir.pta.PTASlot">PTASlot</a></span>, <span name="pos">pos: <a href="TaintSlotPosition$.html#ValueextendsOrdered[Enumeration.this.Value]withSerializable" class="extmbr" name="org.sireum.jawa.alir.taintAnalysis.TaintSlotPosition.Value">TaintSlotPosition.Value</a></span>, <span name="context">context: <a href="../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>)</span><span class="result"> extends <span class="extype" name="org.sireum.alir.Slot">Slot</span> with <a href="TaintSlot.html" class="extype" name="org.sireum.jawa.alir.taintAnalysis.TaintSlot">TaintSlot</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.taintAnalysis.package@PrimitiveTaintSlotextendsSlotwithTaintSlotwithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt"></p>
+    </li><li name="org.sireum.jawa.alir.taintAnalysis.SourceAndSinkManager" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
       <a id="SourceAndSinkManagerextendsAnyRef"></a>
       <a id="SourceAndSinkManager:SourceAndSinkManager"></a>
       <h4 class="signature">
@@ -79,24 +113,58 @@
       </span>
       </h4><span class="permalink">
       <a href="../../../../../index.html#org.sireum.jawa.alir.taintAnalysis.package@SourceAndSinkManagerextendsAnyRef" title="Permalink" target="_top">
-        <img src="../../../../../lib/permalink.png" />
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt"></p>
+    </li><li name="org.sireum.jawa.alir.taintAnalysis.TagTaintDescriptor" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="TagTaintDescriptorextendsTaintDescriptorwithProductwithSerializable"></a>
+      <a id="TagTaintDescriptor:TagTaintDescriptor"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="TagTaintDescriptor.html"><span class="name">TagTaintDescriptor</span></a><span class="params">(<span name="desc">desc: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="positions">positions: <span class="extype" name="org.sireum.util.ISet">ISet</span>[<span class="extype" name="scala.Int">Int</span>]</span>, <span name="typ">typ: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="tags">tags: <span class="extype" name="org.sireum.util.ISet">ISet</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>)</span><span class="result"> extends <a href="TaintDescriptor.html" class="extype" name="org.sireum.jawa.alir.taintAnalysis.TaintDescriptor">TaintDescriptor</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.taintAnalysis.package@TagTaintDescriptorextendsTaintDescriptorwithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <p class="shortcomment cmt"></p>
     </li><li name="org.sireum.jawa.alir.taintAnalysis.TaintAnalysisResult" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="TaintAnalysisResultextendsAnyRef"></a>
-      <a id="TaintAnalysisResult:TaintAnalysisResult"></a>
+      <a id="TaintAnalysisResult[N&lt;:org.sireum.jawa.alir.interProcedural.InterProceduralNode,E&lt;:org.sireum.alir.AlirEdge[N]]extendsAnyRef"></a>
+      <a id="TaintAnalysisResult[N&lt;:InterProceduralNode,E&lt;:AlirEdge[N]]:TaintAnalysisResult[N,E]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="TaintAnalysisResult.html"><span class="name">TaintAnalysisResult</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+        <a href="TaintAnalysisResult.html"><span class="name">TaintAnalysisResult</span></a><span class="tparams">[<span name="N">N &lt;: <a href="../interProcedural/InterProceduralNode.html" class="extype" name="org.sireum.jawa.alir.interProcedural.InterProceduralNode">InterProceduralNode</a></span>, <span name="E">E &lt;: <span class="extype" name="org.sireum.alir.AlirEdge">AlirEdge</span>[<span class="extype" name="org.sireum.jawa.alir.taintAnalysis.TaintAnalysisResult.N">N</span>]</span>]</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#org.sireum.jawa.alir.taintAnalysis.package@TaintAnalysisResultextendsAnyRef" title="Permalink" target="_top">
-        <img src="../../../../../lib/permalink.png" />
+      <a href="../../../../../index.html#org.sireum.jawa.alir.taintAnalysis.package@TaintAnalysisResult[N&lt;:org.sireum.jawa.alir.interProcedural.InterProceduralNode,E&lt;:org.sireum.alir.AlirEdge[N]]extendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt"></p>
+    </li><li name="org.sireum.jawa.alir.taintAnalysis.TaintAnalysisSimpleResult" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="TaintAnalysisSimpleResultextendsProductwithSerializable"></a>
+      <a id="TaintAnalysisSimpleResult:TaintAnalysisSimpleResult"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="TaintAnalysisSimpleResult.html"><span class="name">TaintAnalysisSimpleResult</span></a><span class="params">(<span name="sources">sources: <span class="extype" name="org.sireum.util.ISet">ISet</span>[<a href="TaintDescriptor.html" class="extype" name="org.sireum.jawa.alir.taintAnalysis.TaintDescriptor">TaintDescriptor</a>]</span>, <span name="sinks">sinks: <span class="extype" name="org.sireum.util.ISet">ISet</span>[<a href="TaintDescriptor.html" class="extype" name="org.sireum.jawa.alir.taintAnalysis.TaintDescriptor">TaintDescriptor</a>]</span>, <span name="paths">paths: <span class="extype" name="org.sireum.util.ISet">ISet</span>[<a href="TaintSimplePath.html" class="extype" name="org.sireum.jawa.alir.taintAnalysis.TaintSimplePath">TaintSimplePath</a>]</span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.taintAnalysis.package@TaintAnalysisSimpleResultextendsProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <p class="shortcomment cmt"></p>
@@ -113,7 +181,7 @@
       </span>
       </h4><span class="permalink">
       <a href="../../../../../index.html#org.sireum.jawa.alir.taintAnalysis.package@TaintDescriptorextendsAnyRef" title="Permalink" target="_top">
-        <img src="../../../../../lib/permalink.png" />
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <p class="shortcomment cmt"></p>
@@ -126,45 +194,147 @@
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="TaintFact.html"><span class="name">TaintFact</span></a><span class="params">(<span name="s">s: <span class="extype" name="org.sireum.alir.Slot">Slot</span></span>, <span name="tag">tag: <a href="TaintTag.html" class="extype" name="org.sireum.jawa.alir.taintAnalysis.TaintTag">TaintTag</a></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+        <a href="TaintFact.html"><span class="name">TaintFact</span></a><span class="params">(<span name="s">s: <a href="TaintSlot.html" class="extype" name="org.sireum.jawa.alir.taintAnalysis.TaintSlot">TaintSlot</a></span>, <span name="tag">tag: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../../../index.html#org.sireum.jawa.alir.taintAnalysis.package@TaintFactextendsProductwithSerializable" title="Permalink" target="_top">
-        <img src="../../../../../lib/permalink.png" />
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <p class="shortcomment cmt"></p>
-    </li><li name="org.sireum.jawa.alir.taintAnalysis.TaintNode" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="TaintNodeextendsAnyRef"></a>
+    </li><li name="org.sireum.jawa.alir.taintAnalysis.TaintGraph" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="TaintGraphextendsInterProceduralGraph[org.sireum.jawa.alir.taintAnalysis.TaintNode]"></a>
+      <a id="TaintGraph:TaintGraph"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="TaintGraph.html"><span class="name">TaintGraph</span></a><span class="result"> extends <a href="../interProcedural/InterProceduralGraph.html" class="extype" name="org.sireum.jawa.alir.interProcedural.InterProceduralGraph">InterProceduralGraph</a>[<a href="TaintNode.html" class="extype" name="org.sireum.jawa.alir.taintAnalysis.TaintNode">TaintNode</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.taintAnalysis.package@TaintGraphextendsInterProceduralGraph[org.sireum.jawa.alir.taintAnalysis.TaintNode]" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt"></p>
+    </li><li name="org.sireum.jawa.alir.taintAnalysis.TaintNode" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="TaintNodeextendsInterProceduralNodewithProductwithSerializable"></a>
       <a id="TaintNode:TaintNode"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
-        <span class="kind">trait</span>
+        <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="TaintNode.html"><span class="name">TaintNode</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+        <a href="TaintNode.html"><span class="name">TaintNode</span></a><span class="params">(<span name="tf">tf: <a href="TaintSlot.html" class="extype" name="org.sireum.jawa.alir.taintAnalysis.TaintSlot">TaintSlot</a></span>)</span><span class="result"> extends <a href="../interProcedural/InterProceduralNode.html" class="extype" name="org.sireum.jawa.alir.interProcedural.InterProceduralNode">InterProceduralNode</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#org.sireum.jawa.alir.taintAnalysis.package@TaintNodeextendsAnyRef" title="Permalink" target="_top">
-        <img src="../../../../../lib/permalink.png" />
+      <a href="../../../../../index.html#org.sireum.jawa.alir.taintAnalysis.package@TaintNodeextendsInterProceduralNodewithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <p class="shortcomment cmt"></p>
+      
     </li><li name="org.sireum.jawa.alir.taintAnalysis.TaintPath" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="TaintPathextendsAnyRef"></a>
-      <a id="TaintPath:TaintPath"></a>
+      <a id="TaintPath[N&lt;:org.sireum.jawa.alir.interProcedural.InterProceduralNode,E&lt;:org.sireum.alir.AlirEdge[N]]extendsAnyRef"></a>
+      <a id="TaintPath[N&lt;:InterProceduralNode,E&lt;:AlirEdge[N]]:TaintPath[N,E]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="TaintPath.html"><span class="name">TaintPath</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+        <a href="TaintPath.html"><span class="name">TaintPath</span></a><span class="tparams">[<span name="N">N &lt;: <a href="../interProcedural/InterProceduralNode.html" class="extype" name="org.sireum.jawa.alir.interProcedural.InterProceduralNode">InterProceduralNode</a></span>, <span name="E">E &lt;: <span class="extype" name="org.sireum.alir.AlirEdge">AlirEdge</span>[<span class="extype" name="org.sireum.jawa.alir.taintAnalysis.TaintPath.N">N</span>]</span>]</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../index.html#org.sireum.jawa.alir.taintAnalysis.package@TaintPathextendsAnyRef" title="Permalink" target="_top">
-        <img src="../../../../../lib/permalink.png" />
+      <a href="../../../../../index.html#org.sireum.jawa.alir.taintAnalysis.package@TaintPath[N&lt;:org.sireum.jawa.alir.interProcedural.InterProceduralNode,E&lt;:org.sireum.alir.AlirEdge[N]]extendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt"></p>
+    </li><li name="org.sireum.jawa.alir.taintAnalysis.TaintSimpleNode" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="TaintSimpleNodeextendsProductwithSerializable"></a>
+      <a id="TaintSimpleNode:TaintSimpleNode"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="TaintSimpleNode.html"><span class="name">TaintSimpleNode</span></a><span class="params">(<span name="context">context: <a href="../Context.html" class="extype" name="org.sireum.jawa.alir.Context">Context</a></span>, <span name="pos">pos: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Int">Int</span>]</span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.taintAnalysis.package@TaintSimpleNodeextendsProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt"></p>
+    </li><li name="org.sireum.jawa.alir.taintAnalysis.TaintSimplePath" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="TaintSimplePathextendsProductwithSerializable"></a>
+      <a id="TaintSimplePath:TaintSimplePath"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="TaintSimplePath.html"><span class="name">TaintSimplePath</span></a><span class="params">(<span name="source">source: <a href="TaintDescriptor.html" class="extype" name="org.sireum.jawa.alir.taintAnalysis.TaintDescriptor">TaintDescriptor</a></span>, <span name="sink">sink: <a href="TaintDescriptor.html" class="extype" name="org.sireum.jawa.alir.taintAnalysis.TaintDescriptor">TaintDescriptor</a></span>, <span name="path">path: <span class="extype" name="org.sireum.util.IList">IList</span>[(<a href="TaintSimpleNode.html" class="extype" name="org.sireum.jawa.alir.taintAnalysis.TaintSimpleNode">TaintSimpleNode</a>, <a href="TaintSimpleNode.html" class="extype" name="org.sireum.jawa.alir.taintAnalysis.TaintSimpleNode">TaintSimpleNode</a>)]</span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.taintAnalysis.package@TaintSimplePathextendsProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt"></p>
+    </li><li name="org.sireum.jawa.alir.taintAnalysis.TaintSink" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="TaintSink[N&lt;:org.sireum.jawa.alir.interProcedural.InterProceduralNode]extendsProductwithSerializable"></a>
+      <a id="TaintSink[N&lt;:InterProceduralNode]:TaintSink[N]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="TaintSink.html"><span class="name">TaintSink</span></a><span class="tparams">[<span name="N">N &lt;: <a href="../interProcedural/InterProceduralNode.html" class="extype" name="org.sireum.jawa.alir.interProcedural.InterProceduralNode">InterProceduralNode</a></span>]</span><span class="params">(<span name="node">node: <span class="extype" name="org.sireum.jawa.alir.taintAnalysis.TaintSink.N">N</span></span>, <span name="descriptor">descriptor: <a href="TaintDescriptor.html" class="extype" name="org.sireum.jawa.alir.taintAnalysis.TaintDescriptor">TaintDescriptor</a></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.taintAnalysis.package@TaintSink[N&lt;:org.sireum.jawa.alir.interProcedural.InterProceduralNode]extendsProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt"></p>
+    </li><li name="org.sireum.jawa.alir.taintAnalysis.TaintSlot" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="TaintSlotextendsSlot"></a>
+      <a id="TaintSlot:TaintSlot"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="TaintSlot.html"><span class="name">TaintSlot</span></a><span class="result"> extends <span class="extype" name="org.sireum.alir.Slot">Slot</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.taintAnalysis.package@TaintSlotextendsSlot" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt"></p>
+    </li><li name="org.sireum.jawa.alir.taintAnalysis.TaintSource" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="TaintSource[N&lt;:org.sireum.jawa.alir.interProcedural.InterProceduralNode]extendsProductwithSerializable"></a>
+      <a id="TaintSource[N&lt;:InterProceduralNode]:TaintSource[N]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="TaintSource.html"><span class="name">TaintSource</span></a><span class="tparams">[<span name="N">N &lt;: <a href="../interProcedural/InterProceduralNode.html" class="extype" name="org.sireum.jawa.alir.interProcedural.InterProceduralNode">InterProceduralNode</a></span>]</span><span class="params">(<span name="node">node: <span class="extype" name="org.sireum.jawa.alir.taintAnalysis.TaintSource.N">N</span></span>, <span name="descriptor">descriptor: <a href="TaintDescriptor.html" class="extype" name="org.sireum.jawa.alir.taintAnalysis.TaintDescriptor">TaintDescriptor</a></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.taintAnalysis.package@TaintSource[N&lt;:org.sireum.jawa.alir.interProcedural.InterProceduralNode]extendsProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <p class="shortcomment cmt"></p>
@@ -181,7 +351,24 @@
       </span>
       </h4><span class="permalink">
       <a href="../../../../../index.html#org.sireum.jawa.alir.taintAnalysis.package@TaintTagextendsAnyRef" title="Permalink" target="_top">
-        <img src="../../../../../lib/permalink.png" />
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt"></p>
+    </li><li name="org.sireum.jawa.alir.taintAnalysis.TypeTaintDescriptor" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="TypeTaintDescriptorextendsTaintDescriptorwithProductwithSerializable"></a>
+      <a id="TypeTaintDescriptor:TypeTaintDescriptor"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="TypeTaintDescriptor.html"><span class="name">TypeTaintDescriptor</span></a><span class="params">(<span name="desc">desc: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="position">position: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Int">Int</span>]</span>, <span name="typ">typ: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result"> extends <a href="TaintDescriptor.html" class="extype" name="org.sireum.jawa.alir.taintAnalysis.TaintDescriptor">TaintDescriptor</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.taintAnalysis.package@TypeTaintDescriptorextendsTaintDescriptorwithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <p class="shortcomment cmt"></p>
@@ -190,7 +377,44 @@
 
         
 
-        
+        <div id="values" class="values members">
+              <h3>Value Members</h3>
+              <ol><li name="org.sireum.jawa.alir.taintAnalysis.SSParser" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="SSParser"></a>
+      <a id="SSParser:SSParser"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="SSParser$.html"><span class="name">SSParser</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.taintAnalysis.package@SSParser" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt"></p>
+    </li><li name="org.sireum.jawa.alir.taintAnalysis.TaintSlotPosition" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="TaintSlotPosition"></a>
+      <a id="TaintSlotPosition:TaintSlotPosition"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="TaintSlotPosition$.html"><span class="name">TaintSlotPosition</span></a><span class="result"> extends <span class="extype" name="scala.Enumeration">Enumeration</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.alir.taintAnalysis.package@TaintSlotPosition" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li></ol>
+            </div>
 
         
 

@@ -10,8 +10,8 @@
     
     <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/bootstrap-3.2.0/css/bootstrap.min.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/bootstrap-3.2.0/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/bootstrap-3.3.4/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/bootstrap-3.3.4/css/bootstrap-theme.min.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/bootstrap-sphinx.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/sireum.css" type="text/css" />
     
@@ -29,7 +29,7 @@
     <script type="text/javascript" src="../../_static/doctools.js"></script>
     <script type="text/javascript" src="../../_static/js/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="../../_static/js/jquery-fix.js"></script>
-    <script type="text/javascript" src="../../_static/bootstrap-3.2.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../../_static/bootstrap-3.3.4/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="../../_static/bootstrap-sphinx.js"></script>
     <link rel="top" title="Sireum Amandroid" href="../../index.html" />
   </head>
@@ -51,7 +51,6 @@
 
         <div class="collapse navbar-collapse nav-collapse">
           <ul class="nav navbar-nav">
-            <li class="divider-vertical"></li>
             
                 <li><a href="../../documentation.html">Documentation</a></li>
                 <li><a href="../../software.html">Software</a></li>
@@ -94,7 +93,7 @@
 
 <div class="container">
   <div class="row">
-    <div class="col-md-12">
+    <div class="col-md-12 content">
       
   <div class="section" id="com-kamagames-notepad">
 <h1>com.kamagames.notepad<a class="headerlink" href="#com-kamagames-notepad" title="Permalink to this headline">¶</a></h1>
@@ -107,13 +106,13 @@
 <p>from <strong>Source</strong>: (com.kamagames.notepad.NotesList:EntryNode, icc_source)</p>
 <p>to <strong>Sink</strong>: (L002dde, icc_sink)</p>
 <p>The nodes and edges on the path are:</p>
-<div class="highlight-python"><div class="highlight"><pre>Entry@(environment method of NotesList) -&gt; Call@(onListItemClick,L002d74)-&gt; Call@(onListItemClick,L002d7c)-&gt; Call@(onListItemClick,L002dde)
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">Entry</span><span class="o">@</span><span class="p">(</span><span class="n">environment</span> <span class="n">method</span> <span class="n">of</span> <span class="n">NotesList</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Call</span><span class="o">@</span><span class="p">(</span><span class="n">onListItemClick</span><span class="p">,</span><span class="n">L002d74</span><span class="p">)</span><span class="o">-&gt;</span> <span class="n">Call</span><span class="o">@</span><span class="p">(</span><span class="n">onListItemClick</span><span class="p">,</span><span class="n">L002d7c</span><span class="p">)</span><span class="o">-&gt;</span> <span class="n">Call</span><span class="o">@</span><span class="p">(</span><span class="n">onListItemClick</span><span class="p">,</span><span class="n">L002dde</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>More details:</p>
 <p>The <em>NotesList</em> Activity is a public component, and it extends <em>ListActivity</em>. So, upon user’s  action, the following method (<em>onListItemClick</em>) in <em>NotesList</em> can be invoked. Inside this method, we observe that at <strong>Line 002dde</strong> an Intent is sent out, which contains an <em>Uri</em> that originated from the <strong>incoming Intent</strong>.</p>
 <p>The <em>onListItemClick</em> method of <em>NodeList</em> illustrates the above path:</p>
-<div class="highlight-python"><div class="highlight"><pre>procedure `void` `onListItemClick` (`NotesList` v3, `ListView` v4 , `View` v5, `int` v6, `long` v7) {
+<div class="highlight-default"><div class="highlight"><pre><span></span>procedure `void` `onListItemClick` (`NotesList` v3, `ListView` v4 , `View` v5, `int` v6, `long` v7) {
  temp, v0, v1, v2, v8;
  #L002d6c.   call temp:=  `com.kamagames.notepad.NotesList.getIntent`(v3);
  #L002d72.   v0:= temp  @type `object`; // This is the incoming Intent

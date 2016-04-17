@@ -8,15 +8,25 @@
    team
 
 Amandroid
-#################
+#########
 
 .. raw:: html
 
    <div class="container-fluid">
-     <div class="row">
-       <div class="col-md-12">
-         <img src="_static/amandroid.png" />
-       </div>
+     <div class="jumbotron">
+        <div class="row">
+            <div class="col-xs-12 col-md-8">
+                <h1>Amandroid</h1>
+                <p>Amandroid is a static analysis framework for Android apps.</p>
+                <p>
+                    <a class="btn btn-lg btn-primary" href="documentation.html" role="button">Amandroid Documentation &raquo;</a>
+                </p>
+            </div>
+            <div class="col-xs-6 col-md-4">
+                <img src="_static/argus.png" alt="..." class="img-rounded img-responsive">
+                <img src="_static/santos.png" alt="..." class="img-rounded img-responsive">
+            </div>
+        </div>
      </div>
      
      <br/>
@@ -70,8 +80,6 @@ On top of Amandroid we performed certain specific security analyses, for instanc
 
 .. raw:: html
 
-             <br>
-             <br>
            </div>
          </div>
        </div>
@@ -85,16 +93,16 @@ On top of Amandroid we performed certain specific security analyses, for instanc
 | `Argus Laboratory <http://arguslab.org>`__
 | `Computer Science and Engineering Department <http://www.usf.edu/engineering/cse/>`__
 | `University of South Florida <http://www.usf.edu/>`__
-| 4202 E. Fowler Avenue, ENB 118
+| 4202 E. Fowler Avenue, ENB2 226
 | Tampa, FL, 33620
 |
 | `SAnToS Laboratory <http://santoslab.org>`__
 | `Computing and Information Sciences Department <http://www.cis.ksu.edu>`__
 | `Kansas State University <http://www.ksu.edu>`__
-| 234 Nichols Hall
-| Manhattan , KS, 66506
+| `702 Mid-Campus Drive South <http://goo.gl/maps/uWgRY>`__
+| `Manhattan <http://www.ci.manhattan.ks.us/>`__, `KS <http://www.kansas.gov/>`__, `66506 <https://www.google.com/maps/place/Manhattan,+KS+66506>`__
 |
-| Email: amandroid@sireum.org 
+| Email: `amandroid@sireum.org <mailto:amandroid@sireum.org>`__
 
 .. raw:: html
 
@@ -121,6 +129,7 @@ this material are those of the authors and do not necessarily reflect
 the views of the previously mentioned institutions.
 
 .. raw:: html
+
            </div>
          </div>
        </div>

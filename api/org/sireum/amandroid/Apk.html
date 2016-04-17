@@ -1,0 +1,1483 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <title>Apk - Sireum-Amandroid-Api-Doc - org.sireum.amandroid.Apk</title>
+          <meta name="description" content="Apk - Sireum - Amandroid - Api - Doc - org.sireum.amandroid.Apk" />
+          <meta name="keywords" content="Apk Sireum Amandroid Api Doc org.sireum.amandroid.Apk" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../../index.html';
+            var hash = 'org.sireum.amandroid.Apk';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="type">
+      <div id="definition">
+        <a href="Apk$.html" title="See companion object"><img alt="Class/Object" src="../../../lib/class_to_object_big.png" /></a>
+        <p id="owner"><a href="../../package.html" class="extype" name="org">org</a>.<a href="../package.html" class="extype" name="org.sireum">sireum</a>.<a href="package.html" class="extype" name="org.sireum.amandroid">amandroid</a></p>
+        <h1><a href="Apk$.html" title="See companion object">Apk</a></h1><h3><span class="morelinks"><div>
+            Related Docs:
+            <a href="Apk$.html" title="See companion object">object Apk</a>
+            | <a href="package.html" class="extype" name="org.sireum.amandroid">package amandroid</a>
+          </div></span></h3><span class="permalink">
+      <a href="../../../index.html#org.sireum.amandroid.Apk" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Apk</span><span class="params">(<span name="nameUri">nameUri: <span class="extype" name="org.sireum.util.FileResourceUri">FileResourceUri</span></span>, <span name="outApkUri">outApkUri: <span class="extype" name="org.sireum.util.FileResourceUri">FileResourceUri</span></span>, <span name="srcs">srcs: <span class="extype" name="org.sireum.util.ISet">ISet</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>this is an object, which hold information of apps. e.g. components, intent-filter database, etc.
+</p></div><div class="toggleContainer block">
+          <span class="toggle">Linear Supertypes</span>
+          <div class="superTypes hiddenContent"><span class="extype" name="scala.Serializable">Serializable</span>, <span class="extype" name="java.io.Serializable">Serializable</span>, <span class="extype" name="scala.Product">Product</span>, <span class="extype" name="scala.Equals">Equals</span>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+        </div></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        <div id="order">
+              <span class="filtertype">Ordering</span>
+              <ol>
+                
+                <li class="alpha in"><span>Alphabetic</span></li>
+                <li class="inherit out"><span>By inheritance</span></li>
+              </ol>
+            </div>
+        <div id="ancestors">
+                <span class="filtertype">Inherited<br />
+                </span>
+                <ol id="linearization">
+                  <li class="in" name="org.sireum.amandroid.Apk"><span>Apk</span></li><li class="in" name="scala.Serializable"><span>Serializable</span></li><li class="in" name="java.io.Serializable"><span>Serializable</span></li><li class="in" name="scala.Product"><span>Product</span></li><li class="in" name="scala.Equals"><span>Equals</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                </ol>
+              </div><div id="ancestors">
+            <span class="filtertype"></span>
+            <ol>
+              <li class="hideall out"><span>Hide All</span></li>
+              <li class="showall in"><span>Show all</span></li>
+            </ol>
+          </div>
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        <div id="constructors" class="members">
+              <h3>Instance Constructors</h3>
+              <ol><li name="org.sireum.amandroid.Apk#&lt;init&gt;" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="&lt;init&gt;(nameUri:org.sireum.util.FileResourceUri,outApkUri:org.sireum.util.FileResourceUri,srcs:org.sireum.util.ISet[String]):org.sireum.amandroid.Apk"></a>
+      <a id="&lt;init&gt;:Apk"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">new</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Apk</span><span class="params">(<span name="nameUri">nameUri: <span class="extype" name="org.sireum.util.FileResourceUri">FileResourceUri</span></span>, <span name="outApkUri">outApkUri: <span class="extype" name="org.sireum.util.FileResourceUri">FileResourceUri</span></span>, <span name="srcs">srcs: <span class="extype" name="org.sireum.util.ISet">ISet</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>)</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#org.sireum.amandroid.Apk@&lt;init&gt;(nameUri:org.sireum.util.FileResourceUri,outApkUri:org.sireum.util.FileResourceUri,srcs:org.sireum.util.ISet[String]):org.sireum.amandroid.Apk" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li></ol>
+            </div>
+
+        
+
+        
+
+        <div id="values" class="values members">
+              <h3>Value Members</h3>
+              <ol><li name="scala.AnyRef#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="!=(x$1:Any):Boolean"></a>
+      <a id="!=(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#org.sireum.amandroid.Apk@!=(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef###" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="##():Int"></a>
+      <a id="##():Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#org.sireum.amandroid.Apk@##():Int" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="==(x$1:Any):Boolean"></a>
+      <a id="==(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#org.sireum.amandroid.Apk@==(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="org.sireum.amandroid.Apk#addActivities" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="addActivities(activities:org.sireum.util.ISet[org.sireum.jawa.JawaType]):org.sireum.util.MSet[org.sireum.jawa.JawaType]"></a>
+      <a id="addActivities(ISet[JawaType]):MSet[JawaType]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">addActivities</span><span class="params">(<span name="activities">activities: <span class="extype" name="org.sireum.util.ISet">ISet</span>[<a href="../jawa/JawaType.html" class="extype" name="org.sireum.jawa.JawaType">JawaType</a>]</span>)</span><span class="result">: <span class="extype" name="org.sireum.util.MSet">MSet</span>[<a href="../jawa/JawaType.html" class="extype" name="org.sireum.jawa.JawaType">JawaType</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#org.sireum.amandroid.Apk@addActivities(activities:org.sireum.util.ISet[org.sireum.jawa.JawaType]):org.sireum.util.MSet[org.sireum.jawa.JawaType]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.amandroid.Apk#addActivity" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="addActivity(activity:org.sireum.jawa.JawaType):org.sireum.util.MSet[org.sireum.jawa.JawaType]"></a>
+      <a id="addActivity(JawaType):MSet[JawaType]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">addActivity</span><span class="params">(<span name="activity">activity: <a href="../jawa/JawaType.html" class="extype" name="org.sireum.jawa.JawaType">JawaType</a></span>)</span><span class="result">: <span class="extype" name="org.sireum.util.MSet">MSet</span>[<a href="../jawa/JawaType.html" class="extype" name="org.sireum.jawa.JawaType">JawaType</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#org.sireum.amandroid.Apk@addActivity(activity:org.sireum.jawa.JawaType):org.sireum.util.MSet[org.sireum.jawa.JawaType]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.amandroid.Apk#addCallbackMethods" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="addCallbackMethods(map:org.sireum.util.IMap[org.sireum.jawa.JawaType,org.sireum.util.ISet[org.sireum.jawa.Signature]]):Unit"></a>
+      <a id="addCallbackMethods(IMap[JawaType,ISet[Signature]]):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">addCallbackMethods</span><span class="params">(<span name="map">map: <span class="extype" name="org.sireum.util.IMap">IMap</span>[<a href="../jawa/JawaType.html" class="extype" name="org.sireum.jawa.JawaType">JawaType</a>, <span class="extype" name="org.sireum.util.ISet">ISet</span>[<a href="../jawa/Signature.html" class="extype" name="org.sireum.jawa.Signature">Signature</a>]]</span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#org.sireum.amandroid.Apk@addCallbackMethods(map:org.sireum.util.IMap[org.sireum.jawa.JawaType,org.sireum.util.ISet[org.sireum.jawa.Signature]]):Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.amandroid.Apk#addCallbackMethods" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="addCallbackMethods(typ:org.sireum.jawa.JawaType,sigs:org.sireum.util.ISet[org.sireum.jawa.Signature]):scala.collection.mutable.Set[org.sireum.jawa.Signature]"></a>
+      <a id="addCallbackMethods(JawaType,ISet[Signature]):Set[Signature]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">addCallbackMethods</span><span class="params">(<span name="typ">typ: <a href="../jawa/JawaType.html" class="extype" name="org.sireum.jawa.JawaType">JawaType</a></span>, <span name="sigs">sigs: <span class="extype" name="org.sireum.util.ISet">ISet</span>[<a href="../jawa/Signature.html" class="extype" name="org.sireum.jawa.Signature">Signature</a>]</span>)</span><span class="result">: <span class="extype" name="scala.collection.mutable.Set">Set</span>[<a href="../jawa/Signature.html" class="extype" name="org.sireum.jawa.Signature">Signature</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#org.sireum.amandroid.Apk@addCallbackMethods(typ:org.sireum.jawa.JawaType,sigs:org.sireum.util.ISet[org.sireum.jawa.Signature]):scala.collection.mutable.Set[org.sireum.jawa.Signature]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.amandroid.Apk#addCertificates" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="addCertificates(certs:org.sireum.util.ISet[org.sireum.amandroid.appInfo.ApkCertificate]):org.sireum.util.MSet[org.sireum.amandroid.appInfo.ApkCertificate]"></a>
+      <a id="addCertificates(ISet[ApkCertificate]):MSet[ApkCertificate]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">addCertificates</span><span class="params">(<span name="certs">certs: <span class="extype" name="org.sireum.util.ISet">ISet</span>[<a href="appInfo/ApkCertificate.html" class="extype" name="org.sireum.amandroid.appInfo.ApkCertificate">ApkCertificate</a>]</span>)</span><span class="result">: <span class="extype" name="org.sireum.util.MSet">MSet</span>[<a href="appInfo/ApkCertificate.html" class="extype" name="org.sireum.amandroid.appInfo.ApkCertificate">ApkCertificate</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#org.sireum.amandroid.Apk@addCertificates(certs:org.sireum.util.ISet[org.sireum.amandroid.appInfo.ApkCertificate]):org.sireum.util.MSet[org.sireum.amandroid.appInfo.ApkCertificate]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.amandroid.Apk#addComponentInfo" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="addComponentInfo(ci:org.sireum.amandroid.parser.ComponentInfo):org.sireum.util.MSet[org.sireum.amandroid.parser.ComponentInfo]"></a>
+      <a id="addComponentInfo(ComponentInfo):MSet[ComponentInfo]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">addComponentInfo</span><span class="params">(<span name="ci">ci: <a href="parser/ComponentInfo.html" class="extype" name="org.sireum.amandroid.parser.ComponentInfo">ComponentInfo</a></span>)</span><span class="result">: <span class="extype" name="org.sireum.util.MSet">MSet</span>[<a href="parser/ComponentInfo.html" class="extype" name="org.sireum.amandroid.parser.ComponentInfo">ComponentInfo</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#org.sireum.amandroid.Apk@addComponentInfo(ci:org.sireum.amandroid.parser.ComponentInfo):org.sireum.util.MSet[org.sireum.amandroid.parser.ComponentInfo]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.amandroid.Apk#addComponentInfos" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="addComponentInfos(cis:org.sireum.util.ISet[org.sireum.amandroid.parser.ComponentInfo]):org.sireum.util.MSet[org.sireum.amandroid.parser.ComponentInfo]"></a>
+      <a id="addComponentInfos(ISet[ComponentInfo]):MSet[ComponentInfo]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">addComponentInfos</span><span class="params">(<span name="cis">cis: <span class="extype" name="org.sireum.util.ISet">ISet</span>[<a href="parser/ComponentInfo.html" class="extype" name="org.sireum.amandroid.parser.ComponentInfo">ComponentInfo</a>]</span>)</span><span class="result">: <span class="extype" name="org.sireum.util.MSet">MSet</span>[<a href="parser/ComponentInfo.html" class="extype" name="org.sireum.amandroid.parser.ComponentInfo">ComponentInfo</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#org.sireum.amandroid.Apk@addComponentInfos(cis:org.sireum.util.ISet[org.sireum.amandroid.parser.ComponentInfo]):org.sireum.util.MSet[org.sireum.amandroid.parser.ComponentInfo]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.amandroid.Apk#addDynamicRegisteredReceiver" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="addDynamicRegisteredReceiver(receiver:org.sireum.jawa.JawaType):org.sireum.util.MSet[org.sireum.jawa.JawaType]"></a>
+      <a id="addDynamicRegisteredReceiver(JawaType):MSet[JawaType]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">addDynamicRegisteredReceiver</span><span class="params">(<span name="receiver">receiver: <a href="../jawa/JawaType.html" class="extype" name="org.sireum.jawa.JawaType">JawaType</a></span>)</span><span class="result">: <span class="extype" name="org.sireum.util.MSet">MSet</span>[<a href="../jawa/JawaType.html" class="extype" name="org.sireum.jawa.JawaType">JawaType</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#org.sireum.amandroid.Apk@addDynamicRegisteredReceiver(receiver:org.sireum.jawa.JawaType):org.sireum.util.MSet[org.sireum.jawa.JawaType]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.amandroid.Apk#addDynamicRegisteredReceivers" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="addDynamicRegisteredReceivers(receivers:org.sireum.util.ISet[org.sireum.jawa.JawaType]):org.sireum.util.MSet[org.sireum.jawa.JawaType]"></a>
+      <a id="addDynamicRegisteredReceivers(ISet[JawaType]):MSet[JawaType]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">addDynamicRegisteredReceivers</span><span class="params">(<span name="receivers">receivers: <span class="extype" name="org.sireum.util.ISet">ISet</span>[<a href="../jawa/JawaType.html" class="extype" name="org.sireum.jawa.JawaType">JawaType</a>]</span>)</span><span class="result">: <span class="extype" name="org.sireum.util.MSet">MSet</span>[<a href="../jawa/JawaType.html" class="extype" name="org.sireum.jawa.JawaType">JawaType</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#org.sireum.amandroid.Apk@addDynamicRegisteredReceivers(receivers:org.sireum.util.ISet[org.sireum.jawa.JawaType]):org.sireum.util.MSet[org.sireum.jawa.JawaType]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.amandroid.Apk#addEnvMap" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="addEnvMap(envMap:org.sireum.util.IMap[org.sireum.jawa.JawaType,(org.sireum.jawa.Signature,String)]):org.sireum.util.MMap[org.sireum.jawa.JawaType,(org.sireum.jawa.Signature,String)]"></a>
+      <a id="addEnvMap(IMap[JawaType,(Signature,String)]):MMap[JawaType,(Signature,String)]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">addEnvMap</span><span class="params">(<span name="envMap">envMap: <span class="extype" name="org.sireum.util.IMap">IMap</span>[<a href="../jawa/JawaType.html" class="extype" name="org.sireum.jawa.JawaType">JawaType</a>, (<a href="../jawa/Signature.html" class="extype" name="org.sireum.jawa.Signature">Signature</a>, <span class="extype" name="scala.Predef.String">String</span>)]</span>)</span><span class="result">: <span class="extype" name="org.sireum.util.MMap">MMap</span>[<a href="../jawa/JawaType.html" class="extype" name="org.sireum.jawa.JawaType">JawaType</a>, (<a href="../jawa/Signature.html" class="extype" name="org.sireum.jawa.Signature">Signature</a>, <span class="extype" name="scala.Predef.String">String</span>)]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#org.sireum.amandroid.Apk@addEnvMap(envMap:org.sireum.util.IMap[org.sireum.jawa.JawaType,(org.sireum.jawa.Signature,String)]):org.sireum.util.MMap[org.sireum.jawa.JawaType,(org.sireum.jawa.Signature,String)]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.amandroid.Apk#addEnvMap" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="addEnvMap(typ:org.sireum.jawa.JawaType,sig:org.sireum.jawa.Signature,code:String):Unit"></a>
+      <a id="addEnvMap(JawaType,Signature,String):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">addEnvMap</span><span class="params">(<span name="typ">typ: <a href="../jawa/JawaType.html" class="extype" name="org.sireum.jawa.JawaType">JawaType</a></span>, <span name="sig">sig: <a href="../jawa/Signature.html" class="extype" name="org.sireum.jawa.Signature">Signature</a></span>, <span name="code">code: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#org.sireum.amandroid.Apk@addEnvMap(typ:org.sireum.jawa.JawaType,sig:org.sireum.jawa.Signature,code:String):Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.amandroid.Apk#addLayoutControls" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="addLayoutControls(lcs:org.sireum.util.IMap[Int,org.sireum.amandroid.parser.LayoutControl]):org.sireum.util.MMap[Int,org.sireum.amandroid.parser.LayoutControl]"></a>
+      <a id="addLayoutControls(IMap[Int,LayoutControl]):MMap[Int,LayoutControl]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">addLayoutControls</span><span class="params">(<span name="lcs">lcs: <span class="extype" name="org.sireum.util.IMap">IMap</span>[<span class="extype" name="scala.Int">Int</span>, <a href="parser/LayoutControl.html" class="extype" name="org.sireum.amandroid.parser.LayoutControl">LayoutControl</a>]</span>)</span><span class="result">: <span class="extype" name="org.sireum.util.MMap">MMap</span>[<span class="extype" name="scala.Int">Int</span>, <a href="parser/LayoutControl.html" class="extype" name="org.sireum.amandroid.parser.LayoutControl">LayoutControl</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#org.sireum.amandroid.Apk@addLayoutControls(lcs:org.sireum.util.IMap[Int,org.sireum.amandroid.parser.LayoutControl]):org.sireum.util.MMap[Int,org.sireum.amandroid.parser.LayoutControl]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.amandroid.Apk#addLayoutControls" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="addLayoutControls(i:Int,lc:org.sireum.amandroid.parser.LayoutControl):Unit"></a>
+      <a id="addLayoutControls(Int,LayoutControl):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">addLayoutControls</span><span class="params">(<span name="i">i: <span class="extype" name="scala.Int">Int</span></span>, <span name="lc">lc: <a href="parser/LayoutControl.html" class="extype" name="org.sireum.amandroid.parser.LayoutControl">LayoutControl</a></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#org.sireum.amandroid.Apk@addLayoutControls(i:Int,lc:org.sireum.amandroid.parser.LayoutControl):Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.amandroid.Apk#addProvider" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="addProvider(provider:org.sireum.jawa.JawaType):org.sireum.util.MSet[org.sireum.jawa.JawaType]"></a>
+      <a id="addProvider(JawaType):MSet[JawaType]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">addProvider</span><span class="params">(<span name="provider">provider: <a href="../jawa/JawaType.html" class="extype" name="org.sireum.jawa.JawaType">JawaType</a></span>)</span><span class="result">: <span class="extype" name="org.sireum.util.MSet">MSet</span>[<a href="../jawa/JawaType.html" class="extype" name="org.sireum.jawa.JawaType">JawaType</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#org.sireum.amandroid.Apk@addProvider(provider:org.sireum.jawa.JawaType):org.sireum.util.MSet[org.sireum.jawa.JawaType]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.amandroid.Apk#addProviders" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="addProviders(providers:org.sireum.util.ISet[org.sireum.jawa.JawaType]):org.sireum.util.MSet[org.sireum.jawa.JawaType]"></a>
+      <a id="addProviders(ISet[JawaType]):MSet[JawaType]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">addProviders</span><span class="params">(<span name="providers">providers: <span class="extype" name="org.sireum.util.ISet">ISet</span>[<a href="../jawa/JawaType.html" class="extype" name="org.sireum.jawa.JawaType">JawaType</a>]</span>)</span><span class="result">: <span class="extype" name="org.sireum.util.MSet">MSet</span>[<a href="../jawa/JawaType.html" class="extype" name="org.sireum.jawa.JawaType">JawaType</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#org.sireum.amandroid.Apk@addProviders(providers:org.sireum.util.ISet[org.sireum.jawa.JawaType]):org.sireum.util.MSet[org.sireum.jawa.JawaType]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.amandroid.Apk#addReceiver" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="addReceiver(receiver:org.sireum.jawa.JawaType):org.sireum.util.MSet[org.sireum.jawa.JawaType]"></a>
+      <a id="addReceiver(JawaType):MSet[JawaType]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">addReceiver</span><span class="params">(<span name="receiver">receiver: <a href="../jawa/JawaType.html" class="extype" name="org.sireum.jawa.JawaType">JawaType</a></span>)</span><span class="result">: <span class="extype" name="org.sireum.util.MSet">MSet</span>[<a href="../jawa/JawaType.html" class="extype" name="org.sireum.jawa.JawaType">JawaType</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#org.sireum.amandroid.Apk@addReceiver(receiver:org.sireum.jawa.JawaType):org.sireum.util.MSet[org.sireum.jawa.JawaType]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.amandroid.Apk#addReceivers" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="addReceivers(receivers:org.sireum.util.ISet[org.sireum.jawa.JawaType]):org.sireum.util.MSet[org.sireum.jawa.JawaType]"></a>
+      <a id="addReceivers(ISet[JawaType]):MSet[JawaType]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">addReceivers</span><span class="params">(<span name="receivers">receivers: <span class="extype" name="org.sireum.util.ISet">ISet</span>[<a href="../jawa/JawaType.html" class="extype" name="org.sireum.jawa.JawaType">JawaType</a>]</span>)</span><span class="result">: <span class="extype" name="org.sireum.util.MSet">MSet</span>[<a href="../jawa/JawaType.html" class="extype" name="org.sireum.jawa.JawaType">JawaType</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#org.sireum.amandroid.Apk@addReceivers(receivers:org.sireum.util.ISet[org.sireum.jawa.JawaType]):org.sireum.util.MSet[org.sireum.jawa.JawaType]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.amandroid.Apk#addRpcMethod" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="addRpcMethod(comp:org.sireum.jawa.JawaType,rpc:org.sireum.jawa.Signature):scala.collection.mutable.Set[org.sireum.jawa.Signature]"></a>
+      <a id="addRpcMethod(JawaType,Signature):Set[Signature]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">addRpcMethod</span><span class="params">(<span name="comp">comp: <a href="../jawa/JawaType.html" class="extype" name="org.sireum.jawa.JawaType">JawaType</a></span>, <span name="rpc">rpc: <a href="../jawa/Signature.html" class="extype" name="org.sireum.jawa.Signature">Signature</a></span>)</span><span class="result">: <span class="extype" name="scala.collection.mutable.Set">Set</span>[<a href="../jawa/Signature.html" class="extype" name="org.sireum.jawa.Signature">Signature</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#org.sireum.amandroid.Apk@addRpcMethod(comp:org.sireum.jawa.JawaType,rpc:org.sireum.jawa.Signature):scala.collection.mutable.Set[org.sireum.jawa.Signature]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.amandroid.Apk#addRpcMethods" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="addRpcMethods(map:org.sireum.util.IMap[org.sireum.jawa.JawaType,org.sireum.util.ISet[org.sireum.jawa.Signature]]):Unit"></a>
+      <a id="addRpcMethods(IMap[JawaType,ISet[Signature]]):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">addRpcMethods</span><span class="params">(<span name="map">map: <span class="extype" name="org.sireum.util.IMap">IMap</span>[<a href="../jawa/JawaType.html" class="extype" name="org.sireum.jawa.JawaType">JawaType</a>, <span class="extype" name="org.sireum.util.ISet">ISet</span>[<a href="../jawa/Signature.html" class="extype" name="org.sireum.jawa.Signature">Signature</a>]]</span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#org.sireum.amandroid.Apk@addRpcMethods(map:org.sireum.util.IMap[org.sireum.jawa.JawaType,org.sireum.util.ISet[org.sireum.jawa.Signature]]):Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.amandroid.Apk#addRpcMethods" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="addRpcMethods(comp:org.sireum.jawa.JawaType,rpcs:org.sireum.util.ISet[org.sireum.jawa.Signature]):scala.collection.mutable.Set[org.sireum.jawa.Signature]"></a>
+      <a id="addRpcMethods(JawaType,ISet[Signature]):Set[Signature]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">addRpcMethods</span><span class="params">(<span name="comp">comp: <a href="../jawa/JawaType.html" class="extype" name="org.sireum.jawa.JawaType">JawaType</a></span>, <span name="rpcs">rpcs: <span class="extype" name="org.sireum.util.ISet">ISet</span>[<a href="../jawa/Signature.html" class="extype" name="org.sireum.jawa.Signature">Signature</a>]</span>)</span><span class="result">: <span class="extype" name="scala.collection.mutable.Set">Set</span>[<a href="../jawa/Signature.html" class="extype" name="org.sireum.jawa.Signature">Signature</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#org.sireum.amandroid.Apk@addRpcMethods(comp:org.sireum.jawa.JawaType,rpcs:org.sireum.util.ISet[org.sireum.jawa.Signature]):scala.collection.mutable.Set[org.sireum.jawa.Signature]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.amandroid.Apk#addService" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="addService(service:org.sireum.jawa.JawaType):org.sireum.util.MSet[org.sireum.jawa.JawaType]"></a>
+      <a id="addService(JawaType):MSet[JawaType]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">addService</span><span class="params">(<span name="service">service: <a href="../jawa/JawaType.html" class="extype" name="org.sireum.jawa.JawaType">JawaType</a></span>)</span><span class="result">: <span class="extype" name="org.sireum.util.MSet">MSet</span>[<a href="../jawa/JawaType.html" class="extype" name="org.sireum.jawa.JawaType">JawaType</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#org.sireum.amandroid.Apk@addService(service:org.sireum.jawa.JawaType):org.sireum.util.MSet[org.sireum.jawa.JawaType]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.amandroid.Apk#addServices" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="addServices(services:org.sireum.util.ISet[org.sireum.jawa.JawaType]):org.sireum.util.MSet[org.sireum.jawa.JawaType]"></a>
+      <a id="addServices(ISet[JawaType]):MSet[JawaType]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">addServices</span><span class="params">(<span name="services">services: <span class="extype" name="org.sireum.util.ISet">ISet</span>[<a href="../jawa/JawaType.html" class="extype" name="org.sireum.jawa.JawaType">JawaType</a>]</span>)</span><span class="result">: <span class="extype" name="org.sireum.util.MSet">MSet</span>[<a href="../jawa/JawaType.html" class="extype" name="org.sireum.jawa.JawaType">JawaType</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#org.sireum.amandroid.Apk@addServices(services:org.sireum.util.ISet[org.sireum.jawa.JawaType]):org.sireum.util.MSet[org.sireum.jawa.JawaType]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.amandroid.Apk#addUsesPermissions" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="addUsesPermissions(ps:org.sireum.util.ISet[String]):org.sireum.util.MSet[String]"></a>
+      <a id="addUsesPermissions(ISet[String]):MSet[String]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">addUsesPermissions</span><span class="params">(<span name="ps">ps: <span class="extype" name="org.sireum.util.ISet">ISet</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>)</span><span class="result">: <span class="extype" name="org.sireum.util.MSet">MSet</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#org.sireum.amandroid.Apk@addUsesPermissions(ps:org.sireum.util.ISet[String]):org.sireum.util.MSet[String]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="scala.Any#asInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="asInstanceOf[T0]:T0"></a>
+      <a id="asInstanceOf[T0]:T0"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Any.asInstanceOf.T0">T0</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#org.sireum.amandroid.Apk@asInstanceOf[T0]:T0" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="scala.AnyRef#clone" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="clone():Object"></a>
+      <a id="clone():AnyRef"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">clone</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#org.sireum.amandroid.Apk@clone():Object" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.CloneNotSupportedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="org.sireum.amandroid.Apk#envProcMap" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="envProcMap:org.sireum.util.MMap[org.sireum.jawa.JawaType,(org.sireum.jawa.Signature,String)]"></a>
+      <a id="envProcMap:MMap[JawaType,(Signature,String)]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">envProcMap</span><span class="result">: <span class="extype" name="org.sireum.util.MMap">MMap</span>[<a href="../jawa/JawaType.html" class="extype" name="org.sireum.jawa.JawaType">JawaType</a>, (<a href="../jawa/Signature.html" class="extype" name="org.sireum.jawa.Signature">Signature</a>, <span class="extype" name="scala.Predef.String">String</span>)]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#org.sireum.amandroid.Apk@envProcMap:org.sireum.util.MMap[org.sireum.jawa.JawaType,(org.sireum.jawa.Signature,String)]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Map from record name to it's env method code.</p><div class="fullcomment"><div class="comment cmt"><p>Map from record name to it's env method code.
+</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
+    </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="eq(x$1:AnyRef):Boolean"></a>
+      <a id="eq(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#org.sireum.amandroid.Apk@eq(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#finalize" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="finalize():Unit"></a>
+      <a id="finalize():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#org.sireum.amandroid.Apk@finalize():Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="symbol">classOf[java.lang.Throwable]</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="org.sireum.amandroid.Apk#getActivities" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="getActivities:org.sireum.util.ISet[org.sireum.jawa.JawaType]"></a>
+      <a id="getActivities:ISet[JawaType]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getActivities</span><span class="result">: <span class="extype" name="org.sireum.util.ISet">ISet</span>[<a href="../jawa/JawaType.html" class="extype" name="org.sireum.jawa.JawaType">JawaType</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#org.sireum.amandroid.Apk@getActivities:org.sireum.util.ISet[org.sireum.jawa.JawaType]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.amandroid.Apk#getAppName" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="getAppName:String"></a>
+      <a id="getAppName:String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getAppName</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#org.sireum.amandroid.Apk@getAppName:String" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.amandroid.Apk#getCallbackMethodMapping" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="getCallbackMethodMapping:org.sireum.util.IMap[org.sireum.jawa.JawaType,org.sireum.util.ISet[org.sireum.jawa.Signature]]"></a>
+      <a id="getCallbackMethodMapping:IMap[JawaType,ISet[Signature]]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getCallbackMethodMapping</span><span class="result">: <span class="extype" name="org.sireum.util.IMap">IMap</span>[<a href="../jawa/JawaType.html" class="extype" name="org.sireum.jawa.JawaType">JawaType</a>, <span class="extype" name="org.sireum.util.ISet">ISet</span>[<a href="../jawa/Signature.html" class="extype" name="org.sireum.jawa.Signature">Signature</a>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#org.sireum.amandroid.Apk@getCallbackMethodMapping:org.sireum.util.IMap[org.sireum.jawa.JawaType,org.sireum.util.ISet[org.sireum.jawa.Signature]]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.amandroid.Apk#getCallbackMethods" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="getCallbackMethods:org.sireum.util.ISet[org.sireum.jawa.Signature]"></a>
+      <a id="getCallbackMethods:ISet[Signature]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getCallbackMethods</span><span class="result">: <span class="extype" name="org.sireum.util.ISet">ISet</span>[<a href="../jawa/Signature.html" class="extype" name="org.sireum.jawa.Signature">Signature</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#org.sireum.amandroid.Apk@getCallbackMethods:org.sireum.util.ISet[org.sireum.jawa.Signature]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.amandroid.Apk#getCertificates" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="getCertificates:org.sireum.util.ISet[org.sireum.amandroid.appInfo.ApkCertificate]"></a>
+      <a id="getCertificates:ISet[ApkCertificate]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getCertificates</span><span class="result">: <span class="extype" name="org.sireum.util.ISet">ISet</span>[<a href="appInfo/ApkCertificate.html" class="extype" name="org.sireum.amandroid.appInfo.ApkCertificate">ApkCertificate</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#org.sireum.amandroid.Apk@getCertificates:org.sireum.util.ISet[org.sireum.amandroid.appInfo.ApkCertificate]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="scala.AnyRef#getClass" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getClass():Class[_]"></a>
+      <a id="getClass():Class[_]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getClass</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.Class">Class</span>[_]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#org.sireum.amandroid.Apk@getClass():Class[_]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="org.sireum.amandroid.Apk#getCodeLineCounter" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="getCodeLineCounter:Int"></a>
+      <a id="getCodeLineCounter:Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getCodeLineCounter</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#org.sireum.amandroid.Apk@getCodeLineCounter:Int" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.amandroid.Apk#getComponentInfos" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="getComponentInfos:org.sireum.util.ISet[org.sireum.amandroid.parser.ComponentInfo]"></a>
+      <a id="getComponentInfos:ISet[ComponentInfo]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getComponentInfos</span><span class="result">: <span class="extype" name="org.sireum.util.ISet">ISet</span>[<a href="parser/ComponentInfo.html" class="extype" name="org.sireum.amandroid.parser.ComponentInfo">ComponentInfo</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#org.sireum.amandroid.Apk@getComponentInfos:org.sireum.util.ISet[org.sireum.amandroid.parser.ComponentInfo]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.amandroid.Apk#getComponentType" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="getComponentType(comp:org.sireum.jawa.JawaType):Option[org.sireum.amandroid.AndroidConstants.CompType.Value]"></a>
+      <a id="getComponentType(JawaType):Option[AndroidConstants.CompType.Value]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getComponentType</span><span class="params">(<span name="comp">comp: <a href="../jawa/JawaType.html" class="extype" name="org.sireum.jawa.JawaType">JawaType</a></span>)</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<a href="AndroidConstants$$CompType$.html#ValueextendsOrdered[Enumeration.this.Value]withSerializable" class="extmbr" name="org.sireum.amandroid.AndroidConstants.CompType.Value">AndroidConstants.CompType.Value</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#org.sireum.amandroid.Apk@getComponentType(comp:org.sireum.jawa.JawaType):Option[org.sireum.amandroid.AndroidConstants.CompType.Value]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.amandroid.Apk#getComponents" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="getComponents:org.sireum.util.ISet[org.sireum.jawa.JawaType]"></a>
+      <a id="getComponents:ISet[JawaType]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getComponents</span><span class="result">: <span class="extype" name="org.sireum.util.ISet">ISet</span>[<a href="../jawa/JawaType.html" class="extype" name="org.sireum.jawa.JawaType">JawaType</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#org.sireum.amandroid.Apk@getComponents:org.sireum.util.ISet[org.sireum.jawa.JawaType]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.amandroid.Apk#getDynamicRegisteredReceivers" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="getDynamicRegisteredReceivers:org.sireum.util.ISet[org.sireum.jawa.JawaType]"></a>
+      <a id="getDynamicRegisteredReceivers:ISet[JawaType]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getDynamicRegisteredReceivers</span><span class="result">: <span class="extype" name="org.sireum.util.ISet">ISet</span>[<a href="../jawa/JawaType.html" class="extype" name="org.sireum.jawa.JawaType">JawaType</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#org.sireum.amandroid.Apk@getDynamicRegisteredReceivers:org.sireum.util.ISet[org.sireum.jawa.JawaType]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.amandroid.Apk#getEntryPoints" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="getEntryPoints:org.sireum.util.ISet[org.sireum.jawa.JawaType]"></a>
+      <a id="getEntryPoints:ISet[JawaType]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getEntryPoints</span><span class="result">: <span class="extype" name="org.sireum.util.ISet">ISet</span>[<a href="../jawa/JawaType.html" class="extype" name="org.sireum.jawa.JawaType">JawaType</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#org.sireum.amandroid.Apk@getEntryPoints:org.sireum.util.ISet[org.sireum.jawa.JawaType]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.amandroid.Apk#getEnvMap" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="getEnvMap:scala.collection.immutable.Map[org.sireum.jawa.JawaType,(org.sireum.jawa.Signature,String)]"></a>
+      <a id="getEnvMap:Map[JawaType,(Signature,String)]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getEnvMap</span><span class="result">: <span class="extype" name="scala.collection.immutable.Map">Map</span>[<a href="../jawa/JawaType.html" class="extype" name="org.sireum.jawa.JawaType">JawaType</a>, (<a href="../jawa/Signature.html" class="extype" name="org.sireum.jawa.Signature">Signature</a>, <span class="extype" name="scala.Predef.String">String</span>)]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#org.sireum.amandroid.Apk@getEnvMap:scala.collection.immutable.Map[org.sireum.jawa.JawaType,(org.sireum.jawa.Signature,String)]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.amandroid.Apk#getEnvString" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="getEnvString:String"></a>
+      <a id="getEnvString:String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getEnvString</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#org.sireum.amandroid.Apk@getEnvString:String" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.amandroid.Apk#getIntentFilterDB" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="getIntentFilterDB:org.sireum.amandroid.parser.IntentFilterDataBase"></a>
+      <a id="getIntentFilterDB:IntentFilterDataBase"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getIntentFilterDB</span><span class="result">: <a href="parser/IntentFilterDataBase.html" class="extype" name="org.sireum.amandroid.parser.IntentFilterDataBase">IntentFilterDataBase</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#org.sireum.amandroid.Apk@getIntentFilterDB:org.sireum.amandroid.parser.IntentFilterDataBase" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.amandroid.Apk#getLayoutControls" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="getLayoutControls:org.sireum.util.IMap[Int,org.sireum.amandroid.parser.LayoutControl]"></a>
+      <a id="getLayoutControls:IMap[Int,LayoutControl]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getLayoutControls</span><span class="result">: <span class="extype" name="org.sireum.util.IMap">IMap</span>[<span class="extype" name="scala.Int">Int</span>, <a href="parser/LayoutControl.html" class="extype" name="org.sireum.amandroid.parser.LayoutControl">LayoutControl</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#org.sireum.amandroid.Apk@getLayoutControls:org.sireum.util.IMap[Int,org.sireum.amandroid.parser.LayoutControl]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.amandroid.Apk#getPackageName" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="getPackageName:String"></a>
+      <a id="getPackageName:String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getPackageName</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#org.sireum.amandroid.Apk@getPackageName:String" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.amandroid.Apk#getProviders" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="getProviders:org.sireum.util.ISet[org.sireum.jawa.JawaType]"></a>
+      <a id="getProviders:ISet[JawaType]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getProviders</span><span class="result">: <span class="extype" name="org.sireum.util.ISet">ISet</span>[<a href="../jawa/JawaType.html" class="extype" name="org.sireum.jawa.JawaType">JawaType</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#org.sireum.amandroid.Apk@getProviders:org.sireum.util.ISet[org.sireum.jawa.JawaType]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.amandroid.Apk#getReceivers" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="getReceivers:org.sireum.util.ISet[org.sireum.jawa.JawaType]"></a>
+      <a id="getReceivers:ISet[JawaType]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getReceivers</span><span class="result">: <span class="extype" name="org.sireum.util.ISet">ISet</span>[<a href="../jawa/JawaType.html" class="extype" name="org.sireum.jawa.JawaType">JawaType</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#org.sireum.amandroid.Apk@getReceivers:org.sireum.util.ISet[org.sireum.jawa.JawaType]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.amandroid.Apk#getRpcMethodMapping" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="getRpcMethodMapping:org.sireum.util.IMap[org.sireum.jawa.JawaType,org.sireum.util.ISet[org.sireum.jawa.Signature]]"></a>
+      <a id="getRpcMethodMapping:IMap[JawaType,ISet[Signature]]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getRpcMethodMapping</span><span class="result">: <span class="extype" name="org.sireum.util.IMap">IMap</span>[<a href="../jawa/JawaType.html" class="extype" name="org.sireum.jawa.JawaType">JawaType</a>, <span class="extype" name="org.sireum.util.ISet">ISet</span>[<a href="../jawa/Signature.html" class="extype" name="org.sireum.jawa.Signature">Signature</a>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#org.sireum.amandroid.Apk@getRpcMethodMapping:org.sireum.util.IMap[org.sireum.jawa.JawaType,org.sireum.util.ISet[org.sireum.jawa.Signature]]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.amandroid.Apk#getRpcMethods" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="getRpcMethods:org.sireum.util.ISet[org.sireum.jawa.Signature]"></a>
+      <a id="getRpcMethods:ISet[Signature]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getRpcMethods</span><span class="result">: <span class="extype" name="org.sireum.util.ISet">ISet</span>[<a href="../jawa/Signature.html" class="extype" name="org.sireum.jawa.Signature">Signature</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#org.sireum.amandroid.Apk@getRpcMethods:org.sireum.util.ISet[org.sireum.jawa.Signature]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.amandroid.Apk#getRpcMethods" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="getRpcMethods(comp:org.sireum.jawa.JawaType):org.sireum.util.ISet[org.sireum.jawa.Signature]"></a>
+      <a id="getRpcMethods(JawaType):ISet[Signature]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getRpcMethods</span><span class="params">(<span name="comp">comp: <a href="../jawa/JawaType.html" class="extype" name="org.sireum.jawa.JawaType">JawaType</a></span>)</span><span class="result">: <span class="extype" name="org.sireum.util.ISet">ISet</span>[<a href="../jawa/Signature.html" class="extype" name="org.sireum.jawa.Signature">Signature</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#org.sireum.amandroid.Apk@getRpcMethods(comp:org.sireum.jawa.JawaType):org.sireum.util.ISet[org.sireum.jawa.Signature]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.amandroid.Apk#getServices" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="getServices:org.sireum.util.ISet[org.sireum.jawa.JawaType]"></a>
+      <a id="getServices:ISet[JawaType]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getServices</span><span class="result">: <span class="extype" name="org.sireum.util.ISet">ISet</span>[<a href="../jawa/JawaType.html" class="extype" name="org.sireum.jawa.JawaType">JawaType</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#org.sireum.amandroid.Apk@getServices:org.sireum.util.ISet[org.sireum.jawa.JawaType]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.amandroid.Apk#getUsesPermissions" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="getUsesPermissions:org.sireum.util.ISet[String]"></a>
+      <a id="getUsesPermissions:ISet[String]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getUsesPermissions</span><span class="result">: <span class="extype" name="org.sireum.util.ISet">ISet</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#org.sireum.amandroid.Apk@getUsesPermissions:org.sireum.util.ISet[String]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.amandroid.Apk#hasEnv" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="hasEnv(typ:org.sireum.jawa.JawaType):Boolean"></a>
+      <a id="hasEnv(JawaType):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">hasEnv</span><span class="params">(<span name="typ">typ: <a href="../jawa/JawaType.html" class="extype" name="org.sireum.jawa.JawaType">JawaType</a></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#org.sireum.amandroid.Apk@hasEnv(typ:org.sireum.jawa.JawaType):Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="scala.Any#isInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#org.sireum.amandroid.Apk@isInstanceOf[T0]:Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="org.sireum.amandroid.Apk#nameUri" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="nameUri:org.sireum.util.FileResourceUri"></a>
+      <a id="nameUri:FileResourceUri"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">nameUri</span><span class="result">: <span class="extype" name="org.sireum.util.FileResourceUri">FileResourceUri</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#org.sireum.amandroid.Apk@nameUri:org.sireum.util.FileResourceUri" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ne(x$1:AnyRef):Boolean"></a>
+      <a id="ne(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#org.sireum.amandroid.Apk@ne(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#notify" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notify():Unit"></a>
+      <a id="notify():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notify</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#org.sireum.amandroid.Apk@notify():Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#notifyAll" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notifyAll():Unit"></a>
+      <a id="notifyAll():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#org.sireum.amandroid.Apk@notifyAll():Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="org.sireum.amandroid.Apk#outApkUri" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="outApkUri:org.sireum.util.FileResourceUri"></a>
+      <a id="outApkUri:FileResourceUri"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">outApkUri</span><span class="result">: <span class="extype" name="org.sireum.util.FileResourceUri">FileResourceUri</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#org.sireum.amandroid.Apk@outApkUri:org.sireum.util.FileResourceUri" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.amandroid.Apk#printEntrypoints" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="printEntrypoints():Unit"></a>
+      <a id="printEntrypoints():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">printEntrypoints</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#org.sireum.amandroid.Apk@printEntrypoints():Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.amandroid.Apk#printEnvs" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="printEnvs():Unit"></a>
+      <a id="printEnvs():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">printEnvs</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#org.sireum.amandroid.Apk@printEnvs():Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.amandroid.Apk#reset" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="reset:org.sireum.amandroid.parser.IntentFilterDataBase"></a>
+      <a id="reset:IntentFilterDataBase"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">reset</span><span class="result">: <a href="parser/IntentFilterDataBase.html" class="extype" name="org.sireum.amandroid.parser.IntentFilterDataBase">IntentFilterDataBase</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#org.sireum.amandroid.Apk@reset:org.sireum.amandroid.parser.IntentFilterDataBase" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.amandroid.Apk#resolveEnvInGlobal" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="resolveEnvInGlobal(global:org.sireum.jawa.Global):Unit"></a>
+      <a id="resolveEnvInGlobal(Global):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">resolveEnvInGlobal</span><span class="params">(<span name="global">global: <a href="../jawa/Global.html" class="extype" name="org.sireum.jawa.Global">Global</a></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#org.sireum.amandroid.Apk@resolveEnvInGlobal(global:org.sireum.jawa.Global):Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.amandroid.Apk#setCodeLineCounter" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="setCodeLineCounter(c:Int):Unit"></a>
+      <a id="setCodeLineCounter(Int):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">setCodeLineCounter</span><span class="params">(<span name="c">c: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#org.sireum.amandroid.Apk@setCodeLineCounter(c:Int):Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.amandroid.Apk#setComponents" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="setComponents(comps:org.sireum.util.ISet[(org.sireum.jawa.JawaType,org.sireum.amandroid.parser.ComponentType.Value)]):Unit"></a>
+      <a id="setComponents(ISet[(JawaType,parser.ComponentType.Value)]):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">setComponents</span><span class="params">(<span name="comps">comps: <span class="extype" name="org.sireum.util.ISet">ISet</span>[(<a href="../jawa/JawaType.html" class="extype" name="org.sireum.jawa.JawaType">JawaType</a>, <a href="parser/ComponentType$.html#ValueextendsOrdered[Enumeration.this.Value]withSerializable" class="extmbr" name="org.sireum.amandroid.parser.ComponentType.Value">parser.ComponentType.Value</a>)]</span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#org.sireum.amandroid.Apk@setComponents(comps:org.sireum.util.ISet[(org.sireum.jawa.JawaType,org.sireum.amandroid.parser.ComponentType.Value)]):Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.amandroid.Apk#setIntentFilterDB" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="setIntentFilterDB(i:org.sireum.amandroid.parser.IntentFilterDataBase):Unit"></a>
+      <a id="setIntentFilterDB(IntentFilterDataBase):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">setIntentFilterDB</span><span class="params">(<span name="i">i: <a href="parser/IntentFilterDataBase.html" class="extype" name="org.sireum.amandroid.parser.IntentFilterDataBase">IntentFilterDataBase</a></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#org.sireum.amandroid.Apk@setIntentFilterDB(i:org.sireum.amandroid.parser.IntentFilterDataBase):Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.amandroid.Apk#setPackageName" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="setPackageName(pn:String):Unit"></a>
+      <a id="setPackageName(String):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">setPackageName</span><span class="params">(<span name="pn">pn: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#org.sireum.amandroid.Apk@setPackageName(pn:String):Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.amandroid.Apk#srcs" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="srcs:org.sireum.util.ISet[String]"></a>
+      <a id="srcs:ISet[String]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">srcs</span><span class="result">: <span class="extype" name="org.sireum.util.ISet">ISet</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#org.sireum.amandroid.Apk@srcs:org.sireum.util.ISet[String]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
+      <a id="synchronized[T0](⇒T0):T0"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>)</span><span class="result">: <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#org.sireum.amandroid.Apk@synchronized[T0](x$1:=&gt;T0):T0" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="org.sireum.amandroid.Apk#updateIntentFilterDB" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="updateIntentFilterDB(i:org.sireum.amandroid.parser.IntentFilterDataBase):Unit"></a>
+      <a id="updateIntentFilterDB(IntentFilterDataBase):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">updateIntentFilterDB</span><span class="params">(<span name="i">i: <a href="parser/IntentFilterDataBase.html" class="extype" name="org.sireum.amandroid.parser.IntentFilterDataBase">IntentFilterDataBase</a></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#org.sireum.amandroid.Apk@updateIntentFilterDB(i:org.sireum.amandroid.parser.IntentFilterDataBase):Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait():Unit"></a>
+      <a id="wait():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#org.sireum.amandroid.Apk@wait():Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long,x$2:Int):Unit"></a>
+      <a id="wait(Long,Int):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#org.sireum.amandroid.Apk@wait(x$1:Long,x$2:Int):Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long):Unit"></a>
+      <a id="wait(Long):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#org.sireum.amandroid.Apk@wait(x$1:Long):Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li></ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        <div class="parent" name="scala.Serializable">
+              <h3>Inherited from <span class="extype" name="scala.Serializable">Serializable</span></h3>
+            </div><div class="parent" name="java.io.Serializable">
+              <h3>Inherited from <span class="extype" name="java.io.Serializable">Serializable</span></h3>
+            </div><div class="parent" name="scala.Product">
+              <h3>Inherited from <span class="extype" name="scala.Product">Product</span></h3>
+            </div><div class="parent" name="scala.Equals">
+              <h3>Inherited from <span class="extype" name="scala.Equals">Equals</span></h3>
+            </div><div class="parent" name="scala.AnyRef">
+              <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
+            </div><div class="parent" name="scala.Any">
+              <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>
+            </div>
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+
+
+    </body>
+      </html>

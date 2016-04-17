@@ -28,11 +28,11 @@
         </head>
         <body class="value">
       <div id="definition">
-        <img src="../../../../lib/package_big.png" />
+        <img alt="Package" src="../../../../lib/package_big.png" />
         <p id="owner"><a href="../../../package.html" class="extype" name="org">org</a>.<a href="../../package.html" class="extype" name="org.sireum">sireum</a>.<a href="../package.html" class="extype" name="org.sireum.jawa">jawa</a></p>
         <h1>util</h1><span class="permalink">
       <a href="../../../../index.html#org.sireum.jawa.util.package" title="Permalink" target="_top">
-        <img src="../../../../lib/permalink.png" />
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       </div>
@@ -79,7 +79,7 @@
       </span>
       </h4><span class="permalink">
       <a href="../../../../index.html#org.sireum.jawa.util.package@CacheProvider[K]extendsAnyRef" title="Permalink" target="_top">
-        <img src="../../../../lib/permalink.png" />
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <p class="shortcomment cmt">Cache provider for save Object to predefined factory and load Object from
@@ -89,23 +89,6 @@ which type is T to factory.</p><p>For load Object you can use load[T](key : Cach
 cacheMap load it from cacheMap, if not load it from factory.</p><p>Use the cache provider you need to configuration the size of cacheMap,
 remove strategy, serializer and unSerializer.
 </p></div></div>
-    </li><li name="org.sireum.jawa.util.CaseClassReflector" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="CaseClassReflectorextendsProduct"></a>
-      <a id="CaseClassReflector:CaseClassReflector"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">trait</span>
-      </span>
-      <span class="symbol">
-        <a href="CaseClassReflector.html"><span class="name">CaseClassReflector</span></a><span class="result"> extends <span class="extype" name="scala.Product">Product</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../index.html#org.sireum.jawa.util.package@CaseClassReflectorextendsProduct" title="Permalink" target="_top">
-        <img src="../../../../lib/permalink.png" />
-      </a>
-    </span>
-      
     </li><li name="org.sireum.jawa.util.FileCaseFactory" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
       <a id="FileCaseFactory[K]extendsAnyRef"></a>
       <a id="FileCaseFactory[K]:FileCaseFactory[K]"></a>
@@ -119,7 +102,7 @@ remove strategy, serializer and unSerializer.
       </span>
       </h4><span class="permalink">
       <a href="../../../../index.html#org.sireum.jawa.util.package@FileCaseFactory[K]extendsAnyRef" title="Permalink" target="_top">
-        <img src="../../../../lib/permalink.png" />
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <p class="shortcomment cmt">Define the file-based case factory.</p><div class="fullcomment"><div class="comment cmt"><p>Define the file-based case factory. Supply method to set file directory, and
@@ -138,58 +121,41 @@ handle write and load action for CacheProvider.
       </span>
       </h4><span class="permalink">
       <a href="../../../../index.html#org.sireum.jawa.util.package@IgnoreExceptionextendsRuntimeException" title="Permalink" target="_top">
-        <img src="../../../../lib/permalink.png" />
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <p class="shortcomment cmt"></p>
-    </li><li name="org.sireum.jawa.util.MyTimeoutException" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="MyTimeoutExceptionextendsExceptionwithProductwithSerializable"></a>
-      <a id="MyTimeoutException:MyTimeoutException"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">case class</span>
-      </span>
-      <span class="symbol">
-        <a href="MyTimeoutException.html"><span class="name">MyTimeoutException</span></a><span class="params">(<span name="message">message: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result"> extends <span class="extype" name="scala.Exception">Exception</span> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../index.html#org.sireum.jawa.util.package@MyTimeoutExceptionextendsExceptionwithProductwithSerializable" title="Permalink" target="_top">
-        <img src="../../../../lib/permalink.png" />
-      </a>
-    </span>
-      
-    </li><li name="org.sireum.jawa.util.MyTimer" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="MyTimerextendsAnyRef"></a>
-      <a id="MyTimer:MyTimer"></a>
+    </li><li name="org.sireum.jawa.util.MyExecutionContext" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="MyExecutionContextextendsExecutionContext"></a>
+      <a id="MyExecutionContext:MyExecutionContext"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="MyTimer.html"><span class="name">MyTimer</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+        <a href="MyExecutionContext.html"><span class="name">MyExecutionContext</span></a><span class="result"> extends <span class="extype" name="scala.concurrent.ExecutionContext">ExecutionContext</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#org.sireum.jawa.util.package@MyTimerextendsAnyRef" title="Permalink" target="_top">
-        <img src="../../../../lib/permalink.png" />
+      <a href="../../../../index.html#org.sireum.jawa.util.package@MyExecutionContextextendsExecutionContext" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       
-    </li><li name="org.sireum.jawa.util.Range" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="RangeextendsProductwithSerializable"></a>
-      <a id="Range:Range"></a>
+    </li><li name="org.sireum.jawa.util.MyTimeout" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="MyTimeoutextendsAnyRef"></a>
+      <a id="MyTimeout:MyTimeout"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
-        <span class="kind">case class</span>
+        <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="Range.html"><span class="name">Range</span></a><span class="params">(<span name="offset">offset: <span class="extype" name="scala.Int">Int</span></span>, <span name="length">length: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+        <a href="MyTimeout.html"><span class="name">MyTimeout</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#org.sireum.jawa.util.package@RangeextendsProductwithSerializable" title="Permalink" target="_top">
-        <img src="../../../../lib/permalink.png" />
+      <a href="../../../../index.html#org.sireum.jawa.util.package@MyTimeoutextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       
@@ -206,24 +172,7 @@ handle write and load action for CacheProvider.
       </span>
       </h4><span class="permalink">
       <a href="../../../../index.html#org.sireum.jawa.util.package@ResourceRetrieverextendsProductwithSerializable" title="Permalink" target="_top">
-        <img src="../../../../lib/permalink.png" />
-      </a>
-    </span>
-      <p class="shortcomment cmt"></p>
-    </li><li name="org.sireum.jawa.util.SignatureParser" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="SignatureParserextendsAnyRef"></a>
-      <a id="SignatureParser:SignatureParser"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">class</span>
-      </span>
-      <span class="symbol">
-        <a href="SignatureParser.html"><span class="name">SignatureParser</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../index.html#org.sireum.jawa.util.package@SignatureParserextendsAnyRef" title="Permalink" target="_top">
-        <img src="../../../../lib/permalink.png" />
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <p class="shortcomment cmt"></p>
@@ -240,7 +189,7 @@ handle write and load action for CacheProvider.
       </span>
       </h4><span class="permalink">
       <a href="../../../../index.html#org.sireum.jawa.util.package@Task[T]extendsAnyRef" title="Permalink" target="_top">
-        <img src="../../../../lib/permalink.png" />
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       
@@ -251,24 +200,7 @@ handle write and load action for CacheProvider.
 
         <div id="values" class="values members">
               <h3>Value Members</h3>
-              <ol><li name="org.sireum.jawa.util.APKFileResolver" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="APKFileResolver"></a>
-      <a id="APKFileResolver:APKFileResolver"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">object</span>
-      </span>
-      <span class="symbol">
-        <a href="APKFileResolver$.html"><span class="name">APKFileResolver</span></a>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../index.html#org.sireum.jawa.util.package@APKFileResolver" title="Permalink" target="_top">
-        <img src="../../../../lib/permalink.png" />
-      </a>
-    </span>
-      <p class="shortcomment cmt"></p>
-    </li><li name="org.sireum.jawa.util.ASTUtil" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+              <ol><li name="org.sireum.jawa.util.ASTUtil" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="ASTUtil"></a>
       <a id="ASTUtil:ASTUtil"></a>
       <h4 class="signature">
@@ -281,7 +213,7 @@ handle write and load action for CacheProvider.
       </span>
       </h4><span class="permalink">
       <a href="../../../../index.html#org.sireum.jawa.util.package@ASTUtil" title="Permalink" target="_top">
-        <img src="../../../../lib/permalink.png" />
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <p class="shortcomment cmt"></p>
@@ -298,24 +230,24 @@ handle write and load action for CacheProvider.
       </span>
       </h4><span class="permalink">
       <a href="../../../../index.html#org.sireum.jawa.util.package@CombinationIterator" title="Permalink" target="_top">
-        <img src="../../../../lib/permalink.png" />
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <p class="shortcomment cmt"></p>
-    </li><li name="org.sireum.jawa.util.InterruptibleCancellableFuture" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="InterruptibleCancellableFuture"></a>
-      <a id="InterruptibleCancellableFuture:InterruptibleCancellableFuture"></a>
+    </li><li name="org.sireum.jawa.util.FutureUtil" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="FutureUtil"></a>
+      <a id="FutureUtil:FutureUtil"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <a href="InterruptibleCancellableFuture$.html"><span class="name">InterruptibleCancellableFuture</span></a>
+        <a href="FutureUtil$.html"><span class="name">FutureUtil</span></a>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#org.sireum.jawa.util.package@InterruptibleCancellableFuture" title="Permalink" target="_top">
-        <img src="../../../../lib/permalink.png" />
+      <a href="../../../../index.html#org.sireum.jawa.util.package@FutureUtil" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       
@@ -332,7 +264,7 @@ handle write and load action for CacheProvider.
       </span>
       </h4><span class="permalink">
       <a href="../../../../index.html#org.sireum.jawa.util.package@JVMUtil" title="Permalink" target="_top">
-        <img src="../../../../lib/permalink.png" />
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <p class="shortcomment cmt"></p>
@@ -349,7 +281,7 @@ handle write and load action for CacheProvider.
       </span>
       </h4><span class="permalink">
       <a href="../../../../index.html#org.sireum.jawa.util.package@MyFileUtil" title="Permalink" target="_top">
-        <img src="../../../../lib/permalink.png" />
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <p class="shortcomment cmt"></p>
@@ -366,24 +298,7 @@ handle write and load action for CacheProvider.
       </span>
       </h4><span class="permalink">
       <a href="../../../../index.html#org.sireum.jawa.util.package@OsUtils" title="Permalink" target="_top">
-        <img src="../../../../lib/permalink.png" />
-      </a>
-    </span>
-      <p class="shortcomment cmt"></p>
-    </li><li name="org.sireum.jawa.util.StringFormConverter" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="StringFormConverter"></a>
-      <a id="StringFormConverter:StringFormConverter"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">object</span>
-      </span>
-      <span class="symbol">
-        <a href="StringFormConverter$.html"><span class="name">StringFormConverter</span></a>
-      </span>
-      </h4><span class="permalink">
-      <a href="../../../../index.html#org.sireum.jawa.util.package@StringFormConverter" title="Permalink" target="_top">
-        <img src="../../../../lib/permalink.png" />
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <p class="shortcomment cmt"></p>
@@ -400,7 +315,7 @@ handle write and load action for CacheProvider.
       </span>
       </h4><span class="permalink">
       <a href="../../../../index.html#org.sireum.jawa.util.package@SubStringCounter" title="Permalink" target="_top">
-        <img src="../../../../lib/permalink.png" />
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <p class="shortcomment cmt"></p>
@@ -417,7 +332,7 @@ handle write and load action for CacheProvider.
       </span>
       </h4><span class="permalink">
       <a href="../../../../index.html#org.sireum.jawa.util.package@TaskRunner" title="Permalink" target="_top">
-        <img src="../../../../lib/permalink.png" />
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       
@@ -434,7 +349,7 @@ handle write and load action for CacheProvider.
       </span>
       </h4><span class="permalink">
       <a href="../../../../index.html#org.sireum.jawa.util.package@URLInString" title="Permalink" target="_top">
-        <img src="../../../../lib/permalink.png" />
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <p class="shortcomment cmt"></p>

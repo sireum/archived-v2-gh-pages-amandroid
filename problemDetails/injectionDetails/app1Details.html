@@ -10,8 +10,8 @@
     
     <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/bootstrap-3.2.0/css/bootstrap.min.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/bootstrap-3.2.0/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/bootstrap-3.3.4/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/bootstrap-3.3.4/css/bootstrap-theme.min.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/bootstrap-sphinx.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/sireum.css" type="text/css" />
     
@@ -29,7 +29,7 @@
     <script type="text/javascript" src="../../_static/doctools.js"></script>
     <script type="text/javascript" src="../../_static/js/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="../../_static/js/jquery-fix.js"></script>
-    <script type="text/javascript" src="../../_static/bootstrap-3.2.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../../_static/bootstrap-3.3.4/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="../../_static/bootstrap-sphinx.js"></script>
     <link rel="top" title="Sireum Amandroid" href="../../index.html" />
   </head>
@@ -51,7 +51,6 @@
 
         <div class="collapse navbar-collapse nav-collapse">
           <ul class="nav navbar-nav">
-            <li class="divider-vertical"></li>
             
                 <li><a href="../../documentation.html">Documentation</a></li>
                 <li><a href="../../software.html">Software</a></li>
@@ -94,7 +93,7 @@
 
 <div class="container">
   <div class="row">
-    <div class="col-md-12">
+    <div class="col-md-12 content">
       
   <div class="section" id="com-fcbh-dbp-biblesocietyofphilippines">
 <h1>com.fcbh.dbp.BibleSocietyOfPhilippines<a class="headerlink" href="#com-fcbh-dbp-biblesocietyofphilippines" title="Permalink to this headline">¶</a></h1>
@@ -107,13 +106,13 @@
 <p>from <strong>Source</strong>: (com.subsplash.thechurchapp.TwitterLoginActivity:EntryNode, icc_source)</p>
 <p>to <strong>Sink</strong>: (L06551a, icc_sink)</p>
 <p>The nodes and edges on the path are (with calling context length k = 1):</p>
-<div class="highlight-python"><div class="highlight"><pre>Entry@(environment of TwitterLoginActivity) -&gt; Call@(launchTwitterTweetActivity, L0654fc)(onCreate, L065654)-&gt; Call@(launchTwitterTweetActivity, L065508)(onCreate, L065654)-&gt; Call@(launchTwitterTweetActivity, L065514)(onCreate, L065654)-&gt; Call@(launchTwitterTweetActivity, L06551a)(onCreate, L065654)
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">Entry</span><span class="o">@</span><span class="p">(</span><span class="n">environment</span> <span class="n">of</span> <span class="n">TwitterLoginActivity</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Call</span><span class="o">@</span><span class="p">(</span><span class="n">launchTwitterTweetActivity</span><span class="p">,</span> <span class="n">L0654fc</span><span class="p">)(</span><span class="n">onCreate</span><span class="p">,</span> <span class="n">L065654</span><span class="p">)</span><span class="o">-&gt;</span> <span class="n">Call</span><span class="o">@</span><span class="p">(</span><span class="n">launchTwitterTweetActivity</span><span class="p">,</span> <span class="n">L065508</span><span class="p">)(</span><span class="n">onCreate</span><span class="p">,</span> <span class="n">L065654</span><span class="p">)</span><span class="o">-&gt;</span> <span class="n">Call</span><span class="o">@</span><span class="p">(</span><span class="n">launchTwitterTweetActivity</span><span class="p">,</span> <span class="n">L065514</span><span class="p">)(</span><span class="n">onCreate</span><span class="p">,</span> <span class="n">L065654</span><span class="p">)</span><span class="o">-&gt;</span> <span class="n">Call</span><span class="o">@</span><span class="p">(</span><span class="n">launchTwitterTweetActivity</span><span class="p">,</span> <span class="n">L06551a</span><span class="p">)(</span><span class="n">onCreate</span><span class="p">,</span> <span class="n">L065654</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>More details:</p>
 <p>The TwitterLoginActivity is a public component. We observe that its <em>onCreate</em> method invokes <em>launchTwitterTweetActivity</em> method, which illustrates the above path. Inside this method at <strong>Line 06551a</strong> an Intent is sent out, which contains an <em>Url</em> that originated from the incoming Intent. The <em>Url</em> will be used in the destination Activity, it potentially implies that their is a injection vulnerability.</p>
 <p>The code of <em>launchTwitterTweetActivity</em> method is as follows:</p>
-<div class="highlight-python"><div class="highlight"><pre>procedure `void` `launchTwitterTweetActivity` (`TwitterLoginActivity` v5){
+<div class="highlight-default"><div class="highlight"><pre><span></span>procedure `void` `launchTwitterTweetActivity` (`TwitterLoginActivity` v5){
         #L065490.   v0:= new `Intent`;
         #L065494.   v3:= `@@TwitterTweetActivity.class`;
         #L065498.   call temp:=  `Intent.&lt;init&gt;`(v0, v5, v3);

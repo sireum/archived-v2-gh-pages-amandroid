@@ -1,0 +1,801 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <title>classpath - Sireum-Amandroid-Api-Doc - org.sireum.jawa.classpath</title>
+          <meta name="description" content="classpath - Sireum - Amandroid - Api - Doc - org.sireum.jawa.classpath" />
+          <meta name="keywords" content="classpath Sireum Amandroid Api Doc org.sireum.jawa.classpath" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../../../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../../../index.html';
+            var hash = 'org.sireum.jawa.classpath.package';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="value">
+      <div id="definition">
+        <img alt="Package" src="../../../../lib/package_big.png" />
+        <p id="owner"><a href="../../../package.html" class="extype" name="org">org</a>.<a href="../../package.html" class="extype" name="org.sireum">sireum</a>.<a href="../package.html" class="extype" name="org.sireum.jawa">jawa</a></p>
+        <h1>classpath</h1><span class="permalink">
+      <a href="../../../../index.html#org.sireum.jawa.classpath.package" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <span class="name">classpath</span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        
+        
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="org.sireum.jawa.classpath.AggregateFlatClasspath" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="AggregateFlatClasspathextendsFlatClasspathwithProductwithSerializable"></a>
+      <a id="AggregateFlatClasspath:AggregateFlatClasspath"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="AggregateFlatClasspath.html"><span class="name">AggregateFlatClasspath</span></a><span class="params">(<span name="aggregates">aggregates: <span class="extype" name="scala.Seq">Seq</span>[<a href="FlatClasspath.html" class="extype" name="org.sireum.jawa.classpath.FlatClasspath">FlatClasspath</a>]</span>)</span><span class="result"> extends <a href="FlatClasspath.html" class="extype" name="org.sireum.jawa.classpath.FlatClasspath">FlatClasspath</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#org.sireum.jawa.classpath.package@AggregateFlatClasspathextendsFlatClasspathwithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">A classpath unifying multiple class- and sourcepath entries.</p><div class="fullcomment"><div class="comment cmt"><p>A classpath unifying multiple class- and sourcepath entries.
+Flat classpath can obtain entries for classes and sources independently
+so it tries to do operations quite optimally - iterating only these collections
+which are needed in the given moment and only as far as it's necessary.</p></div><dl class="paramcmts block"><dt class="param">aggregates</dt><dd class="cmt"><p>classpath instances containing entries which this class processes</p></dd></dl></div>
+    </li><li name="org.sireum.jawa.classpath.ClassFileEntry" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="ClassFileEntryextendsClassRepClasspathEntry"></a>
+      <a id="ClassFileEntry:ClassFileEntry"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="ClassFileEntry.html"><span class="name">ClassFileEntry</span></a><span class="result"> extends <a href="ClassRepClasspathEntry.html" class="extype" name="org.sireum.jawa.classpath.ClassRepClasspathEntry">ClassRepClasspathEntry</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#org.sireum.jawa.classpath.package@ClassFileEntryextendsClassRepClasspathEntry" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.jawa.classpath.ClassFileLookup" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="ClassFileLookupextendsAnyRef"></a>
+      <a id="ClassFileLookup:ClassFileLookup"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="ClassFileLookup.html"><span class="name">ClassFileLookup</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#org.sireum.jawa.classpath.package@ClassFileLookupextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Simple interface that allows us to abstract over how class file lookup is performed
+in different classpath representations.</p>
+    </li><li name="org.sireum.jawa.classpath.ClassRepClasspathEntry" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="ClassRepClasspathEntryextendsClassRepresentation"></a>
+      <a id="ClassRepClasspathEntry:ClassRepClasspathEntry"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">sealed </span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="ClassRepClasspathEntry.html"><span class="name">ClassRepClasspathEntry</span></a><span class="result"> extends <a href="ClassRepresentation.html" class="extype" name="org.sireum.jawa.classpath.ClassRepresentation">ClassRepresentation</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#org.sireum.jawa.classpath.package@ClassRepClasspathEntryextendsClassRepresentation" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.jawa.classpath.ClassRepresentation" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="ClassRepresentationextendsAnyRef"></a>
+      <a id="ClassRepresentation:ClassRepresentation"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="ClassRepresentation.html"><span class="name">ClassRepresentation</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#org.sireum.jawa.classpath.package@ClassRepresentationextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Represents classes which can be loaded with a ClassfileLoader and/or SourcefileLoader.</p>
+    </li><li name="org.sireum.jawa.classpath.Classpath" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="ClasspathextendsClassFileLookup"></a>
+      <a id="Classpath:Classpath"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="Classpath.html"><span class="name">Classpath</span></a><span class="result"> extends <a href="ClassFileLookup.html" class="extype" name="org.sireum.jawa.classpath.ClassFileLookup">ClassFileLookup</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#org.sireum.jawa.classpath.package@ClasspathextendsClassFileLookup" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Represents a package which contains classes and other packages
+</p>
+    </li><li name="org.sireum.jawa.classpath.ClasspathFactory" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="ClasspathFactory[T]extendsAnyRef"></a>
+      <a id="ClasspathFactory[T]:ClasspathFactory[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="ClasspathFactory.html"><span class="name">ClasspathFactory</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#org.sireum.jawa.classpath.package@ClasspathFactory[T]extendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">A trait that contains factory methods for classpath elements of type T.</p><div class="fullcomment"><div class="comment cmt"><p>A trait that contains factory methods for classpath elements of type T.</p><p>The logic has been abstracted from Classpath#ClasspathContext so it's possible
+to have common trait that supports both recursive and flat classpath representations.</p><p>Therefore, we expect that T will be either Classpath[U] or FlatClasspath.
+</p></div></div>
+    </li><li name="org.sireum.jawa.classpath.DeltaClasspath" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="DeltaClasspathextendsMergedClasspath"></a>
+      <a id="DeltaClasspath:DeltaClasspath"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="DeltaClasspath.html"><span class="name">DeltaClasspath</span></a><span class="result"> extends <a href="MergedClasspath.html" class="extype" name="org.sireum.jawa.classpath.MergedClasspath">MergedClasspath</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#org.sireum.jawa.classpath.package@DeltaClasspathextendsMergedClasspath" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.jawa.classpath.DirectoryClasspath" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="DirectoryClasspathextendsClasspath"></a>
+      <a id="DirectoryClasspath:DirectoryClasspath"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="DirectoryClasspath.html"><span class="name">DirectoryClasspath</span></a><span class="result"> extends <a href="Classpath.html" class="extype" name="org.sireum.jawa.classpath.Classpath">Classpath</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#org.sireum.jawa.classpath.package@DirectoryClasspathextendsClasspath" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">A directory (or a .jar file) containing classfiles and packages
+</p>
+    </li><li name="org.sireum.jawa.classpath.DirectoryFileLookup" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="DirectoryFileLookup[FileEntryType&lt;:org.sireum.jawa.classpath.ClassRepClasspathEntry]extendsFlatClasspath"></a>
+      <a id="DirectoryFileLookup[FileEntryType&lt;:ClassRepClasspathEntry]:DirectoryFileLookup[FileEntryType]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="DirectoryFileLookup.html"><span class="name">DirectoryFileLookup</span></a><span class="tparams">[<span name="FileEntryType">FileEntryType &lt;: <a href="ClassRepClasspathEntry.html" class="extype" name="org.sireum.jawa.classpath.ClassRepClasspathEntry">ClassRepClasspathEntry</a></span>]</span><span class="result"> extends <a href="FlatClasspath.html" class="extype" name="org.sireum.jawa.classpath.FlatClasspath">FlatClasspath</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#org.sireum.jawa.classpath.package@DirectoryFileLookup[FileEntryType&lt;:org.sireum.jawa.classpath.ClassRepClasspathEntry]extendsFlatClasspath" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">A trait allowing to look for classpath entries of given type in directories.</p><div class="fullcomment"><div class="comment cmt"><p>A trait allowing to look for classpath entries of given type in directories.
+It provides common logic for classes handling class and source files.
+It makes use of the fact that in the case of nested directories it's easy to find a file
+when we have a name of a package.
+</p></div></div>
+    </li><li name="org.sireum.jawa.classpath.DirectoryFlatClasspath" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="DirectoryFlatClasspathextendsDirectoryFileLookup[org.sireum.jawa.classpath.ClassFileEntryImpl]withNoSourcePathswithProductwithSerializable"></a>
+      <a id="DirectoryFlatClasspath:DirectoryFlatClasspath"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="DirectoryFlatClasspath.html"><span class="name">DirectoryFlatClasspath</span></a><span class="params">(<span name="dir">dir: <span class="extype" name="java.io.File">File</span></span>)</span><span class="result"> extends <a href="DirectoryFileLookup.html" class="extype" name="org.sireum.jawa.classpath.DirectoryFileLookup">DirectoryFileLookup</a>[<span class="extype" name="org.sireum.jawa.classpath.ClassFileEntryImpl">ClassFileEntryImpl</span>] with <span class="extype" name="org.sireum.jawa.classpath.NoSourcePaths">NoSourcePaths</span> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#org.sireum.jawa.classpath.package@DirectoryFlatClasspathextendsDirectoryFileLookup[org.sireum.jawa.classpath.ClassFileEntryImpl]withNoSourcePathswithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.jawa.classpath.DirectoryFlatSourcePath" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="DirectoryFlatSourcePathextendsDirectoryFileLookup[org.sireum.jawa.classpath.SourceFileEntryImpl]withNoClasspathswithProductwithSerializable"></a>
+      <a id="DirectoryFlatSourcePath:DirectoryFlatSourcePath"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="DirectoryFlatSourcePath.html"><span class="name">DirectoryFlatSourcePath</span></a><span class="params">(<span name="dir">dir: <span class="extype" name="java.io.File">File</span></span>)</span><span class="result"> extends <a href="DirectoryFileLookup.html" class="extype" name="org.sireum.jawa.classpath.DirectoryFileLookup">DirectoryFileLookup</a>[<span class="extype" name="org.sireum.jawa.classpath.SourceFileEntryImpl">SourceFileEntryImpl</span>] with <span class="extype" name="org.sireum.jawa.classpath.NoClasspaths">NoClasspaths</span> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#org.sireum.jawa.classpath.package@DirectoryFlatSourcePathextendsDirectoryFileLookup[org.sireum.jawa.classpath.SourceFileEntryImpl]withNoClasspathswithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.jawa.classpath.FlatClasspath" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="FlatClasspathextendsClassFileLookup"></a>
+      <a id="FlatClasspath:FlatClasspath"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="FlatClasspath.html"><span class="name">FlatClasspath</span></a><span class="result"> extends <a href="ClassFileLookup.html" class="extype" name="org.sireum.jawa.classpath.ClassFileLookup">ClassFileLookup</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#org.sireum.jawa.classpath.package@FlatClasspathextendsClassFileLookup" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">A base trait for the particular flat classpath representation implementations.</p><div class="fullcomment"><div class="comment cmt"><p>A base trait for the particular flat classpath representation implementations.</p><p>We call this variant of a classpath representation flat because it's possible to
+query the whole classpath using just single instance extending this trait.</p></div></div>
+    </li><li name="org.sireum.jawa.classpath.FlatClasspathEntries" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="FlatClasspathEntriesextendsProductwithSerializable"></a>
+      <a id="FlatClasspathEntries:FlatClasspathEntries"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="FlatClasspathEntries.html"><span class="name">FlatClasspathEntries</span></a><span class="params">(<span name="packages">packages: <span class="extype" name="scala.Seq">Seq</span>[<a href="PackageEntry.html" class="extype" name="org.sireum.jawa.classpath.PackageEntry">PackageEntry</a>]</span>, <span name="classesAndSources">classesAndSources: <span class="extype" name="scala.Seq">Seq</span>[<a href="ClassRepClasspathEntry.html" class="extype" name="org.sireum.jawa.classpath.ClassRepClasspathEntry">ClassRepClasspathEntry</a>]</span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#org.sireum.jawa.classpath.package@FlatClasspathEntriesextendsProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.jawa.classpath.FlatClasspathFactory" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="FlatClasspathFactoryextendsClasspathFactory[org.sireum.jawa.classpath.FlatClasspath]"></a>
+      <a id="FlatClasspathFactory:FlatClasspathFactory"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="FlatClasspathFactory.html"><span class="name">FlatClasspathFactory</span></a><span class="result"> extends <a href="ClasspathFactory.html" class="extype" name="org.sireum.jawa.classpath.ClasspathFactory">ClasspathFactory</a>[<a href="FlatClasspath.html" class="extype" name="org.sireum.jawa.classpath.FlatClasspath">FlatClasspath</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#org.sireum.jawa.classpath.package@FlatClasspathFactoryextendsClasspathFactory[org.sireum.jawa.classpath.FlatClasspath]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Provides factory methods for flat classpath.</p><div class="fullcomment"><div class="comment cmt"><p>Provides factory methods for flat classpath. When creating classpath instances for a given path,
+it uses proper type of classpath depending on a types of particular files containing sources or classes.
+</p></div></div>
+    </li><li name="org.sireum.jawa.classpath.FlatClasspathResolver" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="FlatClasspathResolverextendsPathResolverBase[org.sireum.jawa.classpath.FlatClasspath,org.sireum.jawa.classpath.AggregateFlatClasspath]"></a>
+      <a id="FlatClasspathResolver:FlatClasspathResolver"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="FlatClasspathResolver.html"><span class="name">FlatClasspathResolver</span></a><span class="result"> extends <a href="PathResolverBase.html" class="extype" name="org.sireum.jawa.classpath.PathResolverBase">PathResolverBase</a>[<a href="FlatClasspath.html" class="extype" name="org.sireum.jawa.classpath.FlatClasspath">FlatClasspath</a>, <a href="AggregateFlatClasspath.html" class="extype" name="org.sireum.jawa.classpath.AggregateFlatClasspath">AggregateFlatClasspath</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#org.sireum.jawa.classpath.package@FlatClasspathResolverextendsPathResolverBase[org.sireum.jawa.classpath.FlatClasspath,org.sireum.jawa.classpath.AggregateFlatClasspath]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.jawa.classpath.JavaClasspath" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="JavaClasspathextendsMergedClasspath"></a>
+      <a id="JavaClasspath:JavaClasspath"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="JavaClasspath.html"><span class="name">JavaClasspath</span></a><span class="result"> extends <a href="MergedClasspath.html" class="extype" name="org.sireum.jawa.classpath.MergedClasspath">MergedClasspath</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#org.sireum.jawa.classpath.package@JavaClasspathextendsMergedClasspath" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">The classpath when compiling with target:jvm.</p><div class="fullcomment"><div class="comment cmt"><p>The classpath when compiling with target:jvm. Binary files (classfiles) are represented
+as AbstractFile. ZipArchive is used to view zip/jar archives as directories.
+</p></div></div>
+    </li><li name="org.sireum.jawa.classpath.MergedClasspath" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="MergedClasspathextendsClasspath"></a>
+      <a id="MergedClasspath:MergedClasspath"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="MergedClasspath.html"><span class="name">MergedClasspath</span></a><span class="result"> extends <a href="Classpath.html" class="extype" name="org.sireum.jawa.classpath.Classpath">Classpath</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#org.sireum.jawa.classpath.package@MergedClasspathextendsClasspath" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">A classpath unifying multiple class- and sourcepath entries.</p>
+    </li><li name="org.sireum.jawa.classpath.PackageEntry" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="PackageEntryextendsAnyRef"></a>
+      <a id="PackageEntry:PackageEntry"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="PackageEntry.html"><span class="name">PackageEntry</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#org.sireum.jawa.classpath.package@PackageEntryextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.jawa.classpath.PathResolver" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="PathResolverextendsPathResolverBase[org.sireum.jawa.classpath.Classpath,org.sireum.jawa.classpath.JavaClasspath]"></a>
+      <a id="PathResolver:PathResolver"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="PathResolver.html"><span class="name">PathResolver</span></a><span class="result"> extends <a href="PathResolverBase.html" class="extype" name="org.sireum.jawa.classpath.PathResolverBase">PathResolverBase</a>[<a href="Classpath.html" class="extype" name="org.sireum.jawa.classpath.Classpath">Classpath</a>, <a href="JavaClasspath.html" class="extype" name="org.sireum.jawa.classpath.JavaClasspath">JavaClasspath</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#org.sireum.jawa.classpath.package@PathResolverextendsPathResolverBase[org.sireum.jawa.classpath.Classpath,org.sireum.jawa.classpath.JavaClasspath]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.jawa.classpath.PathResolverBase" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="PathResolverBase[BaseClassPathType&lt;:org.sireum.jawa.classpath.ClassFileLookup,ResultClassPathType&lt;:BaseClassPathType]extendsPathResolverResult"></a>
+      <a id="PathResolverBase[BaseClassPathType&lt;:ClassFileLookup,ResultClassPathType&lt;:BaseClassPathType]:PathResolverBase[BaseClassPathType,ResultClassPathType]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="PathResolverBase.html"><span class="name">PathResolverBase</span></a><span class="tparams">[<span name="BaseClassPathType">BaseClassPathType &lt;: <a href="ClassFileLookup.html" class="extype" name="org.sireum.jawa.classpath.ClassFileLookup">ClassFileLookup</a></span>, <span name="ResultClassPathType">ResultClassPathType &lt;: <span class="extype" name="org.sireum.jawa.classpath.PathResolverBase.BaseClassPathType">BaseClassPathType</span></span>]</span><span class="result"> extends <a href="PathResolverResult.html" class="extype" name="org.sireum.jawa.classpath.PathResolverResult">PathResolverResult</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#org.sireum.jawa.classpath.package@PathResolverBase[BaseClassPathType&lt;:org.sireum.jawa.classpath.ClassFileLookup,ResultClassPathType&lt;:BaseClassPathType]extendsPathResolverResult" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.jawa.classpath.PathResolverResult" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="PathResolverResultextendsAnyRef"></a>
+      <a id="PathResolverResult:PathResolverResult"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="PathResolverResult.html"><span class="name">PathResolverResult</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#org.sireum.jawa.classpath.package@PathResolverResultextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.jawa.classpath.SourceFileEntry" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="SourceFileEntryextendsClassRepClasspathEntry"></a>
+      <a id="SourceFileEntry:SourceFileEntry"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="SourceFileEntry.html"><span class="name">SourceFileEntry</span></a><span class="result"> extends <a href="ClassRepClasspathEntry.html" class="extype" name="org.sireum.jawa.classpath.ClassRepClasspathEntry">ClassRepClasspathEntry</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#org.sireum.jawa.classpath.package@SourceFileEntryextendsClassRepClasspathEntry" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.jawa.classpath.SourcePath" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="SourcePath[T]extendsClasspath"></a>
+      <a id="SourcePath[T]:SourcePath[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="SourcePath.html"><span class="name">SourcePath</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends <a href="Classpath.html" class="extype" name="org.sireum.jawa.classpath.Classpath">Classpath</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#org.sireum.jawa.classpath.package@SourcePath[T]extendsClasspath" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">A Classpath containing source files
+</p>
+    </li><li name="org.sireum.jawa.classpath.ZipAndJarFileLookupFactory" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="ZipAndJarFileLookupFactoryextendsAnyRef"></a>
+      <a id="ZipAndJarFileLookupFactory:ZipAndJarFileLookupFactory"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">sealed </span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="ZipAndJarFileLookupFactory.html"><span class="name">ZipAndJarFileLookupFactory</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#org.sireum.jawa.classpath.package@ZipAndJarFileLookupFactoryextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">A trait providing an optional cache for classpath entries obtained from zip and jar files.</p><div class="fullcomment"><div class="comment cmt"><p>A trait providing an optional cache for classpath entries obtained from zip and jar files.
+It's possible to create such a cache assuming that entries in such files won't change (at
+least will be the same each time we'll load classpath during the lifetime of JVM process)
+- unlike class and source files in directories, which can be modified and recompiled.
+It allows us to e.g. reduce significantly memory used by PresentationCompilers in Argus IDE
+when there are a lot of projects having a lot of common dependencies.
+</p></div></div>
+    </li><li name="org.sireum.jawa.classpath.ZipArchiveFileLookup" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="ZipArchiveFileLookup[FileEntryType&lt;:org.sireum.jawa.classpath.ClassRepClasspathEntry]extendsFlatClasspath"></a>
+      <a id="ZipArchiveFileLookup[FileEntryType&lt;:ClassRepClasspathEntry]:ZipArchiveFileLookup[FileEntryType]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="ZipArchiveFileLookup.html"><span class="name">ZipArchiveFileLookup</span></a><span class="tparams">[<span name="FileEntryType">FileEntryType &lt;: <a href="ClassRepClasspathEntry.html" class="extype" name="org.sireum.jawa.classpath.ClassRepClasspathEntry">ClassRepClasspathEntry</a></span>]</span><span class="result"> extends <a href="FlatClasspath.html" class="extype" name="org.sireum.jawa.classpath.FlatClasspath">FlatClasspath</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#org.sireum.jawa.classpath.package@ZipArchiveFileLookup[FileEntryType&lt;:org.sireum.jawa.classpath.ClassRepClasspathEntry]extendsFlatClasspath" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">A trait allowing to look for classpath entries of given type in zip and jar files.</p><div class="fullcomment"><div class="comment cmt"><p>A trait allowing to look for classpath entries of given type in zip and jar files.
+It provides common logic for classes handling class and source files.
+It's aware of things like e.g. META-INF directory which is correctly skipped.
+</p></div></div>
+    </li></ol>
+            </div>
+
+        
+
+        <div id="values" class="values members">
+              <h3>Value Members</h3>
+              <ol><li name="org.sireum.jawa.classpath.ClassRepresentation" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ClassRepresentation"></a>
+      <a id="ClassRepresentation:ClassRepresentation"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="ClassRepresentation$.html"><span class="name">ClassRepresentation</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#org.sireum.jawa.classpath.package@ClassRepresentation" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.jawa.classpath.Classpath" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Classpath"></a>
+      <a id="Classpath:Classpath"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Classpath$.html"><span class="name">Classpath</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#org.sireum.jawa.classpath.package@Classpath" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">   This module provides star expansion of '-classpath' option arguments, behaves the same as
+   java, see [http://java.sun.com/javase/6/docs/technotes/tools/windows/classpath.html]</p>
+    </li><li name="org.sireum.jawa.classpath.DirectoryFileLookup" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="DirectoryFileLookup"></a>
+      <a id="DirectoryFileLookup:DirectoryFileLookup"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="DirectoryFileLookup$.html"><span class="name">DirectoryFileLookup</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#org.sireum.jawa.classpath.package@DirectoryFileLookup" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.jawa.classpath.DirectoryFlatClasspath" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="DirectoryFlatClasspath"></a>
+      <a id="DirectoryFlatClasspath:DirectoryFlatClasspath"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="DirectoryFlatClasspath$.html"><span class="name">DirectoryFlatClasspath</span></a><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#org.sireum.jawa.classpath.package@DirectoryFlatClasspath" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.jawa.classpath.DirectoryFlatSourcePath" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="DirectoryFlatSourcePath"></a>
+      <a id="DirectoryFlatSourcePath:DirectoryFlatSourcePath"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="DirectoryFlatSourcePath$.html"><span class="name">DirectoryFlatSourcePath</span></a><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#org.sireum.jawa.classpath.package@DirectoryFlatSourcePath" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.jawa.classpath.FileUtils" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="FileUtils"></a>
+      <a id="FileUtils:FileUtils"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="FileUtils$.html"><span class="name">FileUtils</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#org.sireum.jawa.classpath.package@FileUtils" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Common methods related to Java files and abstract files used in the context of classpath
+</p>
+    </li><li name="org.sireum.jawa.classpath.FlatClasspath" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="FlatClasspath"></a>
+      <a id="FlatClasspath:FlatClasspath"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="FlatClasspath$.html"><span class="name">FlatClasspath</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#org.sireum.jawa.classpath.package@FlatClasspath" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.jawa.classpath.FlatClasspathEntries" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="FlatClasspathEntries"></a>
+      <a id="FlatClasspathEntries:FlatClasspathEntries"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="FlatClasspathEntries$.html"><span class="name">FlatClasspathEntries</span></a><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#org.sireum.jawa.classpath.package@FlatClasspathEntries" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.jawa.classpath.PackageNameUtils" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="PackageNameUtils"></a>
+      <a id="PackageNameUtils:PackageNameUtils"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="PackageNameUtils$.html"><span class="name">PackageNameUtils</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#org.sireum.jawa.classpath.package@PackageNameUtils" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Common methods related to package names represented as String
+</p>
+    </li><li name="org.sireum.jawa.classpath.PathResolver" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="PathResolver"></a>
+      <a id="PathResolver:PathResolver"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="PathResolver$.html"><span class="name">PathResolver</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#org.sireum.jawa.classpath.package@PathResolver" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.jawa.classpath.PathResolverFactory" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="PathResolverFactory"></a>
+      <a id="PathResolverFactory:PathResolverFactory"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="PathResolverFactory$.html"><span class="name">PathResolverFactory</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#org.sireum.jawa.classpath.package@PathResolverFactory" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.jawa.classpath.ZipAndJarFlatClasspathFactory" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ZipAndJarFlatClasspathFactory"></a>
+      <a id="ZipAndJarFlatClasspathFactory:ZipAndJarFlatClasspathFactory"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="ZipAndJarFlatClasspathFactory$.html"><span class="name">ZipAndJarFlatClasspathFactory</span></a><span class="result"> extends <a href="ZipAndJarFileLookupFactory.html" class="extype" name="org.sireum.jawa.classpath.ZipAndJarFileLookupFactory">ZipAndJarFileLookupFactory</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#org.sireum.jawa.classpath.package@ZipAndJarFlatClasspathFactory" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Manages creation of flat classpath for class files placed in zip and jar files.</p><div class="fullcomment"><div class="comment cmt"><p>Manages creation of flat classpath for class files placed in zip and jar files.
+It should be the only way of creating them as it provides caching.
+</p></div></div>
+    </li><li name="org.sireum.jawa.classpath.ZipAndJarFlatSourcepathFactory" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ZipAndJarFlatSourcepathFactory"></a>
+      <a id="ZipAndJarFlatSourcepathFactory:ZipAndJarFlatSourcepathFactory"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="ZipAndJarFlatSourcepathFactory$.html"><span class="name">ZipAndJarFlatSourcepathFactory</span></a><span class="result"> extends <a href="ZipAndJarFileLookupFactory.html" class="extype" name="org.sireum.jawa.classpath.ZipAndJarFileLookupFactory">ZipAndJarFileLookupFactory</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#org.sireum.jawa.classpath.package@ZipAndJarFlatSourcepathFactory" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Manages creation of flat classpath for source files placed in zip and jar files.</p><div class="fullcomment"><div class="comment cmt"><p>Manages creation of flat classpath for source files placed in zip and jar files.
+It should be the only way of creating them as it provides caching.
+</p></div></div>
+    </li></ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+
+
+    </body>
+      </html>

@@ -87,7 +87,7 @@ also interested to discover a few special items (e.g. password, Single Sign On o
 Via <code class="docutils literal"><span class="pre">AppInfoCollector</span></code> you can invoke multiple APIs to get a handle (i.e. parser) for specialized information collection:
 (i) Manifest parser, (ii) Layout parser, (iii) ARSC parser, and others.</p>
 <p>Below are a few examples of invoking these APIs and some of their usage.</p>
-<div class="highlight-scala"><div class="highlight"><pre><span class="k">val</span> <span class="n">apkFileUri</span> <span class="k">=</span> <span class="nc">FileUtil</span><span class="o">.</span><span class="n">toUri</span><span class="o">(</span><span class="n">path</span><span class="o">-</span><span class="n">to</span><span class="o">-</span><span class="n">the</span><span class="o">-</span><span class="n">apk</span><span class="o">-</span><span class="n">file</span><span class="o">)</span> <span class="c1">// FileUtil is in org.sireum.util package; toUri(pathString) = &quot;file://&quot; + pathString</span>
+<div class="highlight-scala"><div class="highlight"><pre><span></span><span class="k">val</span> <span class="n">apkFileUri</span> <span class="k">=</span> <span class="nc">FileUtil</span><span class="o">.</span><span class="n">toUri</span><span class="o">(</span><span class="n">path</span><span class="o">-</span><span class="n">to</span><span class="o">-</span><span class="n">the</span><span class="o">-</span><span class="n">apk</span><span class="o">-</span><span class="n">file</span><span class="o">)</span> <span class="c1">// FileUtil is in org.sireum.util package; toUri(pathString) = &quot;file://&quot; + pathString</span>
 <span class="k">val</span> <span class="n">mfp</span> <span class="k">=</span> <span class="nc">AppInfoCollector</span><span class="o">.</span><span class="n">analyzeManifest</span><span class="o">(</span><span class="n">apkFileUri</span><span class="o">)</span> <span class="c1">// mfp is a Manifest file parser</span>
 <span class="k">val</span> <span class="n">afp</span> <span class="k">=</span> <span class="nc">AppInfoCollector</span><span class="o">.</span><span class="n">analyzeARSC</span><span class="o">(</span><span class="n">apkFileUri</span><span class="o">)</span> <span class="c1">// afp is an ARSC file parser</span>
 <span class="k">val</span> <span class="n">lfp</span> <span class="k">=</span> <span class="nc">AppInfoCollector</span><span class="o">.</span><span class="n">analyzeLayouts</span><span class="o">(</span><span class="n">apkFileUri</span><span class="o">,</span> <span class="n">mfp</span><span class="o">)</span> <span class="c1">// lfp is a layout files parser</span>
@@ -110,14 +110,14 @@ IDFG also incorporates <cite>calling context</cite> upto length K.</p>
 i.e., how to set the basic configuration parameters for the IDFG analysis (also called <code class="docutils literal"><span class="pre">AndroidReachingFactsAnalysis</span></code>).</p>
 <p>The configuration parameters are set via acessing <code class="docutils literal"><span class="pre">AndroidReachingFactsAnalysisConfig</span></code> object (in package <code class="docutils literal"><span class="pre">org.sireum.amandroid.alir.reachingFactsAnalysis</span></code>).
 You can choose values according to your needs. One example follows.</p>
-<div class="highlight-scala"><div class="highlight"><pre><span class="nc">AndroidReachingFactsAnalysisConfig</span><span class="o">.</span><span class="n">k_context</span> <span class="k">=</span> <span class="mi">1</span> <span class="c1">// calling context length</span>
+<div class="highlight-scala"><div class="highlight"><pre><span></span><span class="nc">AndroidReachingFactsAnalysisConfig</span><span class="o">.</span><span class="n">k_context</span> <span class="k">=</span> <span class="mi">1</span> <span class="c1">// calling context length</span>
 <span class="nc">AndroidReachingFactsAnalysisConfig</span><span class="o">.</span><span class="n">resolve_icc</span> <span class="k">=</span> <span class="kc">true</span> <span class="c1">// connect the ICC source component with destination(s)</span>
 <span class="nc">AndroidReachingFactsAnalysisConfig</span><span class="o">.</span><span class="n">resolve_static_init</span> <span class="k">=</span> <span class="kc">false</span> <span class="c1">// track the facts of the global/static variables too</span>
 <span class="nc">AndroidReachingFactsAnalysisConfig</span><span class="o">.</span><span class="n">timerOpt</span> <span class="k">=</span> <span class="nc">Some</span><span class="o">(</span><span class="k">new</span> <span class="nc">Timer</span><span class="o">(</span><span class="mi">5</span><span class="o">))</span> <span class="c1">// per-component analysis will time out after 5 mins</span>
 </pre></div>
 </div>
 <p>You can invoke the IDFG building API as follows (where <code class="docutils literal"><span class="pre">AndroidReachingFactsAnalysis</span></code> is available in package <code class="docutils literal"><span class="pre">org.sireum.amandroid.alir.reachingFactsAnalysis</span></code>):</p>
-<div class="highlight-scala"><div class="highlight"><pre><span class="k">var</span> <span class="n">entryPoints</span> <span class="k">=</span> <span class="nc">Center</span><span class="o">.</span><span class="n">getEntryPoints</span><span class="o">(</span><span class="nc">AndroidConstants</span><span class="o">.</span><span class="nc">MAINCOMP_ENV</span><span class="o">)</span> <span class="c1">// AppInfoCollector has stored the entry points (e.g. public components) in the Center</span>
+<div class="highlight-scala"><div class="highlight"><pre><span></span><span class="k">var</span> <span class="n">entryPoints</span> <span class="k">=</span> <span class="nc">Center</span><span class="o">.</span><span class="n">getEntryPoints</span><span class="o">(</span><span class="nc">AndroidConstants</span><span class="o">.</span><span class="nc">MAINCOMP_ENV</span><span class="o">)</span> <span class="c1">// AppInfoCollector has stored the entry points (e.g. public components) in the Center</span>
 <span class="n">entryPoints</span><span class="o">.</span><span class="n">foreach</span><span class="o">{</span>
    <span class="n">ep</span> <span class="k">=&gt;</span>
     <span class="o">{</span>
@@ -133,7 +133,7 @@ For instance, for a network I/O statement in the app your plugin can query (to t
 <p>To give a concrete example, let us refer to the <code class="docutils literal"><span class="pre">crypto-API</span> <span class="pre">misuse</span> <span class="pre">detection</span></code> plugin. The code snippet is as follows.
 <code class="docutils literal"><span class="pre">CryptographicMisuse</span></code> checks the reachable facts at a crypto-API statement to detect the misuse.
 Basically, if a parameter of the API is seen to have miscofigured values, we flag a misuse.</p>
-<div class="highlight-scala"><div class="highlight"><pre><span class="k">val</span> <span class="n">idfgs</span> <span class="k">=</span> <span class="nc">AppCenter</span><span class="o">.</span><span class="n">getInterproceduralReachingFactsAnalysisResults</span> <span class="c1">// Note that for each entry point component there is one IDFG</span>
+<div class="highlight-scala"><div class="highlight"><pre><span></span><span class="k">val</span> <span class="n">idfgs</span> <span class="k">=</span> <span class="nc">AppCenter</span><span class="o">.</span><span class="n">getInterproceduralReachingFactsAnalysisResults</span> <span class="c1">// Note that for each entry point component there is one IDFG</span>
 <span class="n">idfgs</span><span class="o">.</span><span class="n">foreach</span><span class="o">{</span>
    <span class="k">case</span> <span class="o">(</span><span class="n">ep</span><span class="o">,</span> <span class="o">(</span><span class="n">icfg</span><span class="o">,</span> <span class="n">irfaResult</span><span class="o">))</span> <span class="k">=&gt;</span>
        <span class="nc">CryptographicMisuse</span><span class="o">(</span><span class="k">new</span> <span class="nc">InterProceduralDataFlowGraph</span><span class="o">(</span><span class="n">icfg</span><span class="o">,</span> <span class="n">irfaResult</span><span class="o">))</span> <span class="c1">// irfaResult i.e. reachable facts are queried here</span>
@@ -146,7 +146,7 @@ Basically, if a parameter of the API is seen to have miscofigured values, we fla
 <p>DDG basically represents which statement of the IDFG depends on which other statements.
 There is a well-defined mapping between the nodeset of the ICFG and that of DDG.
 You can invoke the DDG building API as follows.</p>
-<div class="highlight-scala"><div class="highlight"><pre><span class="k">val</span> <span class="n">iddResult</span> <span class="k">=</span> <span class="nc">InterproceduralDataDependenceAnalysis</span><span class="o">(</span><span class="n">icfg</span><span class="o">,</span> <span class="n">irfaResult</span><span class="o">)</span>
+<div class="highlight-scala"><div class="highlight"><pre><span></span><span class="k">val</span> <span class="n">iddResult</span> <span class="k">=</span> <span class="nc">InterproceduralDataDependenceAnalysis</span><span class="o">(</span><span class="n">icfg</span><span class="o">,</span> <span class="n">irfaResult</span><span class="o">)</span>
 <span class="nc">AppCenter</span><span class="o">.</span><span class="n">addInterproceduralDataDependenceAnalysisResult</span><span class="o">(</span><span class="n">ep</span><span class="o">.</span><span class="n">getDeclaringRecord</span><span class="o">,</span> <span class="n">iddResult</span><span class="o">)</span> <span class="c1">// storing DDG where ep is an entry point component</span>
 </pre></div>
 </div>
@@ -158,7 +158,7 @@ You can invoke the DDG building API as follows.</p>
 As an example, you can use the <code class="docutils literal"><span class="pre">DefaultAndroidSourceAndSinkManager</span></code> (in package <code class="docutils literal"><span class="pre">org.sireum.amandroid.alir.taintAnalysis</span></code>)
 which takes a source-sink file-path as an input. An example source-sink file-path is included as a field in <code class="docutils literal"><span class="pre">AndroidGlobalConfig</span></code> (in package <code class="docutils literal"><span class="pre">org.sireum.amandroid</span></code>).</p>
 <p>You can invoke the taint analysis API as follows:</p>
-<div class="highlight-scala"><div class="highlight"><pre><span class="k">val</span> <span class="n">ssm</span> <span class="k">=</span> <span class="k">new</span> <span class="nc">DefaultAndroidSourceAndSinkManager</span><span class="o">(</span><span class="n">appPackageName</span><span class="o">,</span> <span class="n">layoutControls</span><span class="o">,</span> <span class="n">callbackMethods</span><span class="o">,</span> <span class="nc">AndroidGlobalConfig</span><span class="o">.</span><span class="nc">SourceAndSinkFilePath</span><span class="o">)</span>
+<div class="highlight-scala"><div class="highlight"><pre><span></span><span class="k">val</span> <span class="n">ssm</span> <span class="k">=</span> <span class="k">new</span> <span class="nc">DefaultAndroidSourceAndSinkManager</span><span class="o">(</span><span class="n">appPackageName</span><span class="o">,</span> <span class="n">layoutControls</span><span class="o">,</span> <span class="n">callbackMethods</span><span class="o">,</span> <span class="nc">AndroidGlobalConfig</span><span class="o">.</span><span class="nc">SourceAndSinkFilePath</span><span class="o">)</span>
                              <span class="c1">// The source-sink file includes a list of annotated source and sink APIs</span>
 <span class="k">val</span> <span class="n">tar</span> <span class="k">=</span> <span class="nc">AndroidDataDependentTaintAnalysis</span><span class="o">(</span><span class="n">iddResult</span><span class="o">,</span> <span class="n">irfaResult</span><span class="o">,</span> <span class="n">ssm</span><span class="o">)</span> <span class="c1">// ssm is a source-sink manager, which determines the sources and sinks in the app</span>
 <span class="nc">AppCenter</span><span class="o">.</span><span class="n">addTaintAnalysisResult</span><span class="o">(</span><span class="n">ep</span><span class="o">.</span><span class="n">getDeclaringRecord</span><span class="o">,</span> <span class="n">tar</span><span class="o">)</span> <span class="c1">// storing taint results</span>
@@ -166,7 +166,7 @@ which takes a source-sink file-path as an input. An example source-sink file-pat
 </div>
 <p>This API can be useful in multiple analyses. As an example, it is used in the <code class="docutils literal"><span class="pre">password</span> <span class="pre">leak</span> <span class="pre">detection</span></code>, <code class="docutils literal"><span class="pre">intent</span> <span class="pre">injection</span> <span class="pre">detection</span></code>, etc.</p>
 <p>Below is a code snippet to show how to retrieve and use the taint results.</p>
-<div class="highlight-scala"><div class="highlight"><pre><span class="k">val</span> <span class="n">taintResult</span> <span class="k">=</span> <span class="nc">AppCenter</span><span class="o">.</span><span class="n">getTaintAnalysisResult</span><span class="o">(</span><span class="n">ep</span><span class="o">)</span> <span class="c1">// The type ``TaintAnalysisResult`` is declared in package org.sireum.jawa.alir.taintAnalysis</span>
+<div class="highlight-scala"><div class="highlight"><pre><span></span><span class="k">val</span> <span class="n">taintResult</span> <span class="k">=</span> <span class="nc">AppCenter</span><span class="o">.</span><span class="n">getTaintAnalysisResult</span><span class="o">(</span><span class="n">ep</span><span class="o">)</span> <span class="c1">// The type ``TaintAnalysisResult`` is declared in package org.sireum.jawa.alir.taintAnalysis</span>
 <span class="k">val</span> <span class="n">taintPaths</span> <span class="k">=</span> <span class="n">taintResult</span><span class="o">.</span><span class="n">getTaintedPaths</span>
 <span class="n">taintPaths</span><span class="o">.</span><span class="n">foreach</span><span class="o">{</span>
    <span class="n">taintPath</span> <span class="k">=&gt;</span>
@@ -185,7 +185,7 @@ or you can directly invoke the Amandroid APIs to have the building blocks ready 
 The new plugin only needs to use these building blocks in implementing your special analysis logic.</p>
 <p>We hope that in most cases accessing <code class="docutils literal"><span class="pre">AmandroidSocket</span></code> should be enough for completing the design of your plugin.
 You may start the socket as follows.</p>
-<div class="highlight-scala"><div class="highlight"><pre><span class="k">val</span> <span class="n">socket</span> <span class="k">=</span> <span class="k">new</span> <span class="nc">AmandroidSocket</span>
+<div class="highlight-scala"><div class="highlight"><pre><span></span><span class="k">val</span> <span class="n">socket</span> <span class="k">=</span> <span class="k">new</span> <span class="nc">AmandroidSocket</span>
 <span class="n">socket</span><span class="o">.</span><span class="n">preProcess</span> <span class="c1">// this loads the android library&#39;s class hierarchy and the android library&#39;s API side-effects summary</span>
 </pre></div>
 </div>
@@ -198,7 +198,7 @@ As an example, for our <code class="docutils literal"><span class="pre">password
 that has additional capability of determining which set of components hold a <code class="docutils literal"><span class="pre">password</span></code> containing screen.
 If you do not need a special information collector, you may just use the default <code class="docutils literal"><span class="pre">AppInfoCollector</span></code> given in the codebase (in package <code class="docutils literal"><span class="pre">in</span> <span class="pre">package</span> <span class="pre">org.sireum.amandroid.appInfo</span></code>).</p>
 <p>We connect the <code class="docutils literal"><span class="pre">AppInfoCollector</span></code> with the socket in the following way.</p>
-<div class="highlight-scala"><div class="highlight"><pre><span class="k">val</span> <span class="n">app_info</span> <span class="k">=</span> <span class="k">new</span> <span class="nc">SensitiveViewCollector</span><span class="o">(</span><span class="n">apkFileUri</span><span class="o">)</span> <span class="c1">// creating a special AppInfoCollector</span>
+<div class="highlight-scala"><div class="highlight"><pre><span></span><span class="k">val</span> <span class="n">app_info</span> <span class="k">=</span> <span class="k">new</span> <span class="nc">SensitiveViewCollector</span><span class="o">(</span><span class="n">apkFileUri</span><span class="o">)</span> <span class="c1">// creating a special AppInfoCollector</span>
 <span class="n">socket</span><span class="o">.</span><span class="n">loadApk</span><span class="o">(</span><span class="n">apkFileUri</span><span class="o">,</span> <span class="n">outputPath</span><span class="o">,</span> <span class="nc">ThirdPartyLibraryDetector</span><span class="o">,</span> <span class="n">app_info</span><span class="o">)</span> <span class="c1">// outputPath will store the results, such as Pilar tranformation of the bytecode</span>
 </pre></div>
 </div>
@@ -215,7 +215,7 @@ The basic job of some of these methods are as follows:</p>
 <li><code class="docutils literal"><span class="pre">onAnalysisSuccess</span></code>: Check in the <code class="docutils literal"><span class="pre">AppCenter</span></code> what results you got and store them as you want.</li>
 </ul>
 <p>Below is an example of how we create an <code class="docutils literal"><span class="pre">AmandroidSocketListener</span></code> for <code class="docutils literal"><span class="pre">password</span> <span class="pre">leakage</span> <span class="pre">detection</span></code> plugin, and connect it to the <code class="docutils literal"><span class="pre">AmandroidSocket</span></code>.</p>
-<div class="highlight-scala"><div class="highlight"><pre><span class="k">val</span> <span class="n">listener</span> <span class="k">=</span> <span class="k">new</span> <span class="nc">PasswordTrackingListener</span><span class="o">(</span><span class="n">apkFileUri</span><span class="o">,</span> <span class="n">app_info</span><span class="o">)</span> <span class="c1">// creating a special AmandroidSocketListener</span>
+<div class="highlight-scala"><div class="highlight"><pre><span></span><span class="k">val</span> <span class="n">listener</span> <span class="k">=</span> <span class="k">new</span> <span class="nc">PasswordTrackingListener</span><span class="o">(</span><span class="n">apkFileUri</span><span class="o">,</span> <span class="n">app_info</span><span class="o">)</span> <span class="c1">// creating a special AmandroidSocketListener</span>
 <span class="n">socket</span><span class="o">.</span><span class="n">plugListener</span><span class="o">(</span><span class="n">listener</span><span class="o">)</span>
 </pre></div>
 </div>
@@ -233,17 +233,17 @@ As an example, for the <code class="docutils literal"><span class="pre">intent</
 where the <code class="docutils literal"><span class="pre">source</span></code> is any incoming <code class="docutils literal"><span class="pre">intent</span></code> to a public <code class="docutils literal"><span class="pre">Activity</span></code>,
 while the <code class="docutils literal"><span class="pre">sink</span></code> can be the same as that in <code class="docutils literal"><span class="pre">data</span> <span class="pre">leak</span> <span class="pre">detection</span></code> plugin.</p>
 <p>Below is an example of how we create a source-sink manager for the <code class="docutils literal"><span class="pre">password</span> <span class="pre">leakage</span> <span class="pre">detection</span></code> plugin.</p>
-<div class="highlight-scala"><div class="highlight"><pre><span class="k">val</span> <span class="n">ssm</span> <span class="k">=</span> <span class="k">new</span> <span class="nc">PasswordSourceAndSinkManager</span><span class="o">(</span><span class="n">app_info</span><span class="o">.,</span> <span class="o">...,</span> <span class="nc">AndroidGlobalConfig</span><span class="o">.</span><span class="nc">PasswordSinkFilePath</span><span class="o">)</span> <span class="c1">// PasswordSinkFilePath is a file containing a list of sinks</span>
+<div class="highlight-scala"><div class="highlight"><pre><span></span><span class="k">val</span> <span class="n">ssm</span> <span class="k">=</span> <span class="k">new</span> <span class="nc">PasswordSourceAndSinkManager</span><span class="o">(</span><span class="n">app_info</span><span class="o">.,</span> <span class="o">...,</span> <span class="nc">AndroidGlobalConfig</span><span class="o">.</span><span class="nc">PasswordSinkFilePath</span><span class="o">)</span> <span class="c1">// PasswordSinkFilePath is a file containing a list of sinks</span>
 </pre></div>
 </div>
 <p>Now you are ready to run the analysis via the socket after giving it the newly created source-sink manager.
 Below is an example of how we do it for <code class="docutils literal"><span class="pre">password</span> <span class="pre">leakage</span> <span class="pre">detection</span></code> plugin with certain flags as we wish.</p>
-<div class="highlight-scala"><div class="highlight"><pre><span class="n">socket</span><span class="o">.</span><span class="n">runWithDDA</span><span class="o">(</span><span class="n">ssm</span><span class="o">,</span> <span class="kc">false</span><span class="o">,</span> <span class="kc">true</span><span class="o">)</span> <span class="c1">// The second param indicates whether to process only public components while the third param is to on/off parallel processing</span>
+<div class="highlight-scala"><div class="highlight"><pre><span></span><span class="n">socket</span><span class="o">.</span><span class="n">runWithDDA</span><span class="o">(</span><span class="n">ssm</span><span class="o">,</span> <span class="kc">false</span><span class="o">,</span> <span class="kc">true</span><span class="o">)</span> <span class="c1">// The second param indicates whether to process only public components while the third param is to on/off parallel processing</span>
 </pre></div>
 </div>
 <p>For the sake of concreteness, let us now present a more complete code snippet from an example plugin. Below is an excerpt of the <code class="docutils literal"><span class="pre">main</span></code> method of the <code class="docutils literal"><span class="pre">password</span> <span class="pre">leakage</span> <span class="pre">detection</span></code> plugin.
 Note that this contains many of the aforementioned pieces of code.</p>
-<div class="highlight-scala"><div class="highlight"><pre><span class="k">def</span> <span class="n">main</span><span class="o">(</span><span class="n">args</span><span class="k">:</span> <span class="kt">Array</span><span class="o">[</span><span class="kt">String</span><span class="o">])</span><span class="k">:</span> <span class="kt">Unit</span> <span class="o">=</span> <span class="o">{</span>
+<div class="highlight-scala"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="n">main</span><span class="o">(</span><span class="n">args</span><span class="k">:</span> <span class="kt">Array</span><span class="o">[</span><span class="kt">String</span><span class="o">])</span><span class="k">:</span> <span class="kt">Unit</span> <span class="o">=</span> <span class="o">{</span>
    <span class="k">if</span><span class="o">(</span><span class="n">args</span><span class="o">.</span><span class="n">size</span> <span class="o">!=</span> <span class="mi">2</span><span class="o">){</span>
         <span class="nc">System</span><span class="o">.</span><span class="n">err</span><span class="o">.</span><span class="n">print</span><span class="o">(</span><span class="s">&quot;Usage: source_path output_path&quot;</span><span class="o">)</span>
         <span class="k">return</span>
@@ -278,7 +278,7 @@ Note that this contains many of the aforementioned pieces of code.</p>
 <p>At the end of the analysis, you can collect the results from the <code class="docutils literal"><span class="pre">AppCenter</span></code>. Note that this can be done in many ways from multiple locations.
 As one possible way, you can implement the <code class="docutils literal"><span class="pre">onAnalysisSuccess</span></code> method of the <code class="docutils literal"><span class="pre">AmandroidSocketListener</span></code> to serve this purpose.
 Below is such an example from the <code class="docutils literal"><span class="pre">intent</span> <span class="pre">injection</span> <span class="pre">detection</span></code> plugin.</p>
-<div class="highlight-scala"><div class="highlight"><pre><span class="k">def</span> <span class="n">onAnalysisSuccess</span> <span class="k">:</span> <span class="kt">Unit</span> <span class="o">=</span> <span class="o">{</span>
+<div class="highlight-scala"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="n">onAnalysisSuccess</span> <span class="k">:</span> <span class="kt">Unit</span> <span class="o">=</span> <span class="o">{</span>
     <span class="k">if</span><span class="o">(</span><span class="nc">AppCenter</span><span class="o">.</span><span class="n">getTaintAnalysisResults</span><span class="o">.</span><span class="n">exists</span><span class="o">(...)){</span>
        <span class="nc">IntentInjectionCounter</span><span class="o">.</span><span class="n">havePath</span> <span class="o">+=</span> <span class="mi">1</span> <span class="c1">// counting the number of taint paths</span>
     <span class="o">}</span>
@@ -298,7 +298,7 @@ you can again use <code class="docutils literal"><span class="pre">AmandroidSock
 This contains some of aforementioned pieces of code. One notable difference is of using <code class="docutils literal"><span class="pre">socket.runWithoutDDA</span></code> instead of <code class="docutils literal"><span class="pre">socket.runWithDDA</span></code>.
 Unlike the previous example, here the specific analysis (detecting misuse of a crypto-API) is done after we execute the socket (i.e. <code class="docutils literal"><span class="pre">socket.runWithoutDDA</span></code>).
 Another difference is here we collect the analysis results inside the <code class="docutils literal"><span class="pre">main</span></code> method instead of <code class="docutils literal"><span class="pre">onAnalysisSuccess</span></code> method of the <code class="docutils literal"><span class="pre">AmandroidSocketListener</span></code>.</p>
-<div class="highlight-scala"><div class="highlight"><pre><span class="k">def</span> <span class="n">main</span><span class="o">(</span><span class="n">args</span><span class="k">:</span> <span class="kt">Array</span><span class="o">[</span><span class="kt">String</span><span class="o">])</span><span class="k">:</span> <span class="kt">Unit</span> <span class="o">=</span> <span class="o">{</span>
+<div class="highlight-scala"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="n">main</span><span class="o">(</span><span class="n">args</span><span class="k">:</span> <span class="kt">Array</span><span class="o">[</span><span class="kt">String</span><span class="o">])</span><span class="k">:</span> <span class="kt">Unit</span> <span class="o">=</span> <span class="o">{</span>
    <span class="k">if</span><span class="o">(</span><span class="n">args</span><span class="o">.</span><span class="n">size</span> <span class="o">!=</span> <span class="mi">2</span><span class="o">){</span>
       <span class="nc">System</span><span class="o">.</span><span class="n">err</span><span class="o">.</span><span class="n">print</span><span class="o">(</span><span class="s">&quot;Usage: source_path output_path&quot;</span><span class="o">)</span>
       <span class="k">return</span>
@@ -384,9 +384,6 @@ from which AppInfoCollector was not able to discover any <code class="docutils l
       <input type="hidden" name="check_keywords" value="yes" />
       <input type="hidden" name="area" value="default" />
     </form>
-    <p class="searchtip" style="font-size: 90%">
-    Enter search terms or a module, class or function name.
-    </p>
 </div>
 <script type="text/javascript">$('#searchbox').show(0);</script>
         </div>
@@ -410,7 +407,7 @@ from which AppInfoCollector was not able to discover any <code class="docutils l
     </div>
     <div class="footer" role="contentinfo">
         &copy; Copyright 2014, Fengguo Wei &amp; Sankardas Roy.
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.3.1.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.4.
     </div>
   </body>
 </html>

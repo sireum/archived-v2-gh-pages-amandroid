@@ -28,11 +28,11 @@
         </head>
         <body class="value">
       <div id="definition">
-        <img src="../../../../lib/package_big.png" />
+        <img alt="Package" src="../../../../lib/package_big.png" />
         <p id="owner"><a href="../../../package.html" class="extype" name="org">org</a>.<a href="../../package.html" class="extype" name="org.sireum">sireum</a>.<a href="../package.html" class="extype" name="org.sireum.amandroid">amandroid</a></p>
         <h1>appInfo</h1><span class="permalink">
       <a href="../../../../index.html#org.sireum.amandroid.appInfo.package" title="Permalink" target="_top">
-        <img src="../../../../lib/permalink.png" />
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       </div>
@@ -66,23 +66,91 @@
 
         <div id="types" class="types members">
               <h3>Type Members</h3>
-              <ol><li name="org.sireum.amandroid.appInfo.AppInfoCollector" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="AppInfoCollectorextendsAnyRef"></a>
-      <a id="AppInfoCollector:AppInfoCollector"></a>
+              <ol><li name="org.sireum.amandroid.appInfo.ApkCertificate" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ApkCertificateextendsProductwithSerializable"></a>
+      <a id="ApkCertificate:ApkCertificate"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
-        <span class="kind">class</span>
+        <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="AppInfoCollector.html"><span class="name">AppInfoCollector</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+        <a href="ApkCertificate.html"><span class="name">ApkCertificate</span></a><span class="params">(<span name="typ">typ: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="version">version: <span class="extype" name="scala.Int">Int</span></span>, <span name="serialNumber">serialNumber: <span class="extype" name="scala.BigInt">BigInt</span></span>, <span name="owner">owner: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="issuer">issuer: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="validity">validity: <a href="ApkCertificateValidity.html" class="extype" name="org.sireum.amandroid.appInfo.ApkCertificateValidity">ApkCertificateValidity</a></span>, <span name="pubkey">pubkey: <a href="ApkPublicKey.html" class="extype" name="org.sireum.amandroid.appInfo.ApkPublicKey">ApkPublicKey</a></span>, <span name="certSig">certSig: <a href="ApkCertificateSignature.html" class="extype" name="org.sireum.amandroid.appInfo.ApkCertificateSignature">ApkCertificateSignature</a></span>, <span name="fps">fps: <a href="ApkCertificateFingerprints.html" class="extype" name="org.sireum.amandroid.appInfo.ApkCertificateFingerprints">ApkCertificateFingerprints</a></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../index.html#org.sireum.amandroid.appInfo.package@AppInfoCollectorextendsAnyRef" title="Permalink" target="_top">
-        <img src="../../../../lib/permalink.png" />
+      <a href="../../../../index.html#org.sireum.amandroid.appInfo.package@ApkCertificateextendsProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      <p class="shortcomment cmt">It takes the apkUri and outputDir as input parameters.</p><div class="fullcomment"><div class="comment cmt"><p>It takes the apkUri and outputDir as input parameters.</p><p>adapted from Steven Arzt of the FlowDroid group</p></div></div>
+      
+    </li><li name="org.sireum.amandroid.appInfo.ApkCertificateFingerprints" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ApkCertificateFingerprintsextendsProductwithSerializable"></a>
+      <a id="ApkCertificateFingerprints:ApkCertificateFingerprints"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="ApkCertificateFingerprints.html"><span class="name">ApkCertificateFingerprints</span></a><span class="params">(<span name="md5fp">md5fp: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="sha1fp">sha1fp: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="sha256fp">sha256fp: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#org.sireum.amandroid.appInfo.package@ApkCertificateFingerprintsextendsProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.amandroid.appInfo.ApkCertificateSignature" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ApkCertificateSignatureextendsProductwithSerializable"></a>
+      <a id="ApkCertificateSignature:ApkCertificateSignature"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="ApkCertificateSignature.html"><span class="name">ApkCertificateSignature</span></a><span class="params">(<span name="algName">algName: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="oid">oid: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="hexdata">hexdata: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#org.sireum.amandroid.appInfo.package@ApkCertificateSignatureextendsProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.amandroid.appInfo.ApkCertificateValidity" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ApkCertificateValidityextendsProductwithSerializable"></a>
+      <a id="ApkCertificateValidity:ApkCertificateValidity"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="ApkCertificateValidity.html"><span class="name">ApkCertificateValidity</span></a><span class="params">(<span name="notBefore">notBefore: <span class="extype" name="java.util.Date">Date</span></span>, <span name="notAfter">notAfter: <span class="extype" name="java.util.Date">Date</span></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#org.sireum.amandroid.appInfo.package@ApkCertificateValidityextendsProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.amandroid.appInfo.ApkPublicKey" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ApkPublicKeyextendsProductwithSerializable"></a>
+      <a id="ApkPublicKey:ApkPublicKey"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="ApkPublicKey.html"><span class="name">ApkPublicKey</span></a><span class="params">(<span name="algName">algName: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="exponent">exponent: <span class="extype" name="scala.BigInt">BigInt</span></span>, <span name="modulus">modulus: <span class="extype" name="scala.BigInt">BigInt</span></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#org.sireum.amandroid.appInfo.package@ApkPublicKeyextendsProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
     </li><li name="org.sireum.amandroid.appInfo.ReachableInfoCollector" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="ReachableInfoCollectorextendsAnyRef"></a>
       <a id="ReachableInfoCollector:ReachableInfoCollector"></a>
@@ -96,7 +164,7 @@
       </span>
       </h4><span class="permalink">
       <a href="../../../../index.html#org.sireum.amandroid.appInfo.package@ReachableInfoCollectorextendsAnyRef" title="Permalink" target="_top">
-        <img src="../../../../lib/permalink.png" />
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <p class="shortcomment cmt">Analyzes the classes in the APK file to find custom implementations of the
@@ -109,7 +177,24 @@ well-known Android callback and handler interfaces.</p><p>Adapted Steven Arzt (F
 
         <div id="values" class="values members">
               <h3>Value Members</h3>
-              <ol><li name="org.sireum.amandroid.appInfo.AppInfoCollector" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+              <ol><li name="org.sireum.amandroid.appInfo.ApkCertificateReader" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ApkCertificateReader"></a>
+      <a id="ApkCertificateReader:ApkCertificateReader"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="ApkCertificateReader$.html"><span class="name">ApkCertificateReader</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#org.sireum.amandroid.appInfo.package@ApkCertificateReader" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.amandroid.appInfo.AppInfoCollector" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="AppInfoCollector"></a>
       <a id="AppInfoCollector:AppInfoCollector"></a>
       <h4 class="signature">
@@ -122,10 +207,10 @@ well-known Android callback and handler interfaces.</p><p>Adapted Steven Arzt (F
       </span>
       </h4><span class="permalink">
       <a href="../../../../index.html#org.sireum.amandroid.appInfo.package@AppInfoCollector" title="Permalink" target="_top">
-        <img src="../../../../lib/permalink.png" />
+        <img src="../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
+      <p class="shortcomment cmt">adapted from Steven Arzt of the FlowDroid group</p>
     </li></ol>
             </div>
 

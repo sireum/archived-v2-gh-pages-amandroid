@@ -28,13 +28,13 @@
         </head>
         <body class="type">
       <div id="definition">
-        <img src="../../../../../../lib/class_big.png" />
+        <img alt="Class" src="../../../../../../lib/class_big.png" />
         <p id="owner"><a href="../../../../../package.html" class="extype" name="org">org</a>.<a href="../../../../package.html" class="extype" name="org.sireum">sireum</a>.<a href="../../../package.html" class="extype" name="org.sireum.jawa">jawa</a>.<a href="../../package.html" class="extype" name="org.sireum.jawa.alir">alir</a>.<a href="../package.html" class="extype" name="org.sireum.jawa.alir.pta">pta</a>.<a href="package.html" class="extype" name="org.sireum.jawa.alir.pta.reachingFactsAnalysis">reachingFactsAnalysis</a></p>
         <h1>RFAFact</h1><h3><span class="morelinks"><div>Related Doc:
             <a href="package.html" class="extype" name="org.sireum.jawa.alir.pta.reachingFactsAnalysis">package reachingFactsAnalysis</a>
           </div></span></h3><span class="permalink">
       <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.reachingFactsAnalysis.RFAFact" title="Permalink" target="_top">
-        <img src="../../../../../../lib/permalink.png" />
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       </div>
@@ -45,7 +45,7 @@
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <span class="name">RFAFact</span><span class="params">(<span name="s">s: <span class="extype" name="org.sireum.alir.Slot">Slot</span></span>, <span name="v">v: <a href="../Instance.html" class="extype" name="org.sireum.jawa.alir.pta.Instance">Instance</a></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+        <span class="name">RFAFact</span><span class="params">(<span name="slot">slot: <span class="extype" name="scala.Int">Int</span></span>, <span name="ins">ins: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4>
       
@@ -77,7 +77,6 @@
               <li class="hideall out"><span>Hide All</span></li>
               <li class="showall in"><span>Show all</span></li>
             </ol>
-            <a href="http://docs.scala-lang.org/overviews/scaladoc/usage.html#members" target="_blank">Learn more about member selection</a>
           </div>
         <div id="visbl">
             <span class="filtertype">Visibility</span>
@@ -90,7 +89,7 @@
         <div id="constructors" class="members">
               <h3>Instance Constructors</h3>
               <ol><li name="org.sireum.jawa.alir.pta.reachingFactsAnalysis.RFAFact#&lt;init&gt;" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="&lt;init&gt;(s:org.sireum.alir.Slot,v:org.sireum.jawa.alir.pta.Instance):org.sireum.jawa.alir.pta.reachingFactsAnalysis.RFAFact"></a>
+      <a id="&lt;init&gt;(s:org.sireum.jawa.alir.pta.PTASlot,v:org.sireum.jawa.alir.pta.Instance)(implicitfactory:org.sireum.jawa.alir.pta.reachingFactsAnalysis.RFAFactFactory):org.sireum.jawa.alir.pta.reachingFactsAnalysis.RFAFact"></a>
       <a id="&lt;init&gt;:RFAFact"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -98,11 +97,28 @@
         <span class="kind">new</span>
       </span>
       <span class="symbol">
-        <span class="name">RFAFact</span><span class="params">(<span name="s">s: <span class="extype" name="org.sireum.alir.Slot">Slot</span></span>, <span name="v">v: <a href="../Instance.html" class="extype" name="org.sireum.jawa.alir.pta.Instance">Instance</a></span>)</span>
+        <span class="name">RFAFact</span><span class="params">(<span name="s">s: <a href="../PTASlot.html" class="extype" name="org.sireum.jawa.alir.pta.PTASlot">PTASlot</a></span>, <span name="v">v: <a href="../Instance.html" class="extype" name="org.sireum.jawa.alir.pta.Instance">Instance</a></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="factory">factory: <a href="RFAFactFactory.html" class="extype" name="org.sireum.jawa.alir.pta.reachingFactsAnalysis.RFAFactFactory">RFAFactFactory</a></span>)</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.reachingFactsAnalysis.RFAFact@&lt;init&gt;(s:org.sireum.alir.Slot,v:org.sireum.jawa.alir.pta.Instance):org.sireum.jawa.alir.pta.reachingFactsAnalysis.RFAFact" title="Permalink" target="_top">
-        <img src="../../../../../../lib/permalink.png" />
+      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.reachingFactsAnalysis.RFAFact@&lt;init&gt;(s:org.sireum.jawa.alir.pta.PTASlot,v:org.sireum.jawa.alir.pta.Instance)(implicitfactory:org.sireum.jawa.alir.pta.reachingFactsAnalysis.RFAFactFactory):org.sireum.jawa.alir.pta.reachingFactsAnalysis.RFAFact" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.jawa.alir.pta.reachingFactsAnalysis.RFAFact#&lt;init&gt;" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="&lt;init&gt;(slot:Int,ins:Int):org.sireum.jawa.alir.pta.reachingFactsAnalysis.RFAFact"></a>
+      <a id="&lt;init&gt;:RFAFact"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">new</span>
+      </span>
+      <span class="symbol">
+        <span class="name">RFAFact</span><span class="params">(<span name="slot">slot: <span class="extype" name="scala.Int">Int</span></span>, <span name="ins">ins: <span class="extype" name="scala.Int">Int</span></span>)</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.reachingFactsAnalysis.RFAFact@&lt;init&gt;(slot:Int,ins:Int):org.sireum.jawa.alir.pta.reachingFactsAnalysis.RFAFact" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       
@@ -128,7 +144,7 @@
       </span>
       </h4><span class="permalink">
       <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.reachingFactsAnalysis.RFAFact@!=(x$1:Any):Boolean" title="Permalink" target="_top">
-        <img src="../../../../../../lib/permalink.png" />
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
@@ -145,7 +161,7 @@
       </span>
       </h4><span class="permalink">
       <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.reachingFactsAnalysis.RFAFact@##():Int" title="Permalink" target="_top">
-        <img src="../../../../../../lib/permalink.png" />
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
@@ -162,7 +178,7 @@
       </span>
       </h4><span class="permalink">
       <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.reachingFactsAnalysis.RFAFact@==(x$1:Any):Boolean" title="Permalink" target="_top">
-        <img src="../../../../../../lib/permalink.png" />
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
@@ -179,7 +195,7 @@
       </span>
       </h4><span class="permalink">
       <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.reachingFactsAnalysis.RFAFact@asInstanceOf[T0]:T0" title="Permalink" target="_top">
-        <img src="../../../../../../lib/permalink.png" />
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
@@ -196,7 +212,7 @@
       </span>
       </h4><span class="permalink">
       <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.reachingFactsAnalysis.RFAFact@clone():Object" title="Permalink" target="_top">
-        <img src="../../../../../../lib/permalink.png" />
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
@@ -219,7 +235,7 @@
       </span>
       </h4><span class="permalink">
       <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.reachingFactsAnalysis.RFAFact@eq(x$1:AnyRef):Boolean" title="Permalink" target="_top">
-        <img src="../../../../../../lib/permalink.png" />
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
@@ -236,7 +252,7 @@
       </span>
       </h4><span class="permalink">
       <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.reachingFactsAnalysis.RFAFact@finalize():Unit" title="Permalink" target="_top">
-        <img src="../../../../../../lib/permalink.png" />
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
@@ -259,10 +275,27 @@
       </span>
       </h4><span class="permalink">
       <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.reachingFactsAnalysis.RFAFact@getClass():Class[_]" title="Permalink" target="_top">
-        <img src="../../../../../../lib/permalink.png" />
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="org.sireum.jawa.alir.pta.reachingFactsAnalysis.RFAFact#ins" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ins:Int"></a>
+      <a id="ins:Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ins</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.reachingFactsAnalysis.RFAFact@ins:Int" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
     </li><li name="scala.Any#isInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="isInstanceOf[T0]:Boolean"></a>
       <a id="isInstanceOf[T0]:Boolean"></a>
@@ -276,7 +309,7 @@
       </span>
       </h4><span class="permalink">
       <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.reachingFactsAnalysis.RFAFact@isInstanceOf[T0]:Boolean" title="Permalink" target="_top">
-        <img src="../../../../../../lib/permalink.png" />
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
@@ -293,7 +326,7 @@
       </span>
       </h4><span class="permalink">
       <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.reachingFactsAnalysis.RFAFact@ne(x$1:AnyRef):Boolean" title="Permalink" target="_top">
-        <img src="../../../../../../lib/permalink.png" />
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
@@ -310,7 +343,7 @@
       </span>
       </h4><span class="permalink">
       <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.reachingFactsAnalysis.RFAFact@notify():Unit" title="Permalink" target="_top">
-        <img src="../../../../../../lib/permalink.png" />
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
@@ -327,24 +360,41 @@
       </span>
       </h4><span class="permalink">
       <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.reachingFactsAnalysis.RFAFact@notifyAll():Unit" title="Permalink" target="_top">
-        <img src="../../../../../../lib/permalink.png" />
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="org.sireum.jawa.alir.pta.reachingFactsAnalysis.RFAFact#s" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="s:org.sireum.alir.Slot"></a>
-      <a id="s:Slot"></a>
+      <a id="s(implicitfactory:org.sireum.jawa.alir.pta.reachingFactsAnalysis.RFAFactFactory):org.sireum.jawa.alir.pta.PTASlot"></a>
+      <a id="s(RFAFactFactory):PTASlot"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">s</span><span class="params">(<span class="implicit">implicit </span><span name="factory">factory: <a href="RFAFactFactory.html" class="extype" name="org.sireum.jawa.alir.pta.reachingFactsAnalysis.RFAFactFactory">RFAFactFactory</a></span>)</span><span class="result">: <a href="../PTASlot.html" class="extype" name="org.sireum.jawa.alir.pta.PTASlot">PTASlot</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.reachingFactsAnalysis.RFAFact@s(implicitfactory:org.sireum.jawa.alir.pta.reachingFactsAnalysis.RFAFactFactory):org.sireum.jawa.alir.pta.PTASlot" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.jawa.alir.pta.reachingFactsAnalysis.RFAFact#slot" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="slot:Int"></a>
+      <a id="slot:Int"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">val</span>
       </span>
       <span class="symbol">
-        <span class="name">s</span><span class="result">: <span class="extype" name="org.sireum.alir.Slot">Slot</span></span>
+        <span class="name">slot</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.reachingFactsAnalysis.RFAFact@s:org.sireum.alir.Slot" title="Permalink" target="_top">
-        <img src="../../../../../../lib/permalink.png" />
+      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.reachingFactsAnalysis.RFAFact@slot:Int" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       
@@ -361,24 +411,24 @@
       </span>
       </h4><span class="permalink">
       <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.reachingFactsAnalysis.RFAFact@synchronized[T0](x$1:=&gt;T0):T0" title="Permalink" target="_top">
-        <img src="../../../../../../lib/permalink.png" />
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="org.sireum.jawa.alir.pta.reachingFactsAnalysis.RFAFact#v" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="v:org.sireum.jawa.alir.pta.Instance"></a>
-      <a id="v:Instance"></a>
+      <a id="v(implicitfactory:org.sireum.jawa.alir.pta.reachingFactsAnalysis.RFAFactFactory):org.sireum.jawa.alir.pta.Instance"></a>
+      <a id="v(RFAFactFactory):Instance"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
-        <span class="kind">val</span>
+        <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">v</span><span class="result">: <a href="../Instance.html" class="extype" name="org.sireum.jawa.alir.pta.Instance">Instance</a></span>
+        <span class="name">v</span><span class="params">(<span class="implicit">implicit </span><span name="factory">factory: <a href="RFAFactFactory.html" class="extype" name="org.sireum.jawa.alir.pta.reachingFactsAnalysis.RFAFactFactory">RFAFactFactory</a></span>)</span><span class="result">: <a href="../Instance.html" class="extype" name="org.sireum.jawa.alir.pta.Instance">Instance</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.reachingFactsAnalysis.RFAFact@v:org.sireum.jawa.alir.pta.Instance" title="Permalink" target="_top">
-        <img src="../../../../../../lib/permalink.png" />
+      <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.reachingFactsAnalysis.RFAFact@v(implicitfactory:org.sireum.jawa.alir.pta.reachingFactsAnalysis.RFAFactFactory):org.sireum.jawa.alir.pta.Instance" title="Permalink" target="_top">
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       
@@ -395,7 +445,7 @@
       </span>
       </h4><span class="permalink">
       <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.reachingFactsAnalysis.RFAFact@wait():Unit" title="Permalink" target="_top">
-        <img src="../../../../../../lib/permalink.png" />
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
@@ -418,7 +468,7 @@
       </span>
       </h4><span class="permalink">
       <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.reachingFactsAnalysis.RFAFact@wait(x$1:Long,x$2:Int):Unit" title="Permalink" target="_top">
-        <img src="../../../../../../lib/permalink.png" />
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
@@ -441,7 +491,7 @@
       </span>
       </h4><span class="permalink">
       <a href="../../../../../../index.html#org.sireum.jawa.alir.pta.reachingFactsAnalysis.RFAFact@wait(x$1:Long):Unit" title="Permalink" target="_top">
-        <img src="../../../../../../lib/permalink.png" />
+        <img src="../../../../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>

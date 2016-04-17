@@ -1,0 +1,374 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <title>interactive - Sireum-Amandroid-Api-Doc - org.sireum.jawa.sjc.interactive</title>
+          <meta name="description" content="interactive - Sireum - Amandroid - Api - Doc - org.sireum.jawa.sjc.interactive" />
+          <meta name="keywords" content="interactive Sireum Amandroid Api Doc org.sireum.jawa.sjc.interactive" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../../../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../../../../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../../../../index.html';
+            var hash = 'org.sireum.jawa.sjc.interactive.package';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="value">
+      <div id="definition">
+        <img alt="Package" src="../../../../../lib/package_big.png" />
+        <p id="owner"><a href="../../../../package.html" class="extype" name="org">org</a>.<a href="../../../package.html" class="extype" name="org.sireum">sireum</a>.<a href="../../package.html" class="extype" name="org.sireum.jawa">jawa</a>.<a href="../package.html" class="extype" name="org.sireum.jawa.sjc">sjc</a></p>
+        <h1>interactive</h1><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.sjc.interactive.package" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <span class="name">interactive</span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        
+        
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="org.sireum.jawa.sjc.interactive.CompilerControl" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="CompilerControlextendsAnyRef"></a>
+      <a id="CompilerControl:CompilerControl"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="CompilerControl.html"><span class="name">CompilerControl</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.sjc.interactive.package@CompilerControlextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Interface of interactive compiler to a client such as an IDE
+ The model the presentation compiler consists of the following parts:</p><div class="fullcomment"><div class="comment cmt"><p>Interface of interactive compiler to a client such as an IDE
+ The model the presentation compiler consists of the following parts:</p><p> unitOfFile: The map from sourcefiles to loaded units. A sourcefile/unit is loaded if it occurs in that map.</p><p> manipulated by: removeUnitOf, reloadSources.</p><p> A call to reloadSources will add the given sources to the loaded units, and
+ start a new background compiler pass to compile all loaded units (with the indicated sources first).
+ The background compiler thread can be interrupted each time an AST node is
+ completely resolved in the following ways:</p><ol class="decimal"><li>by a new call to reloadSources. This starts a new background compiler pass.
+ 2. by a call to askScopeCompletion, askToDoFirst, askLinkPos, askLastType.
+ 3. by raising an exception in the scheduler.
+ 4. by passing a high-priority action wrapped in ask { ... }.</li></ol><p> Actions under 1-2 can themselves be interrupted.
+ High-priority actions under 4 cannot; they always run to completion.
+ So these high-priority actions should to be short.</p><p> Normally, an interrupted action continues after the interrupting action is finished.
+ However, if the interrupting action created a new run, the interrupted
+ action is aborted. If there's an outstanding response, it will be set to
+ a Right value with a FreshRunReq exception.
+</p></div></div>
+    </li><li name="org.sireum.jawa.sjc.interactive.CompilerLifecycleManagement" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="CompilerLifecycleManagementextendsAnyRef"></a>
+      <a id="CompilerLifecycleManagement:CompilerLifecycleManagement"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="CompilerLifecycleManagement.html"><span class="name">CompilerLifecycleManagement</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.sjc.interactive.package@CompilerLifecycleManagementextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.jawa.sjc.interactive.FreshRunReq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="FreshRunReqextendsThrowablewithControlThrowable"></a>
+      <a id="FreshRunReq:FreshRunReq"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="FreshRunReq.html"><span class="name">FreshRunReq</span></a><span class="result"> extends <span class="extype" name="scala.Throwable">Throwable</span> with <a href="../util/ControlThrowable.html" class="extype" name="org.sireum.jawa.sjc.util.ControlThrowable">ControlThrowable</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.sjc.interactive.package@FreshRunReqextendsThrowablewithControlThrowable" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Signals a request for a fresh background compiler run.</p><div class="fullcomment"><div class="comment cmt"><p>Signals a request for a fresh background compiler run.
+ Note: The object has to stay top-level so that the PresentationCompilerThread may access it.
+</p></div></div>
+    </li><li name="org.sireum.jawa.sjc.interactive.Global" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="GlobalextendsRichCompilationUnitswithCompilerLifecycleManagementwithCompilerControlwithJawaResolver"></a>
+      <a id="Global:Global"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="Global.html"><span class="name">Global</span></a><span class="result"> extends <a href="RichCompilationUnits.html" class="extype" name="org.sireum.jawa.sjc.interactive.RichCompilationUnits">RichCompilationUnits</a> with <a href="CompilerLifecycleManagement.html" class="extype" name="org.sireum.jawa.sjc.interactive.CompilerLifecycleManagement">CompilerLifecycleManagement</a> with <a href="CompilerControl.html" class="extype" name="org.sireum.jawa.sjc.interactive.CompilerControl">CompilerControl</a> with <a href="JawaResolver.html" class="extype" name="org.sireum.jawa.sjc.interactive.JawaResolver">JawaResolver</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.sjc.interactive.package@GlobalextendsRichCompilationUnitswithCompilerLifecycleManagementwithCompilerControlwithJawaResolver" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">This is the interactive compiler of Jawa.</p>
+    </li><li name="org.sireum.jawa.sjc.interactive.InteractiveReporter" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="InteractiveReporterextendsReporterImpl"></a>
+      <a id="InteractiveReporter:InteractiveReporter"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="InteractiveReporter.html"><span class="name">InteractiveReporter</span></a><span class="result"> extends <a href="../../ReporterImpl.html" class="extype" name="org.sireum.jawa.ReporterImpl">ReporterImpl</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.sjc.interactive.package@InteractiveReporterextendsReporterImpl" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.jawa.sjc.interactive.JawaDelta" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="JawaDeltaextendsProductwithSerializable"></a>
+      <a id="JawaDelta:JawaDelta"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="JawaDelta.html"><span class="name">JawaDelta</span></a><span class="params">(<span name="changedOrDeletedCUFiles">changedOrDeletedCUFiles: <span class="extype" name="org.sireum.util.ISet">ISet</span>[<a href="../../io/AbstractFile.html" class="extype" name="org.sireum.jawa.io.AbstractFile">AbstractFile</a>]</span>, <span name="changedOrAddedCUs">changedOrAddedCUs: <span class="extype" name="org.sireum.util.ISeq">ISeq</span>[<a href="../parser/CompilationUnit.html" class="extype" name="org.sireum.jawa.sjc.parser.CompilationUnit">CompilationUnit</a>]</span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.sjc.interactive.package@JawaDeltaextendsProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.jawa.sjc.interactive.JawaResolver" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="JawaResolverextendsJavaKnowledge"></a>
+      <a id="JawaResolver:JawaResolver"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="JawaResolver.html"><span class="name">JawaResolver</span></a><span class="result"> extends <a href="../../JavaKnowledge.html" class="extype" name="org.sireum.jawa.JavaKnowledge">JavaKnowledge</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.sjc.interactive.package@JawaResolverextendsJavaKnowledge" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">this object collects info from the symbol table and builds Global, JawaClass, and JawaMethod
+</p>
+    </li><li name="org.sireum.jawa.sjc.interactive.MissingResponse" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="MissingResponseextendsException"></a>
+      <a id="MissingResponse:MissingResponse"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="MissingResponse.html"><span class="name">MissingResponse</span></a><span class="result"> extends <span class="extype" name="scala.Exception">Exception</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.sjc.interactive.package@MissingResponseextendsException" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.jawa.sjc.interactive.NoSuchUnitError" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="NoSuchUnitErrorextendsException"></a>
+      <a id="NoSuchUnitError:NoSuchUnitError"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="NoSuchUnitError.html"><span class="name">NoSuchUnitError</span></a><span class="result"> extends <span class="extype" name="scala.Exception">Exception</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.sjc.interactive.package@NoSuchUnitErrorextendsException" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.jawa.sjc.interactive.PresentationCompilerThread" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="PresentationCompilerThreadextendsThread"></a>
+      <a id="PresentationCompilerThread:PresentationCompilerThread"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="PresentationCompilerThread.html"><span class="name">PresentationCompilerThread</span></a><span class="result"> extends <span class="extype" name="java.lang.Thread">Thread</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.sjc.interactive.package@PresentationCompilerThreadextendsThread" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">A presentation compiler thread.</p><div class="fullcomment"><div class="comment cmt"><p>A presentation compiler thread. This is a lightweight class, delegating most
+ of its functionality to the compiler instance.</p></div></div>
+    </li><li name="org.sireum.jawa.sjc.interactive.Response" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="Response[T]extendsAnyRef"></a>
+      <a id="Response[T]:Response[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="Response.html"><span class="name">Response</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.sjc.interactive.package@Response[T]extendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Typical interaction, given a predicate &lt;user-input&gt;, a function &lt;display&gt;,
+ and an exception handler &lt;handle&gt;:</p><div class="fullcomment"><div class="comment cmt"><p>Typical interaction, given a predicate &lt;user-input&gt;, a function &lt;display&gt;,
+ and an exception handler &lt;handle&gt;:</p><p> val TIMEOUT = 100 // (milliseconds) or something like that
+ val r = new Response()
+ while (!r.isComplete &amp;&amp; !r.isCancelled) {
+   if (&lt;user-input&gt;) r.cancel()
+   else r.get(TIMEOUT) match {
+     case Some(Left(data)) =&gt; &lt;display&gt;(data)
+     case Some(Right(exc)) =&gt; &lt;handle&gt;(exc)
+     case None =&gt;
+   }
+ }
+</p></div></div>
+    </li><li name="org.sireum.jawa.sjc.interactive.RichCompilationUnits" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="RichCompilationUnitsextendsAnyRef"></a>
+      <a id="RichCompilationUnits:RichCompilationUnits"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="RichCompilationUnits.html"><span class="name">RichCompilationUnits</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.sjc.interactive.package@RichCompilationUnitsextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li></ol>
+            </div>
+
+        
+
+        <div id="values" class="values members">
+              <h3>Value Members</h3>
+              <ol><li name="org.sireum.jawa.sjc.interactive.CancelException" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="CancelException"></a>
+      <a id="CancelException:CancelException"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="CancelException$.html"><span class="name">CancelException</span></a><span class="result"> extends <span class="extype" name="scala.Exception">Exception</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.sjc.interactive.package@CancelException" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="org.sireum.jawa.sjc.interactive.ShutdownReq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ShutdownReq"></a>
+      <a id="ShutdownReq:ShutdownReq"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="ShutdownReq$.html"><span class="name">ShutdownReq</span></a><span class="result"> extends <span class="extype" name="scala.Throwable">Throwable</span> with <a href="../util/ControlThrowable.html" class="extype" name="org.sireum.jawa.sjc.util.ControlThrowable">ControlThrowable</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.sireum.jawa.sjc.interactive.package@ShutdownReq" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Signals a request for a shutdown of the presentation compiler.</p><div class="fullcomment"><div class="comment cmt"><p>Signals a request for a shutdown of the presentation compiler.
+ Note: The object has to stay top-level so that the PresentationCompilerThread may access it.
+</p></div></div>
+    </li></ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+
+
+    </body>
+      </html>
